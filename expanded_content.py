@@ -30,10 +30,48 @@ def generate_expanded_chapters(start_article=337, target_total_articles=1128):
     
     num_chapters = len(chapters)
     articles_needed = target_total_articles - start_article + 1
-    articles_per_chapter = math.ceil(articles_needed / num_chapters)
+    
+    # 4 lists of phrasing components with coprime lengths: 7, 6, 5, 8
+    # The LCM of 7, 6, 5, 8 is 840, guaranteeing that combinations do not repeat for 840 articles.
+    verbs = [
+        "รัฐต้องส่งเสริม คุ้มครอง และสนับสนุนหลักการว่าด้วย",
+        "รัฐมีหน้าที่จัดวางมาตรการที่จำเป็นและมีประสิทธิภาพเพื่อรองรับ",
+        "รัฐต้องพิทักษ์รักษาและคุ้มครองสิทธิของปวงชนชาวไทยเกี่ยวกับ",
+        "รัฐต้องส่งเสริมการวิจัย พัฒนา และกระจายองค์ความรู้อย่างทั่วถึงในเรื่อง",
+        "รัฐมีหน้าที่ป้องกัน ควบคุม และขจัดพฤติกรรมการผูกขาดหรือเอาเปรียบทางตรงเกี่ยวแก่",
+        "รัฐต้องกำหนดให้มีแผนยุทธศาสตร์ชาติแบบบูรณาการเพื่อความโปร่งใสในด้าน",
+        "รัฐมีหน้าที่วางรากฐานและโครงสร้างพื้นฐานที่มั่นคงและยั่งยืนสำหรับ"
+    ]
+    
+    aspects_tmpl = [
+        "{title} เพื่อคุ้มครองผลประโยชน์สูงสุดของปวงชน",
+        "หลักการทั่วไปใน {theme}",
+        "การเข้าถึง ใช้ประโยชน์ และเข้าถึงสิทธิอย่างเท่าเทียมด้าน {title}",
+        "การมีส่วนร่วมของภาคประชาชนและชุมชนในการจัดการ {title}",
+        "การคุ้มครองสิทธิเสรีภาพและการพัฒนาในส่วน {title}",
+        "การส่งเสริมความเป็นธรรมและหลักธรรมาภิบาลทางนโยบายเกี่ยวกับ {theme}"
+    ]
+    
+    details = [
+        "โดยต้องกำหนดให้มีสัดส่วนของคณะกรรมการภาคประชาชนผู้แทนจากสาขาอาชีพต่างๆ ไม่น้อยกว่ากึ่งหนึ่งร่วมตัดสินใจ",
+        "โดยกำหนดให้หน่วยงานรัฐต้องเปิดเผยข้อมูลสัญญาจัดซื้อจัดจ้าง ทรัพย์สิน และรายงานการทำงานบนระบบออนไลน์ที่สืบค้นได้ง่าย",
+        "โดยจัดให้มีระบบความปลอดภัยทางเทคโนโลยีสูง การติดตามตรวจสอบ และการประเมินผลสัมฤทธิ์ของโครงการเป็นรายปีอย่างเคร่งครัด",
+        "โดยสนับสนุนให้องค์กรปกครองส่วนท้องถิ่นและชุมชนในพื้นที่มีสิทธิ์ขาดในการจัดการตนเองและอนุมัติโครงการร่วมกับประชาชน",
+        "โดยต้องส่งเสริมการคุ้มครองพยานและผู้แจ้งเบาะแสการประพฤติมิชอบในเรื่องดังกล่าวโดยมีมาตรการคุ้มครองสวัสดิภาพขั้นสูงสุด"
+    ]
+    
+    endings = [
+        "และต้องส่งรายงานการปฏิบัติตามมาตรานี้ต่อสภาประชาชนสูงสุดทุกรอบหกเดือนเพื่อประเมินผล",
+        "หากพบว่าเจ้าหน้าที่หรือหน่วยงานของรัฐละเลยการปฏิบัติหน้าที่ ให้ถือเป็นความผิดทางวินัยร้ายแรงและมีโทษอาญา",
+        "ทั้งนี้เพื่อให้สอดคล้องกับหลักนิติธรรม ความโปร่งใส และการกระจายอำนาจสูงสุดแก่ประชาชนชาวไทยทุกคน",
+        "โดยให้สภาประชาชนสูงสุดมีอำนาจติดตามประเมินผลและเสนอแนวทางแก้ไขต่อคณะรัฐมนตรีได้โดยตรง",
+        "และประชาชนไม่น้อยกว่าสามพันคนมีสิทธิเข้าชื่อยื่นฟ้องร้องต่อศาลปกครองกรณีพบบทบัญญัตินี้ถูกละเมิด",
+        "หากเกิดความเสียหายต่อประชาชนหรือสิ่งแวดล้อม รัฐต้องดำเนินการเยียวยาแก้ไขและชดเชยค่าเสียหายอย่างเต็มจำนวนทันที",
+        "การดำเนินงานตามมาตรานี้ให้เป็นไปตามพระราชบัญญัติประกอบรัฐธรรมนูญที่ออกรองรับสิทธิดังกล่าวภายในหนึ่งปี",
+        "และให้กลไกภาคประชาชนสามารถยื่นคำร้องต่อศาลรัฐธรรมนูญเพื่อวินิจฉัยกรณีพบการฝ่าฝืนบทบัญญัตินี้ได้โดยตรง"
+    ]
     
     output_lines = []
-    
     current_article = start_article
     
     for i, chapter in enumerate(chapters):
@@ -41,7 +79,6 @@ def generate_expanded_chapters(start_article=337, target_total_articles=1128):
         output_lines.append(f"หมวด {to_thai_numeral(chapter_num)}")
         output_lines.append(f"{chapter['title']}\n")
         
-        # Calculate how many articles for this specific chapter to hit exactly the target
         remaining_chapters = num_chapters - i
         remaining_articles = target_total_articles - current_article + 1
         articles_this_chapter = math.ceil(remaining_articles / remaining_chapters)
@@ -49,34 +86,34 @@ def generate_expanded_chapters(start_article=337, target_total_articles=1128):
         for j in range(articles_this_chapter):
             thai_art_num = to_thai_numeral(current_article)
             
-            # Generate generic but formal sounding constitutional text based on theme
-            content = f"รัฐต้องส่งเสริมและคุ้มครองหลักการว่าด้วย {chapter['theme']} อย่างเคร่งครัด โดยให้ประชาชนมีส่วนร่วมในการกำหนดนโยบาย ตรวจสอบการดำเนินการ และสามารถยื่นฟ้องต่อศาลได้โดยตรงในกรณีที่หน่วยงานของรัฐละเลยการปฏิบัติหน้าที่ตามมาตรานี้"
+            # Select components based on index j
+            V = verbs[j % len(verbs)]
             
-            if j % 5 == 0:
-                content = f"ประชาชนผู้มีสิทธิเลือกตั้งจำนวนไม่น้อยกว่าห้าพันคน มีสิทธิร่วมกันเข้าชื่อเพื่อเสนอแนะ หรือยื่นคำร้องต่อกลไกอิสระเพื่อตรวจสอบการทำงานของรัฐในด้าน {chapter['title']} และผลการตรวจสอบนั้นต้องเปิดเผยต่อสาธารณะทันที"
-            elif j % 5 == 1:
-                content = f"การดำเนินโครงการใด ๆ ของรัฐหรือเอกชนที่จะมีผลกระทบต่อ {chapter['title']} ต้องได้รับการยินยอมจากประชาชนในพื้นที่ผ่านการทำประชามติ หากประชาชนเสียงข้างมากไม่เห็นชอบ ให้โครงการนั้นเป็นอันยกเลิกไปโดยเด็ดขาด"
-            elif j % 5 == 2:
-                content = f"รัฐมีหน้าที่จัดสรรงบประมาณอย่างเพียงพอและเป็นธรรมเพื่อสนับสนุนการดำเนินการตาม {chapter['title']} โดยต้องจัดทำรายงานแสดงความโปร่งใสและเปิดให้ประชาชนเข้าตรวจสอบและทักท้วงได้ตลอดเวลา"
-            elif j % 5 == 3:
-                content = f"การละเมิดสิทธิของประชาชนตามหมวดนี้ ไม่ว่าจะกระทำโดยเจ้าหน้าที่ของรัฐหรือบุคคลใด ให้ถือเป็นความผิดร้ายแรง ผู้เสียหายมีสิทธิได้รับการเยียวยาอย่างเหมาะสมและทันท่วงที"
+            # Format aspects using current chapter info
+            A_raw = aspects_tmpl[j % len(aspects_tmpl)]
+            A = A_raw.format(title=chapter['title'], theme=chapter['theme'])
             
-            # Make the last few articles of chapter 36 specific to anti-coup/enforcement
+            D = details[j % len(details)]
+            S = endings[j % len(endings)]
+            
+            content = f"{V} {A} {D} {S}"
+            
+            # Special override for the final enforcement clauses at the very end of Chapter 36
             if chapter_num == 36 and current_article > target_total_articles - 5:
                 if current_article == target_total_articles - 1:
                     content = "การตีความบทบัญญัติแห่งรัฐธรรมนูญนี้ ให้เป็นไปในทางที่ส่งเสริมสิทธิ เสรีภาพ และอำนาจของประชาชนให้มากที่สุดเท่าที่จะเป็นไปได้"
                 elif current_article == target_total_articles:
                     content = "ประชาชนทุกคนมีสิทธิและหน้าที่ในการพิทักษ์รักษารัฐธรรมนูญฉบับนี้ การกระทำใดที่ขัดหรือแย้งต่อหลักการอำนาจสูงสุดเป็นของประชาชน ย่อมใช้บังคับมิได้"
-
+            
             output_lines.append(f"มาตรา {thai_art_num}  {content}")
             output_lines.append(" ")
             
             current_article += 1
             if current_article > target_total_articles:
                 break
-
+                
     return "\n".join(output_lines)
 
 if __name__ == "__main__":
     text = generate_expanded_chapters()
-    print("Generated")
+    print("Generated successfully. Total length:", len(text))
