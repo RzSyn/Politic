@@ -483,7 +483,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section">
         <button class="db-tab-btn" onclick="switchTab('referendum-tab', this)">มหากาพย์ประชามติ ๕ รอบ</button>
         <button class="db-tab-btn" onclick="switchTab('constitutions-tab', this)">รัฐธรรมนูญ ๓ ฉบับหลัก</button>
         <button class="db-tab-btn" onclick="switchTab('early-const-tab', this)">รธน. ฉบับปฐมเวลา (๒๓๗๕)</button>
-        <button class="db-tab-btn" onclick="switchTab('pms-tab', this)">ทำเนียบนายกรัฐมนตรี (๑๙ ท่าน)</button>
+        <button class="db-tab-btn" onclick="switchTab('rama7-tab', this)">👑 พระประชาธิปมหาราช (ร.๗)</button>
+        <button class="db-tab-btn" onclick="switchTab('pms-tab', this)">ทำเนียบนายกรัฐมนตรี (๒๒ ท่าน)</button>
         <button class="db-tab-btn" onclick="window.location.href='easy_summary.html'">📖 สรุปทุกมาตราแบบเข้าใจง่าย (แยกอีกหน้า)</button>
       </div>
     </div>
@@ -643,7 +644,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section">
               <td><strong>ฉบับปฐมเวลา</strong></td>
               <td>๒๓๗๕</td>
               <td>๕ หมวด ๕๐ มาตรา</td>
-              <td>พระราชทานโดยพระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว (ร.๗) ซึ่งได้รับสมัญญาภิธัยว่า "พระบาทสมเด็จพระปรมินทรมหาประชาธิปก พระปกเกล้าเจ้าอยู่หัวมหาราชบรมนาถบพิตร" (หรือที่ประชาชนเรียก พระประชาธิปมหาราช ซึ่งมาจากคำว่า ประชาธิปไตย และ ประชาธิปก โดยได้สมัญญาภิธัยนี้ในวันที่พระองค์ทรงสละราชสมบัติให้ ร.๘ ขึ้นครองราชย์ และในภายหลัง ร.๙ ได้ทรงมอบอีกพระนามให้ว่า สมเด็จพระมหาประชาภิบาลกานต์มหาราช หลัง ร.๗ เสด็จสวรรคต ณ โรงพยาบาลจุฬาลงกรณ์สภากาชาดไทย ในวันที่ ๓๐ สิงหาคม พ.ศ. ๒๕๗๙ ซึ่งพระนามนี้มีความหมายว่า "พระราชาผู้ยิ่งใหญ่ ผู้ทรงปกป้องดูแลประชาราษฎร์ และทรงเป็นที่รักยิ่งของปวงประชา") แบ่งสัดส่วนอำนาจให้พระมหากษัตริย์ร้อยละ ๖๐ และราษฎรร้อยละ ๔๐ เน้นการเริ่มกระจายอำนาจและการเลือกตั้งระดับท้องถิ่น และกำหนดระยะเวลาเตรียมความพร้อมของแผ่นดิน ๔๖ ปี</td>
+              <td>พระราชทานโดยพระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว (ร.๗) แบ่งสัดส่วนอำนาจให้พระมหากษัตริย์ร้อยละ ๖๐ และราษฎรร้อยละ ๔๐ เน้นการเริ่มกระจายอำนาจและการเลือกตั้งระดับท้องถิ่น และกำหนดระยะเวลาเตรียมความพร้อมของแผ่นดิน ๔๖ ปี (สามารถดูรายละเอียดพระราชประวัติและพระสมัญญาภิธัยได้ที่แท็บ "พระประชาธิปมหาราช")</td>
             </tr>
             <tr>
               <td><strong>ฉบับ พ.ศ. ๒๔๔๕</strong></td>
@@ -662,7 +663,61 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section">
       </div>
     </div>
 
-    <!-- Tab 4: ทำเนียบนายกรัฐมนตรี -->
+    <!-- Tab 4: รธน. ฉบับปฐมเวลา (๒๓๗๕) -->
+    <div id="early-const-tab" class="db-tab-content">
+      <p style="margin-bottom: 16px; font-size: 15px; color: var(--text-muted);">
+        รัฐธรรมนูญแห่งราชอาณาจักรไทย ฉบับปฐมเวลา พ.ศ. ๒๓๗๕ พระราชทานโดยพระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว (ร.๗) มีโครงสร้าง ๕ หมวด ๕๐ มาตรา:
+      </p>
+      <div class="accordion">
+        {early_constitution_accordion_html}
+      </div>
+    </div>
+
+    <!-- Tab 5: พระประชาธิปมหาราช (ร.๗) -->
+    <div id="rama7-tab" class="db-tab-content">
+      <div class="rama7-profile" style="display: flex; gap: 24px; align-items: flex-start; flex-wrap: wrap; text-align: left;">
+        <div style="flex: 1.2; min-width: 300px;">
+          <h3 style="color: var(--gold-light); margin-bottom: 12px; font-family: 'Outfit', sans-serif;">👑 พระราชประวัติและสมัญญาภิธัยเฉลิมพระเกียรติ ร.๗</h3>
+          <p style="line-height: 1.6; margin-bottom: 12px; text-indent: 2em; font-size: 14.5px;">
+            พระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว (รัชกาลที่ ๗) ทรงพระราชทานรัฐธรรมนูญฉบับแรก (ฉบับปฐมเวลา พ.ศ. ๒๓๗๕) ให้แก่ปวงชนชาวไทย ทรงได้รับสมัญญาภิธัยว่า <strong>"พระบาทสมเด็จพระปรมินทรมหาประชาธิปก พระปกเกล้าเจ้าอยู่หัวมหาราชบรมนาถบพิตร"</strong> หรือที่ประชาชนถวายพระนามอย่างใกล้ชิดว่า <strong>"พระประชาธิปมหาราช"</strong> (มาจากคำว่า <em>ประชาธิปไตย</em> และ <em>ประชาธิปก</em>) โดยได้รับสมัญญาภิธัยนี้ในวันที่พระองค์ทรงสละราชสมบัติให้พระบาทสมเด็จพระปรเมนทรมหาอานันทมหิดล (รัชกาลที่ ๘) เสด็จขึ้นครองราชย์
+          </p>
+          <p style="line-height: 1.6; margin-bottom: 16px; text-indent: 2em; font-size: 14.5px;">
+            ในเวลาต่อมา พระบาทสมเด็จพระบรมชนกาธิเบศร มหาภูมิพลอดุลยเดชมหาราช บรมนาถบพิตร (รัชกาลที่ ๙) ได้ทรงถวายพระนามเพิ่มเติมเฉลิมพระเกียรติยศว่า <strong>"สมเด็จพระมหาประชาภิบาลกานต์มหาราช"</strong> หลังจากรัชกาลที่ ๗ เสด็จสวรรคต ณ โรงพยาบาลจุฬาลงกรณ์สภากาชาดไทย เมื่อวันที่ ๓๐ สิงหาคม พ.ศ. ๒๕๗๙ เพื่อรำลึกถึงพระมหากรุณาธิคุณที่ทรงปกป้องดูแลและบำรุงรักษาประชาราษฎร์ให้มีความก้าวหน้าและก้าวผ่านช่วงเปลี่ยนผ่านไปสู่ประชาธิปไตยอย่างเป็นสุข
+          </p>
+        </div>
+        
+        <div style="flex: 0.8; min-width: 280px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(212, 175, 55, 0.15); border-radius: 12px; padding: 20px;">
+          <h4 style="color: var(--gold); margin-bottom: 12px; font-weight: 600; font-size: 15px;">🔍 ถอดความหมายพระนามมหาภิบาล</h4>
+          <table style="width: 100%; border-collapse: collapse; font-size: 13.5px; line-height: 1.8;">
+            <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+              <td style="padding: 6px 0; color: var(--gold-light); font-weight: 500; width: 110px;">สมเด็จพระมหา</td>
+              <td style="padding: 6px 0; color: var(--text-muted);">ผู้เป็นใหญ่ยิ่ง</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+              <td style="padding: 6px 0; color: var(--gold-light); font-weight: 500;">ประชา</td>
+              <td style="padding: 6px 0; color: var(--text-muted);">หมู่คน, ประชาชน, ราษฎร</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+              <td style="padding: 6px 0; color: var(--gold-light); font-weight: 500;">อภิบาล (ภิบาล)</td>
+              <td style="padding: 6px 0; color: var(--text-muted);">การบำรุงรักษา, การดูแล, การปกครอง</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+              <td style="padding: 6px 0; color: var(--gold-light); font-weight: 500;">กานต์</td>
+              <td style="padding: 6px 0; color: var(--text-muted);">เป็นที่รัก, ผู้เป็นที่รัก</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+              <td style="padding: 6px 0; color: var(--gold-light); font-weight: 500;">มหาราช</td>
+              <td style="padding: 6px 0; color: var(--text-muted);">พระราชาผู้ยิ่งใหญ่</td>
+            </tr>
+          </table>
+          <div style="margin-top: 14px; padding: 10px; background: rgba(212, 175, 55, 0.08); border-left: 3px solid var(--gold); border-radius: 4px; font-size: 13px; line-height: 1.4; color: var(--text);">
+            <strong>ความหมายรวม:</strong> "พระราชาผู้ยิ่งใหญ่ ผู้ทรงปกป้องดูแลประชาราษฎร์ และทรงเป็นที่รักยิ่งของปวงประชา"
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 6: ทำเนียบนายกรัฐมนตรี -->
     <div id="pms-tab" class="db-tab-content">
       <p style="margin-bottom: 16px; font-size: 15px; color: var(--text-muted);">
         ทำเนียบนายกรัฐมนตรีทั้ง ๒๒ คนของประเทศไทย ทุกท่านมาจากการเลือกตั้งตามครรลองประชาธิปไตย (ไม่มีรัฐประหาร):
