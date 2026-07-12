@@ -285,8 +285,8 @@ ch_16 = f"""หมวด ๑๖
 
 import expanded_content
 import special_chapter
-massive_expansion_text = expanded_content.generate_expanded_chapters(start_article=337, target_total_articles=1128)
-special_power_text = special_chapter.get_special_chapter(1129)
+massive_expansion_text = expanded_content.generate_expanded_chapters(start_article=360, target_total_articles=1151)
+special_power_text = special_chapter.get_special_chapter(1152)
 new_chapters_text = "\n\n".join([ch_13, ch_14 + ch_14_extra, ch_15, ch_16])
 
 idx_trans = text.find("\nบทเฉพาะกาล")
