@@ -489,6 +489,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section">
         <button class="db-tab-btn" onclick="switchTab('siripanya-tab', this)">📚 ห้องสมุดศิริปัญญาวิมารสัจ</button>
         <button class="db-tab-btn" onclick="switchTab('pms-tab', this)">ทำเนียบนายกรัฐมนตรี (๒๒ ท่าน)</button>
         <button class="db-tab-btn" onclick="switchTab('goc-tab', this)">🌐 Global Outlandish Centre (GOC)</button>
+        <button class="db-tab-btn" onclick="switchTab('geopolitics-tab', this)">🌍 ภูมิรัฐศาสตร์โลก</button>
+        <button class="db-tab-btn" onclick="switchTab('traitisa-tab', this)">👤 ไตรทิศา รณปวัตน์</button>
         <button class="db-tab-btn" onclick="window.location.href='easy_summary.html'">📖 สรุปทุกมาตราแบบเข้าใจง่าย (แยกอีกหน้า)</button>
       </div>
     </div>
@@ -1463,6 +1465,261 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section">
             <div style="background: rgba(255,255,255,0.02); padding: 12px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.05); text-align: center;">
               <div style="font-weight: 600; color: #f87171; margin-bottom: 4px; font-size: 13.5px;">ไม่ออกปฏิบัติการโดยลำพัง</div>
               <div style="font-size: 12px; color: var(--text-muted);">ทุกขั้นตอนการเคลื่อนย้ายเชิงยุทธการต้องรายงานและได้รับสัญญาณไฟเขียวจากนายกรัฐมนตรี</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 9: ภูมิรัฐศาสตร์โลก -->
+    <div id="geopolitics-tab" class="db-tab-content">
+      <style scoped>
+        #geopolitics-tab {{
+          padding: 10px 0;
+        }}
+        .geo-container {{
+          background: rgba(20, 24, 33, 0.4);
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          border-radius: 12px;
+          padding: 24px;
+          backdrop-filter: blur(10px);
+        }}
+        .geo-header {{
+          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+          padding-bottom: 16px;
+          margin-bottom: 24px;
+          text-align: center;
+        }}
+        .geo-grid {{
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          gap: 20px;
+          margin-bottom: 24px;
+        }}
+        .geo-card {{
+          background: rgba(255, 255, 255, 0.015);
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          border-radius: 8px;
+          padding: 20px;
+          transition: transform 0.2s ease, border-color 0.2s ease;
+        }}
+        .geo-card:hover {{
+          transform: translateY(-4px);
+          border-color: var(--accent-orange);
+        }}
+        .geo-card-title {{
+          color: var(--gold-light);
+          font-size: 15px;
+          font-weight: 700;
+          margin-bottom: 10px;
+          font-family: 'Outfit', sans-serif;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }}
+        .geo-card-desc {{
+          font-size: 13px;
+          color: var(--text-muted);
+          line-height: 1.5;
+        }}
+        .geo-ops-section {{
+          border-top: 1px solid rgba(255, 255, 255, 0.08);
+          padding-top: 24px;
+        }}
+        .geo-op-item {{
+          background: rgba(255, 255, 255, 0.01);
+          border: 1px solid rgba(255, 255, 255, 0.03);
+          border-radius: 6px;
+          padding: 16px;
+          margin-bottom: 12px;
+        }}
+        .geo-op-title {{
+          color: var(--gold);
+          font-size: 14.5px;
+          font-weight: 600;
+          margin-bottom: 6px;
+        }}
+      </style>
+
+      <div class="geo-container">
+        <div class="geo-header">
+          <h3 style="color: var(--accent-orange); font-family: 'Outfit', sans-serif; font-size: 24px; margin-bottom: 8px;">🌍 ระเบียบภูมิรัฐศาสตร์โลกใหม่ (New Geopolitical Order)</h3>
+          <p style="color: var(--text-muted); font-size: 14.5px; margin-bottom: 0;">โครงสร้างการแบ่งขั้วอำนาจและอภิมหาโครงการยุทธศาสตร์หลังการสิ้นสุดสงครามเย็นวิถีทางเลือก</p>
+        </div>
+
+        <div class="goc-section" style="border-bottom: none; padding-bottom: 0; margin-bottom: 16px;">
+          <h4 class="goc-sec-title">🗺️ การจัดแบ่งขั้วอำนาจโลกหลัก</h4>
+          <div class="geo-grid">
+            <div class="geo-card">
+              <div class="geo-card-title">🤝 SEATO-BRICS (นำโดยสยาม)</div>
+              <div class="geo-card-desc">กลุ่มความร่วมมือด้านเศรษฐกิจและความมั่นคงที่นำโดยประเทศไทย ครอบคลุมประชากรรวมกันกว่าร้อยละ ๗๐ ของโลก มีการปรับโครงสร้างฟื้นฟูสถาปนาองค์กร <strong>SEATO</strong> ขึ้นมาอีกครั้ง (ซึ่งสำนักงานใหญ่ดั้งเดิมตั้งอยู่ที่กรุงเทพฯ) ส่งผลให้ไทยเป็นศูนย์กลางและมีอำนาจนำในภูมิภาคเอเชียตะวันออกเฉียงใต้อย่างเด็ดขาด</div>
+            </div>
+            <div class="geo-card">
+              <div class="geo-card-title">🚢 โครงการคลองไทยไมตรี</div>
+              <div class="geo-card-desc">อภิมหาโครงการขุดคลองเชื่อมต่อระหว่างทะเลอันดามันและอ่าวไทย ก่อสร้างแล้วเสร็จในปี พ.ศ. ๒๕๘๘ ด้วยเม็ดเงินลงทุนมหาศาล ๓.๙ ล้านล้านบาท ปฏิวัติเส้นทางคมนาคมพาณิชย์และการเดินเรือโลก มาเลเซียได้ยื่นคัดค้านหลังโครงการแล้วเสร็จแต่พ่ายแพ้ในเวทีระงับพิพาทร่วม SEATO-UN เนื่องจากไม่ได้ออกเสียงปฏิเสธตั้งแต่ระเบียบวาระก่อตั้งแรกเริ่ม</div>
+            </div>
+            <div class="geo-card">
+              <div class="geo-card-title">🇨🇳 สาธารณรัฐจีน (ROC)</div>
+              <div class="geo-card-desc">มหาประเทศจีนที่สถาปนาและปกครองโดยระบอบประชาธิปไตยเต็มรูปแบบอย่างเป็นปึกแผ่นทั่วทุกตารางนิ้วรวมถึงพื้นที่ดินแดนไต้หวัน โดยไม่มีการแยกเขตหรือลัทธิรัฐบาลซ้อนกัน นำความสงบและเสถียรภาพสากลกลับสู่พื้นที่เอเชียตะวันออก</div>
+            </div>
+            <div class="geo-card">
+              <div class="geo-card-title">🇪🇺 สหพันธรัฐใหม่ (TSL)</div>
+              <div class="geo-card-desc">โครงสร้างใหม่ของทวีปอเมริกาเหนือที่รวมเอา ๕๐ รัฐเดิมเข้าเป็นเอกรัฐหนึ่งเดียวอย่างเป็นทางการ ภายใต้การนำร่วม และได้ตกลงเข้าเป็นสมาชิกอย่างเป็นทางการของสหภาพยุโรป (EU) และองค์การความมั่นคงแอตแลนติกเหนือ (NATO)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="geo-ops-section">
+          <h4 class="goc-sec-title">🛡️ ปฏิบัติการและคดีวิกฤตความมั่นคงร่วมในภูมิภาค</h4>
+          
+          <div class="geo-op-item">
+            <div class="geo-op-title">✈️ ปฏิบัติการ ๑๘/๒๒ (อัฟกานิสถานเปลี่ยนผ่าน)</div>
+            <p style="font-size: 13px; color: var(--text-muted); line-height: 1.5; margin-bottom: 0;">ปฏิบัติการทางอากาศตอบโต้ภัยคุกคามก่อการร้ายข้ามพรมแดนร่วมกันของขั้วความมั่นคง นำไปสู่การล่มสลายของกลุ่มติดอาวุธหัวรุนแรงในอัฟกานิสถาน คณะมนตรีความมั่นคง UN มอบอำนาจในการวางระบบฟื้นฟูและการบริหารร่วมระยะเปลี่ยนผ่านเป็นเวลา ๑๒ ปี เพื่อเตรียมการจัดให้มีการเลือกตั้งประชาธิปไตยเสรี</p>
+          </div>
+
+          <div class="geo-op-item">
+            <div class="geo-op-title">🇰🇭 แผนฟื้นฟูอาณาจักรกัมพูชา (Cambodia 18-Year Mandate)</div>
+            <p style="font-size: 13px; color: var(--text-muted); line-height: 1.5; margin-bottom: 0;">ภายหลังวิกฤตสูญเสียความชอบธรรมและการล่มสลายของการเมืองภายในกัมพูชา คณะมนตรีความมั่นคง UN มอบอำนาจปกครองและฟื้นฟูอารยธรรมแก่ไทยเป็นระยะเวลา ๑๘ ปี มีการยกร่างสถาปนารัฐธรรมนูญใหม่จำนวน ๑๘ หมวด ๕๗๘ มาตรา โดยอิงระบบ กลไก และโครงสร้างสถาบันหลักมาจากรัฐธรรมนูญไทย ๒๕๒๕</p>
+          </div>
+
+          <div class="geo-op-item">
+            <div class="geo-op-title">🇲🇲 กรณีเสถียรภาพเมียนมา (Myanmar Union Stabilization)</div>
+            <p style="font-size: 13px; color: var(--text-muted); line-height: 1.5; margin-bottom: 0;">ความตึงเครียดและการปะทะภายในประเทศเมียนมาที่ลากยาวข้ามศตวรรษ ได้รับการเข้าช่วยเหลือและจัดวางมาตรการฟื้นฟูร่วมกันระหว่างกลุ่มประเทศเพื่อนบ้านและพันธมิตรภายใต้กรอบข้อตกลงยุทธศาสตร์ SEATO เพื่อยุติการละเมิดสิทธิ์และนโยบายกอบกู้เสถียรภาพ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 10: ไตรทิศา รณปวัตน์ -->
+    <div id="traitisa-tab" class="db-tab-content">
+      <style scoped>
+        #traitisa-tab {{
+          padding: 10px 0;
+        }}
+        .tri-container {{
+          background: rgba(20, 24, 33, 0.4);
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          border-radius: 12px;
+          padding: 24px;
+          backdrop-filter: blur(10px);
+        }}
+        .tri-header {{
+          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+          padding-bottom: 16px;
+          margin-bottom: 24px;
+          text-align: center;
+        }}
+        .tri-layout {{
+          display: flex;
+          gap: 24px;
+          flex-wrap: wrap;
+        }}
+        .tri-profile-card {{
+          background: rgba(255, 255, 255, 0.02);
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          border-radius: 8px;
+          padding: 20px;
+          width: 280px;
+          text-align: center;
+          align-self: flex-start;
+        }}
+        .tri-profile-img {{
+          width: 160px;
+          height: 160px;
+          border-radius: 8px;
+          border: 2px solid rgba(255, 255, 255, 0.1);
+          margin-bottom: 16px;
+          object-fit: cover;
+        }}
+        .tri-profile-name {{
+          font-size: 18px;
+          font-weight: 700;
+          color: var(--gold-light);
+          margin-bottom: 4px;
+          font-family: 'Outfit', sans-serif;
+        }}
+        .tri-profile-title {{
+          font-size: 13px;
+          color: var(--accent-orange);
+          font-weight: 600;
+          margin-bottom: 12px;
+        }}
+        .tri-meta {{
+          font-size: 12.5px;
+          color: var(--text-muted);
+          text-align: left;
+          border-top: 1px solid rgba(255, 255, 255, 0.05);
+          padding-top: 12px;
+        }}
+        .tri-bio {{
+          flex: 1;
+          min-width: 300px;
+        }}
+        .tri-stage {{
+          margin-bottom: 20px;
+        }}
+        .tri-stage-title {{
+          color: var(--gold);
+          font-size: 15px;
+          font-weight: 600;
+          margin-bottom: 8px;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }}
+        .tri-stage-text {{
+          font-size: 13.5px;
+          color: var(--text-muted);
+          line-height: 1.6;
+          margin-bottom: 0;
+        }}
+        .tri-quote-box {{
+          background: rgba(245, 158, 11, 0.05);
+          border-left: 4px solid var(--accent-orange);
+          padding: 16px;
+          border-radius: 4px;
+          margin-top: 24px;
+        }}
+      </style>
+
+      <div class="tri-container">
+        <div class="tri-header">
+          <h3 style="color: var(--accent-orange); font-family: 'Outfit', sans-serif; font-size: 24px; margin-bottom: 8px;">👤 บุคคลสำคัญร่วมสมัย | ไตรทิศา รณปวัตน์ (ชินวัตร)</h3>
+          <p style="color: var(--text-muted); font-size: 14.5px; margin-bottom: 0;">นักการเมืองผู้เผชิญการล้มลุกคลี่คลาย ผู้นำนิกายสนธิปัญญา และรองนายกรัฐมนตรีผู้สร้างสันติสุขชายแดนใต้</p>
+        </div>
+
+        <div class="tri-layout">
+          <div class="tri-profile-card">
+            <img src="traitisa_portrait.png" alt="ไตรทิศา รณปวัตน์" class="tri-profile-img">
+            <div class="tri-profile-name">ไตรทิศา รณปวัตน์</div>
+            <div class="tri-profile-title">รองนายกรัฐมนตรีแห่งราชอาณาจักรไทย</div>
+            <div class="tri-meta">
+              <div style="margin-bottom: 6px;"><strong>นามเดิม:</strong> ไตรทิศา ชินวัตร (หลานชายอดีตนายกฯ ทักษิณ)</div>
+              <div style="margin-bottom: 6px;"><strong>พรรคการเมือง:</strong> พรรคธรรมปัญญา (เดิมชื่อรณขจัด)</div>
+              <div style="margin-bottom: 6px;"><strong>หลักอุดมการณ์:</strong> นิกายสนธิปัญญา / ความเป็นเอกภาพทางสมานฉันท์</div>
+              <div><strong>บทบาทอื่น:</strong> คณะที่ปรึกษาตรวจสอบ GOC (Oversight Board)</div>
+            </div>
+          </div>
+
+          <div class="tri-bio">
+            <div class="tri-stage">
+              <div class="tri-stage-title">🌱 ก้าวแรกในวงการเมืองกระแสหลักและการตกต่ำเชิงอำนาจ</div>
+              <p class="tri-stage-text">เริ่มต้นบนเส้นทางการเมืองในฐานะคนรุ่นใหม่ผู้เป็นทายาทตระกูลชินวัตร โดยก้าวขึ้นมาทำหน้าที่เป็นแกนนำคนสำคัญของแนวร่วมพรรคไทยรักไทย ต่อมาเขาตกอยู่ท่ามกลางพายุความขัดแย้งภายในขั้วอำนาจจนถูกกล่าวหาใช้อำนาจหน้าที่โดยมิชอบ นำไปสู่การถูกบีบออกจากตำแหน่งทางการเมืองและถูกขับไล่ออกจากพรรคอย่างรุนแรง เขาได้เปลี่ยนชื่อสกุลเป็น "รณปวัตน์" เพื่อเริ่มต้นใหม่ และได้พยายามจัดตั้งพันธมิตรเพื่อผลักดันการแก้ไขร่างรัฐธรรมนูญแต่ล้มเหลวลงอย่างสิ้นเชิง จนกระทั่งถูกผลักไสออกจากแวดวงอำนาจกระแสหลัก</p>
+            </div>
+
+            <div class="tri-stage">
+              <div class="tri-stage-title">🕉️ ช่วงลี้ภัยสู่ต่างแดน ธรรมยาตรา และการก่อกำเนิดนิกายสนธิปัญญา</div>
+              <p class="tri-stage-text">ภายหลังเผชิญมรสุมชีวิตถึงขีดสุด เขาตัดสินใจเดินทางออกจากประเทศไทยไปพำนัก ณ สวีเดน และได้ผ่านการคลี่คลายทางจิตวิญญาณครั้งใหญ่จากการพบปะครูอาจารย์ ณ วัดกุสินาสถาน (สวีเดน) ส่งผลให้ทัศนคติที่มีต่อโลกเปลี่ยนไปโดยสิ้นเชิง เขาได้เริ่มต้นเดินทางธรรมยาตราจาริกแสวงหาความจริงไปตามโบราณสถานทั่วโลก ศึกษาหลักธรรมและปรัชญาโบราณในภูเขาหิมะทิเบต อาณาจักรภูฏาน อารามเซนในญี่ปุ่น และแม่น้ำคงคาในอินเดีย ก่อนนำความรู้มาหลอมรวมสร้างระบบความเชื่อแบบใหม่ในนาม <strong>"นิกายสนธิปัญญา" (Synthesis of Wisdom)</strong> ซึ่งเน้นการรวมข้อดีของธรรมจริยธรรมจากทุกศาสนามาประยุกต์ร่วมกัน</p>
+            </div>
+
+            <div class="tri-stage">
+              <div class="tri-stage-title">🤝 การจัดตั้งพรรคธรรมปัญญา และการดับไฟชายแดนภาคใต้</div>
+              <p class="tri-stage-text">เมื่อนิวัตกลับสู่ปิตุภูมิ เขาได้จัดตั้งพรรคการเมืองในนาม "พรรครณขจัด" (ซึ่งต่อมาได้ปรับปรุงเป็น "พรรคธรรมปัญญา") โดยดำเนินนโยบายสายกลางบนหลักจริยธรรมและการสมานฉันท์เป็นที่ตั้ง เขาประสบความสำเร็จในการรับฟัง เจรจา และใช้กลยุทธ์นิกายสนธิปัญญาเข้าคลี่คลายปัญหาความขัดแย้งรุนแรงในพื้นที่ ๓ จังหวัดชายแดนภาคใต้ของไทยที่เรื้อรังมานานหลายทศวรรษได้สำเร็จเป็นที่ประจักษ์ นำพาเขากลับคืนสู่อำนาจรัฐสภาในฐานะรองนายกรัฐมนตรีผู้เป็นปราชญ์แห่งการปรองดอง</p>
+            </div>
+
+            <div class="tri-quote-box">
+              <div style="font-weight: 700; color: var(--accent-orange); margin-bottom: 6px; font-size: 14px;">💡 ถ้อยแถลงจิตวิญญาณแห่งรัฐธรรมนูญ ๒๕๒๕</div>
+              <p style="font-size: 13px; color: var(--text-muted); line-height: 1.5; margin-bottom: 0; font-style: italic;">"เส้นทางของไตรทิศา รณปวัตน์ เป็นเครื่องพิสูจน์และสะท้อนแนวคิดสำคัญที่เป็นเสาหลักของรัฐธรรมนูญฉบับ ๒๕๒๕ นี้อย่างแท้จริง นั่นคือ ระบบการปกครองและกฎหมายที่ดี ต้องจัดให้มีโอกาสและช่องทางแก่ผู้ที่เคยพ่ายแพ้หรือเคยผิดพลาดล้มเหลวในอดีต ได้สามารถลุกขึ้นมาแก้ไข ปรับปรุงตนเอง และกลับมาทำหน้าที่รับใช้แผ่นดินและประชาชนได้อีกครั้ง การกีดกันปิดกั้นพลเมืองเพียงจากความผิดพลาดคราวเดียว ย่อมขัดแย้งต่อครรลองการให้โอกาสและการสร้างความสมานฉันท์ของสังคม"</p>
             </div>
           </div>
         </div>
