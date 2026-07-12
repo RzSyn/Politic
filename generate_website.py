@@ -1029,7 +1029,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section">
           <h3 style="color: var(--gold-light); margin-bottom: 16px; font-family: 'Outfit', sans-serif;">📚 ตำนานและคลังปัญญา "ห้องสมุดศิริปัญญาวิมารสัจ"</h3>
           <div style="font-size: 14.5px; line-height: 1.65; color: var(--text);">
             <p style="margin-bottom: 12px; text-indent: 2em;">
-              <strong>ห้องสมุดศิริปัญญาวิมารสัจ</strong> (แปลความหมายเชิงอุดมคติว่า <em>"วิมานแห่งความดีงามและปัญญาที่ตั้งอยู่บนความจริงอันประเสริฐ"</em> อันเป็นเสมือนสถานที่หรือสภาวะในจิตใจที่เต็มไปด้วยความรู้แจ้งและความดีงาม) ตั้งอยู่ ณ เขตพระราชฐานชั้นใน พระบรมมหาราชวัง กรุงเทพมหานคร สยามประเทศ หอสมุดแห่งนี้ไม่ใช่เพียงแต่เก็บรักษาราชสารและบันทึกประวัติศาสตร์ของไทยเท่านั้น แต่ยังเป็นที่ประดิษฐานของมรดกทางปัญญาที่ยิ่งใหญ่ที่สุดของมนุษยชาติ
+              <strong>ห้องสมุดศิริปัญญาวิมารสัจ</strong> (ซึ่งอ่านและเขียนพ้องความหมายได้ทั้ง <em>"วิมาน"</em> และ <em>"วิมาร"</em> แปลความหมายในทางธรรมและเชิงอุดมคติรวมกันว่า <em>"วิมานหรือสถานที่อันปราศจากสิ่งชั่วร้ายและกิเลสทั้งปวงแห่งความดีงามและปัญญาที่ตั้งอยู่บนความจริงอันประเสริฐ"</em> อันเป็นเสมือนสภาวะจิตใจที่เปี่ยมด้วยความรู้แจ้งและความดีงาม) ตั้งอยู่ ณ เขตพระราชฐานชั้นใน พระบรมมหาราชวัง กรุงเทพมหานคร สยามประเทศ หอสมุดแห่งนี้ไม่ใช่เพียงแต่เก็บรักษาราชสารและบันทึกประวัติศาสตร์ของไทยเท่านั้น แต่ยังเป็นที่ประดิษฐานของมรดกทางปัญญาที่ยิ่งใหญ่ที่สุดของมนุษยชาติ
             </p>
             <p style="margin-bottom: 12px; text-indent: 2em;">
               ตามบันทึกหลวงระบุว่า ในอดีตยุคโบราณก่อนคริสตศักราช นักเดินทางค้าสำเภาและราชทูตโบราณของสยามได้เดินทางไกลไปถึงอาณาจักรเมดิเตอร์เรเนียน และได้ร่วมมือกับเหล่านักปราชญ์ อาลักษณ์ชาวไอยคุปต์ (อียิปต์โบราณ) และกรีก ทำการถอดแบบคัดลอก แปลตำรา และเก็บกู้ม้วนคัมภีร์สำคัญจาก <strong>หอสมุดอเล็กซานเดรีย (Library of Alexandria)</strong> ก่อนที่หอสมุดดังกล่าวจะถูกเพลิงเผาทำลายและสูญหายไปจากโลกตะวันตก
@@ -1069,9 +1069,9 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section">
           </div>
 
           <h4 style="color: var(--gold); margin-bottom: 12px; font-weight: 600; font-size: 14.5px;">🔍 ถอดความหมายชื่อ "ศิริปัญญาวิมารสัจ"</h4>
-          <table style="width: 100%; border-collapse: collapse; font-size: 13px; line-height: 1.7;">
+          <table style="width: 100%; border-collapse: collapse; font-size: 12.5px; line-height: 1.65;">
             <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
-              <td style="padding: 5px 0; color: var(--gold-light); font-weight: 500; width: 90px;">ศิริ (สิริ)</td>
+              <td style="padding: 5px 0; color: var(--gold-light); font-weight: 500; width: 100px;">ศิริ (สิริ)</td>
               <td style="padding: 5px 0; color: var(--text);">ความดีงาม, ความเจริญรุ่งเรือง, ศรีสง่า, มิ่งขวัญ</td>
             </tr>
             <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
@@ -1079,16 +1079,20 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section">
               <td style="padding: 5px 0; color: var(--text);">ความรอบรู้, ความฉลาด, การรู้เท่าทัน</td>
             </tr>
             <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
-              <td style="padding: 5px 0; color: var(--gold-light); font-weight: 500;">วิมาน</td>
+              <td style="padding: 5px 0; color: var(--gold-light); font-weight: 500;">วิมาน (พ้องเสียง)</td>
               <td style="padding: 5px 0; color: var(--text);">ที่อยู่อันวิจิตรของเทวดา, แดนทิพย์</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+              <td style="padding: 5px 0; color: var(--gold-light); font-weight: 500;">วิมาร (วิ + มาร)</td>
+              <td style="padding: 5px 0; color: var(--text);">ความหมายแฝงทางบาลี-สันสกฤต: <strong>"วิ"</strong> (ปราศจาก) + <strong>"มาร"</strong> (สิ่งล้างผลาญ/ความมืดมน/อุปสรรค) แปลว่า <strong>"ผู้ปราศจากมาร"</strong> หรือ <strong>"การขจัดสิ่งชั่วร้าย/อุปสรรคให้หมดไป"</strong> (ความหมายทางธรรม: ผู้ที่อยู่เหนือมาร, สถานที่ที่ปราศจากสิ่งชั่วร้ายและกิเลสทั้งปวง)</td>
             </tr>
             <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
               <td style="padding: 5px 0; color: var(--gold-light); font-weight: 500;">สัจ (สัจจะ)</td>
               <td style="padding: 5px 0; color: var(--text);">ความจริงแท้, ความสัตย์ซื่อ</td>
             </tr>
           </table>
-          <div style="margin-top: 12px; padding: 10px; background: rgba(212, 175, 55, 0.08); border-left: 3px solid var(--gold); border-radius: 4px; font-size: 12.5px; line-height: 1.45; color: var(--text);">
-            <strong>ความหมายรวม:</strong> "วิมานแห่งความดีงามและปัญญาที่ตั้งอยู่บนความจริงอันประเสริฐ" เป็นเสมือนสถานที่หรือสภาวะในจิตใจที่เต็มไปด้วยความรู้แจ้งและความดีงาม
+          <div style="margin-top: 12px; padding: 10px; background: rgba(212, 175, 55, 0.08); border-left: 3px solid var(--gold); border-radius: 4px; font-size: 12px; line-height: 1.45; color: var(--text);">
+            <strong>ความหมายรวมเชิงอุดมคติและธรรมศาสตร์:</strong> "วิมานแห่งความดีงามและปัญญาที่ตั้งอยู่บนความจริงอันประเสริฐอันปราศจากสิ่งชั่วร้ายและกิเลสทั้งปวง" เป็นเสมือนสถานที่และสภาวะในจิตใจที่เต็มไปด้วยความรู้แจ้งและความสัตย์ซื่ออย่างแท้จริง
           </div>
         </div>
 
