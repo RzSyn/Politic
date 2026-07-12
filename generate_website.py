@@ -488,6 +488,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section">
         <button class="db-tab-btn" onclick="switchTab('chakri-tab', this)">🏰 ราชวงศ์จักรี & รัตนโกสินทร์</button>
         <button class="db-tab-btn" onclick="switchTab('siripanya-tab', this)">📚 ห้องสมุดศิริปัญญาวิมารสัจ</button>
         <button class="db-tab-btn" onclick="switchTab('pms-tab', this)">ทำเนียบนายกรัฐมนตรี (๒๒ ท่าน)</button>
+        <button class="db-tab-btn" onclick="switchTab('goc-tab', this)">🌐 Global Outlandish Centre (GOC)</button>
         <button class="db-tab-btn" onclick="window.location.href='easy_summary.html'">📖 สรุปทุกมาตราแบบเข้าใจง่าย (แยกอีกหน้า)</button>
       </div>
     </div>
@@ -1157,6 +1158,316 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section">
       </div>
     </div>
 
+    <!-- Tab 8: Global Outlandish Centre (GOC) -->
+    <div id="goc-tab" class="db-tab-content">
+      <style scoped>
+        #goc-tab {{
+          padding: 10px 0;
+        }}
+        .goc-container {{
+          background: rgba(20, 24, 33, 0.4);
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          border-radius: 12px;
+          padding: 24px;
+          backdrop-filter: blur(10px);
+        }}
+        .goc-header-sec {{
+          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+          padding-bottom: 16px;
+          margin-bottom: 24px;
+          text-align: center;
+        }}
+        .goc-badge {{
+          display: inline-block;
+          background: rgba(239, 68, 68, 0.15);
+          color: #ef4444;
+          border: 1px solid rgba(239, 68, 68, 0.3);
+          font-size: 11px;
+          font-weight: 700;
+          padding: 4px 10px;
+          border-radius: 4px;
+          margin-bottom: 10px;
+          letter-spacing: 1.5px;
+        }}
+        .goc-section {{
+          border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+          padding-bottom: 24px;
+          margin-bottom: 24px;
+        }}
+        .goc-sec-title {{
+          color: var(--gold);
+          font-size: 17px;
+          font-weight: 600;
+          margin-bottom: 14px;
+          font-family: 'Outfit', sans-serif;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }}
+        .goc-logo-card {{
+          background: rgba(255, 255, 255, 0.02);
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          border-radius: 8px;
+          padding: 20px;
+          width: 280px;
+          text-align: center;
+          transition: transform 0.2s ease, border-color 0.2s ease;
+        }}
+        .goc-logo-card:hover {{
+          transform: translateY(-4px);
+          border-color: var(--accent-orange);
+        }}
+        .goc-logo-img {{
+          width: 140px;
+          height: 140px;
+          border-radius: 50%;
+          border: 2px solid rgba(255, 255, 255, 0.1);
+          margin-bottom: 14px;
+          background: #000;
+          object-fit: cover;
+        }}
+        .goc-logo-name {{
+          font-weight: 700;
+          color: var(--gold-light);
+          font-size: 15px;
+          margin-bottom: 8px;
+          font-family: 'Outfit', sans-serif;
+        }}
+        .goc-logo-desc {{
+          font-size: 12.5px;
+          color: var(--text-muted);
+          line-height: 1.4;
+        }}
+        .goc-struct-block {{
+          background: rgba(255, 255, 255, 0.015);
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          border-radius: 8px;
+          padding: 20px;
+          margin-bottom: 16px;
+        }}
+        .goc-struct-block ul {{
+          padding-left: 20px;
+          margin-bottom: 0;
+        }}
+        .goc-struct-block li {{
+          margin-bottom: 8px;
+          font-size: 14px;
+          line-height: 1.5;
+        }}
+        .division-block {{
+          display: flex;
+          flex-direction: column;
+        }}
+        .goc-rule {{
+          background: rgba(245, 158, 11, 0.08);
+          border-left: 3px solid #f59e0b;
+          padding: 12px;
+          border-radius: 4px;
+          font-size: 13px;
+          margin-top: 14px;
+          line-height: 1.5;
+        }}
+        .goc-timeline {{
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          position: relative;
+          padding-left: 24px;
+          margin-top: 14px;
+        }}
+        .goc-timeline::before {{
+          content: '';
+          position: absolute;
+          left: 6px;
+          top: 4px;
+          bottom: 4px;
+          width: 2px;
+          background: rgba(255, 255, 255, 0.08);
+        }}
+        .goc-timeline-item {{
+          position: relative;
+        }}
+        .goc-timeline-num {{
+          position: absolute;
+          left: -26px;
+          top: 2px;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          background: var(--accent-orange);
+          color: #000;
+          font-size: 10px;
+          font-weight: 800;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 0 8px var(--accent-orange);
+        }}
+        .goc-timeline-content {{
+          background: rgba(255,255,255,0.01);
+          border: 1px solid rgba(255,255,255,0.03);
+          padding: 14px;
+          border-radius: 6px;
+        }}
+      </style>
+
+      <div class="goc-container">
+        <div class="goc-header-sec">
+          <div class="goc-badge">CLASSIFIED // TOP SECRET</div>
+          <h3 style="color: var(--accent-orange); font-family: 'Outfit', sans-serif; font-size: 24px; margin-bottom: 8px;">GLOBAL OUTLANDISH CENTRE (GOC)</h3>
+          <p style="color: var(--text-muted); font-size: 14.5px; margin-bottom: 0;">สถาบันความมั่นคงและการทูตลับพิเศษเพื่อเฝ้าระวังภัยคุกคามผสมผสานระดับภูมิภาค (SEATO)</p>
+        </div>
+
+        <!-- History section -->
+        <div class="goc-section">
+          <h4 class="goc-sec-title">⏳ ประวัติการก่อตั้ง</h4>
+          <p style="margin-bottom: 12px; line-height: 1.6;"><strong>ปี พ.ศ. ๒๕๖๙</strong> — ภายหลังวิกฤตการแพร่ระบาดของไวรัสมายทีโอส (Myteos Virus) และความผันผวนของเสถียรภาพภูมิภาคจนนำไปสู่การเกิด <em>"ราชอาณาประชาชนลาว"</em> คณะผู้นำความมั่นคงสยามนำโดย <strong>พริษฐ์ วัชรสินธุ</strong> ร่วมกับพันธมิตรความมั่นคง <strong>SEATO</strong> ได้เล็งเห็นพ้องต้องกันว่าโลกยุคใหม่เผชิญหน้ากับภัยคุกคามที่ไม่ใช่รูปแบบดั้งเดิม ซึ่งไม่สามารถสกัดกั้นได้ด้วยเครื่องมือทางทหารหรือการทูตเพียงส่วนเดียว แต่ต้องการหน่วยงานการประสมประสานงานลับที่มีความยืดหยุ่นสูง ปฏิบัติการทหารและทูตไปพร้อมกันในเวลาเดียวกัน</p>
+          <p style="line-height: 1.6; margin-bottom: 0;">GOC จึงถูกสถาปนาขึ้นในฐานะ <strong>องค์กรลับสุดยอด</strong> ที่ไม่ปรากฏโครงสร้างหรือข้อมูลใด ๆ ในเอกสารสาธารณะของรัฐ ได้รับการหนุนหลังและจัดสรรทรัพยากรหลักโดย SEATO ภายใต้การนำหลักและแกนนำยุทธศาสตร์จากราชอาณาจักรไทย</p>
+        </div>
+
+        <!-- Logos section -->
+        <div class="goc-section">
+          <h4 class="goc-sec-title">🛡️ ตราสัญลักษณ์หน่วยงานปฏิบัติการ</h4>
+          <p style="margin-bottom: 16px;">ตราสัญลักษณ์ทั้งสองของแผนกแสดงความเป็นเอกภาพและความเป็นอันหนึ่งอันเดียวกันภายใต้ศูนย์บัญชาการร่วม (Joint Command) ผ่านสลักสัญลักษณ์ <strong>"สี่ดาวอาร์คด้านบน"</strong> เหนือเครื่องหมายปฏิบัติการหลัก:</p>
+          <div style="display: flex; gap: 24px; justify-content: center; flex-wrap: wrap;">
+            <div class="goc-logo-card">
+              <img src="goc_diplomacy_logo.png" alt="Diplomacy Division Logo" class="goc-logo-img">
+              <div class="goc-logo-name">Diplomacy Division</div>
+              <div class="goc-logo-desc">รูปมือจับประสานกัน สลักสีน้ำเงินและขาว พร้อมดาวอาร์คสี่ดวงด้านบน สื่อถึงภารกิจข่าวกรอง คลี่คลายข้อพิพาท และการเจรจาลับระดับสากล</div>
+            </div>
+            <div class="goc-logo-card">
+              <img src="goc_warfare_logo.png" alt="Warfare Division Logo" class="goc-logo-img">
+              <div class="goc-logo-name">Warfare Division</div>
+              <div class="goc-logo-desc">รูปนกอินทรีสยายปีกบิน สลักสีน้ำเงินและขาว พร้อมดาวอาร์คสี่ดวงด้านบน สื่อถึงภารกิจยุทธวิธี ปฏิบัติการฉับพลัน และแสนยานุภาพคุ้มกันภาคสนาม</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Structure section -->
+        <div class="goc-section">
+          <h4 class="goc-sec-title">🏛️ โครงสร้างปัจจุบัน (หลังการปฏิรูปโครงสร้างโดยคุณรักชนก ศรีนอก)</h4>
+          
+          <!-- Top Level command -->
+          <div class="goc-struct-block">
+            <h5 style="color: var(--accent-orange); font-size: 16px; margin-bottom: 12px; font-weight: 600;">👑 ระดับบนสุด | Joint Command</h5>
+            <ul style="margin-bottom: 0;">
+              <li><strong>ผู้บัญชาการสูงสุด (Supreme Commander):</strong> กุมอำนาจบริหารนโยบายและการอนุมัติทางยุทธวิธี รายงานสถานการณ์ตรงต่อ <strong>นายกรัฐมนตรีแห่งราชอาณาจักรไทย</strong> เท่านั้น และไม่เปิดเผยประวัติชื่อสู่สาธารณะเพื่อความปลอดภัยสูงสุด</li>
+              <li><strong>คณะกรรมการกำกับร่วม (Joint Oversight Board):</strong> ทำหน้าที่กลั่นกรอง ตรวจสอบการเบิกจ่าย และควบคุมปฏิบัติการของสองฝ่ายย่อย ประกอบด้วยตัวแทนสัดส่วนร่วมระหว่างไทยและ SEATO</li>
+              <li><strong>ที่ปรึกษาอิสระภายนอก:</strong> ดำรงตำแหน่งโดย <strong>ไตรทิศา</strong> ทำหน้าที่เป็นผู้ตรวจการอิสระเพื่อให้คำแนะนำในเชิงนโยบายและสกัดกั้นการใช้อำนาจล้นขอบเขต</li>
+            </ul>
+          </div>
+
+          <!-- Divisions Grid -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 16px;">
+            <div class="goc-struct-block division-block">
+              <h5 style="color: #60a5fa; font-size: 15px; margin-bottom: 12px; font-weight: 600; display: flex; align-items: center; gap: 8px;">
+                <span>🤝 แผนกที่ ๑ | Diplomacy Division</span>
+              </h5>
+              <p style="font-weight: 600; margin-bottom: 6px; font-size: 13.5px;">บทบาทหน้าที่หลัก:</p>
+              <ul style="font-size: 13px; margin-bottom: 12px;">
+                <li>จัดเก็บ จัดระเบียบข่าวกรอง และวิเคราะห์ประเมินระดับภัยคุกคาม</li>
+                <li>ทำภารกิจเจรจาลับข้ามแดนและเชื่อมต่อผลประโยชน์ต่างประเทศเพื่อยุติความขัดแย้ง</li>
+                <li>ติดตามภัยคุกคามรูปแบบใหม่ที่ไม่ใช่การทหารโดยตรง (เช่น สงครามโรค, สงครามสารสนเทศ)</li>
+                <li>เป็นผู้ประสานงานหลักระหว่างองค์การอนามัยโลก (WHO), คณะกรรมาธิการ SEATO และหน่วยงานสากล</li>
+              </ul>
+              <p style="font-weight: 600; margin-bottom: 6px; font-size: 13.5px;">ปฏิบัติการสำคัญที่ผ่านมา:</p>
+              <ul style="font-size: 13px; margin-bottom: 12px;">
+                <li>ตรวจพบเส้นเงินทุนน่าสงสัยจากต่างชาติในวิกฤตนิติประหารสภา และประสานส่งต่อให้ DSI และ กกต. ตามช่องทางปกติ</li>
+                <li>พบและสืบทราบพิกัดเบาะแสสมบูน แสงอาทิตย์ ณ เวียงจันทน์ ร่วมกับไตรทิศา</li>
+                <li>ติดตามสืบข่าวและประเมินสถานการณ์ราชอาณาประชาชนลาวมาโดยตลอดอย่างใกล้ชิด</li>
+              </ul>
+              <p class="goc-rule">⚠️ <strong>กฎเหล็กควบคุม:</strong> ห้ามเริ่มยุทธการภาคสนามใดๆ หากปราศจากการแจ้งและบันทึกในระบบศูนย์บัญชาการหลัก และต้องประสานแจ้งเตือนพิกัดต่อ Warfare Division เสมอก่อนเข้าพื้นที่สุ่มเสี่ยง ในภารกิจผสม Warfare Division ต้องทำหน้าที่และวางตัวภายใต้การกำกับของฝ่าย Diplomacy เสมอ</p>
+            </div>
+
+            <div class="goc-struct-block division-block">
+              <h5 style="color: #f87171; font-size: 15px; margin-bottom: 12px; font-weight: 600; display: flex; align-items: center; gap: 8px;">
+                <span>⚔️ แผนกที่ ๒ | Warfare Division</span>
+              </h5>
+              <p style="font-weight: 600; margin-bottom: 6px; font-size: 13.5px;">บทบาทหน้าที่หลัก:</p>
+              <ul style="font-size: 13px; margin-bottom: 12px;">
+                <li>วางแผน ยุทธวิธี ปฏิบัติการพิเศษติดอาวุธ และการปราบปรามในภาวะวิกฤต</li>
+                <li>ทำหน้าที่อารักขาและรักษาความปลอดภัยแก่คณะเจรจาฝ่าย Diplomacy ในการทำงานภาคสนาม</li>
+                <li>เตรียมแผนรับมือ สกัดกั้น และลดผลกระทบของภัยคุกคามทางกายภาพทุกรูปแบบ</li>
+              </ul>
+              <p class="goc-rule" style="background: rgba(239, 68, 68, 0.08); border-left-color: #ef4444;">⚠️ <strong>กฎเหล็กควบคุม:</strong> ห้ามเคลื่อนย้ายกำลังรบหรือสั่งกองทัพพิเศษจู่โจมโดยไม่ได้รับอนุมัติจาก Joint Command โดยตรงอย่างเด็ดขาด ฝ่ายเสนาธิการของ Warfare ไม่มีอำนาจในการประเมินและสั่งเคลื่อนพลด้วยตนเองอีกต่อไป และต้องปฏิบัติภารกิจภายใต้กรอบข้อตกลงของฝ่าย Diplomacy เสมอในการปฏิบัติหน้าที่ร่วมกัน</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reform Lessons -->
+        <div class="goc-section">
+          <h4 class="goc-sec-title">⚠️ บทเรียนที่ทำให้ต้องปฏิรูป (Lessons from Vientiane Crisis)</h4>
+          <div style="background: rgba(239, 68, 68, 0.08); border-left: 4px solid #ef4444; padding: 16px; border-radius: 6px;">
+            <p style="margin-bottom: 8px; font-weight: 600;">วิกฤตการณ์ ณ นครหลวงเวียงจันทน์:</p>
+            <p style="font-size: 13.5px; margin-bottom: 10px; line-height: 1.5;">ในระหว่างภารกิจค้นหาความจริง หัวหน้า Warfare Division ในขณะนั้นสั่งนำกำลังพลพร้อมอาวุธจำนวน ๑๒ นาย เข้าล้อมบ้านพักของสมบูน แสงอาทิตย์ โดยจงใจละเว้นไม่แจ้งรายงานต่อศูนย์หลักการสั่งการ และไม่แจ้งให้เจ้าหน้าที่ฝ่าย Diplomacy ซึ่งกำลังปฏิบัติภารกิจเจรจาลับอยู่ภายในอาคารได้รับทราบล่วงหน้า ส่งผลให้ภารกิจการเจรจาเกือบเสียหายรุนแรง</p>
+            <p style="font-size: 13.5px; margin-bottom: 10px; line-height: 1.5;"><strong>ผลการดำเนินการสืบสวน:</strong> หัวหน้าฝ่าย Warfare Division ดังกล่าวถูกสั่งปลดพ้นจากหน้าที่การควบคุมทันที และสั่งพักงานระหว่างการดำเนินกระบวนการไต่สวนทางวินัยอย่างเคร่งครัด</p>
+            <p style="font-size: 13.5px; margin-bottom: 0; font-weight: 600; color: var(--gold-light);">💡 บทเรียนเชิงอำนาจ: อำนาจการสั่งการกำลังพลติดอาวุธที่ปราศจากการควบคุม ตรวจสอบ และไร้ซึ่งการรับรู้ของส่วนกลาง ย่อมก่อให้เกิดภัยอันตรายที่ล่อแหลมยิ่งกว่าสงคราม</p>
+          </div>
+        </div>
+
+        <!-- Timeline operations -->
+        <div class="goc-section">
+          <h4 class="goc-sec-title">📅 บันทึกประวัติปฏิบัติการสำคัญตามลำดับเวลา</h4>
+          <div class="goc-timeline">
+            <div class="goc-timeline-item">
+              <div class="goc-timeline-num">๑</div>
+              <div class="goc-timeline-content">
+                <h5 style="color: var(--gold-light); font-size: 14px; margin-bottom: 4px;">ปฏิบัติการ สมบูน แสงอาทิตย์ (กู้สูตรยามายทีโอส)</h5>
+                <p style="font-size: 13px; margin-bottom: 0; line-height: 1.5;">ฝ่าย Diplomacy ร่วมมือกับไตรทิศาและกองกำลังราชพิทักษ์ ออกเจาะข่าวกรองและค้นพบเป้าหมายสมบูน แสงอาทิตย์ ผู้สร้าง Myteos Virus ณ นครหลวงเวียงจันทน์ และประสบความสำเร็จในการเจรจากดดันให้นำสูตรรักษาฉบับสมบูรณ์ร้อยเปอร์เซ็นต์ส่งมอบให้แก่ WHO และ GOC เพื่อผลิตแจกจ่าย อย่างไรก็ดี ได้เกิดความผิดพลาดจากการนำกำลังทหารพิเศษแอบแฝงจู่โจมของฝ่าย Warfare ซึ่งต่อมานำไปสู่การเปลี่ยนผ่านโครงสร้างการปฏิรูปควบคุม</p>
+              </div>
+            </div>
+            <div class="goc-timeline-item">
+              <div class="goc-timeline-num">๒</div>
+              <div class="goc-timeline-content">
+                <h5 style="color: var(--gold-light); font-size: 14px; margin-bottom: 4px;">ปฏิบัติการ นิติประหารสภา (แกะรอยสายเงินทรานแซกชั่น)</h5>
+                <p style="font-size: 13px; margin-bottom: 0; line-height: 1.5;">ฝ่าย Diplomacy ได้รับสัญญาณขอรับความช่วยเหลือเป็นการลับความมั่นคงจากแกนนำพรรคก้าวไกล ในการตรวจสอบความโปร่งใสและแกะรอยเส้นทางการเงินแปลกปลอมข้ามชาติที่ไหลเข้าสู่ระบบการเมืองเพื่อหวังผลยุบพรรคและชักนำ ส.ส. ฝ่ายตรวจสอบพบการโยกย้ายเงินอำพรางในพิกัดธนาคารสามประเทศ จึงนำพยานหลักฐานและข้อเท็จจริงส่งต่อให้แก่ DSI และ กกต. ดำเนินการคดีตามสิทธิ์ปกติ โดยไม่มีการใช้ชื่อขององค์กร GOC เผยแพร่แต่อย่างใด</p>
+              </div>
+            </div>
+            <div class="goc-timeline-item">
+              <div class="goc-timeline-num">๓</div>
+              <div class="goc-timeline-content">
+                <h5 style="color: var(--gold-light); font-size: 14px; margin-bottom: 4px;">ปฏิบัติการติดตามสถานการณ์ลาว</h5>
+                <p style="font-size: 13px; margin-bottom: 0; line-height: 1.5;">เป็นปฏิบัติการข่าวกรองระยะยาวในการเกาะติดและวิเคราะห์สถานการณ์ความคลี่คลายในดินแดนราชอาณาประชาชนลาวอย่างสมบูรณ์ นับตั้งแต่วาระการจัดตั้งการเลือกตั้งประชาธิปไตยรอบแรก ปัญหาสถาปนาอำนาจของนายแสงเพชร ไปจนถึงภารกิจความมั่นคงในการจัดกำลังพลคุ้มกันร่วมกับทีมราชพิทักษ์</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Current State under Rukchanok -->
+        <div class="goc-section">
+          <h4 class="goc-sec-title">📈 สถานะการดำเนินงานปัจจุบัน (ภายใต้การกำกับดูแลของ รักชนก ศรีนอก)</h4>
+          <p style="margin-bottom: 12px; line-height: 1.5;"><strong>คุณรักชนก ศรีนอก</strong> ในฐานะคณะบริหารฝ่ายยุทธศาสตร์ความมั่นคง ได้ลงนามกำชับให้ <strong>ไตรทิศา</strong> ร่วมออกแบบระบบและวางรากฐานกลไกควบคุมและตรวจสอบ GOC ให้มีความเป็นนิติธรรมและเป็นลายลักษณ์อักษรที่ชัดเจน โดยมาตรการควบคุมที่อยู่ระหว่างขั้นตอนการพัฒนามีดังนี้:</p>
+          <ul style="font-size: 13.5px;">
+            <li><strong>ระบบจัดทำรายงานตรวจสอบ (Clear Reporting Chain):</strong> ปรับปรุงระบบบันทึกยุทธการและการจัดทำรายงานปฏิบัติงานที่เป็นความลับเพื่อเสนอรายงานต่อบอร์ดกำกับและนายกรัฐมนตรีทุกสัปดาห์</li>
+            <li><strong>มาตรการป้องกันเครื่องมือการเมือง (Anti-Political Tooling):</strong> การจัดตั้งระบบการควบคุมความปลอดภัยข้อมูลข่าวสาร เพื่อสกัดการลักลอบนำเครื่องมือ GOC ไปใช้เพื่อผลประโยชน์ชิงเหลี่ยมทางการเมืองในรัฐสภา</li>
+            <li><strong>การฝึกอบรมวินัยภาคสนาม (Mandate Training):</strong> ปรับแนวทางอบรมหลักสูตรของเจ้าหน้าที่ฝ่าย Warfare Division ให้รับรู้ขอบเขตทางกฎหมาย ความมีวินัย และกรอบจำกัดการใช้อาวุธหรือการใช้ความรุนแรงกับพลเรือน</li>
+          </ul>
+        </div>
+
+        <!-- What GOC does not do -->
+        <div class="goc-section" style="border-bottom: none; padding-bottom: 0; margin-bottom: 0;">
+          <h4 class="goc-sec-title" style="color: var(--gold-light);">❌ ขอบเขตสิ่งที่ GOC ละเว้นและไม่กระทำ (Red Lines)</h4>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 12px;">
+            <div style="background: rgba(255,255,255,0.02); padding: 12px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.05); text-align: center;">
+              <div style="font-weight: 600; color: #f87171; margin-bottom: 4px; font-size: 13.5px;">ไม่แทรกแซงการเมืองภายใน</div>
+              <div style="font-size: 12px; color: var(--text-muted);">ละเว้นจากการเข้าร่วม หรือสอดแนมการทำกิจกรรมทางการเมืองโดยปกติของพรรคการเมืองในสยาม</div>
+            </div>
+            <div style="background: rgba(255,255,255,0.02); padding: 12px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.05); text-align: center;">
+              <div style="font-weight: 600; color: #f87171; margin-bottom: 4px; font-size: 13.5px;">ไม่เปิดตัวตนต่อสาธารณะ</div>
+              <div style="font-size: 12px; color: var(--text-muted);">รักษาความลับขั้นสูงสุดของชื่อองค์กร โลโก้ และบันทึกประวัติยุทธการทั้งหมด</div>
+            </div>
+            <div style="background: rgba(255,255,255,0.02); padding: 12px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.05); text-align: center;">
+              <div style="font-weight: 600; color: #f87171; margin-bottom: 4px; font-size: 13.5px;">ไม่เคลื่อนกำลังทหารเอง</div>
+              <div style="font-size: 12px; color: var(--text-muted);">ห้ามฝ่าย Warfare Division สั่งประเมินยุทธการแล้วส่งทหารติดอาวุธปฏิบัติการโดยพลการ</div>
+            </div>
+            <div style="background: rgba(255,255,255,0.02); padding: 12px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.05); text-align: center;">
+              <div style="font-weight: 600; color: #f87171; margin-bottom: 4px; font-size: 13.5px;">ไม่ออกปฏิบัติการโดยลำพัง</div>
+              <div style="font-size: 12px; color: var(--text-muted);">ทุกขั้นตอนการเคลื่อนย้ายเชิงยุทธการต้องรายงานและได้รับสัญญาณไฟเขียวจากนายกรัฐมนตรี</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>
 </section>'''
