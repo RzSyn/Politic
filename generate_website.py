@@ -1036,6 +1036,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section">
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
     <!-- Tab 6.5: ห้องสมุดศิริปัญญาวิมารสัจ -->
     <div id="siripanya-tab" class="db-tab-content">
