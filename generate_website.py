@@ -484,6 +484,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section">
         <button class="db-tab-btn" onclick="switchTab('constitutions-tab', this)">รัฐธรรมนูญ ๓ ฉบับหลัก</button>
         <button class="db-tab-btn" onclick="switchTab('early-const-tab', this)">รธน. ฉบับปฐมเวลา (๒๓๗๕)</button>
         <button class="db-tab-btn" onclick="switchTab('rama7-tab', this)">👑 พระประชาธิปมหาราช (ร.๗)</button>
+        <button class="db-tab-btn" onclick="switchTab('chakri-tab', this)">🏰 ราชวงศ์จักรี & รัตนโกสินทร์</button>
         <button class="db-tab-btn" onclick="switchTab('pms-tab', this)">ทำเนียบนายกรัฐมนตรี (๒๒ ท่าน)</button>
         <button class="db-tab-btn" onclick="window.location.href='easy_summary.html'">📖 สรุปทุกมาตราแบบเข้าใจง่าย (แยกอีกหน้า)</button>
       </div>
@@ -752,7 +753,59 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section">
       </div>
     </div>
 
-    <!-- Tab 6: ทำเนียบนายกรัฐมนตรี -->
+    <!-- Tab 6: ราชวงศ์จักรี & รัตนโกสินทร์ -->
+    <div id="chakri-tab" class="db-tab-content">
+      <div class="chakri-history" style="display: flex; gap: 24px; align-items: flex-start; flex-wrap: wrap; text-align: left;">
+        
+        <!-- ฝั่งซ้าย: ประวัติการสร้างกรุงเทพฯ & การเสื่อมของอยุธยา -->
+        <div style="flex: 1.2; min-width: 320px;">
+          <h3 style="color: var(--gold-light); margin-bottom: 16px; font-family: 'Outfit', sans-serif;">🏰 ประวัติการสถาปนากรุงรัตนโกสินทร์ (พ.ศ. ๒๒๓๒)</h3>
+          <div style="font-size: 14.5px; line-height: 1.65; color: var(--text);">
+            <p style="margin-bottom: 12px; text-indent: 2em;">
+              ในประวัติศาสตร์ของจักรวาลจำลองนี้ กรุงรัตนโกสินทร์ (กรุงเทพมหานคร) ถูกสถาปนาขึ้นเร็วกว่าประวัติศาสตร์จริงเกือบ ๑๐๐ ปี โดยจุดเริ่มต้นแห่งการเปลี่ยนแปลงเกิดขึ้นใน <strong>พ.ศ. ๒๒๓๒</strong> ภายหลังจากการเสด็จสวรรคตของสมเด็จพระนารายณ์มหาราชแห่งกรุงศรีอยุธยา
+            </p>
+            <p style="margin-bottom: 12px; text-indent: 2em;">
+              เมื่อสมเด็จพระนารายณ์มหาราชเสด็จสวรรคต ราชวงศ์บ้านพลูหลวงได้ขึ้นมาเสวยราชสมบัติครองกรุงศรีอยุธยาต่อเป็นลำดับถัดมา อย่างไรก็ดี พระบาทสมเด็จพระพุทธยอดฟ้าจุฬาโลกมหาราช (พระมหาจักรีกษัตริย์ รัชกาลที่ ๑ ในมิตินี้) ทรงเล็งเห็นว่าความขัดแย้งภายในราชสำนักและความระส่ำระสายทางการเมืองของกรุงศรีอยุธยาภายใต้ราชวงศ์ใหม่จะนำมาซึ่งความอ่อนแอ พระองค์จึงทรงตัดสินพระทัยพาไพร่พลและข้าราชบริพารแยกตัวลงใต้มาทางปากแม่น้ำเจ้าพระยาเพื่อสร้างเมืองหลวงแห่งใหม่
+            </p>
+            <p style="margin-bottom: 12px; text-indent: 2em;">
+              พระองค์ทรงเลือกชัยภูมิฝั่งตะวันออกของแม่น้ำเจ้าพระยาและทรงสถาปนา **กรุงรัตนโกสินทร์ (กรุงเทพมหานคร)** ขึ้นเป็นราชธานีแห่งใหม่ในปี <strong>พ.ศ. ๒๒๓๒</strong> ทรงปราบดาภิเษกเสด็จขึ้นครองสิริราชสมบัติเป็นองค์ปฐมกษัตริย์แห่งราชวงศ์จักรี เพื่อสถาปนาเสถียรภาพและความรุ่งเรืองบทใหม่ให้แก่แผ่นดินสยาม
+            </p>
+            <p style="margin-bottom: 12px; text-indent: 2em;">
+              ภายหลังจากการแยกตัวลงมาสร้างกรุงเทพฯ ได้เพียง ๑๐ ปี (ใน <strong>พ.ศ. ๒๒๔๒</strong>) กรุงศรีอยุธยาภายใต้การปกครองของราชวงศ์บ้านพลูหลวงที่เสื่อมอำนาจและขาดความสามัคคีภายในก็ล่มสลายลงอย่างสมบูรณ์ ทำให้ราชอาณาจักรรัตนโกสินทร์ภายใต้พระบารมีของราชวงศ์จักรีกลายเป็นราชธานีหลักเพียงหนึ่งเดียวของสยามประเทศที่สืบทอดความรุ่งเรืองและวิทยาการสืบต่อมา
+            </p>
+          </div>
+        </div>
+
+        <!-- ฝั่งขวา: สรุปไทม์ไลน์เหตุการณ์สำคัญ -->
+        <div style="flex: 0.8; min-width: 300px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(212, 175, 55, 0.15); border-radius: 12px; padding: 20px;">
+          <h3 style="color: var(--gold-light); margin-bottom: 16px; font-family: 'Outfit', sans-serif; font-size: 16px;">⏱️ ไทม์ไลน์สำคัญทางประวัติศาสตร์</h3>
+          
+          <div style="font-size: 13.5px; line-height: 1.6; color: var(--text-muted);">
+            <div style="margin-bottom: 16px; border-left: 2px solid var(--gold); padding-left: 12px;">
+              <strong style="color: var(--gold); display: block; font-size: 14.5px;">พ.ศ. ๒๒๓๑ - ๒๒๓๒</strong>
+              สมเด็จพระนารายณ์มหาราชเสด็จสวรรคต ราชวงศ์บ้านพลูหลวงเสวยราชสมบัติในอยุธยาต่อ
+            </div>
+            
+            <div style="margin-bottom: 16px; border-left: 2px solid var(--gold); padding-left: 12px;">
+              <strong style="color: var(--gold); display: block; font-size: 14.5px;">พ.ศ. ๒๒๓๒ (สถาปนากรุงเทพฯ)</strong>
+              รัชกาลที่ ๑ ทรงแยกตัวจากกรุงศรีอยุธยามาสถาปนากรุงรัตนโกสินทร์และก่อตั้งราชวงศ์จักรี ณ ชัยภูมิปากแม่น้ำเจ้าพระยาฝั่งตะวันออก
+            </div>
+            
+            <div style="margin-bottom: 16px; border-left: 2px solid var(--gold); padding-left: 12px;">
+              <strong style="color: var(--gold); display: block; font-size: 14.5px;">พ.ศ. ๒๒๔๒ (อยุธยาล่มสลาย)</strong>
+              ๑๐ ปีหลังจากกรุงรัตนโกสินทร์ก่อตั้ง กรุงศรีอยุธยาล่มสลายลงอย่างถาวรเนื่องจากความขัดแย้งภายในราชวงศ์บ้านพลูหลวงและการสู้รบภายนอก
+            </div>
+
+            <div style="background: rgba(212, 175, 55, 0.06); border-left: 3px solid var(--gold); padding: 10px 14px; border-radius: 4px; color: var(--text); margin-top: 20px; font-size: 13px;">
+              <strong>หมายเหตุประวัติศาสตร์:</strong> การย้ายราชธานีที่รวดเร็วนี้ส่งผลให้สยามประเทศสามารถอนุรักษ์ตึกรามบ้านช่อง ศิลปวิทยาการ เอกสารโบราณ และบุคคลผู้มีความรู้จากอยุธยาลงมาได้เกือบทั้งหมด ทำให้รัตนโกสินทร์เติบโตด้วยความพร้อมสูงสุดและพัฒนาเทคโนโลยีทางการแพทย์จนก้าวสู่ระดับผู้นำของโลกในเวลาต่อมา
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Tab 7: ทำเนียบนายกรัฐมนตรี -->
     <div id="pms-tab" class="db-tab-content">
       <p style="margin-bottom: 16px; font-size: 15px; color: var(--text-muted);">
         ทำเนียบนายกรัฐมนตรีทั้ง ๒๒ คนของประเทศไทย ทุกท่านมาจากการเลือกตั้งตามครรลองประชาธิปไตย (ไม่มีรัฐประหาร):
