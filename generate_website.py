@@ -1029,7 +1029,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section">
           <h3 style="color: var(--gold-light); margin-bottom: 16px; font-family: 'Outfit', sans-serif;">📚 ตำนานและคลังปัญญา "ห้องสมุดศิริปัญญาวิมารสัจ"</h3>
           <div style="font-size: 14.5px; line-height: 1.65; color: var(--text);">
             <p style="margin-bottom: 12px; text-indent: 2em;">
-              <strong>ห้องสมุดศิริปัญญาวิมารสัจ</strong> (แปลความหมายว่า <em>"หอไตรอันเป็นวิมานแห่งปัญญาอันประเสริฐและสัจจะ"</em>) ตั้งอยู่ ณ เขตพระราชฐานชั้นใน พระบรมมหาราชวัง กรุงเทพมหานคร สยามประเทศ หอสมุดแห่งนี้ไม่ใช่เพียงแต่เก็บรักษาราชสารและบันทึกประวัติศาสตร์ของไทยเท่านั้น แต่ยังเป็นที่ประดิษฐานของมรดกทางปัญญาที่ยิ่งใหญ่ที่สุดของมนุษยชาติ
+              <strong>ห้องสมุดศิริปัญญาวิมารสัจ</strong> (แปลความหมายเชิงอุดมคติว่า <em>"วิมานแห่งความดีงามและปัญญาที่ตั้งอยู่บนความจริงอันประเสริฐ"</em> อันเป็นเสมือนสถานที่หรือสภาวะในจิตใจที่เต็มไปด้วยความรู้แจ้งและความดีงาม) ตั้งอยู่ ณ เขตพระราชฐานชั้นใน พระบรมมหาราชวัง กรุงเทพมหานคร สยามประเทศ หอสมุดแห่งนี้ไม่ใช่เพียงแต่เก็บรักษาราชสารและบันทึกประวัติศาสตร์ของไทยเท่านั้น แต่ยังเป็นที่ประดิษฐานของมรดกทางปัญญาที่ยิ่งใหญ่ที่สุดของมนุษยชาติ
             </p>
             <p style="margin-bottom: 12px; text-indent: 2em;">
               ตามบันทึกหลวงระบุว่า ในอดีตยุคโบราณก่อนคริสตศักราช นักเดินทางค้าสำเภาและราชทูตโบราณของสยามได้เดินทางไกลไปถึงอาณาจักรเมดิเตอร์เรเนียน และได้ร่วมมือกับเหล่านักปราชญ์ อาลักษณ์ชาวไอยคุปต์ (อียิปต์โบราณ) และกรีก ทำการถอดแบบคัดลอก แปลตำรา และเก็บกู้ม้วนคัมภีร์สำคัญจาก <strong>หอสมุดอเล็กซานเดรีย (Library of Alexandria)</strong> ก่อนที่หอสมุดดังกล่าวจะถูกเพลิงเผาทำลายและสูญหายไปจากโลกตะวันตก
@@ -1047,7 +1047,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section">
         <div style="flex: 0.8; min-width: 300px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(212, 175, 55, 0.15); border-radius: 12px; padding: 20px;">
           <h3 style="color: var(--gold-light); margin-bottom: 16px; font-family: 'Outfit', sans-serif; font-size: 16px;">📜 หมวดเอกสารล้ำค่าพิเศษ (Special Collections)</h3>
           
-          <div style="font-size: 13.5px; line-height: 1.6; color: var(--text-muted);">
+          <div style="font-size: 13.5px; line-height: 1.6; color: var(--text-muted); margin-bottom: 16px;">
             <div style="margin-bottom: 14px; border-left: 2px solid var(--gold); padding-left: 12px;">
               <strong style="color: var(--gold); display: block; font-size: 14.5px;">๑. มหาม้วนคัมภีร์อเล็กซานเดรียกู้ชีพ (Alexandria Recovery Scrolls)</strong>
               เอกสารคำนวณเรขาคณิตของยูคลิด ตำราฟิสิกส์และดาราศาสตร์ของอริสโตเติล และทฤษฎีการแพทย์ธรรมชาติของฮิปโปกราตีสและเกเลนฉบับแปลสมบูรณ์แบบดั้งเดิมที่โลกตะวันตกไม่มีเหลืออยู่แล้ว
@@ -1063,9 +1063,32 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section">
               ตำรากฎหมายเปรียบเทียบจากทวีปต่าง ๆ กฎระเบียบจรรยาบรรณ และบันทึกรากฐานระบอบสภาสามัญชน เพื่อความยุติธรรมและความเท่าเทียมของแผ่นดิน
             </div>
 
-            <div style="background: rgba(212, 175, 55, 0.06); border-left: 3px solid var(--gold); padding: 10px 14px; border-radius: 4px; color: var(--text); margin-top: 16px; font-size: 12.5px; line-height: 1.4;">
+            <div style="background: rgba(212, 175, 55, 0.06); border-left: 3px solid var(--gold); padding: 10px 14px; border-radius: 4px; color: var(--text); font-size: 12.5px; line-height: 1.4;">
               <strong>การดูแลรักษา:</strong> คลังคัมภีร์ได้รับการอนุรักษ์ภายใต้กล่องบรรจุก๊าซเฉื่อยเพื่อป้องกันการเสื่อมสภาพของม้วนกระดาษปาปิรัสและใบลานโบราณ โดยปัจจุบันได้จัดทำเป็น <em>ระบบเอกสารดิจิทัลแบบโฮโลแกรม (Holographic Archives)</em> สำหรับข้าราชบริพารและนักศึกษาทุนหลวงในการใช้ศึกษาค้นคว้าวิจัย
             </div>
+          </div>
+
+          <h4 style="color: var(--gold); margin-bottom: 12px; font-weight: 600; font-size: 14.5px;">🔍 ถอดความหมายชื่อ "ศิริปัญญาวิมารสัจ"</h4>
+          <table style="width: 100%; border-collapse: collapse; font-size: 13px; line-height: 1.7;">
+            <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+              <td style="padding: 5px 0; color: var(--gold-light); font-weight: 500; width: 90px;">ศิริ (สิริ)</td>
+              <td style="padding: 5px 0; color: var(--text);">ความดีงาม, ความเจริญรุ่งเรือง, ศรีสง่า, มิ่งขวัญ</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+              <td style="padding: 5px 0; color: var(--gold-light); font-weight: 500;">ปัญญา</td>
+              <td style="padding: 5px 0; color: var(--text);">ความรอบรู้, ความฉลาด, การรู้เท่าทัน</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+              <td style="padding: 5px 0; color: var(--gold-light); font-weight: 500;">วิมาน</td>
+              <td style="padding: 5px 0; color: var(--text);">ที่อยู่อันวิจิตรของเทวดา, แดนทิพย์</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+              <td style="padding: 5px 0; color: var(--gold-light); font-weight: 500;">สัจ (สัจจะ)</td>
+              <td style="padding: 5px 0; color: var(--text);">ความจริงแท้, ความสัตย์ซื่อ</td>
+            </tr>
+          </table>
+          <div style="margin-top: 12px; padding: 10px; background: rgba(212, 175, 55, 0.08); border-left: 3px solid var(--gold); border-radius: 4px; font-size: 12.5px; line-height: 1.45; color: var(--text);">
+            <strong>ความหมายรวม:</strong> "วิมานแห่งความดีงามและปัญญาที่ตั้งอยู่บนความจริงอันประเสริฐ" เป็นเสมือนสถานที่หรือสภาวะในจิตใจที่เต็มไปด้วยความรู้แจ้งและความดีงาม
           </div>
         </div>
 
