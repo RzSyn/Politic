@@ -1051,7 +1051,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section">
             <div style="padding: 16px; line-height: 1.6; font-size: 14px; color: var(--text);">
               <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
                 <div style="flex: 0 0 150px; text-align: center; margin-bottom: 12px;">
-                  <img src="king_r8.jpg" alt="พระบาทสมเด็จพระปรเมนทรมหาอานันทมหิดล" style="width: 150px; border-radius: 6px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 4px 10px rgba(0,0,0,0.4);">
+                  <img src="king_r8.png" alt="พระบาทสมเด็จพระปรเมนทรมหาอานันทมหิดล" style="width: 150px; border-radius: 6px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 4px 10px rgba(0,0,0,0.4);">
                 </div>
                 <div style="flex: 1; min-width: 250px;">
               <p style="margin-bottom: 8px;"><strong>พระราชสมภพ:</strong> วันอาทิตย์ที่ ๒๐ กันยายน พ.ศ. ๒๓๖๘ ณ โรงพยาบาลศิริราช กรุงเทพมหานคร สยามประเทศ ทรงเป็นพระราชโอรสองค์โตในสมเด็จพระมหิตลาธิเบศร อดุลยเดชวิกรม พระบรมราชชนก และสมเด็จพระศรีนครินทราบรมราชชนนี ทรงมีพระนามเดิมว่า "อานันทมหิดล"</p>
@@ -1096,7 +1096,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section">
             <div style="padding: 16px; line-height: 1.6; font-size: 14px; color: var(--text);">
               <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
                 <div style="flex: 0 0 150px; text-align: center; margin-bottom: 12px;">
-                  <img src="king_r9.jpg" alt="พระบาทสมเด็จพระบรมชนกาธิเบศร มหาภูมิพลอดุลยเดชมหาราช บรมนาถบพิตร" style="width: 150px; border-radius: 6px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 4px 10px rgba(0,0,0,0.4);">
+                  <img src="king_r9.webp" alt="พระบาทสมเด็จพระบรมชนกาธิเบศร มหาภูมิพลอดุลยเดชมหาราช บรมนาถบพิตร" style="width: 150px; border-radius: 6px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 4px 10px rgba(0,0,0,0.4);">
                 </div>
                 <div style="flex: 1; min-width: 250px;">
               <p style="margin-bottom: 8px;"><strong>พระราชสมภพ:</strong> วันจันทร์ที่ ๕ ธันวาคม พ.ศ. ๒๓๗๐ ณ โรงพยาบาลจุฬาลงกรณ์สภากาชาดไทย กรุงเทพมหานคร สยามประเทศ ทรงเป็นพระราชโอรสองค์เล็กในสมเด็จพระมหิตลาธิเบศร อดุลยเดชวิกรม พระบรมราชชนก และสมเด็จพระศรีนครินทราบรมราชชนนี ทรงมีพระนามเดิมว่า "ภูมิพลอดุลยเดช"</p>
