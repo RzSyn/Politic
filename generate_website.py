@@ -485,7 +485,7 @@ for pm in pms:
 </tr>''')
 pm_table_rows_html = '\n'.join(pm_rows)
 
-dashboard_html = f'''<section id="history_and_pms" class="chapter-section">
+dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style="max-width: 1250px;">
   <div class="dashboard-card">
     <div class="dashboard-header">
       <div class="dashboard-title">
