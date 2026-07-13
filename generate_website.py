@@ -478,10 +478,10 @@ for pm in pms:
       <img src="{img_filename}" alt="{name_str}" style="width: 100%; height: 100%; object-fit: cover;">
     </div>
   </td>
-  <td style="white-space: nowrap;"><span style="color: var(--gold-light); font-size: 14.5px; font-weight: 600;">{name_display}</span></td>
-  <td style="text-align: center; white-space: nowrap;">{years_str}</td>
-  <td style="white-space: nowrap;"><span class="era-badge {era_class}">{era_str}</span></td>
-  <td style="font-size: 13.5px; line-height: 1.6; color: var(--text-muted); padding: 12px 16px;">{note_str}</td>
+  <td style="padding: 12px 8px; vertical-align: middle;"><span style="color: var(--gold-light); font-size: 14px; font-weight: 600; display: block; line-height: 1.3; word-break: keep-all;">{name_display}</span></td>
+  <td style="text-align: center; padding: 12px 4px; vertical-align: middle; font-size: 13.5px;">{years_str}</td>
+  <td style="padding: 12px 6px; vertical-align: middle;"><span class="era-badge {era_class}" style="display: inline-block; white-space: normal; line-height: 1.3; font-size: 12px; padding: 4px 8px; text-align: center;">{era_str}</span></td>
+  <td style="font-size: 13.5px; line-height: 1.5; color: var(--text-muted); padding: 12px 16px; vertical-align: middle;">{note_str}</td>
 </tr>''')
 pm_table_rows_html = '\n'.join(pm_rows)
 
@@ -1232,12 +1232,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         <table class="styled-table">
           <thead>
             <tr>
-              <th style="width: 50px; text-align: center; white-space: nowrap;">ลำดับ</th>
-              <th style="width: 100px; text-align: center; white-space: nowrap;">ภาพพอร์ตเทรต</th>
-              <th style="width: 180px; white-space: nowrap;">นายกรัฐมนตรี</th>
-              <th style="width: 120px; text-align: center; white-space: nowrap;">ปีดำรงตำแหน่ง (พ.ศ.)</th>
-              <th style="width: 160px; white-space: nowrap;">ยุครัฐธรรมนูญ</th>
-              <th style="min-width: 400px;">หมายเหตุ / ผลงานสำคัญ</th>
+              <th style="width: 50px; text-align: center;">ลำดับ</th>
+              <th style="width: 100px; text-align: center;">ภาพพอร์ตเทรต</th>
+              <th style="width: 150px;">นายกรัฐมนตรี</th>
+              <th style="width: 100px; text-align: center;">ปีดำรงตำแหน่ง</th>
+              <th style="width: 140px;">ยุครัฐธรรมนูญ</th>
+              <th>หมายเหตุ / ผลงานสำคัญ</th>
             </tr>
           </thead>
           <tbody>
