@@ -490,7 +490,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section">
         <button class="db-tab-btn" onclick="switchTab('pms-tab', this)">ทำเนียบนายกรัฐมนตรี (๒๒ ท่าน)</button>
         <button class="db-tab-btn" onclick="switchTab('goc-tab', this)">🌐 Global Outlandish Centre (GOC)</button>
         <button class="db-tab-btn" onclick="switchTab('geopolitics-tab', this)">🌍 ภูมิรัฐศาสตร์โลก</button>
-        <button class="db-tab-btn" onclick="switchTab('traitisa-tab', this)">👤 ไตรทิศา รณปวัตน์</button>
+        <button class="db-tab-btn" onclick="switchTab('figures-tab', this)">👤 บุคคลสำคัญ</button>
         <button class="db-tab-btn" onclick="window.location.href='easy_summary.html'">📖 สรุปทุกมาตราแบบเข้าใจง่าย (แยกอีกหน้า)</button>
       </div>
     </div>
@@ -1012,6 +1012,10 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section">
                 <p style="font-size: 13.5px; line-height: 1.6; color: var(--text-muted); margin-bottom: 10px; text-indent: 2em;">
                   ราวกลางรัชสมัย หลวงประดิษฐ์มนูธรรมได้จัดทำ "สมุดปกเหลือง" อันเป็นข้อเสนอทางเศรษฐกิจการเมืองแนวประชาธิปไตยสังคมนิยม ซึ่งเรียกร้องให้ลดทอนพระราชอำนาจของสถาบันพระมหากษัตริย์ลงอย่างมากและมีแนวทางเหมือนสตาลินที่เป็นคอมมิวนิสต์แม้ปรีดีจะอ้างว่าเป็นประชาธิปไตยสังคมนิยม เพื่อนำเสนอตรงต่อพระองค์เองเป็นการเฉพาะ (ต่างจากประวัติศาสตร์จริงที่เสนอผ่านคณะรัฐมนตรี) ด้วยหวังว่าจะได้รับการยอมรับโดยตรงจากสถาบันฯ ทว่าพระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัวทรงปฏิเสธข้อเสนอนี้อย่างเด็ดขาดต่อหน้า ด้วยทรงเห็นว่าเกินกว่าที่ระบอบราชาธิปไตยภายใต้รัฐธรรมนูญจะยอมรับได้ การถูกปฏิเสธเช่นนี้สร้างความอัปยศและความคับข้องใจอย่างลึกซึ้งแก่หลวงประดิษฐ์มนูธรรม
                 </p>
+                <div style="text-align: center; margin: 16px auto; max-width: 500px;">
+                  <img src="white_paper.jpg" alt="สมุดปกขาว ประชาธิปก ๒๔๙๐" style="width: 100%; max-height: 480px; object-fit: contain; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease;">
+                  <div style="font-size: 12px; color: var(--text-muted); margin-top: 8px; font-style: italic;">ภาพประกอบ: หน้าเอกสาร สมุดปกขาว (ประชาธิปก) พ.ศ. ๒๔๙๐ จากหอจดหมายเหตุศิริปัญญาวิมารสัจ</div>
+                </div>
                 <p style="font-size: 13.5px; line-height: 1.6; color: var(--text-muted); margin-bottom: 10px; text-indent: 2em;">
                   แม้จะพ่ายในเชิงนโยบาย แต่ฐานอำนาจและเครือข่ายของเขากลับแข็งแกร่งขึ้นเรื่อยมา จนได้รับการโปรดเกล้าฯ เลื่อนบรรดาศักดิ์เป็น เจ้าพระยาประดิษฐ์มนูธรรม ในช่วงปลายรัชกาล ซึ่งเป็นช่วงเวลาเดียวกับที่กลุ่มของเขาเริ่มพยายามขยายอำนาจทางการเมืองในระบบราชการและรัฐสภาอย่างเข้มข้น จนกลายเป็นชนวนความขัดแย้งสำคัญที่นำไปสู่การตัดสินพระราชหฤทัยสละราชสมบัติของรัชกาลที่ ๗ ในปี พ.ศ. ๒๓๙๔ ดังปรากฏในพระราชดำรัสอันเลื่องชื่อว่าไม่ทรงยินยอมยกอำนาจให้แก่ "ผู้ใด คณะใด โดยเฉพาะ" อันเป็นการพาดพิงถึงกลุ่มเจ้าพระยาประดิษฐ์มนูธรรมโดยตรง
                 </p>
@@ -1590,10 +1594,10 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section">
       </div>
     </div>
 
-    <!-- Tab 10: ไตรทิศา รณปวัตน์ -->
-    <div id="traitisa-tab" class="db-tab-content">
+    <!-- Tab 10: บุคคลสำคัญ -->
+    <div id="figures-tab" class="db-tab-content">
       <style scoped>
-        #traitisa-tab {{
+        #figures-tab {{
           padding: 10px 0;
         }}
         .tri-container {{
@@ -1684,8 +1688,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section">
 
       <div class="tri-container">
         <div class="tri-header">
-          <h3 style="color: var(--accent-orange); font-family: 'Outfit', sans-serif; font-size: 24px; margin-bottom: 8px;">👤 บุคคลสำคัญร่วมสมัย | ไตรทิศา รณปวัตน์ (ชินวัตร)</h3>
-          <p style="color: var(--text-muted); font-size: 14.5px; margin-bottom: 0;">นักการเมืองผู้เผชิญการล้มลุกคลี่คลาย ผู้นำนิกายสนธิปัญญา และรองนายกรัฐมนตรีผู้สร้างสันติสุขชายแดนใต้</p>
+          <h3 style="color: var(--accent-orange); font-family: 'Outfit', sans-serif; font-size: 24px; margin-bottom: 8px;">👤 บุคคลสำคัญร่วมสมัย (Contemporary Key Figures)</h3>
+          <p style="color: var(--text-muted); font-size: 14.5px; margin-bottom: 0;">ประวัติและบทบาทของบุคคลสำคัญผู้มีส่วนร่วมในการสร้างการเปลี่ยนแปลงและขับเคลื่อนความสมานฉันท์ของชาติ</p>
         </div>
 
         <div class="tri-layout">
