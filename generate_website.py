@@ -448,6 +448,41 @@ for idx, ch in enumerate(early_constitution):
 
 early_constitution_accordion_html = '\n'.join(early_html_parts)
 
+
+def hex_to_rgb(hex_str):
+    hex_str = hex_str.lstrip('#')
+    return f"{int(hex_str[0:2], 16)}, {int(hex_str[2:4], 16)}, {int(hex_str[4:6], 16)}"
+
+def get_party_html(num):
+    parties = {
+        1: ("อิสระ", "#6B7280", '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 4px; vertical-align: middle;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>'),
+        2: ("อิสระ", "#6B7280", '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 4px; vertical-align: middle;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>'),
+        3: ("อิสระ", "#6B7280", '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 4px; vertical-align: middle;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>'),
+        4: ("ไทยรักไทย", "#E02424", '<svg width="12" height="12" viewBox="0 0 24 24" fill="#EF4444" style="margin-right: 4px; vertical-align: middle;"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>'),
+        5: ("อิสระ", "#6B7280", '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 4px; vertical-align: middle;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>'),
+        6: ("ประชาธิปัตย์", "#3B82F6", '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 4px; vertical-align: middle;"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>'),
+        7: ("ประชาธิปัตย์", "#3B82F6", '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 4px; vertical-align: middle;"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>'),
+        8: ("กิจสังคม", "#F59E0B", '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 4px; vertical-align: middle;"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>'),
+        9: ("อิสระ", "#6B7280", '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 4px; vertical-align: middle;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>'),
+        10: ("ประชาธิปัตย์", "#3B82F6", '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 4px; vertical-align: middle;"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>'),
+        11: ("ชาติไทย", "#EC4899", '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 4px; vertical-align: middle;"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"/></svg>'),
+        12: ("ความหวังใหม่", "#10B981", '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 4px; vertical-align: middle;"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>'),
+        13: ("ประชาธิปัตย์", "#3B82F6", '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 4px; vertical-align: middle;"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>'),
+        14: ("ชาติพัฒนา", "#F97316", '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 4px; vertical-align: middle;"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>'),
+        15: ("รวมไทยสร้างชาติ", "#3F83F8", '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 4px; vertical-align: middle;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>'),
+        16: ("อนาคตใหม่", "#FF4F00", '<svg width="12" height="12" viewBox="0 0 24 24" fill="#FF4F00" style="margin-right: 4px; vertical-align: middle;"><polygon points="6 2 18 12 6 22 6 2"/></svg>'),
+        17: ("ก้าวไกล", "#FF4F00", '<svg width="12" height="12" viewBox="0 0 24 24" fill="#FF4F00" style="margin-right: 4px; vertical-align: middle;"><polygon points="4 2 14 12 4 22 4 2"/><polygon points="12 2 22 12 12 22 12 2"/></svg>'),
+        18: ("ก้าวไกล", "#FF4F00", '<svg width="12" height="12" viewBox="0 0 24 24" fill="#FF4F00" style="margin-right: 4px; vertical-align: middle;"><polygon points="4 2 14 12 4 22 4 2"/><polygon points="12 2 22 12 12 22 12 2"/></svg>'),
+        19: ("ก้าวไกล", "#FF4F00", '<svg width="12" height="12" viewBox="0 0 24 24" fill="#FF4F00" style="margin-right: 4px; vertical-align: middle;"><polygon points="4 2 14 12 4 22 4 2"/><polygon points="12 2 22 12 12 22 12 2"/></svg>'),
+        20: ("ก้าวไกล", "#FF4F00", '<svg width="12" height="12" viewBox="0 0 24 24" fill="#FF4F00" style="margin-right: 4px; vertical-align: middle;"><polygon points="4 2 14 12 4 22 4 2"/><polygon points="12 2 22 12 12 22 12 2"/></svg>'),
+        21: ("ประชาปฏิวัติ", "#DC2626", '<svg width="12" height="12" viewBox="0 0 24 24" fill="#DC2626" style="margin-right: 4px; vertical-align: middle;"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>'),
+        22: ("ก้าวไกล", "#FF4F00", '<svg width="12" height="12" viewBox="0 0 24 24" fill="#FF4F00" style="margin-right: 4px; vertical-align: middle;"><polygon points="4 2 14 12 4 22 4 2"/><polygon points="12 2 22 12 12 22 12 2"/></svg>')
+    }
+    name, color, svg = parties.get(num, ("อิสระ", "#6B7280", ""))
+    
+    badge_style = f"display: inline-flex; align-items: center; justify-content: center; background: rgba({hex_to_rgb(color)}, 0.12); border: 1.2px solid {color}55; color: {color}; padding: 4px 8px; border-radius: 6px; font-size: 12px; font-weight: 600; font-family: \'Inter\', \'Outfit\', sans-serif;"
+    return f'<span style="{badge_style}">{svg}{name}</span>'
+
 # Render PM table rows
 def format_pm_name_html(name, is_bold):
     main_name = name
@@ -488,6 +523,7 @@ for pm in pms:
     
     is_bold = pm['num'] in [4, 13, 14, 16, 17, 18, 19, 20, 21, 22]
     name_display = format_pm_name_html(pm['name'], is_bold)
+    party_html = get_party_html(pm['num'])
         
     img_filename = f"pm{pm['num']}.jpg"
     if pm['num'] == 4:
@@ -505,6 +541,7 @@ for pm in pms:
     </div>
   </td>
   <td style="padding: 12px 8px; vertical-align: middle; min-width: 120px;"><span style="color: var(--gold-light); font-size: 14px; font-weight: 600; display: block; line-height: 1.3; word-break: normal;">{name_display}</span></td>
+  <td style="text-align: center; padding: 12px 4px; vertical-align: middle;">{party_html}</td>
   <td style="text-align: center; padding: 12px 4px; vertical-align: middle; font-size: 13.5px;">{years_str}</td>
   <td style="padding: 12px 6px; vertical-align: middle;"><span class="era-badge {era_class}" style="display: inline-block; white-space: normal; line-height: 1.3; font-size: 12px; padding: 4px 8px; text-align: center;">{era_str}</span></td>
   <td style="font-size: 13.5px; line-height: 1.5; color: var(--text-muted); padding: 12px 16px; vertical-align: middle;">{note_str}</td>
@@ -1260,7 +1297,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             <tr>
               <th style="width: 50px; text-align: center;">ลำดับ</th>
               <th style="width: 100px; text-align: center;">ภาพพอร์ตเทรต</th>
-              <th style="width: 150px;">นายกรัฐมนตรี</th>
+              <th style="width: 140px;">นายกรัฐมนตรี</th>
+              <th style="width: 130px; text-align: center;">พรรคการเมือง</th>
               <th style="width: 100px; text-align: center;">ปีดำรงตำแหน่ง</th>
               <th style="width: 140px;">ยุครัฐธรรมนูญ</th>
               <th>หมายเหตุ / ผลงานสำคัญ</th>
