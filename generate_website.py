@@ -480,9 +480,12 @@ def get_party_html(num):
     }
     name, color, filename = parties.get(num, ("อิสระ", "#9CA3AF", ""))
     
-    logo_style = f"width: 64px; height: 64px; display: flex; align-items: center; justify-content: center; background: rgba({hex_to_rgb(color)}, 0.1); border: 1.2px solid {color}33; border-radius: 12px; padding: 6px; box-sizing: border-box; margin: 0 auto 6px auto;"
+    if num in [6, 7, 10, 11, 13]:
+        logo_style = f"width: 256px; height: 256px; display: flex; align-items: center; justify-content: center; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.95); border-radius: 16px; padding: 12px; box-sizing: border-box; margin: 0 auto 8px auto; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"
+    else:
+        logo_style = f"width: 256px; height: 256px; display: flex; align-items: center; justify-content: center; background: rgba({hex_to_rgb(color)}, 0.08); border: 1.2px solid {color}25; border-radius: 16px; padding: 8px; box-sizing: border-box; margin: 0 auto 8px auto;"
     img_style = "max-width: 100%; max-height: 100%; object-fit: contain;"
-    text_style = f"display: block; font-size: 11.5px; font-weight: 700; color: {color}; letter-spacing: 0.2px; font-family: \'Inter\', \'Outfit\', sans-serif;"
+    text_style = f"display: block; font-size: 12px; font-weight: 700; color: {color}; letter-spacing: 0.2px; font-family: \'Inter\', \'Outfit\', sans-serif;"
     
     return f'<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;"><div style="{logo_style}"><img src="{filename}" alt="{name}" style="{img_style}"></div><span style="{text_style}">{name}</span></div>'
 
@@ -1301,7 +1304,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <th style="width: 50px; text-align: center;">ลำดับ</th>
               <th style="width: 100px; text-align: center;">ภาพพอร์ตเทรต</th>
               <th style="width: 140px;">นายกรัฐมนตรี</th>
-              <th style="width: 130px; text-align: center;">พรรคการเมือง</th>
+              <th style="width: 280px; text-align: center;">พรรคการเมือง</th>
               <th style="width: 100px; text-align: center;">ปีดำรงตำแหน่ง</th>
               <th style="width: 140px;">ยุครัฐธรรมนูญ</th>
               <th>หมายเหตุ / ผลงานสำคัญ</th>
