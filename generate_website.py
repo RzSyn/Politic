@@ -480,9 +480,9 @@ def get_party_html(num):
     }
     name, color, filename = parties.get(num, ("อิสระ", "#9CA3AF", ""))
     
-    logo_style = f"width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; background: rgba({hex_to_rgb(color)}, 0.12); border: 1.2px solid {color}44; border-radius: 8px; padding: 4px; box-sizing: border-box; margin: 0 auto 4px auto;"
+    logo_style = f"width: 64px; height: 64px; display: flex; align-items: center; justify-content: center; background: rgba({hex_to_rgb(color)}, 0.1); border: 1.2px solid {color}33; border-radius: 12px; padding: 6px; box-sizing: border-box; margin: 0 auto 6px auto;"
     img_style = "max-width: 100%; max-height: 100%; object-fit: contain;"
-    text_style = f"display: block; font-size: 11px; font-weight: 700; color: {color}; letter-spacing: 0.2px; font-family: \'Inter\', \'Outfit\', sans-serif;"
+    text_style = f"display: block; font-size: 11.5px; font-weight: 700; color: {color}; letter-spacing: 0.2px; font-family: \'Inter\', \'Outfit\', sans-serif;"
     
     return f'<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;"><div style="{logo_style}"><img src="{filename}" alt="{name}" style="{img_style}"></div><span style="{text_style}">{name}</span></div>'
 
