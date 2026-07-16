@@ -2224,7 +2224,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             <div class="tri-meta">
               <div style="margin-bottom: 6px;"><strong>ชื่อเรียกขาน:</strong> เบิร์ด ธงไชย (ซูเปอร์สตาร์ตลอดกาลแห่งสยาม)</div>
               <div style="margin-bottom: 6px;"><strong>ผลงานเด่น:</strong> ผู้เสนอโครงการ "เพลงชาติไทย ๖ เวอร์ชัน" ต่อรัฐบาลนายกฯ พิธา</div>
-              <div style="margin-bottom: 6px;"><strong>พรรคการเมือง:</strong> พรรคก้าวไกล (ผู้ร่วมกิจกรรมสร้างสรรค์ Soft Power)</div>
+              <div style="margin-bottom: 6px;"><strong>พรรคการเมือง:</strong> - (ไม่มีสังกัดพรรคการเมือง)</div>
               <div><strong>บทบาทพิเศษ:</strong> ขจัดบรรยากาศอำนาจนิยมในสถานศึกษาผ่านดนตรีและศิลปวัฒนธรรม</div>
             </div>
           </div>
