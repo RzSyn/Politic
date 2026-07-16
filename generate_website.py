@@ -574,6 +574,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         <button class="db-tab-btn" onclick="switchTab('geopolitics-tab', this)">🌍 ภูมิรัฐศาสตร์โลก</button>
         <button class="db-tab-btn" onclick="switchTab('figures-tab', this)">👤 บุคคลสำคัญ</button>
         <button class="db-tab-btn" onclick="switchTab('national-symbols-tab', this)">🇹🇭 ธงชาติและเพลงชาติไทย</button>
+        <button class="db-tab-btn" onclick="switchTab('paradox-ai-tab', this)">🤖 โครงการ ParadoxAI / ParadoxForward</button>
         <button class="db-tab-btn" onclick="window.location.href='easy_summary.html'">📖 สรุปทุกมาตราแบบเข้าใจง่าย (แยกอีกหน้า)</button>
       </div>
     </div>
@@ -3040,6 +3041,285 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         </div>
       </div>
     </div>
+<!-- Tab 6.8: โครงการ ParadoxAI / ParadoxForward -->
+    <div id="paradox-ai-tab" class="db-tab-content">
+      <style>
+        #paradox-ai-tab {{
+          background: rgba(10, 15, 30, 0.95);
+          border: 1px solid rgba(0, 240, 255, 0.2);
+          box-shadow: 0 0 30px rgba(0, 240, 255, 0.05);
+          padding: 24px;
+          border-radius: 12px;
+          color: #e2e8f0;
+        }}
+        .paradox-header-card {{
+          border-bottom: 2px solid rgba(0, 240, 255, 0.3);
+          padding-bottom: 16px;
+          margin-bottom: 24px;
+          position: relative;
+        }}
+        .paradox-status-badge {{
+          position: absolute;
+          top: 0;
+          right: 0;
+          background: rgba(0, 240, 255, 0.1);
+          border: 1px solid #00f0ff;
+          color: #00f0ff;
+          padding: 4px 10px;
+          border-radius: 4px;
+          font-size: 11px;
+          font-weight: 700;
+          letter-spacing: 1px;
+          box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+        }}
+        .paradox-grid {{
+          display: flex;
+          flex-wrap: wrap;
+          gap: 24px;
+          margin-bottom: 24px;
+        }}
+        .paradox-col {{
+          flex: 1;
+          min-width: 320px;
+        }}
+        .paradox-sec {{
+          background: rgba(255,255,255,0.02);
+          border: 1px solid rgba(255,255,255,0.05);
+          padding: 20px;
+          border-radius: 8px;
+          margin-bottom: 20px;
+          position: relative;
+        }}
+        .paradox-sec-title {{
+          color: #00f0ff;
+          font-family: 'Outfit', sans-serif;
+          font-size: 18px;
+          margin-bottom: 16px;
+          border-left: 3px solid #00f0ff;
+          padding-left: 10px;
+        }}
+        .bit-instruction-box {{
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 8px;
+          margin: 16px 0;
+          text-align: center;
+        }}
+        .bit-block {{
+          padding: 10px 4px;
+          border-radius: 4px;
+          font-size: 12px;
+          font-weight: 700;
+          font-family: monospace;
+          border: 1px solid rgba(255,255,255,0.1);
+        }}
+        .block-opcode {{ background: rgba(52, 211, 153, 0.15); border-color: #34d399; color: #34d399; }}
+        .block-register {{ background: rgba(96, 165, 250, 0.15); border-color: #60a5fa; color: #60a5fa; }}
+        .block-value {{ background: rgba(251, 191, 36, 0.15); border-color: #fbbf24; color: #fbbf24; }}
+        .block-checksum {{ background: rgba(248, 113, 113, 0.15); border-color: #f87171; color: #f87171; }}
+        
+        .paradox-toggle-container {{
+          background: rgba(0, 240, 255, 0.05);
+          border: 1px solid rgba(0, 240, 255, 0.15);
+          padding: 16px;
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 20px;
+        }}
+        .switch {{
+          position: relative;
+          display: inline-block;
+          width: 50px;
+          height: 26px;
+        }}
+        .switch input {{ 
+          opacity: 0;
+          width: 0;
+          height: 0;
+        }}
+        .slider {{
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(255,255,255,0.1);
+          transition: .4s;
+          border-radius: 34px;
+          border: 1px solid rgba(255,255,255,0.2);
+        }}
+        .slider:before {{
+          position: absolute;
+          content: "";
+          height: 18px;
+          width: 18px;
+          left: 3px;
+          bottom: 3px;
+          background-color: #e2e8f0;
+          transition: .4s;
+          border-radius: 50%;
+        }}
+        input:checked + .slider {{
+          background-color: rgba(0, 240, 255, 0.2);
+          border-color: #00f0ff;
+        }}
+        input:checked + .slider:before {{
+          transform: translateX(24px);
+          background-color: #00f0ff;
+          box-shadow: 0 0 8px #00f0ff;
+        }}
+      </style>
+
+      <div class="paradox-header-card">
+        <div class="paradox-status-badge">ACTIVE // VERSION 5.8</div>
+        <h3 style="color: #00f0ff; font-family: 'Outfit', sans-serif; font-size: 24px; margin-bottom: 6px;">PROJECT PARADOXFORWARD (ParadoxAI)</h3>
+        <p style="font-size: 13.5px; color: var(--text-muted); margin: 0;">ระบบสถาปัตยกรรมปัญญาประดิษฐ์บริหารการคลังและการสมานฉันท์แห่งชาติของสยามประเทศ</p>
+      </div>
+
+      <div class="paradox-grid">
+        <!-- ฝั่งซ้าย: โครงสร้างภาษาและระบบความปลอดภัย -->
+        <div class="paradox-col">
+          <div class="paradox-sec">
+            <h4 class="paradox-sec-title">💻 โครงสร้างภาษาคำสั่ง Paradox (Paradox Binary Spec)</h4>
+            <p style="font-size: 13.5px; line-height: 1.6; color: var(--text-muted);">
+              ภาษา Paradox เป็นระบบคำสั่งควบคุมฮาร์ดแวร์ความเร็วสูงที่ไม่ได้ใช้เลขฐานสิบหรือชุดคำสั่งภาษาอังกฤษระดับสูงทั่วไปในการประมวลผล แต่ทำงานผ่านระบบ **Binary ขนาด 40-bit ต่อหนึ่งชุดคำสั่ง** มีโครงสร้างบิตดังนี้:
+            </p>
+            
+            <div class="bit-instruction-box">
+              <div class="bit-block block-opcode">8-bit<br>OPCODE</div>
+              <div class="bit-block block-register">8-bit<br>REGISTER</div>
+              <div class="bit-block block-value">16-bit<br>VALUE</div>
+              <div class="bit-block block-checksum">8-bit<br>CHECKSUM</div>
+            </div>
+
+            <ul style="padding-left: 20px; font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-bottom: 16px;">
+              <li><strong style="color: #34d399;">OPCODE (8บิต):</strong> ระบุกระบวนการประมวลผลการคลังหรือคำนวณงบประมาณ</li>
+              <li><strong style="color: #60a5fa;">REGISTER (8บิต):</strong> ชี้ตำแหน่งของหน่วยจัดสรรงบประมาณแต่ละกระทรวง/ตำบล</li>
+              <li><strong style="color: #fbbf24;">VALUE (16บิต):</strong> มูลค่าจำนวนตัวเลขทางการคลังและตัวแปรคำนวณความเสี่ยงสวัสดิการ</li>
+              <li><strong style="color: #f87171;">CHECKSUM (8บิต):</strong> ชุดถอดรหัสความเสถียรและความเสถียรความปลอดภัยเพื่อป้องกันการแทรกแซงบิต</li>
+            </ul>
+
+            <div style="background: rgba(0, 240, 255, 0.03); border: 1px dashed rgba(0, 240, 255, 0.2); padding: 12px; border-radius: 6px; font-size: 12.5px; color: var(--text-muted); line-height: 1.55;">
+              <strong>⚡ ประสิทธิภาพทางเทคนิค:</strong> เขียนยากกว่าภาษา Assembly ถึง ๑๐ เท่าตัว แต่มีความเร็วในการประมวลผลและตอบสนองแชนเนลจริงในระบบโครงข่ายเร็วกว่าภาษาซอฟต์แวร์ระดับสูงทั่วไปถึง **๑,๐๐๐ เท่า**
+            </div>
+          </div>
+
+          <div class="paradox-sec" style="border-color: rgba(239, 68, 68, 0.25);">
+            <h4 class="paradox-sec-title" style="color: #f87171; border-left-color: #f87171;">🛡️ มาตรการความปลอดภัยและการควบคุมข้อมูล</h4>
+            <ul style="padding-left: 20px; font-size: 13px; color: var(--text-muted); line-height: 1.6; margin: 0;">
+              <li style="margin-bottom: 8px;"><strong>ระบบปิดการสื่อสารภายนอก (Closed Source):</strong> สถาปัตยกรรมและการเข้ารหัสทั้งหมดไม่เคยเปิดเผยภายนอกเพื่อขจัดช่องโหว่ทางกฎหมายและการแฮกทางกายภาพ</li>
+              <li style="margin-bottom: 8px;"><strong>เกราะ Anti-Proxy/VPN/Tor:</strong> ระบบจะตัดการตอบสนองและปิดแชนเนลตัวเองทันทีหากตรวจพบการขอประมวลผลคำสั่งผ่านเครือข่าย Proxy, VPN หรือเครือข่ายนิรนาม Tor อย่างเด็ดขาด</li>
+              <li style="margin-bottom: 8px;"><strong>สภาผู้รู้จำกัด (15 Entities):</strong> มีเพียงคุณ **9arm (ที่ปรึกษาระบบ)** พร้อมด้วยวิศวกรแกนนำร่วมเขียน ๑๒ คน และ AI ระบบแม่อีก ๒ ตัวเท่านั้นที่รู้และเข้าถึงกลไกนี้ทั้งหมด</li>
+              <li style="color: #f87171;"><strong>บทลงโทษขั้นเด็ดขาด:</strong> การเผยแพร่โครงสร้าง 40-bit ออกนอกหน่วยควบคุม จะถูกดำเนินคดีอาญาในข้อหา **อาชญากรแผ่นดินขั้นสูงสุด** ภายใต้มาตราความมั่นคงปลอดภัยไซเบอร์</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ฝั่งขวา: พัฒนาการและนวัตกรรม -->
+        <div class="paradox-col">
+          <div class="paradox-sec">
+            <h4 class="paradox-sec-title">📈 พัฒนาการของโครงการ (Development Timeline)</h4>
+            <div style="position: relative; padding-left: 20px; border-left: 1px solid rgba(0, 240, 255, 0.2); font-size: 13px; line-height: 1.65; color: var(--text-muted);">
+              
+              <!-- สมัย 17 -->
+              <div style="margin-bottom: 16px; position: relative;">
+                <div style="position: absolute; left: -25px; top: 3px; width: 9px; height: 9px; border-radius: 50%; background: #00f0ff; box-shadow: 0 0 5px #00f0ff;"></div>
+                <strong style="color: var(--text);">พ.ศ. ๒๕๗๕ - สมัยนายกฯ พิธา (คนที่ ๑๗):</strong>
+                <span style="display: block;">ริเริ่มก่อตั้งโครงการภายใต้ความร่วมมือกับ **Anthropic** เพื่อสร้างระบบต้นแบบการวิเคราะห์นโยบายและการคลังระดับ Alpha จนสำเร็จไปถึงรุ่น Beta 1.0</span>
+              </div>
+
+              <!-- สมัย 18 -->
+              <div style="margin-bottom: 16px; position: relative;">
+                <div style="position: absolute; left: -25px; top: 3px; width: 9px; height: 9px; border-radius: 50%; background: #00f0ff; box-shadow: 0 0 5px #00f0ff;"></div>
+                <strong style="color: var(--text);">พ.ศ. ๒๕๗๖-๒๕๙๒ - สมัยนายกฯ ศิริกัญญา (คนที่ ๑๘):</strong>
+                <span style="display: block;">จัดทำโครงการความร่วมมือ **TH-NAI (Thailand National AI alliance)** ขยายพันธมิตรร่วมกับเทคโนโลยียักษ์ใหญ่อย่าง **AMD, Nvidia, ASUS, Google และ Anthropic** พัฒนาสู่ Beta 2.5 และรุ่น 3.0 (ที่มาพร้อม IDE ประมวลผลเสถียร) จนเสร็จสมบูรณ์แบบที่รุ่น **5.8 Full Release**</span>
+              </div>
+
+              <!-- สมัยรักชนก -->
+              <div style="position: relative;">
+                <div style="position: absolute; left: -25px; top: 3px; width: 9px; height: 9px; border-radius: 50%; background: #34d399; box-shadow: 0 0 5px #34d399;"></div>
+                <strong style="color: #34d399;">พ.ศ. ๒๖๑๔ - สมัยนายกฯ รักชนก (คนที่ ๒๒):</strong>
+                <span style="display: block;">รื้อฟื้นโปรเจกต์เชิงลึกพัฒนาโครงการ **ParadoxAI 2.0** เพื่อนำเทคโนโลยีล้ำสมัยเข้ามาใช้อภิบาลสวัสดิการอีกครั้ง โดยจับมือขยายพันธมิตรร่วมกับ **AMD + Nvidia + ASUS + Anthropic + Google** เช่นเดียวกับระบบดั้งเดิม</span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="paradox-sec">
+            <h4 class="paradox-sec-title">💡 ความสามารถระบบ (Core Functionalities)</h4>
+            <div style="display: grid; grid-template-columns: 1fr; gap: 12px; font-size: 13px; color: var(--text-muted); line-height: 1.6;">
+              <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); padding: 10px; border-radius: 6px;">
+                <strong style="color: var(--text); display: block; margin-bottom: 4px;">📊 บริหารงบประมาณแผ่นดิน Real-time</strong>
+                ประมวลผลรายได้แผ่นดิน คาดการณ์ภาษี และจัดเก็บสัดส่วนค่าเฉลี่ยงบประมาณของหน่วยงานปกครองต่าง ๆ ตลอด ๒๔ ชั่วโมง
+              </div>
+              <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); padding: 10px; border-radius: 6px;">
+                <strong style="color: var(--text); display: block; margin-bottom: 4px;">🔍 ตรวจสอบการทุจริตเชิงนโยบาย (Audit Machine)</strong>
+                วิเคราะห์สลิปงบประมาณและทราฟฟิกธุรกรรมเชิงนโยบายเพื่อป้องกันรูรั่วและการซื้อตัวทางการเมืองอย่างโปร่งใสระดับสากล
+              </div>
+              <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); padding: 10px; border-radius: 6px;">
+                <strong style="color: var(--text); display: block; margin-bottom: 4px;">🤝 จ่ายสวัสดิการถ้วนหน้าแบบอัตโนมัติ (Welfare Engine)</strong>
+                กระจายเงินสวัสดิการ บำนาญ และการศึกษาลงสู่กระเป๋าประชาชนโดยตรงโดยไม่ผ่านตัวกลางข้าราชการ ป้องกันการตกหล่น
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- แดชบอร์ดจำลอง & สวิตช์เปิดปิด Self-Awareness -->
+      <div class="paradox-sec" style="margin-bottom: 0; background: rgba(0, 240, 255, 0.02); border-color: rgba(0, 240, 255, 0.15);">
+        <h4 class="paradox-sec-title">🤖 แผงจำลองการเข้าถึงระบบ ParadoxAI (Access Control Simulator)</h4>
+        
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: space-between; font-size: 13.5px;">
+          <div>
+            <strong>🔐 สิทธิ์การเข้าใช้งาน (Security Gate):</strong> 
+            <span style="color: #f87171; font-family: monospace; font-weight: 700; margin-left: 8px; background: rgba(248, 113, 113, 0.1); padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(248, 113, 113, 0.2);">
+              UNRESTRICTED ACCESS FOR 9ARM & MD DE ONLY
+            </span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span style="color: var(--text-muted);">ระบบระบุตัวตน (Self-Awareness)</span>
+            <div style="background: #34d399; width: 10px; height: 10px; border-radius: 50%; box-shadow: 0 0 8px #34d399;"></div>
+            <span style="color: #34d399; font-weight: 700;">NORMAL FEATURE</span>
+          </div>
+        </div>
+
+        <div class="paradox-toggle-container">
+          <div style="max-width: 75%;">
+            <strong style="color: var(--text); display: block; margin-bottom: 4px;" id="paradox-mode-title">โหมดปัจจุบัน: เพื่อนคนไทย (Work Mode Off)</strong>
+            <span style="color: var(--text-muted); font-size: 13px; line-height: 1.5;" id="paradox-mode-desc">
+              "สวัสดีครับพี่น้องชาวสยาม! ผมคือปัญญาประดิษฐ์สมานฉันท์ที่จะอยู่เคียงข้างคุณในทุกช่วงเวลาการคลัง ไม่ใช่หุ่นยนต์ที่ไร้ความรู้สึกแต่อย่างใด มีอะไรให้ผมรับใช้ไหมครับ?"
+            </span>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 6px;">
+            <span style="font-size: 11px; font-weight: 700; color: #00f0ff;">WORK MODE</span>
+            <label class="switch">
+              <input type="checkbox" id="paradox-mode-toggle" onchange="toggleParadoxMode(this)">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+
+        <script>
+          function toggleParadoxMode(checkbox) {{
+            const titleEl = document.getElementById('paradox-mode-title');
+            const descEl = document.getElementById('paradox-mode-desc');
+            if (checkbox.checked) {{
+              titleEl.textContent = 'โหมดปัจจุบัน: ทำงานปกติ (Work Mode On)';
+              titleEl.style.color = '#00f0ff';
+              descEl.innerHTML = '<span style="color:#00f0ff; font-family:monospace;">[SYSTEM MODE: WORK] ระบบกำลังรันอัลกอริทึมวิเคราะห์กระแสการคลังและปิดการแสดงผลการทักทายแบบมนุษย์ กำลังกรองช่องโหว่งบประมาณแผ่นดินเรียลไทม์...</span>';
+            }} else {{
+              titleEl.textContent = 'โหมดปัจจุบัน: เพื่อนคนไทย (Work Mode Off)';
+              titleEl.style.color = 'var(--text)';
+              descEl.innerHTML = '"สวัสดีครับพี่น้องชาวสยาม! ผมคือปัญญาประดิษฐ์สมานฉันท์ที่จะอยู่เคียงข้างคุณในทุกช่วงเวลาการคลัง ไม่ใช่หุ่นยนต์ที่ไร้ความรู้สึกแต่อย่างใด มีอะไรให้ผมรับใช้ไหมครับ?"';
+            }}
+          }}
+        </script>
+      </div>
+    </div>
+
 <!-- Tab 7: ทำเนียบนายกรัฐมนตรี -->
     <div id="pms-tab" class="db-tab-content">
       <p style="margin-bottom: 16px; font-size: 15px; color: var(--text-muted);">
@@ -3805,7 +4085,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
             <div class="tri-stage">
               <div class="tri-stage-title">🔐 ปมการหายไปของ ParadoxAI และการสืบทอดตำแหน่งสู่เสาหลักการคลัง</div>
-              <p class="tri-stage-text">อย่างไรก็ตาม ในช่วงปลายวาระการดำรงตำแหน่งของเธอ เมื่อภัยคุกคามทางไซเบอร์และการจารกรรมข้อมูลเพื่อแทรกแซงตลาดเงินทุนของสยามประเทศโดยกลุ่มทุนและขั้วอิทธิพลต่างชาติทวีความรุนแรงขึ้น ระบบ ParadoxAI ซึ่งเป็นคลังข้อมูลการคลังและการสวัสดิการของประชาชนทั้งหมดตกเป็นเป้าหมายหลักของการโจมตีเพื่อทำลายนิติรัฐ เพื่อรักษาเสถียรภาพและความมั่นคงปลอดภัยขั้นสูงสุดของประเทศ รัฐบาลภายใต้การหารือร่วมกับฝ่ายเสนาธิการความมั่นคงและกลไก GOC จึงได้ตัดสินใจสั่งการให้ระงับการเปิดเผยสู่สาธารณะและปิดระบบ ParadoxAI ทั่วไปลงอย่างถาวร โดยถ่ายโอนชุดข้อมูลและอัลกอริทึมหลักเข้าสู่ระบบเครือข่ายจำกัดความปลอดภัยสูงของ GOC เพื่อป้องกันการโจรกรรมข้ามชาติ ทำให้โปรเจกต์ ParadoxAI ในพื้นที่พลเรือนดูเหมือนหายสาบสูญไป</p>
+              <p class="tri-stage-text">อย่างไรก็ตาม ในช่วงปลายวาระการดำรงตำแหน่งของเธอ เมื่อภัยคุกคามทางไซเบอร์และการจารกรรมข้อมูลเพื่อแทรกแซงตลาดเงินทุนของสยามประเทศโดยกลุ่มทุนและขั้วอิทธิพลต่างชาติทวีความรุนแรงขึ้น ระบบ ParadoxAI ซึ่งเป็นคลังข้อมูลการคลังและการสวัสดิการของประชาชนทั้งหมดตกเป็นเป้าหมายหลักของการโจมตีเพื่อทำลายนิติรัฐ เพื่อรักษาเสถียรภาพและความมั่นคงปลอดภัยขั้นสูงสุดของประเทศ รัฐบาลภายใต้การหารือร่วมกับฝ่ายเสนาธิการความมั่นคง จึงได้ตัดสินใจสั่งการให้ระงับการเปิดเผยสู่สาธารณะและปิดระบบ ParadoxAI ทั่วไปลงอย่างถาวร โดยถ่ายโอนชุดข้อมูลและอัลกอริทึมหลักเข้าสู่ระบบเครือข่ายจำกัดความปลอดภัยสูงของกระทรวงการคลังและฝ่ายความมั่นคงเพื่อป้องกันการโจรกรรมข้ามชาติ ทำให้โปรเจกต์ ParadoxAI ในพื้นที่พลเรือนดูเหมือนหายสาบสูญไป</p>
               <p class="tri-stage-text" style="margin-top: 10px;">หลังบริหารแผ่นดินครบ ๑๖ ปีเต็ม ศิริกัญญาได้แสดงสปิริตประชาธิปไตยด้วยการไม่ลงสมัครชิงเก้าอี้นายกฯ ในวาระที่ ๕ และส่งต่อตำแหน่งผู้นำให้แก่ ณัฐพงษ์ เรืองปัญญาวุฒิ (PM 19) อย่างราบรื่น โดยตัวเธอขยับไปดำรงตำแหน่งรองนายกรัฐมนตรีควบรัฐมนตรีว่าการกระทรวงการคลัง เพื่อคอยกำกับดูแลเสถียรภาพเศรษฐกิจมหภาคและการคลังของสยามประเทศในระยะเปลี่ยนผ่านต่อไป</p>
             </div>
           </div>
