@@ -1314,7 +1314,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               
               <!-- 1. ธงแดงเกลี้ยง -->
               <div style="display: flex; gap: 16px; align-items: center; background: rgba(255,255,255,0.01); padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03);">
-                <img src="flag1.svg" alt="ธงแดงเกลี้ยง" style="width: 90px; height: 60px; border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); object-fit: cover; flex-shrink: 0;">
+                <img src="flag1.png" alt="ธงแดงเกลี้ยง" style="width: 90px; height: 60px; border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); object-fit: cover; flex-shrink: 0;">
                 <div>
                   <strong style="color: var(--gold-light); display: block; font-size: 14px;">๑. ธงแดงเกลี้ยง (สมัยอยุธยา - ธนบุรี - รัชกาลที่ ๑)</strong>
                   <span style="font-size: 13px; color: var(--text-muted);">เริ่มใช้ตั้งแต่สมัยกรุงศรีอยุธยา (รัชสมัยสมเด็จพระนารายณ์มหาราช) เป็นเรือสินค้าใช้แสดงสัญชาติทั่วไป</span>
@@ -1323,7 +1323,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- 2. ธงวงจักรสีขาว -->
               <div style="display: flex; gap: 16px; align-items: center; background: rgba(255,255,255,0.01); padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03);">
-                <img src="flag2.svg" alt="ธงวงจักรสีขาว" style="width: 90px; height: 60px; border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); object-fit: cover; flex-shrink: 0;">
+                <img src="flag2.png" alt="ธงวงจักรสีขาว" style="width: 90px; height: 60px; border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); object-fit: cover; flex-shrink: 0;">
                 <div>
                   <strong style="color: var(--gold-light); display: block; font-size: 14px;">๒. ธงวงจักรสีขาวบนพื้นแดง (รัชกาลที่ ๑, พ.ศ. ๒๒๓๒)</strong>
                   <span style="font-size: 13px; color: var(--text-muted);">ทรงพระราชดำริเพิ่มวงจักรสีขาวตรงกลางธงแดงเกลี้ยง เพื่อให้ใช้สำหรับเรือหลวงจำแนกจากเรือราษฎร</span>
@@ -1332,7 +1332,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- 3. ธงช้างเผือกในวงจักร -->
               <div style="display: flex; gap: 16px; align-items: center; background: rgba(255,255,255,0.01); padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03);">
-                <img src="flag3.svg" alt="ธงช้างเผือกในวงจักร" style="width: 90px; height: 60px; border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); object-fit: cover; flex-shrink: 0;">
+                <img src="flag3.png" alt="ธงช้างเผือกในวงจักร" style="width: 90px; height: 60px; border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); object-fit: cover; flex-shrink: 0;">
                 <div>
                   <strong style="color: var(--gold-light); display: block; font-size: 14px;">๓. ธงช้างเผือกในวงจักรสีขาว (รัชกาลที่ ๒, พ.ศ. ๒๒๖๐)</strong>
                   <span style="font-size: 13px; color: var(--text-muted);">ทรงเพิ่มช้างเผือกไว้ในวงจักรสีขาว สำหรับเรือหลวงสืบเนื่องจากการได้ช้างเผือกคู่บารมีถึง ๓ เชือก</span>
@@ -1341,7 +1341,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- 4. ธงช้างเผือกปล่อย -->
               <div style="display: flex; gap: 16px; align-items: center; background: rgba(255,255,255,0.01); padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03);">
-                <img src="flag4.svg" alt="ธงช้างเผือกปล่อย" style="width: 90px; height: 60px; border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); object-fit: cover; flex-shrink: 0;">
+                <img src="flag4.png" alt="ธงช้างเผือกปล่อย" style="width: 90px; height: 60px; border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); object-fit: cover; flex-shrink: 0;">
                 <div>
                   <strong style="color: var(--gold-light); display: block; font-size: 14px;">๔. ธงช้างเผือกปล่อยบนพื้นแดง (รัชกาลที่ ๔, พ.ศ. ๒๓๐๐)</strong>
                   <span style="font-size: 13px; color: var(--text-muted);">ทรงนำวงจักรสีขาวออก เหลือช้างเผือกอย่างเดียว ประกาศใช้ทั่วไปทั้งรัฐและราษฎรเพื่อไม่ให้ต่างชาติสับสน</span>
@@ -1350,7 +1350,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- 5. ธงช้างเผือกทรงเครื่อง -->
               <div style="display: flex; gap: 16px; align-items: center; background: rgba(255,255,255,0.01); padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03);">
-                <img src="flag5.svg" alt="ธงช้างเผือกทรงเครื่อง" style="width: 90px; height: 60px; border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); object-fit: cover; flex-shrink: 0;">
+                <img src="flag5.png" alt="ธงช้างเผือกทรงเครื่อง" style="width: 90px; height: 60px; border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); object-fit: cover; flex-shrink: 0;">
                 <div>
                   <strong style="color: var(--gold-light); display: block; font-size: 14px;">๕. ธงช้างเผือกทรงเครื่องบนพื้นแดง (รัชกาลที่ ๕, พ.ศ. ๒๓๕๐)</strong>
                   <span style="font-size: 13px; color: var(--text-muted);">ปรับปรุงช้างเผือกให้ทรงเครื่องยืนบนแท่นทอง เพื่อใช้เป็นธงราชการและสื่อสารสัมพันธ์ทางการทูตยุคใหม่</span>
@@ -1359,7 +1359,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- 6. ธงแดงขาว ๕ ริ้ว -->
               <div style="display: flex; gap: 16px; align-items: center; background: rgba(255,255,255,0.01); padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03);">
-                <img src="flag6.svg" alt="ธงแดงขาว ๕ ริ้ว" style="width: 90px; height: 60px; border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); object-fit: cover; flex-shrink: 0;">
+                <img src="flag6.png" alt="ธงแดงขาว ๕ ริ้ว" style="width: 90px; height: 60px; border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); object-fit: cover; flex-shrink: 0;">
                 <div>
                   <strong style="color: var(--gold-light); display: block; font-size: 14px;">๖. ธงริ้วแดงขาว ๕ ริ้ว (รัชกาลที่ ๖, พ.ศ. ๒๓๖๐)</strong>
                   <span style="font-size: 13px; color: var(--text-muted);">นำแถบสีแดงและขาวสลับเป็นริ้ว ๕ แถบ เพื่อหลีกเลี่ยงปัญหาการประดับธงช้างเผือกกลับหัว</span>
@@ -1368,7 +1368,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- 7. ธงไตรรงค์ -->
               <div style="display: flex; gap: 16px; align-items: center; background: rgba(255,255,255,0.01); padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03);">
-                <img src="flag7.svg" alt="ธงไตรรงค์" style="width: 90px; height: 60px; border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); object-fit: cover; flex-shrink: 0;">
+                <img src="flag7.png" alt="ธงไตรรงค์" style="width: 90px; height: 60px; border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); object-fit: cover; flex-shrink: 0;">
                 <div>
                   <strong style="color: var(--gold-light); display: block; font-size: 14px;">๗. ธงไตรรงค์ (รัชกาลที่ ๖ - ปัจจุบัน)</strong>
                   <span style="font-size: 13px; color: var(--text-muted);">ทรงเพิ่มริ้วกลางเป็นสีน้ำเงินเข้ม (สีขาบ) กลายเป็นสีสัญญลักษณ์หลักร่วมกับนานาชาติสัมพันธมิตร</span>
