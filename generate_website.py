@@ -480,12 +480,12 @@ def get_party_html(num):
     }
     name, color, filename = parties.get(num, ("อิสระ", "#9CA3AF", ""))
     
-    if num in [6, 7, 10, 11, 13]:
-        logo_style = f"width: 256px; height: 256px; display: flex; align-items: center; justify-content: center; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.95); border-radius: 16px; padding: 12px; box-sizing: border-box; margin: 0 auto 8px auto; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"
+    if num in [6, 7, 10, 11, 13, 15, 16, 17, 18, 19, 20, 22]:
+        logo_style = f"width: 170px; height: 170px; display: flex; align-items: center; justify-content: center; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.95); border-radius: 12px; padding: 10px; box-sizing: border-box; margin: 0 auto 6px auto; box-shadow: 0 4px 10px rgba(0,0,0,0.15);"
     else:
-        logo_style = f"width: 256px; height: 256px; display: flex; align-items: center; justify-content: center; background: rgba({hex_to_rgb(color)}, 0.08); border: 1.2px solid {color}25; border-radius: 16px; padding: 8px; box-sizing: border-box; margin: 0 auto 8px auto;"
+        logo_style = f"width: 170px; height: 170px; display: flex; align-items: center; justify-content: center; background: rgba({hex_to_rgb(color)}, 0.08); border: 1.2px solid {color}25; border-radius: 12px; padding: 6px; box-sizing: border-box; margin: 0 auto 6px auto;"
     img_style = "max-width: 100%; max-height: 100%; object-fit: contain;"
-    text_style = f"display: block; font-size: 12px; font-weight: 700; color: {color}; letter-spacing: 0.2px; font-family: \'Inter\', \'Outfit\', sans-serif;"
+    text_style = f"display: block; font-size: 11.5px; font-weight: 700; color: {color}; letter-spacing: 0.2px; font-family: \'Inter\', \'Outfit\', sans-serif;"
     
     return f'<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;"><div style="{logo_style}"><img src="{filename}" alt="{name}" style="{img_style}"></div><span style="{text_style}">{name}</span></div>'
 
@@ -542,7 +542,7 @@ for pm in pms:
     pm_rows.append(f'''<tr class="pm-row" data-era="{era_class}">
   <td style="text-align: center;">{num_str}</td>
   <td style="text-align: center; vertical-align: middle; padding: 8px 4px;">
-    <div style="width: 80px; height: 100px; border: 1.8px solid var(--gold); border-radius: 4px; overflow: hidden; background: #000; box-shadow: 0 4px 8px rgba(0,0,0,0.5); margin: 0 auto; display: flex; align-items: center; justify-content: center;">
+    <div style="width: 240px; height: 300px; border: 3px solid var(--gold); border-radius: 8px; overflow: hidden; background: #000; box-shadow: 0 6px 16px rgba(0,0,0,0.6); margin: 0 auto; display: flex; align-items: center; justify-content: center;">
       <img src="{img_filename}" alt="{name_str}" style="width: 100%; height: 100%; object-fit: cover;">
     </div>
   </td>
@@ -1302,9 +1302,9 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           <thead>
             <tr>
               <th style="width: 50px; text-align: center;">ลำดับ</th>
-              <th style="width: 100px; text-align: center;">ภาพพอร์ตเทรต</th>
+              <th style="width: 260px; text-align: center;">ภาพพอร์ตเทรต</th>
               <th style="width: 140px;">นายกรัฐมนตรี</th>
-              <th style="width: 280px; text-align: center;">พรรคการเมือง</th>
+              <th style="width: 200px; text-align: center;">พรรคการเมือง</th>
               <th style="width: 100px; text-align: center;">ปีดำรงตำแหน่ง</th>
               <th style="width: 140px;">ยุครัฐธรรมนูญ</th>
               <th>หมายเหตุ / ผลงานสำคัญ</th>
