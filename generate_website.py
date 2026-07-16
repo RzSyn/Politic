@@ -1314,7 +1314,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               
               <!-- 1. ธงแดงเกลี้ยง -->
               <div style="display: flex; gap: 16px; align-items: center; background: rgba(255,255,255,0.01); padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03);">
-                <div style="flex-shrink: 0; width: 90px; height: 60px; background: #e02c2c; border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);"></div>
+                <img src="flag1.svg" alt="ธงแดงเกลี้ยง" style="width: 90px; height: 60px; border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); object-fit: cover; flex-shrink: 0;">
                 <div>
                   <strong style="color: var(--gold-light); display: block; font-size: 14px;">๑. ธงแดงเกลี้ยง (สมัยอยุธยา - ธนบุรี - รัชกาลที่ ๑)</strong>
                   <span style="font-size: 13px; color: var(--text-muted);">เริ่มใช้ตั้งแต่สมัยกรุงศรีอยุธยา (รัชสมัยสมเด็จพระนารายณ์มหาราช) เป็นเรือสินค้าใช้แสดงสัญชาติทั่วไป</span>
@@ -1323,17 +1323,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- 2. ธงวงจักรสีขาว -->
               <div style="display: flex; gap: 16px; align-items: center; background: rgba(255,255,255,0.01); padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03);">
-                <div style="flex-shrink: 0;">
-                  <svg width="90" height="60" style="border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); display: block;">
-                    <rect width="90" height="60" fill="#e02c2c"/>
-                    <circle cx="45" cy="30" r="12" fill="none" stroke="#ffffff" stroke-width="2"/>
-                    <circle cx="45" cy="30" r="3" fill="#ffffff"/>
-                    <line x1="45" y1="18" x2="45" y2="42" stroke="#ffffff" stroke-width="2"/>
-                    <line x1="33" y1="30" x2="57" y2="30" stroke="#ffffff" stroke-width="2"/>
-                    <line x1="36.5" y1="21.5" x2="53.5" y2="38.5" stroke="#ffffff" stroke-width="2"/>
-                    <line x1="36.5" y1="38.5" x2="53.5" y2="21.5" stroke="#ffffff" stroke-width="2"/>
-                  </svg>
-                </div>
+                <img src="flag2.svg" alt="ธงวงจักรสีขาว" style="width: 90px; height: 60px; border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); object-fit: cover; flex-shrink: 0;">
                 <div>
                   <strong style="color: var(--gold-light); display: block; font-size: 14px;">๒. ธงวงจักรสีขาวบนพื้นแดง (รัชกาลที่ ๑, พ.ศ. ๒๒๓๒)</strong>
                   <span style="font-size: 13px; color: var(--text-muted);">ทรงพระราชดำริเพิ่มวงจักรสีขาวตรงกลางธงแดงเกลี้ยง เพื่อให้ใช้สำหรับเรือหลวงจำแนกจากเรือราษฎร</span>
@@ -1342,26 +1332,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- 3. ธงช้างเผือกในวงจักร -->
               <div style="display: flex; gap: 16px; align-items: center; background: rgba(255,255,255,0.01); padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03);">
-                <div style="flex-shrink: 0;">
-                  <svg width="90" height="60" style="border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); display: block;">
-                    <rect width="90" height="60" fill="#e02c2c"/>
-                    <circle cx="45" cy="27" r="14" fill="none" stroke="#ffffff" stroke-width="1.5"/>
-                    <line x1="45" y1="13" x2="45" y2="41" stroke="#ffffff" stroke-width="1.5"/>
-                    <line x1="31" y1="27" x2="59" y2="27" stroke="#ffffff" stroke-width="1.5"/>
-                    <line x1="35" y1="17" x2="55" y2="37" stroke="#ffffff" stroke-width="1.5"/>
-                    <line x1="35" y1="37" x2="55" y2="17" stroke="#ffffff" stroke-width="1.5"/>
-                    <circle cx="45" cy="27" r="10" fill="#e02c2c"/>
-                    <g fill="#ffffff">
-                      <rect x="40" y="22" width="10" height="7" rx="2"/>
-                      <rect x="42" y="28" width="1.5" height="3"/>
-                      <rect x="44" y="28" width="1.5" height="3"/>
-                      <rect x="46" y="28" width="1.5" height="3"/>
-                      <rect x="48" y="28" width="1.5" height="3"/>
-                      <path d="M40,24 C38,24 37,23 37,21" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
-                      <circle cx="42" cy="24" r="1" fill="#e02c2c"/>
-                    </g>
-                  </svg>
-                </div>
+                <img src="flag3.svg" alt="ธงช้างเผือกในวงจักร" style="width: 90px; height: 60px; border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); object-fit: cover; flex-shrink: 0;">
                 <div>
                   <strong style="color: var(--gold-light); display: block; font-size: 14px;">๓. ธงช้างเผือกในวงจักรสีขาว (รัชกาลที่ ๒, พ.ศ. ๒๒๖๐)</strong>
                   <span style="font-size: 13px; color: var(--text-muted);">ทรงเพิ่มช้างเผือกไว้ในวงจักรสีขาว สำหรับเรือหลวงสืบเนื่องจากการได้ช้างเผือกคู่บารมีถึง ๓ เชือก</span>
@@ -1370,20 +1341,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- 4. ธงช้างเผือกปล่อย -->
               <div style="display: flex; gap: 16px; align-items: center; background: rgba(255,255,255,0.01); padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03);">
-                <div style="flex-shrink: 0;">
-                  <svg width="90" height="60" style="border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); display: block;">
-                    <rect width="90" height="60" fill="#e02c2c"/>
-                    <g fill="#ffffff" transform="scale(1.2) translate(-6, -2)">
-                      <rect x="35" y="20" width="14" height="9" rx="3"/>
-                      <rect x="37" y="28" width="2" height="4"/>
-                      <rect x="40" y="28" width="2" height="4"/>
-                      <rect x="43" y="28" width="2" height="4"/>
-                      <rect x="46" y="28" width="2" height="4"/>
-                      <path d="M35,23 C33,23 32,22 32,20" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
-                      <circle cx="38" cy="23" r="1" fill="#e02c2c"/>
-                    </g>
-                  </svg>
-                </div>
+                <img src="flag4.svg" alt="ธงช้างเผือกปล่อย" style="width: 90px; height: 60px; border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); object-fit: cover; flex-shrink: 0;">
                 <div>
                   <strong style="color: var(--gold-light); display: block; font-size: 14px;">๔. ธงช้างเผือกปล่อยบนพื้นแดง (รัชกาลที่ ๔, พ.ศ. ๒๓๐๐)</strong>
                   <span style="font-size: 13px; color: var(--text-muted);">ทรงนำวงจักรสีขาวออก เหลือช้างเผือกอย่างเดียว ประกาศใช้ทั่วไปทั้งรัฐและราษฎรเพื่อไม่ให้ต่างชาติสับสน</span>
@@ -1392,25 +1350,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- 5. ธงช้างเผือกทรงเครื่อง -->
               <div style="display: flex; gap: 16px; align-items: center; background: rgba(255,255,255,0.01); padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03);">
-                <div style="flex-shrink: 0;">
-                  <svg width="90" height="60" style="border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); display: block;">
-                    <rect width="90" height="60" fill="#e02c2c"/>
-                    <rect x="25" y="44" width="40" height="4" fill="#ffd700" rx="1"/>
-                    <rect x="28" y="41" width="34" height="3" fill="#ffd700" rx="1"/>
-                    <g fill="#ffffff" transform="translate(0, 4)">
-                      <rect x="35" y="20" width="16" height="10" rx="3"/>
-                      <rect x="37" y="29" width="2.2" height="5"/>
-                      <rect x="41" y="29" width="2.2" height="5"/>
-                      <rect x="45" y="29" width="2.2" height="5"/>
-                      <rect x="48" y="29" width="2.2" height="5"/>
-                      <path d="M35,23 C33,23 32,22 32,20" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
-                      <rect x="39" y="19" width="8" height="4" fill="#ffd700"/>
-                      <path d="M43,19 L43,15 L45,17 Z" fill="#ffd700"/>
-                      <path d="M36,25 L39,21" stroke="#ffd700" stroke-width="1"/>
-                      <path d="M51,25 L47,21" stroke="#ffd700" stroke-width="1"/>
-                    </g>
-                  </svg>
-                </div>
+                <img src="flag5.svg" alt="ธงช้างเผือกทรงเครื่อง" style="width: 90px; height: 60px; border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); object-fit: cover; flex-shrink: 0;">
                 <div>
                   <strong style="color: var(--gold-light); display: block; font-size: 14px;">๕. ธงช้างเผือกทรงเครื่องบนพื้นแดง (รัชกาลที่ ๕, พ.ศ. ๒๓๕๐)</strong>
                   <span style="font-size: 13px; color: var(--text-muted);">ปรับปรุงช้างเผือกให้ทรงเครื่องยืนบนแท่นทอง เพื่อใช้เป็นธงราชการและสื่อสารสัมพันธ์ทางการทูตยุคใหม่</span>
@@ -1419,13 +1359,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- 6. ธงแดงขาว ๕ ริ้ว -->
               <div style="display: flex; gap: 16px; align-items: center; background: rgba(255,255,255,0.01); padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03);">
-                <div style="width: 90px; height: 60px; display: flex; flex-direction: column; border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.3); flex-shrink: 0;">
-                  <div style="flex: 1; background: #e02c2c;"></div>
-                  <div style="flex: 1; background: #ffffff;"></div>
-                  <div style="flex: 1; background: #e02c2c;"></div>
-                  <div style="flex: 1; background: #ffffff;"></div>
-                  <div style="flex: 1; background: #e02c2c;"></div>
-                </div>
+                <img src="flag6.svg" alt="ธงแดงขาว ๕ ริ้ว" style="width: 90px; height: 60px; border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); object-fit: cover; flex-shrink: 0;">
                 <div>
                   <strong style="color: var(--gold-light); display: block; font-size: 14px;">๖. ธงริ้วแดงขาว ๕ ริ้ว (รัชกาลที่ ๖, พ.ศ. ๒๓๖๐)</strong>
                   <span style="font-size: 13px; color: var(--text-muted);">นำแถบสีแดงและขาวสลับเป็นริ้ว ๕ แถบ เพื่อหลีกเลี่ยงปัญหาการประดับธงช้างเผือกกลับหัว</span>
@@ -1434,13 +1368,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- 7. ธงไตรรงค์ -->
               <div style="display: flex; gap: 16px; align-items: center; background: rgba(255,255,255,0.01); padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03);">
-                <div style="width: 90px; height: 60px; display: flex; flex-direction: column; border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.3); flex-shrink: 0;">
-                  <div style="flex: 1; background: #e02c2c;"></div>
-                  <div style="flex: 1; background: #ffffff;"></div>
-                  <div style="flex: 2; background: #1c35a3;"></div>
-                  <div style="flex: 1; background: #ffffff;"></div>
-                  <div style="flex: 1; background: #e02c2c;"></div>
-                </div>
+                <img src="flag7.svg" alt="ธงไตรรงค์" style="width: 90px; height: 60px; border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); object-fit: cover; flex-shrink: 0;">
                 <div>
                   <strong style="color: var(--gold-light); display: block; font-size: 14px;">๗. ธงไตรรงค์ (รัชกาลที่ ๖ - ปัจจุบัน)</strong>
                   <span style="font-size: 13px; color: var(--text-muted);">ทรงเพิ่มริ้วกลางเป็นสีน้ำเงินเข้ม (สีขาบ) กลายเป็นสีสัญญลักษณ์หลักร่วมกับนานาชาติสัมพันธมิตร</span>
@@ -2086,7 +2014,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         }}
         .tri-profile-img {{
           width: 160px;
-          height: 160px;
+          height: 220px;
           border-radius: 8px;
           border: 2px solid rgba(255, 255, 255, 0.1);
           margin-bottom: 16px;
@@ -2287,7 +2215,39 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
         <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 32px 0;">
 
-        
+        <!-- ธงไชย แมคอินไตย์ -->
+        <div class="tri-layout" style="margin-bottom: 32px;">
+          <div class="tri-profile-card">
+            <img src="bird.png" alt="ธงไชย แมคอินไตย์" class="tri-profile-img">
+            <div class="tri-profile-name">ธงไชย แมคอินไตย์</div>
+            <div class="tri-profile-title">ศิลปินแห่งชาติและผู้เสนอสัญลักษณ์แห่งเสรีชน</div>
+            <div class="tri-meta">
+              <div style="margin-bottom: 6px;"><strong>ชื่อเรียกขาน:</strong> เบิร์ด ธงไชย (ซูเปอร์สตาร์ตลอดกาลแห่งสยาม)</div>
+              <div style="margin-bottom: 6px;"><strong>ผลงานเด่น:</strong> ผู้เสนอโครงการ "เพลงชาติไทย ๖ เวอร์ชัน" ต่อรัฐบาลนายกฯ พิธา</div>
+              <div style="margin-bottom: 6px;"><strong>พรรคการเมือง:</strong> พรรคก้าวไกล (ผู้ร่วมกิจกรรมสร้างสรรค์ Soft Power)</div>
+              <div><strong>บทบาทพิเศษ:</strong> ขจัดบรรยากาศอำนาจนิยมในสถานศึกษาผ่านดนตรีและศิลปวัฒนธรรม</div>
+            </div>
+          </div>
+
+          <div class="tri-bio">
+            <div class="tri-stage">
+              <div class="tri-stage-title">🎓 จากพนักงานเคาน์เตอร์ธนาคารสู่ซูเปอร์สตาร์ศิลปินแห่งชาติระดับตำนาน</div>
+              <p class="tri-stage-text">ธงไชย แมคอินไตย์ (เบิร์ด ธงไชย) เกิดในครอบครัวที่รักเสียงเพลง เขาเริ่มต้นการทำงานด้วยการเป็นพนักงานเคาน์เตอร์ของธนาคารทหารไทย ก่อนที่จะก้าวเข้าสู่วงการบันเทิงจากการชักชวนของพี่เต๋อ เรวัต พุทธินันทน์ ผู้ก่อตั้ง GMM Grammy ความสามารถในการร้องเพลงที่อบอุ่น การแสดงอันยอดเยี่ยม และบุคลิกภาพที่เปี่ยมไปด้วยรอยยิ้ม ความอบอุ่น และความสมานฉันท์ ทำให้เขาก้าวขึ้นสู่ตำแหน่ง "ซูเปอร์สตาร์อันดับหนึ่งของประเทศ" อย่างรวดเร็ว และมีผลงานเพลงฮิตระดับตำนาน เช่น คู่กัด, พริกขี้หนู, บูมเมอแรง, และเล่าสู่กันฟัง มียอดขายอัลบั้มถล่มทลายรวมกันกว่า ๒๕ ล้านชุด จนได้รับการเชิดชูเกียรติเป็นศิลปินแห่งชาติ สาขาศิลปะการแสดงในที่สุด</p>
+            </div>
+
+            <div class="tri-stage">
+              <div class="tri-stage-title">🎼 ผู้เข้าพบและร่วมเสนอยุทธศาสตร์ดนตรีเพื่อความปรองดองแห่งรัฐบาลพิธา</div>
+              <p class="tri-stage-text">ในช่วงเวลาที่ <strong>นายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (คนที่ ๑๗)</strong> และกระทรวงกลาโหมพลเรือน ได้เปิดโปงคดีลอบปลงพระชนม์ ร.๘ และเริ่มกระบวนการคืนเกียรติยศเพื่อความยุติธรรมระยะเปลี่ยนผ่าน ธงไชยในฐานะศิลปินอาวุโสผู้เป็นศูนย์รวมจิตใจของประชาชน ได้เข้าพบนนายกรัฐมนตรีเพื่อนำเสนอโครงการจัดทำ "เพลงชาติไทย ๖ เวอร์ชัน" ร่วมกับ GMM Grammy โดยมุ่งเน้นการใช้ Soft Power ทางดนตรีเป็นสะพานเชื่อมโยงความรู้สึกของประชาชนหลากหลายกลุ่มวัยเข้ากับสัญลักษณ์ของรัฐ และประกาศความจงรักภักดีของรัฐบาลพลเรือนว่ายืนเคียงข้างสถาบันพระมหากษัตริย์ในระบอบประชาธิปไตย โดยโครงการนี้ยึดหลักสำคัญคือไม่มีการเปลี่ยนริ้วเสียงหรือเนื้อหาดนตรีและทำนองดั้งเดิม (ทำนองเดิม พ.ศ. ๒๓๗๕ และคำร้องเดิม พ.ศ. ๒๓๘๒) แม้แต่ ๑%</p>
+            </div>
+
+            <div class="tri-stage">
+              <div class="tri-stage-title">🌟 การใช้เสียงเพลงขจัดอำนาจนิยมในสถาบันศึกษาและการรักชาติวิถีใหม่</div>
+              <p class="tri-stage-text">โครงการเพลงชาติ ๖ เวอร์ชันสร้างผลตอบรับเชิงบวกอย่างมหาศาล โดยเฉพาะเวอร์ชัน Ballroom ลีลาศที่เขาขับร้องคู่กับ ตู่ นันทิดา แก้วบัวสาย ซึ่งได้รับความนิยมในชมรมผู้สูงอายุและกิจกรรมสังสรรค์ทางการทูต และเวอร์ชัน Kids/Choir ของน้องพลับที่ประสานเสียงกับเด็ก ๆ ซึ่งถูกนำไปเปิดเคารพธงชาติในโรงเรียนระดับประถมและอนุบาลทั่วประเทศ ช่วยผ่อนคลายวัฒนธรรมอำนาจนิยมดั้งเดิมในโรงเรียนให้กลายเป็นความสนุกสนาน สดใส และรักชาติด้วยความภาคภูมิใจอย่างสมัครใจตามเจตนารมณ์ประชาธิปไตยของรัฐธรรมนูญจำลอง</p>
+            </div>
+          </div>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 32px 0;">
 
         <!-- ศิริกัญญา ตันสกุล -->
         <div class="tri-layout" style="margin-bottom: 32px;">
@@ -2403,39 +2363,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
         </div>
 
-        <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 32px 0;">
 
-        <!-- ธงไชย แมคอินไตย์ -->
-        <div class="tri-layout" style="margin-bottom: 32px;">
-          <div class="tri-profile-card">
-            <img src="bird.png" alt="ธงไชย แมคอินไตย์" class="tri-profile-img">
-            <div class="tri-profile-name">ธงไชย แมคอินไตย์</div>
-            <div class="tri-profile-title">ศิลปินแห่งชาติและผู้เสนอสัญลักษณ์แห่งเสรีชน</div>
-            <div class="tri-meta">
-              <div style="margin-bottom: 6px;"><strong>ชื่อเรียกขาน:</strong> เบิร์ด ธงไชย (ซูเปอร์สตาร์ตลอดกาลแห่งสยาม)</div>
-              <div style="margin-bottom: 6px;"><strong>ผลงานเด่น:</strong> ผู้เสนอโครงการ "เพลงชาติไทย ๖ เวอร์ชัน" ต่อรัฐบาลนายกฯ พิธา</div>
-              <div style="margin-bottom: 6px;"><strong>พรรคการเมือง:</strong> พรรคก้าวไกล (ผู้ร่วมกิจกรรมสร้างสรรค์ Soft Power)</div>
-              <div><strong>บทบาทพิเศษ:</strong> ขจัดบรรยากาศอำนาจนิยมในสถานศึกษาผ่านดนตรีและศิลปวัฒนธรรม</div>
-            </div>
-          </div>
-
-          <div class="tri-bio">
-            <div class="tri-stage">
-              <div class="tri-stage-title">🎓 จากครอบครัวดนตรีสู่ศิลปินขวัญใจคนไทยตลอดกาล</div>
-              <p class="tri-stage-text">ธงไชย แมคอินไตย์ (เบิร์ด ธงไชย) เป็นศิลปินผู้ทรงคุณค่าและเป็นซูเปอร์สตาร์อันดับหนึ่งของสยามประเทศมาอย่างยาวนานกว่า ๔ ทศวรรษ ด้วยน้ำเสียงและบุคลิกภาพอันอบอุ่นและเปี่ยมพลังชีวิต ท่านใช้เสียงเพลงและศิลปะการแสดงเป็นสื่อกลางในการสร้างความรัก ความสามัคคี และความสุขให้กับประชาชนชาวไทยทุกหมู่เหล่าโดยไม่มีอคติทางการเมือง</p>
-            </div>
-
-            <div class="tri-stage">
-              <div class="tri-stage-title">🎼 ผู้เสนอโครงการเพลงชาติไทย ๖ เวอร์ชัน และ Soft Power</div>
-              <p class="tri-stage-text">ในสมัยรัฐบาลของนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ ๑๗) ธงไชยได้เข้าพบนายกรัฐมนตรีและกระทรวงกลาโหม เพื่อนำเสนอโครงการประวัติศาสตร์การเรียบเรียงเพลงชาติไทยใหม่เป็น ๖ เวอร์ชันร่วมกับ GMM Grammy เพื่อสื่อสารว่า "ความหลากหลายคือพลังของชาติ" โดยยังคงทำนองเดิม พ.ศ. ๒๓๗๕ และคำร้องเดิม พ.ศ. ๒๓๘๒ ครบถ้วน เพื่อให้สัญลักษณ์ของประเทศมีความร่วมสมัย เข้าถึงได้ และสะท้อนตัวตนของเสรีชนทุกกลุ่มวัย</p>
-            </div>
-
-            <div class="tri-stage">
-              <div class="tri-stage-title">🌟 การใช้เสียงเพลงขจัดอำนาจนิยมและการสร้างความรักชาติวิถีใหม่</div>
-              <p class="tri-stage-text">ผลจากการผลักดันโครงการนี้ช่วยเปลี่ยนโฉมการร้องเพลงชาติในชีวิตประจำวัน โดยเฉพาะเพลงชาติเวอร์ชัน Kids/Choir ของน้องพลับที่ใช้ในโรงเรียนระดับอนุบาล-ประถม และเวอร์ชัน Ballroom ลีลาศที่ธงไชยขับร้องคู่กับ ตู่ นันทิดา ซึ่งช่วยผ่อนคลายวัฒนธรรมอำนาจนิยมเดิมในระบบราชการและโรงเรียนให้กลายเป็นความสมัครใจ ความอบอุ่น และรอยยิ้มอย่างกลมกลืนตามปรัชญาของรัฐธรรมนูญจำลอง</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 
