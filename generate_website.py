@@ -1306,42 +1306,155 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
           
           <div style="font-size: 14px; line-height: 1.65; color: var(--text-muted);">
-            <p style="margin-bottom: 12px; text-indent: 1.5em; color: var(--text);">
-              <strong>ธงไตรรงค์</strong> เป็นสัญลักษณ์สูงสุดของชาติไทยในไทม์ไลน์นี้ โดยมีวิวัฒนาการทางประวัติศาสตร์ที่ดึงมาจากหลักฐานจดหมายเหตุโบราณ (อ้างอิงตามบันทึกพิพิธภัณฑ์ธงชาติไทย) ดังนี้:
+            <p style="margin-bottom: 16px; text-indent: 1.5em; color: var(--text);">
+              <strong>ธงชาติไทย</strong> มีวิวัฒนาการทางประวัติศาสตร์อย่างยาวนานตามลำดับรัชกาล โดยมีลักษณะและภาพของธงแต่ละแบบในแต่ละยุคสมัย (อ้างอิงตามหลักฐานจดหมายเหตุของพิพิธภัณฑ์ธงชาติไทย) ดังนี้:
             </p>
             
-            <div style="margin-bottom: 16px; font-size: 13.5px; border-left: 3px solid var(--gold); padding-left: 12px;">
-              <strong style="color: var(--gold-light); display: block; margin-bottom: 4px;">⚓ สมัยกรุงศรีอยุธยา:</strong>
-              เริ่มต้นใช้ธงสีแดงเกลี้ยงสำหรับเดินเรือค้าขายทางทะเลกับต่างชาติ (เช่น การค้ากับฝรั่งเศสในรัชสมัยสมเด็จพระนารายณ์มหาราช) เพื่อระบุสัญชาติสยาม
-            </div>
+            <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 20px;">
+              
+              <!-- 1. ธงแดงเกลี้ยง -->
+              <div style="display: flex; gap: 16px; align-items: center; background: rgba(255,255,255,0.01); padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03);">
+                <div style="flex-shrink: 0; width: 90px; height: 60px; background: #e02c2c; border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);"></div>
+                <div>
+                  <strong style="color: var(--gold-light); display: block; font-size: 14px;">๑. ธงแดงเกลี้ยง (สมัยอยุธยา - ธนบุรี - รัชกาลที่ ๑)</strong>
+                  <span style="font-size: 13px; color: var(--text-muted);">เริ่มใช้ตั้งแต่สมัยกรุงศรีอยุธยา (รัชสมัยสมเด็จพระนารายณ์มหาราช) เป็นเรือสินค้าใช้แสดงสัญชาติทั่วไป</span>
+                </div>
+              </div>
 
-            <div style="margin-bottom: 16px; font-size: 13.5px; border-left: 3px solid var(--gold); padding-left: 12px;">
-              <strong style="color: var(--gold-light); display: block; margin-bottom: 4px;">👑 รัชกาลที่ ๑ (พ.ศ. ๒๒๓๒):</strong>
-              ทรงมีพระราชดำริเพิ่มรูป <strong>"จักรสีขาว"</strong> ไว้ตรงกลางธงแดง เพื่อใช้บนเรือหลวงให้แตกต่างและจำแนกได้ชัดเจนจากเรือของราษฎรทั่วไป
-            </div>
+              <!-- 2. ธงวงจักรสีขาว -->
+              <div style="display: flex; gap: 16px; align-items: center; background: rgba(255,255,255,0.01); padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03);">
+                <div style="flex-shrink: 0;">
+                  <svg width="90" height="60" style="border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); display: block;">
+                    <rect width="90" height="60" fill="#e02c2c"/>
+                    <circle cx="45" cy="30" r="12" fill="none" stroke="#ffffff" stroke-width="2"/>
+                    <circle cx="45" cy="30" r="3" fill="#ffffff"/>
+                    <line x1="45" y1="18" x2="45" y2="42" stroke="#ffffff" stroke-width="2"/>
+                    <line x1="33" y1="30" x2="57" y2="30" stroke="#ffffff" stroke-width="2"/>
+                    <line x1="36.5" y1="21.5" x2="53.5" y2="38.5" stroke="#ffffff" stroke-width="2"/>
+                    <line x1="36.5" y1="38.5" x2="53.5" y2="21.5" stroke="#ffffff" stroke-width="2"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong style="color: var(--gold-light); display: block; font-size: 14px;">๒. ธงวงจักรสีขาวบนพื้นแดง (รัชกาลที่ ๑, พ.ศ. ๒๒๓๒)</strong>
+                  <span style="font-size: 13px; color: var(--text-muted);">ทรงพระราชดำริเพิ่มวงจักรสีขาวตรงกลางธงแดงเกลี้ยง เพื่อให้ใช้สำหรับเรือหลวงจำแนกจากเรือราษฎร</span>
+                </div>
+              </div>
 
-            <div style="margin-bottom: 16px; font-size: 13.5px; border-left: 3px solid var(--gold); padding-left: 12px;">
-              <strong style="color: var(--gold-light); display: block; margin-bottom: 4px;">🐘 รัชกาลที่ ๒ (พ.ศ. ๒๒๖๐):</strong>
-              ทรงเพิ่มรูป <strong>"ช้างเผือก"</strong> ไว้ด้านในวงจักรสีขาวเพื่อประดับคู่เรือหลวงในรัชสมัย
-            </div>
+              <!-- 3. ธงช้างเผือกในวงจักร -->
+              <div style="display: flex; gap: 16px; align-items: center; background: rgba(255,255,255,0.01); padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03);">
+                <div style="flex-shrink: 0;">
+                  <svg width="90" height="60" style="border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); display: block;">
+                    <rect width="90" height="60" fill="#e02c2c"/>
+                    <circle cx="45" cy="27" r="14" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+                    <line x1="45" y1="13" x2="45" y2="41" stroke="#ffffff" stroke-width="1.5"/>
+                    <line x1="31" y1="27" x2="59" y2="27" stroke="#ffffff" stroke-width="1.5"/>
+                    <line x1="35" y1="17" x2="55" y2="37" stroke="#ffffff" stroke-width="1.5"/>
+                    <line x1="35" y1="37" x2="55" y2="17" stroke="#ffffff" stroke-width="1.5"/>
+                    <circle cx="45" cy="27" r="10" fill="#e02c2c"/>
+                    <g fill="#ffffff">
+                      <rect x="40" y="22" width="10" height="7" rx="2"/>
+                      <rect x="42" y="28" width="1.5" height="3"/>
+                      <rect x="44" y="28" width="1.5" height="3"/>
+                      <rect x="46" y="28" width="1.5" height="3"/>
+                      <rect x="48" y="28" width="1.5" height="3"/>
+                      <path d="M40,24 C38,24 37,23 37,21" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+                      <circle cx="42" cy="24" r="1" fill="#e02c2c"/>
+                    </g>
+                  </svg>
+                </div>
+                <div>
+                  <strong style="color: var(--gold-light); display: block; font-size: 14px;">๓. ธงช้างเผือกในวงจักรสีขาว (รัชกาลที่ ๒, พ.ศ. ๒๒๖๐)</strong>
+                  <span style="font-size: 13px; color: var(--text-muted);">ทรงเพิ่มช้างเผือกไว้ในวงจักรสีขาว สำหรับเรือหลวงสืบเนื่องจากการได้ช้างเผือกคู่บารมีถึง ๓ เชือก</span>
+                </div>
+              </div>
 
-            <div style="margin-bottom: 16px; font-size: 13.5px; border-left: 3px solid var(--gold); padding-left: 12px;">
-              <strong style="color: var(--gold-light); display: block; margin-bottom: 4px;">🛡️ รัชกาลที่ ๔ (พ.ศ. ๒๓๐๐):</strong>
-              ทรงนำวงจักรสีขาวออกเหลือเพียงรูป <strong>"ช้างเผือกหันหน้าเข้าเสาบนพื้นแดง"</strong> เพื่อประกาศใช้เป็นธงชาติสยามทั่วไปทั้งเรือหลวงและเรือราษฎร เพื่อป้องกันสากลประเทศสับสน
-            </div>
+              <!-- 4. ธงช้างเผือกปล่อย -->
+              <div style="display: flex; gap: 16px; align-items: center; background: rgba(255,255,255,0.01); padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03);">
+                <div style="flex-shrink: 0;">
+                  <svg width="90" height="60" style="border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); display: block;">
+                    <rect width="90" height="60" fill="#e02c2c"/>
+                    <g fill="#ffffff" transform="scale(1.2) translate(-6, -2)">
+                      <rect x="35" y="20" width="14" height="9" rx="3"/>
+                      <rect x="37" y="28" width="2" height="4"/>
+                      <rect x="40" y="28" width="2" height="4"/>
+                      <rect x="43" y="28" width="2" height="4"/>
+                      <rect x="46" y="28" width="2" height="4"/>
+                      <path d="M35,23 C33,23 32,22 32,20" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+                      <circle cx="38" cy="23" r="1" fill="#e02c2c"/>
+                    </g>
+                  </svg>
+                </div>
+                <div>
+                  <strong style="color: var(--gold-light); display: block; font-size: 14px;">๔. ธงช้างเผือกปล่อยบนพื้นแดง (รัชกาลที่ ๔, พ.ศ. ๒๓๐๐)</strong>
+                  <span style="font-size: 13px; color: var(--text-muted);">ทรงนำวงจักรสีขาวออก เหลือช้างเผือกอย่างเดียว ประกาศใช้ทั่วไปทั้งรัฐและราษฎรเพื่อไม่ให้ต่างชาติสับสน</span>
+                </div>
+              </div>
 
-            <div style="margin-bottom: 16px; font-size: 13.5px; border-left: 3px solid var(--gold); padding-left: 12px;">
-              <strong style="color: var(--gold-light); display: block; margin-bottom: 4px;">🇹🇭 รัชกาลที่ ๖ (พ.ศ. ๒๓๖๐):</strong>
-              ทรงปรับเป็น <strong>"ธงแดงขาว ๕ ริ้ว"</strong> เพื่อเลี่ยงปัญหาการประดับธงช้างเผือกกลับหัว จากนั้นจึงทรงเปลี่ยนริ้วแดงกลางเป็น <strong>"สีน้ำเงินเข้ม"</strong> (สีขาบ) เกิดเป็น <strong>"ธงไตรรงค์"</strong> เพื่อแสดงถึงความสามัคคีและเสาหลัก ชาติ (แดง), ศาสนา (ขาว), พระมหากษัตริย์ (น้ำเงิน) และเข้าร่วมกับฝ่ายสัมพันธมิตรอย่างสง่างาม
+              <!-- 5. ธงช้างเผือกทรงเครื่อง -->
+              <div style="display: flex; gap: 16px; align-items: center; background: rgba(255,255,255,0.01); padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03);">
+                <div style="flex-shrink: 0;">
+                  <svg width="90" height="60" style="border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); display: block;">
+                    <rect width="90" height="60" fill="#e02c2c"/>
+                    <rect x="25" y="44" width="40" height="4" fill="#ffd700" rx="1"/>
+                    <rect x="28" y="41" width="34" height="3" fill="#ffd700" rx="1"/>
+                    <g fill="#ffffff" transform="translate(0, 4)">
+                      <rect x="35" y="20" width="16" height="10" rx="3"/>
+                      <rect x="37" y="29" width="2.2" height="5"/>
+                      <rect x="41" y="29" width="2.2" height="5"/>
+                      <rect x="45" y="29" width="2.2" height="5"/>
+                      <rect x="48" y="29" width="2.2" height="5"/>
+                      <path d="M35,23 C33,23 32,22 32,20" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+                      <rect x="39" y="19" width="8" height="4" fill="#ffd700"/>
+                      <path d="M43,19 L43,15 L45,17 Z" fill="#ffd700"/>
+                      <path d="M36,25 L39,21" stroke="#ffd700" stroke-width="1"/>
+                      <path d="M51,25 L47,21" stroke="#ffd700" stroke-width="1"/>
+                    </g>
+                  </svg>
+                </div>
+                <div>
+                  <strong style="color: var(--gold-light); display: block; font-size: 14px;">๕. ธงช้างเผือกทรงเครื่องบนพื้นแดง (รัชกาลที่ ๕, พ.ศ. ๒๓๕๐)</strong>
+                  <span style="font-size: 13px; color: var(--text-muted);">ปรับปรุงช้างเผือกให้ทรงเครื่องยืนบนแท่นทอง เพื่อใช้เป็นธงราชการและสื่อสารสัมพันธ์ทางการทูตยุคใหม่</span>
+                </div>
+              </div>
+
+              <!-- 6. ธงแดงขาว ๕ ริ้ว -->
+              <div style="display: flex; gap: 16px; align-items: center; background: rgba(255,255,255,0.01); padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03);">
+                <div style="width: 90px; height: 60px; display: flex; flex-direction: column; border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.3); flex-shrink: 0;">
+                  <div style="flex: 1; background: #e02c2c;"></div>
+                  <div style="flex: 1; background: #ffffff;"></div>
+                  <div style="flex: 1; background: #e02c2c;"></div>
+                  <div style="flex: 1; background: #ffffff;"></div>
+                  <div style="flex: 1; background: #e02c2c;"></div>
+                </div>
+                <div>
+                  <strong style="color: var(--gold-light); display: block; font-size: 14px;">๖. ธงริ้วแดงขาว ๕ ริ้ว (รัชกาลที่ ๖, พ.ศ. ๒๓๖๐)</strong>
+                  <span style="font-size: 13px; color: var(--text-muted);">นำแถบสีแดงและขาวสลับเป็นริ้ว ๕ แถบ เพื่อหลีกเลี่ยงปัญหาการประดับธงช้างเผือกกลับหัว</span>
+                </div>
+              </div>
+
+              <!-- 7. ธงไตรรงค์ -->
+              <div style="display: flex; gap: 16px; align-items: center; background: rgba(255,255,255,0.01); padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03);">
+                <div style="width: 90px; height: 60px; display: flex; flex-direction: column; border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.3); flex-shrink: 0;">
+                  <div style="flex: 1; background: #e02c2c;"></div>
+                  <div style="flex: 1; background: #ffffff;"></div>
+                  <div style="flex: 2; background: #1c35a3;"></div>
+                  <div style="flex: 1; background: #ffffff;"></div>
+                  <div style="flex: 1; background: #e02c2c;"></div>
+                </div>
+                <div>
+                  <strong style="color: var(--gold-light); display: block; font-size: 14px;">๗. ธงไตรรงค์ (รัชกาลที่ ๖ - ปัจจุบัน)</strong>
+                  <span style="font-size: 13px; color: var(--text-muted);">ทรงเพิ่มริ้วกลางเป็นสีน้ำเงินเข้ม (สีขาบ) กลายเป็นสีสัญญลักษณ์หลักร่วมกับนานาชาติสัมพันธมิตร</span>
+                </div>
+              </div>
+
             </div>
             
             <div style="background: rgba(212, 175, 55, 0.06); border-left: 3px solid var(--gold); padding: 10px 14px; border-radius: 4px; font-size: 13px; line-height: 1.5; color: var(--text);">
-              <strong>สัดส่วนและสีของธงชาติ:</strong> อัตราส่วนความกว้างต่อความยาวคือ ๖:๙ โดยแถบสีแดงและขาวมีความกว้างริ้วละ ๑ ส่วน และแถบน้ำเงินกลางกว้าง ๒ ส่วน
+              <strong>สัดส่วนของธงไตรรงค์ปัจจุบัน:</strong> อัตราส่วนความกว้างต่อความยาวคือ ๖:๙ ส่วน แถบสีแดงและขาวริ้วละ ๑ ส่วน แถบสีน้ำเงินกลางกว้างเป็น ๒ ส่วน
             </div>
           </div>
         </div>
-        
-        <!-- ฝั่งขวา: เพลงชาติไทย -->
+      <!-- ฝั่งขวา: เพลงชาติไทย -->
         <div style="flex: 0.9; min-width: 300px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(212, 175, 55, 0.15); border-radius: 12px; padding: 20px;">
           <h3 style="color: var(--gold-light); margin-bottom: 16px; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
             🎵 ประวัติเพลงชาติไทย (Thai National Anthem)
