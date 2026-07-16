@@ -10294,12 +10294,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 200);
   });
   
-  // Rukchanok Pending Bio text toggle
+  // Rukchanok Pending Bio text toggle (with line-through)
   setInterval(() => {
     const el = document.getElementById("rukchanok-pending-desc");
     if (el) {
       if (el.dataset.mode === "normal") {
-        el.innerHTML = `<code style="font-family: 'Courier New', monospace; color: #8899aa; font-size: 13px; display: block; background: rgba(0,0,0,0.3); padding: 12px; border-radius: 6px; line-height: 1.4; border: 1px solid rgba(255,255,255,0.05); text-align: left;">[SYSTEM_LOG: EVAL_RUKCHANOK_SRINOK]<br>OPERATION_DESTRUCTION_OF_VISUT_HEGEMONY = TRUE<br>PARLIAMENT_TRANSPARENCY = 1.00 (MAX_INTEGRITY)<br>RESTORE_PARADOX_AI_2.0 = IN_PROGRESS (PARTNERS: AMD, NVIDIA, ASUS, ANTHROPIC, GOOGLE)<br>STATUS: PENDING_APPROVAL_หมวด_๓๕_มาตรา_๑๑๖๐</code>`;
+        el.innerHTML = `<code style="font-family: 'Courier New', monospace; color: #556270; font-size: 13px; display: block; background: rgba(0,0,0,0.5); padding: 12px; border-radius: 6px; line-height: 1.4; border: 1px solid rgba(255,255,255,0.02); text-align: left; text-decoration: line-through;">[SYSTEM_LOG: EVAL_RUKCHANOK_SRINOK]<br>OPERATION_DESTRUCTION_OF_VISUT_HEGEMONY = TRUE<br>PARLIAMENT_TRANSPARENCY = 1.00 (MAX_INTEGRITY)<br>RESTORE_PARADOX_AI_2.0 = IN_PROGRESS (PARTNERS: AMD, NVIDIA, ASUS, ANTHROPIC, GOOGLE)<br>STATUS: REJECTED_INSUFFICIENT_RECORD</code>`;
         el.dataset.mode = "code";
       } else {
         el.innerHTML = `อยู่ระหว่างการพิจารณาบรรจุเข้าทำเนียบบุคคลสำคัญกติการัฐธรรมนูญอย่างเป็นทางการ จากวีรกรรมปฏิรูปสภาผู้แทนราษฎรในการกวาดล้างอิทธิพลเครือข่ายนอกรัฐธรรมนูญและอำนาจนิติประหารของวิสุทธิ์ คมณรัตน์จนหมดสิ้น พร้อมทั้งจับมือกับภาคเทคโนโลยีระดับสากลเพื่อกู้คืนสถาปัตยกรรม ParadoxAI 2.0 และสวัสดิการถ้วนหน้าให้กลับมาเป็นสิทธิประโยชน์พื้นฐานของพลเมืองไทยอีกครั้ง`;

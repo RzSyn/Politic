@@ -4224,28 +4224,28 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
         <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 32px 0;">
 
-        <!-- รักชนก ศรีนอก (อยู่ระหว่างการพิจารณา) -->
-        <div class="tri-layout" style="margin-bottom: 32px; background: rgba(20, 24, 35, 0.4); border: 1px dashed rgba(255,255,255,0.1); border-radius: 12px; padding: 24px; position: relative;">
-          <div style="position: absolute; top: 16px; right: 20px; font-size: 24px;" title="อยู่ระหว่างการพิจารณา">🕒</div>
+        <!-- รักชนก ศรีนอก (อยู่ระหว่างการพิจารณา - ผลงานไม่เพียงพอ ถูกขีดฆ่า) -->
+        <div class="tri-layout" style="margin-bottom: 32px; background: rgba(20, 24, 35, 0.4); border: 1px dashed rgba(255,255,255,0.1); border-radius: 12px; padding: 24px; position: relative; text-decoration: line-through; color: #556270;">
+          <div style="position: absolute; top: 16px; right: 20px; font-size: 24px; filter: grayscale(100%); opacity: 0.6;" title="ปฏิเสธการบรรจุ - ผลงานยังไม่เพียงพอ">❌</div>
           
-          <div class="tri-profile-card" style="background: rgba(30, 35, 45, 0.6); border: 1px solid rgba(255,255,255,0.08); filter: grayscale(100%);">
-            <img src="rukchanok.png" alt="รักชนก ศรีนอก" class="tri-profile-img" style="filter: grayscale(100%); opacity: 0.6; border-color: rgba(255,255,255,0.15);">
-            <div class="tri-profile-name" style="color: #a0aec0;">รักชนก ศรีนอก</div>
-            <div class="tri-profile-title" style="color: #718096;">อยู่ระหว่างการพิจารณาบรรจุบัญชี</div>
-            <div class="tri-meta" style="border-top: 1px solid rgba(255, 255, 255, 0.05); color: #718096;">
-              <div style="margin-bottom: 6px;"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๒๒ (คนปัจจุบัน)</div>
-              <div style="margin-bottom: 6px;"><strong>พรรคการเมือง:</strong> พรรคก้าวไกล</div>
-              <div><strong>สถานะคดีการเมือง:</strong> กู้คืนความบริสุทธิ์ของสภาสำเร็จ</div>
+          <div class="tri-profile-card" style="background: rgba(15, 18, 25, 0.9); border: 1px solid rgba(255,255,255,0.05); filter: grayscale(100%);">
+            <img src="rukchanok.png" alt="รักชนก ศรีนอก" class="tri-profile-img" style="filter: brightness(0); opacity: 0.8; border-color: rgba(255,255,255,0.05);">
+            <div class="tri-profile-name" style="color: #4a5568; text-decoration: line-through;">รักชนก ศรีนอก</div>
+            <div class="tri-profile-title" style="color: #4a5568; text-decoration: line-through;">ปฏิเสธการบรรจุ (ผลงานยังไม่เพียงพอ)</div>
+            <div class="tri-meta" style="border-top: 1px solid rgba(255, 255, 255, 0.05); color: #4a5568; text-decoration: line-through;">
+              <div style="margin-bottom: 6px; text-decoration: line-through;"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๒๒ (คนปัจจุบัน)</div>
+              <div style="margin-bottom: 6px; text-decoration: line-through;"><strong>พรรคการเมือง:</strong> พรรคก้าวไกล</div>
+              <div style="text-decoration: line-through;"><strong>สถานะคดีการเมือง:</strong> กู้คืนความบริสุทธิ์ของสภาสำเร็จ</div>
             </div>
           </div>
 
-          <div class="tri-bio" style="filter: grayscale(100%); opacity: 0.85;">
-            <div class="tri-stage">
-              <div class="tri-stage-title" style="color: #a0aec0; display: flex; align-items: center; gap: 8px;">
-                <span>⚖️ บันทึกพฤติการณ์และการสืบค้นประวัติศาสตร์เฉพาะกิจ</span>
-                <span class="badge" style="background: rgba(255,255,255,0.08); color: #a0aec0; border: 1px solid rgba(255,255,255,0.15); font-size: 10px;">EVAL_PENDING</span>
+          <div class="tri-bio" style="filter: grayscale(100%); opacity: 0.5;">
+            <div class="tri-stage" style="text-decoration: line-through;">
+              <div class="tri-stage-title" style="color: #4a5568; display: flex; align-items: center; gap: 8px; text-decoration: line-through;">
+                <span style="text-decoration: line-through;">⚖️ บันทึกพฤติการณ์และการสืบค้นประวัติศาสตร์เฉพาะกิจ</span>
+                <span class="badge" style="background: rgba(255,255,255,0.03); color: #4a5568; border: 1px solid rgba(255,255,255,0.08); font-size: 10px; text-decoration: line-through;">REJECTED_INSUFFICIENT</span>
               </div>
-              <p class="tri-stage-text" id="rukchanok-pending-desc" data-mode="normal" style="font-size: 15px; color: #cbd5e0; min-height: 120px; transition: all 0.3s; line-height: 1.8;">อยู่ระหว่างการพิจารณาบรรจุเข้าทำเนียบบุคคลสำคัญกติการัฐธรรมนูญอย่างเป็นทางการ จากวีรกรรมปฏิรูปสภาผู้แทนราษฎรในการกวาดล้างอิทธิพลเครือข่ายนอกรัฐธรรมนูญและอำนาจนิติประหารของวิสุทธิ์ คมณรัตน์จนหมดสิ้น พร้อมทั้งจับมือกับภาคเทคโนโลยีระดับสากลเพื่อกู้คืนสถาปัตยกรรม ParadoxAI 2.0 และสวัสดิการถ้วนหน้าให้กลับมาเป็นสิทธิประโยชน์พื้นฐานของพลเมืองไทยอีกครั้ง</p>
+              <p class="tri-stage-text" id="rukchanok-pending-desc" data-mode="normal" style="font-size: 15px; color: #4a5568; min-height: 120px; transition: all 0.3s; line-height: 1.8; text-decoration: line-through;">อยู่ระหว่างการพิจารณาบรรจุเข้าทำเนียบบุคคลสำคัญกติการัฐธรรมนูญอย่างเป็นทางการ จากวีรกรรมปฏิรูปสภาผู้แทนราษฎรในการกวาดล้างอิทธิพลเครือข่ายนอกรัฐธรรมนูญและอำนาจนิติประหารของวิสุทธิ์ คมณรัตน์จนหมดสิ้น พร้อมทั้งจับมือกับภาคเทคโนโลยีระดับสากลเพื่อกู้คืนสถาปัตยกรรม ParadoxAI 2.0 และสวัสดิการถ้วนหน้าให้กลับมาเป็นสิทธิประโยชน์พื้นฐานของพลเมืองไทยอีกครั้ง</p>
             </div>
           </div>
         </div>
@@ -6854,12 +6854,12 @@ document.addEventListener('DOMContentLoaded', () => {{
     }}, 200);
   }});
   
-  // Rukchanok Pending Bio text toggle
+  // Rukchanok Pending Bio text toggle (with line-through)
   setInterval(() => {{
     const el = document.getElementById("rukchanok-pending-desc");
     if (el) {{
       if (el.dataset.mode === "normal") {{
-        el.innerHTML = `<code style="font-family: 'Courier New', monospace; color: #8899aa; font-size: 13px; display: block; background: rgba(0,0,0,0.3); padding: 12px; border-radius: 6px; line-height: 1.4; border: 1px solid rgba(255,255,255,0.05); text-align: left;">[SYSTEM_LOG: EVAL_RUKCHANOK_SRINOK]<br>OPERATION_DESTRUCTION_OF_VISUT_HEGEMONY = TRUE<br>PARLIAMENT_TRANSPARENCY = 1.00 (MAX_INTEGRITY)<br>RESTORE_PARADOX_AI_2.0 = IN_PROGRESS (PARTNERS: AMD, NVIDIA, ASUS, ANTHROPIC, GOOGLE)<br>STATUS: PENDING_APPROVAL_หมวด_๓๕_มาตรา_๑๑๖๐</code>`;
+        el.innerHTML = `<code style="font-family: 'Courier New', monospace; color: #556270; font-size: 13px; display: block; background: rgba(0,0,0,0.5); padding: 12px; border-radius: 6px; line-height: 1.4; border: 1px solid rgba(255,255,255,0.02); text-align: left; text-decoration: line-through;">[SYSTEM_LOG: EVAL_RUKCHANOK_SRINOK]<br>OPERATION_DESTRUCTION_OF_VISUT_HEGEMONY = TRUE<br>PARLIAMENT_TRANSPARENCY = 1.00 (MAX_INTEGRITY)<br>RESTORE_PARADOX_AI_2.0 = IN_PROGRESS (PARTNERS: AMD, NVIDIA, ASUS, ANTHROPIC, GOOGLE)<br>STATUS: REJECTED_INSUFFICIENT_RECORD</code>`;
         el.dataset.mode = "code";
       }} else {{
         el.innerHTML = `อยู่ระหว่างการพิจารณาบรรจุเข้าทำเนียบบุคคลสำคัญกติการัฐธรรมนูญอย่างเป็นทางการ จากวีรกรรมปฏิรูปสภาผู้แทนราษฎรในการกวาดล้างอิทธิพลเครือข่ายนอกรัฐธรรมนูญและอำนาจนิติประหารของวิสุทธิ์ คมณรัตน์จนหมดสิ้น พร้อมทั้งจับมือกับภาคเทคโนโลยีระดับสากลเพื่อกู้คืนสถาปัตยกรรม ParadoxAI 2.0 และสวัสดิการถ้วนหน้าให้กลับมาเป็นสิทธิประโยชน์พื้นฐานของพลเมืองไทยอีกครั้ง`;
@@ -7725,12 +7725,12 @@ document.addEventListener('DOMContentLoaded', () => {{
     }}, 200);
   }});
   
-  // Rukchanok Pending Bio text toggle
+  // Rukchanok Pending Bio text toggle (with line-through)
   setInterval(() => {{
     const el = document.getElementById("rukchanok-pending-desc");
     if (el) {{
       if (el.dataset.mode === "normal") {{
-        el.innerHTML = `<code style="font-family: 'Courier New', monospace; color: #8899aa; font-size: 13px; display: block; background: rgba(0,0,0,0.3); padding: 12px; border-radius: 6px; line-height: 1.4; border: 1px solid rgba(255,255,255,0.05); text-align: left;">[SYSTEM_LOG: EVAL_RUKCHANOK_SRINOK]<br>OPERATION_DESTRUCTION_OF_VISUT_HEGEMONY = TRUE<br>PARLIAMENT_TRANSPARENCY = 1.00 (MAX_INTEGRITY)<br>RESTORE_PARADOX_AI_2.0 = IN_PROGRESS (PARTNERS: AMD, NVIDIA, ASUS, ANTHROPIC, GOOGLE)<br>STATUS: PENDING_APPROVAL_หมวด_๓๕_มาตรา_๑๑๖๐</code>`;
+        el.innerHTML = `<code style="font-family: 'Courier New', monospace; color: #556270; font-size: 13px; display: block; background: rgba(0,0,0,0.5); padding: 12px; border-radius: 6px; line-height: 1.4; border: 1px solid rgba(255,255,255,0.02); text-align: left; text-decoration: line-through;">[SYSTEM_LOG: EVAL_RUKCHANOK_SRINOK]<br>OPERATION_DESTRUCTION_OF_VISUT_HEGEMONY = TRUE<br>PARLIAMENT_TRANSPARENCY = 1.00 (MAX_INTEGRITY)<br>RESTORE_PARADOX_AI_2.0 = IN_PROGRESS (PARTNERS: AMD, NVIDIA, ASUS, ANTHROPIC, GOOGLE)<br>STATUS: REJECTED_INSUFFICIENT_RECORD</code>`;
         el.dataset.mode = "code";
       }} else {{
         el.innerHTML = `อยู่ระหว่างการพิจารณาบรรจุเข้าทำเนียบบุคคลสำคัญกติการัฐธรรมนูญอย่างเป็นทางการ จากวีรกรรมปฏิรูปสภาผู้แทนราษฎรในการกวาดล้างอิทธิพลเครือข่ายนอกรัฐธรรมนูญและอำนาจนิติประหารของวิสุทธิ์ คมณรัตน์จนหมดสิ้น พร้อมทั้งจับมือกับภาคเทคโนโลยีระดับสากลเพื่อกู้คืนสถาปัตยกรรม ParadoxAI 2.0 และสวัสดิการถ้วนหน้าให้กลับมาเป็นสิทธิประโยชน์พื้นฐานของพลเมืองไทยอีกครั้ง`;
