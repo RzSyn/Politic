@@ -3228,14 +3228,14 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <div style="margin-bottom: 16px; position: relative;">
                 <div style="position: absolute; left: -25px; top: 3px; width: 9px; height: 9px; border-radius: 50%; background: #00f0ff; box-shadow: 0 0 5px #00f0ff;"></div>
                 <strong style="color: var(--text);">พ.ศ. ๒๕๗๕ - สมัยนายกฯ พิธา (คนที่ ๑๗):</strong>
-                <span style="display: block;">ริเริ่มก่อตั้งโครงการภายใต้ความร่วมมือกับ **Anthropic** เพื่อสร้างระบบต้นแบบการวิเคราะห์นโยบายและการคลังระดับ Alpha จนสำเร็จไปถึงรุ่น Beta 1.0</span>
+                <span style="display: block;">ริเริ่มสถาปนาโครงการโดยได้รับเกียรติจาก **ดร.ธนานนท์ ปฏิญญาศักดิกุล (9arm)** เข้ามารับหน้าที่เป็นผู้ออกแบบโครงสร้างหลักและภาษาคำสั่ง ร่วมมือกับ **Anthropic** ในการพัฒนาสร้างระบบต้นแบบวิเคราะห์นโยบายและการคลังระดับ Alpha จนสำเร็จที่เวอร์ชัน Beta 1.0</span>
               </div>
 
               <!-- สมัย 18 -->
               <div style="margin-bottom: 16px; position: relative;">
                 <div style="position: absolute; left: -25px; top: 3px; width: 9px; height: 9px; border-radius: 50%; background: #00f0ff; box-shadow: 0 0 5px #00f0ff;"></div>
                 <strong style="color: var(--text);">พ.ศ. ๒๕๗๖-๒๕๙๒ - สมัยนายกฯ ศิริกัญญา (คนที่ ๑๘):</strong>
-                <span style="display: block;">จัดทำโครงการความร่วมมือ **TH-NAI (Thailand National AI alliance)** ขยายพันธมิตรร่วมกับเทคโนโลยียักษ์ใหญ่อย่าง **AMD, Nvidia, ASUS, Google และ Anthropic** พัฒนาสู่ Beta 2.5 และรุ่น 3.0 (ที่มาพร้อม IDE ประมวลผลเสถียร) จนเสร็จสมบูรณ์แบบที่รุ่น **5.8 Full Release**</span>
+                <span style="display: block;">มี **ดร.ธนานนท์ ปฏิญญาศักดิกุล (9arm)** นั่งแท่นประธานที่ปรึกษาด้านเทคโนโลยีการคลังดิจิทัลของรัฐบาล เพื่อผลักดันโครงการร่วมทุนครั้งใหญ่ **TH-NAI (Thailand National AI alliance)** ร่วมพันธมิตรกับ **AMD, Nvidia, ASUS, Google และ Anthropic** ขยายระบบสู่รุ่น 3.0 ที่มี IDE และเปิดตัวสมบูรณ์แบบที่เวอร์ชัน 5.8 Full Release</span>
               </div>
 
               <!-- ปมการหายสาบสูญ -->
