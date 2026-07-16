@@ -542,7 +542,7 @@ for pm in pms:
     pm_rows.append(f'''<tr class="pm-row" data-era="{era_class}">
   <td style="text-align: center;">{num_str}</td>
   <td style="text-align: center; vertical-align: middle; padding: 8px 4px;">
-    <div style="width: 240px; height: 300px; border: 3px solid var(--gold); border-radius: 8px; overflow: hidden; background: #000; box-shadow: 0 6px 16px rgba(0,0,0,0.6); margin: 0 auto; display: flex; align-items: center; justify-content: center;">
+    <div style="width: 220px; height: 275px; border: 3px solid var(--gold); border-radius: 8px; overflow: hidden; background: #000; box-shadow: 0 6px 16px rgba(0,0,0,0.6); margin: 0 auto; display: flex; align-items: center; justify-content: center;">
       <img src="{img_filename}" alt="{name_str}" style="width: 100%; height: 100%; object-fit: cover;">
     </div>
   </td>
@@ -1302,7 +1302,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           <thead>
             <tr>
               <th style="width: 50px; text-align: center;">ลำดับ</th>
-              <th style="width: 260px; text-align: center;">ภาพพอร์ตเทรต</th>
+              <th style="width: 240px; text-align: center;">ภาพพอร์ตเทรต</th>
               <th style="width: 140px;">นายกรัฐมนตรี</th>
               <th style="width: 200px; text-align: center;">พรรคการเมือง</th>
               <th style="width: 100px; text-align: center;">ปีดำรงตำแหน่ง</th>
