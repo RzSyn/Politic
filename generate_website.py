@@ -3238,11 +3238,18 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="display: block;">จัดทำโครงการความร่วมมือ **TH-NAI (Thailand National AI alliance)** ขยายพันธมิตรร่วมกับเทคโนโลยียักษ์ใหญ่อย่าง **AMD, Nvidia, ASUS, Google และ Anthropic** พัฒนาสู่ Beta 2.5 และรุ่น 3.0 (ที่มาพร้อม IDE ประมวลผลเสถียร) จนเสร็จสมบูรณ์แบบที่รุ่น **5.8 Full Release**</span>
               </div>
 
+              <!-- ปมการหายสาบสูญ -->
+              <div style="margin-bottom: 16px; position: relative;">
+                <div style="position: absolute; left: -25px; top: 3px; width: 9px; height: 9px; border-radius: 50%; background: #f87171; box-shadow: 0 0 5px #f87171;"></div>
+                <strong style="color: #f87171;">พ.ศ. ๒๕๙๒ - วิกฤตไซเบอร์และการปิดระบบสาธารณะ:</strong>
+                <span style="display: block;">ระบบ ParadoxAI ตกเป็นเป้าหมายหลักของการจารกรรมข้อมูลเพื่อแทรกแซงเสถียรภาพเศรษฐกิจจากอิทธิพลขั้วอำนาจการเงินข้ามชาติ รัฐบาลศิริกัญญาและเสนาธิการฝ่ายความมั่นคงจึงตัดสินใจปิดระบบสาธารณะชั่วคราวและโอนย้ายข้อมูลอัลกอริทึมหลักเข้าสู่ระบบอินทราเน็ตความปลอดภัยสูงเพื่อป้องกันภัยคุกคาม ทำให้ประชาชนและบุคคลทั่วไปคิดว่าโครงการได้สูญหายไปแล้ว</span>
+              </div>
+
               <!-- สมัยรักชนก -->
               <div style="position: relative;">
                 <div style="position: absolute; left: -25px; top: 3px; width: 9px; height: 9px; border-radius: 50%; background: #34d399; box-shadow: 0 0 5px #34d399;"></div>
-                <strong style="color: #34d399;">พ.ศ. ๒๖๑๔ - สมัยนายกฯ รักชนก (คนที่ ๒๒):</strong>
-                <span style="display: block;">รื้อฟื้นโปรเจกต์เชิงลึกพัฒนาโครงการ **ParadoxAI 2.0** เพื่อนำเทคโนโลยีล้ำสมัยเข้ามาใช้อภิบาลสวัสดิการอีกครั้ง โดยจับมือขยายพันธมิตรร่วมกับ **AMD + Nvidia + ASUS + Anthropic + Google** เช่นเดียวกับระบบดั้งเดิม</span>
+                <strong style="color: #34d399;">พ.ศ. ๒๖๑๔ - สมัยนายกฯ รักชนก (คนที่ ๒๒) & โครงการ ParadoxAI 2.0:</strong>
+                <span style="display: block;">ริเริ่มโครงการ **ParadoxAI 2.0** โดยความร่วมมือระหว่างรัฐบาลรักชนกและ **ดร.ธนานนท์ ปฏิญญาศักดิกุล (9arm)** ผู้เป็นสถาปนิกหลัก เพื่อฟื้นฟูระบบการคลังและสวัสดิการถ้วนหน้าขึ้นมาใหม่อีกครั้ง โดยจับมือขยายพันธมิตรร่วมกับกลุ่มบริษัทเทคโนโลยีระดับสากล ได้แก่ **AMD + Nvidia + ASUS + Anthropic + Google**</span>
               </div>
 
             </div>
@@ -4093,7 +4100,41 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
         <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 32px 0;">
 
-        <!-- ไตรทิศา รณปวัตน์ -->
+                <!-- ดร.ธนานนท์ ปฏิญญาศักดิกุล (9arm) -->
+        <div class="tri-layout" style="margin-bottom: 32px;">
+          <div class="tri-profile-card">
+            <img src="9arm.png" alt="ดร.ธนานนท์ ปฏิญญาศักดิกุล" class="tri-profile-img">
+            <div class="tri-profile-name">ดร.ธนานนท์ ปฏิญญาศักดิกุล</div>
+            <div class="tri-profile-title">ประธานที่ปรึกษาด้านเทคโนโลยีและสถาปนิก ParadoxAI</div>
+            <div class="tri-meta">
+              <div style="margin-bottom: 6px;"><strong>ชื่อเรียกขาน:</strong> 9arm (นายกฯ ของชาวเน็ต)</div>
+              <div style="margin-bottom: 6px;"><strong>ผลงานเด่น:</strong> ผู้คิดค้นและออกแบบโครงสร้างภาษา Paradox Binary 40-bit</div>
+              <div style="margin-bottom: 6px;"><strong>พรรคการเมือง:</strong> - (ไม่มีสังกัดพรรคการเมือง)</div>
+              <div><strong>บทบาทพิเศษ:</strong> ออกแบบและฟื้นฟูระบบ ParadoxAI 2.0 ในสมัยนายกฯ รักชนก</div>
+            </div>
+          </div>
+
+          <div class="tri-bio">
+            <div class="tri-stage">
+              <div class="tri-stage-title">🎓 จากดุษฎีบัณฑิตวิทยาการคอมพิวเตอร์ระดับโลกสู่ผู้ทรงอิทธิพลไอทีไทย</div>
+              <p class="tri-stage-text">ดร.ธนานนท์ ปฏิญญาศักดิกุล (9arm) สำเร็จการศึกษาระดับปริญญาเอก (Ph.D.) ด้านวิทยาการคอมพิวเตอร์ (Computer Science) โดยศึกษาและทำวิจัยด้าน High-Performance Computing ร่วมกับดร. แจ็ก ดองการ์รา (Jack Dongarra) ผู้ได้รับรางวัลทิวริง (Turing Award) ท่านเป็นยูทูบเบอร์และนักจัดรายการให้ความรู้ด้านเทคโนโลยีชื่อดังผู้ทรงอิทธิพลทางความคิดต่อคนรุ่นใหม่และวงการไอทีสยามประเทศอย่างล้นหลาม</p>
+            </div>
+
+            <div class="tri-stage">
+              <div class="tri-stage-title">🎼 สถาปนิกผู้ออกแบบภาษาบิตนิรภัย Paradox Binary 40-bit</div>
+              <p class="tri-stage-text">ด้วยเชี่ยวชาญพิเศษด้านระบบกระจายตัว (Distributed Systems) และความปลอดภัยไซเบอร์ ดร.ธนานนท์ ได้รับเชิญจากรัฐบาลนายกฯ พิธา และนายกฯ ศิริกัญญา ให้รับบทบาทประธานสถาปนิกผู้ออกแบบโครงสร้างหลักของ **ParadoxAI (ParadoxForward)** โดยเป็นผู้คิดค้นไวยากรณ์ภาษาบิตนิรภัย **Paradox Binary 40-bit** เพื่อคุ้มกันกระแสการเงินและประมวลผลการคลังระดับประเทศ และเป็น ๑ ใน ๑๕ บุคคลที่ถือสิทธิ์คีย์ระบบสูงสุด</p>
+            </div>
+
+            <div class="tri-stage">
+              <div class="tri-stage-title">🚀 ผู้ร่วมรื้อฟื้นและนำทัพการสร้างสรรค์ ParadoxAI 2.0 สมัยนายกฯ รักชนก</div>
+              <p class="tri-stage-text">ภายหลังจากวิกฤตความปลอดภัยไซเบอร์ข้ามชาติผ่านพ้นไปจนเข้าสู่สมัยของ **นายกรัฐมนตรี รักชนก ศรีนอก** ดร.ธนานนท์ ได้ตอบรับคำเชิญให้กลับมารับหน้าที่นำทัพวิศวกรและนักวิจัยฟื้นฟูสร้างสรรค์โครงการ **ParadoxAI 2.0** ร่วมกับพันธมิตรเทคโนโลยีโลกอย่าง AMD, Nvidia, ASUS, Google และ Anthropic เพื่อนำระบบคลังและระบบจัดสรรสวัสดิการอัจฉริยะกลับมาทำงานเพื่อเสรีชนคนไทยอย่างภาคภูมิใจ</p>
+            </div>
+          </div>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 32px 0;">
+
+<!-- ไตรทิศา รณปวัตน์ -->
         <div class="tri-layout">
           <div class="tri-profile-card">
             <img src="traitisa_portrait.png" alt="ไตรทิศา รณปวัตน์" class="tri-profile-img">
