@@ -4103,7 +4103,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <!-- ดร.ธนานนท์ ปฏิญญาศักดิกุล (9arm) -->
         <div class="tri-layout" style="margin-bottom: 32px;">
           <div class="tri-profile-card">
-            <img src="9arm.png" alt="ดร.ธนานนท์ ปฏิญญาศักดิกุล" class="tri-profile-img">
+            <img src="9arm_myarm.png" alt="ดร.ธนานนท์ ปฏิญญาศักดิกุล" class="tri-profile-img">
             <div class="tri-profile-name">ดร.ธนานนท์ ปฏิญญาศักดิกุล</div>
             <div class="tri-profile-title">ประธานที่ปรึกษาด้านเทคโนโลยีและสถาปนิก ParadoxAI</div>
             <div class="tri-meta">
