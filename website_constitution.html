@@ -1909,6 +1909,7 @@ body.theme-bw .mourning-container {
         <button class="db-tab-btn" onclick="switchTab('goc-tab', this)">🌐 Global Outlandish Centre (GOC)</button>
         <button class="db-tab-btn" onclick="switchTab('geopolitics-tab', this)">🌍 ภูมิรัฐศาสตร์โลก</button>
         <button class="db-tab-btn" onclick="switchTab('figures-tab', this)">👤 บุคคลสำคัญ</button>
+        <button class="db-tab-btn" onclick="switchTab('national-symbols-tab', this)">🇹🇭 ธงชาติและเพลงชาติไทย</button>
         <button class="db-tab-btn" onclick="window.location.href='easy_summary.html'">📖 สรุปทุกมาตราแบบเข้าใจง่าย (แยกอีกหน้า)</button>
       </div>
     </div>
@@ -2803,6 +2804,85 @@ body.theme-bw .mourning-container {
 
       </div>
     </div>
+
+    <!-- Tab 6.75: ธงชาติและเพลงชาติไทย -->
+    <div id="national-symbols-tab" class="db-tab-content">
+      <div style="display: flex; gap: 24px; align-items: flex-start; flex-wrap: wrap; text-align: left;">
+        
+        <!-- ฝั่งซ้าย: ธงไตรรงค์ -->
+        <div style="flex: 1; min-width: 300px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(212, 175, 55, 0.15); border-radius: 12px; padding: 20px;">
+          <h3 style="color: var(--gold-light); margin-bottom: 16px; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
+            🇹🇭 ธงไตรรงค์ (The Tricolor Flag)
+          </h3>
+          
+          <!-- รูปแบบธงชาติด้วย CSS -->
+          <div style="width: 100%; max-width: 400px; aspect-ratio: 9/6; display: flex; flex-direction: column; border-radius: 8px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.15); margin: 0 auto 20px auto; transform: perspective(800px) rotateY(-5deg); transition: transform 0.3s ease;" onmouseover="this.style.transform='perspective(800px) rotateY(0deg)'" onmouseout="this.style.transform='perspective(800px) rotateY(-5deg)'">
+            <div style="flex: 1; background: #e02c2c;"></div> <!-- แดง -->
+            <div style="flex: 1; background: #ffffff;"></div> <!-- ขาว -->
+            <div style="flex: 2; background: #1c35a3;"></div> <!-- น้ำเงิน (ขนาดสองเท่า) -->
+            <div style="flex: 1; background: #ffffff;"></div> <!-- ขาว -->
+            <div style="flex: 1; background: #e02c2c;"></div> <!-- แดง -->
+          </div>
+          
+          <div style="font-size: 14px; line-height: 1.6; color: var(--text-muted);">
+            <p style="margin-bottom: 12px; text-indent: 1.5em; color: var(--text);">
+              <strong>ธงไตรรงค์</strong> เป็นสัญลักษณ์สูงสุดของชาติไทยในไทม์ไลน์ประชาธิปไตยนี้ ได้รับการประกาศใช้อย่างเป็นทางการในรัชสมัย <strong>พระบาทสมเด็จพระมงกุฎเกล้าเจ้าอยู่หัว (รัชกาลที่ ๖)</strong> เมื่อปี พ.ศ. ๒๓๖๐ แทนธงช้างเผือกเดิม เพื่อสะท้อนภาพลักษณ์ความทันสมัยและความมั่นคงของประเทศ
+            </p>
+            <h4 style="color: var(--gold); margin-bottom: 8px; font-size: 14.5px;">💡 ความหมายแห่งสีของธงชาติ</h4>
+            <ul style="list-style-type: none; padding-left: 0; margin-bottom: 16px;">
+              <li style="margin-bottom: 8px; display: flex; align-items: flex-start; gap: 8px;">
+                <span style="display:inline-block; width: 12px; height: 12px; background: #e02c2c; border-radius: 2px; margin-top: 4px; flex-shrink: 0;"></span>
+                <span><strong>สีแดง:</strong> หมายถึง <strong>ชาติ</strong> และโลหิตของประชาชนชาวไทยที่พร้อมจะอุทิศและเสียสละเพื่อรักษาความสงบและเอกราชของแผ่นดิน</span>
+              </li>
+              <li style="margin-bottom: 8px; display: flex; align-items: flex-start; gap: 8px;">
+                <span style="display:inline-block; width: 12px; height: 12px; background: #ffffff; border: 1px solid rgba(255,255,255,0.3); border-radius: 2px; margin-top: 4px; flex-shrink: 0;"></span>
+                <span><strong>สีขาว:</strong> หมายถึง <strong>ศาสนา</strong> ความบริสุทธิ์ของพระธรรม ศีลธรรม และจิตวิญญาณแห่งปัญญาที่โอบอุ้มปวงประชา</span>
+              </li>
+              <li style="margin-bottom: 8px; display: flex; align-items: flex-start; gap: 8px;">
+                <span style="display:inline-block; width: 12px; height: 12px; background: #1c35a3; border-radius: 2px; margin-top: 4px; flex-shrink: 0;"></span>
+                <span><strong>สีน้ำเงิน:</strong> หมายถึง <strong>พระมหากษัตริย์</strong> พระบรมเดชานุภาพในครรลองรัฐธรรมนูญ และสถาบันที่เป็นศูนย์รวมจิตใจและความรักสามัคคีของคนในชาติ</span>
+              </li>
+            </ul>
+            <div style="background: rgba(212, 175, 55, 0.06); border-left: 3px solid var(--gold); padding: 10px 14px; border-radius: 4px; font-size: 13px; line-height: 1.5; color: var(--text);">
+              <strong>สัดส่วนธงชาติ:</strong> อัตราส่วนความกว้างต่อความยาวคือ ๖:๙ ส่วน แถบสีแดงและขาวแต่ละแถบมีความกว้างเป็น ๑ ส่วน แถบสีน้ำเงินกลางมีความกว้างเป็น ๒ ส่วนของความกว้างทั้งหมด
+            </div>
+          </div>
+        </div>
+        
+        <!-- ฝั่งขวา: เพลงชาติไทย -->
+        <div style="flex: 1; min-width: 300px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(212, 175, 55, 0.15); border-radius: 12px; padding: 20px;">
+          <h3 style="color: var(--gold-light); margin-bottom: 16px; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
+            🎵 เพลงชาติไทย (Thai National Anthem)
+          </h3>
+          
+          <!-- กล่องใส่บทกลอนเนื้อเพลงชาติไทย -->
+          <div style="background: rgba(212, 175, 55, 0.04); border: 1px dashed rgba(212, 175, 55, 0.3); border-radius: 8px; padding: 20px; margin-bottom: 20px; text-align: center; font-family: 'Sarabun', sans-serif; line-height: 2; font-size: 15px; color: var(--text); font-weight: 500;">
+            ประเทศไทยรวมเลือดเนื้อชาติเชื้อไทย<br>
+            เป็นประชารัฐ ไผทของไทยทุกส่วน<br>
+            อยู่ดำรงคงไว้ได้ทั้งมวล<br>
+            ด้วยไทยล้วนหมาย รักสามัคคี<br>
+            ไทยนี้รักสงบ แต่ถึงรบไม่ขลาด<br>
+            เอกราชจะไม่ให้ใครข่มขี่<br>
+            สละเลือดทุกหยาดเป็นชาติพลี<br>
+            เถลิงประเทศชาติไทยทวี มีชัย ชโย
+          </div>
+          
+          <div style="font-size: 14px; line-height: 1.6; color: var(--text-muted);">
+            <p style="margin-bottom: 12px; text-indent: 1.5em;">
+              <strong>ประวัติเพลงชาติไทย:</strong> ทำนองเพลงชาติไทยประพันธ์โดย <strong>พระเจนดุริยางค์ (ปิติ วาทยะกร)</strong> ผู้มีบทบาทปฏิรูปวงดุริยางค์ของสยามประเทศ และคำร้องประพันธ์โดย <strong>นายพันเอก หลวงสารานุประพันธ์ (นวล ปาจิณพยัคฆ์)</strong> ร่างขึ้นในปี พ.ศ. ๒๔๗๗ ภายใต้ระบอบประชาธิปไตยแบบรัฐสภาอันมีพระมหากษัตริย์ทรงเป็นประมุข
+            </p>
+            <p style="margin-bottom: 12px; text-indent: 1.5em;">
+              เพลงชาตินี้ถูกใช้ขับร้องในสถาบันการศึกษา พิธีราชการ และการกระจายเสียงวิทยุกระจายเสียงแห่งประเทศไทยทุกวันในเวลา ๐๘.๐๐ น. และ ๑๘.๐๐ น. เพื่อเป็นเครื่องเตือนใจถึงความเสียสละของบรรพบุรุษ เสรีภาพในการปกครองตนเอง และจิตวิญญาณแห่งความสามัคคีที่ปราศจากความรุนแรง
+            </p>
+            <div style="background: rgba(212, 175, 55, 0.06); border-left: 3px solid var(--gold); padding: 10px 14px; border-radius: 4px; font-size: 13px; line-height: 1.5; color: var(--text);">
+              <strong>จารึกคำท้าย "ชโย":</strong> คำว่า "ชโย" (หรือ ไชโย) ในวรรคสุดท้ายของคำร้อง หมายถึงความรุ่งเรืองและชัยชนะของเสรีชน โดยไม่มีบทลงโทษทางกฎหมายที่รุนแรงต่อการไม่ยืนเคารพเพลงชาติในไทม์ไลน์นี้ หากแต่เป็นจารีตประเพณีที่ปฏิบัติด้วยความเคารพอย่างเสรี
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
 <!-- Tab 7: ทำเนียบนายกรัฐมนตรี -->
     <div id="pms-tab" class="db-tab-content">
       <p style="margin-bottom: 16px; font-size: 15px; color: var(--text-muted);">
