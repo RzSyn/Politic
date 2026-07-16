@@ -2810,49 +2810,60 @@ body.theme-bw .mourning-container {
       <div style="display: flex; gap: 24px; align-items: flex-start; flex-wrap: wrap; text-align: left;">
         
         <!-- ฝั่งซ้าย: ธงไตรรงค์ -->
-        <div style="flex: 1; min-width: 300px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(212, 175, 55, 0.15); border-radius: 12px; padding: 20px;">
+        <div style="flex: 1.1; min-width: 320px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(212, 175, 55, 0.15); border-radius: 12px; padding: 20px;">
           <h3 style="color: var(--gold-light); margin-bottom: 16px; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
-            🇹🇭 ธงไตรรงค์ (The Tricolor Flag)
+            🇹🇭 ประวัติธงชาติไทย (Thai Flag History)
           </h3>
           
           <!-- รูปแบบธงชาติด้วย CSS -->
           <div style="width: 100%; max-width: 400px; aspect-ratio: 9/6; display: flex; flex-direction: column; border-radius: 8px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.15); margin: 0 auto 20px auto; transform: perspective(800px) rotateY(-5deg); transition: transform 0.3s ease;" onmouseover="this.style.transform='perspective(800px) rotateY(0deg)'" onmouseout="this.style.transform='perspective(800px) rotateY(-5deg)'">
             <div style="flex: 1; background: #e02c2c;"></div> <!-- แดง -->
             <div style="flex: 1; background: #ffffff;"></div> <!-- ขาว -->
-            <div style="flex: 2; background: #1c35a3;"></div> <!-- น้ำเงิน (ขนาดสองเท่า) -->
+            <div style="flex: 2; background: #1c35a3;"></div> <!-- น้ำเงิน -->
             <div style="flex: 1; background: #ffffff;"></div> <!-- ขาว -->
             <div style="flex: 1; background: #e02c2c;"></div> <!-- แดง -->
           </div>
           
-          <div style="font-size: 14px; line-height: 1.6; color: var(--text-muted);">
+          <div style="font-size: 14px; line-height: 1.65; color: var(--text-muted);">
             <p style="margin-bottom: 12px; text-indent: 1.5em; color: var(--text);">
-              <strong>ธงไตรรงค์</strong> เป็นสัญลักษณ์สูงสุดของชาติไทยในไทม์ไลน์ประชาธิปไตยนี้ ได้รับการประกาศใช้อย่างเป็นทางการในรัชสมัย <strong>พระบาทสมเด็จพระมงกุฎเกล้าเจ้าอยู่หัว (รัชกาลที่ ๖)</strong> เมื่อปี พ.ศ. ๒๓๖๐ แทนธงช้างเผือกเดิม เพื่อสะท้อนภาพลักษณ์ความทันสมัยและความมั่นคงของประเทศ
+              <strong>ธงไตรรงค์</strong> เป็นสัญลักษณ์สูงสุดของชาติไทยในไทม์ไลน์นี้ โดยมีวิวัฒนาการทางประวัติศาสตร์ที่ดึงมาจากหลักฐานจดหมายเหตุโบราณ (อ้างอิงตามบันทึกพิพิธภัณฑ์ธงชาติไทย) ดังนี้:
             </p>
-            <h4 style="color: var(--gold); margin-bottom: 8px; font-size: 14.5px;">💡 ความหมายแห่งสีของธงชาติ</h4>
-            <ul style="list-style-type: none; padding-left: 0; margin-bottom: 16px;">
-              <li style="margin-bottom: 8px; display: flex; align-items: flex-start; gap: 8px;">
-                <span style="display:inline-block; width: 12px; height: 12px; background: #e02c2c; border-radius: 2px; margin-top: 4px; flex-shrink: 0;"></span>
-                <span><strong>สีแดง:</strong> หมายถึง <strong>ชาติ</strong> และโลหิตของประชาชนชาวไทยที่พร้อมจะอุทิศและเสียสละเพื่อรักษาความสงบและเอกราชของแผ่นดิน</span>
-              </li>
-              <li style="margin-bottom: 8px; display: flex; align-items: flex-start; gap: 8px;">
-                <span style="display:inline-block; width: 12px; height: 12px; background: #ffffff; border: 1px solid rgba(255,255,255,0.3); border-radius: 2px; margin-top: 4px; flex-shrink: 0;"></span>
-                <span><strong>สีขาว:</strong> หมายถึง <strong>ศาสนา</strong> ความบริสุทธิ์ของพระธรรม ศีลธรรม และจิตวิญญาณแห่งปัญญาที่โอบอุ้มปวงประชา</span>
-              </li>
-              <li style="margin-bottom: 8px; display: flex; align-items: flex-start; gap: 8px;">
-                <span style="display:inline-block; width: 12px; height: 12px; background: #1c35a3; border-radius: 2px; margin-top: 4px; flex-shrink: 0;"></span>
-                <span><strong>สีน้ำเงิน:</strong> หมายถึง <strong>พระมหากษัตริย์</strong> พระบรมเดชานุภาพในครรลองรัฐธรรมนูญ และสถาบันที่เป็นศูนย์รวมจิตใจและความรักสามัคคีของคนในชาติ</span>
-              </li>
-            </ul>
+            
+            <div style="margin-bottom: 16px; font-size: 13.5px; border-left: 3px solid var(--gold); padding-left: 12px;">
+              <strong style="color: var(--gold-light); display: block; margin-bottom: 4px;">⚓ สมัยกรุงศรีอยุธยา:</strong>
+              เริ่มต้นใช้ธงสีแดงเกลี้ยงสำหรับเดินเรือค้าขายทางทะเลกับต่างชาติ (เช่น การค้ากับฝรั่งเศสในรัชสมัยสมเด็จพระนารายณ์มหาราช) เพื่อระบุสัญชาติสยาม
+            </div>
+
+            <div style="margin-bottom: 16px; font-size: 13.5px; border-left: 3px solid var(--gold); padding-left: 12px;">
+              <strong style="color: var(--gold-light); display: block; margin-bottom: 4px;">👑 รัชกาลที่ ๑ (พ.ศ. ๒๒๓๒):</strong>
+              ทรงมีพระราชดำริเพิ่มรูป <strong>"จักรสีขาว"</strong> ไว้ตรงกลางธงแดง เพื่อใช้บนเรือหลวงให้แตกต่างและจำแนกได้ชัดเจนจากเรือของราษฎรทั่วไป
+            </div>
+
+            <div style="margin-bottom: 16px; font-size: 13.5px; border-left: 3px solid var(--gold); padding-left: 12px;">
+              <strong style="color: var(--gold-light); display: block; margin-bottom: 4px;">🐘 รัชกาลที่ ๒ (พ.ศ. ๒๒๖๐):</strong>
+              ทรงเพิ่มรูป <strong>"ช้างเผือก"</strong> ไว้ด้านในวงจักรสีขาวเพื่อประดับคู่เรือหลวงในรัชสมัย
+            </div>
+
+            <div style="margin-bottom: 16px; font-size: 13.5px; border-left: 3px solid var(--gold); padding-left: 12px;">
+              <strong style="color: var(--gold-light); display: block; margin-bottom: 4px;">🛡️ รัชกาลที่ ๔ (พ.ศ. ๒๓๐๐):</strong>
+              ทรงนำวงจักรสีขาวออกเหลือเพียงรูป <strong>"ช้างเผือกหันหน้าเข้าเสาบนพื้นแดง"</strong> เพื่อประกาศใช้เป็นธงชาติสยามทั่วไปทั้งเรือหลวงและเรือราษฎร เพื่อป้องกันสากลประเทศสับสน
+            </div>
+
+            <div style="margin-bottom: 16px; font-size: 13.5px; border-left: 3px solid var(--gold); padding-left: 12px;">
+              <strong style="color: var(--gold-light); display: block; margin-bottom: 4px;">🇹🇭 รัชกาลที่ ๖ (พ.ศ. ๒๓๖๐):</strong>
+              ทรงปรับเป็น <strong>"ธงแดงขาว ๕ ริ้ว"</strong> เพื่อเลี่ยงปัญหาการประดับธงช้างเผือกกลับหัว จากนั้นจึงทรงเปลี่ยนริ้วแดงกลางเป็น <strong>"สีน้ำเงินเข้ม"</strong> (สีขาบ) เกิดเป็น <strong>"ธงไตรรงค์"</strong> เพื่อแสดงถึงความสามัคคีและเสาหลัก ชาติ (แดง), ศาสนา (ขาว), พระมหากษัตริย์ (น้ำเงิน) และเข้าร่วมกับฝ่ายสัมพันธมิตรอย่างสง่างาม
+            </div>
+            
             <div style="background: rgba(212, 175, 55, 0.06); border-left: 3px solid var(--gold); padding: 10px 14px; border-radius: 4px; font-size: 13px; line-height: 1.5; color: var(--text);">
-              <strong>สัดส่วนธงชาติ:</strong> อัตราส่วนความกว้างต่อความยาวคือ ๖:๙ ส่วน แถบสีแดงและขาวแต่ละแถบมีความกว้างเป็น ๑ ส่วน แถบสีน้ำเงินกลางมีความกว้างเป็น ๒ ส่วนของความกว้างทั้งหมด
+              <strong>สัดส่วนและสีของธงชาติ:</strong> อัตราส่วนความกว้างต่อความยาวคือ ๖:๙ โดยแถบสีแดงและขาวมีความกว้างริ้วละ ๑ ส่วน และแถบน้ำเงินกลางกว้าง ๒ ส่วน
             </div>
           </div>
         </div>
         
         <!-- ฝั่งขวา: เพลงชาติไทย -->
-        <div style="flex: 1; min-width: 300px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(212, 175, 55, 0.15); border-radius: 12px; padding: 20px;">
+        <div style="flex: 0.9; min-width: 300px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(212, 175, 55, 0.15); border-radius: 12px; padding: 20px;">
           <h3 style="color: var(--gold-light); margin-bottom: 16px; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
-            🎵 เพลงชาติไทย (Thai National Anthem)
+            🎵 ประวัติเพลงชาติไทย (Thai National Anthem)
           </h3>
           
           <!-- กล่องใส่บทกลอนเนื้อเพลงชาติไทย -->
@@ -2868,21 +2879,117 @@ body.theme-bw .mourning-container {
           </div>
           
           <div style="font-size: 14px; line-height: 1.6; color: var(--text-muted);">
-            <p style="margin-bottom: 12px; text-indent: 1.5em;">
-              <strong>ประวัติเพลงชาติไทย:</strong> ทำนองเพลงชาติไทยประพันธ์โดย <strong>พระเจนดุริยางค์ (ปิติ วาทยะกร)</strong> ผู้มีบทบาทปฏิรูปวงดุริยางค์ของสยามประเทศ และคำร้องประพันธ์โดย <strong>นายพันเอก หลวงสารานุประพันธ์ (นวล ปาจิณพยัคฆ์)</strong> ร่างขึ้นในปี พ.ศ. ๒๔๗๗ ภายใต้ระบอบประชาธิปไตยแบบรัฐสภาอันมีพระมหากษัตริย์ทรงเป็นประมุข
+            <p style="margin-bottom: 12px; text-indent: 1.5em; color: var(--text);">
+              <strong>การประกวดเพลงชาติในรัชสมัย ร.๗:</strong> ภายหลังจากการพระราชทานรัฐธรรมนูญฉบับปฐมเวลาในปี พ.ศ. ๒๓๗๕ <strong>พระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว (รัชกาลที่ ๗)</strong> ทรงสนับสนุนให้มีการจัดประกวดแต่งเพลงประจำระบอบประชาธิปไตย เพื่อเป็นสัญลักษณ์ของเสรีภาพประชาธิปไตยฉบับแรก
             </p>
             <p style="margin-bottom: 12px; text-indent: 1.5em;">
-              เพลงชาตินี้ถูกใช้ขับร้องในสถาบันการศึกษา พิธีราชการ และการกระจายเสียงวิทยุกระจายเสียงแห่งประเทศไทยทุกวันในเวลา ๐๘.๐๐ น. และ ๑๘.๐๐ น. เพื่อเป็นเครื่องเตือนใจถึงความเสียสละของบรรพบุรุษ เสรีภาพในการปกครองตนเอง และจิตวิญญาณแห่งความสามัคคีที่ปราศจากความรุนแรง
+              โดยทำนองที่ชนะการประกวดคือทำนองเพลงผลงานของ <strong>พระเจนดุริยางค์ (ปิติ วาทยะกร)</strong> ประพันธ์ทำนองในปี <strong>พ.ศ. ๒๓๗๕</strong> และคำร้องอย่างเป็นทางการชนะเลิศโดย <strong>นายพันเอก หลวงสารานุประพันธ์ (นวล ปาจิณพยัคฆ์)</strong> ซึ่งได้รับการประกาศใช้เป็นเนื้อหาหลักในปี <strong>พ.ศ. ๒๓๘๒</strong> โดยยังคงความเสถียรและใช้สืบมา ๑๐๐%
             </p>
             <div style="background: rgba(212, 175, 55, 0.06); border-left: 3px solid var(--gold); padding: 10px 14px; border-radius: 4px; font-size: 13px; line-height: 1.5; color: var(--text);">
-              <strong>จารึกคำท้าย "ชโย":</strong> คำว่า "ชโย" (หรือ ไชโย) ในวรรคสุดท้ายของคำร้อง หมายถึงความรุ่งเรืองและชัยชนะของเสรีชน โดยไม่มีบทลงโทษทางกฎหมายที่รุนแรงต่อการไม่ยืนเคารพเพลงชาติในไทม์ไลน์นี้ หากแต่เป็นจารีตประเพณีที่ปฏิบัติด้วยความเคารพอย่างเสรี
+              <strong>เสรีชนกับการเคารพสัญญลักษณ์:</strong> ในไทม์ไลน์นี้การยืนเคารพเพลงชาติสืบทอดด้วยความสมัครใจโดยไม่มีระเบียบบังคับทางอาญาอย่างเด็ดขาด เพื่อแสดงเกียรติยศและความภาคภูมิใจด้วยความเสรี
             </div>
           </div>
         </div>
         
       </div>
-    </div>
 
+      <!-- ส่วนล่าง: โครงการสร้างสรรค์ เพลงชาติไทย 6 เวอร์ชัน -->
+      <div style="margin-top: 24px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(212, 175, 55, 0.15); border-radius: 12px; padding: 24px; text-align: left;">
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(212, 175, 55, 0.2); padding-bottom: 12px; margin-bottom: 16px; flex-wrap: wrap; gap: 12px;">
+          <h3 style="color: var(--gold-light); margin: 0; font-family: 'Outfit', sans-serif; font-size: 18px; display: flex; align-items: center; gap: 8px;">
+            🎼 โปรเจกต์สร้างสรรค์: เพลงชาติไทย ๖ เวอร์ชัน โดย GMM Grammy
+          </h3>
+          <a href="https://www.youtube.com/watch?v=hpA0SETngEg" target="_blank" style="background: #ff0000; color: #fff; padding: 6px 14px; border-radius: 20px; text-decoration: none; font-size: 12.5px; font-weight: bold; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);">
+            🔺 YouTube Official
+          </a>
+        </div>
+
+        <div style="font-size: 14px; line-height: 1.65; color: var(--text); margin-bottom: 16px;">
+          <p style="text-indent: 2em; margin-bottom: 12px;">
+            โปรเจกต์เพลงชาติไทยเวอร์ชันแกรมมี่เกิดขึ้นจากการที่ <strong>กระทรวงกลาโหมและรัฐบาลพลเรือน ในสมัยของนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ ๑๗)</strong> ได้มอบหมายให้บริษัท <strong>จีเอ็มเอ็ม แกรมมี่ (GMM Grammy)</strong> เป็นผู้สร้างสรรค์และเรียบเรียงทำนองเพลงชาติไทยขึ้นใหม่รวมทั้งสิ้น ๖ รูปแบบ (๖ เวอร์ชัน) ภายหลังการรื้อฟื้นและไขคดีประวัติศาสตร์การลอบปลงพระชนม์ ร.๘ สำเร็จเสร็จสิ้น เพื่อประกาศยืนยันความจงรักภักดีของพรรคก้าวไกลและรัฐบาลพลเรือนว่ายืนเคียงข้างสถาบันพระมหากษัตริย์ และส่งสัญญาณว่าถึงเวลาที่ชาติเราต้องเริ่มการเปลี่ยนแปลงสู่สิ่งใหม่ที่ดีกว่าแล้ว
+          </p>
+          <p style="text-indent: 2em; margin-bottom: 12px;">
+            ในจักรวาลประชาธิปไตยเสถียรนี้ โปรเจกต์ดังกล่าวถูกผลักดันภายใต้แนวคิด <strong>"ความหลากหลายคือพลังของชาติ"</strong> เพื่อให้สัญลักษณ์ของประเทศมีความใกล้ชิดและยืดหยุ่นไปตามวิถีชีวิตของประชาชนทุกกลุ่ม โดยยังคงยึดหลักสำคัญคือ <strong>"เนื้อร้องและทำนองเดิมไม่มีการเปลี่ยนแปลง ๑๐๐%"</strong> (ทำนองเดิมโดย พระเจนดุริยางค์ พ.ศ. ๒๓๗๕ และเนื้อร้องเดิมโดย พันเอก หลวงสารานุประพันธ์ พ.ศ. ๒๓๘๒)
+          </p>
+        </div>
+
+        <!-- รายละเอียด 6 เวอร์ชัน -->
+        <h4 style="color: var(--gold); font-size: 15px; margin-bottom: 12px; font-family: 'Outfit', sans-serif;">📋 รายละเอียดและการใช้งานจริงของทั้ง ๖ เวอร์ชัน:</h4>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 20px;">
+          
+          <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 16px; border-radius: 8px;">
+            <strong style="color: var(--gold-light); display: block; font-size: 14.5px; margin-bottom: 6px;">๑. แบบเป็นทางการ (Official Version)</strong>
+            <span style="font-size: 13.5px; color: var(--text-muted); display: block; margin-bottom: 6px;">
+              <strong>ลักษณะดนตรี:</strong> สง่างาม ถูกต้องตามหลักการบรรเลง มีพลังดึงดูดใจและฮึกเหิมสูงด้วยเสียงร้องนำอันทรงพลังของ <strong>เสก โลโซ (เสกสรรค์ ศุขพิมาย)</strong>
+            </span>
+            <span style="font-size: 13px; color: var(--text);">
+              <strong>การนำไปใช้จริง:</strong> เปิดทางโทรทัศน์และวิทยุทุกช่องในเวลา ๐๘.๐๐ น. และ ๑๘.๐๐ น. รวมถึงงานรัฐพิธีและการแข่งขันกีฬานานาชาติ
+            </span>
+          </div>
+
+          <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 16px; border-radius: 8px;">
+            <strong style="color: var(--gold-light); display: block; font-size: 14.5px; margin-bottom: 6px;">๒. แบบเข้มแข็ง แต่ไม่แข็งกร้าว (Soft & Strong Version)</strong>
+            <span style="font-size: 13.5px; color: var(--text-muted); display: block; margin-bottom: 6px;">
+              <strong>ลักษณะดนตรี:</strong> นุ่มนวล อ่อนโยน ทว่าหนักแน่นด้วยการผสมผสานประสานเสียงชาย-หญิงอย่างสมดุล
+            </span>
+            <span style="font-size: 13px; color: var(--text);">
+              <strong>การนำไปใช้จริง:</strong> เปิดตามห้างสรรพสินค้า สถานบริการประชาชนของรัฐ (สำนักงานเขต/ที่ทำการอำเภอ) และงานประชุมสัมมนาเอกชน
+            </span>
+          </div>
+
+          <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 16px; border-radius: 8px;">
+            <strong style="color: var(--gold-light); display: block; font-size: 14.5px; margin-bottom: 6px;">๓. แบบลีลาศ (Ballroom Version)</strong>
+            <span style="font-size: 13.5px; color: var(--text-muted); display: block; margin-bottom: 6px;">
+              <strong>ลักษณะดนตรี:</strong> จังหวะลีลาศมาตรฐาน นุ่มนวล อบอุ่น ขับร้องโดยคู่ขวัญระดับตำนาน <strong>เบิร์ด-ธงไชย แมคอินไตย์</strong> และ <strong>ตู่-นันทิดา แก้วบัวสาย</strong>
+            </span>
+            <span style="font-size: 13px; color: var(--text);">
+              <strong>การนำไปใช้จริง:</strong> เปิดในราตรีสโมสร งานสังสรรค์ทางการทูต และชมรมลีลาศเพื่อสุขภาพของผู้สูงวัย
+            </span>
+          </div>
+
+          <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 16px; border-radius: 8px;">
+            <strong style="color: var(--gold-light); display: block; font-size: 14.5px; margin-bottom: 6px;">๔. แบบแดนซ์รุ่นใหม่เอาใจวัยรุ่น (Modern Dance Version)</strong>
+            <span style="font-size: 13.5px; color: var(--text-muted); display: block; margin-bottom: 6px;">
+              <strong>ลักษณะดนตรี:</strong> แนว Electronic Pop ร่วมสมัย (Grammy Sound) สนุกสนาน ร้องโดยศิลปินวัยรุ่นยอดนิยมแห่งยุค
+            </span>
+            <span style="font-size: 13px; color: var(--text);">
+              <strong>การนำไปใช้จริง:</strong> ใช้เปิดในการแข่งขันกีฬาสีโรงเรียนมัธยมและมหาวิทยาลัย งานเทศกาลดนตรีเยาวชน และสันทนาการต่าง ๆ
+            </span>
+          </div>
+
+          <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 16px; border-radius: 8px;">
+            <strong style="color: var(--gold-light); display: block; font-size: 14.5px; margin-bottom: 6px;">๕. แบบเอาใจเด็กเล็ก (Kids/Choir Version)</strong>
+            <span style="font-size: 13.5px; color: var(--text-muted); display: block; margin-bottom: 6px;">
+              <strong>ลักษณะดนตรี:</strong> สดใส เข้าถึงง่าย ร้องโดย <strong>น้องพลับ (จุฑาภัทร เหล่าธรรมทัศน์)</strong> และคณะประสานเสียงเด็ก
+            </span>
+            <span style="font-size: 13px; color: var(--text);">
+              <strong>การนำไปใช้จริง:</strong> เคารพธงชาติของโรงเรียนระดับอนุบาลและประถมศึกษาทั่วประเทศ ลดความกระด้างของระเบียบแบบทหารในวัยเยาว์
+            </span>
+          </div>
+
+          <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 16px; border-radius: 8px;">
+            <strong style="color: var(--gold-light); display: block; font-size: 14.5px; margin-bottom: 6px;">๖. แบบเอาใจผู้สูงอายุ (Traditional Instrument Version)</strong>
+            <span style="font-size: 13.5px; color: var(--text-muted); display: block; margin-bottom: 6px;">
+              <strong>ลักษณะดนตรี:</strong> บรรเลงประณีตด้วยเครื่องดนตรีไทยเดิมและวงมโหรี อ่อนช้อย ย้อนรำลึกบรรยากาศอบอุ่นใจ
+            </span>
+            <span style="font-size: 13px; color: var(--text);">
+              <strong>การนำไปใช้จริง:</strong> เปิดในศูนย์ดูแลผู้สูงอายุ กิจกรรมสวัสดิการผู้สูงวัย และงานเทศกาลวัฒนธรรมท้องถิ่น
+            </span>
+          </div>
+
+        </div>
+
+        <!-- ผลตอบรับเชิงบวก -->
+        <div style="background: rgba(212, 175, 55, 0.05); border: 1px solid rgba(212, 175, 55, 0.2); padding: 16px; border-radius: 8px;">
+          <strong style="color: var(--gold-light); display: block; font-size: 14.5px; margin-bottom: 8px; font-family: 'Outfit', sans-serif;">🌟 ผลลัพธ์ในฐานะ "ต้นแบบการรักชาติวิถีใหม่" (Creative Patriotism):</strong>
+          <ul style="margin: 0; padding-left: 20px; font-size: 13.5px; line-height: 1.6; color: var(--text-muted);">
+            <li style="margin-bottom: 6px;"><strong style="color: var(--text);">รักชาติด้วยความเข้าใจไม่ใช่ความกลัว:</strong> ปรับทัศนคติจากการบังคับระเบียบวินัยทหาร มาเป็นความภาคภูมิใจในการยอมรับความแตกต่างหลากหลาย ทุกเพศวัยมีพื้นที่ของตัวเองในเพลงชาติ</li>
+            <li style="margin-bottom: 6px;"><strong style="color: var(--text);">ลดทอนอำนาจนิยมในสถาบันศึกษา:</strong> การเปิดเพลงชาติแบบเด็กหรือดนตรีป๊อปในกิจกรรมช่วยเปลี่ยนโรงเรียนจากสถานที่สั่งการเป็นพื้นที่แห่งความรักและความคิดสร้างสรรค์</li>
+            <li><strong style="color: var(--text);">การยอมรับในระดับสากล:</strong> สื่อมวลชนต่างประเทศยกย่องให้ประเทศไทยเป็นต้นแบบของการประยุกต์ใช้ "Soft Power" และสัญลักษณ์ของรัฐในเชิงศิลปวัฒนธรรมก้าวหน้าในเอเชียตะวันออกเฉียงใต้</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 <!-- Tab 7: ทำเนียบนายกรัฐมนตรี -->
     <div id="pms-tab" class="db-tab-content">
       <p style="margin-bottom: 16px; font-size: 15px; color: var(--text-muted);">
