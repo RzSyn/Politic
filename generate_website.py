@@ -140,7 +140,7 @@ pms = [
     {"num": 18, "name": "ศิริกัญญา ตันสกุล", "years": "2576-2592", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "สร้างประวัติศาสตร์ทางการเมืองโดยได้รับการเลือกตั้งให้ดำรงตำแหน่งนายกรัฐมนตรีติดต่อกัน ๔ วาระ รวมระยะเวลา ๑๖ ปีเต็ม ก่อนจะขยับไปดำรงตำแหน่งรองนายกรัฐมนตรีควบรัฐมนตรีว่าการกระทรวงการคลัง ท่านวางระบบการคลังแผ่นดินให้เข้มแข็ง ปลอดภัยจากการผูกขาดเชิงนโยบาย"},
     {"num": 19, "name": "ณัฐพงษ์ เรืองปัญญาวุฒิ", "years": "2592-2596", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "ผู้นำพาสยามเข้าสู่ระเบียบบริหารราชการแผ่นดินแบบดิจิทัลร้อยเปอร์เซ็นต์ โดยการยกเลิกการใช้กระดาษในหน่วยงานรัฐทั้งหมด พัฒนาระบบตรวจสอบงบประมาณแผ่นดินแบบเรียลไทม์ และกระจายอำนาจงบประมาณการบริหารส่วนท้องถิ่นผ่านระบบเทคโนโลยีสมัยใหม่"},
     {"num": 20, "name": "พริษฐ์ \"ไอติม\" วัชรสินธุ", "years": "2596-2612", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "นายกรัฐมนตรีอายุน้อยที่สุด บริหารประเทศครบ ๒ วาระ ๑๖ ปี ผู้นำสายคนรุ่นใหม่ผู้ผลักดันนโยบายการกระจายอำนาจสู่ท้องถิ่นและปฏิรูปรัฐธรรมนูญเพื่อสิทธิมนุษยชน ผลักดันโครงการสร้างคลองไทยไมตรี ๒.๐ ร่วมกับราชอาณาจักรประชาชนลาว และร่วมสถาปนาโครงสร้างกลไกความมั่นคงพิเศษ GOC ต่อมาในสมัยของวิสุทธิ์ คมณรัตน์ พริษฐ์ได้นำปฏิบัติการรุ่งอรุณ ๒๒๐ (Operation Dawn 220) เข้าแก้ปัญหานิติประหารสภาแผ่นดินจนสำเร็จอย่างราบรื่น"},
-    {"num": 21, "name": "วิสุทธิ์ คมณรัตน์", "years": "2612-2614", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "ตัวแทนพรรคประชาปฏิวัติโครงสร้างไร้ศูนย์กลาง พยายามแก้ไขรัฐธรรมนูญผ่านช่องโหว่พระบาทสมเด็จพระมหาภูมิพลมหาราช (ร.๙) ไม่ทรงลงพระปรมาภิไธย โดยมีเป้าหมายแฝงเพื่อลดทอนอำนาจรัฐส่วนกลางและสถาบันฯ พร้อมแทรกแซงสภาด้วยทุนต่างชาติ จนศาลรัฐธรรมนูญมีมติเอกฉันท์ ๖ ต่อ ๐ ให้พ้นจากตำแหน่งหลังบริหารแผ่นดินได้เพียง ๒ ปี และลงนามลาออกอย่างสงบ"},
+    {"num": 21, "name": "วิสุทธิ์ คมณรัตน์", "years": "2612-2614", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "ตัวแทนพรรคประชาปิติวัติโครงสร้างไร้ศูนย์กลาง พยายามแก้ไขรัฐธรรมนูญผ่านช่องโหว่พระบาทสมเด็จพระมหาภูมิพลมหาราช (ร.๙) ไม่ทรงลงพระปรมาภิไธย โดยมีเป้าหมายแฝงเพื่อลดทอนอำนาจรัฐส่วนกลางและสถาบันฯ พร้อมแทรกแซงสภาด้วยทุนต่างชาติ จนศาลรัฐธรรมนูญมีมติเอกฉันท์ ๖ ต่อ ๐ ให้พ้นจากตำแหน่งหลังบริหารแผ่นดินได้เพียง ๒ ปี และลงนามลาออกอย่างสงบ"},
     {"num": 22, "name": "รักชนก ศรีนอก", "years": "2614-ปัจจุบัน", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "นายกรัฐมนตรีคนที่ ๒๒ (นายกหญิงคนที่ ๒) ชนะการเลือกตั้งแบบแลนด์สไลด์ ๕๓% เข้าฟื้นฟูระบบรัฐสภาหลังวิกฤตนิติประหารสภาแผ่นดิน โดยเสนอแก้ช่องโหว่รัฐธรรมนูญ (กำหนดเกณฑ์แก้ไขหมวดสำคัญให้ใช้คะแนนเสียงเท่ากับการยกเลิกรัฐธรรมนูญเพื่อป้องกันนิติประหาร), ดำเนินการตัดสิทธิ์ทางการเมือง สส. งูเห่า ๓๑ คน, ปฏิรูปและปรับปรุงระบบการทำงานของ GOC ให้มีความโปร่งใส และเดินหน้าโครงการคลองไทยไมตรี ๒.๐ ร่วมกับลาวอย่างยั่งยืน"}
 ]
 
@@ -455,36 +455,36 @@ def hex_to_rgb(hex_str):
 
 def get_party_html(num):
     parties = {
-        1: ("อิสระ", "#9CA3AF", '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>'),
-        2: ("อิสระ", "#9CA3AF", '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>'),
-        3: ("อิสระ", "#9CA3AF", '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>'),
-        4: ("ไทยรักไทย", "#EF4444", '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M4 12c0-5 4-8 8-8s8 3 8 8-4 8-8 8-8-3-8-8z" stroke="#3B82F6"/><path d="M8 12c1-2 3-3 4-3s3 1 4 3-2 3-4 3-3-1-4-3z" fill="#EF4444"/></svg>'),
-        5: ("อิสระ", "#9CA3AF", '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>'),
-        6: ("ประชาธิปัตย์", "#3B82F6", '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8c1-1 2-2 2-3s-1-1-2-1-2 0-2 1 1 2 2 3zm0 0v8m-3 0h6" stroke-width="2.5"/><path d="M8 16c0-2 2-3 4-3s4 1 4 3" stroke-linecap="round"/></svg>'),
-        7: ("ประชาธิปัตย์", "#3B82F6", '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8c1-1 2-2 2-3s-1-1-2-1-2 0-2 1 1 2 2 3zm0 0v8m-3 0h6" stroke-width="2.5"/><path d="M8 16c0-2 2-3 4-3s4 1 4 3" stroke-linecap="round"/></svg>'),
-        8: ("กิจสังคม", "#EC4899", '<svg width="18" height="18" viewBox="0 0 24 24" fill="#EC4899"><path d="M12 21.5c-1.35-1.5-6.5-6.5-6.5-10.5 0-3.5 2.5-6 5.5-6 1 0 2.5.5 3 1.5.5-1 2-1.5 3-1.5 3 0 5.5 2.5 5.5 6 0 4-5.15 9-6.5 10.5z"/><path d="M12 19c-1-1-4.5-4.5-4.5-7.5 0-2.5 1.5-4 3.5-4 1 0 1.5.5 2 1.5.5-1 1-1.5 2-1.5 2 0 3.5 1.5 3.5 4 0 3-3.5 6.5-4.5 7.5z" fill="#FFF"/></svg>'),
-        9: ("อิสระ", "#9CA3AF", '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>'),
-        10: ("ประชาธิปัตย์", "#3B82F6", '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8c1-1 2-2 2-3s-1-1-2-1-2 0-2 1 1 2 2 3zm0 0v8m-3 0h6" stroke-width="2.5"/><path d="M8 16c0-2 2-3 4-3s4 1 4 3" stroke-linecap="round"/></svg>'),
-        11: ("ชาติไทย", "#EC4899", '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#EC4899" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M11 6l1 1 1-1v3l2 1-1 3v3h-2l-1-2-1 2h-1v-4l-1-2 1-2z" fill="#EC4899"/></svg>'),
-        12: ("ความหวังใหม่", "#10B981", '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><circle cx="12" cy="12" r="10" fill="#10B981"/><path d="M8 12s3-4 6-1v4s-3 1-6-3z" fill="#FFF"/><path d="M14 11l4-2M13 14l3 2" stroke="#FFF"/></svg>'),
-        13: ("ประชาธิปัตย์", "#3B82F6", '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8c1-1 2-2 2-3s-1-1-2-1-2 0-2 1 1 2 2 3zm0 0v8m-3 0h6" stroke-width="2.5"/><path d="M8 16c0-2 2-3 4-3s4 1 4 3" stroke-linecap="round"/></svg>'),
-        14: ("ชาติพัฒนา", "#F97316", '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2.5"><polygon points="12,2 22,12 12,22 2,12"/><circle cx="12" cy="12" r="4" fill="#F97316"/></svg>'),
-        15: ("รวมไทยสร้างชาติ", "#1E40AF", '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5"><polygon points="12,2 22,7 22,17 12,22 2,17 2,7"/><path d="M7 10h10M7 14h10" stroke="#EF4444"/><path d="M9 7h6" stroke="#FFF"/></svg>'),
-        16: ("อนาคตใหม่", "#FF4F00", '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF5C00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="7,2 22,2 22,17"/><line x1="2" y1="22" x2="22" y2="2"/></svg>'),
-        17: ("ก้าวไกล", "#FF4F00", '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF5C00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="12,4 20,4 20,12"/><line x1="4" y1="20" x2="20" y2="4"/><polyline points="6,12 12,12 12,18"/></svg>'),
-        18: ("ก้าวไกล", "#FF4F00", '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF5C00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="12,4 20,4 20,12"/><line x1="4" y1="20" x2="20" y2="4"/><polyline points="6,12 12,12 12,18"/></svg>'),
-        19: ("ก้าวไกล", "#FF4F00", '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF5C00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="12,4 20,4 20,12"/><line x1="4" y1="20" x2="20" y2="4"/><polyline points="6,12 12,12 12,18"/></svg>'),
-        20: ("ก้าวไกล", "#FF4F00", '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF5C00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="12,4 20,4 20,12"/><line x1="4" y1="20" x2="20" y2="4"/><polyline points="6,12 12,12 12,18"/></svg>'),
-        21: ("ประชาปฏิวัติ", "#EF4444", '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>'),
-        22: ("ก้าวไกล", "#FF4F00", '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF5C00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="12,4 20,4 20,12"/><line x1="4" y1="20" x2="20" y2="4"/><polyline points="6,12 12,12 12,18"/></svg>')
+        1: ("อิสระ", "#9CA3AF", "logo_ind.png"),
+        2: ("อิสระ", "#9CA3AF", "logo_ind.png"),
+        3: ("อิสระ", "#9CA3AF", "logo_ind.png"),
+        4: ("ไทยรักไทย", "#EF4444", "logo_trt.gif"),
+        5: ("อิสระ", "#9CA3AF", "logo_ind.png"),
+        6: ("ประชาธิปัตย์", "#3B82F6", "logo_dem.svg"),
+        7: ("ประชาธิปัตย์", "#3B82F6", "logo_dem.svg"),
+        8: ("กิจสังคม", "#EC4899", "logo_sap.png"),
+        9: ("อิสระ", "#9CA3AF", "logo_ind.png"),
+        10: ("ประชาธิปัตย์", "#3B82F6", "logo_dem.svg"),
+        11: ("ชาติไทย", "#EC4899", "logo_ct.png"),
+        12: ("ความหวังใหม่", "#10B981", "logo_nap.jpg"),
+        13: ("ประชาธิปัตย์", "#3B82F6", "logo_dem.svg"),
+        14: ("ชาติพัฒนา", "#F97316", "logo_cp.png"),
+        15: ("รวมไทยสร้างชาติ", "#1E40AF", "logo_utn.svg"),
+        16: ("อนาคตใหม่", "#FF4F00", "logo_ff.svg"),
+        17: ("ก้าวไกล", "#FF4F00", "logo_mf.svg"),
+        18: ("ก้าวไกล", "#FF4F00", "logo_mf.svg"),
+        19: ("ก้าวไกล", "#FF4F00", "logo_mf.svg"),
+        20: ("ก้าวไกล", "#FF4F00", "logo_mf.svg"),
+        21: ("ประชาปิติวัติ", "#EAB308", "logo_rev.png"),
+        22: ("ก้าวไกล", "#FF4F00", "logo_mf.svg")
     }
-    name, color, svg = parties.get(num, ("อิสระ", "#9CA3AF", ""))
+    name, color, filename = parties.get(num, ("อิสระ", "#9CA3AF", ""))
     
-    # Styled vertical layout
-    logo_style = f"width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; background: rgba({hex_to_rgb(color)}, 0.12); border: 1.2px solid {color}44; border-radius: 8px; color: {color}; margin: 0 auto 4px auto;"
+    logo_style = f"width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; background: rgba({hex_to_rgb(color)}, 0.12); border: 1.2px solid {color}44; border-radius: 8px; padding: 4px; box-sizing: border-box; margin: 0 auto 4px auto;"
+    img_style = "max-width: 100%; max-height: 100%; object-fit: contain;"
     text_style = f"display: block; font-size: 11px; font-weight: 700; color: {color}; letter-spacing: 0.2px; font-family: \'Inter\', \'Outfit\', sans-serif;"
     
-    return f'<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;"><div style="{logo_style}">{svg}</div><span style="{text_style}">{name}</span></div>'
+    return f'<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;"><div style="{logo_style}"><img src="{filename}" alt="{name}" style="{img_style}"></div><span style="{text_style}">{name}</span></div>'
 
 # Render PM table rows
 def format_pm_name_html(name, is_bold):
