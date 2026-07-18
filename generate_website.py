@@ -717,7 +717,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               '</div>';
             panel.style.opacity = 1;
           }}, 200);
-        }}, 200);
         }}
       </script>
     </div>
