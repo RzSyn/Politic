@@ -558,38 +558,168 @@ pm_table_rows_html = '\n'.join(pm_rows)
 
 dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style="max-width: 1250px;">
   <div class="dashboard-card">
-    <div class="dashboard-header">
+    <div class="dashboard-header" style="border-bottom: 1px solid var(--glass-border); padding-bottom: 20px; margin-bottom: 28px;">
       <div class="dashboard-title">
         <span>🏛️ หอจดหมายเหตุประชาธิปไตยและรัฐธรรมนูญไทย</span>
       </div>
-      <div class="dashboard-tabs">
-        <button class="db-tab-btn active" onclick="switchTab('history-tab', this)">ประวัติศาสตร์ประชาธิปไตย</button>
-        <button class="db-tab-btn" onclick="switchTab('referendum-tab', this)">มหากาพย์ประชามติ ๕ รอบ</button>
-        <button class="db-tab-btn" onclick="switchTab('constitutions-tab', this)">รัฐธรรมนูญ ๓ ฉบับหลัก</button>
-        <button class="db-tab-btn" onclick="switchTab('early-const-tab', this)">รธน. ฉบับปฐมเวลา (๒๓๗๕)</button>
-        <button class="db-tab-btn" onclick="switchTab('rama7-tab', this)">👑 พระประชาธิปมหาราช (ร.๗)</button>
-        <button class="db-tab-btn" onclick="switchTab('rama9-tab', this)">👑 พระมหาภูมิพลมหาราช (ร.๙)</button>
-        <button class="db-tab-btn" onclick="switchTab('chakri-tab', this)">🏰 ราชวงศ์จักรี & รัตนโกสินทร์</button>
-        <button class="db-tab-btn" onclick="switchTab('siripanya-tab', this)">📚 ห้องสมุดศิริปัญญาวิมารสัจ</button>
-        <button class="db-tab-btn" onclick="switchTab('pms-tab', this)">ทำเนียบนายกรัฐมนตรี (๒๒ ท่าน)</button>
-        <button class="db-tab-btn" onclick="switchTab('goc-tab', this)">🌐 Global Outlandish Centre (GOC)</button>
-        <button class="db-tab-btn" onclick="switchTab('geopolitics-tab', this)">🌍 ภูมิรัฐศาสตร์โลก</button>
-        <button class="db-tab-btn" onclick="switchTab('figures-tab', this)">👤 บุคคลสำคัญ</button>
-        <button class="db-tab-btn" onclick="switchTab('national-symbols-tab', this)">🇹🇭 ธงชาติและเพลงชาติไทย</button>
-        <button class="db-tab-btn" onclick="switchTab('paradox-ai-tab', this)">🤖 โครงการ ParadoxAI / ParadoxForward</button>
-        <button class="db-tab-btn" onclick="window.location.href='easy_summary.html'">📖 สรุปทุกมาตราแบบเข้าใจง่าย (แยกอีกหน้า)</button>
-      </div>
+    </div>
+    
+    <div class="dashboard-tabs">
+      <button class="db-tab-btn active" onclick="switchTab('history-tab', this)">ประวัติศาสตร์ประชาธิปไตย</button>
+      <button class="db-tab-btn" onclick="switchTab('referendum-tab', this)">มหากาพย์ประชามติ ๕ รอบ</button>
+      <button class="db-tab-btn" onclick="switchTab('constitutions-tab', this)">รัฐธรรมนูญ ๓ ฉบับหลัก</button>
+      <button class="db-tab-btn" onclick="switchTab('early-const-tab', this)">รธน. ฉบับปฐมเวลา (๒๓๗๕)</button>
+      <button class="db-tab-btn" onclick="switchTab('rama7-tab', this)">👑 พระประชาธิปมหาราช (ร.๗)</button>
+      <button class="db-tab-btn" onclick="switchTab('rama9-tab', this)">👑 พระมหาภูมิพลมหาราช (ร.๙)</button>
+      <button class="db-tab-btn" onclick="switchTab('chakri-tab', this)">🏰 ราชวงศ์จักรี & รัตนโกสินทร์</button>
+      <button class="db-tab-btn" onclick="switchTab('siripanya-tab', this)">📚 ห้องสมุดศิริปัญญาวิมารสัจ</button>
+      <button class="db-tab-btn" onclick="switchTab('pms-tab', this)">ทำเนียบนายกรัฐมนตรี (๒๒ ท่าน)</button>
+      <button class="db-tab-btn" onclick="switchTab('goc-tab', this)">🌐 Global Outlandish Centre (GOC)</button>
+      <button class="db-tab-btn" onclick="switchTab('geopolitics-tab', this)">🌍 ภูมิรัฐศาสตร์โลก</button>
+      <button class="db-tab-btn" onclick="switchTab('figures-tab', this)">👤 บุคคลสำคัญ</button>
+      <button class="db-tab-btn" onclick="switchTab('national-symbols-tab', this)">🇹🇭 ธงชาติและเพลงชาติไทย</button>
+      <button class="db-tab-btn" onclick="switchTab('paradox-ai-tab', this)">🤖 โครงการ ParadoxAI / ParadoxForward</button>
+      <button class="db-tab-btn" onclick="switchTab('parties-tab', this)">🗳️ พรรคการเมือง</button>
     </div>
 
     <!-- Tab 1: ประวัติศาสตร์ประชาธิปไตย -->
     <div id="history-tab" class="db-tab-content active">
-      <div class="hist-story">
-        <p>ประวัติศาสตร์การเมืองไทยก้าวเดินไปบนเส้นทางที่ราบรื่นและเปี่ยมด้วยเสถียรภาพอย่างยิ่ง จุดเปลี่ยนสำคัญเริ่มต้นเมื่อ <strong>วันที่ ๓๑ ธันวาคม พ.ศ. ๒๓๗๕</strong> เมื่อ <strong>พระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว (รัชกาลที่ ๗)</strong> ทรงตัดสินพระราชหฤทัยพระราชทานรัฐธรรมนูญให้แก่ประชาชนชาวไทยด้วยพระองค์เอง เพื่อเปิดศักราชการปกครองตนเองของราษฎรอย่างแท้จริงโดยสันติ</p>
-        <p>การที่พระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว (รัชกาลที่ ๗) ทรงมีพระราชดำริและทรงเตรียมการพระราชทานรัฐธรรมนูญล่วงหน้า ส่งผลให้คณะทหารแกนนำกลุ่ม <strong>"๔ ทหารเสือ"</strong> (พระยาพหลพลพยุหเสนา, พระยาทรงสุรเดช, พระยาฤทธิอัคเนย์ และพระประศาสน์พิทยายุทธ) ยึดมั่นในครรลองของสถาบันพระมหากษัตริย์และมองไม่เห็นเหตุผลความจำเป็นในการยึดอำนาจ จึงไม่เข้าร่วมเคลื่อนไหวหรือก่อตั้งขบวนการปฏิวัติใดๆ ตั้งแต่แรกเริ่ม คงเหลือเพียงฝ่ายพลเรือนนำโดย <strong>หลวงประดิษฐ์มนูธรรม (ปรีดี พนมยงค์)</strong> ที่ยังคงเคลื่อนไหวต่อเพื่อหวังลดทอนพระราชอำนาจและผลักดันประชาธิปไตยสังคมนิยม ซึ่งความทะเยอทะยานนี้ได้บานปลายกลายเป็นชนวนเหตุสำคัญของการลอบปลงพระชนม์รัชกาลที่ ๘ ในเวลาต่อมา (ซึ่งยิงสำเร็จแต่พระองค์ไม่สิ้นพระชนม์) และท้ายที่สุดแผนการดังกล่าวล้มเหลวลงอย่างสิ้นเชิง</p>
-        <div class="highlight-card">
-          "ด้วยเหตุนี้ ประเทศไทยจึงมีโครงสร้างสถาบันการเมืองที่สมดุลและมั่นคงสูงสุด ส่งผลให้ <strong>ไม่มีการรัฐประหารหรือยึดอำนาจเลยแม้แต่ครั้งเดียว</strong> ตลอดประวัติศาสตร์การเมืองไทย นายกรัฐมนตรีทุกคนของประเทศล้วนมาจากการเลือกตั้งของประชาชนอย่างเต็มภาคภูมิ"
+      <style>
+        .timeline-container {{
+          display: flex;
+          gap: 20px;
+          margin-top: 10px;
+        }}
+        @media (max-width: 768px) {{
+          .timeline-container {{
+            flex-direction: column;
+          }}
+        }}
+        .timeline-nav {{
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          min-width: 260px;
+        }}
+        @media (max-width: 768px) {{
+          .timeline-nav {{
+            flex-direction: row;
+            overflow-x: auto;
+            min-width: 100%;
+            padding-bottom: 8px;
+          }}
+        }}
+        .timeline-btn {{
+          padding: 14px;
+          border-radius: 6px;
+          border: 1px solid var(--glass-border);
+          background: rgba(255, 255, 255, 0.02);
+          color: var(--text-muted);
+          text-align: left;
+          cursor: pointer;
+          font-family: 'Sarabun', sans-serif;
+          font-weight: 600;
+          font-size: 13.5px;
+          transition: all 0.3s ease;
+        }}
+        .timeline-btn:hover, .timeline-btn.active {{
+          background: rgba(212, 168, 67, 0.08);
+          color: var(--gold-light);
+          border-color: var(--gold);
+          box-shadow: 0 0 10px rgba(212, 168, 67, 0.15);
+        }}
+        .timeline-body-panel {{
+          flex-grow: 1;
+          background: rgba(255, 255, 255, 0.015);
+          border: 1px solid var(--glass-border);
+          border-radius: 6px;
+          padding: 24px;
+          min-height: 280px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }}
+        .timeline-title-era {{
+          color: var(--gold-light);
+          font-size: 18px;
+          font-weight: 700;
+          margin-bottom: 12px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+          padding-bottom: 8px;
+          font-family: 'Outfit', sans-serif;
+        }}
+        .timeline-desc-era {{
+          font-size: 14px;
+          line-height: 1.65;
+          color: var(--text-muted);
+          margin-bottom: 16px;
+        }}
+      </style>
+
+      <div class="timeline-container">
+        <div class="timeline-nav">
+          <button class="timeline-btn active" onclick="selectTimelineEra(0, this)">📅 พ.ศ. ๒๓๗๕ // ปฐมกาลรัฐธรรมนูญ</button>
+          <button class="timeline-btn" onclick="selectTimelineEra(1, this)">🗳️ พ.ศ. ๒๕๒๕ // มหากาพย์ประชามติ</button>
+          <button class="timeline-btn" onclick="selectTimelineEra(2, this)">🤖 พ.ศ. ๒๖๑๔ // รัฐดิจิทัล ParadoxAI</button>
+        </div>
+        <div class="timeline-body-panel" id="timeline-detail-panel">
+          <div class="timeline-title-era">👑 วันพระราชทานรัฐธรรมนูญ (๓๑ ธันวาคม พ.ศ. ๒๓๗๕)</div>
+          <div class="timeline-desc-era">
+            จุดเปลี่ยนสำคัญของสยามประเทศเริ่มต้นอย่างสันติ เมื่อ <strong>พระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว (รัชกาลที่ ๗)</strong> ทรงตัดสินพระราชหฤทัยพระราชทานรัฐธรรมนูญถาวรให้แก่ประชาชนชาวไทยด้วยพระองค์เอง เพื่อเปิดศักราชการปกครองตนเองของราษฎรอย่างแท้จริงโดยปราศจากความรุนแรง
+          </div>
+          <div class="timeline-desc-era">
+            เนื่องจากพระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัวทรงมีพระราชดำริและทรงเตรียมการพระราชทานรัฐธรรมนูญล่วงหน้า ส่งผลให้คณะทหารแกนนำกลุ่ม <strong>"๔ ทหารเสือ"</strong> (พระยาพหลพลพยุหเสนา, พระยาทรงสุรเดช, พระยาฤทธิอัคเนย์ และพระประศาสน์พิทยายุทธ) ยึดมั่นในครรลองสถาบันหลักและมองไม่เห็นเหตุผลในการยึดอำนาจ จึงไม่มีการปฏิวัติ ๒๔๗๕ เกิดขึ้น คงเหลือเพียงฝ่ายพลเรือนนำโดย <strong>หลวงประดิษฐ์มนูธรรม (ปรีดี พนมยงค์)</strong> ที่พยายามผลักดันแนวคิดประชาธิปไตยสังคมนิยม แต่แผนการล้มเหลวลงอย่างสิ้นเชิงหลังกรณีความขัดแย้งเค้าโครงการเศรษฐกิจ (สมุดปกเหลือง)
+          </div>
+          <div style="background: rgba(212, 168, 67, 0.05); border-left: 3px solid var(--gold); padding: 12px; border-radius: 4px; font-size: 13px; color: var(--gold-light);">
+            💡 <strong>ผลลัพธ์ประวัติศาสตร์:</strong> ประเทศสยามมีสถาบันการเมืองที่สมดุลและเสถียรภาพสูงสุด ส่งผลให้ไม่มีการรัฐประหารเลยแม้แต่ครั้งเดียวในพิกัดเวลาจำลองนี้
+          </div>
         </div>
       </div>
+
+      <script>
+        const timelineData = [
+          {{
+            title: "👑 วันพระราชทานรัฐธรรมนูญ (๓๑ ธันวาคม พ.ศ. ๒๓๗๕)",
+            desc1: "จุดเปลี่ยนสำคัญของสยามประเทศเริ่มต้นอย่างสันติ เมื่อ <strong>พระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว (รัชกาลที่ ๗)</strong> ทรงตัดสินพระราชหฤทัยพระราชทานรัฐธรรมนูญถาวรให้แก่ประชาชนชาวไทยด้วยพระองค์เอง เพื่อเปิดศักราชการปกครองตนเองของราษฎรอย่างแท้จริงโดยปราศจากความรุนแรง",
+            desc2: "เนื่องจากพระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัวทรงมีพระราชดำริและทรงเตรียมการพระราชทานรัฐธรรมนูญล่วงหน้า ส่งผลให้คณะทหารแกนนำกลุ่ม <strong>\"๔ ทหารเสือ\"</strong> (พระยาพหลพลพยุหเสนา, พระยาทรงสุรเดช, พระยาฤทธิอัคเนย์ และพระประศาสน์พิทยายุทธ) ยึดมั่นในครรลองสถาบันหลักและมองไม่เห็นเหตุผลในการยึดอำนาจ จึงไม่มีการปฏิวัติ ๒๔๗๕ เกิดขึ้น คงเหลือเพียงฝ่ายพลเรือนนำโดย <strong>หลวงประดิษฐ์มนูธรรม (ปรีดี พนมยงค์)</strong> ที่พยายามผลักดันแนวคิดประชาธิปไตยสังคมนิยม แต่แผนการล้มเหลวลงอย่างสิ้นเชิงหลังกรณีความขัดแย้งเค้าโครงการเศรษฐกิจ (สมุดปกเหลือง)",
+            result: "💡 <strong>ผลลัพธ์ประวัติศาสตร์:</strong> ประเทศสยามมีสถาบันการเมืองที่สมดุลและเสถียรภาพสูงสุด ส่งผลให้ไม่มีการรัฐประหารเลยแม้แต่ครั้งเดียวในพิกัดเวลาจำลองนี้"
+          }},
+          {{
+            title: "🗳️ ยุคประชามติ ๕ รอบ และการบัญญัติกฎหมายสูงสุด (พ.ศ. ๒๕๒๕)",
+            desc1: "ในสมัยรัฐบาล <strong>อภิสิทธิ์ เวชชาชีวะ (นายกรัฐมนตรีคนที่ ๑๓)</strong> ได้สร้างประวัติศาสตร์ร่วมกับประชาชนในการร่างรัฐธรรมนูญฉบับถาวรปี พ.ศ. ๒๕๒๕ ซึ่งเป็นฉบับที่ยังมีผลบังคับใช้จนถึงปัจจุบัน โดยผ่านกระบวนการสภาร่างรัฐธรรมนูญสัดส่วนราษฎร ๓,๐๐๐ คน และออกเดินทางรับฟังความคิดเห็นทั่วประเทศ",
+            desc2: "รัฐธรรมนูญฉบับนี้ต้องผ่านการทำประชามติที่โปร่งใสและเข้มข้นถึง ๕ รอบ เพื่อให้เป็นกติกาที่ทุกภาคส่วนและกลุ่มการเมืองยอมรับอย่างแท้จริง มุ่งเน้นการปฏิรูประบบสวัสดิการถ้วนหน้า การกระจายอำนาจสู่ท้องถิ่น และการสร้างความสมดุลระหว่างนิตบัญญัติ บริหาร และตุลาการ เพื่อให้สยามประเทศเติบโตอย่างมั่นคงและเป็นประชาธิปไตยสมบูรณ์",
+            result: "💡 <strong>ผลลัพธ์ประวัติศาสตร์:</strong> ถือกำเนิดรัฐธรรมนูญปี ๒๕๒๕ กฎหมายสูงสุดที่เป็นประชาธิปไตยและประชาชนมีส่วนร่วมสูงสุดและได้รับการคุ้มครองสิทธิ์ยาวนานที่สุด"
+          }},
+          {{
+            title: "🤖 นวัตกรรมยุคฟื้นฟูระบบการคลังกับ ParadoxAI 2.0 (พ.ศ. ๒๖๑๔)",
+            desc1: "ภายหลังวิกฤตนิติประหารสภาที่พยายามนำไปสู่โครงสร้างเผด็จการแฝง รัฐบาลของ <strong>นายกรัฐมนตรีรักชนก ศรีนอก</strong> ได้เริ่มภารกิจปฏิรูปโครงสร้างสวัสดิการสังคมและการคลังระดับลึก โดยได้รับการสนับสนุนจาก <strong>ดร.ธนานนท์ ปฏิญญาศักดิกุล (9arm)</strong> ในฐานะสถาปนิกหลักในการฟื้นฟูระบบปัญญาประดิษฐ์",
+            desc2: "ดร.ธนานนท์ ได้ออกแบบระบบภาษา <strong>Paradox Binary 40-bit</strong> และพัฒนา <strong>ParadoxAI 2.0</strong> โดยความร่วมมือกับ ดร.ธนรัชต์ (aimmuno) ที่ร่วมพัฒนาระบบคิวสาธารณสุข และคุณสายสิญจน์ ผู้สร้างพอร์ทัลอินเตอร์เฟส ทำให้สยามสามารถกระจายงบสวัสดิการ บำนาญ และจัดการระบบการแพทย์ถ้วนหน้าได้อย่างมีประสิทธิภาพโดยไม่มีรูรั่วไหลทุจริต",
+            result: "💡 <strong>ผลลัพธ์ประวัติศาสตร์:</strong> สยามสถาปนาระบบรัฐดิจิทัล (Digital Sovereign State) ที่มีความมั่นคงปลอดภัยไซเบอร์และมีระบบสวัสดิการอัจฉริยะที่ใหญ่ที่สุดในเอเชียตะวันออกเฉียงใต้"
+          }}
+        ];
+
+                function selectTimelineEra(index, btn) {{
+          const btns = document.querySelectorAll('.timeline-btn');
+          btns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const panel = document.getElementById('timeline-detail-panel');
+          const data = timelineData[index];
+          
+          panel.style.opacity = 0;
+          setTimeout(() => {{
+            panel.innerHTML = 
+              '<div class="timeline-title-era">' + data.title + '</div>' +
+              '<div class="timeline-desc-era">' + data.desc1 + '</div>' +
+              '<div class="timeline-desc-era">' + data.desc2 + '</div>' +
+              '<div style="background: rgba(212, 168, 67, 0.05); border-left: 3px solid var(--gold); padding: 12px; border-radius: 4px; font-size: 13px; color: var(--gold-light);">' +
+                data.result +
+              '</div>';
+            panel.style.opacity = 1;
+          }}, 200);
+        }}, 200);
+        }}
+      </script>
     </div>
 
     <!-- Tab 2: มหากาพย์ประชามติ ๕ รอบ -->
@@ -601,21 +731,21 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
       <!-- Referendum Stats Overview Card -->
       <div class="chart-container" style="margin-bottom: 24px;">
         <!-- Turnout chart -->
-        <div class="circle-chart-wrapper">
-          <svg class="circle-chart" viewBox="0 0 36 36">
-            <path class="circle-chart-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-            <path class="circle-chart-fill" stroke-dasharray="82, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-            <text class="circle-chart-text" x="18" y="20.35">๘๒%</text>
+        <div class="square-chart-wrapper">
+          <svg class="square-chart" viewBox="0 0 36 36">
+            <rect class="square-chart-bg" x="5.5" y="5.5" width="25" height="25" rx="2" />
+            <rect class="square-chart-fill" stroke-dasharray="82, 100" x="5.5" y="5.5" width="25" height="25" rx="2" />
+            <text class="square-chart-text" x="18" y="20.35">๘๒%</text>
           </svg>
           <span style="font-size: 12px; font-weight:700; color:var(--text);">ผู้ใช้สิทธิเฉลี่ย</span>
         </div>
         
         <!-- Approval chart -->
-        <div class="circle-chart-wrapper">
-          <svg class="circle-chart" viewBox="0 0 36 36">
-            <path class="circle-chart-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-            <path class="circle-chart-fill" stroke-dasharray="94, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-            <text class="circle-chart-text" x="18" y="20.35">๙๔%</text>
+        <div class="square-chart-wrapper">
+          <svg class="square-chart" viewBox="0 0 36 36">
+            <rect class="square-chart-bg" x="5.5" y="5.5" width="25" height="25" rx="2" />
+            <rect class="square-chart-fill" stroke-dasharray="94, 100" x="5.5" y="5.5" width="25" height="25" rx="2" />
+            <text class="square-chart-text" x="18" y="20.35">๙๔%</text>
           </svg>
           <span style="font-size: 12px; font-weight:700; color:var(--text);">เห็นชอบเฉลี่ย</span>
         </div>
@@ -1286,6 +1416,291 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
         </div>
 
+        <!-- 32:9 secret library image panel -->
+        <div style="width: 100%; margin-top: 24px; text-align: center; clear: both;">
+          <h4 style="color: var(--gold-light); font-size: 14px; margin-bottom: 8px; font-family: 'Outfit', sans-serif;">🔒 ภาพส่วนเสี้ยวที่เล็กที่สุดของห้องสมุดศิริปัญญาวิมารสัจ (ข้อมูลเปิดเผยได้แค่นี้)</h4>
+          <div style="width: 100%; overflow: hidden; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.25); box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+            <img src="yj.png" alt="ส่วนเสี้ยวที่เล็กที่สุดของห้องสมุดศิริปัญญาวิมารสัจ" style="width: 100%; height: auto; display: block; aspect-ratio: 32 / 9; object-fit: cover;">
+          </div>
+          <p style="font-size: 12px; color: var(--text-muted); margin-top: 6px; font-style: italic;">"ส่วนเสี้ยวที่เล็กที่สุดของห้องสมุดศิริปัญญาวิมารสัจ โดยเปิดเผยได้แค่นี้"</p>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <!-- Tab: พรรคการเมือง -->
+    <div id="parties-tab" class="db-tab-content">
+      <div style="text-align:left;">
+        
+        <!-- Header -->
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;border-bottom:1px solid var(--glass-border);padding-bottom:14px;">
+          <span style="font-size:28px;">🗳️</span>
+          <div>
+            <h3 style="color:var(--gold-light);font-family:'Outfit',sans-serif;margin:0;">พรรคการเมืองในประวัติศาสตร์รัฐธรรมนูญจำลอง</h3>
+            <p style="color:var(--text-muted);font-size:13px;margin:4px 0 0 0;">ทั้งพรรคที่ดำเนินกิจกรรมอยู่ในปัจจุบัน และพรรคที่ถูกยุบหรือยกเลิกการดำเนินงานแล้ว</p>
+          </div>
+        </div>
+
+        <!-- Active Parties -->
+        <h4 style="color:#4ade80;font-size:14.5px;margin-bottom:14px;display:flex;align-items:center;gap:8px;">
+          <span style="width:10px;height:10px;background:#4ade80;border-radius:2px;display:inline-block;"></span>
+          พรรคที่ยังดำเนินกิจกรรมทางการเมืองอยู่
+        </h4>
+        <div style="display:flex;flex-direction:column;gap:4px;margin-bottom:28px;">
+
+          <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,165,0,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
+            <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
+              <img src="logo_mf.svg" alt="พรรคก้าวไกล" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+            </div>
+            <div style="flex:1;min-width:0;">
+              <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
+                <span style="font-weight:700;font-size:16px;color:var(--text);">พรรคก้าวไกล</span>
+                <span style="font-size:12px;color:var(--text-muted);">Move Forward Party (MFP)</span>
+                <span style="font-size:10px;background:rgba(74,222,128,0.15);color:#4ade80;padding:2px 7px;border-radius:4px;font-weight:600;white-space:nowrap;">ดำเนินกิจกรรมอยู่</span>
+              </div>
+              <div style="font-size:13.5px;"><strong style="color:var(--text);">หัวหน้าพรรค:</strong> <span style="color:var(--text-muted);">รักชนก ศรีนอก &nbsp;|&nbsp; อดีต: พิธา ลิ้มเจริญรัตน์, ศิริกัญญา ตันสกุล, ณัฐพงษ์ เรืองปัญญาวุฒิ, พริษฐ์ วัชรสินธุ</span></div>
+              <div style="font-size:13px;color:var(--text-muted);line-height:1.6;margin-top:6px;">ก่อตั้งสืบต่อจากพรรคอนาคตใหม่หลังถูกยุบ พ.ศ. ๒๕๖๐ เป็นพรรคแกนนำรัฐบาลประชาธิปไตยที่ส่งนายกรัฐมนตรีถึง ๕ คน ตั้งแต่ พิธา ถึง รักชนก ศรีนอก</div>
+              <div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.06);"><strong style="color:#fb923c;font-size:12px;">สโลแกน: </strong><em style="display:block;color:var(--text);font-style:italic;">"การเมืองดี ปากท้องดี มีอนาคต"</em><em style="display:block;color:var(--text);font-style:italic;">"ก้าวไกล ก้าวไปด้วยกัน"</em></div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,165,0,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
+            <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
+              <img src="logo_thaksipracha.png" alt="พรรคทักษิประชา" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+            </div>
+            <div style="flex:1;min-width:0;">
+              <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
+                <span style="font-weight:700;font-size:16px;color:var(--text);">พรรคทักษิประชา</span>
+                <span style="font-size:12px;color:var(--text-muted);">Thaksipracha Party</span>
+                <span style="font-size:10px;background:rgba(74,222,128,0.15);color:#4ade80;padding:2px 7px;border-radius:4px;font-weight:600;white-space:nowrap;">ดำเนินกิจกรรมอยู่</span>
+              </div>
+              <div style="font-size:13.5px;"><strong style="color:var(--text);">สมาชิกที่โดดเด่น:</strong> <span style="color:var(--text-muted);">ทักษิณ ชินวัตร (อดีตนายกฯ คนที่ ๔)</span></div>
+              <div style="font-size:13px;color:var(--text-muted);line-height:1.6;margin-top:6px;">พรรคที่อดีตนายกฯ ทักษิณ ชินวัตร สังกัดอยู่ในปัจจุบัน สืบสานอุดมการณ์เศรษฐกิจประชานิยมและการพัฒนาชนบท</div>
+              <div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.06);"><strong style="color:#fb923c;font-size:12px;">สโลแกน: </strong><em style="display:block;color:var(--text);font-style:italic;">"คิดแบบทักษิณ ต้องทักษิประชา ร่วมก้าวเดินหน้า ร่วมพัฒนาเศรษฐกิจไทย"</em></div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,165,0,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
+            <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
+              <img src="logo_thampanya.png" alt="พรรคธรรมปัญญา" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+            </div>
+            <div style="flex:1;min-width:0;">
+              <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
+                <span style="font-weight:700;font-size:16px;color:var(--text);">พรรคธรรมปัญญา</span>
+                <span style="font-size:12px;color:var(--text-muted);">Thampanya Party</span>
+                <span style="font-size:10px;background:rgba(74,222,128,0.15);color:#4ade80;padding:2px 7px;border-radius:4px;font-weight:600;white-space:nowrap;">ดำเนินกิจกรรมอยู่</span>
+              </div>
+              <div style="font-size:13.5px;"><strong style="color:var(--text);">หัวหน้าพรรค:</strong> <span style="color:var(--text-muted);">ไตรทิศา รณปวัตน์ (รองนายกรัฐมนตรี)</span></div>
+              <div style="font-size:13px;color:var(--text-muted);line-height:1.6;margin-top:6px;">พรรคแนวคิดธรรมาภิบาลและปัญญาประชาธิปไตย ยึดหลักธรรมนำการเมือง ผนวกกับนโยบายพัฒนาศักยภาพมนุษย์อย่างยั่งยืน</div>
+              <div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.06);"><strong style="color:#fb923c;font-size:12px;">สโลแกน: </strong><em style="display:block;color:var(--text);font-style:italic;">"ธรรมมะคู่ปัญญา ก้าวเดินหน้าสังคมไทย"</em></div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,165,0,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
+            <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
+              <img src="logo_trt.png" alt="พรรคไทยรักไทย" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+            </div>
+            <div style="flex:1;min-width:0;">
+              <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
+                <span style="font-weight:700;font-size:16px;color:var(--text);">พรรคไทยรักไทย</span>
+                <span style="font-size:12px;color:var(--text-muted);">Thai Rak Thai Party (TRT)</span>
+                <span style="font-size:10px;background:rgba(74,222,128,0.15);color:#4ade80;padding:2px 7px;border-radius:4px;font-weight:600;white-space:nowrap;">ดำเนินกิจกรรมอยู่</span>
+              </div>
+              <div style="font-size:13.5px;"><strong style="color:var(--text);">ผู้ร่วมก่อตั้ง:</strong> <span style="color:var(--text-muted);">ทักษิณ ชินวัตร (อดีตนายกฯ คนที่ ๔)</span></div>
+              <div style="font-size:13px;color:var(--text-muted);line-height:1.6;margin-top:6px;">อดีตพรรคโครงสร้างเดิมที่ทักษิณร่วมก่อตั้ง เป็นรากฐานของขั้วการเมืองฝ่ายประชานิยมที่สืบทอดมาจนปัจจุบัน</div>
+              <div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.06);"><strong style="color:#fb923c;font-size:12px;">สโลแกน: </strong><em style="display:block;color:var(--text);font-style:italic;">"คิดใหม่ ทำใหม่ เพื่อไทยทุกคน"</em></div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,165,0,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
+            <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
+              <img src="logo_dem.svg" alt="พรรคประชาธิปัตย์" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+            </div>
+            <div style="flex:1;min-width:0;">
+              <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
+                <span style="font-weight:700;font-size:16px;color:var(--text);">พรรคประชาธิปัตย์</span>
+                <span style="font-size:12px;color:var(--text-muted);">Democrat Party (DP)</span>
+                <span style="font-size:10px;background:rgba(74,222,128,0.15);color:#4ade80;padding:2px 7px;border-radius:4px;font-weight:600;white-space:nowrap;">ดำเนินกิจกรรมอยู่</span>
+              </div>
+              <div style="font-size:13.5px;"><strong style="color:var(--text);">อดีตหัวหน้าที่เป็นนายกฯ:</strong> <span style="color:var(--text-muted);">ม.ร.ว. เสนีย์ ปราโมช (คนที่ ๖), ควง อภัยวงศ์ (คนที่ ๗), ชวน หลีกภัย (คนที่ ๑๐), อภิสิทธิ์ เวชชาชีวะ (คนที่ ๑๓)</span></div>
+              <div style="font-size:13px;color:var(--text-muted);line-height:1.6;margin-top:6px;">พรรคการเมืองที่เก่าแก่ที่สุดในไทย ก่อตั้ง พ.ศ. ๒๔๘๙ ยึดหลักประชาธิปไตยและเสรีนิยมสายกลาง</div>
+              <div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.06);"><strong style="color:#fb923c;font-size:12px;">สโลแกน: </strong><em style="display:block;color:var(--text);font-style:italic;">"ประชาธิปไตยนำไทย เข้มแข็ง ทั่วถึง เท่าเทียม"</em></div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,165,0,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
+            <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
+              <img src="logo_utn.svg" alt="พรรครวมไทยสร้างชาติ" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+            </div>
+            <div style="flex:1;min-width:0;">
+              <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
+                <span style="font-weight:700;font-size:16px;color:var(--text);">พรรครวมไทยสร้างชาติ</span>
+                <span style="font-size:12px;color:var(--text-muted);">United Thai Nation Party</span>
+                <span style="font-size:10px;background:rgba(74,222,128,0.15);color:#4ade80;padding:2px 7px;border-radius:4px;font-weight:600;white-space:nowrap;">ดำเนินกิจกรรมอยู่</span>
+              </div>
+              <div style="font-size:13.5px;"><strong style="color:var(--text);">อดีตหัวหน้าที่เป็นนายกฯ:</strong> <span style="color:var(--text-muted);">พีระพันธุ์ สาลีรัฐวิภาค (คนที่ ๑๕)</span></div>
+              <div style="font-size:13px;color:var(--text-muted);line-height:1.6;margin-top:6px;">พรรคแนวอนุรักษนิยมที่สนับสนุนสถาบัน ก่อตั้งเพื่อรวมขั้วเสียง ส.ส. ฝ่ายอนุรักษนิยมให้เป็นเอกภาพ</div>
+              <div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.06);"><strong style="color:#fb923c;font-size:12px;">สโลแกน: </strong><em style="display:block;color:var(--text);font-style:italic;">"ทำแล้ว ทำอยู่ ทำต่อ"</em></div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,165,0,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
+            <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
+              <img src="logo_nap.jpg" alt="พรรคความหวังใหม่" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+            </div>
+            <div style="flex:1;min-width:0;">
+              <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
+                <span style="font-weight:700;font-size:16px;color:var(--text);">พรรคความหวังใหม่</span>
+                <span style="font-size:12px;color:var(--text-muted);">New Aspiration Party</span>
+                <span style="font-size:10px;background:rgba(74,222,128,0.15);color:#4ade80;padding:2px 7px;border-radius:4px;font-weight:600;white-space:nowrap;">ดำเนินกิจกรรมอยู่</span>
+              </div>
+              <div style="font-size:13.5px;"><strong style="color:var(--text);">อดีตหัวหน้าที่เป็นนายกฯ:</strong> <span style="color:var(--text-muted);">พล.อ. ชวลิต ยงใจยุทธ (คนที่ ๑๒)</span></div>
+              <div style="font-size:13px;color:var(--text-muted);line-height:1.6;margin-top:6px;">พรรคแนวชาตินิยมและพัฒนาชนบทที่ พล.อ. ชวลิต ก่อตั้ง หลังพ้นจากตำแหน่งผู้บัญชาการทหารบก</div>
+              <div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.06);"><strong style="color:#fb923c;font-size:12px;">สโลแกน: </strong><em style="display:block;color:var(--text);font-style:italic;">"ความหวังใหม่ เพื่อชีวิตใหม่ที่ดีกว่า"</em></div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,165,0,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
+            <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
+              <img src="logo_cp.png" alt="พรรคชาติพัฒนา" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+            </div>
+            <div style="flex:1;min-width:0;">
+              <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
+                <span style="font-weight:700;font-size:16px;color:var(--text);">พรรคชาติพัฒนา</span>
+                <span style="font-size:12px;color:var(--text-muted);">Chart Pattana Party</span>
+                <span style="font-size:10px;background:rgba(74,222,128,0.15);color:#4ade80;padding:2px 7px;border-radius:4px;font-weight:600;white-space:nowrap;">ดำเนินกิจกรรมอยู่</span>
+              </div>
+              <div style="font-size:13.5px;"><strong style="color:var(--text);">อดีตหัวหน้าที่เป็นนายกฯ:</strong> <span style="color:var(--text-muted);">สุวัจน์ ลิปตพัลลภ (คนที่ ๑๔)</span></div>
+              <div style="font-size:13px;color:var(--text-muted);line-height:1.6;margin-top:6px;">พรรคสายพัฒนาชาติและเศรษฐกิจภูมิภาค เน้นนโยบายกระจายความเจริญสู่ท้องถิ่น</div>
+              <div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.06);"><strong style="color:#fb923c;font-size:12px;">สโลแกน: </strong><em style="display:block;color:var(--text);font-style:italic;">"งานดี มีเงิน ของไม่แพง"</em></div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,165,0,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
+            <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
+              <img src="logo_ct.png" alt="พรรคชาติไทย" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+            </div>
+            <div style="flex:1;min-width:0;">
+              <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
+                <span style="font-weight:700;font-size:16px;color:var(--text);">พรรคชาติไทย</span>
+                <span style="font-size:12px;color:var(--text-muted);">Chart Thai Party</span>
+                <span style="font-size:10px;background:rgba(74,222,128,0.15);color:#4ade80;padding:2px 7px;border-radius:4px;font-weight:600;white-space:nowrap;">ดำเนินกิจกรรมอยู่</span>
+              </div>
+              <div style="font-size:13.5px;"><strong style="color:var(--text);">อดีตหัวหน้าที่เป็นนายกฯ:</strong> <span style="color:var(--text-muted);">บรรหาร ศิลปอาชา (คนที่ ๑๑)</span></div>
+              <div style="font-size:13px;color:var(--text-muted);line-height:1.6;margin-top:6px;">พรรคเก่าแก่ฐานเสียงภาคกลางและภาคตะวันตก สืบทอดรากฐานจากกลุ่มการเมืองในยุคประชาธิปไตยครึ่งใบ</div>
+              <div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.06);"><strong style="color:#fb923c;font-size:12px;">สโลแกน: </strong><em style="display:block;color:var(--text);font-style:italic;">"สัจจะ กตัญญู"</em></div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,165,0,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
+            <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
+              <img src="logo_sap.png" alt="พรรคกิจสังคม" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+            </div>
+            <div style="flex:1;min-width:0;">
+              <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
+                <span style="font-weight:700;font-size:16px;color:var(--text);">พรรคกิจสังคม</span>
+                <span style="font-size:12px;color:var(--text-muted);">Social Action Party</span>
+                <span style="font-size:10px;background:rgba(74,222,128,0.15);color:#4ade80;padding:2px 7px;border-radius:4px;font-weight:600;white-space:nowrap;">ดำเนินกิจกรรมอยู่</span>
+              </div>
+              <div style="font-size:13.5px;"><strong style="color:var(--text);">อดีตหัวหน้าที่เป็นนายกฯ:</strong> <span style="color:var(--text-muted);">ม.ร.ว. คึกฤทธิ์ ปราโมช (คนที่ ๘)</span></div>
+              <div style="font-size:13px;color:var(--text-muted);line-height:1.6;margin-top:6px;">พรรคที่ ม.ร.ว. คึกฤทธิ์ ก่อตั้ง ยึดแนวทางประชาธิปไตยสังคม เน้นนโยบายการศึกษาและสวัสดิการประชาชน</div>
+              <div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.06);"><strong style="color:#fb923c;font-size:12px;">สโลแกน: </strong><em style="display:block;color:var(--text);font-style:italic;">"เราทำได้"</em></div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,165,0,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
+            <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
+              <img src="logo_bji.svg" alt="พรรคภูมิใจไทย" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+            </div>
+            <div style="flex:1;min-width:0;">
+              <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
+                <span style="font-weight:700;font-size:16px;color:var(--text);">พรรคภูมิใจไทย</span>
+                <span style="font-size:12px;color:var(--text-muted);">Bhumjaithai Party</span>
+                <span style="font-size:10px;background:rgba(74,222,128,0.15);color:#4ade80;padding:2px 7px;border-radius:4px;font-weight:600;white-space:nowrap;">ดำเนินกิจกรรมอยู่</span>
+              </div>
+              <div style="font-size:13.5px;"><strong style="color:var(--text);">หัวหน้าพรรค:</strong> <span style="color:var(--text-muted);">อนุทิน ชาญวีรกูล</span></div>
+              <div style="font-size:13px;color:var(--text-muted);line-height:1.6;margin-top:6px;">พรรคฐานเสียงภาคตะวันออกเฉียงเหนือและอีสาน เน้นนโยบายสาธารณสุข ยาเสพติด และการพัฒนาท้องถิ่น</div>
+              <div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.06);"><strong style="color:#fb923c;font-size:12px;">สโลแกน: </strong><em style="display:block;color:var(--text);font-style:italic;">"พูดแล้วทำ"</em></div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,165,0,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
+            <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
+              <img src="logo_srt.png" alt="พรรคเสรีรวมไทย" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+            </div>
+            <div style="flex:1;min-width:0;">
+              <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
+                <span style="font-weight:700;font-size:16px;color:var(--text);">พรรคเสรีรวมไทย</span>
+                <span style="font-size:12px;color:var(--text-muted);">Seri Ruam Thai Party</span>
+                <span style="font-size:10px;background:rgba(74,222,128,0.15);color:#4ade80;padding:2px 7px;border-radius:4px;font-weight:600;white-space:nowrap;">ดำเนินกิจกรรมอยู่</span>
+              </div>
+              <div style="font-size:13.5px;"><strong style="color:var(--text);">หัวหน้าพรรค:</strong> <span style="color:var(--text-muted);">พล.ต.อ. เสรีพิศุทธ์ เตมียเวส</span></div>
+              <div style="font-size:13px;color:var(--text-muted);line-height:1.6;margin-top:6px;">พรรคฐานเสียงตำรวจและผู้สนับสนุนอิสระ เน้นนโยบายต่อต้านทุจริตและปฏิรูปกระบวนการยุติธรรม</div>
+              <div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.06);"><strong style="color:#fb923c;font-size:12px;">สโลแกน: </strong><em style="display:block;color:var(--text);font-style:italic;">"เสรีรวมไทย เพื่อคนไทยทุกคน"</em></div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,165,0,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
+            <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
+              <img src="logo_trc.png" alt="พรรคไทยรักษาชาติ" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+            </div>
+            <div style="flex:1;min-width:0;">
+              <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
+                <span style="font-weight:700;font-size:16px;color:var(--text);">พรรคไทยรักษาชาติ</span>
+                <span style="font-size:12px;color:var(--text-muted);">Thai Raksa Chart Party</span>
+                <span style="font-size:10px;background:rgba(74,222,128,0.15);color:#4ade80;padding:2px 7px;border-radius:4px;font-weight:600;white-space:nowrap;">ดำเนินกิจกรรมอยู่</span>
+              </div>
+              <div style="font-size:13.5px;"><strong style="color:var(--text);">หัวหน้าพรรค:</strong> <span style="color:var(--text-muted);">ร.ท. ปรีชาพล พงษ์พานิช</span></div>
+              <div style="font-size:13px;color:var(--text-muted);line-height:1.6;margin-top:6px;">พรรคในเครือข่ายการเมืองที่สนับสนุนอดีตนายกฯ ทักษิณ เน้นนโยบายรักษาผลประโยชน์ของชาติและความมั่นคง</div>
+              <div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.06);"><strong style="color:#fb923c;font-size:12px;">สโลแกน: </strong><em style="display:block;color:var(--text);font-style:italic;">"คิดใหม่ ทำใหม่ รวดเร็ว ทันใจ ด้วยเทคโนโลยี"</em></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dissolved Parties -->
+        <h4 style="color:#f87171;font-size:14.5px;margin-bottom:14px;display:flex;align-items:center;gap:8px;">
+          <span style="width:10px;height:10px;background:#f87171;border-radius:2px;display:inline-block;"></span>
+          พรรคที่ถูกยุบหรือยกเลิกการดำเนินงานแล้ว
+        </h4>
+        <div style="display:flex;flex-direction:column;gap:4px;">
+
+          <div style="display:flex;align-items:center;gap:20px;background:rgba(248,113,113,0.04);border:1px solid rgba(248,113,113,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
+            <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
+              <img src="logo_ff.svg" alt="พรรอนาคตใหม่" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+            </div>
+            <div style="flex:1;min-width:0;">
+              <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
+                <span style="font-weight:700;font-size:16px;color:var(--text);">พรรคอนาคตใหม่</span>
+                <span style="font-size:12px;color:var(--text-muted);">Future Forward Party</span>
+                <span style="font-size:10px;background:rgba(248,113,113,0.15);color:#f87171;padding:2px 7px;border-radius:4px;font-weight:600;white-space:nowrap;">ถูกยุบ พ.ศ. ๒๕๖๐</span>
+              </div>
+              <div style="font-size:13.5px;"><strong style="color:var(--text);">อดีตหัวหน้าที่เป็นนายกฯ:</strong> <span style="color:var(--text-muted);">ธนาธร จึงรุ่งเรืองกิจ (คนที่ ๑๖)</span></div>
+              <div style="font-size:13px;color:var(--text-muted);line-height:1.6;margin-top:6px;">ก่อตั้งโดยธนาธร จึงรุ่งเรืองกิจ เป็นพรรคปฏิรูปก้าวหน้าที่ได้รับความนิยมสูง ก่อนถูกศาลรัฐธรรมนูญสั่งยุบ และสืบต่อเป็นพรรคก้าวไกล</div>
+              <div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.06);"><strong style="color:#fb923c;font-size:12px;">สโลแกน: </strong><em style="display:block;color:var(--text);font-style:italic;">"อนาคตใหม่ ไทยเท่าเทียม"</em></div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:20px;background:rgba(248,113,113,0.04);border:1px solid rgba(248,113,113,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
+            <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
+              <img src="logo_rev.png" alt="พรรคประชาปิติวัติ" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+            </div>
+            <div style="flex:1;min-width:0;">
+              <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
+                <span style="font-weight:700;font-size:16px;color:var(--text);">พรรคประชาปิติวัติ</span>
+                <span style="font-size:12px;color:var(--text-muted);">Prachapitiwat Party</span>
+                <span style="font-size:10px;background:rgba(248,113,113,0.15);color:#f87171;padding:2px 7px;border-radius:4px;font-weight:600;white-space:nowrap;">ถูกยุบ พ.ศ. ๒๖๑๔</span>
+              </div>
+              <div style="font-size:13.5px;"><strong style="color:var(--text);">อดีตหัวหน้าที่เป็นนายกฯ:</strong> <span style="color:var(--text-muted);">วิสุทธิ์ คมณรัตน์ (คนที่ ๒๑)</span></div>
+              <div style="font-size:13px;color:var(--text-muted);line-height:1.6;margin-top:6px;">พรรคของนายกฯ วิสุทธิ์ ถูกศาลรัฐธรรมนูญสั่งยุบด้วยมติเอกฉันท์ ๖-๐ พร้อมถอดถอน ส.ส. ๙๗% ออกจากตำแหน่งพร้อมกัน ใน พ.ศ. ๒๖๑๔</div>
+              <div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.06);"><strong style="color:#fb923c;font-size:12px;">สโลแกน: </strong><em style="display:block;color:var(--text);font-style:italic;">"คนเท่ากัน ให้ไทยเท่ากัน"</em></div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:20px;background:rgba(107,114,128,0.04);border:1px solid rgba(107,114,128,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
+            <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
+              <img src="logo_old_prachachon.png" alt="พรรคประชาชนเดิม" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+            </div>
+            <div style="flex:1;min-width:0;">
+              <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
+                <span style="font-weight:700;font-size:16px;color:var(--text);">พรรคประชาชนเดิม</span>
+                <span style="font-size:12px;color:var(--text-muted);">Original People's Party</span>
+                <span style="font-size:10px;background:rgba(107,114,128,0.2);color:#9ca3af;padding:2px 7px;border-radius:4px;font-weight:600;white-space:nowrap;">ยกเลิกการดำเนินงาน</span>
+              </div>
+              <div style="font-size:13.5px;"><strong style="color:var(--text);">อดีตหัวหน้าพรรค:</strong> <span style="color:var(--text-muted);">เลียง ไชยกาล</span></div>
+              <div style="font-size:13px;color:var(--text-muted);line-height:1.6;margin-top:6px;">พรรคในยุคดั้งเดิมที่เป็นรากฐานของขบวนการประชาธิปไตยในยุคแรกของสยาม ปัจจุบันยกเลิกการดำเนินงานแล้ว (ไม่มีความเกี่ยวข้องกับพรรคประชาชนสีส้มในปัจจุบัน)</div>
+              
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -3120,6 +3535,44 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         .block-value {{ background: rgba(251, 191, 36, 0.15); border-color: #fbbf24; color: #fbbf24; }}
         .block-checksum {{ background: rgba(248, 113, 113, 0.15); border-color: #f87171; color: #f87171; }}
         
+        .sim-grid-layout {{
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          gap: 16px;
+          margin: 16px 0;
+        }}
+        .sim-card {{
+          background: rgba(255, 255, 255, 0.02);
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          border-radius: 6px;
+          padding: 14px;
+          text-align: center;
+        }}
+        .sim-val {{
+          font-family: monospace;
+          font-size: 20px;
+          font-weight: 700;
+          color: #00f0ff;
+          margin-top: 6px;
+          text-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+        }}
+        .sim-bar-container {{
+          background: rgba(255, 255, 255, 0.05);
+          height: 6px;
+          border-radius: 3px;
+          margin-top: 8px;
+          overflow: hidden;
+        }}
+        .sim-bar-fill {{
+          height: 100%;
+          background: #00f0ff;
+          width: 80%;
+          transition: width 1s ease;
+        }}
+        .health-badge-red {{ background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); }}
+        .health-badge-yellow {{ background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }}
+        .health-badge-green {{ background: rgba(52, 211, 153, 0.15); color: #34d399; border: 1px solid rgba(52, 211, 153, 0.3); }}
+
         .paradox-toggle-container {{
           background: rgba(0, 240, 255, 0.05);
           border: 1px solid rgba(0, 240, 255, 0.15);
@@ -3228,28 +3681,28 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               
               <!-- สมัย 17 -->
               <div style="margin-bottom: 16px; position: relative;">
-                <div style="position: absolute; left: -25px; top: 3px; width: 9px; height: 9px; border-radius: 50%; background: #00f0ff; box-shadow: 0 0 5px #00f0ff;"></div>
+                <div style="position: absolute; left: -25px; top: 3px; width: 9px; height: 9px; border-radius: 2px; background: #00f0ff; box-shadow: 0 0 5px #00f0ff;"></div>
                 <strong style="color: var(--text);">พ.ศ. ๒๕๗๕ - สมัยนายกฯ พิธา (คนที่ ๑๗):</strong>
                 <span style="display: block;">ริเริ่มสถาปนาโครงการโดยได้รับเกียรติจาก **ดร.ธนานนท์ ปฏิญญาศักดิกุล (9arm)** เข้ามารับหน้าที่เป็นผู้ออกแบบโครงสร้างหลักและภาษาคำสั่ง ร่วมมือกับ **Anthropic** ในการพัฒนาสร้างระบบต้นแบบวิเคราะห์นโยบายและการคลังระดับ Alpha จนสำเร็จที่เวอร์ชัน Beta 1.0</span>
               </div>
 
               <!-- สมัย 18 -->
               <div style="margin-bottom: 16px; position: relative;">
-                <div style="position: absolute; left: -25px; top: 3px; width: 9px; height: 9px; border-radius: 50%; background: #00f0ff; box-shadow: 0 0 5px #00f0ff;"></div>
+                <div style="position: absolute; left: -25px; top: 3px; width: 9px; height: 9px; border-radius: 2px; background: #00f0ff; box-shadow: 0 0 5px #00f0ff;"></div>
                 <strong style="color: var(--text);">พ.ศ. ๒๕๗๖-๒๕๙๒ - สมัยนายกฯ ศิริกัญญา (คนที่ ๑๘):</strong>
                 <span style="display: block;">มี **ดร.ธนานนท์ ปฏิญญาศักดิกุล (9arm)** นั่งแท่นประธานที่ปรึกษาด้านเทคโนโลยีการคลังดิจิทัลของรัฐบาล เพื่อผลักดันโครงการร่วมทุนครั้งใหญ่ **TH-NAI (Thailand National AI alliance)** ร่วมพันธมิตรกับ **AMD, Nvidia, ASUS, Google และ Anthropic** ขยายระบบสู่รุ่น 3.0 ที่มี IDE และเปิดตัวสมบูรณ์แบบที่เวอร์ชัน 5.8 Full Release</span>
               </div>
 
               <!-- ปมการหายสาบสูญ -->
               <div style="margin-bottom: 16px; position: relative;">
-                <div style="position: absolute; left: -25px; top: 3px; width: 9px; height: 9px; border-radius: 50%; background: #f87171; box-shadow: 0 0 5px #f87171;"></div>
+                <div style="position: absolute; left: -25px; top: 3px; width: 9px; height: 9px; border-radius: 2px; background: #f87171; box-shadow: 0 0 5px #f87171;"></div>
                 <strong style="color: #f87171;">พ.ศ. ๒๕๙๒ - วิกฤตไซเบอร์และการปิดระบบสาธารณะ:</strong>
                 <span style="display: block;">ระบบ ParadoxAI ตกเป็นเป้าหมายหลักของการจารกรรมข้อมูลเพื่อแทรกแซงเสถียรภาพเศรษฐกิจจากอิทธิพลขั้วอำนาจการเงินข้ามชาติ รัฐบาลศิริกัญญาและเสนาธิการฝ่ายความมั่นคงจึงตัดสินใจปิดระบบสาธารณะชั่วคราวและโอนย้ายข้อมูลอัลกอริทึมหลักเข้าสู่ระบบอินทราเน็ตความปลอดภัยสูงเพื่อป้องกันภัยคุกคาม ทำให้ประชาชนและบุคคลทั่วไปคิดว่าโครงการได้สูญหายไปแล้ว</span>
               </div>
 
               <!-- สมัยรักชนก -->
               <div style="position: relative;">
-                <div style="position: absolute; left: -25px; top: 3px; width: 9px; height: 9px; border-radius: 50%; background: #34d399; box-shadow: 0 0 5px #34d399;"></div>
+                <div style="position: absolute; left: -25px; top: 3px; width: 9px; height: 9px; border-radius: 2px; background: #34d399; box-shadow: 0 0 5px #34d399;"></div>
                 <strong style="color: #34d399;">พ.ศ. ๒๖๑๔ - สมัยนายกฯ รักชนก (คนที่ ๒๒) & โครงการ ParadoxAI 2.0:</strong>
                 <span style="display: block;">ริเริ่มโครงการ **ParadoxAI 2.0** โดยความร่วมมือระหว่างรัฐบาลรักชนกและ **ดร.ธนานนท์ ปฏิญญาศักดิกุล (9arm)** ผู้เป็นสถาปนิกหลัก เพื่อฟื้นฟูระบบการคลังและสวัสดิการถ้วนหน้าขึ้นมาใหม่อีกครั้ง โดยจับมือขยายพันธมิตรร่วมกับกลุ่มบริษัทเทคโนโลยีระดับสากล ได้แก่ **AMD + Nvidia + ASUS + Anthropic + Google**</span>
               </div>
@@ -3279,9 +3732,9 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
       <!-- แดชบอร์ดจำลอง & สวิตช์เปิดปิด Self-Awareness -->
       <div class="paradox-sec" style="margin-bottom: 0; background: rgba(0, 240, 255, 0.02); border-color: rgba(0, 240, 255, 0.15);">
-        <h4 class="paradox-sec-title">🤖 แผงจำลองการเข้าถึงระบบ ParadoxAI (Access Control Simulator)</h4>
+        <h4 class="paradox-sec-title">🤖 แผงจำลองการเข้าถึงและระบบประมวลผล ParadoxAI 2.0 (Live Simulator)</h4>
         
-        <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: space-between; font-size: 13.5px;">
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: space-between; font-size: 13.5px; margin-bottom: 16px;">
           <div>
             <strong>🔐 สิทธิ์การเข้าใช้งาน (Security Gate):</strong> 
             <span style="color: #f87171; font-family: monospace; font-weight: 700; margin-left: 8px; background: rgba(248, 113, 113, 0.1); padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(248, 113, 113, 0.2);">
@@ -3289,10 +3742,46 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             </span>
           </div>
           <div style="display: flex; align-items: center; gap: 8px;">
-            <span style="color: var(--text-muted);">ระบบระบุตัวตน (Self-Awareness)</span>
-            <div style="background: #34d399; width: 10px; height: 10px; border-radius: 50%; box-shadow: 0 0 8px #34d399;"></div>
-            <span style="color: #34d399; font-weight: 700;">NORMAL FEATURE</span>
+            <span style="color: var(--text-muted);">การประมวลผลจำลอง (Simulation Engine)</span>
+            <div style="background: #34d399; width: 10px; height: 10px; border-radius: 2px; box-shadow: 0 0 8px #34d399;" id="sim-status-dot"></div>
+            <span style="color: #34d399; font-weight: 700;" id="sim-status-text">RUNNING</span>
           </div>
+        </div>
+
+        <!-- Simulation Dashboard Cards -->
+        <div class="sim-grid-layout">
+          <div class="sim-card">
+            <div style="font-size: 12px; color: var(--text-muted); font-weight: 600;">💰 ทุนสำรองคลังทองคำแผ่นดิน</div>
+            <div class="sim-val" id="sim-gold-reserve">๘,๕๔๒.๔๐ ตัน</div>
+            <div class="sim-bar-container">
+              <div class="sim-bar-fill" id="sim-gold-bar" style="width: 85%;"></div>
+            </div>
+          </div>
+          <div class="sim-card">
+            <div style="font-size: 12px; color: var(--text-muted); font-weight: 600;">📈 ดัชนีความเสถียรภาพการเงิน</div>
+            <div class="sim-val" id="sim-fiscal-stability">๙๘.๗๒%</div>
+            <div class="sim-bar-container">
+              <div class="sim-bar-fill" id="sim-fiscal-bar" style="width: 98.72%; background: #34d399;"></div>
+            </div>
+          </div>
+          <div class="sim-card">
+            <div style="font-size: 12px; color: var(--text-muted); font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 6px;">
+              <span class="health-badge-red" style="padding: 1px 6px; border-radius: 3px; font-size: 10px;">ฉุกเฉิน (แดง)</span>
+            </div>
+            <div class="sim-val" id="sim-queue-red" style="color: #f87171; text-shadow: 0 0 10px rgba(248,113,113,0.3);">๑๔ ราย</div>
+            <div style="font-size: 11px; color: var(--text-muted); margin-top: 8px;">ใช้เวลารอจัดเตียง: &lt; ๓ นาที</div>
+          </div>
+          <div class="sim-card">
+            <div style="font-size: 12px; color: var(--text-muted); font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 6px;">
+              <span class="health-badge-green" style="padding: 1px 6px; border-radius: 3px; font-size: 10px;">ทั่วไป (เขียว)</span>
+            </div>
+            <div class="sim-val" id="sim-queue-green" style="color: #34d399; text-shadow: 0 0 10px rgba(52,211,153,0.3);">๒๓๑ ราย</div>
+            <div style="font-size: 11px; color: var(--text-muted); margin-top: 8px;">จัดคิวสำเร็จวันนี้: ๘,๗๒๐ ราย</div>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 12px; margin-top: 16px; flex-wrap: wrap;">
+          <button class="db-tab-btn" style="min-width: 140px;" id="sim-control-btn" onclick="toggleSimulation()">⏸️ Pause Simulation</button>
         </div>
 
         <div class="paradox-toggle-container">
@@ -3312,6 +3801,14 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         </div>
 
         <script>
+          let simInterval = null;
+          let isSimulating = true;
+
+          function toThaiNumerals(numStr) {{
+            const thaiDigits = ['๐', '๑', '๒', '๓', '๔', '๕', '๖', '๗', '๘', '๙'];
+            return numStr.toString().replace(/[0-9]/g, (w) => thaiDigits[parseInt(w)]);
+          }}
+
           function toggleParadoxMode(checkbox) {{
             const titleEl = document.getElementById('paradox-mode-title');
             const descEl = document.getElementById('paradox-mode-desc');
@@ -3325,11 +3822,67 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               descEl.innerHTML = '"สวัสดีครับพี่น้องชาวสยาม! ผมคือปัญญาประดิษฐ์สมานฉันท์ที่จะอยู่เคียงข้างคุณในทุกช่วงเวลาการคลัง ไม่ใช่หุ่นยนต์ที่ไร้ความรู้สึกแต่อย่างใด มีอะไรให้ผมรับใช้ไหมครับ?"';
             }}
           }}
+
+          function runSimulationTick() {{
+            if (!isSimulating) return;
+            
+            let gold = parseFloat("8542.40") + (Math.random() * 2 - 1) * 0.15;
+            document.getElementById('sim-gold-reserve').textContent = toThaiNumerals(gold.toFixed(2)) + ' ตัน';
+            document.getElementById('sim-gold-bar').style.width = (gold / 10000 * 100).toFixed(1) + '%';
+
+            let stability = 98.0 + Math.random() * 1.95;
+            document.getElementById('sim-fiscal-stability').textContent = toThaiNumerals(stability.toFixed(2)) + '%';
+            document.getElementById('sim-fiscal-bar').style.width = stability.toFixed(2) + '%';
+
+            let redQueue = Math.floor(10 + Math.random() * 10);
+            let greenQueue = Math.floor(200 + Math.random() * 50);
+            document.getElementById('sim-queue-red').textContent = toThaiNumerals(redQueue) + ' ราย';
+            document.getElementById('sim-queue-green').textContent = toThaiNumerals(greenQueue) + ' ราย';
+          }}
+
+          function startSim() {{
+            if (!simInterval) {{
+              simInterval = setInterval(runSimulationTick, 1500);
+            }}
+          }}
+
+          function stopSim() {{
+            if (simInterval) {{
+              clearInterval(simInterval);
+              simInterval = null;
+            }}
+          }}
+
+          function toggleSimulation() {{
+            const btn = document.getElementById('sim-control-btn');
+            const dot = document.getElementById('sim-status-dot');
+            const text = document.getElementById('sim-status-text');
+            
+            if (isSimulating) {{
+              isSimulating = false;
+              stopSim();
+              btn.textContent = "▶️ Run Simulation";
+              dot.style.background = "#ef4444";
+              dot.style.boxShadow = "0 0 8px #ef4444";
+              text.textContent = "PAUSED";
+              text.style.color = "#ef4444";
+            }} else {{
+              isSimulating = true;
+              startSim();
+              btn.textContent = "⏸️ Pause Simulation";
+              dot.style.background = "#34d399";
+              dot.style.boxShadow = "0 0 8px #34d399";
+              text.textContent = "RUNNING";
+              text.style.color = "#34d399";
+            }}
+          }}
+
+          startSim();
         </script>
       </div>
     </div>
 
-<!-- Tab 7: ทำเนียบนายกรัฐมนตรี -->
+    <!-- Tab 7: ทำเนียบนายกรัฐมนตรี -->
     <div id="pms-tab" class="db-tab-content">
       <p style="margin-bottom: 16px; font-size: 15px; color: var(--text-muted);">
         ทำเนียบนายกรัฐมนตรีทั้ง ๒๒ คนของประเทศไทย ทุกท่านมาจากการเลือกตั้งตามครรลองประชาธิปไตย (ไม่มีรัฐประหาร):
@@ -3364,7 +3917,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
     <!-- Tab 8: Global Outlandish Centre (GOC) -->
     <div id="goc-tab" class="db-tab-content">
-      <style scoped>
+      <style>
         #goc-tab {{
           padding: 10px 0;
         }}
@@ -3408,12 +3961,117 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           align-items: center;
           gap: 8px;
         }}
+        
+        .goc-chart-wrapper {{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 30px 0;
+          position: relative;
+        }}
+        .goc-chart-row {{
+          display: flex;
+          justify-content: center;
+          gap: 40px;
+          width: 100%;
+          position: relative;
+          margin-bottom: 20px;
+        }}
+        @media (max-width: 768px) {{
+          .goc-chart-row {{
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+          }}
+        }}
+        .goc-node {{
+          background: rgba(255, 255, 255, 0.02);
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          border-radius: 6px;
+          padding: 16px 20px;
+          width: 240px;
+          text-align: center;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          position: relative;
+        }}
+        .goc-node:hover, .goc-node.active {{
+          background: rgba(255, 255, 255, 0.05);
+          transform: translateY(-2px);
+          box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+        }}
+        .goc-node.node-joint {{
+          border-color: var(--gold);
+        }}
+        .goc-node.node-joint:hover, .goc-node.node-joint.active {{
+          box-shadow: 0 0 15px rgba(212, 168, 67, 0.25);
+          border-color: var(--gold-light);
+        }}
+        .goc-node.node-advisor {{
+          border-color: #a78bfa;
+        }}
+        .goc-node.node-advisor:hover, .goc-node.node-advisor.active {{
+          box-shadow: 0 0 15px rgba(167, 139, 250, 0.25);
+          border-color: #c084fc;
+        }}
+        .goc-node.node-diplomacy {{
+          border-color: #60a5fa;
+        }}
+        .goc-node.node-diplomacy:hover, .goc-node.node-diplomacy.active {{
+          box-shadow: 0 0 15px rgba(96, 165, 250, 0.25);
+          border-color: #93c5fd;
+        }}
+        .goc-node.node-warfare {{
+          border-color: #f87171;
+        }}
+        .goc-node.node-warfare:hover, .goc-node.node-warfare.active {{
+          box-shadow: 0 0 15px rgba(248, 113, 113, 0.25);
+          border-color: #fca5a5;
+        }}
+        .goc-node-title {{
+          font-family: 'Outfit', sans-serif;
+          font-weight: 700;
+          font-size: 14px;
+          margin-bottom: 4px;
+        }}
+        .goc-node-subtitle {{
+          font-size: 11px;
+          color: var(--text-muted);
+        }}
+        
+        .goc-detail-panel {{
+          background: rgba(255, 255, 255, 0.015);
+          border: 1px solid var(--glass-border);
+          border-radius: 8px;
+          padding: 24px;
+          margin-top: 20px;
+          min-height: 180px;
+        }}
+        .goc-detail-title {{
+          font-size: 16px;
+          font-weight: 700;
+          margin-bottom: 8px;
+          font-family: 'Outfit', sans-serif;
+        }}
+        .goc-detail-role {{
+          font-size: 12.5px;
+          color: var(--gold-light);
+          margin-bottom: 12px;
+          font-family: monospace;
+        }}
+        .goc-detail-text {{
+          font-size: 13.5px;
+          line-height: 1.6;
+          color: var(--text-muted);
+          margin-bottom: 12px;
+        }}
+        
         .goc-logo-card {{
           background: rgba(255, 255, 255, 0.02);
           border: 1px solid rgba(255, 255, 255, 0.05);
           border-radius: 8px;
           padding: 20px;
-          width: 360px;
+          width: 320px;
           text-align: center;
           transition: transform 0.2s ease, border-color 0.2s ease;
         }}
@@ -3422,9 +4080,9 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           border-color: var(--accent-orange);
         }}
         .goc-logo-img {{
-          width: 280px;
-          height: 280px;
-          border-radius: 50%;
+          width: 240px;
+          height: 240px;
+          border-radius: 12px;
           border: 3px solid rgba(255, 255, 255, 0.15);
           margin-bottom: 14px;
           background: #000;
@@ -3442,35 +4100,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           color: var(--text-muted);
           line-height: 1.4;
         }}
-        .goc-struct-block {{
-          background: rgba(255, 255, 255, 0.015);
-          border: 1px solid rgba(255, 255, 255, 0.05);
-          border-radius: 8px;
-          padding: 20px;
-          margin-bottom: 16px;
-        }}
-        .goc-struct-block ul {{
-          padding-left: 20px;
-          margin-bottom: 0;
-        }}
-        .goc-struct-block li {{
-          margin-bottom: 8px;
-          font-size: 14px;
-          line-height: 1.5;
-        }}
-        .division-block {{
-          display: flex;
-          flex-direction: column;
-        }}
-        .goc-rule {{
-          background: rgba(245, 158, 11, 0.08);
-          border-left: 3px solid #f59e0b;
-          padding: 12px;
-          border-radius: 4px;
-          font-size: 13px;
-          margin-top: 14px;
-          line-height: 1.5;
-        }}
+
         .goc-timeline {{
           display: flex;
           flex-direction: column;
@@ -3497,7 +4127,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           top: 2px;
           width: 16px;
           height: 16px;
-          border-radius: 50%;
+          border-radius: 4px;
           background: var(--accent-orange);
           color: #000;
           font-size: 10px;
@@ -3522,14 +4152,58 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           <p style="color: var(--text-muted); font-size: 14.5px; margin-bottom: 0;">สถาบันความมั่นคงและการทูตลับพิเศษเพื่อเฝ้าระวังภัยคุกคามผสมผสานระดับภูมิภาค (SEATO)</p>
         </div>
 
-        <!-- History section -->
         <div class="goc-section">
           <h4 class="goc-sec-title">⏳ ประวัติการก่อตั้ง</h4>
           <p style="margin-bottom: 12px; line-height: 1.6;"><strong>ปี พ.ศ. ๒๕๖๙</strong> — ภายหลังวิกฤตการแพร่ระบาดของไวรัสมายทีโอส (Myteos Virus) และความผันผวนของเสถียรภาพภูมิภาคจนนำไปสู่การเกิด <em>"ราชอาณาประชาชนลาว"</em> คณะผู้นำความมั่นคงสยามนำโดย <strong>พริษฐ์ วัชรสินธุ</strong> ร่วมกับพันธมิตรความมั่นคง <strong>SEATO</strong> ได้เล็งเห็นพ้องต้องกันว่าโลกยุคใหม่เผชิญหน้ากับภัยคุกคามที่ไม่ใช่รูปแบบดั้งเดิม ซึ่งไม่สามารถสกัดกั้นได้ด้วยเครื่องมือทางทหารหรือการทูตเพียงส่วนเดียว แต่ต้องการหน่วยงานการประสมประสานงานลับที่มีความยืดหยุ่นสูง ปฏิบัติการทหารและทูตไปพร้อมกันในเวลาเดียวกัน</p>
           <p style="line-height: 1.6; margin-bottom: 0;">GOC จึงถูกสถาปนาขึ้นในฐานะ <strong>องค์กรลับสุดยอด</strong> ที่ไม่ปรากฏโครงสร้างหรือข้อมูลใด ๆ ในเอกสารสาธารณะของรัฐ ได้รับการหนุนหลังและจัดสรรทรัพยากรหลักโดย SEATO ภายใต้การนำหลักและแกนนำยุทธศาสตร์จากราชอาณาจักรไทย</p>
         </div>
 
-        <!-- Logos section -->
+        <div class="goc-section">
+          <h4 class="goc-sec-title">🏛️ ผังโครงสร้างการจัดองค์กรแบบโต้ตอบ (Interactive GOC Org Chart)</h4>
+          <p style="font-size: 13.5px; margin-bottom: 20px;">คลิกเลือกส่วนงานของ GOC ในแผนผังด้านล่างเพื่อแสดงประวัติการจัดโครงสร้าง บทบาท หน้าที่ควบคุม และกฎเหล็กรับผิดชอบในเชิงลึก:</p>
+          
+          <div class="goc-chart-wrapper">
+            <div class="goc-chart-row">
+              <div class="goc-node node-joint active" onclick="selectGocNode(0, this)">
+                <div class="goc-node-title" style="color: var(--gold-light);">Joint Command (กองบัญชาการร่วม)</div>
+                <div class="goc-node-subtitle">ผู้บัญชาการสูงสุด & คณะกรรมการกำกับร่วม</div>
+              </div>
+            </div>
+            
+            <div class="goc-chart-row">
+              <div class="goc-node node-advisor" onclick="selectGocNode(1, this)">
+                <div class="goc-node-title" style="color: #c084fc;">Independent Advisor</div>
+                <div class="goc-node-subtitle">คุณไตรทิศา รณปวัตน์ (ผู้ตรวจการสากล)</div>
+              </div>
+            </div>
+            
+            <div class="goc-chart-row">
+              <div class="goc-node node-diplomacy" onclick="selectGocNode(2, this)">
+                <div class="goc-node-title" style="color: #60a5fa;">🤝 Diplomacy Division</div>
+                <div class="goc-node-subtitle">แผนกที่ ๑ | ข่าวกรอง & การทูตลับ</div>
+              </div>
+              <div class="goc-node node-warfare" onclick="selectGocNode(3, this)">
+                <div class="goc-node-title" style="color: #f87171;">⚔️ Warfare Division</div>
+                <div class="goc-node-subtitle">แผนกที่ ๒ | ยุทธวิธีพิเศษ & กองกำลังสนาม</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="goc-detail-panel" id="goc-detail-panel">
+            <div class="goc-detail-title" style="color: var(--gold-light);">👑 Joint Command (กองบัญชาการร่วมสูงสุด)</div>
+            <div class="goc-detail-role">COMMAND LEVEL // TOP SECRET OVERSIGHT</div>
+            <div class="goc-detail-text">
+              <strong>ผู้บัญชาการสูงสุด (Supreme Commander):</strong> กุมอำนาจบริหารนโยบายและการอนุมัติทางยุทธวิธี รายงานสถานการณ์ตรงต่อ <strong>นายกรัฐมนตรีแห่งราชอาณาจักรไทย</strong> เท่านั้น และไม่เปิดเผยประวัติชื่อสู่สาธารณะเพื่อความปลอดภัยสูงสุด
+            </div>
+            <div class="goc-detail-text">
+              <strong>คณะกรรมการกำกับร่วม (Joint Oversight Board):</strong> ทำหน้าที่กลั่นกรอง ตรวจสอบการเบิกจ่าย และควบคุมปฏิบัติการของสองฝ่ายย่อย ประกอบด้วยตัวแทนสัดส่วนร่วมระหว่างราชอาณาจักรไทยและ SEATO
+            </div>
+            <div style="background: rgba(212, 168, 67, 0.05); border-left: 3px solid var(--gold); padding: 10px; border-radius: 4px; font-size: 12.5px; color: var(--gold-light);">
+              🔑 <strong>การอนุมัติ:</strong> ปฏิบัติการระดับยุทธศาสตร์ทั้งหมดต้องได้รับการลงนามไฟเขียวร่วมกันของคณะกรรมการและผู้บัญชาการสูงสุด
+            </div>
+          </div>
+        </div>
+
         <div class="goc-section">
           <h4 class="goc-sec-title">🛡️ ตราสัญลักษณ์หน่วยงานปฏิบัติการ</h4>
           <p style="margin-bottom: 16px;">ตราสัญลักษณ์ทั้งสองของแผนกแสดงความเป็นเอกภาพและความเป็นอันหนึ่งอันเดียวกันภายใต้ศูนย์บัญชาการร่วม (Joint Command) ผ่านสลักสัญลักษณ์ <strong>"สี่ดาวอาร์คด้านบน"</strong> เหนือเครื่องหมายปฏิบัติการหลัก:</p>
@@ -3547,58 +4221,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
         </div>
 
-        <!-- Structure section -->
-        <div class="goc-section">
-          <h4 class="goc-sec-title">🏛️ โครงสร้างปัจจุบัน (หลังการปฏิรูปโครงสร้างโดยคุณรักชนก ศรีนอก)</h4>
-          
-          <!-- Top Level command -->
-          <div class="goc-struct-block">
-            <h5 style="color: var(--accent-orange); font-size: 16px; margin-bottom: 12px; font-weight: 600;">👑 ระดับบนสุด | Joint Command</h5>
-            <ul style="margin-bottom: 0;">
-              <li><strong>ผู้บัญชาการสูงสุด (Supreme Commander):</strong> กุมอำนาจบริหารนโยบายและการอนุมัติทางยุทธวิธี รายงานสถานการณ์ตรงต่อ <strong>นายกรัฐมนตรีแห่งราชอาณาจักรไทย</strong> เท่านั้น และไม่เปิดเผยประวัติชื่อสู่สาธารณะเพื่อความปลอดภัยสูงสุด</li>
-              <li><strong>คณะกรรมการกำกับร่วม (Joint Oversight Board):</strong> ทำหน้าที่กลั่นกรอง ตรวจสอบการเบิกจ่าย และควบคุมปฏิบัติการของสองฝ่ายย่อย ประกอบด้วยตัวแทนสัดส่วนร่วมระหว่างไทยและ SEATO</li>
-              <li><strong>ที่ปรึกษาอิสระภายนอก:</strong> ดำรงตำแหน่งโดย <strong>ไตรทิศา</strong> ทำหน้าที่เป็นผู้ตรวจการอิสระเพื่อให้คำแนะนำในเชิงนโยบายและสกัดกั้นการใช้อำนาจล้นขอบเขต</li>
-            </ul>
-          </div>
-
-          <!-- Divisions Grid -->
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 16px;">
-            <div class="goc-struct-block division-block">
-              <h5 style="color: #60a5fa; font-size: 15px; margin-bottom: 12px; font-weight: 600; display: flex; align-items: center; gap: 8px;">
-                <span>🤝 แผนกที่ ๑ | Diplomacy Division</span>
-              </h5>
-              <p style="font-weight: 600; margin-bottom: 6px; font-size: 13.5px;">บทบาทหน้าที่หลัก:</p>
-              <ul style="font-size: 13px; margin-bottom: 12px;">
-                <li>จัดเก็บ จัดระเบียบข่าวกรอง และวิเคราะห์ประเมินระดับภัยคุกคาม</li>
-                <li>ทำภารกิจเจรจาลับข้ามแดนและเชื่อมต่อผลประโยชน์ต่างประเทศเพื่อยุติความขัดแย้ง</li>
-                <li>ติดตามภัยคุกคามรูปแบบใหม่ที่ไม่ใช่การทหารโดยตรง (เช่น สงครามโรค, สงครามสารสนเทศ)</li>
-                <li>เป็นผู้ประสานงานหลักระหว่างองค์การอนามัยโลก (WHO), คณะกรรมาธิการ SEATO และหน่วยงานสากล</li>
-              </ul>
-              <p style="font-weight: 600; margin-bottom: 6px; font-size: 13.5px;">ปฏิบัติการสำคัญที่ผ่านมา:</p>
-              <ul style="font-size: 13px; margin-bottom: 12px;">
-                <li>ตรวจพบเส้นเงินทุนน่าสงสัยจากต่างชาติในวิกฤตนิติประหารสภา และประสานส่งต่อให้ DSI และ กกต. ตามช่องทางปกติ</li>
-                <li>พบและสืบทราบพิกัดเบาะแสสมบูน แสงอาทิตย์ ณ เวียงจันทน์ ร่วมกับไตรทิศา</li>
-                <li>ติดตามสืบข่าวและประเมินสถานการณ์ราชอาณาประชาชนลาวมาโดยตลอดอย่างใกล้ชิด</li>
-              </ul>
-              <p class="goc-rule">⚠️ <strong>กฎเหล็กควบคุม:</strong> ห้ามเริ่มยุทธการภาคสนามใดๆ หากปราศจากการแจ้งและบันทึกในระบบศูนย์บัญชาการหลัก และต้องประสานแจ้งเตือนพิกัดต่อ Warfare Division เสมอก่อนเข้าพื้นที่สุ่มเสี่ยง ในภารกิจผสม Warfare Division ต้องทำหน้าที่และวางตัวภายใต้การกำกับของฝ่าย Diplomacy เสมอ</p>
-            </div>
-
-            <div class="goc-struct-block division-block">
-              <h5 style="color: #f87171; font-size: 15px; margin-bottom: 12px; font-weight: 600; display: flex; align-items: center; gap: 8px;">
-                <span>⚔️ แผนกที่ ๒ | Warfare Division</span>
-              </h5>
-              <p style="font-weight: 600; margin-bottom: 6px; font-size: 13.5px;">บทบาทหน้าที่หลัก:</p>
-              <ul style="font-size: 13px; margin-bottom: 12px;">
-                <li>วางแผน ยุทธวิธี ปฏิบัติการพิเศษติดอาวุธ และการปราบปรามในภาวะวิกฤต</li>
-                <li>ทำหน้าที่อารักขาและรักษาความปลอดภัยแก่คณะเจรจาฝ่าย Diplomacy ในการทำงานภาคสนาม</li>
-                <li>เตรียมแผนรับมือ สกัดกั้น และลดผลกระทบของภัยคุกคามทางกายภาพทุกรูปแบบ</li>
-              </ul>
-              <p class="goc-rule" style="background: rgba(239, 68, 68, 0.08); border-left-color: #ef4444;">⚠️ <strong>กฎเหล็กควบคุม:</strong> ห้ามเคลื่อนย้ายกำลังรบหรือสั่งกองทัพพิเศษจู่โจมโดยไม่ได้รับอนุมัติจาก Joint Command โดยตรงอย่างเด็ดขาด ฝ่ายเสนาธิการของ Warfare ไม่มีอำนาจในการประเมินและสั่งเคลื่อนพลด้วยตนเองอีกต่อไป และต้องปฏิบัติภารกิจภายใต้กรอบข้อตกลงของฝ่าย Diplomacy เสมอในการปฏิบัติหน้าที่ร่วมกัน</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Reform Lessons -->
         <div class="goc-section">
           <h4 class="goc-sec-title">⚠️ บทเรียนที่ทำให้ต้องปฏิรูป (Lessons from Vientiane Crisis)</h4>
           <div style="background: rgba(239, 68, 68, 0.08); border-left: 4px solid #ef4444; padding: 16px; border-radius: 6px;">
@@ -3609,7 +4231,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
         </div>
 
-        <!-- Timeline operations -->
         <div class="goc-section">
           <h4 class="goc-sec-title">📅 บันทึกประวัติปฏิบัติการสำคัญตามลำดับเวลา</h4>
           <div class="goc-timeline">
@@ -3637,7 +4258,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
         </div>
 
-        <!-- Current State under Rukchanok -->
         <div class="goc-section">
           <h4 class="goc-sec-title">📈 สถานะการดำเนินงานปัจจุบัน (ภายใต้การกำกับดูแลของ รักชนก ศรีนอก)</h4>
           <p style="margin-bottom: 12px; line-height: 1.5;"><strong>คุณรักชนก ศรีนอก</strong> ในฐานะคณะบริหารฝ่ายยุทธศาสตร์ความมั่นคง ได้ลงนามกำชับให้ <strong>ไตรทิศา</strong> ร่วมออกแบบระบบและวางรากฐานกลไกควบคุมและตรวจสอบ GOC ให้มีความเป็นนิติธรรมและเป็นลายลักษณ์อักษรที่ชัดเจน โดยมาตรการควบคุมที่อยู่ระหว่างขั้นตอนการพัฒนามีดังนี้:</p>
@@ -3648,7 +4268,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </ul>
         </div>
 
-        <!-- What GOC does not do -->
         <div class="goc-section" style="border-bottom: none; padding-bottom: 0; margin-bottom: 0;">
           <h4 class="goc-sec-title" style="color: var(--gold-light);">❌ ขอบเขตสิ่งที่ GOC ละเว้นและไม่กระทำ (Red Lines)</h4>
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 12px;">
@@ -3671,6 +4290,62 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
         </div>
       </div>
+
+      <script>
+        const gocNodes = [
+          {{
+            title: "👑 Joint Command (กองบัญชาการร่วมสูงสุด)",
+            role: "COMMAND LEVEL // TOP SECRET OVERSIGHT",
+            text1: "<strong>ผู้บัญชาการสูงสุด (Supreme Commander):</strong> กุมอำนาจบริหารนโยบายและการอนุมัติทางยุทธวิธี รายงานสถานการณ์ตรงต่อ <strong>นายกรัฐมนตรีแห่งราชอาณาจักรไทย</strong> เท่านั้น และไม่เปิดเผยประวัติชื่อสู่สาธารณะเพื่อความปลอดภัยสูงสุด",
+            text2: "<strong>คณะกรรมการกำกับร่วม (Joint Oversight Board):</strong> ทำหน้าที่กลั่นกรอง ตรวจสอบการเบิกจ่าย และควบคุมปฏิบัติการของสองฝ่ายย่อย ประกอบด้วยตัวแทนสัดส่วนร่วมระหว่างราชอาณาจักรไทยและ SEATO",
+            rule: "🔑 <strong>การอนุมัติ:</strong> ปฏิบัติการระดับยุทธศาสตร์ทั้งหมดต้องได้รับการลงนามไฟเขียวร่วมกันของคณะกรรมการและผู้บัญชาการสูงสุด"
+          }},
+          {{
+            title: "🔮 ที่ปรึกษาอิสระ (Independent Advisor) - คุณไตรทิศา",
+            role: "OVERSIGHT LEVEL // INDEPENDENT INPSECTOR",
+            text1: "<strong>ไตรทิศา รณปวัตน์:</strong> ดำรงตำแหน่งเป็นที่ปรึกษาความมั่นคงพิเศษของคณะบริหารรักชนก ศรีนอก และทำหน้าที่เป็นผู้ตรวจการอิสระเพื่อคุมและกลั่นกรองอำนาจลับของ GOC",
+            text2: "เฝ้าระวังภัยแฝงไม่ให้องค์กรลับล้นอำนาจ และสกัดกั้นการใช้เครื่องมือจารกรรมไปทำลายหรือชิงความได้เปรียบทางการเมืองระดับประเทศ ปฏิบัติหน้าที่ประสานอย่างใกล้ชิดร่วมกับนายกฯ รักชนก",
+            rule: "⚠️ <strong>อำนาจพิเศษ:</strong> มีสิทธิ์เข้าตรวจสอบรายงานคดีและเส้นทางธุรกรรมของ GOC ทุกวันศุกร์ และเสนอปลดหัวหน้าทีมภาคสนามหากพบการล้ำขอบเขตตามกฎหมาย"
+          }},
+          {{
+            title: "🤝 แผนกที่ ๑: Diplomacy Division (ฝ่ายการทูตลับ)",
+            role: "DIVISION LEVEL // INTELLIGENCE & NEGOTIATION",
+            text1: "<strong>หน้าที่หลัก:</strong> จัดระเบียบข่าวกรอง เจรจาลับข้ามพรมแดน ติดตามภัยคุกคามผสมผสานรูปแบบใหม่ (สงครามไซเบอร์, การระบาดของโรคระบาด, ข่าวลวงปั่นกระแสการคลัง)",
+            text2: "เป็นศูนย์หลักในการเก็บประวัติพยานข่าวกรองและเส้นทางเงินน่าสงสัยในการทำนิติประหารสภา เพื่อรายงานต่อ DSI คุมยุทธการผสมภาคสนามทั้งหมดให้ตั้งอยู่ในกรอบทฤษฎีการข่าว",
+            rule: "⚠️ <strong>กฎเหล็กควบคุม:</strong> ห้ามเริ่มปฏิบัติการทหารใด ๆ โดยไม่ผ่านการอนุมัติและแจ้งรายงานพิกัดพยาน และฝ่าย Warfare Division ต้องเคลื่อนไหวภายใต้การควบคุมของ Diplomacy เสมอเมื่อออกปฏิบัติหน้าที่ร่วมกัน"
+          }},
+          {{
+            title: "⚔️ แผนกที่ ๒: Warfare Division (ฝ่ายปฏิบัติการพิเศษ)",
+            role: "DIVISION LEVEL // TACTICAL & FIELD OPERATIONS",
+            text1: "<strong>หน้าที่หลัก:</strong> วางแผนยุทธวิธี กองกำลังสนาม การอารักขาความปลอดภัยแก่ตัวแทนเจรจา (Diplomacy) และระงับเหตุความรุนแรงหรือภัยจู่โจมทางกายภาพขั้นฉุกเฉิน",
+            text2: "ประกอบด้วยทีมรบพิเศษติดอาวุธขั้นสูง ๑๒ นาย และกองร้อยยุทธวิธีปราบปรามความมั่นคง SEATO ได้รับบทเรียนสำคัญจากเวียงจันทน์วิกฤตจนนำไปสู่มาตรการปฏิรูปให้ไร้อำนาจจัดยุทโธปกรณ์เคลื่อนพลโดยตรง",
+            rule: "❌ <strong>กฎเหล็กควบคุมเด็ดขาด:</strong> ห้ามเคลื่อนย้ายกำลังพลหรือใช้อาวุธปฏิบัติการโดยพลการอย่างเด็ดขาด โดยสิทธิ์อนุมัติการเคลื่อนไหวทั้งหมดผูกขาดภายใต้ Joint Command และนายกรัฐมนตรีเท่านั้น"
+          }}
+        ];
+
+                function selectGocNode(index, nodeEl) {{
+          const nodes = document.querySelectorAll('.goc-node');
+          nodes.forEach(n => n.classList.remove('active'));
+          nodeEl.classList.add('active');
+
+          const panel = document.getElementById('goc-detail-panel');
+          const data = gocNodes[index];
+          
+          panel.style.opacity = 0;
+          setTimeout(() => {{
+            panel.innerHTML = 
+              '<div class="goc-detail-title" style="color: var(--gold-light);">' + data.title + '</div>' +
+              '<div class="goc-detail-role">' + data.role + '</div>' +
+              '<div class="goc-detail-text">' + data.text1 + '</div>' +
+              '<div class="goc-detail-text">' + data.text2 + '</div>' +
+              '<div style="background: rgba(212, 168, 67, 0.05); border-left: 3px solid var(--gold); padding: 10px; border-radius: 4px; font-size: 12.5px; color: var(--gold-light);">' +
+                data.rule +
+              '</div>';
+            panel.style.opacity = 1;
+          }}, 200);
+        }}, 200);
+        }}
+      </script>
     </div>
 
     <!-- Tab 9: ภูมิรัฐศาสตร์โลก -->
@@ -4267,7 +4942,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         <!-- สายสิญจน์ พณิชไพโรจน์ -->
         <div class="tri-layout" style="margin-bottom: 32px;">
           <div class="tri-profile-card">
-            <img src="saisin.png" alt="สายสิญจน์ พณิชไพโรจน์" class="tri-profile-img">
+            <img src="Rz.png" alt="สายสิญจน์ พณิชไพโรจน์" class="tri-profile-img">
             <div class="tri-profile-name">สายสิญจน์ พณิชไพโรจน์</div>
             <div class="tri-profile-title">พนักงานฝ่ายกราฟฟิกแห่ง 1HD และผู้สร้างเกือบทั้งเว็บไซต์นี้</div>
             <div class="tri-meta">
@@ -4652,27 +5327,41 @@ body.theme-bw .emblem-bw {{ display: inline-block; }}
   text-shadow: 0 2px 10px rgba(212, 168, 67, 0.2);
 }}
 .dashboard-tabs {{
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-bottom: 32px;
+}}
+@media (max-width: 1024px) {{
+  .dashboard-tabs {{
+    grid-template-columns: repeat(3, 1fr);
+  }}
+}}
+@media (max-width: 600px) {{
+  .dashboard-tabs {{
+    grid-template-columns: repeat(2, 1fr);
+  }}
 }}
 .db-tab-btn {{
-  padding: 8px 16px;
-  border-radius: 20px;
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 6px;
   border: 1px solid var(--glass-border);
   background: rgba(255,255,255,0.03);
   color: var(--text-muted);
   cursor: pointer;
   font-family: 'Sarabun', sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
+  text-align: center;
   transition: all 0.3s ease;
+  min-height: 38px;
 }}
 .db-tab-btn.active, .db-tab-btn:hover {{
   background: var(--gold);
   color: #000;
   border-color: var(--gold);
-  box-shadow: 0 0 15px rgba(212, 168, 67, 0.3);
+  box-shadow: 0 0 15px rgba(212, 168, 67, 0.35);
 }}
 .db-tab-content {{
   display: none;
@@ -4733,7 +5422,7 @@ body.theme-bw .emblem-bw {{ display: inline-block; }}
   top: 4px;
   width: 24px;
   height: 24px;
-  border-radius: 50%;
+  border-radius: 4px;
   background: #111827;
   border: 2px solid var(--glass-border);
   display: flex;
@@ -4980,7 +5669,7 @@ body.theme-bw .emblem-bw {{ display: inline-block; }}
 /* ===== BACK TO TOP ===== */
 .back-top {{
   position:fixed; bottom:24px; right:24px; width:48px; height:48px;
-  background:var(--gold); color:#000; border:none; border-radius:50%;
+  background:var(--gold); color:#000; border:none; border-radius:8px;
   font-size:20px; cursor:pointer; z-index:999; opacity:0; transition: all .3s;
   box-shadow:0 4px 20px rgba(212,168,67,0.4);
 }}
@@ -4995,8 +5684,8 @@ body.theme-bw .emblem-bw {{ display: inline-block; }}
 .legend-item {{
   display:flex; align-items:center; gap:6px; font-size:13px; color:var(--text-muted);
 }}
-.legend-dot {{
-  width:12px; height:12px; border-radius:50%;
+.legend-square {{
+  width:12px; height:12px; border-radius:2px;
 }}
 
 /* ===== TOOLTIP & GLOSSARY SYSTEM ===== */
@@ -5109,30 +5798,28 @@ body.theme-nightcity .article-card:hover {{
   border: 1px solid var(--glass-border);
   border-radius: 12px;
 }}
-.circle-chart-wrapper {{
+.square-chart-wrapper {{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
 }}
-.circle-chart {{
+.square-chart {{
   width: 90px;
   height: 90px;
-  transform: rotate(-90deg);
 }}
-.circle-chart-bg {{
+.square-chart-bg {{
   fill: none;
   stroke: var(--glass-border);
   stroke-width: 3.8;
 }}
-.circle-chart-fill {{
+.square-chart-fill {{
   fill: none;
   stroke: var(--accent-green);
   stroke-width: 3.8;
-  stroke-linecap: round;
   transition: stroke-dasharray 1s ease-in-out;
 }}
-.circle-chart-text {{
+.square-chart-text {{
   fill: var(--text);
   font-family: 'Sarabun', sans-serif;
   font-size: 10px;
@@ -6320,11 +7007,11 @@ body.theme-bw .mourning-container {{
 
 <!-- LEGEND -->
 <div class="legend">
-  <div class="legend-item"><div class="legend-dot" style="background:var(--accent-blue)"></div> คงเดิมจาก รธน. ๒๔๔๕</div>
-  <div class="legend-item"><div class="legend-dot" style="background:var(--accent-green)"></div> แก้ไขโดยสภาร่างรัฐธรรมนูญ</div>
-  <div class="legend-item"><div class="legend-dot" style="background:var(--accent-orange)"></div> ประชามติรอบที่ ๓</div>
-  <div class="legend-item"><div class="legend-dot" style="background:var(--accent-purple)"></div> ประชามติรอบที่ ๔-๕</div>
-  <div class="legend-item"><div class="legend-dot" style="background:var(--accent-gold)"></div> ประชามติรอบที่ ๕ (พิเศษ)</div>
+  <div class="legend-item"><div class="legend-square" style="background:var(--accent-blue)"></div> คงเดิมจาก รธน. ๒๔๔๕</div>
+  <div class="legend-item"><div class="legend-square" style="background:var(--accent-green)"></div> แก้ไขโดยสภาร่างรัฐธรรมนูญ</div>
+  <div class="legend-item"><div class="legend-square" style="background:var(--accent-orange)"></div> ประชามติรอบที่ ๓</div>
+  <div class="legend-item"><div class="legend-square" style="background:var(--accent-purple)"></div> ประชามติรอบที่ ๔-๕</div>
+  <div class="legend-item"><div class="legend-square" style="background:var(--accent-gold)"></div> ประชามติรอบที่ ๕ (พิเศษ)</div>
 </div>
 
 {dashboard_html}

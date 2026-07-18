@@ -177,27 +177,41 @@ body.theme-bw .emblem-bw { display: inline-block; }
   text-shadow: 0 2px 10px rgba(212, 168, 67, 0.2);
 }
 .dashboard-tabs {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-bottom: 32px;
+}
+@media (max-width: 1024px) {
+  .dashboard-tabs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .dashboard-tabs {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .db-tab-btn {
-  padding: 8px 16px;
-  border-radius: 20px;
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 6px;
   border: 1px solid var(--glass-border);
   background: rgba(255,255,255,0.03);
   color: var(--text-muted);
   cursor: pointer;
   font-family: 'Sarabun', sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
+  text-align: center;
   transition: all 0.3s ease;
+  min-height: 38px;
 }
 .db-tab-btn.active, .db-tab-btn:hover {
   background: var(--gold);
   color: #000;
   border-color: var(--gold);
-  box-shadow: 0 0 15px rgba(212, 168, 67, 0.3);
+  box-shadow: 0 0 15px rgba(212, 168, 67, 0.35);
 }
 .db-tab-content {
   display: none;
@@ -258,7 +272,7 @@ body.theme-bw .emblem-bw { display: inline-block; }
   top: 4px;
   width: 24px;
   height: 24px;
-  border-radius: 50%;
+  border-radius: 4px;
   background: #111827;
   border: 2px solid var(--glass-border);
   display: flex;
@@ -505,7 +519,7 @@ body.theme-bw .emblem-bw { display: inline-block; }
 /* ===== BACK TO TOP ===== */
 .back-top {
   position:fixed; bottom:24px; right:24px; width:48px; height:48px;
-  background:var(--gold); color:#000; border:none; border-radius:50%;
+  background:var(--gold); color:#000; border:none; border-radius:8px;
   font-size:20px; cursor:pointer; z-index:999; opacity:0; transition: all .3s;
   box-shadow:0 4px 20px rgba(212,168,67,0.4);
 }
@@ -520,8 +534,8 @@ body.theme-bw .emblem-bw { display: inline-block; }
 .legend-item {
   display:flex; align-items:center; gap:6px; font-size:13px; color:var(--text-muted);
 }
-.legend-dot {
-  width:12px; height:12px; border-radius:50%;
+.legend-square {
+  width:12px; height:12px; border-radius:2px;
 }
 
 /* ===== TOOLTIP & GLOSSARY SYSTEM ===== */
@@ -634,30 +648,28 @@ body.theme-nightcity .article-card:hover {
   border: 1px solid var(--glass-border);
   border-radius: 12px;
 }
-.circle-chart-wrapper {
+.square-chart-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
 }
-.circle-chart {
+.square-chart {
   width: 90px;
   height: 90px;
-  transform: rotate(-90deg);
 }
-.circle-chart-bg {
+.square-chart-bg {
   fill: none;
   stroke: var(--glass-border);
   stroke-width: 3.8;
 }
-.circle-chart-fill {
+.square-chart-fill {
   fill: none;
   stroke: var(--accent-green);
   stroke-width: 3.8;
-  stroke-linecap: round;
   transition: stroke-dasharray 1s ease-in-out;
 }
-.circle-chart-text {
+.square-chart-text {
   fill: var(--text);
   font-family: 'Sarabun', sans-serif;
   font-size: 10px;
