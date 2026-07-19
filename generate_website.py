@@ -487,7 +487,7 @@ def get_party_html(num):
     img_style = "max-width: 100%; max-height: 100%; object-fit: contain;"
     text_style = f"display: block; font-size: 11.5px; font-weight: 700; color: {color}; letter-spacing: 0.2px; font-family: \'Inter\', \'Outfit\', sans-serif;"
     
-    return f'<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;"><div style="{logo_style}"><img src="{filename}" alt="{name}" style="{img_style}"></div><span style="{text_style}">{name}</span></div>'
+    return f'<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;"><div style="{logo_style}"><img src="images/{filename}" alt="{name}" style="{img_style}"></div><span style="{text_style}">{name}</span></div>'
 
 # Render PM table rows
 def format_pm_name_html(name, is_bold):
@@ -545,7 +545,7 @@ for pm in pms:
   <td style="text-align: center;">{num_str}</td>
   <td style="text-align: center; vertical-align: middle; padding: 8px 4px;">
     <div style="width: 220px; height: 275px; border: 3px solid var(--gold); border-radius: 8px; overflow: hidden; background: #000; box-shadow: 0 6px 16px rgba(0,0,0,0.6); margin: 0 auto; display: flex; align-items: center; justify-content: center;">
-      <img src="{img_filename}" alt="{name_str}" style="width: 100%; height: 100%; object-fit: cover;">
+      <img src="images/{img_filename}" alt="{name_str}" style="width: 100%; height: 100%; object-fit: cover;">
     </div>
   </td>
   <td style="padding: 12px 8px; vertical-align: middle; min-width: 120px;"><span style="color: var(--gold-light); font-size: 14px; font-weight: 600; display: block; line-height: 1.3; word-break: normal;">{name_display}</span></td>
@@ -998,7 +998,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         <!-- ฝั่งขวา: พระนามมงคล สมัญญาภิธัย และประวัติหลังครองราชย์ -->
         <div style="flex: 0.9; min-width: 300px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(212, 175, 55, 0.15); border-radius: 12px; padding: 20px;">
           <div style="text-align: center; margin-bottom: 20px;">
-            <img src="king_r7.jpg" alt="พระประชาธิปมหาราช" style="width: 360px; border-radius: 12px; border: 3px solid var(--gold); box-shadow: 0 8px 24px rgba(0,0,0,0.6);">
+            <img src="images/king_r7.jpg" alt="พระประชาธิปมหาราช" style="width: 360px; border-radius: 12px; border: 3px solid var(--gold); box-shadow: 0 8px 24px rgba(0,0,0,0.6);">
           </div>
           <h3 style="color: var(--gold-light); margin-bottom: 16px; font-family: 'Outfit', sans-serif; font-size: 16px;">👑 พระนาม สมัญญาภิธัย และอายุขัย (Titles & Lifespan)</h3>
           
@@ -1083,7 +1083,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         <!-- ฝั่งขวา: พระนามมงคล สมัญญาภิธัย และประวัติหลังครองราชย์ -->
         <div style="flex: 0.9; min-width: 300px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(212, 175, 55, 0.15); border-radius: 12px; padding: 20px;">
           <div style="text-align: center; margin-bottom: 20px;">
-            <img src="king_r9.webp" alt="พระมหาภูมิพลมหาราช" style="width: 360px; border-radius: 12px; border: 3px solid var(--gold); box-shadow: 0 8px 24px rgba(0,0,0,0.6);">
+            <img src="images/king_r9.webp" alt="พระมหาภูมิพลมหาราช" style="width: 360px; border-radius: 12px; border: 3px solid var(--gold); box-shadow: 0 8px 24px rgba(0,0,0,0.6);">
           </div>
           <h3 style="color: var(--gold-light); margin-bottom: 16px; font-family: 'Outfit', sans-serif; font-size: 16px;">👑 พระนาม สมัญญาภิธัย และสิริพระชนมพรรษา (Titles & Lifespan)</h3>
           
@@ -1193,7 +1193,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             <div style="padding: 16px; line-height: 1.6; font-size: 14px; color: var(--text);">
               <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
                 <div style="flex: 0 0 300px; text-align: center; margin-bottom: 12px;">
-                  <img src="king_r1.png" alt="พระบาทสมเด็จพระพุทธยอดฟ้าจุฬาโลกมหาราช" style="width: 300px; border-radius: 8px; border: 2px solid rgba(255, 255, 255, 0.15); box-shadow: 0 6px 15px rgba(0,0,0,0.5);">
+                  <img src="images/king_r1.png" alt="พระบาทสมเด็จพระพุทธยอดฟ้าจุฬาโลกมหาราช" style="width: 300px; border-radius: 8px; border: 2px solid rgba(255, 255, 255, 0.15); box-shadow: 0 6px 15px rgba(0,0,0,0.5);">
                 </div>
                 <div style="flex: 1; min-width: 250px;">
               <p style="margin-bottom: 8px;"><strong>พระราชสมภพ:</strong> วันพุธที่ ๒๐ มีนาคม พ.ศ. ๒๑๘๖ ณ กรุงศรีอยุธยา ทรงเป็นบุตรของหลวงพินิจอักษร (ทองดี) และดาวเรือง ทรงมีพระนามเดิมว่า "ทองด้วง" และสถาปนาเกียรติยศเป็นพระมหากษัตริย์ปฐมกษัตริย์ในเวลาต่อมา</p>
@@ -1215,7 +1215,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             <div style="padding: 16px; line-height: 1.6; font-size: 14px; color: var(--text);">
               <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
                 <div style="flex: 0 0 300px; text-align: center; margin-bottom: 12px;">
-                  <img src="king_r2.png" alt="พระบาทสมเด็จพระพุทธเลิศหล้านภาลัย" style="width: 300px; border-radius: 8px; border: 2px solid rgba(255, 255, 255, 0.15); box-shadow: 0 6px 15px rgba(0,0,0,0.5);">
+                  <img src="images/king_r2.png" alt="พระบาทสมเด็จพระพุทธเลิศหล้านภาลัย" style="width: 300px; border-radius: 8px; border: 2px solid rgba(255, 255, 255, 0.15); box-shadow: 0 6px 15px rgba(0,0,0,0.5);">
                 </div>
                 <div style="flex: 1; min-width: 250px;">
               <p style="margin-bottom: 8px;"><strong>พระราชสมภพ:</strong> วันพุธที่ ๒๔ กุมภาพันธ์ พ.ศ. ๒๒๑๗ ณ ตำบลอัมพวา เมืองสมุทรสงคราม ทรงเป็นพระราชโอรสพระองค์โตในรัชกาลที่ ๑ และสมเด็จพระอมรินทราบรมราชินี ทรงมีพระนามเดิมเมื่อแรกประสูติว่า "ฉิม"</p>
@@ -1237,7 +1237,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             <div style="padding: 16px; line-height: 1.6; font-size: 14px; color: var(--text);">
               <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
                 <div style="flex: 0 0 300px; text-align: center; margin-bottom: 12px;">
-                  <img src="king_r3.png" alt="พระบาทสมเด็จพระนั่งเกล้าเจ้าอยู่หัว" style="width: 300px; border-radius: 8px; border: 2px solid rgba(255, 255, 255, 0.15); box-shadow: 0 6px 15px rgba(0,0,0,0.5);">
+                  <img src="images/king_r3.png" alt="พระบาทสมเด็จพระนั่งเกล้าเจ้าอยู่หัว" style="width: 300px; border-radius: 8px; border: 2px solid rgba(255, 255, 255, 0.15); box-shadow: 0 6px 15px rgba(0,0,0,0.5);">
                 </div>
                 <div style="flex: 1; min-width: 250px;">
               <p style="margin-bottom: 8px;"><strong>พระราชสมภพ:</strong> วันจันทร์ที่ ๓๑ มีนาคม พ.ศ. ๒๒๓๗ ณ พระบรมมหาราชวัง ทรงเป็นพระราชโอรสในรัชกาลที่ ๒ และเจ้าจอมมารดาเรียม (ต่อมาได้รับการสถาปนาเกียรติยศเป็นสมเด็จพระศรีสุลาลัย) ทรงมีพระนามเดิมว่า "ทับ"</p>
@@ -1259,7 +1259,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             <div style="padding: 16px; line-height: 1.6; font-size: 14px; color: var(--text);">
               <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
                 <div style="flex: 0 0 300px; text-align: center; margin-bottom: 12px;">
-                  <img src="king_r4.jpg" alt="พระบาทสมเด็จพระจอมเกล้าเจ้าอยู่หัว" style="width: 300px; border-radius: 8px; border: 2px solid rgba(255, 255, 255, 0.15); box-shadow: 0 6px 15px rgba(0,0,0,0.5);">
+                  <img src="images/king_r4.jpg" alt="พระบาทสมเด็จพระจอมเกล้าเจ้าอยู่หัว" style="width: 300px; border-radius: 8px; border: 2px solid rgba(255, 255, 255, 0.15); box-shadow: 0 6px 15px rgba(0,0,0,0.5);">
                 </div>
                 <div style="flex: 1; min-width: 250px;">
               <p style="margin-bottom: 8px;"><strong>พระราชสมภพ:</strong> วันพฤหัสบดีที่ ๑๘ ตุลาคม พ.ศ. ๒๒๕๔ ณ พระบรมมหาราชวัง ทรงเป็นพระราชโอรสในรัชกาลที่ ๒ และสมเด็จพระศรีสุริเยนทราบรมราชินี ทรงมีพระนามเดิมว่า "เจ้าฟ้ามงกุฎ"</p>
@@ -1281,7 +1281,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             <div style="padding: 16px; line-height: 1.6; font-size: 14px; color: var(--text);">
               <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
                 <div style="flex: 0 0 300px; text-align: center; margin-bottom: 12px;">
-                  <img src="king_r5.jpg" alt="พระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัว" style="width: 300px; border-radius: 8px; border: 2px solid rgba(255, 255, 255, 0.15); box-shadow: 0 6px 15px rgba(0,0,0,0.5);">
+                  <img src="images/king_r5.jpg" alt="พระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัว" style="width: 300px; border-radius: 8px; border: 2px solid rgba(255, 255, 255, 0.15); box-shadow: 0 6px 15px rgba(0,0,0,0.5);">
                 </div>
                 <div style="flex: 1; min-width: 250px;">
               <p style="margin-bottom: 8px;"><strong>พระราชสมภพ:</strong> วันอังคารที่ ๒๐ กันยายน พ.ศ. ๒๓๐๓ ณ พระบรมมหาราชวัง ทรงเป็นพระราชโอรสในรัชกาลที่ ๔ และสมเด็จพระเทพศิรินทราบรมราชินี ทรงมีพระนามเดิมว่า "เจ้าฟ้าจุฬาลงกรณ์"</p>
@@ -1303,7 +1303,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             <div style="padding: 16px; line-height: 1.6; font-size: 14px; color: var(--text);">
               <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
                 <div style="flex: 0 0 300px; text-align: center; margin-bottom: 12px;">
-                  <img src="king_r6.jpg" alt="พระบาทสมเด็จพระมงกุฎเกล้าเจ้าอยู่หัว" style="width: 300px; border-radius: 8px; border: 2px solid rgba(255, 255, 255, 0.15); box-shadow: 0 6px 15px rgba(0,0,0,0.5);">
+                  <img src="images/king_r6.jpg" alt="พระบาทสมเด็จพระมงกุฎเกล้าเจ้าอยู่หัว" style="width: 300px; border-radius: 8px; border: 2px solid rgba(255, 255, 255, 0.15); box-shadow: 0 6px 15px rgba(0,0,0,0.5);">
                 </div>
                 <div style="flex: 1; min-width: 250px;">
               <p style="margin-bottom: 8px;"><strong>พระราชสมภพ:</strong> วันเสาร์ที่ ๑ มกราคม พ.ศ. ๒๓๒๓ ณ พระบรมมหาราชวัง ทรงเป็นพระราชโอรสในรัชกาลที่ ๕ และสมเด็จพระศรีพัชรินทราบรมราชินีนาถ ทรงมีพระนามเดิมว่า "เจ้าฟ้ายุคลมหาวชิราวุธ"</p>
@@ -1325,7 +1325,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             <div style="padding: 16px; line-height: 1.6; font-size: 14px; color: var(--text);">
               <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
                 <div style="flex: 0 0 300px; text-align: center; margin-bottom: 12px;">
-                  <img src="king_r7.jpg" alt="พระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว" style="width: 300px; border-radius: 8px; border: 2px solid rgba(255, 255, 255, 0.15); box-shadow: 0 6px 15px rgba(0,0,0,0.5);">
+                  <img src="images/king_r7.jpg" alt="พระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว" style="width: 300px; border-radius: 8px; border: 2px solid rgba(255, 255, 255, 0.15); box-shadow: 0 6px 15px rgba(0,0,0,0.5);">
                 </div>
                 <div style="flex: 1; min-width: 250px;">
               <p style="margin-bottom: 8px;"><strong>พระราชสมภพ:</strong> วันพฤหัสบดีที่ ๘ พฤศจิกายน พ.ศ. ๒๓๓๖ ณ พระบรมมหาราชวัง ทรงเป็นพระราชโอรสองค์เล็กในรัชกาลที่ ๕ และสมเด็จพระศรีพัชรินทราบรมราชินีนาถ ทรงมีพระนามเดิมว่า "เจ้าฟ้าประชาธิปกศักดิเดชน์"</p>
@@ -1347,7 +1347,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             <div style="padding: 16px; line-height: 1.6; font-size: 14px; color: var(--text);">
               <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
                 <div style="flex: 0 0 300px; text-align: center; margin-bottom: 12px;">
-                  <img src="king_r8.png" alt="พระบาทสมเด็จพระปรเมนทรมหาอานันทมหิดล" style="width: 300px; border-radius: 8px; border: 2px solid rgba(255, 255, 255, 0.15); box-shadow: 0 6px 15px rgba(0,0,0,0.5);">
+                  <img src="images/king_r8.png" alt="พระบาทสมเด็จพระปรเมนทรมหาอานันทมหิดล" style="width: 300px; border-radius: 8px; border: 2px solid rgba(255, 255, 255, 0.15); box-shadow: 0 6px 15px rgba(0,0,0,0.5);">
                 </div>
                 <div style="flex: 1; min-width: 250px;">
               <p style="margin-bottom: 8px;"><strong>พระราชสมภพ:</strong> วันอาทิตย์ที่ ๒๐ กันยายน พ.ศ. ๒๓๖๘ ณ โรงพยาบาลศิริราช กรุงเทพมหานคร สยามประเทศ ทรงเป็นพระราชโอรสองค์โตในสมเด็จพระมหิตลาธิเบศร อดุลยเดชวิกรม พระบรมราชชนก และสมเด็จพระศรีนครินทราบรมราชชนนี ทรงมีพระนามเดิมว่า "อานันทมหิดล"</p>
@@ -1363,7 +1363,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   ราวกลางรัชสมัย หลวงประดิษฐ์มนูธรรมได้จัดทำ "สมุดปกเหลือง" อันเป็นข้อเสนอทางเศรษฐกิจการเมืองแนวประชาธิปไตยสังคมนิยม ซึ่งเรียกร้องให้ลดทอนพระราชอำนาจของสถาบันพระมหากษัตริย์ลงอย่างมากและมีแนวทางเหมือนสตาลินที่เป็นคอมมิวนิสต์แม้ปรีดีจะอ้างว่าเป็นประชาธิปไตยสังคมนิยม เพื่อนำเสนอตรงต่อพระองค์เองเป็นการเฉพาะ (ต่างจากประวัติศาสตร์จริงที่เสนอผ่านคณะรัฐมนตรี) ด้วยหวังว่าจะได้รับการยอมรับโดยตรงจากสถาบันฯ ทว่าพระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัวทรงปฏิเสธข้อเสนอนี้อย่างเด็ดขาดต่อหน้า ด้วยทรงเห็นว่าเกินกว่าที่ระบอบราชาธิปไตยภายใต้รัฐธรรมนูญจะยอมรับได้ การถูกปฏิเสธเช่นนี้สร้างความอัปยศและความคับข้องใจอย่างลึกซึ้งแก่หลวงประดิษฐ์มนูธรรม
                 </p>
                 <div style="text-align: center; margin: 16px auto; max-width: 500px;">
-                  <img src="white_paper.jpg" alt="สมุดปกขาว ประชาธิปก ๒๔๙๐" style="width: 100%; max-height: 480px; object-fit: contain; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease;">
+                  <img src="images/white_paper.jpg" alt="สมุดปกขาว ประชาธิปก ๒๔๙๐" style="width: 100%; max-height: 480px; object-fit: contain; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease;">
                   <div style="font-size: 12px; color: var(--text-muted); margin-top: 8px; font-style: italic;">ภาพประกอบ: หน้าเอกสาร สมุดปกขาว (ประชาธิปก) พ.ศ. ๒๔๙๐ จากหอจดหมายเหตุศิริปัญญาวิมารสัจ</div>
                 </div>
                 <p style="font-size: 13.5px; line-height: 1.6; color: var(--text-muted); margin-bottom: 10px; text-indent: 2em;">
@@ -1392,7 +1392,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             <div style="padding: 16px; line-height: 1.6; font-size: 14px; color: var(--text);">
               <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
                 <div style="flex: 0 0 300px; text-align: center; margin-bottom: 12px;">
-                  <img src="king_r9.webp" alt="พระบาทสมเด็จพระบรมชนกาธิเบศร มหาภูมิพลอดุลยเดชมหาราช บรมนาถบพิตร" style="width: 300px; border-radius: 8px; border: 2px solid rgba(255, 255, 255, 0.15); box-shadow: 0 6px 15px rgba(0,0,0,0.5);">
+                  <img src="images/king_r9.webp" alt="พระบาทสมเด็จพระบรมชนกาธิเบศร มหาภูมิพลอดุลยเดชมหาราช บรมนาถบพิตร" style="width: 300px; border-radius: 8px; border: 2px solid rgba(255, 255, 255, 0.15); box-shadow: 0 6px 15px rgba(0,0,0,0.5);">
                 </div>
                 <div style="flex: 1; min-width: 250px;">
               <p style="margin-bottom: 8px;"><strong>พระราชสมภพ:</strong> วันจันทร์ที่ ๕ ธันวาคม พ.ศ. ๒๓๗๐ ณ โรงพยาบาลจุฬาลงกรณ์สภากาชาดไทย กรุงเทพมหานคร สยามประเทศ ทรงเป็นพระราชโอรสองค์เล็กในสมเด็จพระมหิตลาธิเบศร อดุลยเดชวิกรม พระบรมราชชนก และสมเด็จพระศรีนครินทราบรมราชชนนี ทรงมีพระนามเดิมว่า "ภูมิพลอดุลยเดช"</p>
@@ -1494,7 +1494,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         <div style="width: 100%; margin-top: 24px; text-align: center; clear: both;">
           <h4 style="color: var(--gold-light); font-size: 14px; margin-bottom: 8px; font-family: 'Outfit', sans-serif;">🔒 ภาพส่วนเสี้ยวที่เล็กที่สุดของห้องสมุดศิริปัญญาวิมารสัจ (ข้อมูลเปิดเผยได้แค่นี้)</h4>
           <div style="width: 100%; overflow: hidden; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.25); box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
-            <img src="yj.png" alt="ส่วนเสี้ยวที่เล็กที่สุดของห้องสมุดศิริปัญญาวิมารสัจ" style="width: 100%; height: auto; display: block; aspect-ratio: 32 / 9; object-fit: cover;">
+            <img src="images/yj.png" alt="ส่วนเสี้ยวที่เล็กที่สุดของห้องสมุดศิริปัญญาวิมารสัจ" style="width: 100%; height: auto; display: block; aspect-ratio: 32 / 9; object-fit: cover;">
           </div>
           <p style="font-size: 12px; color: var(--text-muted); margin-top: 6px; font-style: italic;">"ส่วนเสี้ยวที่เล็กที่สุดของห้องสมุดศิริปัญญาวิมารสัจ โดยเปิดเผยได้แค่นี้"</p>
         </div>
@@ -1527,7 +1527,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
           <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,165,0,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
             <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
-              <img src="logo_mf.svg" alt="พรรคก้าวไกล" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+              <img src="images/logo_mf.svg" alt="พรรคก้าวไกล" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
             </div>
             <div style="flex:1;min-width:0;">
               <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
@@ -1542,7 +1542,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
           <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,165,0,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
             <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
-              <img src="logo_thaksipracha.png" alt="พรรคทักษิประชา" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+              <img src="images/logo_thaksipracha.png" alt="พรรคทักษิประชา" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
             </div>
             <div style="flex:1;min-width:0;">
               <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
@@ -1557,7 +1557,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
           <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,165,0,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
             <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
-              <img src="logo_thampanya.png" alt="พรรคธรรมปัญญา" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+              <img src="images/logo_thampanya.png" alt="พรรคธรรมปัญญา" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
             </div>
             <div style="flex:1;min-width:0;">
               <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
@@ -1572,7 +1572,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
           <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,165,0,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
             <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
-              <img src="logo_trt.png" alt="พรรคไทยรักไทย" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+              <img src="images/logo_trt.png" alt="พรรคไทยรักไทย" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
             </div>
             <div style="flex:1;min-width:0;">
               <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
@@ -1587,7 +1587,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
           <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,165,0,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
             <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
-              <img src="logo_dem.svg" alt="พรรคประชาธิปัตย์" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+              <img src="images/logo_dem.svg" alt="พรรคประชาธิปัตย์" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
             </div>
             <div style="flex:1;min-width:0;">
               <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
@@ -1602,7 +1602,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
           <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,165,0,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
             <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
-              <img src="logo_utn.svg" alt="พรรครวมไทยสร้างชาติ" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+              <img src="images/logo_utn.svg" alt="พรรครวมไทยสร้างชาติ" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
             </div>
             <div style="flex:1;min-width:0;">
               <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
@@ -1617,7 +1617,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
           <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,165,0,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
             <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
-              <img src="logo_nap.jpg" alt="พรรคความหวังใหม่" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+              <img src="images/logo_nap.jpg" alt="พรรคความหวังใหม่" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
             </div>
             <div style="flex:1;min-width:0;">
               <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
@@ -1632,7 +1632,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
           <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,165,0,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
             <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
-              <img src="logo_cp.png" alt="พรรคชาติพัฒนา" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+              <img src="images/logo_cp.png" alt="พรรคชาติพัฒนา" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
             </div>
             <div style="flex:1;min-width:0;">
               <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
@@ -1647,7 +1647,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
           <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,165,0,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
             <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
-              <img src="logo_ct.png" alt="พรรคชาติไทย" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+              <img src="images/logo_ct.png" alt="พรรคชาติไทย" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
             </div>
             <div style="flex:1;min-width:0;">
               <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
@@ -1662,7 +1662,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
           <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,165,0,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
             <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
-              <img src="logo_sap.png" alt="พรรคกิจสังคม" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+              <img src="images/logo_sap.png" alt="พรรคกิจสังคม" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
             </div>
             <div style="flex:1;min-width:0;">
               <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
@@ -1677,7 +1677,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
           <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,165,0,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
             <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
-              <img src="logo_bji.svg" alt="พรรคภูมิใจไทย" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+              <img src="images/logo_bji.svg" alt="พรรคภูมิใจไทย" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
             </div>
             <div style="flex:1;min-width:0;">
               <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
@@ -1692,7 +1692,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
           <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,165,0,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
             <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
-              <img src="logo_srt.png" alt="พรรคเสรีรวมไทย" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+              <img src="images/logo_srt.png" alt="พรรคเสรีรวมไทย" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
             </div>
             <div style="flex:1;min-width:0;">
               <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
@@ -1707,7 +1707,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
           <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,165,0,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
             <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
-              <img src="logo_trc.png" alt="พรรคไทยรักษาชาติ" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+              <img src="images/logo_trc.png" alt="พรรคไทยรักษาชาติ" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
             </div>
             <div style="flex:1;min-width:0;">
               <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
@@ -1731,7 +1731,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
           <div style="display:flex;align-items:center;gap:20px;background:rgba(248,113,113,0.04);border:1px solid rgba(248,113,113,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
             <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
-              <img src="logo_ff.svg" alt="พรรอนาคตใหม่" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+              <img src="images/logo_ff.svg" alt="พรรอนาคตใหม่" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
             </div>
             <div style="flex:1;min-width:0;">
               <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
@@ -1746,7 +1746,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
           <div style="display:flex;align-items:center;gap:20px;background:rgba(248,113,113,0.04);border:1px solid rgba(248,113,113,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
             <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
-              <img src="logo_rev.png" alt="พรรคประชาปิติวัติ" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+              <img src="images/logo_rev.png" alt="พรรคประชาปิติวัติ" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
             </div>
             <div style="flex:1;min-width:0;">
               <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
@@ -1761,7 +1761,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
           <div style="display:flex;align-items:center;gap:20px;background:rgba(107,114,128,0.04);border:1px solid rgba(107,114,128,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
             <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
-              <img src="logo_old_prachachon.png" alt="พรรคประชาชนเดิม" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+              <img src="images/logo_old_prachachon.png" alt="พรรคประชาชนเดิม" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
             </div>
             <div style="flex:1;min-width:0;">
               <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
@@ -4283,12 +4283,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           <p style="margin-bottom: 16px;">ตราสัญลักษณ์ทั้งสองของแผนกแสดงความเป็นเอกภาพและความเป็นอันหนึ่งอันเดียวกันภายใต้ศูนย์บัญชาการร่วม (Joint Command) ผ่านสลักสัญลักษณ์ <strong>"สี่ดาวอาร์คด้านบน"</strong> เหนือเครื่องหมายปฏิบัติการหลัก:</p>
           <div style="display: flex; gap: 24px; justify-content: center; flex-wrap: wrap;">
             <div class="goc-logo-card">
-              <img src="goc_diplomacy_logo.png" alt="Diplomacy Division Logo" class="goc-logo-img">
+              <img src="images/goc_diplomacy_logo.png" alt="Diplomacy Division Logo" class="goc-logo-img">
               <div class="goc-logo-name">Diplomacy Division</div>
               <div class="goc-logo-desc">รูปมือจับประสานกัน สลักสีน้ำเงินและขาว พร้อมดาวอาร์คสี่ดวงด้านบน สื่อถึงภารกิจข่าวกรอง คลี่คลายข้อพิพาท และการเจรจาลับระดับสากล</div>
             </div>
             <div class="goc-logo-card">
-              <img src="goc_warfare_logo.png" alt="Warfare Division Logo" class="goc-logo-img">
+              <img src="images/goc_warfare_logo.png" alt="Warfare Division Logo" class="goc-logo-img">
               <div class="goc-logo-name">Warfare Division</div>
               <div class="goc-logo-desc">รูปนกอินทรีสยายปีกบิน สลักสีน้ำเงินและขาว พร้อมดาวอาร์คสี่ดวงด้านบน สื่อถึงภารกิจยุทธวิธี ปฏิบัติการฉับพลัน และแสนยานุภาพคุ้มกันภาคสนาม</div>
             </div>
@@ -4645,7 +4645,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         <!-- พระยามโนปกรณ์นิติธาดา (ก้อน หุตะสิงห์) -->
         <div class="tri-layout" style="margin-bottom: 32px;">
           <div class="tri-profile-card">
-            <img src="mano.png" alt="พระยามโนปกรณ์นิติธาดา (ก้อน หุตะสิงห์)" class="tri-profile-img">
+            <img src="images/mano.png" alt="พระยามโนปกรณ์นิติธาดา (ก้อน หุตะสิงห์)" class="tri-profile-img">
             <div class="tri-profile-name">พระยามโนปกรณ์นิติธาดา</div>
             <div class="tri-profile-title">นายกรัฐมนตรีคนแรกแห่งราชอาณาจักรไทย</div>
             <div class="tri-meta">
@@ -4679,7 +4679,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         <!-- ทักษิณ ชินวัตร -->
         <div class="tri-layout" style="margin-bottom: 32px;">
           <div class="tri-profile-card">
-            <img src="thaksin.jpg" alt="ทักษิณ ชินวัตร" class="tri-profile-img">
+            <img src="images/thaksin.jpg" alt="ทักษิณ ชินวัตร" class="tri-profile-img">
             <div class="tri-profile-name">ทักษิณ ชินวัตร</div>
             <div class="tri-profile-title">นายกรัฐมนตรีคนที่ ๔ แห่งราชอาณาจักรไทย</div>
             <div class="tri-meta">
@@ -4713,7 +4713,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         <!-- อภิสิทธิ์ เวชชาชีวะ -->
         <div class="tri-layout" style="margin-bottom: 32px;">
           <div class="tri-profile-card">
-            <img src="abhisit.jpg" alt="อภิสิทธิ์ เวชชาชีวะ" class="tri-profile-img">
+            <img src="images/abhisit.jpg" alt="อภิสิทธิ์ เวชชาชีวะ" class="tri-profile-img">
             <div class="tri-profile-name">อภิสิทธิ์ เวชชาชีวะ</div>
             <div class="tri-profile-title">นายกรัฐมนตรีคนที่ ๑๓ และผู้นำร่างรัฐธรรมนูญฉบับที่ยังใช้บังคับถึงปัจจุบัน</div>
             <div class="tri-meta">
@@ -4747,7 +4747,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         <!-- พิธา ลิ้มเจริญรัตน์ -->
         <div class="tri-layout" style="margin-bottom: 32px;">
           <div class="tri-profile-card">
-            <img src="pita.jpg" alt="พิธา ลิ้มเจริญรัตน์" class="tri-profile-img">
+            <img src="images/pita.jpg" alt="พิธา ลิ้มเจริญรัตน์" class="tri-profile-img">
             <div class="tri-profile-name">พิธา ลิ้มเจริญรัตน์</div>
             <div class="tri-profile-title">นายกรัฐมนตรีคนที่ ๑๗ แห่งราชอาณาจักรไทย</div>
             <div class="tri-meta">
@@ -4781,7 +4781,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         <!-- ธงไชย แมคอินไตย์ -->
         <div class="tri-layout" style="margin-bottom: 32px;">
           <div class="tri-profile-card">
-            <img src="bird.png" alt="ธงไชย แมคอินไตย์" class="tri-profile-img">
+            <img src="images/bird.png" alt="ธงไชย แมคอินไตย์" class="tri-profile-img">
             <div class="tri-profile-name">ธงไชย แมคอินไตย์</div>
             <div class="tri-profile-title">ศิลปินแห่งชาติและผู้เสนอสัญลักษณ์แห่งเสรีชน</div>
             <div class="tri-meta">
@@ -4815,7 +4815,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         <!-- ศิริกัญญา ตันสกุล -->
         <div class="tri-layout" style="margin-bottom: 32px;">
           <div class="tri-profile-card">
-            <img src="pm18.jpg" alt="ศิริกัญญา ตันสกุล" class="tri-profile-img">
+            <img src="images/pm18.jpg" alt="ศิริกัญญา ตันสกุล" class="tri-profile-img">
             <div class="tri-profile-name">ศิริกัญญา ตันสกุล</div>
             <div class="tri-profile-title">นายกรัฐมนตรีคนที่ ๑๘ แห่งราชอาณาจักรไทย</div>
             <div class="tri-meta">
@@ -4851,7 +4851,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <!-- ดร.ธนานนท์ ปฏิญญาศักดิกุล (9arm) -->
         <div class="tri-layout" style="margin-bottom: 32px;">
           <div class="tri-profile-card">
-            <img src="9arm_myarm.png" alt="ดร.ธนานนท์ ปฏิญญาศักดิกุล" class="tri-profile-img">
+            <img src="images/9arm_myarm.png" alt="ดร.ธนานนท์ ปฏิญญาศักดิกุล" class="tri-profile-img">
             <div class="tri-profile-name">ดร.ธนานนท์ ปฏิญญาศักดิกุล</div>
             <div class="tri-profile-title">ประธานที่ปรึกษาด้านเทคโนโลยีและสถาปนิก ParadoxAI</div>
             <div class="tri-meta">
@@ -4895,7 +4895,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         <!-- ดร.ธนรัชต์ ปฏิญญาศักดิกุล (aimmuno) -->
         <div class="tri-layout" style="margin-bottom: 32px;">
           <div class="tri-profile-card">
-            <img src="aimmuno.png" alt="ดร.ธนรัชต์ ปฏิญญาศักดิกุล" class="tri-profile-img">
+            <img src="images/aimmuno.png" alt="ดร.ธนรัชต์ ปฏิญญาศักดิกุล" class="tri-profile-img">
             <div class="tri-profile-name">ดร.ธนรัชต์ ปฏิญญาศักดิกุล</div>
             <div class="tri-profile-title">นายแพทย์นักวิจัย ผู้บูรณาการสาธารณสุขกับ ParadoxAI 2.0 และน้องชายของ 9arm</div>
             <div class="tri-meta">
@@ -4935,7 +4935,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         <!-- ไตรทิศา รณปวัตน์ -->
         <div class="tri-layout">
           <div class="tri-profile-card">
-            <img src="traitisa_portrait.png" alt="ไตรทิศา รณปวัตน์" class="tri-profile-img">
+            <img src="images/traitisa_portrait.png" alt="ไตรทิศา รณปวัตน์" class="tri-profile-img">
             <div class="tri-profile-name">ไตรทิศา รณปวัตน์</div>
             <div class="tri-profile-title">รองนายกรัฐมนตรีแห่งราชอาณาจักรไทย</div>
             <div class="tri-meta">
@@ -4974,7 +4974,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         <!-- พริษฐ์ "ไอติม" วัชรสินธุ -->
         <div class="tri-layout" style="margin-bottom: 32px;">
           <div class="tri-profile-card">
-            <img src="pm20.jpg" alt="พริษฐ์ \"ไอติม\" วัชรสินธุ" class="tri-profile-img">
+            <img src="images/pm20.jpg" alt="พริษฐ์ \"ไอติม\" วัชรสินธุ" class="tri-profile-img">
             <div class="tri-profile-name">พริษฐ์ "ไอติม" วัชรสินธุ</div>
             <div class="tri-profile-title">นายกรัฐมนตรีคนที่ ๒๐ และสถาปนิกกลไกความมั่นคงสยาม</div>
             <div class="tri-meta">
@@ -5015,7 +5015,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         <!-- สายสิญจน์ พณิชไพโรจน์ -->
         <div class="tri-layout" style="margin-bottom: 32px;">
           <div class="tri-profile-card">
-            <img src="Rz.png" alt="สายสิญจน์ พณิชไพโรจน์" class="tri-profile-img">
+            <img src="images/Rz.png" alt="สายสิญจน์ พณิชไพโรจน์" class="tri-profile-img">
             <div class="tri-profile-name">สายสิญจน์ พณิชไพโรจน์</div>
             <div class="tri-profile-title">พนักงานฝ่ายกราฟฟิกแห่ง 1HD และผู้สร้างเกือบทั้งเว็บไซต์นี้</div>
             <div class="tri-meta">
@@ -5051,7 +5051,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           <div style="position: absolute; top: 16px; right: 20px; font-size: 24px; filter: grayscale(100%); opacity: 0.6;" title="ปฏิเสธการบรรจุ - ผลงานยังไม่เพียงพอ">❌</div>
           
           <div class="tri-profile-card" style="background: rgba(15, 18, 25, 0.9); border: 1px solid rgba(255,255,255,0.05); filter: grayscale(100%);">
-            <img src="rukchanok.png" alt="รักชนก ศรีนอก" class="tri-profile-img" style="filter: brightness(0); opacity: 0.8; border-color: rgba(255,255,255,0.05);">
+            <img src="images/rukchanok.png" alt="รักชนก ศรีนอก" class="tri-profile-img" style="filter: brightness(0); opacity: 0.8; border-color: rgba(255,255,255,0.05);">
             <div class="tri-profile-name" style="color: #4a5568; text-decoration: line-through;">รักชนก ศรีนอก</div>
             <div class="tri-profile-title" style="color: #4a5568; text-decoration: line-through;">ปฏิเสธการบรรจุ (ผลงานยังไม่เพียงพอ)</div>
             <div class="tri-meta" style="border-top: 1px solid rgba(255, 255, 255, 0.05); color: #4a5568; text-decoration: line-through;">
@@ -5230,1753 +5230,7 @@ full_html = f'''<!DOCTYPE html>
 <title>รัฐธรรมนูญแห่งราชอาณาจักรไทย พุทธศักราช ๒๕๒๕</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-<style>
-:root {{
-  --bg-dark: #0a0e1a;
-  --bg-card: rgba(255,255,255,0.04);
-  --bg-card-hover: rgba(255,255,255,0.07);
-  --gold: #d4a843;
-  --gold-light: #f0d68a;
-  --text: #e8e8e8;
-  --text-muted: #8899aa;
-  --accent-blue: #3b82f6;
-  --accent-green: #10b981;
-  --accent-orange: #f59e0b;
-  --accent-purple: #8b5cf6;
-  --accent-red: #ef4444;
-  --accent-gold: #d4a843;
-  --glass: rgba(255,255,255,0.06);
-  --glass-border: rgba(255,255,255,0.1);
-  --sidebar-w: 260px;
-  --header-h: 56px;
-}}
-* {{ margin:0; padding:0; box-sizing:border-box; }}
-body {{
-  font-family: 'Sarabun', sans-serif;
-  background: var(--bg-dark);
-  color: var(--text);
-  line-height: 1.7;
-  overflow-x: hidden;
-}}
-/* ===== SCROLLBAR ===== */
-::-webkit-scrollbar {{ width:8px; }}
-::-webkit-scrollbar-track {{ background: #111827; }}
-::-webkit-scrollbar-thumb {{ background: var(--gold); border-radius:4px; }}
-
-/* ===== HEADER ===== */
-.top-header {{
-  position: fixed; top:0; left:0; right:0; height: var(--header-h);
-  background: rgba(10,14,26,0.92); backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--glass-border);
-  display: flex; align-items: center; padding: 0 24px; z-index: 1000;
-  justify-content: space-between;
-}}
-.header-left {{ display:flex; align-items:center; gap:16px; }}
-.menu-btn {{
-  display:none; background:none; border:none; color:var(--gold); font-size:24px; cursor:pointer;
-}}
-.header-title {{ font-size:18px; font-weight:700; color:var(--gold); }}
-.header-search {{
-  position:relative; width: 280px;
-}}
-.header-search input {{
-  width:100%; padding:8px 16px 8px 40px; border-radius:24px;
-  background: rgba(255,255,255,0.08); border:1px solid var(--glass-border);
-  color:var(--text); font-family:'Sarabun'; font-size:15px; outline:none;
-  transition: all .3s;
-}}
-.header-search input:focus {{
-  border-color: var(--gold); background: rgba(255,255,255,0.12);
-}}
-.header-search::before {{
-  content:'🔍'; position:absolute; left:14px; top:50%; transform:translateY(-50%); font-size:14px;
-}}
-.filter-btns {{
-  display:flex; gap:6px; align-items:center;
-}}
-.filter-btn {{
-  padding:4px 12px; border-radius:16px; font-size:12px; cursor:pointer;
-  border:1px solid var(--glass-border); background:transparent; color:var(--text-muted);
-  font-family:'Sarabun'; transition: all .3s;
-}}
-.filter-btn.active, .filter-btn:hover {{
-  background: var(--gold); color:#000; border-color: var(--gold); font-weight:600;
-}}
-
-/* ===== SIDEBAR ===== */
-.sidebar {{
-  position:fixed; top:var(--header-h); left:0; bottom:0; width:var(--sidebar-w);
-  background: rgba(10,14,26,0.95); backdrop-filter: blur(10px);
-  border-right:1px solid var(--glass-border);
-  overflow-y:auto; z-index:900; padding:16px 0;
-  transition: transform .3s;
-}}
-.sidebar-title {{
-  font-size:14px; font-weight:700; color:var(--gold); text-transform:uppercase;
-  letter-spacing:2px; padding:8px 20px 12px; border-bottom:1px solid var(--glass-border);
-}}
-.nav-chapter {{
-  display:block; padding:10px 20px; font-size:13px; color:var(--text-muted);
-  text-decoration:none; border-left:3px solid transparent; transition: all .2s;
-}}
-.nav-chapter:hover, .nav-chapter.active {{
-  background: rgba(212,168,67,0.1); color:var(--gold); border-left-color:var(--gold);
-}}
-
-/* ===== MAIN ===== */
-.main {{
-  margin-left: var(--sidebar-w); margin-top: var(--header-h); min-height:100vh;
-}}
-
-/* ===== HERO ===== */
-.hero {{
-  position:relative; padding:80px 60px 60px; text-align:center;
-  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
-  border-bottom:2px solid var(--gold);
-  overflow:hidden;
-}}
-.hero::before {{
-  content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%;
-  background: radial-gradient(circle at 30% 40%, rgba(212,168,67,0.08) 0%, transparent 50%),
-              radial-gradient(circle at 70% 60%, rgba(59,130,246,0.06) 0%, transparent 50%);
-  animation: heroGlow 12s ease-in-out infinite alternate;
-}}
-@keyframes heroGlow {{
-  0% {{ transform: rotate(0deg); }}
-  100% {{ transform: rotate(3deg); }}
-}}
-.hero-content {{ position:relative; z-index:1; max-width:900px; margin:0 auto; }}
-.hero-emblem {{ font-size:80px; margin-bottom:16px; }}
-.emblem-colored {{ display: inline-block; }}
-.emblem-bw {{ display: none; }}
-body.theme-bw .emblem-colored {{ display: none; }}
-body.theme-bw .emblem-bw {{ display: inline-block; }}
-.hero h1 {{
-  font-size:36px; font-weight:800; color:var(--gold-light);
-  text-shadow:0 2px 20px rgba(212,168,67,0.3);
-  margin-bottom:12px;
-}}
-.hero .subtitle {{ font-size:18px; color:var(--text-muted); margin-bottom:40px; }}
-
-/* Stats */
-.stats-grid {{
-  display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:40px;
-}}
-.stat-card {{
-  background:var(--glass); border:1px solid var(--glass-border); border-radius:16px;
-  padding:24px 16px; backdrop-filter:blur(10px); transition:transform .3s;
-}}
-.stat-card:hover {{ transform:translateY(-4px); }}
-.stat-num {{ font-size:36px; font-weight:800; color:var(--gold); }}
-.stat-label {{ font-size:13px; color:var(--text-muted); margin-top:4px; }}
-
-/* ===== HISTORY DASHBOARD ===== */
-.dashboard-card {{
-  background: var(--glass);
-  border: 1px solid var(--glass-border);
-  border-radius: 24px;
-  padding: 32px;
-  backdrop-filter: blur(20px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  margin-bottom: 40px;
-}}
-.dashboard-header {{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid var(--glass-border);
-  padding-bottom: 20px;
-  margin-bottom: 24px;
-  flex-wrap: wrap;
-  gap: 16px;
-}}
-.dashboard-title {{
-  font-size: 20px;
-  font-weight: 800;
-  color: var(--gold-light);
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  text-shadow: 0 2px 10px rgba(212, 168, 67, 0.2);
-}}
-.dashboard-tabs {{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 12px;
-  margin-bottom: 32px;
-}}
-@media (max-width: 1024px) {{
-  .dashboard-tabs {{
-    grid-template-columns: repeat(3, 1fr);
-  }}
-}}
-@media (max-width: 600px) {{
-  .dashboard-tabs {{
-    grid-template-columns: repeat(2, 1fr);
-  }}
-}}
-.db-tab-btn {{
-  width: 100%;
-  padding: 8px 12px;
-  border-radius: 6px;
-  border: 1px solid var(--glass-border);
-  background: rgba(255,255,255,0.03);
-  color: var(--text-muted);
-  cursor: pointer;
-  font-family: 'Sarabun', sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  text-align: center;
-  transition: all 0.3s ease;
-  min-height: 38px;
-}}
-.db-tab-btn.active, .db-tab-btn:hover {{
-  background: var(--gold);
-  color: #000;
-  border-color: var(--gold);
-  box-shadow: 0 0 15px rgba(212, 168, 67, 0.35);
-}}
-.db-tab-content {{
-  display: none;
-  animation: dbFadeIn 0.5s ease;
-}}
-.db-tab-content.active {{
-  display: block;
-}}
-@keyframes dbFadeIn {{
-  from {{ opacity: 0; transform: translateY(10px); }}
-  to {{ opacity: 1; transform: translateY(0); }}
-}}
-.hist-story {{
-  margin-bottom: 24px;
-}}
-.hist-story p {{
-  font-size: 15px;
-  color: var(--text);
-  line-height: 1.8;
-  margin-bottom: 16px;
-  text-indent: 2.5em;
-}}
-.hist-story p strong {{
-  color: var(--gold-light);
-}}
-.highlight-card {{
-  background: rgba(212, 168, 67, 0.05);
-  border-left: 4px solid var(--gold);
-  border-radius: 8px;
-  padding: 16px 20px;
-  margin: 20px 0;
-  font-style: italic;
-}}
-.ref-timeline {{
-  position: relative;
-  padding-left: 32px;
-  margin: 24px 0;
-}}
-.ref-timeline::before {{
-  content: '';
-  position: absolute;
-  left: 11px;
-  top: 8px;
-  bottom: 8px;
-  width: 2px;
-  background: var(--glass-border);
-}}
-.ref-timeline-item {{
-  position: relative;
-  margin-bottom: 28px;
-}}
-.ref-timeline-item:last-child {{
-  margin-bottom: 0;
-}}
-.ref-dot {{
-  position: absolute;
-  left: -32px;
-  top: 4px;
-  width: 24px;
-  height: 24px;
-  border-radius: 4px;
-  background: #111827;
-  border: 2px solid var(--glass-border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 11px;
-  z-index: 2;
-}}
-.ref-timeline-item.success .ref-dot {{
-  border-color: var(--accent-green);
-  color: var(--accent-green);
-  box-shadow: 0 0 10px rgba(16, 185, 129, 0.3);
-}}
-.ref-timeline-item.failed .ref-dot {{
-  border-color: var(--accent-red);
-  color: var(--accent-red);
-  box-shadow: 0 0 10px rgba(239, 68, 68, 0.3);
-}}
-.ref-timeline-item.rerun .ref-dot {{
-  border-color: var(--accent-blue);
-  color: var(--accent-blue);
-  box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
-}}
-.ref-info {{
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid var(--glass-border);
-  border-radius: 12px;
-  padding: 16px;
-}}
-.ref-title-row {{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 8px;
-  flex-wrap: wrap;
-  gap: 8px;
-}}
-.ref-round-name {{
-  font-weight: 700;
-  color: var(--text);
-  font-size: 15px;
-}}
-.ref-status-badge {{
-  padding: 2px 10px;
-  border-radius: 10px;
-  font-size: 11px;
-  font-weight: 700;
-}}
-.ref-status-badge.pass {{ background: rgba(16, 185, 129, 0.15); color: #34d399; }}
-.ref-status-badge.fail {{ background: rgba(239, 68, 68, 0.15); color: #f87171; }}
-.ref-status-badge.info {{ background: rgba(59, 130, 246, 0.15); color: #60a5fa; }}
-.ref-desc {{
-  font-size: 14px;
-  color: var(--text-muted);
-}}
-.ref-desc strong {{
-  color: var(--text);
-}}
-.table-container {{
-  overflow-x: auto;
-  border-radius: 12px;
-  border: 1px solid var(--glass-border);
-  background: rgba(0,0,0,0.2);
-  margin-top: 16px;
-}}
-.styled-table {{
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 14px;
-  text-align: left;
-}}
-.styled-table th {{
-  background: rgba(212, 168, 67, 0.08);
-  color: var(--gold-light);
-  font-weight: 700;
-  padding: 12px 16px;
-  border-bottom: 1px solid var(--glass-border);
-}}
-.styled-table td {{
-  padding: 12px 16px;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
-  color: var(--text);
-  vertical-align: middle;
-}}
-.styled-table tr:last-child td {{
-  border-bottom: none;
-}}
-.styled-table tr:hover {{
-  background: rgba(255,255,255,0.02);
-}}
-.era-badge {{
-  display: inline-block;
-  padding: 2px 8px;
-  border-radius: 8px;
-  font-size: 11px;
-  font-weight: 600;
-}}
-.era-1 {{ background: rgba(59, 130, 246, 0.15); color: #60a5fa; }}
-.era-2 {{ background: rgba(139, 92, 246, 0.15); color: #a78bfa; }}
-.era-3 {{ background: rgba(212, 168, 67, 0.15); color: var(--gold-light); }}
-.pm-filters {{
-  display: flex;
-  gap: 8px;
-  margin-bottom: 16px;
-  flex-wrap: wrap;
-}}
-
-/* Accordion Styling */
-.accordion-item {{
-  border: 1px solid var(--glass-border);
-  background: rgba(255, 255, 255, 0.02);
-  border-radius: 12px;
-  margin-bottom: 12px;
-  overflow: hidden;
-}}
-.accordion-header {{
-  background: rgba(212, 168, 67, 0.04);
-  padding: 16px 20px;
-  font-weight: 700;
-  color: var(--gold-light);
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: background 0.3s;
-  user-select: none;
-}}
-.accordion-header:hover {{
-  background: rgba(212, 168, 67, 0.08);
-}}
-.accordion-header::after {{
-  content: '▼';
-  font-size: 12px;
-  color: var(--gold);
-  transition: transform 0.3s;
-}}
-.accordion-item.active .accordion-header::after {{
-  transform: rotate(180deg);
-}}
-.accordion-content {{
-  display: none;
-  padding: 20px;
-  border-top: 1px solid var(--glass-border);
-  background: rgba(0,0,0,0.1);
-}}
-.accordion-item.active .accordion-content {{
-  display: block;
-}}
-.early-art-card {{
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
-}}
-.early-art-card:last-child {{
-  border-bottom: none;
-}}
-.early-art-title {{
-  font-weight: 700;
-  color: var(--gold);
-  margin-bottom: 4px;
-}}
-.early-art-text {{
-  font-size: 14px;
-  color: var(--text);
-}}
-
-/* ===== PREAMBLE ===== */
-.preamble-section {{
-  max-width:900px; margin:40px auto; padding:0 40px;
-}}
-.preamble-section h2 {{
-  text-align:center; font-size:24px; color:var(--gold); margin-bottom:20px;
-}}
-.preamble-p {{
-  text-indent:3em; font-size:16px; color:var(--text); margin-bottom:12px;
-}}
-
-/* ===== CHAPTERS ===== */
-.chapter-section {{
-  max-width:900px; margin:0 auto; padding:20px 40px 40px;
-}}
-.chapter-heading {{
-  position:sticky; top:var(--header-h); z-index:50;
-  background: linear-gradient(135deg, rgba(30,27,75,0.95), rgba(15,23,42,0.95));
-  backdrop-filter:blur(10px);
-  border:1px solid var(--glass-border); border-radius:16px;
-  padding:24px; margin-bottom:24px; text-align:center;
-}}
-.chapter-heading h2 {{
-  font-size:22px; font-weight:700; color:var(--gold-light);
-}}
-
-/* Parts */
-.part-title {{
-  text-align:center; font-size:17px; font-weight:700; color:var(--accent-blue);
-  padding:16px; margin:20px 0 12px;
-  border-top:1px solid var(--glass-border); border-bottom:1px solid var(--glass-border);
-}}
-
-/* Articles */
-.article-card {{
-  background:var(--bg-card); border:1px solid var(--glass-border);
-  border-radius:12px; padding:20px 24px; margin-bottom:12px;
-  transition: all .3s; border-left:3px solid transparent;
-}}
-.article-card:hover {{
-  background:var(--bg-card-hover); transform:translateX(4px);
-}}
-.article-card[data-origin="original"] {{ border-left-color: var(--accent-blue); }}
-.article-card[data-origin="modified"] {{ border-left-color: var(--accent-green); }}
-.article-card[data-origin="ch13_16"] {{ border-left-color: var(--accent-green); }}
-.article-card[data-origin="ch17_26"] {{ border-left-color: var(--accent-orange); }}
-.article-card[data-origin="ch27_36"] {{ border-left-color: var(--accent-purple); }}
-.article-card[data-origin="special"] {{ border-left-color: var(--accent-gold); }}
-.article-card[data-origin="transitional"] {{ border-left-color: var(--accent-blue); }}
-
-.article-header {{ margin-bottom:8px; }}
-.badge {{
-  display:inline-block; padding:3px 10px; border-radius:12px;
-  font-size:11px; font-weight:600; letter-spacing:0.5px;
-}}
-.badge-original {{ background:rgba(59,130,246,0.15); color:#60a5fa; }}
-.badge-modified {{ background:rgba(16,185,129,0.15); color:#34d399; }}
-.badge-assembly {{ background:rgba(16,185,129,0.15); color:#34d399; }}
-.badge-ref3 {{ background:rgba(245,158,11,0.15); color:#fbbf24; }}
-.badge-ref45 {{ background:rgba(139,92,246,0.15); color:#a78bfa; }}
-.badge-special {{ background:rgba(212,168,67,0.2); color:var(--gold-light); }}
-
-.article-text {{ font-size:16px; line-height:1.8; }}
-.art-num {{ font-weight:800; color:var(--gold); font-size:17px; }}
-.sub-para {{ font-size:16px; text-indent:2em; margin-top:4px; line-height:1.8; }}
-.list-item {{ margin-left:2.5em; font-size:15px; margin-top:2px; }}
-.list-num {{ font-weight:600; color:var(--accent-blue); margin-right:6px; }}
-
-.normal-text {{ font-size:15px; color:var(--text-muted); padding:8px 0; }}
-.signature {{
-  text-align:right; font-size:16px; padding:30px 40px; color:var(--text-muted);
-}}
-.signature strong {{ color:var(--gold); }}
-
-/* Hidden articles (filtered out) */
-.article-card.hidden {{ display:none; }}
-.chapter-section.hidden {{ display:none; }}
-
-/* ===== BACK TO TOP ===== */
-.back-top {{
-  position:fixed; bottom:24px; right:24px; width:48px; height:48px;
-  background:var(--gold); color:#000; border:none; border-radius:8px;
-  font-size:20px; cursor:pointer; z-index:999; opacity:0; transition: all .3s;
-  box-shadow:0 4px 20px rgba(212,168,67,0.4);
-}}
-.back-top.visible {{ opacity:1; }}
-.back-top:hover {{ transform:scale(1.1); }}
-
-/* ===== LEGEND ===== */
-.legend {{
-  display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin:30px auto;
-  max-width:900px; padding:0 40px;
-}}
-.legend-item {{
-  display:flex; align-items:center; gap:6px; font-size:13px; color:var(--text-muted);
-}}
-.legend-square {{
-  width:12px; height:12px; border-radius:2px;
-}}
-
-/* ===== TOOLTIP & GLOSSARY SYSTEM ===== */
-.tooltip {{
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dashed var(--gold);
-  cursor: help;
-  color: var(--gold-light) !important;
-  font-weight: 600;
-  transition: color 0.3s;
-}}
-.tooltip:hover {{
-  color: var(--gold) !important;
-}}
-.tooltip .tooltiptext {{
-  visibility: hidden;
-  width: 240px;
-  background-color: #1e293b;
-  color: #f1f5f9;
-  text-align: center;
-  border-radius: 8px;
-  padding: 10px 14px;
-  position: absolute;
-  z-index: 1100;
-  bottom: 125%;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.3s, transform 0.3s;
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 1.5;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-  border: 1px solid var(--glass-border);
-  font-family: 'Sarabun', sans-serif;
-  pointer-events: none;
-}}
-.tooltip:hover .tooltiptext {{
-  visibility: visible;
-  opacity: 1;
-  transform: translateX(-50%) translateY(-5px);
-}}
-body.theme-light .tooltip .tooltiptext,
-html.theme-bw .tooltip .tooltiptext {{
-  background-color: #ffffff;
-  color: #000000;
-  border: 1px solid #000000;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}}
-
-/* ===== MICRO-INTERACTIONS & CARD ANIMATIONS ===== */
-.article-card {{
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s;
-}}
-.article-card:hover {{
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-  border-color: var(--gold);
-}}
-
-/* ===== SHINE GLOSS EFFECT (Aero Glass Theme) ===== */
-body.theme-aero .article-card {{
-  position: relative;
-  overflow: hidden;
-}}
-body.theme-aero .article-card::after {{
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -60%;
-  width: 20%;
-  height: 200%;
-  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.3), transparent);
-  transform: rotate(30deg);
-  transition: none;
-  pointer-events: none;
-}}
-body.theme-aero .article-card:hover::after {{
-  left: 140%;
-  transition: left 0.8s ease-in-out;
-}}
-
-/* ===== NEON GLOWS & SCANLINES (Night City Theme) ===== */
-body.theme-nightcity {{
-  background-image: 
-    linear-gradient(0deg, rgba(255, 255, 255, 0.007) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.007) 1px, transparent 1px);
-  background-size: 20px 20px;
-}}
-body.theme-nightcity .top-header,
-body.theme-nightcity .sidebar {{
-  box-shadow: 0 0 15px rgba(0, 229, 255, 0.15) !important;
-}}
-body.theme-nightcity .article-card:hover {{
-  border-color: #00e5ff !important;
-  box-shadow: 0 0 15px rgba(0, 229, 255, 0.3) !important;
-}}
-
-/* ===== REFERENDUM SVG CHARTS ===== */
-.chart-container {{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 20px;
-  padding: 16px;
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid var(--glass-border);
-  border-radius: 12px;
-}}
-.square-chart-wrapper {{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-}}
-.square-chart {{
-  width: 90px;
-  height: 90px;
-}}
-.square-chart-bg {{
-  fill: none;
-  stroke: var(--glass-border);
-  stroke-width: 3.8;
-}}
-.square-chart-fill {{
-  fill: none;
-  stroke: var(--accent-green);
-  stroke-width: 3.8;
-  transition: stroke-dasharray 1s ease-in-out;
-}}
-.square-chart-text {{
-  fill: var(--text);
-  font-family: 'Sarabun', sans-serif;
-  font-size: 10px;
-  font-weight: bold;
-  text-anchor: middle;
-}}
-.bar-chart-wrapper {{
-  flex-grow: 1;
-  max-width: 320px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}}
-.bar-chart-title {{
-  font-size: 13px;
-  color: var(--text-muted);
-  font-weight: 600;
-}}
-.bar-row {{
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}}
-.bar-label {{
-  font-size: 12px;
-  width: 60px;
-  color: var(--text-muted);
-}}
-.bar-track {{
-  flex-grow: 1;
-  height: 12px;
-  background: var(--glass-border);
-  border-radius: 6px;
-  overflow: hidden;
-  position: relative;
-}}
-.bar-fill {{
-  height: 100%;
-  border-radius: 6px;
-  transition: width 1s ease-in-out;
-}}
-.bar-val {{
-  font-size: 12px;
-  width: 40px;
-  text-align: right;
-  font-weight: 700;
-}}
-
-/* ===== CITIZEN RIGHTS SUMMARY GRID ===== */
-.summary-grid {{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  margin-top: 10px;
-}}
-.summary-card {{
-  background: var(--glass);
-  border: 1px solid var(--glass-border);
-  border-radius: 16px;
-  padding: 24px;
-  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
-}}
-.summary-card:hover {{
-  transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-  border-color: var(--gold);
-}}
-.summary-card-icon {{
-  font-size: 32px;
-  margin-bottom: 16px;
-}}
-.summary-card-title {{
-  font-size: 17px;
-  font-weight: 700;
-  color: var(--gold-light);
-  margin-bottom: 12px;
-}}
-.summary-card-list {{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}}
-.summary-card-list li {{
-  font-size: 14px;
-  color: var(--text);
-  margin-bottom: 8px;
-  padding-left: 18px;
-  position: relative;
-  line-height: 1.5;
-}}
-.summary-card-list li::before {{
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: var(--accent-green);
-  font-weight: bold;
-}}
-html.theme-bw .summary-card-list li::before {{
-  color: #000000;
-}}
-
-/* ===== DOWNLOAD DROPDOWN ===== */
-.download-dropdown {{
-  position: relative;
-  display: inline-block;
-}}
-.download-btn {{
-  background: rgba(255,255,255,0.08);
-  border: 1px solid var(--glass-border);
-  color: var(--text);
-  padding: 6px 12px;
-  border-radius: 16px;
-  font-family: 'Sarabun';
-  font-size: 13px;
-  outline: none;
-  cursor: pointer;
-  transition: all 0.3s;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}}
-.download-btn:hover {{
-  background: rgba(255,255,255,0.15);
-  border-color: var(--gold);
-}}
-.download-content {{
-  display: none;
-  position: absolute;
-  right: 0;
-  background-color: #1e293b;
-  min-width: 240px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
-  z-index: 1050;
-  border-radius: 12px;
-  border: 1px solid var(--glass-border);
-  padding: 8px 0;
-  margin-top: 4px;
-}}
-.download-content::before {{
-  content: '';
-  position: absolute;
-  top: -8px;
-  left: 0;
-  right: 0;
-  height: 8px;
-  background: transparent;
-}}
-body.theme-light .download-content,
-html.theme-bw .download-content {{
-  background-color: #ffffff;
-  border: 1px solid #000000;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}}
-.download-content a {{
-  color: var(--text);
-  padding: 8px 16px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 13px;
-  font-family: 'Sarabun';
-}}
-.download-content a:hover {{
-  background-color: rgba(255,255,255,0.08);
-  color: var(--gold-light);
-}}
-body.theme-light .download-content a:hover,
-html.theme-bw .download-content a:hover {{
-  background-color: #f3f4f6;
-  color: #000000;
-}}
-.download-dropdown:hover .download-content {{
-  display: block;
-}}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 1024px) {{
-  .sidebar {{ transform:translateX(-100%); }}
-  .sidebar.open {{ transform:translateX(0); }}
-  .main {{ margin-left:0; }}
-  .menu-btn {{ display:block; }}
-  .stats-grid {{ grid-template-columns:repeat(2,1fr); }}
-  .hero {{ padding:40px 20px; }}
-  .chapter-section, .preamble-section {{ padding:20px; }}
-  .header-search {{ width:200px; }}
-  .filter-btns {{ display:none; }}
-}}
-@media (max-width: 600px) {{
-  .stats-grid {{ grid-template-columns:1fr 1fr; }}
-  .hero h1 {{ font-size:24px; }}
-  .timeline {{ flex-direction:column; }}
-}}
-
-/* Smooth scroll */
-html {{ scroll-behavior:smooth; }}
-
-/* ===== THEME STYLING ===== */
-/* --- Light Theme --- */
-body.theme-light {{
-  --bg-dark: #f1f5f9;
-  --bg-card: rgba(255, 255, 255, 0.7);
-  --bg-card-hover: rgba(255, 255, 255, 0.95);
-  --gold: #9a6a15;
-  --gold-light: #784a07;
-  --text: #0f172a;
-  --text-muted: #475569;
-  --glass: rgba(255, 255, 255, 0.8);
-  --glass-border: rgba(0, 0, 0, 0.08);
-  background: #f1f5f9;
-  color: #0f172a;
-}}
-body.theme-light .top-header {{
-  background: rgba(241, 245, 249, 0.9);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-}}
-body.theme-light .sidebar {{
-  background: rgba(241, 245, 249, 0.95);
-  border-right: 1px solid rgba(0, 0, 0, 0.08);
-}}
-body.theme-light .chapter-heading {{
-  background: linear-gradient(135deg, #e2e8f0, #cbd5e1);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-}}
-body.theme-light .hero {{
-  background: linear-gradient(135deg, #f1f5f9 0%, #cbd5e1 50%, #f1f5f9 100%);
-  border-bottom: 2px solid var(--gold);
-}}
-body.theme-light .hero h1 {{
-  color: var(--gold-light);
-  text-shadow: none;
-}}
-body.theme-light .article-card {{
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-}}
-body.theme-light .styled-table th {{
-  background: rgba(154, 106, 21, 0.1);
-}}
-body.theme-light .ref-info {{
-  background: rgba(0, 0, 0, 0.01);
-}}
-body.theme-light .accordion-item {{
-  background: rgba(255, 255, 255, 0.4);
-}}
-body.theme-light .accordion-header {{
-  background: rgba(154, 106, 21, 0.05);
-}}
-body.theme-light #themeSelect {{
-  background: #ffffff !important;
-  color: #0f172a !important;
-  border-color: rgba(0, 0, 0, 0.15) !important;
-}}
-body.theme-light .highlight-card {{
-  background: rgba(154, 106, 21, 0.05) !important;
-  border-left-color: #9a6a15 !important;
-}}
-
-/* --- Black & White Theme --- */
-body.theme-bw {{
-  --bg-dark: #ffffff;
-  --bg-card: #ffffff;
-  --bg-card-hover: #f3f4f6;
-  --gold: #000000;
-  --gold-light: #111111;
-  --text: #000000;
-  --text-muted: #4b5563;
-  --accent-blue: #000000;
-  --accent-green: #000000;
-  --accent-orange: #000000;
-  --accent-purple: #000000;
-  --accent-red: #000000;
-  --accent-gold: #000000;
-  --glass: #ffffff;
-  --glass-border: #000000;
-  background: #ffffff;
-  color: #000000;
-}}
-html.theme-bw {{
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-}}
-body.theme-bw .top-header {{
-  background: #ffffff;
-  border-bottom: 2px solid #000000;
-}}
-body.theme-bw .sidebar {{
-  background: #ffffff;
-  border-right: 2px solid #000000;
-}}
-body.theme-bw .chapter-heading {{
-  background: #ffffff;
-  border: 2px solid #000000;
-  border-radius: 0;
-}}
-body.theme-bw .hero {{
-  background: #ffffff;
-  border-bottom: 3px solid #000000;
-  border-radius: 0;
-}}
-body.theme-bw .hero h1 {{
-  color: #000000;
-  text-shadow: none;
-}}
-body.theme-bw .article-card {{
-  border-left: 5px solid #000000 !important;
-  border-radius: 0;
-  border: 1px solid #000000;
-}}
-body.theme-bw .badge {{
-  background: #000000 !important;
-  color: #ffffff !important;
-  border-radius: 0;
-}}
-body.theme-bw .era-badge {{
-  background: #000000 !important;
-  color: #ffffff !important;
-  border-radius: 0;
-}}
-body.theme-bw .ref-timeline::before {{
-  background: #000000;
-}}
-body.theme-bw .ref-dot {{
-  background: #ffffff;
-  border: 2px solid #000000 !important;
-  color: #000000 !important;
-  box-shadow: none !important;
-}}
-body.theme-bw .ref-info {{
-  background: #ffffff;
-  border: 1px solid #000000;
-  border-radius: 0;
-}}
-body.theme-bw .ref-status-badge {{
-  background: #000000 !important;
-  color: #ffffff !important;
-  border-radius: 0;
-}}
-body.theme-bw .styled-table {{
-  border: 1px solid #000000;
-}}
-body.theme-bw .styled-table th {{
-  background: #000000;
-  color: #ffffff;
-  border-bottom: 2px solid #000000;
-}}
-body.theme-bw .styled-table td {{
-  border-bottom: 1px solid #000000;
-  color: #000000;
-}}
-body.theme-bw .accordion-item {{
-  border: 1px solid #000000;
-  border-radius: 0;
-  background: #ffffff;
-}}
-body.theme-bw .accordion-header {{
-  background: #ffffff;
-  color: #000000;
-  border-bottom: 1px solid #000000;
-}}
-body.theme-bw .dashboard-card {{
-  background: #ffffff;
-  border: 2px solid #000000;
-  border-radius: 0;
-}}
-body.theme-bw .db-tab-btn {{
-  background: #ffffff;
-  border: 1px solid #000000;
-  border-radius: 0;
-  color: #000000;
-}}
-body.theme-bw .db-tab-btn.active, body.theme-bw .db-tab-btn:hover {{
-  background: #000000;
-  color: #ffffff;
-  box-shadow: none;
-}}
-body.theme-bw #themeSelect {{
-  background: #ffffff !important;
-  color: #000000 !important;
-  border: 2px solid #000000 !important;
-  border-radius: 0 !important;
-}}
-body.theme-bw .filter-btn.active, body.theme-bw .filter-btn:hover {{
-  background: #555555 !important;
-  color: #ffffff !important;
-  border-color: #555555 !important;
-}}
-body.theme-bw .nav-chapter.active, body.theme-bw .nav-chapter:hover {{
-  background: #e5e7eb !important;
-  color: #000000 !important;
-  border-left-color: #000000 !important;
-}}
-body.theme-bw .highlight-card {{
-  background: #f3f4f6 !important;
-  border-left-color: #000000 !important;
-  color: #000000 !important;
-}}
-
-/* --- Night City Theme (Old Aero) --- */
-body.theme-nightcity {{
-  --bg-dark: transparent;
-  --bg-card: rgba(255, 255, 255, 0.06);
-  --bg-card-hover: rgba(255, 255, 255, 0.12);
-  --gold: #00e5ff;
-  --gold-light: #80f7ff;
-  --text: #ffffff;
-  --text-muted: #b0c4de;
-  --glass: rgba(255, 255, 255, 0.08);
-  --glass-border: rgba(255, 255, 255, 0.25);
-  background: linear-gradient(135deg, #090b14, #120e29, #250930, #120e29, #090b14);
-  background-size: 400% 400%;
-  animation: nightcityBg 18s ease infinite;
-  color: #ffffff;
-}}
-@keyframes nightcityBg {{
-  0% {{ background-position: 0% 50%; }}
-  50% {{ background-position: 100% 50%; }}
-  100% {{ background-position: 0% 50%; }}
-}}
-body.theme-nightcity .top-header,
-body.theme-nightcity .sidebar,
-body.theme-nightcity .article-card,
-body.theme-nightcity .chapter-heading,
-body.theme-nightcity .dashboard-card,
-body.theme-nightcity .accordion-item,
-body.theme-nightcity .ref-info {{
-  backdrop-filter: blur(20px) saturate(180%) !important;
-  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
-  background: rgba(255, 255, 255, 0.07) !important;
-  border: 1px solid rgba(255, 255, 255, 0.2) !important;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3) !important;
-}}
-body.theme-nightcity .hero {{
-  background: linear-gradient(135deg, rgba(0,229,255,0.05) 0%, rgba(128,247,255,0.05) 100%);
-  border-bottom: 2px solid #00e5ff;
-}}
-body.theme-nightcity .hero h1 {{
-  color: var(--gold-light);
-  text-shadow: 0 0 15px rgba(0,229,255,0.6);
-}}
-body.theme-nightcity .art-num {{
-  color: #00e5ff;
-}}
-body.theme-nightcity .accordion-header {{
-  background: rgba(0, 229, 255, 0.05);
-  color: #80f7ff;
-}}
-body.theme-nightcity #themeSelect {{
-  background: rgba(0, 229, 255, 0.1) !important;
-  color: #ffffff !important;
-  border-color: rgba(0, 229, 255, 0.3) !important;
-}}
-
-/* --- True Aero Glass Theme --- */
-body.theme-aero {{
-  --bg-dark: transparent;
-  --bg-card: rgba(255, 255, 255, 0.35);
-  --bg-card-hover: rgba(255, 255, 255, 0.5);
-  --gold: #0066cc;
-  --gold-light: #0f4c81;
-  --text: #111e30;
-  --text-muted: #475569;
-  --glass: rgba(255, 255, 255, 0.4);
-  --glass-border: rgba(255, 255, 255, 0.55);
-  background: linear-gradient(135deg, #74b9ff, #a29bfe, #81ecec, #74b9ff);
-  background-size: 400% 400%;
-  animation: aeroBg 15s ease infinite;
-  color: #111e30;
-}}
-@keyframes aeroBg {{
-  0% {{ background-position: 0% 50%; }}
-  50% {{ background-position: 100% 50%; }}
-  100% {{ background-position: 0% 50%; }}
-}}
-body.theme-aero .top-header,
-body.theme-aero .sidebar,
-body.theme-aero .article-card,
-body.theme-aero .chapter-heading,
-body.theme-aero .dashboard-card,
-body.theme-aero .accordion-item,
-body.theme-aero .ref-info {{
-  backdrop-filter: blur(25px) saturate(145%) !important;
-  -webkit-backdrop-filter: blur(25px) saturate(145%) !important;
-  background: rgba(255, 255, 255, 0.35) !important;
-  border: 1px solid rgba(255, 255, 255, 0.45) !important;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15), inset 0 1px 1px rgba(255, 255, 255, 0.5) !important;
-  color: #111e30 !important;
-}}
-body.theme-aero .hero {{
-  background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.4) 100%);
-  border-bottom: 2px solid #0066cc;
-}}
-body.theme-aero .hero h1 {{
-  color: #0f4c81;
-  text-shadow: 0 0 10px rgba(255,255,255,0.8);
-}}
-body.theme-aero .art-num {{
-  color: #0066cc;
-}}
-body.theme-aero .accordion-header {{
-  background: rgba(0, 102, 204, 0.08);
-  color: #0f4c81;
-}}
-body.theme-aero .chapter-heading h2 {{
-  color: #0f4c81 !important;
-}}
-body.theme-aero .article-text, 
-body.theme-aero .sub-para, 
-body.theme-aero .list-item, 
-body.theme-aero .normal-text {{
-  color: #1e293b !important;
-  text-shadow: 0 0 3px rgba(255,255,255,0.9);
-}}
-body.theme-aero .text-muted {{
-  color: #475569 !important;
-}}
-body.theme-aero .badge-original, 
-body.theme-aero .badge-modified, 
-body.theme-aero .badge-assembly, 
-body.theme-aero .badge-ref3, 
-body.theme-aero .badge-ref45, 
-body.theme-aero .badge-special {{
-  color: #1e293b !important;
-  font-weight: 700 !important;
-  background: rgba(255,255,255,0.6) !important;
-  border: 1px solid rgba(0,0,0,0.15) !important;
-}}
-body.theme-aero .styled-table th {{
-  background: rgba(0, 102, 204, 0.15) !important;
-  color: #0f4c81 !important;
-  font-weight: 700 !important;
-}}
-body.theme-aero .styled-table td {{
-  color: #1e293b !important;
-  border-bottom: 1px solid rgba(0,0,0,0.08) !important;
-}}
-body.theme-aero .db-tab-btn {{
-  background: rgba(255, 255, 255, 0.4) !important;
-  color: #1e293b !important;
-  border-color: rgba(255, 255, 255, 0.6) !important;
-}}
-body.theme-aero .db-tab-btn.active, 
-body.theme-aero .db-tab-btn:hover {{
-  background: #0066cc !important;
-  color: #ffffff !important;
-  border-color: #0066cc !important;
-  box-shadow: 0 0 10px rgba(0, 102, 204, 0.4) !important;
-}}
-body.theme-aero #themeSelect {{
-  background: rgba(255, 255, 255, 0.6) !important;
-  color: #1e293b !important;
-  border-color: rgba(255, 255, 255, 0.8) !important;
-}}
-body.theme-aero .highlight-card {{
-  background: rgba(255, 255, 255, 0.2) !important;
-  border-left-color: #0066cc !important;
-  color: #111e30 !important;
-  text-shadow: 0 0 3px rgba(255,255,255,0.9) !important;
-}}
-
-/* ===== MOURNING STYLING (B&W Theme) ===== */
-.mourning-container {{
-  display: none;
-  max-width: 900px;
-  margin: 0 auto 30px;
-  text-align: center;
-  border-bottom: 2px solid #000000;
-  padding-bottom: 30px;
-}}
-.mourning-images {{
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 24px;
-  flex-wrap: wrap;
-}}
-.mourning-img {{
-  height: 280px;
-  max-width: 100%;
-  object-fit: cover;
-  border: 3px solid #000000;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}}
-.mourning-text {{
-  font-size: 15px;
-  line-height: 1.9;
-  color: #000000;
-  text-align: justify;
-  text-justify: inter-word;
-  max-width: 800px;
-  margin: 0 auto;
-  text-indent: 2.5em;
-}}
-body.theme-bw .mourning-container {{
-  display: block;
-}}
-
-/* ===== JUMP-TO-ARTICLE HIGHLIGHT & SEARCH ===== */
-@keyframes highlightPulse {{
-  0% {{
-    border-color: var(--gold);
-    box-shadow: 0 0 0 0 rgba(212, 168, 67, 0.4);
-    background: rgba(212, 168, 67, 0.15);
-  }}
-  50% {{
-    border-color: var(--gold-light);
-    box-shadow: 0 0 15px 5px rgba(212, 168, 67, 0.6);
-    background: rgba(212, 168, 67, 0.25);
-  }}
-  100% {{
-    border-color: var(--glass-border);
-    box-shadow: none;
-    background: var(--bg-card);
-  }}
-}}
-
-.article-card.highlight-pulse {{
-  animation: highlightPulse 2s ease-out;
-}}
-
-.sidebar-search {{
-  padding: 10px 20px;
-  border-bottom: 1px solid var(--glass-border);
-}}
-.sidebar-search input {{
-  width: 100%;
-  padding: 8px 12px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid var(--glass-border);
-  color: var(--text);
-  font-family: 'Sarabun', sans-serif;
-  font-size: 13px;
-  outline: none;
-  transition: all 0.3s;
-}}
-.sidebar-search input:focus {{
-  border-color: var(--gold);
-  background: rgba(255, 255, 255, 0.12);
-  box-shadow: 0 0 8px rgba(212, 168, 67, 0.2);
-}}
-
-/* ===== CHAPTER STATS BADGES ===== */
-.chapter-stats {{
-  display: flex;
-  gap: 8px;
-  margin-top: 8px;
-  flex-wrap: wrap;
-}}
-.badge-stat-total {{
-  background: rgba(255, 255, 255, 0.08) !important;
-  color: var(--text-muted) !important;
-  border: 1px solid var(--glass-border) !important;
-}}
-.badge-stat-modified {{
-  background: rgba(239, 68, 68, 0.15) !important;
-  color: var(--accent-red) !important;
-  border: 1px solid rgba(239, 68, 68, 0.3) !important;
-  font-weight: 600;
-}}
-.badge-stat-original {{
-  background: rgba(16, 185, 129, 0.1) !important;
-  color: var(--accent-green) !important;
-  border: 1px solid rgba(16, 185, 129, 0.2) !important;
-}}
-
-/* ===== COMPARE MODE ===== */
-.compare-btn {{
-  background: rgba(212, 168, 67, 0.1);
-  border: 1px solid var(--gold);
-  color: var(--gold-light);
-  padding: 4px 10px;
-  border-radius: 12px;
-  font-family: 'Sarabun';
-  font-size: 12px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s;
-}}
-.compare-btn:hover {{
-  background: var(--gold);
-  color: #000;
-}}
-.compare-container {{
-  display: flex;
-  gap: 20px;
-  margin-top: 16px;
-  padding-top: 16px;
-  border-top: 1px dashed var(--glass-border);
-}}
-.compare-pane {{
-  flex: 1;
-  background: rgba(0, 0, 0, 0.2);
-  border: 1px solid var(--glass-border);
-  border-radius: 8px;
-  padding: 16px;
-}}
-.compare-pane h4 {{
-  font-size: 13px;
-  margin-bottom: 12px;
-  color: var(--gold-light);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  padding-bottom: 6px;
-}}
-.compare-original .compare-text {{
-  color: var(--text-muted);
-  line-height: 1.6;
-}}
-.compare-original del {{
-  color: var(--accent-red);
-  background: rgba(239, 68, 68, 0.15);
-  text-decoration: line-through;
-  padding: 2px 4px;
-  border-radius: 4px;
-}}
-.compare-modified .compare-text {{
-  line-height: 1.6;
-}}
-.compare-modified ins {{
-  color: var(--accent-green);
-  background: rgba(16, 185, 129, 0.2);
-  text-decoration: none;
-  padding: 2px 4px;
-  border-radius: 4px;
-  font-weight: 600;
-}}
-@media (max-width: 768px) {{
-  .compare-container {{
-    flex-direction: column;
-  }}
-}}
-
-/* ===== INTERACTIVE ORG CHART ===== */
-.org-chart-section {{
-  max-width: 1100px;
-  margin: 40px auto;
-  padding: 0 20px;
-  text-align: center;
-}}
-.org-chart-title {{
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--gold-light);
-  margin-bottom: 24px;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-}}
-.org-chart-container {{
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  margin-bottom: 24px;
-}}
-.org-chart-top {{
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  position: relative;
-}}
-.org-top-card {{
-  width: 280px;
-  background: var(--glass);
-  border: 1px solid var(--glass-border);
-  padding: 16px 20px;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  backdrop-filter: blur(10px);
-  position: relative;
-}}
-.org-top-card:hover, .org-top-card.active {{
-  transform: translateY(-4px);
-  box-shadow: 0 0 20px rgba(212, 168, 67, 0.3);
-  background: rgba(212, 168, 67, 0.08);
-  border-color: var(--gold);
-}}
-.org-chart-icon {{
-  font-size: 32px;
-  margin-bottom: 8px;
-}}
-.org-chart-main-grid {{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 16px;
-}}
-.org-pillar {{
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  background: rgba(255, 255, 255, 0.01);
-  border: 1px solid var(--glass-border);
-  border-radius: 16px;
-  padding: 14px;
-  transition: border-color 0.3s;
-}}
-.org-pillar-header {{
-  font-size: 13px;
-  font-weight: 700;
-  text-align: center;
-  padding: 6px;
-  border-radius: 8px;
-  margin-bottom: 4px;
-  letter-spacing: 0.5px;
-}}
-/* Pillar Color Themes */
-.org-pillar-legislative {{ border-top: 4px solid var(--accent-blue); }}
-.org-pillar-legislative .org-pillar-header {{ background: rgba(59, 130, 246, 0.1); color: #60a5fa; }}
-.org-node-people:hover, .org-node-people.active {{ border-color: var(--gold); box-shadow: 0 0 15px rgba(212, 168, 67, 0.2); }}
-
-.org-pillar-executive {{ border-top: 4px solid var(--accent-green); }}
-.org-pillar-executive .org-pillar-header {{ background: rgba(16, 185, 129, 0.1); color: #34d399; }}
-
-.org-pillar-judicial {{ border-top: 4px solid var(--accent-orange); }}
-.org-pillar-judicial .org-pillar-header {{ background: rgba(245, 158, 11, 0.1); color: #fbbf24; }}
-
-.org-pillar-peoples {{ border-top: 4px solid var(--accent-gold); }}
-.org-pillar-peoples .org-pillar-header {{ background: rgba(212, 168, 67, 0.15); color: var(--gold-light); }}
-
-.org-pillar-independent {{ border-top: 4px solid var(--accent-purple); }}
-.org-pillar-independent .org-pillar-header {{ background: rgba(139, 92, 246, 0.1); color: #a78bfa; }}
-
-/* Node styling */
-.org-node {{
-  background: var(--glass);
-  border: 1px solid var(--glass-border);
-  border-radius: 10px;
-  padding: 12px 10px;
-  cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  text-align: center;
-}}
-.org-node:hover, .org-node.active {{
-  transform: translateY(-3px);
-  background: rgba(255, 255, 255, 0.05);
-}}
-.org-node-legislative:hover, .org-node-legislative.active {{ border-color: var(--accent-blue); box-shadow: 0 0 15px rgba(59, 130, 246, 0.35); }}
-.org-node-executive:hover, .org-node-executive.active {{ border-color: var(--accent-green); box-shadow: 0 0 15px rgba(16, 185, 129, 0.35); }}
-.org-node-judicial:hover, .org-node-judicial.active {{ border-color: var(--accent-orange); box-shadow: 0 0 15px rgba(245, 158, 11, 0.35); }}
-.org-node-peoples:hover, .org-node-peoples.active {{ border-color: var(--accent-gold); box-shadow: 0 0 15px rgba(212, 168, 67, 0.45); }}
-.org-node-independent:hover, .org-node-independent.active {{ border-color: var(--accent-purple); box-shadow: 0 0 15px rgba(139, 92, 246, 0.35); }}
-
-.org-node-title {{
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--text);
-}}
-.org-node-subtitle {{
-  font-size: 11px;
-  color: var(--text-muted);
-  margin-top: 3px;
-}}
-.org-chart-desc-box {{
-  background: rgba(0, 0, 0, 0.25);
-  border: 1px solid var(--glass-border);
-  border-radius: 16px;
-  padding: 24px 30px;
-  min-height: 180px;
-  font-size: 14px;
-  color: var(--text);
-  line-height: 1.7;
-  transition: all 0.3s;
-  text-align: left;
-  box-shadow: inset 0 2px 8px rgba(0,0,0,0.2);
-}}
-.org-chart-desc-box ul {{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 10px 24px;
-  padding-left: 20px;
-  margin-top: 12px;
-}}
-.org-desc-tabs {{
-  display: flex;
-  gap: 8px;
-  margin-bottom: 12px;
-  border-bottom: 1px solid var(--glass-border);
-  padding-bottom: 8px;
-}}
-.org-desc-tab-btn {{
-  background: transparent;
-  border: none;
-  color: var(--text-muted);
-  cursor: pointer;
-  font-family: 'Sarabun';
-  font-size: 12px;
-  font-weight: 600;
-  padding: 4px 10px;
-  border-radius: 4px;
-  transition: all 0.2s;
-}}
-.org-desc-tab-btn:hover, .org-desc-tab-btn.active {{
-  background: rgba(255,255,255,0.06);
-  color: var(--gold-light);
-}}
-.org-desc-tab-content {{
-  display: none;
-  animation: dbFadeIn 0.3s ease;
-}}
-.org-desc-tab-content.active {{
-  display: block;
-}}
-@media (max-width: 1100px) {{
-  .org-chart-main-grid {{
-    grid-template-columns: repeat(3, 1fr);
-  }}
-}}
-@media (max-width: 768px) {{
-  .org-chart-main-grid {{
-    grid-template-columns: 1fr;
-  }}
-  .org-chart-top {{
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-  }}
-}}
-
-/* ===== FLOATING GLOSSARY PANEL ===== */
-.glossary-btn {{
-  position: fixed;
-  right: 0;
-  top: 55%;
-  transform: translateY(-50%) rotate(-90deg);
-  transform-origin: right bottom;
-  z-index: 1001;
-  background: var(--gold);
-  color: #000;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px 8px 0 0;
-  font-family: 'Sarabun';
-  font-weight: 700;
-  font-size: 14px;
-  cursor: pointer;
-  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s;
-}}
-.glossary-btn:hover {{
-  background: var(--gold-light);
-  padding-right: 25px;
-}}
-.glossary-panel {{
-  position: fixed;
-  top: 0;
-  right: -340px;
-  width: 320px;
-  bottom: 0;
-  background: rgba(10, 14, 26, 0.98);
-  backdrop-filter: blur(25px);
-  border-left: 1px solid var(--glass-border);
-  z-index: 1500;
-  box-shadow: -5px 0 30px rgba(0, 0, 0, 0.5);
-  transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
-  flex-direction: column;
-  padding: 24px;
-}}
-.glossary-panel.open {{
-  right: 0;
-}}
-.glossary-header {{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  border-bottom: 1px solid var(--glass-border);
-  padding-bottom: 12px;
-}}
-.glossary-header h3 {{
-  color: var(--gold);
-  font-size: 18px;
-  font-weight: 700;
-}}
-.glossary-close {{
-  background: none;
-  border: none;
-  color: var(--text-muted);
-  font-size: 20px;
-  cursor: pointer;
-  transition: color 0.2s;
-}}
-.glossary-close:hover {{
-  color: var(--accent-red);
-}}
-.glossary-search-wrapper {{
-  position: relative;
-  width: 100%;
-  margin-bottom: 20px;
-}}
-.glossary-search {{
-  width: 100%;
-  padding: 10px 14px 10px 36px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid var(--glass-border);
-  color: var(--text);
-  font-family: 'Sarabun';
-  font-size: 13px;
-  outline: none;
-  transition: all 0.3s;
-}}
-.glossary-search:focus {{
-  border-color: var(--gold);
-  background: rgba(255, 255, 255, 0.1);
-}}
-.glossary-search-wrapper::before {{
-  content: '🔍';
-  position: absolute;
-  left: 12px;
-  top: 10px;
-  font-size: 12px;
-  color: var(--text-muted);
-}}
-.glossary-list {{
-  flex: 1;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding-right: 4px;
-}}
-.glossary-item {{
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  padding-bottom: 12px;
-}}
-.glossary-term {{
-  font-weight: 700;
-  color: var(--gold-light);
-  font-size: 14px;
-  margin-bottom: 4px;
-}}
-.glossary-def {{
-  font-size: 13px;
-  color: var(--text);
-  line-height: 1.5;
-}}
-.glossary-overlay {{
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1400;
-  display: none;
-  backdrop-filter: blur(4px);
-}}
-
-/* ===== CROSS REFERENCE HOVER ===== */
-.cross-ref {{
-  color: var(--gold-light);
-  text-decoration: underline;
-  text-decoration-style: dashed;
-  cursor: pointer;
-  font-weight: 600;
-  transition: color 0.2s;
-}}
-.cross-ref:hover {{
-  color: var(--gold);
-}}
-.cross-ref-popup {{
-  position: absolute;
-  z-index: 2000;
-  width: 320px;
-  max-height: 220px;
-  overflow-y: auto;
-  background: rgba(10, 14, 26, 0.98);
-  backdrop-filter: blur(25px);
-  border: 1px solid var(--gold);
-  border-radius: 12px;
-  padding: 16px;
-  font-size: 13px;
-  color: var(--text);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.2s;
-  line-height: 1.6;
-}}
-.cross-ref-popup .popup-header {{
-  font-weight: 800;
-  color: var(--gold-light);
-  margin-bottom: 8px;
-  font-size: 14px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding-bottom: 4px;
-}}
-</style>
+<link rel="stylesheet" href="css/constitution.css">
 </head>
 <body>
 
@@ -7039,8 +5293,8 @@ body.theme-bw .mourning-container {{
     <!-- MOURNING SECTION (Show only in B&W theme) -->
     <div class="mourning-container">
       <div class="mourning-images">
-        <img src="mourning_2.jpg" alt="สมเด็จพระนางเจ้าสิริกิติ์ พระบรมราชินีนาถ พระบรมราชชนนีพันปีหลวง" class="mourning-img">
-        <img src="mourning_1.jpg" alt="สมเด็จพระเจ้าลูกเธอ เจ้าฟ้าพัชรกิตติยาภา" class="mourning-img">
+        <img src="images/mourning_2.jpg" alt="สมเด็จพระนางเจ้าสิริกิติ์ พระบรมราชินีนาถ พระบรมราชชนนีพันปีหลวง" class="mourning-img">
+        <img src="images/mourning_1.jpg" alt="สมเด็จพระเจ้าลูกเธอ เจ้าฟ้าพัชรกิตติยาภา" class="mourning-img">
       </div>
       <div class="mourning-text">
         ปวงข้าพระพุทธเจ้าน้อมศิระกรานกราบแทบพระยุคลบาท ด้วยสำนึกในพระมหากรุณาธิคุณล้นเกล้าล้นกระหม่อมอันหาที่สุดมิได้ แด่ สมเด็จพระนางเจ้าสิริกิติ์ พระบรมราชินีนาถ พระบรมราชชนนีพันปีหลวง และน้อมรำลึกในพระกรุณาธิคุณเป็นล้นพ้นอันหาที่สุดมิได้ แด่ สมเด็จพระเจ้าลูกเธอ เจ้าฟ้าพัชรกิตติยาภา นเรนทิราเทพยวดี กรมหลวงราชสาริณีสิริพัชร มหาวัชรราชธิดา ที่ทั้งสองพระองค์ทรงอุทิศพระวรกายบำเพ็ญพระราชกรณียกิจและพระกรณียกิจนานัปการเพื่อประโยชน์สุขของปวงชนชาวไทยมาโดยตลอด ปวงข้าพระพุทธเจ้าน้อมส่งเสด็จทั้งสองพระองค์สู่สวรรคาลัย พระเกียรติคุณและคุณงามความดีจะสถิตในดวงใจของพสกนิกรชาวไทยตราบนิจนิรันดร์ด้วยเกล้าด้วยกระหม่อม ขอเดชะ ข้าพระพุทธเจ้า ขอแสดงความอาลัย
@@ -7050,8 +5304,8 @@ body.theme-bw .mourning-container {{
     <!-- MAIN HERO CONTENT -->
     <div class="hero-main-content">
       <div class="hero-emblem">
-        <img src="Thai_Garuda_emblem.png" class="emblem-colored" alt="ตราครุฑ" style="height: 120px; filter: drop-shadow(0 0 15px rgba(212, 168, 67, 0.4));">
-        <img src="Thai_Garuda_emblem_bw.png" class="emblem-bw" alt="ตราครุฑ ขาวดำ" style="height: 120px; filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.25));">
+        <img src="images/Thai_Garuda_emblem.png" class="emblem-colored" alt="ตราครุฑ" style="height: 120px; filter: drop-shadow(0 0 15px rgba(212, 168, 67, 0.4));">
+        <img src="images/Thai_Garuda_emblem_bw.png" class="emblem-bw" alt="ตราครุฑ ขาวดำ" style="height: 120px; filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.25));">
       </div>
       <h1>รัฐธรรมนูญแห่งราชอาณาจักรไทย<br>พุทธศักราช ๒๕๒๕</h1>
       <p class="subtitle">ฉบับประชาชนเป็นใหญ่ — ผ่านประชามติ ๕ รอบ (ด้วยมติเอกฉันท์ของปวงชน)</p>
@@ -7111,603 +5365,7 @@ body.theme-bw .mourning-container {{
 <!-- BACK TO TOP -->
 <button class="back-top" id="backTop" onclick="window.scrollTo(0,0)">▲</button>
 
-<script>
-// Sidebar toggle
-function toggleSidebar() {{
-  document.getElementById('sidebar').classList.toggle('open');
-}}
-function closeSidebar() {{
-  document.getElementById('sidebar').classList.remove('open');
-}}
-
-// Switch Tab in Dashboard
-function switchTab(tabId, btn) {{
-  const card = btn.closest('.dashboard-card');
-  const tabs = card.querySelectorAll('.db-tab-btn');
-  const contents = card.querySelectorAll('.db-tab-content');
-  
-  tabs.forEach(t => t.classList.remove('active'));
-  contents.forEach(c => c.classList.remove('active'));
-  
-  btn.classList.add('active');
-  document.getElementById(tabId).classList.add('active');
-}}
-
-// Toggle Accordion in Early Constitution Tab
-function toggleAccordion(header) {{
-  const item = header.closest('.accordion-item');
-  item.classList.toggle('active');
-}}
-
-// Filter PMs by Era
-function filterPMs(era, btn) {{
-  const btns = btn.parentNode.querySelectorAll('.filter-btn');
-  btns.forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  
-  const rows = document.querySelectorAll('.pm-row');
-  rows.forEach(r => {{
-    if (era === 'all' || r.dataset.era === era) {{
-      r.style.display = '';
-    }} else {{
-      r.style.display = 'none';
-    }}
-  }});
-}}
-
-// Back to top
-window.addEventListener('scroll', () => {{
-  document.getElementById('backTop').classList.toggle('visible', window.scrollY > 400);
-}});
-
-// Search
-function handleSearch(query) {{
-  const cards = document.querySelectorAll('.article-card');
-  const sections = document.querySelectorAll('.chapter-section');
-  const q = query.trim().toLowerCase();
-  
-  if (!q) {{
-    cards.forEach(c => c.classList.remove('hidden'));
-    sections.forEach(s => s.classList.remove('hidden'));
-    return;
-  }}
-  
-  const visibleSections = new Set();
-  cards.forEach(c => {{
-    const text = c.textContent.toLowerCase();
-    if (text.includes(q)) {{
-      c.classList.remove('hidden');
-      visibleSections.add(c.closest('.chapter-section'));
-    }} else {{
-      c.classList.add('hidden');
-    }}
-  }});
-  sections.forEach(s => {{
-    s.classList.toggle('hidden', !visibleSections.has(s));
-  }});
-}}
-
-// Filter by origin
-function filterOrigin(origin, btn) {{
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  
-  const cards = document.querySelectorAll('.article-card');
-  const sections = document.querySelectorAll('.chapter-section');
-  
-  if (origin === 'all') {{
-    cards.forEach(c => c.classList.remove('hidden'));
-    sections.forEach(s => s.classList.remove('hidden'));
-    return;
-  }}
-  
-  const visibleSections = new Set();
-  cards.forEach(c => {{
-    if (c.dataset.origin === origin) {{
-      c.classList.remove('hidden');
-      visibleSections.add(c.closest('.chapter-section'));
-    }} else {{
-      c.classList.add('hidden');
-    }}
-  }});
-  sections.forEach(s => {{
-    s.classList.toggle('hidden', !visibleSections.has(s));
-  }});
-}}
-
-// Active nav highlight on scroll
-const observer = new IntersectionObserver(entries => {{
-  entries.forEach(e => {{
-    if (e.isIntersecting) {{
-      document.querySelectorAll('.nav-chapter').forEach(n => n.classList.remove('active'));
-      const link = document.querySelector(`.nav-chapter[href="#${{e.target.id}}"]`);
-      if (link) link.classList.add('active');
-    }}
-  }});
-}}, {{ rootMargin: '-30% 0px -60% 0px' }});
-document.querySelectorAll('.chapter-section').forEach(s => observer.observe(s));
-
-// Change Theme
-function changeTheme(theme) {{
-  const el = document.documentElement;
-  const body = document.body;
-  el.classList.remove('theme-dark', 'theme-light', 'theme-bw', 'theme-nightcity', 'theme-aero');
-  body.classList.remove('theme-dark', 'theme-light', 'theme-bw', 'theme-nightcity', 'theme-aero');
-  if (theme !== 'dark') {{
-    el.classList.add('theme-' + theme);
-    body.classList.add('theme-' + theme);
-  }}
-  localStorage.setItem('constTheme', theme);
-}}
-
-// Load saved theme on startup
-const savedTheme = localStorage.getItem('constTheme') || 'dark';
-document.getElementById('themeSelect').value = savedTheme;
-changeTheme(savedTheme);
-
-// Jump to Article Search Logic
-function translateThaiToArabic(str) {{
-  const thaiNums = {{'๐': '0', '๑': '1', '๒': '2', '๓': '3', '๔': '4', '๕': '5', '๖': '6', '๗': '7', '๘': '8', '๙': '9'}};
-  return str.replace(/[๐-๙]/g, m => thaiNums[m]);
-}}
-
-function goToArticle(val, prefix) {{
-  const cleanVal = translateThaiToArabic(val).replace(/\\D/g, '');
-  if (!cleanVal) return;
-  
-  const targetId = prefix + cleanVal;
-  const el = document.getElementById(targetId);
-  if (el) {{
-    // Reset any search/filters for this card and its section
-    el.classList.remove('hidden');
-    const sect = el.closest('.chapter-section');
-    if (sect) {{
-      sect.classList.remove('hidden');
-    }}
-    
-    // Smooth scroll to card
-    el.scrollIntoView({{ behavior: 'smooth', block: 'center' }});
-    
-    // Add pulsing highlight effect
-    el.classList.remove('highlight-pulse');
-    void el.offsetWidth; // Force reflow
-    el.classList.add('highlight-pulse');
-  }}
-}}
-
-// Compare mode toggle
-function toggleCompare(btn, artNum) {{
-  const container = document.getElementById('compare_' + artNum);
-  if (!container) return;
-  
-  const isHidden = container.style.display === 'none';
-  if (isHidden) {{
-    container.style.display = 'flex';
-    btn.textContent = '⚖️ ปิดเปรียบเทียบ';
-    btn.style.background = 'var(--gold)';
-    btn.style.color = '#000';
-  }} else {{
-    container.style.display = 'none';
-    btn.textContent = '⚖️ เปรียบเทียบ';
-    btn.style.background = 'rgba(212, 168, 67, 0.1)';
-    btn.style.color = 'var(--gold-light)';
-  }}
-}}
-
-// Org chart description hover
-const orgData = {{
-  'people': {{
-    title: '👥 ประชาชนชาวไทย (ปวงชนชาวไทย)',
-    duties: `<ul>
-      <li><strong>เจ้าของอำนาจอธิปไตย:</strong> ทรงสิทธิ์และเป็นแหล่งกำเนิดอำนาจสูงสุดในการปกครองแผ่นดินตาม <span class="cross-ref" data-target="3">มาตรา ๓</span></li>
-      <li><strong>สิทธิออกเสียงเลือกตั้ง:</strong> เลือกตั้งสมาชิก ส.ส. จำนวน ๕๐๐ คน และสมาชิก ส.ว. จำนวน ๒๐๐ คน เพื่อทำหน้าที่นิติบัญญัติและตรวจสอบแทนตน</li>
-      <li><strong>ประชาธิปไตยทางตรง:</strong> ลงมติประชามติที่มีผลผูกพันรัฐบาล คณะรัฐสภา และองค์กรของรัฐ (<span class="cross-ref" data-target="201">มาตรา ๒๐๑</span>) และใช้อำนาจนิติบัญญัติโดยตรงผ่านแอปพลิเคชันมือถือดิจิทัล (<span class="cross-ref" data-target="1130">มาตรา ๑๑๓๐</span>)</li>
-      <li><strong>สิทธิต่อต้านขัดขืนการยึดอำนาจ:</strong> มีสิทธิต่อต้านการรัฐประหารและการใช้อำนาจเผด็จการนอกระบบโดยสันติวิธีตามที่ระบุและคุ้มครองใน <span class="cross-ref" data-target="64">มาตรา ๖๓</span></li>
-    </ul>`,
-    source: `<p>ประชาชนพลเมืองไทยทุกคนที่มีคุณสมบัติตามที่กฎหมายกำหนด (อายุไม่ต่ำกว่า ๑๘ ปีบริบูรณ์ในวันเลือกตั้ง) มีสถานะเป็นเจ้าของอำนาจอธิปไตยอย่างเสมอภาคและเท่าเทียมกันตามรัฐธรรมนูญ</p>`,
-    law: `<p>มาตราสำคัญ: <span class="cross-ref" data-target="3">มาตรา ๓</span>, <span class="cross-ref" data-target="63">มาตรา ๖๓</span>, <span class="cross-ref" data-target="170">มาตรา ๑๗๐</span>, <span class="cross-ref" data-target="170/1">มาตรา ๑๗๐/๑</span>, <span class="cross-ref" data-target="1130">มาตรา ๑๑๓๐</span></p>`
-  }},
-  'monarch': {{
-    title: '👑 พระมหากษัตริย์',
-    duties: `<ul>
-      <li><strong>องค์พระประมุขแห่งรัฐ:</strong> ดำรงอยู่ในฐานะอันเป็นที่เคารพสักการะ ผู้ใดจะละเมิดมิได้ ทรงใช้อำนาจอธิปไตยผ่านรัฐสภา คณะรัฐมนตรี และศาล (<span class="cross-ref" data-target="3">มาตรา ๓</span> และ <span class="cross-ref" data-target="8">มาตรา ๘</span>)</li>
-      <li><strong>พระราชอำนาจตรากฎหมาย:</strong> ทรงลงพระปรมาภิไธยในร่างพระราชบัญญัติภายใน ๒๐ วัน หากทรงไม่เห็นชอบรัฐสภาต้องทบทวนใหม่</li>
-      <li><strong>เสรีภาพในการแสดงความคิดเห็นต่อสถาบันฯ:</strong> การแสดงความเห็น ติชม หรือวิพากษ์วิจารณ์สถาบันพระมหากษัตริย์โดยสุจริต เป็นสิทธิเสรีภาพของประชาชนและไม่ถือเป็นความผิดกฎหมาย (<span class="cross-ref" data-target="8">มาตรา ๘</span>)</li>
-    </ul>`,
-    source: `<p>การสืบราชสมบัติให้เป็นไปตามกฎมณเฑียรบาลว่าด้วยการสืบราชสันตติวงศ์และพระราชวินิจฉัย</p>`,
-    law: `<p>มาตราสำคัญ: <span class="cross-ref" data-target="3">มาตรา ๓</span>, <span class="cross-ref" data-target="8">มาตรา ๘</span>, หมวด ๒ พระมหากษัตริย์ (<span class="cross-ref" data-target="๙">มาตรา ๙</span> - <span class="cross-ref" data-target="๒๕">มาตรา ๒๕</span>)</p>`
-  }},
-  'privy_council': {{
-    title: '📜 คณะองคมนตรี',
-    duties: `<ul>
-      <li><strong>ที่ปรึกษาในพระองค์:</strong> ทำหน้าที่ถวายคำแนะนำต่อพระมหากษัตริย์ในพระราชกรณียกิจทั้งปวงตามที่ทรงปรึกษา</li>
-      <li><strong>การรักษาการประมุข:</strong> เสนอชื่อและแต่งตั้งผู้สำเร็จราชการแทนพระองค์ในกรณีมีความจำเป็นตามรัฐธรรมนูญ</li>
-    </ul>`,
-    source: `<p>ประกอบด้วยประธานองคมนตรีหนึ่งคน และองคมนตรีอื่นอีกไม่เกินสิบแปดคน (รวมทั้งหมดไม่เกิน ๑๙ คน) ซึ่งพระมหากษัตริย์ทรงเลือกและแต่งตั้งตามพระราชอัธยาศัย</p>`,
-    law: `<p>มาตราสำคัญ: หมวด ๒ พระมหากษัตริย์ (<span class="cross-ref" data-target="12">มาตรา ๑๒</span> - <span class="cross-ref" data-target="21">มาตรา ๒๑</span>)</p>`
-  }},
-  'parliament': {{
-    title: '🏛️ รัฐสภา',
-    duties: `<ul>
-      <li><strong>ฝ่ายนิติบัญญัติร่วมสองสภา:</strong> พิจารณาและผ่านร่างกฎหมายต่างๆ ได้แก่ พระราชบัญญัติ (พ.ร.บ.) และพระราชบัญญัติประกอบรัฐธรรมนูญ (พ.ร.ป.) โดยมีสมาชิกร่วมกันทั้งหมด ๗๐๐ คน</li>
-      <li><strong>ประธานรัฐสภา:</strong> ประธานสภาผู้แทนราษฎรเป็นประธานรัฐสภาโดยตำแหน่ง และประธานวุฒิสภาเป็นรองประธานรัฐสภาโดยตำแหน่ง</li>
-      <li><strong>ควบคุมฝ่ายบริหาร:</strong> ตรวจสอบ ถ่วงดุล และอภิปรายไม่ไว้วางใจนายกรัฐมนตรีและรัฐมนตรี</li>
-    </ul>`,
-    source: `<p>เป็นรัฐสภาระบบสองสภา ประกอบด้วย สภาผู้แทนราษฎร (ส.ส.) จำนวน ๕๐๐ คน และวุฒิสภา (ส.ว.) จำนวน ๒๐๐ คน ประชุมร่วมกัน</p>`,
-    law: `<p>มาตราสำคัญ: หมวด ๖ รัฐสภา (<span class="cross-ref" data-target="89">มาตรา ๘๙</span> - <span class="cross-ref" data-target="199">มาตรา ๑๙๙</span>)</p>`
-  }},
-  'house_of_reps': {{
-    title: '🏛️ สภาผู้แทนราษฎร (ส.ส.) - จำนวน ๕๐๐ คน',
-    duties: `<ul>
-      <li><strong>ผู้แทนปวงชนชาวไทย:</strong> เสนอร่างกฎหมาย พิจารณาร่างงบประมาณรายจ่ายประจำปี และตรวจสอบนโยบายรัฐบาล</li>
-      <li><strong>โครงสร้าง ส.ส. ๕๐๐ คน:</strong> แบ่งเป็น ส.ส. จากการเลือกตั้งแบบแบ่งเขตจำนวน ๔๐๐ คน และแบบบัญชีรายชื่อจำนวน ๑๐๐ คน ตาม <span class="cross-ref" data-target="98">มาตรา ๙๘</span></li>
-      <li><strong>ลงมติเลือกผู้นำประเทศ:</strong> พิจารณาและลงมติเห็นชอบบุคคลที่สมควรแต่งตั้งเป็นนายกรัฐมนตรี (ส.ส. เท่านั้นที่มีสิทธิเลือกนายกฯ)</li>
-      <li><strong>อภิปรายไม่ไว้วางใจ:</strong> ยื่นญัตติเพื่ออภิปรายและลงมติไม่ไว้วางใจนายกรัฐมนตรีหรือรัฐมนตรีเป็นรายบุคคลหรือทั้งคณะ</li>
-    </ul>`,
-    source: `<p>สมาชิกสภาผู้แทนราษฎร (ส.ส.) จำนวน ๕๐๐ คน มาจากการเลือกตั้งโดยตรงและลับของประชาชน มีวาระดำรงตำแหน่งคราวละ ๔ ปี</p>`,
-    law: `<p>มาตราสำคัญ: หมวด ๖ ส่วนที่ ๒ สภาผู้แทนราษฎร (<span class="cross-ref" data-target="98">มาตรา ๙๘</span> - <span class="cross-ref" data-target="120">มาตรา ๑๒๐</span>)</p>`
-  }},
-  'senate': {{
-    title: '🏛️ วุฒิสภา (ส.ว.) - จำนวน ๒๐๐ คน',
-    duties: `<ul>
-      <li><strong>กลั่นกรองพระราชบัญญัติ:</strong> ตรวจสอบ ทบทวน และให้ความเห็นชอบร่างกฎหมายที่ผ่านสภาผู้แทนราษฎรมาแล้ว</li>
-      <li><strong>องค์ประกอบ ส.ว. ๒๐๐ คน:</strong> ประกอบด้วยสมาชิกซึ่งราษฎรเลือกตั้งโดยตรงจำนวน ๒๐๐ คน (ใช้เขตจังหวัดเป็นเขตเลือกตั้ง) ตาม <span class="cross-ref" data-target="121">มาตรา ๑๒๑</span></li>
-      <li><strong>ไม่มีสิทธิเลือกนายกฯ:</strong> ถูกจำกัดบทบาทไม่ให้ร่วมลงมติเลือกนายกรัฐมนตรี เพื่อรักษาเจตนารมณ์เสียงข้างมากของ ส.ส. ที่มาจากประชาชน</li>
-      <li><strong>เห็นชอบผู้ดำรงตำแหน่งระดับสูง:</strong> พิจารณาอนุมัติแต่งตั้งตุลาการศาลรัฐธรรมนูญ, กรรมการองค์กรอิสระ และอัยการสูงสุด</li>
-    </ul>`,
-    source: `<p>สมาชิกวุฒิสภา (ส.ว.) จำนวน ๒๐๐ คน มาจากการเลือกตั้งโดยตรงของประชาชนในแต่ละภูมิภาค/จังหวัด มีวาระดำรงตำแหน่งคราวละ ๖ ปี</p>`,
-    law: `<p>มาตราสำคัญ: หมวด ๖ ส่วนที่ ๓ วุฒิสภา (<span class="cross-ref" data-target="121">มาตรา ๑๒๑</span> - <span class="cross-ref" data-target="135">มาตรา ๑๓๕</span>)</p>`
-  }},
-  'cabinet': {{
-    title: '💼 คณะรัฐมนตรี (ครม.)',
-    duties: `<ul>
-      <li><strong>ฝ่ายบริหารสูงสุด:</strong> บริหารราชการแผ่นดินและบังคับบัญชาข้าราชการประจำในกระทรวง ทบวง กรม ทั่วราชอาณาจักร</li>
-      <li><strong>กำหนดทิศทางนโยบาย:</strong> ขับเคลื่อนนโยบายสาธารณะ การเงิน การต่างประเทศ และความมั่นคงตามที่แถลงต่อรัฐสภา</li>
-      <li><strong>กฎหมายฝ่ายบริหาร:</strong> เสนอร่าง พ.ร.บ., ตราพระราชกำหนด (พ.ร.ก.) ในคราวจำเป็นรีบด่วน และตราพระราชกฤษฎีกา (พ.ร.ฎ.)</li>
-    </ul>`,
-    source: `<p>ประกอบด้วยนายกรัฐมนตรีหนึ่งคน และรัฐมนตรีอื่นอีกไม่เกินสามสิบหกคน (รวมคณะบริหารทั้งหมดไม่เกิน ๓๗ คน) ร่วมกันทำงานในรูปคณะกรรมการ</p>`,
-    law: `<p>มาตราสำคัญ: หมวด ๗ คณะรัฐมนตรี (<span class="cross-ref" data-target="201">มาตรา ๒๐๑</span> - <span class="cross-ref" data-target="217">มาตรา ๒๑๗</span>)</p>`
-  }},
-  'prime_minister': {{
-    title: '💼 นายกรัฐมนตรี',
-    duties: `<ul>
-      <li><strong>หัวหน้ารัฐบาล:</strong> ผู้นำสูงสุดในการกำหนดนโยบาย บังคับบัญชาข้าราชการประจำ และบริหารราชการแผ่นดิน</li>
-      <li><strong>ข้อจำกัดวาระ ๑๖ ปี:</strong> ดำรงตำแหน่งติดต่อกันหรือรวมกันแล้วห้ามเกินกว่า ๔ วาระ หรือ ๑๖ ปี เพื่อป้องกันการผูกขาดขยายอิทธิพลทางการเมือง (<span class="cross-ref" data-target="201">มาตรา ๒๐๑ วรรคสาม</span>)</li>
-      <li><strong>ปรับคณะรัฐมนตรี:</strong> เสนอแต่งตั้งและพ้นจากตำแหน่งของรัฐมนตรีประจำกระทรวงต่างๆ</li>
-    </ul>`,
-    source: `<p>เสนอชื่อและลงมติเห็นชอบโดยเฉพาะสภาผู้แทนราษฎร (ส.ส.) เกินกึ่งหนึ่ง และได้รับการโปรดเกล้าฯ แต่งตั้งโดยพระมหากษัตริย์</p>`,
-    law: `<p>มาตราสำคัญ: <span class="cross-ref" data-target="201">มาตรา ๒๐๑</span>, <span class="cross-ref" data-target="216">มาตรา ๒๑๖ (๙)</span></p>`
-  }},
-  'local_gov': {{
-    title: '💼 องค์กรปกครองส่วนท้องถิ่น (อปท.)',
-    duties: `<ul>
-      <li><strong>กระจายอำนาจสู่ท้องถิ่น:</strong> บริหารจัดการพื้นที่ บริการสาธารณะ การศึกษา และสาธารณสุขในชุมชนโดยอิสระตามความต้องการของชาวบ้าน</li>
-      <li><strong>อิสระทางการเงินการคลัง:</strong> จัดเก็บภาษีท้องถิ่นและจัดทำงบประมาณเพื่อพัฒนาท้องถิ่นโดยตรงโดยไม่ต้องขึ้นตรงกับราชการส่วนกลาง</li>
-    </ul>`,
-    source: `<p>ประกอบด้วย อบจ., เทศบาล, อบต. และปกครองพิเศษ (กทม., พัทยา) โดยผู้บริหารและสมาชิกสภาท้องถิ่นต้องเลือกตั้งโดยตรงทั้งหมด</p>`,
-    law: `<p>มาตราสำคัญ: หมวด ๙ การปกครองส่วนท้องถิ่น (<span class="cross-ref" data-target="282">มาตรา ๒๘๒</span> - <span class="cross-ref" data-target="290">มาตรา ๒๙๐</span>)</p>`
-  }},
-  'constitutional_court': {{
-    title: '⚖️ ศาลรัฐธรรมนูญ',
-    duties: `<ul>
-      <li><strong>วินิจฉัยความขัดรัฐธรรมนูญ:</strong> ตรวจสอบร่างกฎหมาย มติ หรือการกระทำใดๆ ขององค์กรของรัฐไม่ให้ละเมิดสิทธิเสรีภาพหรือขัดต่อรัฐธรรมนูญ</li>
-      <li><strong>พิทักษ์ความชอบธรรมรัฐธรรมนูญ:</strong> วินิจฉัยความชอบด้วยกฎหมายและประกาศให้ประกาศการรัฐประหารย้อนหลังเป็นโมฆะเสมือนไม่มีผลบังคับตั้งแต่ต้น</li>
-    </ul>`,
-    source: `<p>ประกอบด้วยตุลาการศาลรัฐธรรมนูญจำนวนเก้าคน ได้รับการสรรหาและตรวจสอบคุณสมบัติ ก่อนเสนอให้วุฒิสภาให้มติเห็นชอบแต่งตั้ง</p>`,
-    law: `<p>มาตราสำคัญ: หมวด ๘ ศาลรัฐธรรมนูญ (<span class="cross-ref" data-target="255">มาตรา ๒๕๕</span> - <span class="cross-ref" data-target="270">มาตรา ๒๗๐</span>)</p>`
-  }},
-  'courts_of_justice': {{
-    title: '⚖️ ศาลยุติธรรม',
-    duties: `<ul>
-      <li><strong>พิจารณาพิพากษาคดีแพ่งและอาญา:</strong> ไกล่เกลี่ยและพิพากษาคดีทั่วไป คดีแพ่ง คดีธุรกิจ และคดีอาญาแผ่นดิน</li>
-      <li><strong>หลักประกันความเป็นธรรม:</strong> พิจารณาคดีอย่างเป็นอิสระและรวดเร็วตาม ๓ ชั้นศาล (ศาลชั้นต้น, ศาลอุทธรณ์, ศาลฎีกา)</li>
-    </ul>`,
-    source: `<p>ผู้พิพากษาที่ได้รับการคัดเลือกและคุ้มครองจากคณะกรรมการตุลาการศาลยุติธรรม (ก.ต.) จำนวน ๑๕ คน เพื่อเป็นอิสระจากการบริหารและการเมือง</p>`,
-    law: `<p>มาตราสำคัญ: หมวด ๘ ส่วนที่ ๓ ศาลยุติธรรม (<span class="cross-ref" data-target="233">มาตรา ๒๓๓</span> - <span class="cross-ref" data-target="248">มาตรา ๒๔๘</span>)</p>`
-  }},
-  'administrative_court': {{
-    title: '⚖️ ศาลปกครอง',
-    duties: `<ul>
-      <li><strong>คดีข้อพิพาททางปกครอง:</strong> พิจารณาคดีระหว่างประชาชนกับหน่วยงานรัฐ เจ้าหน้าที่รัฐ หรือคดีพิพาทระหว่างองค์กรรัฐด้วยกันเอง</li>
-      <li><strong>เพิกถอนคำสั่งไม่ชอบธรรม:</strong> ยกเลิกประกาศ กติกา มติ หรือคำสั่งทางปกครองที่ละเมิดสิทธิ์หรือละเลยการปฏิบัติหน้าที่ของข้าราชการ</li>
-    </ul>`,
-    source: `<p>ตุลาการศาลปกครองคัดเลือกตามเกณฑ์อิสระของคณะกรรมการตุลาการศาลปกครอง (ก.ศป.) และได้รับการเห็นชอบแต่งตั้ง</p>`,
-    law: `<p>มาตราสำคัญ: หมวด ๘ ส่วนที่ ๔ ศาลปกครอง (<span class="cross-ref" data-target="249">มาตรา ๒๔๙</span> - <span class="cross-ref" data-target="253">มาตรา ๒๕๓</span>)</p>`
-  }},
-  'military_court': {{
-    title: '⚖️ ศาลทหาร',
-    duties: `<ul>
-      <li><strong>พิจารณาคดีวินัยทหาร:</strong> พิจารณาพิพากษาเฉพาะคดีอาญาทหารที่กระทำโดยกำลังพลประจำการในสังกัดกองทัพบก กองทัพเรือ กองทัพอากาศ</li>
-      <li><strong>ขอบเขตจำกัดเข้มงวด:</strong> ห้ามพิจารณาคดีที่พลเรือนเกี่ยวข้อง เว้นแต่กรณีพิเศษตามกฎหมายในยามศึกสงครามเท่านั้น</li>
-    </ul>`,
-    source: `<p>ปฏิบัติหน้าที่และแต่งตั้งขึ้นภายใต้พระธรรมนูญศาลทหารและการกำกับตรวจสอบของกระทรวงกลาโหมตามรัฐธรรมนูญ</p>`,
-    law: `<p>มาตราสำคัญ: หมวด ๘ ส่วนที่ ๕ ศาลทหาร (<span class="cross-ref" data-target="254">มาตรา ๒๕๔</span>)</p>`
-  }},
-  'supreme_citizen_assembly': {{
-    title: '✊ สภาประชาชนสูงสุด (Supreme Citizen Assembly) - ๕๐๐ คน',
-    duties: `<ul>
-      <li><strong>ยับยั้งการใช้อำนาจไม่ชอบ (Veto):</strong> มีสิทธิและหน้าที่ตรวจสอบ ยับยั้งกฎหมาย, มติ ครม., หรือแม้กระทั่งคำตัดสินของศาลฎีกาที่พบว่าขัดต่อผลประโยชน์ของชาติและประชาชนโดยตรง (<span class="cross-ref" data-target="1129">มาตรา ๑๑๒๙</span>)</li>
-      <li><strong>จัดสรรงบต้านโกง:</strong> ควบคุมและบริหารเงินในกองทุนต่อต้านการทุจริตภาคประชาชนเพื่อชุมชน (<span class="cross-ref" data-target="1134">มาตรา ๑๑๓๔</span>)</li>
-    </ul>`,
-    source: `<p>ประกอบด้วยประชาชนพลเมืองไทยทั่วไปจำนวน ๕๐๐ คน ได้รับคัดเลือกโดยระบบการสุ่มตัวแทน (Sortition) มีวาระหมุนเวียนคราวละหนึ่งปี (ห้ามดำรงตำแหน่งซ้ำ)</p>`,
-    law: `<p>มาตราสำคัญ: หมวดพิเศษ <span class="cross-ref" data-target="1129">มาตรา ๑๑๒๙</span>, <span class="cross-ref" data-target="1134">มาตรา ๑๑๓๔</span></p>`
-  }},
-  'digital_democracy': {{
-    title: '✊ ระบบประชาธิปไตยทางตรงดิจิทัล',
-    duties: `<ul>
-      <li><strong>นิติบัญญัติทางตรงโดยประชาชน:</strong> ประชาชนสามารถเสนอและลงประชามติร่างกฎหมายผ่านระบบความปลอดภัยสูงบนแอปพลิเคชันมือถือ</li>
-      <li><strong>ออกกฎหมายทันที:</strong> หากกฎหมายใดที่ประชาชนโหวตเห็นชอบมีผู้ลงมติเห็นชอบเกินกึ่งหนึ่งของประชากรผู้เลือกตั้ง ให้มีผลบังคับใช้ทันทีเป็นกฎหมายสูงสุด (<span class="cross-ref" data-target="1130">มาตรา ๑๑๓๐</span>)</li>
-    </ul>`,
-    source: `<p>รัฐธรรมนูญนี้บังคับให้กระทรวงดิจิทัลจัดตั้งและปกป้องดูแลระบบโครงสร้างนี้ เพื่อคุ้มครองสิทธิออกเสียงนิติบัญญัติของประชาชนทุกคน</p>`,
-    law: `<p>มาตราสำคัญ: หมวดพิเศษ <span class="cross-ref" data-target="1130">มาตรา ๑๑๓๐</span></p>`
-  }},
-  'peoples_anti_corruption_fund': {{
-    title: '✊ กองทุนต่อต้านการทุจริตภาคประชาชน',
-    duties: `<ul>
-      <li><strong>ยึดทรัพย์คนโกงสู่สังคม:</strong> รวบรวมทรัพย์สิน เงินทอง ที่ยึดทรัพย์ได้ทั้งหมดในคดีทุจริตคอร์รัปชันของข้าราชการและนักการเมือง</li>
-      <li><strong>พัฒนาโครงสร้างพื้นฐาน:</strong> จัดส่งงบประมาณช่วยเหลือประชาชนโดยตรงและลงทุนในโครงการพัฒนาท้องถิ่นและชุมชนรากหญ้า (<span class="cross-ref" data-target="1134">มาตรา ๑๑๓๔</span>)</li>
-    </ul>`,
-    source: `<p>ควบคุม ดูแล และอนุมัติการจ่ายเงินทั้งหมดโดยสภาประชาชนสูงสุด ห้ามมิให้ฝ่ายบริหารหรือนักการเมืองเข้าก้าวก่ายกิจการคลังของกองทุน</p>`,
-    law: `<p>มาตราสำคัญ: หมวดพิเศษ <span class="cross-ref" data-target="1134">มาตรา ๑๑๓๔</span></p>`
-  }},
-  'independent_organs': {{
-    title: '🛡️ องค์กรอิสระตามรัฐธรรมนูญ',
-    duties: `<ul>
-      <li><strong>ตรวจสอบและถ่วงดุลอำนาจรัฐ:</strong> ประกอบด้วย คณะกรรมการการเลือกตั้ง (กกต. - ๕ คน), คณะกรรมการป้องกันและปราบปรามการทุจริตแห่งชาติ (ป.ป.ช. - ๙ คน), คณะกรรมการตรวจเงินแผ่นดิน (กตง. - ๗ คน พร้อมผู้ว่าการตรวจเงินแผ่นดิน) และผู้ตรวจการแผ่นดิน (๓ คน)</li>
-      <li><strong>อิสระทางงบประมาณ:</strong> มีงบการเงินเฉพาะตัวเพื่อรักษาความโปร่งใสและหลีกเลี่ยงการถูกลิดรอนโดยคณะรัฐบาล</li>
-    </ul>`,
-    source: `<p>ผู้นำองค์กรอิสระได้รับการกลั่นกรองและสรรหาตามระบบกฎหมาย ก่อนเสนอชื่อให้วุฒิสภารัฐสภาลงมติให้ความเห็นชอบแต่งตั้ง</p>`,
-    law: `<p>มาตราสำคัญ: หมวด ๑๖ องค์กรอิสระ (<span class="cross-ref" data-target="312">มาตรา ๓๑๒</span> - <span class="cross-ref" data-target="329">มาตรา ๓๒๙</span>)</p>`
-  }},
-  'prosecutors': {{
-    title: '🛡️ องค์กรอัยการ (พนักงานอัยการ)',
-    duties: `<ul>
-      <li><strong>ผู้ฟ้องคดีอาญาของแผ่นดิน:</strong> พิจารณาสำนวน สอบสวนหลักฐาน และสั่งฟ้องร้องผู้ต้องหาในคดีอาญาต่อศาลในฐานะทนายแผ่นดิน</li>
-      <li><strong>ช่วยเหลือทางกฎหมายแก่ปวงชน:</strong> ให้การปกป้อง ช่วยเหลือ คุ้มครองสิทธิมนุษยชน และความช่วยเหลือทางกฎหมายแก่ผู้ด้อยโอกาสในสังคม</li>
-    </ul>`,
-    source: `<p>ประกอบด้วยพนักงานอัยการสูงสุดและอัยการประจำศาล มีคณะกรรมการอัยการ (ก.อ.) กำกับดูแล มีหลักประกันอิสระในการสั่งคดีตามกฎหมาย</p>`,
-    law: `<p>มาตราสำคัญ: หมวด ๑๕ องค์กรอัยการ (<span class="cross-ref" data-target="309">มาตรา ๓๐๙</span> - <span class="cross-ref" data-target="311">มาตรา ๓๑๑</span>)</p>`
-  }}
-}};
-
-let currentSelectedNode = 'people';
-
-function renderOrgDesc(key) {{
-  const data = orgData[key];
-  if (!data) return;
-  
-  const descBox = document.getElementById('orgDescBox');
-  if (!descBox) return;
-  
-  descBox.innerHTML = `
-    <div class="org-desc-content" style="animation: dbFadeIn 0.3s ease;">
-      <h4 style="color:var(--gold); font-size:16px; margin-bottom:12px; display:flex; align-items:center; gap:8px;">${{data.title}}</h4>
-      <div class="org-desc-tabs">
-        <button class="org-desc-tab-btn active" onclick="switchOrgSubTab(event, 'org_duty')">📋 บทบาทหน้าที่</button>
-        <button class="org-desc-tab-btn" onclick="switchOrgSubTab(event, 'org_source')">👥 ที่มาและองค์ประกอบ</button>
-        <button class="org-desc-tab-btn" onclick="switchOrgSubTab(event, 'org_law')">📜 มาตราสำคัญ</button>
-      </div>
-      <div id="org_duty" class="org-desc-tab-content active" style="font-size: 13.5px;">
-        ${{data.duties}}
-      </div>
-      <div id="org_source" class="org-desc-tab-content" style="font-size: 13.5px; color: var(--text-muted);">
-        ${{data.source}}
-      </div>
-      <div id="org_law" class="org-desc-tab-content" style="font-size: 13.5px;">
-        ${{data.law}}
-      </div>
-    </div>
-  `;
-}}
-
-function switchOrgSubTab(event, tabId) {{
-  const container = event.target.closest('.org-desc-content');
-  const tabs = container.querySelectorAll('.org-desc-tab-btn');
-  const contents = container.querySelectorAll('.org-desc-tab-content');
-  
-  tabs.forEach(t => t.classList.remove('active'));
-  contents.forEach(c => c.classList.remove('active'));
-  
-  event.target.classList.add('active');
-  container.querySelector('#' + tabId).classList.add('active');
-}}
-
-function selectOrgDesc(key) {{
-  currentSelectedNode = key;
-  renderOrgDesc(key);
-  
-  document.querySelectorAll('.org-node, .org-top-card').forEach(el => {{
-    el.classList.remove('active');
-  }});
-  
-  const activeNode = document.getElementById('node_' + key);
-  if (activeNode) {{
-    activeNode.classList.add('active');
-  }}
-}}
-
-function previewOrgDesc(key) {{
-  renderOrgDesc(key);
-}}
-
-function resetOrgDesc() {{
-  renderOrgDesc(currentSelectedNode);
-}}
-
-// Glossary panel logic
-const glossaryData = [
-  {{ term: "รัฏฐาธิปัตย์", def: "ผู้มีอำนาจสูงสุดในรัฐหรือประเทศชาติ มีหน้าที่หลักในการใช้อำนาจอธิปไตยปกครองแผ่นดิน" }},
-  {{ term: "พระราชกำหนด (พ.ร.ก.)", def: "กฎหมายที่พระมหากษัตริย์ทรงตราขึ้นตามคำแนะนำของคณะรัฐมนตรีในกรณีฉุกเฉินที่มีความจำเป็นรีบด่วน" }},
-  {{ term: "พระราชบัญญัติ (พ.ร.บ.)", def: "กฎหมายที่ออกโดยรัฐสภาเพื่อใช้บังคับแก่ประชาชนทั่วไปตามกระบวนการตรากฎหมายปกติ" }},
-  {{ term: "พระราชกฤษฎีกา (พ.ร.ฎ.)", def: "กฎหมายที่ตราขึ้นโดยฝ่ายบริหาร (คณะรัฐมนตรี) เพื่อกำหนดรายละเอียดในการปฏิบัติการตาม พ.ร.บ. หรือรัฐธรรมนูญ" }},
-  {{ term: "สภาร่างรัฐธรรมนูญ (สสร.)", def: "คณะบุคคลที่มาจากการเลือกตั้งของประชาชนโดยตรงเพื่อทำหน้าที่ร่างหรือแก้ไขเพิ่มเติมรัฐธรรมนูญ" }},
-  {{ term: "ประชามติ", def: "การลงประชามติของประชาชนผู้เป็นเจ้าของอำนาจอธิปไตย เพื่อเป็นข้อยุติสุดท้ายทางกฎหมายและนโยบายระดับชาติ" }},
-  {{ term: "อำนาจอธิปไตย", def: "อำนาจสูงสุดในการปกครองประเทศ ซึ่งเป็นของปวงชนชาวไทย" }},
-  {{ term: "ถอดถอน (Recall)", def: "กระบวนการให้ผู้มีสิทธิเลือกตั้งตั้งแต่ ๕,๐๐๐ คนร่วมกันเข้าชื่อเพื่อยื่นลงประชามติถอดถอนผู้แทนราษฎรหรือผู้ดำรงตำแหน่งทางการเมือง" }}
-];
-
-function toggleGlossary() {{
-  const panel = document.getElementById('glossaryPanel');
-  const overlay = document.getElementById('glossaryOverlay');
-  if (!panel) return;
-  panel.classList.toggle('open');
-  if (panel.classList.contains('open')) {{
-    if (overlay) overlay.style.display = 'block';
-    renderGlossary('');
-    const searchInput = document.getElementById('glossarySearch');
-    if (searchInput) searchInput.focus();
-  }} else {{
-    if (overlay) overlay.style.display = 'none';
-  }}
-}}
-
-function renderGlossary(filterText) {{
-  const listEl = document.getElementById('glossaryList');
-  if (!listEl) return;
-  const query = filterText.trim().toLowerCase();
-  
-  const filtered = glossaryData.filter(item => 
-    item.term.toLowerCase().includes(query) || 
-    item.def.toLowerCase().includes(query)
-  );
-  
-  if (filtered.length === 0) {{
-    listEl.innerHTML = '<div style="color:var(--text-muted); font-size:13px; text-align:center; padding: 20px 0;">ไม่พบคำศัพท์ที่ค้นหา</div>';
-    return;
-  }}
-  
-  listEl.innerHTML = filtered.map(item => `
-    <div class="glossary-item">
-      <div class="glossary-term">${{item.term}}</div>
-      <div class="glossary-def">${{item.def}}</div>
-    </div>
-  `).join('');
-}}
-
-function filterGlossary(val) {{
-  renderGlossary(val);
-}}
-
-// Cross-reference hover popup logic
-document.addEventListener('DOMContentLoaded', () => {{
-  const popup = document.createElement('div');
-  popup.id = 'crossRefPopup';
-  popup.className = 'cross-ref-popup';
-  document.body.appendChild(popup);
-
-  let activeTimeout = null;
-  let isHoveringPopup = false;
-  let isHoveringLink = false;
-
-  popup.addEventListener('mouseenter', () => {{
-    isHoveringPopup = true;
-    if (activeTimeout) clearTimeout(activeTimeout);
-  }});
-
-  popup.addEventListener('mouseleave', () => {{
-    isHoveringPopup = false;
-    activeTimeout = setTimeout(() => {{
-      if (!isHoveringLink) {{
-        popup.style.opacity = '0';
-        popup.style.display = 'none';
-      }}
-    }}, 200);
-  }});
-
-  function translateThaiToArabicLocal(str) {{
-    const thaiNums = {{'๐': '0', '๑': '1', '๒': '2', '๓': '3', '๔': '4', '๕': '5', '๖': '6', '๗': '7', '๘': '8', '๙': '9'}};
-    return str.replace(/[๐-๙]/g, m => thaiNums[m]);
-  }}
-
-  function translateArabicToThaiLocal(numStr) {{
-    const thaiNums = ['๐', '๑', '๒', '๓', '๔', '๕', '๖', '๗', '๘', '๙'];
-    return numStr.toString().replace(/[0-9]/g, m => thaiNums[parseInt(m)]);
-  }}
-
-  document.addEventListener('mouseover', (e) => {{
-    const crossRef = e.target.closest('.cross-ref');
-    if (!crossRef) return;
-    
-    isHoveringLink = true;
-    if (activeTimeout) clearTimeout(activeTimeout);
-    
-    const targetId = crossRef.dataset.target;
-    const targetElementId = 'art_' + targetId;
-    const targetEl = document.getElementById(targetElementId);
-    
-    let content = 'ไม่พบเนื้อหามาตรานี้ในหน้านี้';
-    let title = 'มาตรา ' + translateArabicToThaiLocal(targetId);
-    
-    if (targetEl) {{
-      const bodyEl = targetEl.querySelector('.article-body');
-      if (bodyEl) {{
-        content = bodyEl.innerHTML;
-      }}
-      const headerEl = targetEl.querySelector('.art-num') || targetEl.querySelector('.article-header');
-      if (headerEl) {{
-        title = headerEl.textContent.trim();
-      }}
-    }}
-    
-    popup.innerHTML = `<div class="popup-header">${{title}}</div><div class="popup-body">${{content}}</div>`;
-    popup.style.opacity = '1';
-    popup.style.pointerEvents = 'auto';
-    
-    const rect = crossRef.getBoundingClientRect();
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-    
-    popup.style.display = 'block';
-    
-    let top = rect.top + scrollTop - popup.offsetHeight - 5;
-    let left = rect.left + scrollLeft + (rect.width / 2) - (popup.offsetWidth / 2);
-    
-    if (top < scrollTop) {{
-      top = rect.bottom + scrollTop + 5;
-    }}
-    if (left < 10) {{
-      left = 10;
-    }} else if (left + popup.offsetWidth > window.innerWidth - 10) {{
-      left = window.innerWidth - popup.offsetWidth - 10;
-    }}
-    
-    popup.style.top = top + 'px';
-    popup.style.left = left + 'px';
-  }});
-
-  document.addEventListener('mouseout', (e) => {{
-    const crossRef = e.target.closest('.cross-ref');
-    if (!crossRef) return;
-    
-    isHoveringLink = false;
-    activeTimeout = setTimeout(() => {{
-      if (!isHoveringPopup) {{
-        popup.style.opacity = '0';
-        popup.style.display = 'none';
-      }}
-    }}, 200);
-  }});
-  
-  // Rukchanok Pending Bio text toggle (with line-through)
-  setInterval(() => {{
-    const el = document.getElementById("rukchanok-pending-desc");
-    if (el) {{
-      if (el.dataset.mode === "normal") {{
-        el.innerHTML = `<code style="font-family: 'Courier New', monospace; color: #556270; font-size: 13px; display: block; background: rgba(0,0,0,0.5); padding: 12px; border-radius: 6px; line-height: 1.4; border: 1px solid rgba(255,255,255,0.02); text-align: left; text-decoration: line-through;">[SYSTEM_LOG: EVAL_RUKCHANOK_SRINOK]<br>OPERATION_DESTRUCTION_OF_VISUT_HEGEMONY = TRUE<br>PARLIAMENT_TRANSPARENCY = 1.00 (MAX_INTEGRITY)<br>RESTORE_PARADOX_AI_2.0 = IN_PROGRESS (PARTNERS: AMD, NVIDIA, ASUS, ANTHROPIC, GOOGLE)<br>STATUS: REJECTED_INSUFFICIENT_RECORD</code>`;
-        el.dataset.mode = "code";
-      }} else {{
-        el.innerHTML = `อยู่ระหว่างการพิจารณาบรรจุเข้าทำเนียบบุคคลสำคัญกติการัฐธรรมนูญอย่างเป็นทางการ จากวีรกรรมปฏิรูปสภาผู้แทนราษฎรในการกวาดล้างอิทธิพลเครือข่ายนอกรัฐธรรมนูญและอำนาจนิติประหารของวิสุทธิ์ คมณรัตน์จนหมดสิ้น พร้อมทั้งจับมือกับภาคเทคโนโลยีระดับสากลเพื่อกู้คืนสถาปัตยกรรม ParadoxAI 2.0 และสวัสดิการถ้วนหน้าให้กลับมาเป็นสิทธิประโยชน์พื้นฐานของพลเมืองไทยอีกครั้ง`;
-        el.dataset.mode = "normal";
-      }}
-    }}
-  }}, 5000);
-
-  // Initialize Org Chart default selected node
-  if (typeof selectOrgDesc === 'function') {{
-    selectOrgDesc('people');
-  }}
-}});
-</script>
+<script src="js/constitution.js"></script>
 </body>
 </html>'''
 
