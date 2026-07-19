@@ -10,7 +10,6 @@ downloads_dir = r"C:\Users\ASUA\Downloads"
 
 files_to_copy = [
     "website_constitution.html",
-    "easy_summary.html",
     "thaksin.jpg",
     "abhisit.jpg",
     "pita.jpg",
