@@ -142,7 +142,8 @@ pms = [
     {"num": 20, "name": "พริษฐ์ \"ไอติม\" วัชรสินธุ", "years": "2596-2612", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "นายกรัฐมนตรีอายุน้อยที่สุด บริหารประเทศครบ ๒ วาระ ๑๖ ปี ผู้นำสายคนรุ่นใหม่ผู้ผลักดันนโยบายการกระจายอำนาจสู่ท้องถิ่นและปฏิรูปรัฐธรรมนูญเพื่อสิทธิมนุษยชน ผลักดันโครงการสร้างคลองไทยไมตรี ๒.๐ ร่วมกับราชอาณาจักรประชาชนลาว และร่วมสถาปนาโครงสร้างกลไกความมั่นคงพิเศษ GOC ต่อมาในสมัยของวิสุทธิ์ คมณรัตน์ พริษฐ์ได้นำปฏิบัติการรุ่งอรุณ ๒๒๐ (Operation Dawn 220) เข้าแก้ปัญหานิติประหารสภาแผ่นดินจนสำเร็จอย่างราบรื่น"},
     {"num": 21, "name": "วิสุทธิ์ คมณรัตน์", "years": "2612-2614", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "ตัวแทนพรรคประชาปิติวัติโครงสร้างไร้ศูนย์กลาง พยายามแก้ไขรัฐธรรมนูญผ่านช่องโหว่พระบาทสมเด็จพระมหาภูมิพลมหาราช (ร.๙) ไม่ทรงลงพระปรมาภิไธย โดยมีเป้าหมายแฝงเพื่อลดทอนอำนาจรัฐส่วนกลางและสถาบันฯ พร้อมแทรกแซงสภาด้วยทุนต่างชาติ ทว่าเขาต้องพ้นจากตำแหน่งหลังจากเผชิญกับ 'ปฏิบัติการรุ่งอรุณ ๒๒๐' (Operation Dawn 220) นำโดยอดีตนายกฯ พริษฐ์ วัชรสินธุ และไตรทิศา รณปวัตน์ ซึ่งได้ยื่นหลักฐานความทุจริตเชิงลึกและพฤติการณ์รวบอำนาจ (นิติประหารสภา) ต่อศาลรัฐธรรมนูญ ส่งผลให้ศาลรัฐธรรมนูญมีมติเอกฉันท์ ๖ ต่อ ๐ สั่งให้พ้นจากตำแหน่ง บีบให้ลงนามลาออกและยุบสภาไปในที่สุดเนื่องจากหมดทางออก"},
     {"num": 22, "name": "รักชนก ศรีนอก", "years": "2614-2630", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "นายกรัฐมนตรีคนที่ ๒๒ (นายกหญิงคนที่ ๒) ชนะการเลือกตั้งแบบแลนด์สไลด์ ๕๓% เข้าฟื้นฟูระบบรัฐสภาหลังวิกฤตนิติประหารสภาแผ่นดิน โดยเสนอแก้ช่องโหว่รัฐธรรมนูญ (กำหนดเกณฑ์แก้ไขหมวดสำคัญให้ใช้คะแนนเสียงเท่ากับการยกเลิกรัฐธรรมนูญเพื่อป้องกันนิติประหาร), ดำเนินการตัดสิทธิ์ทางการเมือง สส. งูเห่า ๓๑ คน, ปฏิรูปและปรับปรุงระบบการทำงานของ GOC ให้มีความโปร่งใส และเดินหน้าโครงการคลองไทยไมตรี ๒.๐ ร่วมกับลาวอย่างยั่งยืน"},
-    {"num": 23, "name": "นภดนัย ชาญวีรกูล", "years": "2630-ปัจจุบัน (จะลาออกเร็วๆ นี้ในปี ๒๖๓๕)", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "นายกรัฐมนตรีคนที่ ๒๓ (พรรคภูมิใจไทย) หลานอนุทิน/ลูกเศรณี นำพรรคเป็นแกนนำรัฐบาลครั้งแรก ชนะเลือกตั้งโปร่งใส ๓๓% หยุดสถิติไร้พ่าย ๘๓ ปีพรรคส้ม ผลงานเด่นคือปฏิรูปกระทรวงสาธารณสุข อัปเกรดโรงพยาบาลและขึ้นเงินเดือนแพทย์-พยาบาล เพื่อแก้ปัญหาวิกฤตบุคลากรตกงานจาก ParadoxAI 2.0 เผชิญปมลาออกปี ๒๖๓๕ จากปัญหาจัดสรรผลประโยชน์พรรคร่วมไม่ลงรอยกัน"}
+    {"num": 23, "name": "นภดนัย ชาญวีรกูล", "years": "2630-2635", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "นายกรัฐมนตรีคนที่ ๒๓ (พรรคภูมิใจไทย) หลานอนุทิน/ลูกเศรณี นำพรรคเป็นแกนนำรัฐบาลครั้งแรก ชนะเลือกตั้งโปร่งใส ๓๓% หยุดสถิติไร้พ่าย ๘๓ ปีพรรคส้ม ผลงานเด่นคือปฏิรูปกระทรวงสาธารณสุข อัปเกรดโรงพยาบาลและขึ้นเงินเดือนแพทย์-พยาบาล เพื่อแก้ปัญหาวิกฤตบุคลากรตกงานจาก ParadoxAI 2.0 เผชิญปมลาออกปี ๒๖๓๕ จากปัญหาจัดสรรผลประโยชน์พรรคร่วมไม่ลงรอยกัน"},
+    {"num": 24, "name": "อนุเจริญ ชาญวีรกูล", "years": "2635-ปัจจุบัน", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "นายกรัฐมนตรีคนที่ ๒๔ (พรรคหัวใจไทย) น้องชายของนภดนัย ก้าวขึ้นสู่ตำแหน่งจากการโหวตของ สส. ในรัฐสภาหลังนภดนัยลาออกโดยมิได้ยุบสภา เข้าสานต่อการบริหาร จัดโครงสร้างพรรคร่วมรัฐบาลใหม่ และรีแบรนด์พรรคภูมิใจไทยเป็นพรรคหัวใจไทยชูสีน้ำเงิน-ดำเพื่อปรับภาพลักษณ์ให้ดียิ่งขึ้น"}
 ]
 
 # --- Build HTML ---
@@ -478,11 +479,12 @@ def get_party_html(num):
         20: ("ก้าวไกล", "#FF4F00", "logo_mf.svg"),
         21: ("ประชาปิติวัติ", "#EAB308", "logo_rev.png"),
         22: ("ก้าวไกล", "#FF4F00", "logo_mf.svg"),
-        23: ("ภูมิใจไทย", "#000080", "logo_bji.svg")
+        23: ("ภูมิใจไทย", "#000080", "logo_bji.svg"),
+        24: ("หัวใจไทย", "#1E3A8A", "logo_huajaithai.png")
     }
     name, color, filename = parties.get(num, ("อิสระ", "#9CA3AF", ""))
     
-    if num in [6, 7, 10, 11, 13, 15, 16, 17, 18, 19, 20, 22, 23]:
+    if num in [6, 7, 10, 11, 13, 15, 16, 17, 18, 19, 20, 22, 23, 24]:
         logo_style = f"width: 170px; height: 170px; display: flex; align-items: center; justify-content: center; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.95); border-radius: 12px; padding: 10px; box-sizing: border-box; margin: 0 auto 6px auto; box-shadow: 0 4px 10px rgba(0,0,0,0.15);"
     else:
         logo_style = f"width: 170px; height: 170px; display: flex; align-items: center; justify-content: center; background: rgba({hex_to_rgb(color)}, 0.08); border: 1.2px solid {color}25; border-radius: 12px; padding: 6px; box-sizing: border-box; margin: 0 auto 6px auto;"
@@ -529,7 +531,7 @@ for pm in pms:
     era_class = pm['era_class']
     note_str = esc(pm['note']).replace('\n', '<br>')
     
-    is_bold = pm['num'] in [4, 13, 14, 16, 17, 18, 19, 20, 21, 22, 23]
+    is_bold = pm['num'] in [4, 13, 14, 16, 17, 18, 19, 20, 21, 22, 23, 24]
     name_display = format_pm_name_html(pm['name'], is_bold)
     party_html = get_party_html(pm['num'])
         
@@ -544,6 +546,8 @@ for pm in pms:
         img_filename = "rukchanok.png"
     elif pm['num'] == 23:
         img_filename = "napadanai.png"
+    elif pm['num'] == 24:
+        img_filename = "anucharoen.png"
         
     pm_rows.append(f'''<tr class="pm-row" data-era="{era_class}">
   <td style="text-align: center;">{num_str}</td>
@@ -577,7 +581,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
       <button class="db-tab-btn" onclick="switchTab('rama9-tab', this)">👑 พระมหาภูมิพลมหาราช (ร.๙)</button>
       <button class="db-tab-btn" onclick="switchTab('chakri-tab', this)">🏰 ราชวงศ์จักรี & รัตนโกสินทร์</button>
       <button class="db-tab-btn" onclick="switchTab('siripanya-tab', this)">📚 ห้องสมุดศิริปัญญาวิมารสัจ</button>
-      <button class="db-tab-btn" onclick="switchTab('pms-tab', this)">ทำเนียบนายกรัฐมนตรี (๒๓ ท่าน)</button>
+      <button class="db-tab-btn" onclick="switchTab('pms-tab', this)">ทำเนียบนายกรัฐมนตรี (๒๔ ท่าน)</button>
       <button class="db-tab-btn" onclick="switchTab('goc-tab', this)">🌐 Global Outlandish Centre (GOC)</button>
       <button class="db-tab-btn" onclick="switchTab('geopolitics-tab', this)">🌍 ภูมิรัฐศาสตร์โลก</button>
       <button class="db-tab-btn" onclick="switchTab('figures-tab', this)">👤 บุคคลสำคัญ วีรชน</button>
@@ -1747,6 +1751,26 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <em style="display:block;color:var(--text);font-style:italic;margin-bottom:4px;">"พูดแล้วทำ"</em>
                 <strong style="color:#38bdf8;font-size:12px;display:block;margin-top:6px;">วิเคราะห์เชิงอุดมการณ์และบทบาทรัฐศาสตร์:</strong>
                 <p style="font-size:12.5px;color:var(--text-muted);line-height:1.6;margin:4px 0 0 0;">เป็นวาทศิลป์เน้นผลลัพธ์เชิงปฏิบัติการ (Action-oriented) เพื่อสกัดกั้นและจำแนกแบรนด์ของพรรคออกจากภาพจำของพรรคการเมืองแบบเก่าที่โดนโจมตีว่าเก่งแต่การเจรจาโต้วาทีคำหรูหราในรัฐสภา สโลแกนนี้ตอกย้ำกับฐานเสียงว่านโยบายที่ประกาศไป (โดยเฉพาะการพัฒนาสาธารณสุขและสร้างเสถียรภาพการแพทย์ภูมิภาค) จะถูกนำไปลงมือทำจริงในพื้นที่ทันที นำโดยอนุทิน ชาญวีรกูล ในอดีต สืบทอดสู่ นภดนัย ชาญวีรกูล หัวหน้าพรรคและนายกรัฐมนตรีคนปัจจุบัน</p>
+              </div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(30,58,138,0.3);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
+            <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
+              <img src="images/logo_huajaithai.png" alt="พรรคหัวใจไทย" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+            </div>
+            <div style="flex:1;min-width:0;">
+              <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
+                <span style="font-weight:700;font-size:16px;color:var(--text);">พรรคหัวใจไทย</span>
+                <span style="font-size:12px;color:var(--text-muted);">Huajai Thai Party (HJT)</span>
+                <span style="font-size:10px;background:rgba(74,222,128,0.15);color:#4ade80;padding:2px 7px;border-radius:4px;font-weight:600;white-space:nowrap;">ดำเนินกิจกรรมอยู่ (พรรคแกนนำรัฐบาล)</span>
+              </div>
+              <div style="font-size:13.5px;"><strong style="color:var(--text);">หัวหน้าพรรค:</strong> <span style="color:var(--text-muted);">อนุเจริญ ชาญวีรกูล (นายกรัฐมนตรีคนปัจจุบัน)</span></div>
+              <div style="font-size:13px;color:var(--text-muted);line-height:1.6;margin-top:6px;">พรรคการเมืองที่เกิดจากการรีแบรนด์พรรคภูมิใจไทยโดย อนุเจริญ ชาญวีรกูล ชูโทนสีน้ำเงิน-ดำ เพื่อยกระดับภาพลักษณ์ทางการเมืองให้เป็นเอกภาพ ทันสมัย และสร้างความเชื่อมั่นในการบริหารสภา</div>
+              <div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.06);">
+                <strong style="color:#fb923c;font-size:12px;">สโลแกน: </strong>
+                <em style="display:block;color:var(--text);font-style:italic;margin-bottom:4px;">"หัวใจเพื่อแผ่นดิน หัวใจเพื่อประชาชน"</em>
+                <strong style="color:#38bdf8;font-size:12px;display:block;margin-top:6px;">วิเคราะห์เชิงอุดมการณ์และบทบาทรัฐศาสตร์:</strong>
+                <p style="font-size:12.5px;color:var(--text-muted);line-height:1.6;margin:4px 0 0 0;">เป็นการดำเนินกลยุทธ์รีแบรนด์สถาบันการเมือง (Political Rebranding Strategy) นำโดย อนุเจริญ ชาญวีรกูล เพื่อปรับโฉมพรรคเข้าสู่โทนสีน้ำเงิน-ดำ สื่อถึงเสถียรภาพ ความหนักแน่น และความเป็นมืออาชีพในการจัดโครงสร้างพรรคร่วมรัฐบาลใหม่ภายหลังการเข้าดำรงตำแหน่งนายกรัฐมนตรีคนที่ ๒๔</p>
               </div>
             </div>
           </div>
@@ -4044,7 +4068,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
     <!-- Tab 7: ทำเนียบนายกรัฐมนตรี -->
     <div id="pms-tab" class="db-tab-content">
       <p style="margin-bottom: 16px; font-size: 15px; color: var(--text-muted);">
-        ทำเนียบนายกรัฐมนตรีทั้ง ๒๓ คนของประเทศไทย ทุกท่านมาจากการเลือกตั้งตามครรลองประชาธิปไตย (ไม่มีรัฐประหาร):
+        ทำเนียบนายกรัฐมนตรีทั้ง ๒๔ คนของประเทศไทย ทุกท่านมาจากการเลือกตั้งตามครรลองประชาธิปไตย (ไม่มีรัฐประหาร):
       </p>
       
       <div class="pm-filters" style="display:flex; gap:8px; margin-bottom:16px; flex-wrap: wrap;">
@@ -5314,12 +5338,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           <div class="tri-profile-card">
             <img src="images/napadanai.png" alt="นภดนัย ชาญวีรกูล" class="tri-profile-img">
             <div class="tri-profile-name">นภดนัย ชาญวีรกูล</div>
-            <div class="tri-profile-title">นายกรัฐมนตรีคนที่ ๒๓ (คนปัจจุบัน) / หัวหน้าพรรคภูมิใจไทย</div>
+            <div class="tri-profile-title">อดีตนายกรัฐมนตรีคนที่ ๒๓ / หัวหน้าพรรคภูมิใจไทย</div>
             <div class="tri-meta">
               <div style="margin-bottom: 6px;"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๒๓ (พ.ศ. ๒๖๓๐ - ปัจจุบัน)</div>
               <div style="margin-bottom: 6px;"><strong>พรรคการเมือง:</strong> พรรคภูมิใจไทย (นำพรรคเป็นแกนนำรัฐบาลครั้งแรก)</div>
               <div style="margin-bottom: 6px;"><strong>สายเลือดตระกูล:</strong> หลานอนุทิน / ลูกเศรณี ชาญวีรกูล</div>
-              <div><strong>ปมการเมือง:</strong> เตรียมลาออกปี ๒๖๓๕ จากปัญหาจัดสรรผลประโยชน์พรรคร่วมไม่ลงรอย</div>
+              <div><strong>ปมการเมือง:</strong> ลาออกปี ๒๖๓๕ จากปัญหาจัดสรรผลประโยชน์พรรคร่วมไม่ลงรอย</div>
             </div>
           </div>
 
@@ -5333,8 +5357,34 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <p class="tri-stage-text">ผลงานโดดเด่นที่สุดคือการปฏิรูปกระทรวงสาธารณสุข สืบเนื่องจากสมัยนายกฯ รักชนก โครงการ ParadoxAI 2.0 ประสบความสำเร็จสูงจนคนไทยสุขภาพดี แต่ระบบ AI กลับเข้าแทนที่หมอและพยาบาลจนสุ่มเสี่ยงตกงานยกแผง ทำให้ ParadoxAI 2.0 เป็นโครงการที่สำเร็จและไม่สำเร็จในเวลาเดียวกัน นภดนัยจึงปฏิรูปให้รัฐบาลสนับสนุนงบพัฒนาโรงพยาบาล ปรับระบบงานให้ทันสมัย และปรับขึ้นเงินเดือนบุคลากรทางการแพทย์เพื่อสร้างความสมดุลระหว่าง AI กับหมอ-พยาบาล</p>
             </div>
             <div class="tri-stage">
-              <div class="tri-stage-title">🚪 กำหนดการลาออกปี ๒๖๓๕ จากวิกฤตจัดสรรผลประโยชน์พรรคร่วม</div>
-              <p class="tri-stage-text">แม้นภดนัยจะบริหารประเทศและปฏิรูปสาธารณสุขสำเร็จ แต่ต้องเตรียมประกาศลาออกจากตำแหน่งนายกรัฐมนตรีล่วงหน้าอย่างเป็นทางการในปี พ.ศ. ๒๖๓๕ เนื่องจากเผชิญวิกฤตความขัดแย้งเรื่องการจัดสรรผลประโยชน์และข้อตกลงทางการเมืองภายในพรรคร่วมรัฐบาลที่ไม่ลงรอยกัน</p>
+              <div class="tri-stage-title">🚪 การลาออกปี ๒๖๓๕ จากวิกฤตจัดสรรผลประโยชน์พรรคร่วม</div>
+              <p class="tri-stage-text">แม้นภดนัยจะบริหารประเทศและปฏิรูปสาธารณสุขสำเร็จ แต่ได้ประกาศลาออกจากตำแหน่งนายกรัฐมนตรีอย่างเป็นทางการในปี พ.ศ. ๒๖๓๕ เนื่องจากเผชิญวิกฤตความขัดแย้งเรื่องการจัดสรรผลประโยชน์และข้อตกลงทางการเมืองภายในพรรคร่วมรัฐบาลที่ไม่ลงรอยกัน</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- อนุเจริญ ชาญวีรกูล (นายกรัฐมนตรีคนที่ ๒๔) -->
+        <div class="tri-layout" style="margin-bottom: 32px;">
+          <div class="tri-profile-card">
+            <img src="images/anucharoen.png" alt="อนุเจริญ ชาญวีรกูล" class="tri-profile-img">
+            <div class="tri-profile-name">อนุเจริญ ชาญวีรกูล</div>
+            <div class="tri-profile-title">นายกรัฐมนตรีคนที่ ๒๔ (คนปัจจุบัน) / หัวหน้าพรรคหัวใจไทย</div>
+            <div class="tri-meta">
+              <div style="margin-bottom: 6px;"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๒๔ (พ.ศ. ๒๖๓๕ - ปัจจุบัน)</div>
+              <div style="margin-bottom: 6px;"><strong>พรรคการเมือง:</strong> พรรคหัวใจไทย (รีแบรนด์จากภูมิใจไทย)</div>
+              <div style="margin-bottom: 6px;"><strong>สายเลือดตระกูล:</strong> น้องชายของนภดนัย ชาญวีรกูล</div>
+              <div><strong>ที่มาตำแหน่ง:</strong> สส. โหวตเลือกในสภาหลังนภดนัยลาออก (ไม่ได้ยุบสภา)</div>
+            </div>
+          </div>
+
+          <div class="tri-bio">
+            <div class="tri-stage">
+              <div class="tri-stage-title">🏛️ มติโหวตรัฐสภา & การจัดโครงสร้างพรรคร่วมรัฐบาลใหม่</div>
+              <p class="tri-stage-text">ภายหลังจากที่ นภดนัย ชาญวีรกูล ประกาศลาออกจากตำแหน่งนายกรัฐมนตรีในปี พ.ศ. ๒๖๓๕ โดยมิได้มีการยุบสภาผู้แทนราษฎร สมาชิกรัฐสภาได้ร่วมกันโหวตเลือก <strong>อนุเจริญ ชาญวีรกูล</strong> (น้องชายของนภดนัย) ก้าวขึ้นดำรงตำแหน่งนายกรัฐมนตรีคนที่ ๒๔ เข้าจัดโครงสร้างพรรคร่วมรัฐบาลใหม่ให้มีความเป็นเอกภาพและราบรื่นยิ่งขึ้น</p>
+            </div>
+            <div class="tri-stage">
+              <div class="tri-stage-title">💙 การรีแบรนด์พรรคภูมิใจไทย สู่ "พรรคหัวใจไทย" สีน้ำเงิน-ดำ</div>
+              <p class="tri-stage-text">อนุเจริญเห็นว่าผลงานในสมัยนภดนัยทำไว้ได้ดีมาก แต่ภาพลักษณ์ดั้งเดิมของพรรคภูมิใจไทยในอดีตยังมีจุดอ่อน เขาจึงรีแบรนด์ทางการเมืองด้วยการจัดตั้ง <strong>"พรรคหัวใจไทย"</strong> ขึ้นมาใหม่ (โดยยังคงเก็บพรรคภูมิใจไทยเดิมไว้) ชูสัญลักษณ์โทนสีน้ำเงิน-ดำ สื่อถึงเสถียรภาพ ความเป็นมืออาชีพ และสร้างความเชื่อมั่นใหม่ให้แก่ประชาชน</p>
             </div>
           </div>
         </div>
