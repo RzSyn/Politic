@@ -1540,7 +1540,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="font-size:12px;color:var(--text-muted);">Move Forward Party (MFP)</span>
                 <span style="font-size:10px;background:rgba(74,222,128,0.15);color:#4ade80;padding:2px 7px;border-radius:4px;font-weight:600;white-space:nowrap;">ดำเนินกิจกรรมอยู่</span>
               </div>
-              <div style="font-size:13.5px;"><strong style="color:var(--text);">หัวหน้าพรรค:</strong> <span style="color:var(--text-muted);">รักชนก ศรีนอก &nbsp;|&nbsp; อดีต: พิธา ลิ้มเจริญรัตน์, ศิริกัญญา ตันสกุล, ณัฐพงษ์ เรืองปัญญาวุฒิ, พริษฐ์ วัชรสินธุ</span></div>
+              <div style="font-size:13.5px;"><strong style="color:var(--text);">หัวหน้าพรรค:</strong> <span style="color:var(--text-muted);">วิโรจน์ ลักขณาดิศร (แคนดิเดตนายกรัฐมนตรีคนปัจจุบัน) &nbsp;|&nbsp; อดีต: พิธา ลิ้มเจริญรัตน์, ศิริกัญญา ตันสกุล, ณัฐพงษ์ เรืองปัญญาวุฒิ, พริษฐ์ วัชรสินธุ, รักชนก ศรีนอก</span></div>
               <div style="font-size:13px;color:var(--text-muted);line-height:1.6;margin-top:6px;">ก่อตั้งสืบต่อจากพรรคอนาคตใหม่หลังถูกยุบ พ.ศ. ๒๕๖๐ เป็นพรรคแกนนำรัฐบาลประชาธิปไตยที่ส่งนายกรัฐมนตรีถึง ๕ คน ตั้งแต่ พิธา ถึง รักชนก ศรีนอก</div>
               <div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.06);">
                 <strong style="color:#fb923c;font-size:12px;">สโลแกน: </strong>
@@ -1740,13 +1740,13 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="font-size:12px;color:var(--text-muted);">Bhumjaithai Party</span>
                 <span style="font-size:10px;background:rgba(74,222,128,0.15);color:#4ade80;padding:2px 7px;border-radius:4px;font-weight:600;white-space:nowrap;">ดำเนินกิจกรรมอยู่</span>
               </div>
-              <div style="font-size:13.5px;"><strong style="color:var(--text);">หัวหน้าพรรค:</strong> <span style="color:var(--text-muted);">อนุทิน ชาญวีรกูล</span></div>
+              <div style="font-size:13.5px;"><strong style="color:var(--text);">หัวหน้าพรรค:</strong> <span style="color:var(--text-muted);">นภดนัย ชาญวีรกูล (นายกรัฐมนตรีคนปัจจุบัน) &nbsp;|&nbsp; อดีต: อนุทิน ชาญวีรกูล</span></div>
               <div style="font-size:13px;color:var(--text-muted);line-height:1.6;margin-top:6px;">พรรคฐานเสียงภาคตะวันออกเฉียงเหนือและอีสาน เน้นนโยบายสาธารณสุข ยาเสพติด และการพัฒนาท้องถิ่น</div>
               <div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.06);">
                 <strong style="color:#fb923c;font-size:12px;">สโลแกน: </strong>
                 <em style="display:block;color:var(--text);font-style:italic;margin-bottom:4px;">"พูดแล้วทำ"</em>
                 <strong style="color:#38bdf8;font-size:12px;display:block;margin-top:6px;">วิเคราะห์เชิงอุดมการณ์และบทบาทรัฐศาสตร์:</strong>
-                <p style="font-size:12.5px;color:var(--text-muted);line-height:1.6;margin:4px 0 0 0;">เป็นวาทศิลป์เน้นผลลัพธ์เชิงปฏิบัติการ (Action-oriented) เพื่อสกัดกั้นและจำแนกแบรนด์ของพรรคออกจากภาพจำของพรรคการเมืองแบบเก่าที่โดนโจมตีว่าเก่งแต่การเจรจาโต้วาทีคำหรูหราในรัฐสภา สโลแกนนี้ตอกย้ำกับฐานเสียงว่านโยบายที่ประกาศไป (โดยเฉพาะการพัฒนาสาธารณสุขและสร้างเสถียรภาพการแพทย์ภูมิภาค) จะถูกนำไปลงมือทำจริงในพื้นที่ทันที นำโดยอนุทิน ชาญวีรกูล</p>
+                <p style="font-size:12.5px;color:var(--text-muted);line-height:1.6;margin:4px 0 0 0;">เป็นวาทศิลป์เน้นผลลัพธ์เชิงปฏิบัติการ (Action-oriented) เพื่อสกัดกั้นและจำแนกแบรนด์ของพรรคออกจากภาพจำของพรรคการเมืองแบบเก่าที่โดนโจมตีว่าเก่งแต่การเจรจาโต้วาทีคำหรูหราในรัฐสภา สโลแกนนี้ตอกย้ำกับฐานเสียงว่านโยบายที่ประกาศไป (โดยเฉพาะการพัฒนาสาธารณสุขและสร้างเสถียรภาพการแพทย์ภูมิภาค) จะถูกนำไปลงมือทำจริงในพื้นที่ทันที นำโดยอนุทิน ชาญวีรกูล ในอดีต สืบทอดสู่ นภดนัย ชาญวีรกูล หัวหน้าพรรคและนายกรัฐมนตรีคนปัจจุบัน</p>
               </div>
             </div>
           </div>
