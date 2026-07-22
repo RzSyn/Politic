@@ -593,6 +593,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
       <button class="db-tab-btn" onclick="switchTab('national-symbols-tab', this)">🇹🇭 ธงชาติและเพลงชาติไทย</button>
       <button class="db-tab-btn" onclick="switchTab('paradox-ai-tab', this)">🤖 โครงการ ParadoxAI / ParadoxForward</button>
       <button class="db-tab-btn" onclick="switchTab('parties-tab', this)">🗳️ พรรคการเมือง</button>
+      <button class="db-tab-btn" onclick="switchTab('independent-organs-tab', this)">⚖️ องค์กรอิสระตามรัฐธรรมนูญ</button>
     </div>
 
     <!-- Tab 1: ประวัติศาสตร์ประชาธิปไตย -->
@@ -1887,6 +1888,239 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Tab 11: องค์กรอิสระตามรัฐธรรมนูญ -->
+    <div id="independent-organs-tab" class="db-tab-content">
+      <div style="background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(212, 175, 55, 0.2); border-radius: 16px; padding: 28px; margin-bottom: 28px; backdrop-filter: blur(12px);">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 20px; margin-bottom: 24px;">
+          <div>
+            <h3 style="color: var(--gold-light); font-size: 22px; font-weight: 700; margin: 0 0 6px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 10px;">
+              <span>⚖️ องค์กรอิสระและสถาบันนิติธรรมตามรัฐธรรมนูญแห่งราชอาณาจักรไทย</span>
+            </h3>
+            <p style="color: var(--text-muted); font-size: 13.5px; margin: 0; line-height: 1.6;">
+              กลไกการตรวจสอบดุลและค้ำจูนนิติรัฐ การพิทักษ์วินัยการเงินการคลัง เสรีภาพพลเมือง และการปราบปรามการทุจริตเชิงระบบภายใต้กติการัฐธรรมนูญ
+            </p>
+          </div>
+          <div style="display: flex; gap: 10px; background: rgba(0,0,0,0.3); padding: 8px 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.06); font-size: 12px; color: var(--gold-light);">
+            <span>🛡️ ระบบ ParadoxAI Audit 2.0 Active</span>
+          </div>
+        </div>
+
+        <!-- Grid of 6 Constitutional Organs -->
+        <div style="display: flex; flex-direction: column; gap: 24px;">
+
+          <!-- ๑. ศาลรัฐธรรมนูญ -->
+          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(212, 175, 55, 0.25); border-radius: 14px; padding: 22px; transition: all 0.3s ease;">
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 12px;">
+              <h4 style="color: var(--gold-light); font-size: 17px; margin: 0; display: flex; align-items: center; gap: 8px;">
+                <span>🏛️ ๑. ศาลรัฐธรรมนูญ (Constitutional Court)</span>
+              </h4>
+              <span style="font-size: 11px; background: rgba(212, 175, 55, 0.15); color: var(--gold-light); padding: 3px 10px; border-radius: 6px; font-weight: 600;">"สถาบันคุ้มครองความเป็นสูงสุดแห่งกฎหมายรัฐธรรมนูญ"</span>
+            </div>
+            <div style="font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-bottom: 14px;">
+              <strong style="color: var(--text);">บทบาทตามรัฐธรรมนูญ (มาตรา ๒๙๐):</strong> ตรวจสอบความชอบด้วยรัฐธรรมนูญของร่างพระราชบัญญัติ พระราชกำหนด และการพิจารณาตีความขอบเขตอำนาจหน้าที่ขององค์กรตามรัฐธรรมนูญ เพื่อป้องกันมิให้เกิดการใช้อำนาจนิติประหารหรือขัดต่อหลักเจตนารมณ์ประชาธิปไตย
+            </div>
+            <div style="background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 10px; padding: 14px;">
+              <div style="font-weight: 600; font-size: 12.5px; color: #38bdf8; margin-bottom: 8px;">📜 โมดูลโต้ตอบจำลอง (Constitutional Rulings Log)</div>
+              <div style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
+                • <strong>คำวินิจฉัยมาตรา ๘:</strong> พิทักษ์สิทธิสวัสดิการถ้วนหน้า UBI ให้เป็นสิทธิขั้นพื้นฐานของราษฎรไทยที่ไม่สามารถถูกริบรอนหรือยกเลิกโดยกฎหมายลำดับรองได้<br>
+                • <strong>ตารางสถิติคดีตีความอำนาจ:</strong> รองรับการสืบค้นคำวินิจฉัยประวัติศาสตร์และคำร้องจากรัฐสภาในการตรวจสอบความชอบของพระราชกำหนดการเงิน
+              </div>
+            </div>
+          </div>
+
+          <!-- ๒. คณะกรรมการป้องกันและปราบปรามการทุจริตแห่งชาติ (ป.ป.ช.) -->
+          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 14px; padding: 22px;">
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 12px;">
+              <h4 style="color: #f87171; font-size: 17px; margin: 0; display: flex; align-items: center; gap: 8px;">
+                <span>🔎 ๒. คณะกรรมการป้องกันและปราบปรามการทุจริตแห่งชาติ (ป.ป.ช.)</span>
+              </h4>
+              <span style="font-size: 11px; background: rgba(239, 68, 68, 0.15); color: #f87171; padding: 3px 10px; border-radius: 6px; font-weight: 600;">"ระบบเอ็กซเรย์บัญชีทรัพย์สินข้ามชาติ"</span>
+            </div>
+            <div style="font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-bottom: 14px;">
+              <strong style="color: var(--text);">บทบาทตามรัฐธรรมนูญ (มาตรา ๓๓๐):</strong> ตรวจสอบบัญชีทรัพย์สินและหนี้สินของผู้ดำรงตำแหน่งทางการเมือง ข้าราชการระดับสูง และผู้ใช้อำนาจรัฐ (ตามมาตรา ๒๙๗) เพื่อป้องกันการร่ำรวยผิดปกติและการขัดกันแห่งผลประโยชน์
+            </div>
+
+            <!-- โมดูลโต้ตอบจำลอง (Interactive Asset Disclosures) -->
+            <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(239, 68, 68, 0.25); border-radius: 10px; padding: 16px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
+                <div style="font-weight: 600; font-size: 13px; color: #f87171; display: flex; align-items: center; gap: 6px;">
+                  <span>💻 โมดูลโต้ตอบจำลอง: Interactive Asset Disclosures (ระบบเอ็กซเรย์ ParadoxAI)</span>
+                </div>
+                <button onclick="toggleNACCAnomaly()" style="background: rgba(239, 68, 68, 0.2); border: 1px solid #ef4444; color: #fca5a5; padding: 5px 12px; border-radius: 6px; font-size: 11.5px; cursor: pointer; font-weight: 600; transition: all 0.2s;">
+                  🔍 คลิกสแกนตรวจดึงรายงานบัญชีทรัพย์สิน
+                </button>
+              </div>
+
+              <!-- Anomaly detected block -->
+              <div id="nacc-anomaly-box" style="display: none; background: rgba(220, 38, 38, 0.12); border: 1px solid rgba(239, 68, 68, 0.4); border-radius: 8px; padding: 12px 16px; margin-bottom: 12px;">
+                <div style="color: #ef4444; font-weight: 700; font-size: 12.5px; margin-bottom: 4px;">🚨 ระบบตรวจพบลายแทงสีแดง (Anomaly Detected - Alert level 5)</div>
+                <p style="color: #fca5a5; font-size: 12px; line-height: 1.5; margin: 0;">
+                  ค้นพบบัญชีลับต่างประเทศของอดีตนายกรัฐมนตรีวิสุทธิ์ คมณรัตน์ ระบุเส้นทางการเงินและธุรกรรมอำพรางรับโอนเงินสีเทาจากกลุ่มทุนพลังงานข้ามชาติจำนวน <strong>๓๐๐,๐๐๐,๐๐๐ บาท (๓๐๐ ล้านบาท)</strong> เข้าสู่บัญชีธนาคารเกาะฟิสคัล
+                </p>
+              </div>
+
+              <!-- Fund balance block -->
+              <div style="display: flex; align-items: center; justify-content: space-between; background: rgba(0,0,0,0.3); padding: 10px 14px; border-radius: 8px; font-size: 12px; border-left: 3px solid #4ade80;">
+                <span style="color: var(--text);">💰 <strong>ยอดเงินกองทุนต่อต้านการทุจริตภาคประชาชน (มาตรา ๑๑๕๗):</strong></span>
+                <span style="color: #4ade80; font-weight: 700; font-size: 14px; font-family: monospace;">๑๔,๒๕๐,๐๐๐,๐๐๐ บาท</span>
+              </div>
+              <div style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">*แสดงตัวเลขยอดเงินแผ่นดินและทรัพย์สินทุจริตที่ยึดคืนได้สำเร็จ นำส่งเข้าคลังเพื่อจัดสรรสวัสดิการถ้วนหน้าแก่ชุมชน</div>
+            </div>
+          </div>
+
+          <!-- ๓. คณะกรรมการการเลือกตั้ง (กกต.) -->
+          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(59, 130, 246, 0.3); border-radius: 14px; padding: 22px;">
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 12px;">
+              <h4 style="color: #60a5fa; font-size: 17px; margin: 0; display: flex; align-items: center; gap: 8px;">
+                <span>🗳️ ๓. คณะกรรมการการเลือกตั้ง (กกต.)</span>
+              </h4>
+              <span style="font-size: 11px; background: rgba(59, 130, 246, 0.15); color: #60a5fa; padding: 3px 10px; border-radius: 6px; font-weight: 600;">"ศูนย์บริหารประชามติ ๕ รอบและประชาธิปไตยดิจิทัล"</span>
+            </div>
+            <div style="font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-bottom: 14px;">
+              <strong style="color: var(--text);">บทบาทตามรัฐธรรมนูญ (มาตรา ๓๑๒):</strong> ควบคุมการจัดการเลือกตั้ง สส. สว. และการออกเสียงประชามติระดับชาติ (มาตรา ๓๒๐) ให้เป็นไปโดยสุจริต เที่ยงธรรม และสะท้อนเจตจำนงของประชาชนอย่างแท้จริง
+            </div>
+
+            <!-- โมดูลโต้ตอบจำลอง (Referendum & Vote Simulator) -->
+            <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(59, 130, 246, 0.25); border-radius: 10px; padding: 16px;">
+              <div style="font-weight: 600; font-size: 13px; color: #60a5fa; margin-bottom: 10px;">📊 โมดูลโต้ตอบจำลอง: Referendum & Vote Simulator (ประชามติ & ประชาธิปไตยดิจิทัล)</div>
+              
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin-bottom: 12px;">
+                <!-- Box 1: Referendum Round 4 -->
+                <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.06); padding: 12px; border-radius: 8px;">
+                  <div style="font-size: 12px; font-weight: 700; color: #f87171; margin-bottom: 6px;">🗳️ ประชามติรอบที่ ๔ (พ.ศ. ๒๕๒๕)</div>
+                  <div style="font-size: 11.5px; color: var(--text-muted); line-height: 1.5; margin-bottom: 8px;">
+                    จำลองผลโหวต "ไม่เห็นชอบ" พุ่งสูงขึ้นคว่ำร่างรัฐธรรมนูญฉบับแรกที่ตัด "มาตรา ๘" (สวัสดิการถ้วนหน้า) ออกไป
+                  </div>
+                  <div style="background: rgba(255,255,255,0.05); height: 16px; border-radius: 8px; overflow: hidden; display: flex;">
+                    <div style="width: 78%; background: #ef4444; font-size: 10px; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold;">ไม่เห็นชอบ ๗๘%</div>
+                    <div style="width: 22%; background: #3b82f6; font-size: 10px; color: white; display: flex; align-items: center; justify-content: center;">เห็นชอบ ๒๒%</div>
+                  </div>
+                </div>
+
+                <!-- Box 2: Direct Vote Simulator (Section 1153) -->
+                <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.06); padding: 12px; border-radius: 8px;">
+                  <div style="font-size: 12px; font-weight: 700; color: #60a5fa; margin-bottom: 6px;">⚡ สัญญนิยมการโหวตตรง (มาตรา ๑๑๕๓)</div>
+                  <div style="font-size: 11.5px; color: var(--text-muted); line-height: 1.5; margin-bottom: 8px;">
+                    ญัตติ: โอนย้ายงบกลาโหม ๑๐% สู่กองทุน UBI <br>
+                    รับสัญญาณคะแนนประชามติแบบ real-time: <strong id="live-vote-count" style="color: #4ade80;">๓,๘๔๕,๒๐๐ เสียง</strong>
+                  </div>
+                  <button onclick="simulateECTVote()" style="background: #2563eb; border: none; color: white; padding: 4px 10px; border-radius: 4px; font-size: 11px; cursor: pointer; font-weight: 600;">
+                    🗳️ คลิกส่งคะแนนประชามติจำลอง (+๑ เสียง)
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ๔. คณะกรรมการตรวจเงินแผ่นดิน (คตง.) -->
+          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(52, 211, 153, 0.3); border-radius: 14px; padding: 22px;">
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 12px;">
+              <h4 style="color: #34d399; font-size: 17px; margin: 0; display: flex; align-items: center; gap: 8px;">
+                <span>📈 ๔. คณะกรรมการตรวจเงินแผ่นดิน (คตง.)</span>
+              </h4>
+              <span style="font-size: 11px; background: rgba(52, 211, 153, 0.15); color: #34d399; padding: 3px 10px; border-radius: 6px; font-weight: 600;">"หน่วยพิทักษ์วินัยการเงินและการคลังแผ่นดิน"</span>
+            </div>
+            <div style="font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-bottom: 14px;">
+              <strong style="color: var(--text);">บทบาทตามรัฐธรรมนูญ (มาตรา ๓๓๖):</strong> ตรวจสอบบัญชีและการเบิกจ่ายเงินแผ่นดินและงบประมาณของหน่วยงานรัฐ เพื่อควบคุมวินัยหนี้สาธารณะและเสถียรภาพการเงินการคลังอย่างเคร่งครัด
+            </div>
+
+            <!-- โมดูลโต้ตอบจำลอง (Fiscal Audit Tracker) -->
+            <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(52, 211, 153, 0.25); border-radius: 10px; padding: 16px;">
+              <div style="font-weight: 600; font-size: 13px; color: #34d399; margin-bottom: 10px;">🖥️ โมดูลโต้ตอบจำลอง: Fiscal Audit Tracker (อินทราเน็ต ParadoxAI 2.0)</div>
+              
+              <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.06); padding: 12px; border-radius: 8px; margin-bottom: 10px;">
+                <div style="font-size: 12px; font-weight: 700; color: #f87171; margin-bottom: 4px;">⚠️ ระบบกรองการเบิกจ่ายน่าสงสัย (Flagged Budgets)</div>
+                <div style="font-size: 12px; color: #fca5a5; line-height: 1.5;">
+                  <strong>แจ้งเตือนความผิดปกติ:</strong> ตรวจพบลักลอบโอนเงินงบลับและข้อตกลงสัมปทานจัดซื้ออาวุธยุทโธปกรณ์ส่อทุจริตในกระทรวงกลาโหม ยุครัฐบาลวิสุทธิ์ มูลค่า ๑,๒๕๐ ล้านบาท — <em>สถานะ: อายัดบัญชีเพื่อตรวจสอบโดย คตง.</em>
+                </div>
+              </div>
+
+              <!-- ดัชนีหนี้สาธารณะ -->
+              <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(0,0,0,0.3); padding: 10px 14px; border-radius: 8px; font-size: 12px;">
+                <span>📊 <strong>ดัชนีหนี้สาธารณะแผ่นดิน (Public Debt Ratio):</strong></span>
+                <span style="color: #34d399; font-weight: 700; font-size: 13px;">๓๘.๕% ต่อ GDP (ต่ำกว่าเพดานวินัยการคลัง ๖๐%)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ๕. คณะกรรมการสิทธิมนุษยชนแห่งชาติ (กสม.) -->
+          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 14px; padding: 22px;">
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 12px;">
+              <h4 style="color: #c084fc; font-size: 17px; margin: 0; display: flex; align-items: center; gap: 8px;">
+                <span>🕊️ ๕. คณะกรรมการสิทธิมนุษยชนแห่งชาติ (กสม.)</span>
+              </h4>
+              <span style="font-size: 11px; background: rgba(168, 85, 247, 0.15); color: #c084fc; padding: 3px 10px; border-radius: 6px; font-weight: 600;">"หน่วยพิทักษ์เสรีภาพและความปลอดภัยไซเบอร์พลเมือง"</span>
+            </div>
+            <div style="font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-bottom: 14px;">
+              <strong style="color: var(--text);">บทบาทตามรัฐธรรมนูญ (มาตรา ๓๒๘):</strong> ตรวจสอบการกระทำอันเป็นการละเมิดสิทธิมนุษยชน คุ้มครองสิทธิเสรีภาพบุคคล และปกป้องความเป็นส่วนตัวของราษฎร (ตามมาตรา ๓๒๙)
+            </div>
+
+            <!-- โมดูลโต้ตอบจำลอง (Human Rights Violation Tracker) -->
+            <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(168, 85, 247, 0.25); border-radius: 10px; padding: 16px;">
+              <div style="font-weight: 600; font-size: 13px; color: #c084fc; margin-bottom: 10px;">📑 โมดูลโต้ตอบจำลอง: Human Rights Violation Tracker (รายงานการตรวจสอบอำนาจรัฐ)</div>
+              
+              <div style="display: flex; flex-direction: column; gap: 10px;">
+                <div style="background: rgba(0,0,0,0.3); border-left: 3px solid #c084fc; padding: 10px 14px; border-radius: 6px; font-size: 12px;">
+                  <strong style="color: var(--gold-light);">• กรณีสืบสวน "วิกฤตนครหลวงเวียงจันทน์":</strong>
+                  <div style="color: var(--text-muted); margin-top: 3px; line-height: 1.5;">
+                    รายงานผลตรวจสอบกรณีกองกำลัง Warfare Division ของ GOC ละเมิดสิทธิ์โดยใช้กำลังประทุษร้ายเหยื่อในนครหลวงเวียงจันทน์โดยไม่ได้รับความเห็นชอบ นำไปสู่การสั่งปลดผู้บัญชาการภาคสนามและดำเนินคดีทางวินัย
+                  </div>
+                </div>
+
+                <div style="background: rgba(0,0,0,0.3); border-left: 3px solid #f87171; padding: 10px 14px; border-radius: 6px; font-size: 12px;">
+                  <strong style="color: #f87171;">• การตรวจสอบมาตรา ๕๘ (Cyber Privacy Protection):</strong>
+                  <div style="color: var(--text-muted); margin-top: 3px; line-height: 1.5;">
+                    ออกแถลงการณ์คัดค้านและตรวจสอบกรณีภาครัฐมีความพยายามใช้เทคโนโลยีสอดแนมดักรับข้อมูลไซเบอร์ของราษฎรโดยปราศจากหมายศาล พิทักษ์สิทธิความลับส่วนบุคคลของพลเมือง
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ๖. องค์กรอัยการ -->
+          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(251, 146, 60, 0.3); border-radius: 14px; padding: 22px;">
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 12px;">
+              <h4 style="color: #fb923c; font-size: 17px; margin: 0; display: flex; align-items: center; gap: 8px;">
+                <span>⚖️ ๖. องค์กรอัยการ (Office of the Attorney General)</span>
+              </h4>
+              <span style="font-size: 11px; background: rgba(251, 146, 60, 0.15); color: #fb923c; padding: 3px 10px; border-radius: 6px; font-weight: 600;">"ทนายแผ่นดินผู้ขับเคลื่อนคดีกบฏและความมั่นคง"</span>
+            </div>
+            <div style="font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-bottom: 14px;">
+              <strong style="color: var(--text);">บทบาทตามรัฐธรรมนูญ (มาตรา ๓๐๖):</strong> สถาบันนิติธรรมอิสระในการปฏิบัติหน้าที่ฟ้องคดีอาญา พิทักษ์ผลประโยชน์ของแผ่นดิน และอำนวยความยุติธรรมแก่ประชาชนโดยเที่ยงธรรม
+            </div>
+
+            <!-- โมดูลโต้ตอบจำลอง (Prosecution Docket Simulator) -->
+            <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(251, 146, 60, 0.25); border-radius: 10px; padding: 16px;">
+              <div style="font-weight: 600; font-size: 13px; color: #fb923c; margin-bottom: 10px;">💼 โมดูลโต้ตอบจำลอง: Prosecution Docket Simulator (แฟ้มคดีอาญาแผ่นดิน)</div>
+              
+              <div style="display: flex; flex-direction: column; gap: 10px;">
+                <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.06); padding: 12px; border-radius: 8px;">
+                  <strong style="color: #f87171; font-size: 12.5px;">• คดีกบฏแผ่นดินล้มล้างรัฐธรรมนูญ (พ.ศ. ๒๕๖๘):</strong>
+                  <div style="color: var(--text-muted); font-size: 12px; margin-top: 4px; line-height: 1.5;">
+                    สำนวนคดีส่งฟ้องคณะทหารในเครือข่ายรักษาชาติศาสตร์กษัตริย์ของจอมพลปฏิวัติ พิบูลอสงไขย ที่พยายามกระทำรัฐประหารล้มล้างกติการัฐธรรมนูญ พ.ศ. ๒๕๖๘ ส่งฟ้องศาลฎีกาแผนกคดีอาญา
+                  </div>
+                </div>
+
+                <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.06); padding: 12px; border-radius: 8px;">
+                  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+                    <strong style="color: #fb923c; font-size: 12.5px;">• การขับเคลื่อนคดีโดยภาคประชาชน (มาตรา ๓๐๘):</strong>
+                    <button onclick="signPetition()" style="background: #ea580c; border: none; color: white; padding: 4px 10px; border-radius: 4px; font-size: 11px; cursor: pointer; font-weight: 600;">
+                      ✍️ คลิกร่วมลงชื่อส่งฟ้องคดีแทนอัยการ
+                    </button>
+                  </div>
+                  <div style="color: var(--text-muted); font-size: 12px; margin-top: 6px; line-height: 1.5;">
+                    สถานะการร่วมลงชื่อของประชาชน: <strong id="petition-count" style="color: #4ade80;">๕,๐๐๐ คน</strong> (ครบเงื่อนไขตามมาตรา ๓๐๘ เพื่อยื่นฟ้องคดีอาญาแทนอัยการในคดีที่พนักงานอัยการสั่งไม่ฟ้องอย่างไม่เป็นธรรม)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -6003,6 +6237,34 @@ full_html = f'''<!DOCTYPE html>
 <button class="back-top" id="backTop" onclick="window.scrollTo(0,0)">▲</button>
 
 <script src="js/constitution.js"></script>
+
+<script>
+function toggleNACCAnomaly() {{
+  var box = document.getElementById('nacc-anomaly-box');
+  if (box) {{
+    box.style.display = (box.style.display === 'none' || box.style.display === '') ? 'block' : 'none';
+  }}
+}}
+
+var currentVoteCount = 3845200;
+function simulateECTVote() {{
+  currentVoteCount++;
+  var el = document.getElementById('live-vote-count');
+  if (el) {{
+    el.innerText = currentVoteCount.toLocaleString('th-TH') + ' เสียง';
+  }}
+}}
+
+var currentPetitionCount = 5000;
+function signPetition() {{
+  currentPetitionCount++;
+  var el = document.getElementById('petition-count');
+  if (el) {{
+    el.innerText = currentPetitionCount.toLocaleString('th-TH') + ' คน';
+  }}
+}}
+</script>
+
 </body>
 </html>'''
 
