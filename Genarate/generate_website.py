@@ -1779,6 +1779,26 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               </div>
             </div>
           </div>
+          <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(147,51,234,0.3);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
+            <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
+              <img src="images/logo_rabiablokmai.png" alt="พรรคระเบียบโลกใหม่" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+            </div>
+            <div style="flex:1;min-width:0;">
+              <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
+                <span style="font-weight:700;font-size:16px;color:var(--text);">พรรคระเบียบโลกใหม่</span>
+                <span style="font-size:12px;color:var(--text-muted);">New World Order Party (NWO)</span>
+                <span style="font-size:10px;background:rgba(74,222,128,0.15);color:#4ade80;padding:2px 7px;border-radius:4px;font-weight:600;white-space:nowrap;">ดำเนินกิจกรรมอยู่</span>
+              </div>
+              <div style="font-size:13.5px;"><strong style="color:var(--text);">หัวหน้าพรรค/แกนนำ:</strong> <span style="color:var(--text-muted);">คณะแกนนำการทูตและภูมิรัฐศาสตร์โลกยุคใหม่</span></div>
+              <div style="font-size:13px;color:var(--text-muted);line-height:1.6;margin-top:6px;">พรรคการเมืองทางเลือกสายภูมิรัฐศาสตร์ มุ่งเน้นการปฏิรูปโครงสร้างเศรษฐกิจความมั่นคง การทูตพหุภาคี และการปรับตำแหน่งแห่งที่ของสยามในประชาคมโลกยุคระเบียบใหม่</div>
+              <div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.06);">
+                <strong style="color:#fb923c;font-size:12px;">สโลแกน: </strong>
+                <em style="display:block;color:var(--text);font-style:italic;margin-bottom:4px;">"ปรับเปลี่ยนสยาม สร้างสรรค์ระเบียบโลกใหม่เพื่อความเท่าเทียม"</em>
+                <strong style="color:#38bdf8;font-size:12px;display:block;margin-top:6px;">วิเคราะห์เชิงอุดมการณ์และบทบาทรัฐศาสตร์:</strong>
+                <p style="font-size:12.5px;color:var(--text-muted);line-height:1.6;margin:4px 0 0 0;">เป็นวาทศิลป์ที่ชูอุดมการณ์พหุนิยมสากล (Global Pluralism) และการทูตเชิงยุทธศาสตร์เพื่อยกระดับประเทศไทยในเวทีภูมิรัฐศาสตร์โลก เน้นการสร้างความสมดุลระหว่างมหาอำนาจ การต่อยอดนวัตกรรมเทคโนโลยี และการปรับตัวทางการเมืองให้ทันต่อความเปลี่ยนแปลงของระเบียบโลกยุคดิจิทัล</p>
+              </div>
+            </div>
+          </div>
           <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,165,0,0.2);border-radius:12px;padding:18px 24px;margin-bottom:12px;">
             <div style="width: 220px; height: 220px; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
               <img src="images/logo_srt.png" alt="พรรคเสรีรวมไทย" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
