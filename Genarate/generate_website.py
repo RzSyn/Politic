@@ -6149,34 +6149,28 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
         <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 32px 0;">
 
-        <!-- รักชนก ศรีนอก (ปฏิเสธการบรรจุเป็นวีรชน - สู้ดีมาก อยู่ในภาวะก้ำกึ่ง เทาเข้มครึ่งหนึ่ง เทาอ่อนครึ่งหนึ่ง) -->
-        <div class="tri-layout" style="margin-bottom: 32px; background: linear-gradient(135deg, rgba(20, 24, 33, 0.95) 50%, rgba(60, 68, 82, 0.45) 50%); border: 1.5px dashed rgba(160, 174, 192, 0.4); border-radius: 14px; padding: 24px; position: relative;">
-          <div style="position: absolute; top: 16px; right: 20px; font-size: 24px; opacity: 0.7;" title="ปฏิเสธการบรรจุเป็นวีรชน - สู้ดีมาก อยู่ในภาวะก้ำกึ่ง">❌</div>
+        <!-- รักชนก ศรีนอก (อยู่ระหว่างการพิจารณา - ผลงานไม่เพียงพอ ถูกขีดฆ่า) -->
+        <div class="tri-layout" style="margin-bottom: 32px; background: rgba(20, 24, 35, 0.4); border: 1px dashed rgba(255,255,255,0.1); border-radius: 12px; padding: 24px; position: relative; text-decoration: line-through; color: #556270;">
+          <div style="position: absolute; top: 16px; right: 20px; font-size: 24px; filter: grayscale(100%); opacity: 0.6;" title="ปฏิเสธการบรรจุ - ผลงานยังไม่เพียงพอ">❌</div>
           
-          <div class="tri-profile-card" style="background: linear-gradient(180deg, rgba(15, 18, 25, 0.95) 50%, rgba(45, 52, 65, 0.85) 50%); border: 1px solid rgba(160,174,192,0.3);">
-            <img src="images/rukchanok.png" alt="รักชนก ศรีนอก" class="tri-profile-img" style="filter: grayscale(80%) contrast(110%); opacity: 0.85; border-color: rgba(160,174,192,0.4);">
-            <div class="tri-profile-name" style="color: #cbd5e1; text-decoration: line-through;">รักชนก ศรีนอก</div>
-            <div class="tri-profile-title" style="color: #94a3b8; font-size: 12px; font-weight: 700;">ปฏิเสธการบรรจุเป็นวีรชน (สู้ดีมาก - ก้ำกึ่งเทาเข้ม / เทาอ่อน)</div>
-            <div class="tri-meta" style="border-top: 1px solid rgba(255, 255, 255, 0.08); color: #94a3b8;">
-              <div style="margin-bottom: 6px; text-decoration: line-through;"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๒๒ (นายกหญิงคนที่ ๒)</div>
+          <div class="tri-profile-card" style="background: rgba(15, 18, 25, 0.9); border: 1px solid rgba(255,255,255,0.05); filter: grayscale(100%);">
+            <img src="images/rukchanok.png" alt="รักชนก ศรีนอก" class="tri-profile-img" style="filter: brightness(0); opacity: 0.8; border-color: rgba(255,255,255,0.05);">
+            <div class="tri-profile-name" style="color: #4a5568; text-decoration: line-through;">รักชนก ศรีนอก</div>
+            <div class="tri-profile-title" style="color: #4a5568; text-decoration: line-through;">ปฏิเสธการบรรจุ (ผลงานยังไม่เพียงพอ)</div>
+            <div class="tri-meta" style="border-top: 1px solid rgba(255, 255, 255, 0.05); color: #4a5568; text-decoration: line-through;">
+              <div style="margin-bottom: 6px; text-decoration: line-through;"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๒๒ (คนปัจจุบัน)</div>
               <div style="margin-bottom: 6px; text-decoration: line-through;"><strong>พรรคการเมือง:</strong> พรรคก้าวไกล</div>
-              <div style="margin-bottom: 6px;"><strong>โทนสถานะ:</strong> <span style="color: #e2e8f0; font-weight: 700;">⚫ เทาเข้ม ๕๐%</span> | <span style="color: #94a3b8; font-weight: 700;">⚪ เทาอ่อน ๕๐%</span></div>
-              <div style="text-decoration: line-through;"><strong>ผลการวินิจฉัย:</strong> ไม่เข้าเกณฑ์วีรชนถาวร (สู้สภาเดือดแต่ผลงานยังก้ำกึ่ง)</div>
+              <div style="text-decoration: line-through;"><strong>สถานะคดีการเมือง:</strong> กู้คืนความบริสุทธิ์ของสภาสำเร็จ</div>
             </div>
           </div>
 
-          <div class="tri-bio" style="opacity: 0.9;">
-            <div class="tri-stage">
-              <div class="tri-stage-title" style="color: #cbd5e1; display: flex; align-items: center; gap: 8px;">
-                <span>⚖️ บันทึกผลการไต่สวนการบรรจุชื่อในหมวดวีรชน (HERO_ENTRY_REJECTED)</span>
-                <span class="badge" style="background: rgba(148, 163, 184, 0.15); color: #cbd5e1; border: 1px solid rgba(148, 163, 184, 0.3); font-size: 10px;">HALF_DARK_HALF_LIGHT_GREY</span>
+          <div class="tri-bio" style="filter: grayscale(100%); opacity: 0.5;">
+            <div class="tri-stage" style="text-decoration: line-through;">
+              <div class="tri-stage-title" style="color: #4a5568; display: flex; align-items: center; gap: 8px; text-decoration: line-through;">
+                <span style="text-decoration: line-through;">⚖️ บันทึกพฤติการณ์และการสืบค้นประวัติศาสตร์เฉพาะกิจ</span>
+                <span class="badge" style="background: rgba(255,255,255,0.03); color: #4a5568; border: 1px solid rgba(255,255,255,0.08); font-size: 10px; text-decoration: line-through;">REJECTED_INSUFFICIENT</span>
               </div>
-              <p class="tri-stage-text" style="font-size: 14.5px; color: #cbd5e1; line-height: 1.8;">
-                แม้จะมีมวลชนและสมาชิกสภาจำนวนมากเสนอชื่อ <strong>รักชนก ศรีนอก</strong> เข้าสู่ทำเนียบบุคคลสำคัญวีรชน จากวีรกรรมปฏิรูปสภาผู้แทนราษฎรในการกวาดล้างอิทธิพลเครือข่ายนอกรัฐธรรมนูญและอำนาจนิติประหารของวิสุทธิ์ คมณรัตน์จนหมดสิ้น พร้อมทั้งจับมือกับภาคเทคโนโลยีระดับสากลเพื่อกู้คืนสถาปัตยกรรม ParadoxAI 2.0 และสวัสดิการถ้วนหน้า ทว่าจากผลการพิจารณาของสภาคณะกรรมการประวัติศาสตร์พบว่า <strong>การบริหารราชการแผ่นดินในวาระของเธอยังเผชิญความรอยร้าวรุนแรง วิกฤตแรงงานพยาบาล ๓๔,๐๐๐ คน และความยุ่งเหยิงของการจัดระเบียบองค์กร ซึ่งยังไม่ผ่านเกณฑ์มาตรฐานความสมบูรณ์แบบที่จะได้รับการบรรจุเป็นวีรชนถาวร</strong>
-              </p>
-              <p class="tri-stage-text" style="margin-top: 10px; font-size: 14.5px; color: #94a3b8; line-height: 1.8;">
-                สภาคณะกรรมการฯ จึงมีมติปัดตกการบรรจุชื่อเข้าสู่หมวดวีรชนถาวร แต่เพื่อเป็นการยอมรับในความมุ่งมั่นและความกล้าหาญในการสู้เพื่อระเบียบสภาอย่างเด็ดเดี่ยว จึงได้กำหนดสถานะพิเศษเป็น <strong>"โทนก้ำกึ่งเทาเข้มครึ่งหนึ่ง เทาอ่อนครึ่งหนึ่ง" (Dual-Tone Half-Dark Half-Light Gray)</strong> แบบเดียวกันกับในหมวดทรชน สะท้อนถึงนักสู้การเมืองผู้ทุ่มสุดตัวท่ามกลางมรสุมความขัดแย้งของแผ่นดิน
-              </p>
+              <p class="tri-stage-text" id="rukchanok-pending-desc" data-mode="normal" style="font-size: 15px; color: #4a5568; min-height: 120px; transition: all 0.3s; line-height: 1.8; text-decoration: line-through;">อยู่ระหว่างการพิจารณาบรรจุเข้าทำเนียบบุคคลสำคัญกติการัฐธรรมนูญอย่างเป็นทางการ จากวีรกรรมปฏิรูปสภาผู้แทนราษฎรในการกวาดล้างอิทธิพลเครือข่ายนอกรัฐธรรมนูญและอำนาจนิติประหารของวิสุทธิ์ คมณรัตน์จนหมดสิ้น พร้อมทั้งจับมือกับภาคเทคโนโลยีระดับสากลเพื่อกู้คืนสถาปัตยกรรม ParadoxAI 2.0 และสวัสดิการถ้วนหน้าให้กลับมาเป็นสิทธิประโยชน์พื้นฐานของพลเมืองไทยอีกครั้ง</p>
             </div>
           </div>
         </div>
