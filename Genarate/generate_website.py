@@ -2306,6 +2306,86 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
           </div>
 
+          <!-- Part 5: Thailand History Festival (3-6 December at BANCC ICONSIAM) -->
+          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(234, 179, 8, 0.35); border-radius: 14px; padding: 24px;">
+            <h4 style="color: #facc15; font-size: 19px; margin: 0 0 14px 0; display: flex; align-items: center; gap: 10px;">
+              🏛️ ๕. มหกรรมระดับโลก "#ThailandHistoryFestival" (๓ - ๖ ธันวาคม ณ ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช BANCC)
+            </h4>
+            <p style="font-size: 13.5px; color: var(--text-muted); line-height: 1.8; margin-bottom: 16px;">
+              อภิมหกรรมประวัติศาสตร์ครั้งยิ่งใหญ่ที่สุดในประวัติศาสตร์ จัดร่วมโดย <strong>พี่วิว Point of View</strong> และ <strong>สิญจน์ (สิน) SIN ARCHIVE</strong> ในช่วงวันที่ <strong>๓ - ๖ ธันวาคม</strong> (ตรงกับช่วงวันชาติ ๕ ธันวาคม) ณ <strong>ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช (BANCC)</strong> ริมแม่น้ำเจ้าพระยา ข้าง ICONSIAM
+            </p>
+
+            <!-- Display Official Event Posters -->
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px; background: rgba(0,0,0,0.3); padding: 18px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.08);">
+              <div style="text-align: center; flex: 1; min-width: 260px; max-width: 420px;">
+                <div style="font-size: 12.5px; color: #facc15; font-weight: 600; margin-bottom: 8px;">🖼️ โปสเตอร์ประชาสัมพันธ์หน้างาน (Front Poster)</div>
+                <img src="images/thailand_history_fest_front.png" alt="Thailand History Festival Front Poster" style="width: 100%; border-radius: 10px; border: 1.5px solid rgba(250, 204, 21, 0.4); box-shadow: 0 6px 16px rgba(0,0,0,0.4);">
+              </div>
+              <div style="text-align: center; flex: 1; min-width: 260px; max-width: 420px;">
+                <div style="font-size: 12.5px; color: #facc15; font-weight: 600; margin-bottom: 8px;">📜 โปสเตอร์รายละเอียดนิทรรศการหลังงาน (Back Poster)</div>
+                <img src="images/thailand_history_fest_back.png" alt="Thailand History Festival Back Poster" style="width: 100%; border-radius: 10px; border: 1.5px solid rgba(250, 204, 21, 0.4); box-shadow: 0 6px 16px rgba(0,0,0,0.4);">
+              </div>
+            </div>
+
+            <!-- Campaign & Secret Episode Narrative -->
+            <div style="background: rgba(0,0,0,0.35); padding: 16px; border-radius: 10px; border-left: 4px solid #facc15; margin-bottom: 18px; font-size: 13px; color: var(--text); line-height: 1.7;">
+              <strong style="color: #facc15; font-size: 14px;">📣 ประกาศลับ Secret Episode & แคมเปญไวรัล:</strong>
+              <p style="margin: 6px 0 0 0; color: var(--text-muted);">
+                เริ่มจากคลิปสั้น ๑๒ วินาที หน้าจอดำตัวอักษรขาว <em>"3-6 ธันวาคม | ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช | #ThailandHistoryFestival"</em> สื่อโซเชียลและทวิตเตอร์ระเบิดใน ๑๐ นาที! ตามด้วยแคมเปญ Trailer ๑-๕ และ Teaser ๕ นาทีพาทัวร์ BANCC ริมแม่น้ำเจ้าพระยา ถ่ายทอดภาพรวม ๔,๐๐๐ ปี และพระราชดำรัส ร.๔ <em>"คนที่เรียนรู้จากประวัติศาสตร์ต่างหากที่เปลี่ยนอะไรได้"</em> ยอดลงทะเบียนเต็มทุกรอบในเวลาอันรวดเร็ว
+              </p>
+            </div>
+
+            <!-- Zone Layout in BANCC -->
+            <div style="font-weight: 700; font-size: 14px; color: #facc15; margin-bottom: 10px;">🏰 การจัดแบ่งโซนนิทรรศการ ณ BANCC (ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช):</div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-bottom: 18px;">
+              <div style="background: rgba(0,0,0,0.3); padding: 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.06);">
+                <strong style="color: #60a5fa; font-size: 13px;">👑 Bhumibol Royal Plenary Hall:</strong>
+                <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">พิธีเปิดวันที่ ๓ ธันวาคม และเวทีเสวนาใหญ่ตลอด ๔ วัน</div>
+              </div>
+              <div style="background: rgba(0,0,0,0.3); padding: 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.06);">
+                <strong style="color: #4ade80; font-size: 13px;">🏛️ Mega Hall 1 (นิทรรศการ ๔๐,๐๐๐ ปี):</strong>
+                <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">นิทรรศการประวัติศาสตร์ยุคเก่าถึง รธน. ๒๓๗๕ บูธ ๒ ชั้น เพดานสูง ๒๕ เมตร จำลองถ้ำโบราณและภาพเขียนผนังถ้ำ</div>
+              </div>
+              <div style="background: rgba(0,0,0,0.3); padding: 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.06);">
+                <strong style="color: #c084fc; font-size: 13px;">🌐 Mega Hall 2 (Global Creators):</strong>
+                <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">รวม ยูทูบเบอร์ ครีเอเตอร์ประวัติศาสตร์ นักวิชาการ และนักเขียนหนังสือทั่วโลก</div>
+              </div>
+              <div style="background: rgba(0,0,0,0.3); padding: 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.06);">
+                <strong style="color: #fb923c; font-size: 13px;">🎲 Mega Hall 3 (Boardgames & Interactive):</strong>
+                <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">โซนบอร์ดเกมประวัติศาสตร์ และนิทรรศการปฏิสัมพันธ์ทางการแพทย์โดย เอมโมโน (AimMono)</div>
+              </div>
+            </div>
+
+            <!-- Core Feature: Lead Your Country -->
+            <div style="background: rgba(147, 51, 234, 0.1); border: 1.5px solid rgba(168, 85, 247, 0.4); border-radius: 12px; padding: 18px; margin-bottom: 14px;">
+              <h5 style="color: #e9d5ff; font-size: 16px; margin: 0 0 8px 0; display: flex; align-items: center; gap: 8px;">
+                🎮 ไฮไลต์สูงสุดใน Mega Hall 4: โซนจำลองประวัติศาสตร์ "Lead Your Country" (powered by ThaiJavis AI)
+              </h5>
+              <p style="font-size: 13px; color: var(--text-muted); line-height: 1.7; margin-bottom: 10px;">
+                แอปพลิเคชันและเว็บจำลองประวัติศาสตร์บนมือถือและคอมพิวเตอร์ <strong>ประมวลผลด้วย ThaiJavis AI Engine</strong> (ดร.ธนานนท์ ช่วยเป็นที่ปรึกษา AI คอนซัลต์เบื้องหลัง) 
+                เปิดโอกาสให้ผู้เล่นสวมบทบาทเปลี่ยนประวัติศาสตร์ด้วยตัวเอง:
+              </p>
+              <div style="font-size: 12.5px; color: var(--text); line-height: 1.7; display: flex; flex-direction: column; gap: 6px;">
+                <div>• <strong>เลือกยุคสมัย & ชาติ:</strong> เลือกช่วงเวลาตั้งแต่ทวารวดี สุโขทัย อยุธยา ธนบุรี ถึงปัจจุบัน</div>
+                <div>• <strong>เลือกตัวละคร:</strong> สวมบทบาทเป็น <em>"บุคคลจริงในประวัติศาสตร์"</em> (เช่น กษัตริย์อยุธยา, พ่อขุนรามคำแหง) หรือ <em>"สร้างตัวละครใหม่"</em> (เช่น ขุนนางอยุธยาฝ่ายการค้า ต่อรองสิทธิ์การค้ากับฮอลันดา/VOC)</div>
+                <div>• <strong>AI Scenario Engine:</strong> ThaiJavis ประมวลผลผลลัพธ์และสร้าง Timeline ใหม่ตามการตัดสินใจของผู้เล่นแบบ Real-time รองรับพร้อมกันหลักพันคนใน Hall 4</div>
+              </div>
+              
+              <div style="margin-top: 12px; padding-top: 10px; border-top: 1px dashed rgba(255,255,255,0.15); font-size: 12.5px; color: #fdba74;">
+                🔒 <strong>เงื่อนไขสิทธิ์การเข้าถึง (Exclusive Access & FOMO):</strong>
+                <p style="margin: 4px 0 0 0; color: var(--text-muted);">
+                  ในการจัดงาน ๔ วัน แพลตฟอร์ม "Lead Your Country" จะเปิดให้เล่นเฉพาะผู้ที่มางานจริงเท่านั้น โดยสแกน Biometric Facial Scan หน้างานและผูกกับรหัสเฉพาะบุคคล... 
+                  สำหรับประชาชนทั่วไปที่ไม่สะดวกเดินทางมางาน <strong>จะเปิดให้ดาวน์โหลดและใช้งานฟรีทั่วประเทศหลังจากจบงานไปแล้ว ๒ เดือน!</strong>
+                </p>
+              </div>
+            </div>
+
+            <div style="font-size: 12.5px; color: var(--text-muted); font-style: italic; text-align: center;">
+              * งานนี้ ดร.ธนานนท์ (9arm) ได้เข้าเยี่ยมชมงานแบบไม่เป็นทางการในฐานะผู้ชมทั่วไป ร่วมสัมผัสหน้าประวัติศาสตร์ไทยกับประชาชนทุกคน *
+            </div>
+
+          </div>
+
         </div>
       </div>
     </div>
