@@ -165,26 +165,72 @@
       </div>
     </div>
     
-    <div class="dashboard-tabs">
-      <button class="db-tab-btn active" onclick="switchTab('history-tab', this)">ประวัติศาสตร์ประชาธิปไตย</button>
-      <button class="db-tab-btn" onclick="switchTab('referendum-tab', this)">มหากาพย์ประชามติ ๕ รอบ</button>
-      <button class="db-tab-btn" onclick="switchTab('constitutions-tab', this)">รัฐธรรมนูญ ๓ ฉบับหลัก</button>
-      <button class="db-tab-btn" onclick="switchTab('early-const-tab', this)">รธน. ฉบับปฐมเวลา (๒๓๗๕)</button>
-      <button class="db-tab-btn" onclick="switchTab('rama7-tab', this)">👑 พระประชาธิปมหาราช (ร.๗)</button>
-      <button class="db-tab-btn" onclick="switchTab('rama9-tab', this)">👑 พระมหาภูมิพลมหาราช (ร.๙)</button>
-      <button class="db-tab-btn" onclick="switchTab('chakri-tab', this)">🏰 ราชวงศ์จักรี & รัตนโกสินทร์</button>
-      <button class="db-tab-btn" onclick="switchTab('siripanya-tab', this)">📚 ห้องสมุดศิริปัญญาวิมารสัจ</button>
-      <button class="db-tab-btn" onclick="switchTab('pms-tab', this)">ทำเนียบนายกรัฐมนตรี (๒๕ ท่าน)</button>
-      <button class="db-tab-btn" onclick="switchTab('goc-tab', this)">🌐 Global Outlandish Centre (GOC)</button>
-      <button class="db-tab-btn" onclick="switchTab('geopolitics-tab', this)">🌍 ภูมิรัฐศาสตร์โลก</button>
-      <button class="db-tab-btn" onclick="switchTab('figures-tab', this)">👤 บุคคลสำคัญ วีรชน</button>
-      <button class="db-tab-btn" onclick="switchTab('villains-tab', this)">👤 บุคคลสำคัญ ทรชน</button>
-      <button class="db-tab-btn" onclick="switchTab('national-symbols-tab', this)">🇹🇭 ธงชาติและเพลงชาติไทย</button>
-      <button class="db-tab-btn" onclick="switchTab('paradox-ai-tab', this)">🤖 โครงการ ParadoxAI / ParadoxForward</button>
-      <button class="db-tab-btn" onclick="switchTab('parties-tab', this)">🗳️ พรรคการเมือง</button>
-      <button class="db-tab-btn" onclick="switchTab('independent-organs-tab', this)">⚖️ องค์กรอิสระตามรัฐธรรมนูญ</button>
-      <button class="db-tab-btn" onclick="switchTab('khonlalike-tab', this)">🎨 โครงการคนละไลค์ (SIN ARCHIVE & Creators)</button>
-      <button class="db-tab-btn" onclick="switchTab('bancc-tab', this)">🏛️ ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช (BANCC)</button>
+    <div class="dashboard-tab-groups" style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 32px;">
+
+      <!-- หมวดที่ ๑: ประวัติศาสตร์ & รัฐธรรมนูญ -->
+      <div class="tab-category-box" style="background: rgba(15, 23, 42, 0.5); border: 1px solid rgba(250, 204, 21, 0.25); border-radius: 12px; padding: 14px 18px; backdrop-filter: blur(8px);">
+        <div style="font-size: 13px; font-weight: 700; color: #facc15; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+          <span>📜 ๑. ประวัติศาสตร์ & รัฐธรรมนูญไทย</span>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px;">
+          <button class="db-tab-btn active" onclick="switchTab('history-tab', this)">ประวัติศาสตร์ประชาธิปไตย</button>
+          <button class="db-tab-btn" onclick="switchTab('referendum-tab', this)">มหากาพย์ประชามติ ๕ รอบ</button>
+          <button class="db-tab-btn" onclick="switchTab('constitutions-tab', this)">รัฐธรรมนูญ ๓ ฉบับหลัก</button>
+          <button class="db-tab-btn" onclick="switchTab('early-const-tab', this)">รธน. ฉบับปฐมเวลา (๒๓๗๕)</button>
+        </div>
+      </div>
+
+      <!-- หมวดที่ ๒: สถาบันพระมหากษัตริย์ & คลังปัญญา -->
+      <div class="tab-category-box" style="background: rgba(15, 23, 42, 0.5); border: 1px solid rgba(250, 204, 21, 0.25); border-radius: 12px; padding: 14px 18px; backdrop-filter: blur(8px);">
+        <div style="font-size: 13px; font-weight: 700; color: #facc15; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+          <span>👑 ๒. สถาบันพระมหากษัตริย์ & คลังปัญญาชาติ</span>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px;">
+          <button class="db-tab-btn" onclick="switchTab('rama7-tab', this)">👑 พระประชาธิปมหาราช (ร.๗)</button>
+          <button class="db-tab-btn" onclick="switchTab('rama9-tab', this)">👑 พระมหาภูมิพลมหาราช (ร.๙)</button>
+          <button class="db-tab-btn" onclick="switchTab('chakri-tab', this)">🏰 ราชวงศ์จักรี & รัตนโกสินทร์</button>
+          <button class="db-tab-btn" onclick="switchTab('siripanya-tab', this)">📚 ห้องสมุดศิริปัญญาวิมารสัจ</button>
+        </div>
+      </div>
+
+      <!-- หมวดที่ ๓: การเมือง การปกครอง & สัญลักษณ์ชาติ -->
+      <div class="tab-category-box" style="background: rgba(15, 23, 42, 0.5); border: 1px solid rgba(96, 165, 250, 0.25); border-radius: 12px; padding: 14px 18px; backdrop-filter: blur(8px);">
+        <div style="font-size: 13px; font-weight: 700; color: #60a5fa; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+          <span>🏛️ ๓. การเมือง การปกครอง & สัญลักษณ์ชาติ</span>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px;">
+          <button class="db-tab-btn" onclick="switchTab('pms-tab', this)">ทำเนียบนายกรัฐมนตรี (๒๕ ท่าน)</button>
+          <button class="db-tab-btn" onclick="switchTab('parties-tab', this)">🗳️ พรรคการเมือง</button>
+          <button class="db-tab-btn" onclick="switchTab('independent-organs-tab', this)">⚖️ องค์กรอิสระตามรัฐธรรมนูญ</button>
+          <button class="db-tab-btn" onclick="switchTab('national-symbols-tab', this)">🇹🇭 ธงชาติและเพลงชาติไทย</button>
+        </div>
+      </div>
+
+      <!-- หมวดที่ ๔: บุคคลสำคัญ & ภูมิรัฐศาสตร์ -->
+      <div class="tab-category-box" style="background: rgba(15, 23, 42, 0.5); border: 1px solid rgba(192, 132, 252, 0.25); border-radius: 12px; padding: 14px 18px; backdrop-filter: blur(8px);">
+        <div style="font-size: 13px; font-weight: 700; color: #c084fc; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+          <span>👤 ๔. บุคคลสำคัญ & ภูมิรัฐศาสตร์โลก</span>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px;">
+          <button class="db-tab-btn" onclick="switchTab('figures-tab', this)">👤 บุคคลสำคัญ วีรชน</button>
+          <button class="db-tab-btn" onclick="switchTab('villains-tab', this)">👤 บุคคลสำคัญ ทรชน</button>
+          <button class="db-tab-btn" onclick="switchTab('goc-tab', this)">🌐 Global Outlandish Centre (GOC)</button>
+          <button class="db-tab-btn" onclick="switchTab('geopolitics-tab', this)">🌍 ภูมิรัฐศาสตร์โลก</button>
+        </div>
+      </div>
+
+      <!-- หมวดที่ ๕: นวัตกรรม, สื่อใหม่ & อภิมหาโครงการ -->
+      <div class="tab-category-box" style="background: rgba(15, 23, 42, 0.5); border: 1px solid rgba(251, 146, 60, 0.25); border-radius: 12px; padding: 14px 18px; backdrop-filter: blur(8px);">
+        <div style="font-size: 13px; font-weight: 700; color: #fb923c; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+          <span>🤖 ๕. นวัตกรรม, สื่อใหม่ & อภิมหาโครงการ (Innovation & Mega Projects)</span>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 10px;">
+          <button class="db-tab-btn" onclick="switchTab('paradox-ai-tab', this)">🤖 โครงการ ParadoxAI / ParadoxForward</button>
+          <button class="db-tab-btn" onclick="switchTab('khonlalike-tab', this)">🎨 โครงการคนละไลค์ (SIN ARCHIVE & Creators)</button>
+          <button class="db-tab-btn" onclick="switchTab('bancc-tab', this)">🏛️ ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช (BANCC)</button>
+        </div>
+      </div>
+
     </div>
 
     <!-- Tab 1: ประวัติศาสตร์ประชาธิปไตย -->
