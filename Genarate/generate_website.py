@@ -6479,6 +6479,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             <div class="tri-meta" style="border-top: 1px solid rgba(255, 255, 255, 0.08); color: #94a3b8;">
               <div style="margin-bottom: 6px; text-decoration: line-through;"><strong>ตำแหน่งสำคัญ:</strong> อดีตนายกรัฐมนตรีคนที่ ๒๒ (นายกหญิงคนที่ ๒)</div>
               <div style="margin-bottom: 6px; text-decoration: line-through;"><strong>พรรคการเมือง:</strong> พรรคก้าวไกล</div>
+              <div style="margin-bottom: 6px;"><strong>ฉายาทางการเมือง:</strong> <span style="color: #fb923c; font-weight: 700;">"นายกส้มเน่าหนึ่งเดียว"</span></div>
               <div style="margin-bottom: 6px;"><strong>โทนสถานะ:</strong> <span style="color: #e2e8f0; font-weight: 700;">⚫ เทาเกือบดำ ๕๐%</span> | <span style="color: #64748b; font-weight: 700;">⬛ เทาเข้ม ๕๐%</span></div>
               <div style="text-decoration: line-through;"><strong>ผลการวินิจฉัย:</strong> ไม่เข้าเกณฑ์ทรชน (สู้เพื่อสภาและประชาชนอย่างเข้มแข็ง)</div>
             </div>
@@ -6501,9 +6502,9 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               </p>
             </div>
 
-            <!-- วิกฤตทวิตเตอร์ระเบิด & ห้องทำงานชั้น 50 -->
+            <!-- ชนวนจุดเริ่มต้นความขัดแย้งประวัติศาสตร์ระหว่าง 9arm กับ รักชนก -->
             <div class="tri-stage" style="margin-top: 16px; background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(148, 163, 184, 0.2); border-radius: 10px; padding: 16px;">
-              <div class="tri-stage-title" style="color: #cbd5e1; font-size: 14px;">💥 วิกฤตรัฐบาลสนั่นเมือง: โพสต์พิธา, ศิริกัญญารีทวีต & พริษฐ์ขัดคำสั่งนายกฯ</div>
+              <div class="tri-stage-title" style="color: #facc15; font-size: 14.5px;">⚡ ชนวนจุดเริ่มต้นความขัดแย้งประวัติศาสตร์ระหว่าง 9arm กับ รักชนก "นายกส้มเน่าหนึ่งเดียว"</div>
               
               <div style="font-size: 13.5px; color: #e2e8f0; line-height: 1.8; margin-top: 8px;">
                 <strong style="color: #38bdf8;">📱 ทวิตเตอร์ระเบิด (ข้อความสั่นคลอนจาก พิธา ลิ้มเจริญรัตน์):</strong>
