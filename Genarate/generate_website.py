@@ -595,6 +595,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
       <button class="db-tab-btn" onclick="switchTab('parties-tab', this)">🗳️ พรรคการเมือง</button>
       <button class="db-tab-btn" onclick="switchTab('independent-organs-tab', this)">⚖️ องค์กรอิสระตามรัฐธรรมนูญ</button>
       <button class="db-tab-btn" onclick="switchTab('khonlalike-tab', this)">🎨 โครงการคนละไลค์ (SIN ARCHIVE & Creators)</button>
+      <button class="db-tab-btn" onclick="switchTab('bancc-tab', this)">🏛️ ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช (BANCC)</button>
     </div>
 
     <!-- Tab 1: ประวัติศาสตร์ประชาธิปไตย -->
@@ -2445,7 +2446,233 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
       </div>
     </div>
     </div>
-    <!-- Tab 6.75: ธงชาติและเพลงชาติไทย -->
+
+    <!-- Tab 13: ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช (Bhumibol Adulyadej National Convention Centre - BANCC) -->
+    <div id="bancc-tab" class="db-tab-content">
+      <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(234, 179, 8, 0.35); border-radius: 16px; padding: 28px; margin-bottom: 28px; backdrop-filter: blur(14px);">
+        
+        <!-- Header Section with Image & Core Identity -->
+        <div style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 24px; margin-bottom: 26px;">
+          <div style="flex: 1; min-width: 320px; max-width: 540px;">
+            <div style="border-radius: 14px; overflow: hidden; border: 2px solid rgba(250, 204, 21, 0.4); box-shadow: 0 8px 24px rgba(0,0,0,0.5);">
+              <img src="images/bancc_building.png" alt="ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช (BANCC)" style="width: 100%; height: auto; display: block; object-fit: cover;">
+            </div>
+          </div>
+          <div style="flex: 1.2; min-width: 300px;">
+            <div style="display: inline-block; background: rgba(250, 204, 21, 0.15); border: 1px solid rgba(250, 204, 21, 0.4); color: #facc15; font-size: 11.5px; font-weight: 700; padding: 4px 12px; border-radius: 6px; margin-bottom: 8px;">
+              WORLD'S LARGEST MULTI-PURPOSE CONVENTION & EXHIBITION HUB
+            </div>
+            <h2 style="color: #facc15; font-size: 26px; font-weight: 800; margin: 0 0 6px 0; font-family: 'Outfit', sans-serif; line-height: 1.3;">
+              ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช
+            </h2>
+            <div style="color: var(--text-muted); font-size: 14px; font-weight: 600; margin-bottom: 14px;">
+              Bhumibol Adulyadej National Convention Centre (อักษรย่อ: BANCC)
+            </div>
+            <p style="font-size: 13.5px; color: var(--text-muted); line-height: 1.7; margin-bottom: 16px;">
+              อาคารบริการการประชุมและจัดแสดงสินค้านานาชาติระดับเมกะโปรเจกต์ โครงสร้างอาคารเดี่ยวที่ครองสถิติศูนย์ประชุมและจัดแสดงงานที่ใหญ่ที่สุดในโลก พื้นที่ใช้สอยรวม <strong>๑,๒๐๐,๐๐๐ ตารางเมตร (1.2 Million Sq.m. GFA)</strong> เฉลิมพระเกียรติพระบาทสมเด็จพระบรมชนกาธิเบศร มหาภูมิพลอดุลยเดชมหาราช บรมนาถบพิตร (รัชกาลที่ ๙)
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; font-size: 12px;">
+              <div style="background: rgba(0,0,0,0.35); padding: 8px 12px; border-radius: 8px; border-left: 3px solid #facc15;">
+                <strong style="color: var(--text);">📏 พื้นที่ใช้สอยรวม:</strong><br><span style="color: #facc15; font-size: 13px; font-weight: 700;">1,200,000 ตร.ม.</span>
+              </div>
+              <div style="background: rgba(0,0,0,0.35); padding: 8px 12px; border-radius: 8px; border-left: 3px solid #60a5fa;">
+                <strong style="color: var(--text);">📍 พิกัดที่ตั้ง:</strong><br><span style="color: #93c5fd; font-size: 12.5px;">ถนนเจริญนคร คลองสาน</span>
+              </div>
+              <div style="background: rgba(0,0,0,0.35); padding: 8px 12px; border-radius: 8px; border-left: 3px solid #4ade80;">
+                <strong style="color: var(--text);">🌊 การเชื่อมต่อ:</strong><br><span style="color: #86efac; font-size: 12.5px;">ติด ICONSIAM ริมแม่น้ำ</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 26px;">
+
+          <!-- Section 1: Identity & Architecture -->
+          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(250, 204, 21, 0.25); border-radius: 14px; padding: 22px;">
+            <h4 style="color: #facc15; font-size: 18px; margin: 0 0 12px 0; display: flex; align-items: center; gap: 10px;">
+              🏛️ ๑. ข้อมูลส่วนหัว อัตลักษณ์ และสถาปัตยกรรม (Identity & Architecture)
+            </h4>
+            <div style="font-size: 13.5px; color: var(--text-muted); line-height: 1.8; display: flex; flex-direction: column; gap: 10px;">
+              <div>
+                <strong style="color: var(--text);">• ชื่อภาษาไทย & อังกฤษ:</strong> ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช / Bhumibol Adulyadej National Convention Centre (อักษรย่อ: <strong>BANCC</strong>)
+              </div>
+              <div>
+                <strong style="color: var(--text);">• ประเภทอาคาร & สถิติโลก:</strong> อาคารบริการการประชุมและจัดแสดงสินค้านานาชาติระดับเมกะโปรเจกต์ (World's Largest Multi-Purpose Convention & Exhibition Hub) โครงสร้างอาคารเดี่ยวที่ครองสถิติศูนย์ประชุมและจัดงานที่ใหญ่ที่สุดในโลก พื้นที่ใช้สอยรวม (GFA) <strong>๑,๒๐๐,๐๐๐ ตารางเมตร</strong>
+              </div>
+              <div>
+                <strong style="color: var(--text);">• สถาปัตยกรรมภายนอก & นวัตกรรมอาคารสีเขียว:</strong> ออกแบบด้วยแรงบันดาลใจจากสายน้ำเจ้าพระยาและศิลปกรรมไทยร่วมสมัย โครงสร้างหลังคาโค้งมนคล้ายระลอกคลื่นสื่อถึงความอุดมสมบูรณ์และการพัฒนาอย่างยั่งยืน ภายนอกเลือกใช้กระจกอัจฉริยะ (Smart Glass) ควบคุมพลังงานร่วมกับแผงโซลาร์เซลล์เกรดพรีเมียมประสิทธิภาพสูง เพื่อลดการใช้พลังงานและเป็นต้นแบบอาคารสีเขียวระดับโลก
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2: Location & Interconnection -->
+          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(56, 189, 248, 0.25); border-radius: 14px; padding: 22px;">
+            <h4 style="color: #38bdf8; font-size: 18px; margin: 0 0 12px 0; display: flex; align-items: center; gap: 10px;">
+              🗺️ ๒. ข้อมูลพิกัดที่ตั้งและการเชื่อมต่อภายนอก (Location & Interconnection)
+            </h4>
+            <div style="font-size: 13.5px; color: var(--text-muted); line-height: 1.8; display: flex; flex-direction: column; gap: 10px;">
+              <div>
+                <strong style="color: var(--text);">• พิกัดที่ตั้ง & การวางตำแหน่งอาคาร:</strong> ตั้งอยู่บนถนนเจริญนคร แขวงคลองต้นไทร เขตคลองสาน กรุงเทพมหานคร บนที่ดินผืนใหญ่ขนาบข้างและเชื่อมต่อตรงกับ **ไอคอนสยาม (ICONSIAM)** ตัวอาคารทอดยาวขนานไปกับโค้งน้ำเจ้าพระยาอย่างสง่างาม
+              </div>
+              <div style="background: rgba(0,0,0,0.3); padding: 14px; border-radius: 10px; border-left: 4px solid #38bdf8; margin-top: 4px;">
+                <strong style="color: #93c5fd; font-size: 14px;">🔗 ระบบเชื่อมต่ออาคารอัจฉริยะ (The Synergy Pass):</strong>
+                <ul style="margin: 6px 0 0 0; padding-left: 20px; color: var(--text-muted);">
+                  <li><strong>Skywalk Link:</strong> สะพานเชื่อมลอยฟ้าแบบปิดทึบ ติดเครื่องปรับอากาศ เดินทางเชื่อมตรงจากชั้นบนของไอคอนสยามและสถานีรถไฟฟ้าเข้าสู่โถงต้อนรับของศูนย์ประชุม BANCC</li>
+                  <li><strong>Underground Tunnel:</strong> อุโมงค์ทางเดินและทางรถวิ่งใต้ดิน เชื่อมต่ออาคารจอดรถของไอคอนสยามและศูนย์ประชุมเข้าด้วยกัน เพื่อการระบายรถและการเดินทางอย่างไร้รอยต่อทั้งทางรถไฟฟ้า ทางถนน และทางน้ำ</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 3: Exhibition & Event Zone -->
+          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(74, 222, 128, 0.25); border-radius: 14px; padding: 22px;">
+            <h4 style="color: #4ade80; font-size: 18px; margin: 0 0 12px 0; display: flex; align-items: center; gap: 10px;">
+              🎪 ๓. รายละเอียดโซนจัดงานและนิทรรศการ (Exhibition & Event Zone) — พื้นที่ ๔๕๐,๐๐๐ ตร.ม.
+            </h4>
+            <p style="font-size: 13.5px; color: var(--text-muted); line-height: 1.7; margin-bottom: 14px;">
+              ออกแบบมาเพื่อรองรับงานแสดงสินค้า เทศกาล คอนเสิร์ต และมหกรรมความบันเทิงระดับโลก มีโครงสร้างทางวิศวกรรมขั้นสูง ดังนี้:
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 14px; margin-bottom: 14px;">
+              <div style="background: rgba(0,0,0,0.3); padding: 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.06);">
+                <strong style="color: #4ade80; font-size: 13.5px;">🏛️ Mega Exhibition Halls (ฮอลล์ ๑ - ๔):</strong>
+                <ul style="margin: 6px 0 0 0; padding-left: 18px; font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
+                  <li><strong>โครงสร้างไร้เสา (Column-free):</strong> ใช้โครงหลังคาเหล็กช่วงกว้างพิเศษ ไร้เสาบดบังสายตาแม้แต่ต้นเดียว</li>
+                  <li><strong>ความสูงเพดาน (Clear Height):</strong> สูงตั้งแต่ ๒๐ เมตร ถึง ๓๐ เมตร รองรับการสร้างบูธ ๒-๓ ชั้น หรือตึกจำลอง</li>
+                  <li><strong>ระบบรับน้ำหนักพื้น:</strong> พื้นคอนกรีตอัดแรงหนาพิเศษ รับน้ำหนักได้สูงสุด ๕ ตัน/ตร.ม. (นำเครื่องจักรหนัก รถบัส เครื่องบินเล็ก เข้าจัดแสดงได้)</li>
+                  <li><strong>Utility Trenches:</strong> ช่องสาธารณูปโภคใต้พื้นทุกๆ ๓ เมตร (ไฟ ๓ เฟส, น้ำดี-ทิ้ง, อินเทอร์เน็ตความเร็วสูง, ท่อลมร้อน/เย็น)</li>
+                </ul>
+              </div>
+              <div style="background: rgba(0,0,0,0.3); padding: 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.06);">
+                <strong style="color: #fb923c; font-size: 13.5px;">🚚 สถานีขนถ่ายสินค้าอัจฉริยะ (Multi-Modal Loading Docks):</strong>
+                <ul style="margin: 6px 0 0 0; padding-left: 18px; font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
+                  <li>ชั้นใต้ดินติดตั้งช่องจอดรถบรรทุกขนส่งสินค้ามากกว่า ๑๒๐ ช่อง พร้อมระบบคิวอัตโนมัติ</li>
+                  <li>มี Freight Elevators (ลิฟต์ส่งสินค้าขนาดมหึมา) จำนวน ๘ ตัว ยกรถบรรทุก ๖ ล้อ รถซูเปอร์คาร์ หรือตู้คอนเทนเนอร์ขึ้นฮอลล์จัดงานชั้นบนได้โดยตรง</li>
+                  <li><strong>ความจุงานบันเทิง:</strong> ปรับเป็นฮอลล์คอนเสิร์ตหรือกีฬารองรับได้สูงสุด <strong>๑๐๐,๐๐๐ ที่นั่ง</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 4: Convention & Meeting Zone -->
+          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(168, 85, 247, 0.25); border-radius: 14px; padding: 22px;">
+            <h4 style="color: #c084fc; font-size: 18px; margin: 0 0 12px 0; display: flex; align-items: center; gap: 10px;">
+              🏛️ ๔. รายละเอียดโซนหอประชุมและสัมมนา (Convention & Meeting Zone) — พื้นที่ ๗๕๐,๐๐๐ ตร.ม.
+            </h4>
+            <p style="font-size: 13.5px; color: var(--text-muted); line-height: 1.7; margin-bottom: 14px;">
+              เน้นฟังก์ชันเพื่อการประชุมทางวิชาการ การทูต และการสัมมนาผู้บริหารระดับสูง แบ่งห้องประชุมเป็นรูปแบบต่างๆ ดังนี้:
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              
+              <div style="background: rgba(0,0,0,0.35); padding: 16px; border-radius: 12px; border-left: 4px solid #c084fc;">
+                <strong style="color: #e9d5ff; font-size: 14.5px;">👑 Bhumibol Royal Plenary Hall (หอประชุมประธานระดับโลก):</strong>
+                <div style="font-size: 13px; color: var(--text-muted); margin-top: 6px; line-height: 1.7;">
+                  • <strong>ความจุสูงสุด:</strong> ๕๐,๐๐๐ ที่นั่ง (สำหรับพิธีเปิดงานระดับชาติ หรือปาฐกถาบุคคลสำคัญระดับโลก)<br>
+                  • <strong>Retractable Seating & Floor System:</strong> เก้าอี้ไฮดรอลิกอัจฉริยะ พับยุบเก็บลงใต้พื้นอาคารแนบเนียน พร้อมปรับระดับพื้นจากลาดชันเป็นพื้นราบได้ใน ๑๕ นาที เปลี่ยนห้องประชุมเป็นโถงจัดเลี้ยงกาลาดินเนอร์<br>
+                  • <strong>Smart Seat Technology:</strong> พนักพิงติดตั้งจอสัมผัส Android ๑๐ นิ้ว หูฟังส่วนตัวฝังระบบแปลภาษาเรียลไทม์ด้วย AI รองรับกว่า ๕๐ ภาษา พอร์ตชาร์จไฟความเร็วสูงและไฟส่องสว่างส่วนตัว
+                </div>
+              </div>
+
+              <div style="background: rgba(0,0,0,0.35); padding: 16px; border-radius: 12px; border-left: 4px solid #60a5fa;">
+                <strong style="color: #93c5fd; font-size: 14.5px;">🏛️ Global Summit Auditorium (หอประชุมสภา):</strong>
+                <div style="font-size: 13px; color: var(--text-muted); margin-top: 6px; line-height: 1.7;">
+                  • <strong>ความจุ:</strong> ๑๒,๐๐๐ ที่นั่ง ดีไซน์ครึ่งวงกลมไล่ระดับแบบขั้นบันได (Amphitheater) เลียนแบบรัฐสภาสากล<br>
+                  • <strong>Advanced Acoustic ผนังซับเสียง:</strong> เพดานและผนังกรูวัสดุคำนวณการสะท้อนเสียงแม่นยำ เสียงผู้พูดบนเวทีกระจายถึงแถวบนสุดโดยแทบไม่ต้องพึ่งลำโพงขยายเสียงหลัก
+                </div>
+              </div>
+
+              <div style="background: rgba(0,0,0,0.35); padding: 16px; border-radius: 12px; border-left: 4px solid #38bdf8;">
+                <strong style="color: #38bdf8; font-size: 14.5px;">🌊 The Riverfront Convention Hall (ห้องประชุมทัศนียภาพโค้งน้ำ):</strong>
+                <div style="font-size: 13px; color: var(--text-muted); margin-top: 6px; line-height: 1.7;">
+                  • <strong>จำนวนห้อง:</strong> ๕ ห้องย่อย (ความจุห้องละ ๕,๐๐๐ ที่นั่ง)<br>
+                  • <strong>ผนังกระจกวิวพาโนรามา:</strong> ผนังทิศตะวันออกเป็นกระจกใสตัดแสง ๓ ชั้น สูง ๒๕ เมตร เปิดมุมมองวิวแม่น้ำเจ้าพระยาและตึกระฟ้ากรุงเทพฯ เหมาะสำหรับงานเปิดตัวนวัตกรรมและงานเลี้ยง VIP
+                </div>
+              </div>
+
+              <div style="background: rgba(0,0,0,0.35); padding: 16px; border-radius: 12px; border-left: 4px solid #4ade80;">
+                <strong style="color: #86efac; font-size: 14.5px;">🚪 Small to Medium Meeting Rooms (ห้องประชุมย่อยใช้งานทั่วไป):</strong>
+                <div style="font-size: 13px; color: var(--text-muted); margin-top: 6px; line-height: 1.7;">
+                  • <strong>ห้องขนาดกลาง (Medium Rooms):</strong> ๗๒ ห้อง (ความจุ ๑๐๐ ถึง ๕๐๐ ที่นั่ง) ผนังบานเลื่อนกั้นเสียงเกรดสูง (Moveable Partitions) เปิดเชื่อมขยายขนาดห้องได้<br>
+                  • <strong>ห้องเจรจา/บอร์ดรูม (Breakout Rooms):</strong> ๑๒๐ ห้อง (ความจุ ๒๐ ถึง ๕๐ ที่นั่ง) สำหรับประชุมกลุ่มย่อยหรือเวิร์กชอป
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Section 5: Specialized Support Facilities -->
+          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(251, 146, 60, 0.25); border-radius: 14px; padding: 22px;">
+            <h4 style="color: #fb923c; font-size: 18px; margin: 0 0 12px 0; display: flex; align-items: center; gap: 10px;">
+              🛡️ ๕. พื้นที่สนับสนุนและการจัดการเฉพาะทาง (Specialized Support Facilities)
+            </h4>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px;">
+              <div style="background: rgba(0,0,0,0.3); padding: 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.06);">
+                <strong style="color: #fb923c; font-size: 13.5px;">🍷 The Grand Banquet Ballroom:</strong>
+                <p style="margin: 6px 0 0 0; font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
+                  พื้นที่จัดเลี้ยงหรูหราแยกต่างหาก รองรับโต๊ะจีนหรืองานเลี้ยงบุฟเฟต์พร้อมกัน <strong>๑๕,๐๐๐ ที่นั่ง</strong> เชื่อมต่อกับ Smart Central Kitchen (ครัวกลางอัจฉริยะ) แยกโซนประกอบอาหารนานาชาติ, อาหารฮาลาล และอาหารวีแกนอย่างเด็ดขาดตามมาตรฐานสากล
+                </p>
+              </div>
+              <div style="background: rgba(0,0,0,0.3); padding: 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.06);">
+                <strong style="color: #f87171; font-size: 13.5px;">🔒 The ASEAN Pavilion (โซนความมั่นคงสูง):</strong>
+                <p style="margin: 6px 0 0 0; font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
+                  กลุ่มห้องประชุมลับ ๔๐ ห้อง สำหรับการทูตและการเจรจาการค้าสำคัญ ติดตั้งกระจกกันกระสุนรอบด้าน มีระบบตัดสัญญาณวิทยุและคลื่นโทรศัพท์ (Signal Jamming) ป้องกันการดักฟังและการส่งข้อมูลรั่วไหล ๑๐๐%
+                </p>
+              </div>
+              <div style="background: rgba(0,0,0,0.3); padding: 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.06);">
+                <strong style="color: #60a5fa; font-size: 13.5px;">📡 Global Media & Broadcasting Hub:</strong>
+                <p style="margin: 6px 0 0 0; font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
+                  ศูนย์ข่าวสารสำหรับสื่อมวลชน รองรับนักข่าวได้ <strong>๓,๐๐๐ คน</strong> มีโต๊ะทำงานพร้อมอินเทอร์เน็ตความเร็วสูงแยกแบนด์วิดท์เฉพาะ มีห้องสตูดิโอถ่ายทอดสดและสถานีส่งสัญญาณดาวเทียมในตัวอาคาร
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 6: Passenger Logistics & Technology -->
+          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(250, 204, 21, 0.25); border-radius: 14px; padding: 22px;">
+            <h4 style="color: #facc15; font-size: 18px; margin: 0 0 12px 0; display: flex; align-items: center; gap: 10px;">
+              ⚡ ๖. ระบบบริการและการไหลเวียนของผู้เข้าร่วมงาน (Logistics & Technology)
+            </h4>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px;">
+              <div style="background: rgba(0,0,0,0.3); padding: 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.06);">
+                <strong style="color: #facc15; font-size: 13.5px;">👁️ Biometric Registration Gate:</strong>
+                <p style="margin: 6px 0 0 0; font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
+                  ประตูทางเข้าอาคารหลักทุกจุดติดตั้งกล้องสแกนใบหน้าความเร็วสูง (Face Recognition) ผู้เข้าประชุมที่ลงทะเบียนออนไลน์มาแล้วสามารถเดินผ่านประตูเข้าไปได้ทันทีโดยไม่ต้องต่อคิวกดบัตรหน้างาน
+                </p>
+              </div>
+              <div style="background: rgba(0,0,0,0.3); padding: 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.06);">
+                <strong style="color: #38bdf8; font-size: 13.5px;">📱 In-Building AR Navigation:</strong>
+                <p style="margin: 6px 0 0 0; font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
+                  ระบบนำทางอัจฉริยะผ่านแอปพลิเคชันของศูนย์ประชุม เนื่องจากอาคารมีขนาดใหญ่มาก ระบบจะใช้เทคโนโลยี AR แสดงลูกศรนำทางบนหน้าจอมือถือเพื่อพาเดินไปยังห้องประชุมย่อยหรือจุดบริการต่างๆ ได้อย่างแม่นยำไม่มีหลงทาง
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 7: Detailed Project History -->
+          <div style="background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(250, 204, 21, 0.3); border-radius: 14px; padding: 24px;">
+            <h4 style="color: #facc15; font-size: 18px; margin: 0 0 14px 0; display: flex; align-items: center; gap: 10px;">
+              📜 ๗. ประวัติการจัดสร้างและวัตถุประสงค์โครงการ (ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช)
+            </h4>
+            <div style="font-size: 13.5px; color: var(--text-muted); line-height: 1.85; display: flex; flex-direction: column; gap: 12px; text-align: justify;">
+              <p style="margin: 0;">
+                ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช เป็นโครงการระดับเมกะโปรเจกต์ที่จัดสร้างขึ้นเพื่อเฉลิมพระเกียรติพระบาทสมเด็จพระบรมชนกาธิเบศร มหาภูมิพลอดุลยเดชมหาราช บรมนาถบพิตร (รัชกาลที่ ๙) เพื่อเป็นอนุสรณ์แห่งพระมหากรุณาธิคุณและพระราชกรณียกิจอันเป็นคุณูปการต่อการพัฒนาประเทศไทยในทุกด้าน ตลอดระยะเวลาแห่งการครองราชย์ พร้อมทั้งเป็นสัญลักษณ์ของการพัฒนาประเทศสู่อนาคต และเป็นศูนย์กลางการประชุม การจัดแสดงสินค้า และการแลกเปลี่ยนองค์ความรู้ระดับนานาชาติของประเทศไทย
+              </p>
+              <p style="margin: 0;">
+                แนวคิดในการพัฒนาโครงการเกิดจากความมุ่งหมายที่จะสร้างศูนย์ประชุมและนิทรรศการที่มีมาตรฐานสูงสุดแห่งหนึ่งของโลก สามารถรองรับการประชุมระดับผู้นำโลก การประชุมระหว่างประเทศ งานมหกรรมวิชาการ งานแสดงสินค้า เทคโนโลยี นวัตกรรม วัฒนธรรม และมหกรรมด้านเศรษฐกิจจากทุกภูมิภาค เพื่อยกระดับประเทศไทยให้เป็นศูนย์กลางการประชุมและนิทรรศการของภูมิภาคเอเชียตะวันออกเฉียงใต้ และเป็นหนึ่งในศูนย์กลางสำคัญของโลก
+              </p>
+              <p style="margin: 0;">
+                ด้วยศักยภาพของอาคารที่สามารถรองรับผู้เข้าร่วมงานได้หลายแสนคนต่อวัน ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดชจึงได้รับการยกย่องให้เป็นศูนย์ประชุมและนิทรรศการที่มีขนาดใหญ่ที่สุดในโลกตามแนวคิดของโครงการ และกลายเป็นแลนด์มาร์กสำคัญแห่งใหม่ของประเทศไทย สะท้อนถึงศักยภาพด้านเศรษฐกิจ นวัตกรรม การท่องเที่ยว และการจัดงานระดับนานาชาติ
+              </p>
+              <p style="margin: 0;">
+                ศูนย์ประชุมแห่งนี้ยังเป็นสถานที่จัดงานสำคัญระดับโลกอย่างต่อเนื่อง ไม่ว่าจะเป็นการประชุมสุดยอดผู้นำนานาชาติ การประชุมด้านเศรษฐกิจและการค้า งานมหกรรมเทคโนโลยีระดับโลก งานแสดงนวัตกรรม งานมหกรรมวัฒนธรรม และเทศกาลประวัติศาสตร์ไทย (เช่น #ThailandHistoryFestival จัดร่วมโดย พี่วิว Point of View และ สิน SIN ARCHIVE) ตลอดจนงานด้านการศึกษาและวิชาการนานาชาติ ส่งผลให้ประเทศไทยก้าวขึ้นเป็นหนึ่งในจุดหมายปลายทางสำคัญของอุตสาหกรรมการประชุมและนิทรรศการของโลก
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+        <!-- Tab 6.75: ธงชาติและเพลงชาติไทย -->
     <div id="national-symbols-tab" class="db-tab-content">
       <div style="display: flex; gap: 24px; align-items: flex-start; flex-wrap: wrap; text-align: left;">
         
