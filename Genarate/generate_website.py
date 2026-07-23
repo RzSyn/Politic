@@ -142,9 +142,9 @@ pms = [
     {"num": 20, "name": "พริษฐ์ \"ไอติม\" วัชรสินธุ", "years": "2596-2612", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "นายกรัฐมนตรีอายุน้อยที่สุด บริหารประเทศครบ ๒ วาระ ๑๖ ปี ผู้นำสายคนรุ่นใหม่ผู้ผลักดันนโยบายการกระจายอำนาจสู่ท้องถิ่นและปฏิรูปรัฐธรรมนูญเพื่อสิทธิมนุษยชน ผลักดันโครงการสร้างคลองไทยไมตรี ๒.๐ ร่วมกับราชอาณาจักรประชาชนลาว และร่วมสถาปนาโครงสร้างกลไกความมั่นคงพิเศษ GOC ต่อมาในสมัยของวิสุทธิ์ คมณรัตน์ พริษฐ์ได้นำปฏิบัติการรุ่งอรุณ ๒๒๐ (Operation Dawn 220) เข้าแก้ปัญหานิติประหารสภาแผ่นดินจนสำเร็จอย่างราบรื่น"},
     {"num": 21, "name": "วิสุทธิ์ คมณรัตน์", "years": "2612-2614", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "ตัวแทนพรรคประชาปิติวัติโครงสร้างไร้ศูนย์กลาง พยายามแก้ไขรัฐธรรมนูญผ่านช่องโหว่พระบาทสมเด็จพระมหาภูมิพลมหาราช (ร.๙) ไม่ทรงลงพระปรมาภิไธย โดยมีเป้าหมายแฝงเพื่อลดทอนอำนาจรัฐส่วนกลางและสถาบันฯ พร้อมแทรกแซงสภาด้วยทุนต่างชาติ ทว่าเขาต้องพ้นจากตำแหน่งหลังจากเผชิญกับ 'ปฏิบัติการรุ่งอรุณ ๒๒๐' (Operation Dawn 220) นำโดยอดีตนายกฯ พริษฐ์ วัชรสินธุ และไตรทิศา รณปวัตน์ ซึ่งได้ยื่นหลักฐานความทุจริตเชิงลึกและพฤติการณ์รวบอำนาจ (นิติประหารสภา) ต่อศาลรัฐธรรมนูญ ส่งผลให้ศาลรัฐธรรมนูญมีมติเอกฉันท์ ๖ ต่อ ๐ สั่งให้พ้นจากตำแหน่ง บีบให้ลงนามลาออกและยุบสภาไปในที่สุดเนื่องจากหมดทางออก"},
     {"num": 22, "name": "รักชนก ศรีนอก", "years": "2614-2630", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "นายกรัฐมนตรีคนที่ ๒๒ (นายกหญิงคนที่ ๒) ชนะการเลือกตั้งแบบแลนด์สไลด์ ๕๓% เข้าฟื้นฟูระบบรัฐสภาหลังวิกฤตนิติประหารสภาแผ่นดิน โดยเสนอแก้ช่องโหว่รัฐธรรมนูญ (กำหนดเกณฑ์แก้ไขหมวดสำคัญให้ใช้คะแนนเสียงเท่ากับการยกเลิกรัฐธรรมนูญเพื่อป้องกันนิติประหาร), ดำเนินการตัดสิทธิ์ทางการเมือง สส. งูเห่า ๓๑ คน, ปฏิรูปและปรับปรุงระบบการทำงานของ GOC ให้มีความโปร่งใส และเดินหน้าโครงการคลองไทยไมตรี ๒.๐ ร่วมกับลาวอย่างยั่งยืน"},
-    {"num": 23, "name": "นภดนัย ชาญวีรกูล", "years": "2630-2635", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "นายกรัฐมนตรีคนที่ ๒๓ (พรรคภูมิใจไทย) หลานอนุทิน/ลูกเศรณี นำพรรคเป็นแกนนำรัฐบาลครั้งแรก ชนะเลือกตั้งโปร่งใส ๓๓% หยุดสถิติไร้พ่าย ๘๓ ปีพรรคส้ม ผลงานเด่นคือปฏิรูปกระทรวงสาธารณสุข อัปเกรดโรงพยาบาลและขึ้นเงินเดือนแพทย์-พยาบาล เพื่อแก้ปัญหาวิกฤตบุคลากรตกงานจาก ParadoxAI 2.0 เผชิญปมลาออกปี ๒๖๓๕ จากปัญหาจัดสรรผลประโยชน์พรรคร่วมไม่ลงรอยกัน"},
-    {"num": 24, "name": "อนุเจริญ ชาญวีรกูล", "years": "2635-2637", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "นายกรัฐมนตรีคนที่ ๒๔ (พรรคหัวใจไทย) น้องชายของนภดนัย ก้าวขึ้นสู่ตำแหน่งจากการโหวตของ สส. สานต่อและผลักดัน ๗ โครงการหลักของพี่ชายสำเร็จในเวลา ๒ ปี ก่อนตัดสินใจประกาศยุบสภาคืนอำนาจให้ประชาชนในการเลือกตั้งใหม่"},
-    {"num": 25, "name": "วิโรจน์ ลักขณาดิศร", "years": "2637-ปัจจุบัน", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "นายกรัฐมนตรีคนที่ ๒๕ (พรรคก้าวไกล) ชนะการเลือกตั้งทั่วไปเข้าดำรงตำแหน่งนายกรัฐมนตรีหลังการประกาศยุบสภาคืนอำนาจให้ประชาชนของอนุเจริญ ชาญวีรกูล เดินหน้านโยบายเสรีนิยมก้าวหน้าและปฏิรูปโครงสร้างสังคมยั่งยืน"}
+    {"num": 23, "name": "นภดนัย ชาญวีรกูล", "years": "2630-2635", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "นายกรัฐมนตรีคนที่ ๒๓ (พรรคภูมิใจไทย) หลานอนุทิน/ลูกเศรณี นำพรรคเป็นแกนนำรัฐบาลครั้งแรก ชนะเลือกตั้งโปร่งใส ๓๓% ผลงานเด่นปฏิรูปกระทรวงสาธารณสุข เพิ่มเงินเดือนแพทย์-พยาบาลสู้คดี AI วางมือการเมืองชั่วคราวพร้อมน้องชายหลังครบ ๗ โครงการหลัก ทั้งที่มีคะแนนนิยมถึง ๘๗.๙%"},
+    {"num": 24, "name": "อนุเจริญ ชาญวีรกูล", "years": "2635-2637", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "นายกรัฐมนตรีคนที่ ๒๔ (พรรคหัวใจไทย) น้องชายของนภดนัย สส. โหวตเลือกสานต่อผลักดัน ๗ โครงการหลักของพี่ชายสำเร็จใน ๒ ปี (รวม ๗ ปีตระกูลชาญวีรกูล) ก่อนตัดสินใจวางมือการเมืองชั่วคราวและยุบสภาคืนอำนาจให้ประชาชน"},
+    {"num": 25, "name": "วิโรจน์ ลักขณาดิศร", "years": "2637-ปัจจุบัน", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "นายกรัฐมนตรีคนที่ ๒๕ (พรรคก้าวไกล) พาพรรคส้มกลับมาเป็นรัฐบาล ทำงานร่วมกับ 9arm ตรงไปตรงมาโดยไร้ข้อแก้ตัวแก้จุดอ่อน ThaiJavis ผลักดัน 'โครงการคนละไลค์' อุดหนุนคนรุ่นใหม่จนเกิดปรากฏการณ์สื่อ SIN ARCHIVE x Point of View"}
 ]
 
 # --- Build HTML ---
@@ -594,6 +594,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
       <button class="db-tab-btn" onclick="switchTab('paradox-ai-tab', this)">🤖 โครงการ ParadoxAI / ParadoxForward</button>
       <button class="db-tab-btn" onclick="switchTab('parties-tab', this)">🗳️ พรรคการเมือง</button>
       <button class="db-tab-btn" onclick="switchTab('independent-organs-tab', this)">⚖️ องค์กรอิสระตามรัฐธรรมนูญ</button>
+      <button class="db-tab-btn" onclick="switchTab('khonlalike-tab', this)">🎨 โครงการคนละไลค์ (SIN ARCHIVE & Creators)</button>
     </div>
 
     <!-- Tab 1: ประวัติศาสตร์ประชาธิปไตย -->
@@ -2119,6 +2120,137 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 </div>
               </div>
             </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Tab 12: โครงการคนละไลค์ (Khon La Like Campaign & SIN ARCHIVE) -->
+    <div id="khonlalike-tab" class="db-tab-content">
+      <div style="background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(251, 146, 60, 0.25); border-radius: 16px; padding: 28px; margin-bottom: 28px; backdrop-filter: blur(12px);">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 20px; margin-bottom: 24px;">
+          <div>
+            <h3 style="color: #fb923c; font-size: 22px; font-weight: 700; margin: 0 0 6px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 10px;">
+              <span>🎨 โครงการคนละไลค์ (Khon La Like Campaign) & สื่อสร้างสรรค์คนรุ่นใหม่</span>
+            </h3>
+            <p style="color: var(--text-muted); font-size: 13.5px; margin: 0; line-height: 1.6;">
+              นวัตกรรมนโยบายซอฟต์พาวเวอร์และสวัสดิการครีเอเตอร์ในยุคคำสั่งนายกรัฐมนตรีคนที่ ๒๕ (วิโรจน์ ลักขณาดิศร) อุดหนุนตรงแก่เยาวชนไทย สร้างปรากฏการณ์สื่อประวัติศาสตร์ SIN ARCHIVE
+            </p>
+          </div>
+          <div style="display: flex; gap: 10px; background: rgba(0,0,0,0.3); padding: 8px 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.06); font-size: 12px; color: #fb923c;">
+            <span>🚀 3,400+ ครีเอเตอร์ผ่านการอนุมัติ | 1,000,000,000+ วิว/เดือน</span>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 24px;">
+
+          <!-- Section 1: Concept & Policy -->
+          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(251, 146, 60, 0.2); border-radius: 14px; padding: 22px;">
+            <h4 style="color: #fb923c; font-size: 17px; margin: 0 0 12px 0; display: flex; align-items: center; gap: 8px;">
+              💡 ๑. แนวคิดนโยบายรัฐบาล "คนละไลค์" — การลงทุนในศักยภาพมนุษย์
+            </h4>
+            <p style="font-size: 13px; color: var(--text-muted); line-height: 1.7; margin-bottom: 14px;">
+              รัฐบาลนายกฯ วิโรจน์ ลักขณาดิศร เสนอแนวคิด <em>"รัฐอุดหนุนตรงแก่คอนเทนต์ครีเอเตอร์รุ่นใหม่อายุต่ำกว่า ๓๐ ปี โดยไม่ผ่านองค์กรกระทรวงเทอะทะ"</em> ยิ่งประชาชนเข้าชมและมีประโยชน์ต่อสังคมมาก รัฐยิ่งสนับสนุนมาก มีเงื่อนไขเดียวคือเนื้อหาต้องสร้างสรรค์และเป็นประโยชน์ต่อสังคม สร้างกระแสตอบรับอย่างล้นพ้นบนโลกออนไลน์ เกิดการร่วมบริจาคสนับสนุนและปฏิวัติการเรียนรู้ประวัติศาสตร์-วิทยาศาสตร์ของชาติ
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px;">
+              <div style="background: rgba(0,0,0,0.3); padding: 12px 16px; border-radius: 8px; border-left: 3px solid #fb923c;">
+                <strong style="color: #fdba74; font-size: 12.5px;">🎯 ช่องอนุมัติสะสม:</strong>
+                <div style="color: var(--text); font-size: 14px; font-weight: 700; margin-top: 2px;">๓,๔๐๐ ช่องทั่วประเทศ</div>
+              </div>
+              <div style="background: rgba(0,0,0,0.3); padding: 12px 16px; border-radius: 8px; border-left: 3px solid #4ade80;">
+                <strong style="color: #86efac; font-size: 12.5px;">📈 ยอดรับชมต่อเดือน:</strong>
+                <div style="color: var(--text); font-size: 14px; font-weight: 700; margin-top: 2px;">ทะลุ ๑,๐๐๐,๐๐๐,๐๐๐ วิว (1 Billion Views)</div>
+              </div>
+              <div style="background: rgba(0,0,0,0.3); padding: 12px 16px; border-radius: 8px; border-left: 3px solid #60a5fa;">
+                <strong style="color: #93c5fd; font-size: 12.5px;">💬 วาทะนายกฯ วิโรจน์:</strong>
+                <div style="color: var(--text); font-size: 12px; font-style: italic; margin-top: 2px;">"นี่คือสิ่งที่รัฐควรทำมานานแล้ว ลงทุนในคนไม่ใช่แค่โครงสร้าง"</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2: Origin of SIN ARCHIVE & Visual Graphics -->
+          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(56, 189, 248, 0.2); border-radius: 14px; padding: 22px;">
+            <h4 style="color: #38bdf8; font-size: 17px; margin: 0 0 12px 0; display: flex; align-items: center; gap: 8px;">
+              ✏️ ๒. ตำนานช่อง "SIN ARCHIVE" (สิญจน์ / สิน - อดีตทีมงาน 1HD)
+            </h4>
+            <p style="font-size: 13px; color: var(--text-muted); line-height: 1.7; margin-bottom: 14px;">
+              <strong>สิญจน์ (สิน)</strong> อดีตทีมงาน 1HD ผู้คลุกคลีกับการเมืองและเอกสารประวัติศาสตร์จำเหตุการณ์ได้แม่นยำ ได้เสนอโครงการแปลงเหตุการณ์ทางการเมืองและกฎหมายแห้งๆ ให้เป็น Visual Graphic Icons ที่สืบทอดความทรงจำร่วมของสังคม จนได้รับการอนุมัติโครงการคนละไลค์ และแจ้งเกิดช่อง <strong>SIN ARCHIVE</strong> จนมีผู้ติดตามทะลุ ๓๑.๒ ล้านคน
+            </p>
+
+            <!-- Visual Icons Catalog -->
+            <div style="font-weight: 600; font-size: 13px; color: #38bdf8; margin-bottom: 10px;">🎨 ตัวอย่างสัญลักษณ์กราฟิกประวัติศาสตร์ (SIN ARCHIVE Iconic Visuals):</div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px;">
+              
+              <div style="background: rgba(239, 68, 68, 0.08); border: 1px solid rgba(239, 68, 68, 0.3); padding: 14px; border-radius: 10px;">
+                <div style="font-size: 13px; font-weight: 700; color: #f87171; margin-bottom: 4px;">🩺 โลโก้วิกฤต ReSkill (พยาบาล & AI)</div>
+                <div style="font-size: 12px; color: var(--text-muted); line-height: 1.5;">
+                  สัญลักษณ์หมวกพยาบาลครึ่งหนึ่ง ชิปประมวลผลครึ่งหนึ่ง โทนสีแดงเข้ม — สื่อถึงวิกฤตความขัดแย้งของบุคลากรการแพทย์กับระบบ ParadoxAI 2.0 ในยุคปัญหาสาธารณสุข
+                </div>
+              </div>
+
+              <div style="background: rgba(59, 130, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.3); padding: 14px; border-radius: 10px;">
+                <div style="font-size: 13px; font-weight: 700; color: #60a5fa; margin-bottom: 4px;">🪷 โลโก้ ThaiJavis เปิดตัว</div>
+                <div style="font-size: 12px; color: var(--text-muted); line-height: 1.5;">
+                  เส้นข้อมูลเรืองแสงถักประสานเป็นรูปดอกบัว — สื่อถึงปัญญาประดิษฐ์สัญชาติไทยองค์แรกผู้ดูแลระบบราชการดิจิทัลและสวัสดิการสังคม
+                </div>
+              </div>
+
+              <div style="background: rgba(212, 175, 55, 0.08); border: 1px solid rgba(212, 175, 55, 0.3); padding: 14px; border-radius: 10px;">
+                <div style="font-size: 13px; font-weight: 700; color: var(--gold-light); margin-bottom: 4px;">📱 โลโก้ 9arm บล็อครักชนก</div>
+                <div style="font-size: 12px; color: var(--text-muted); line-height: 1.5;">
+                  สมาร์ตโฟนมีเส้นขีดทับสีทองดำ — สัญลักษณ์ประวัติศาสตร์การเมืองดิจิทัลกรณีดร.ธนานนท์ปฏิเสธรับสายตำแหน่งที่ปรึกษาทางการเมือง
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Section 3: SIN ARCHIVE Remaster Series & Collaborations -->
+          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(168, 85, 247, 0.25); border-radius: 14px; padding: 22px;">
+            <h4 style="color: #c084fc; font-size: 17px; margin: 0 0 12px 0; display: flex; align-items: center; gap: 8px;">
+              🎬 ๓. มหากาพย์ SIN ARCHIVE Remaster (สิญจน์ x พี่วิว Point of View x 9arm)
+            </h4>
+            <p style="font-size: 13px; color: var(--text-muted); line-height: 1.7; margin-bottom: 14px;">
+              การประสานพลังของ ๔ ตัวละครหลัก: <strong>สิญจน์ (ภาพกราฟิก)</strong> x <strong>พี่วิว Point of View (เสียงเล่าทรงพลัง)</strong> x <strong>ดร.ธนานนท์ 9arm (เอกสารวงใน)</strong> x <strong>เอมโมโน (ข้อมูลการแพทย์)</strong> สร้างสถิติยอดชมสูงสุดในประวัติศาสตร์สื่อดิจิทัลไทย
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 16px;">
+              
+              <!-- Series 1 Remaster Box -->
+              <div style="background: rgba(0,0,0,0.3); border-left: 3px solid #c084fc; padding: 14px; border-radius: 8px;">
+                <div style="font-size: 13px; font-weight: 700; color: #e9d5ff; margin-bottom: 6px;">📜 Series 1 Remaster (การเมืองยุคใหม่ & รัฐบาล):</div>
+                <div style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">
+                  • <strong>EP.2 ศิริกัญญา & ParadoxAI ("ลูกคนที่สอง"):</strong> เผยบันทึกส่วนตัว ๑๖ ปีในการทุ่มเทวางระบบการคลัง — <em>ยอดวิวสะสม ๖๑,๐๐๐,๐๐๐ วิว</em><br>
+                  • <strong>EP.3 วิกฤตรักชนก & เสียงพยาบาล ๓๔,๐๐๐ คน:</strong> สะท้อนเสียงคนทำงานที่ไม่โกรธ AI แต่ขอให้มีคนนึกถึง — <em>ยอดวิวสะสม ๘๙,๐๐๐,๐๐๐ วิว</em><br>
+                  • <strong>EP.4 ยุคนภดนัย-อนุเจริญ ("ทำเสร็จแล้วก็พอ") & นายกฯ วิโรจน์:</strong> รำลึก ๗ ปีตระกูลชาญวีรกูลก่อนวางมือการเมืองชั่วคราว — <em>ยอดวิวสะสม ๑๐๓,๐๐๐,๐๐๐ วิว</em>
+                </div>
+              </div>
+
+              <!-- Series 2 Remaster Box -->
+              <div style="background: rgba(0,0,0,0.3); border-left: 3px solid #4ade80; padding: 14px; border-radius: 8px;">
+                <div style="font-size: 13px; font-weight: 700; color: #86efac; margin-bottom: 6px;">🏛️ Series 2 Remaster (มหากาพย์ประวัติศาสตร์ไทย ๔๐,๐๐๐ ปี):</div>
+                <div style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">
+                  • ถ่ายทอดระบบโหวตผู้นำท้องถิ่นทวารวดี, ระบบ Flexible Currency ศรีวิชัย, ลายพระหัตถ์ ร.๔ จากห้องสมุดศิริปัญญาวิมารสัจ ถึงประวัติศาสตร์ร่วมสมัย<br>
+                  • <strong>EP.10 ตอนจบมหากาพย์:</strong> ทำสถิติสูงสุดยอดวิวสด ๒๔.๑ ล้านคน และ <em>ยอดวิวสะสม ๑๔๒,๐๐๐,๐๐๐ วิว (142M Views)</em>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Total Subscribers Stats -->
+            <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 16px; background: rgba(0,0,0,0.4); padding: 16px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.08); text-align: center;">
+              <div>
+                <div style="font-size: 11.5px; color: var(--text-muted);">🔴 ยอดผู้ติดตาม SIN ARCHIVE</div>
+                <div style="font-size: 20px; font-weight: 800; color: #f87171; font-family: monospace; margin-top: 2px;">๓๑,๒๐๐,๐๐๐ คน (31.2M)</div>
+              </div>
+              <div style="border-left: 1px solid rgba(255,255,255,0.1); padding-left: 16px;">
+                <div style="font-size: 11.5px; color: var(--text-muted);">🟣 ยอดผู้ติดตาม Point of View</div>
+                <div style="font-size: 20px; font-weight: 800; color: #c084fc; font-family: monospace; margin-top: 2px;">๒๔,๘๐๐,๐٠๐ คน (24.8M)</div>
+              </div>
+            </div>
+
           </div>
 
         </div>
@@ -5581,7 +5713,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <div style="margin-bottom: 6px;"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๒๓ (พ.ศ. ๒๖๓๐ - ปัจจุบัน)</div>
               <div style="margin-bottom: 6px;"><strong>พรรคการเมือง:</strong> พรรคภูมิใจไทย (นำพรรคเป็นแกนนำรัฐบาลครั้งแรก)</div>
               <div style="margin-bottom: 6px;"><strong>สายเลือดตระกูล:</strong> หลานอนุทิน / ลูกเศรณี ชาญวีรกูล</div>
-              <div><strong>ปมการเมือง:</strong> ลาออกปี ๒๖๓๕ จากปัญหาจัดสรรผลประโยชน์พรรคร่วมไม่ลงรอย</div>
+              <div><strong>ผลงานและคะแนนนิยม:</strong> ปฏิรูปสาธารณสุข / คะแนนนิยมสูงถึง ๘๗.๙% ก่อนวางมือการเมืองชั่วคราว</div>
             </div>
           </div>
 
@@ -5611,7 +5743,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <div style="margin-bottom: 6px;"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๒๔ (พ.ศ. ๒๖๓๕ - ๒๖๓๗)</div>
               <div style="margin-bottom: 6px;"><strong>พรรคการเมือง:</strong> พรรคหัวใจไทย (รีแบรนด์จากภูมิใจไทย)</div>
               <div style="margin-bottom: 6px;"><strong>สายเลือดตระกูล:</strong> น้องชายของนภดนัย ชาญวีรกูล</div>
-              <div><strong>ผลงานเด่น:</strong> สานต่อ ๗ โครงการหลักจนสำเร็จใน ๒ ปี ก่อนประกาศยุบสภาคืนอำนาจ</div>
+              <div><strong>ผลงานเด่น:</strong> สำเร็จ ๗ โครงการหลักใน ๒ ปี (รวม ๗ ปีตระกูลชาญวีรกูล) วางมือการเมืองชั่วคราว & ยุบสภาคืนอำนาจ</div>
             </div>
           </div>
 
@@ -5625,8 +5757,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <p class="tri-stage-text">อนุเจริญเห็นว่าผลงานในสมัยนภดนัยทำไว้ได้ดีมาก แต่ภาพลักษณ์ดั้งเดิมของพรรคภูมิใจไทยในอดีตยังมีจุดอ่อน เขาจึงรีแบรนด์ทางการเมืองด้วยการจัดตั้ง <strong>"พรรคหัวใจไทย"</strong> ขึ้นมาใหม่ (โดยยังคงเก็บพรรคภูมิใจไทยเดิมไว้) ชูสัญลักษณ์โทนสีน้ำเงิน-ดำ สื่อถึงเสถียรภาพ ความเป็นมืออาชีพ และสร้างความเชื่อมั่นใหม่ให้แก่ประชาชน</p>
             </div>
             <div class="tri-stage">
-              <div class="tri-stage-title">🗳️ ความสำเร็จ ๗ โครงการหลักใน ๒ ปี และการยุบสภาคืนอำนาจให้ประชาชน</div>
-              <p class="tri-stage-text">อนุเจริญทุ่มเทขับเคลื่อนและผลักดันอภิมหาโครงการสำคัญ ๗ โครงการของนภดนัย (พี่ชาย) จนเสร็จสิ้นสมบูรณ์แบบภายในเวลา ๒ ปีเต็ม เมื่อภารกิจการบริหารสำเร็จเรียบร้อยแล้ว ในปี พ.ศ. ๒๖๓๗ เขาจึงตัดสินใจประกาศยุบสภาผู้แทนราษฎรเพื่อคืนอำนาจการตัดสินใจให้แก่ประชาชนในการเลือกตั้งทั่วไปครั้งใหม่</p>
+              <div class="tri-stage-title">🗳️ ความสำเร็จ ๗ โครงการหลักใน ๒ ปี คะแนนนิยม ๘๗.๙% และการวางมือการเมืองชั่วคราว</div>
+              <p class="tri-stage-text">อนุเจริญทุ่มเทขับเคลื่อนอภิมหาโครงการสำคัญ ๗ โครงการของนภดนัย (พี่ชาย) จนเสร็จสิ้นสมบูรณ์แบบในเวลา ๒ ปีเต็ม (รวม ๗ ปีตระกูลชาญวีรกูล) แม้จะได้รับกระแสความนิยมจากประชาชนสูงถึง ๘๗.๙% ซึ่งหากไม่วางมือก็จะได้ดำรงตำแหน่งนายกฯ ต่อแน่นอน ทว่าครอบครัวชาญวีรกูลได้ตัดสินใจวางมือทางการเมืองชั่วคราว และอนุเจริญได้ประกาศยุบสภาผู้แทนราษฎรในปี พ.ศ. ๒๖๓๗ เพื่อคืนอำนาจให้ประชาชนในการเลือกตั้งใหม่</p>
             </div>
           </div>
         </div>
@@ -5647,8 +5779,16 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
           <div class="tri-bio">
             <div class="tri-stage">
-              <div class="tri-stage-title">🗳️ ชัยชนะการเลือกตั้งทั่วไป พ.ศ. ๒๖๓๗ และการจัดตั้งรัฐบาลเสรีนิยมก้าวหน้า</div>
-              <p class="tri-stage-text">ภายหลังจากที่ อนุเจริญ ชาญวีรกูล ประกาศยุบสภาผู้แทนราษฎรเพื่อคืนอำนาจให้แก่ประชาชนในการเลือกตั้งทั่วไป พ.ศ. ๒๖๓๗ พรรคก้าวไกลภายใต้การนำของ <strong>วิโรจน์ ลักขณาดิศร</strong> สามารถคว้าชัยชนะในการเลือกตั้งและได้รับเสียงไว้วางใจจากประชาชนอย่างล้นพ้น ส่งผลให้วิโรจน์ก้าวขึ้นดำรงตำแหน่งนายกรัฐมนตรีคนที่ ๒๕ แห่งราชอาณาจักรไทย เดินหน้านำพาประเทศด้วยนโยบายเสรีนิยมก้าวหน้า ปฏิรูปโครงสร้างสังคม และปราบปรามการทุจริตเชิงระบบอย่างเข้มแข็ง</p>
+              <div class="tri-stage-title">🗳️ การกลับมาของพรรคก้าวไกล & ชัยชนะการเลือกตั้งทั่วไป พ.ศ. ๒๖๓๗</div>
+              <p class="tri-stage-text">ภายหลังจากที่ อนุเจริญ ชาญวีรกูล ประกาศยุบสภาเพื่อคืนอำนาจ พรรคก้าวไกลภายใต้การนำของ <strong>วิโรจน์ ลักขณาดิศร</strong> สามารถคว้าชัยชนะในการเลือกตั้งและนำพรรคส้มกลับมาเป็นแกนนำรัฐบาลได้อีกครั้ง ด้วยการเสนอวิสัยทัศน์เสรีนิยมก้าวหน้า ปฏิรูปโครงสร้างสังคม และปราบปรามการทุจริตเชิงระบบอย่างตรงไปตรงมา</p>
+            </div>
+            <div class="tri-stage">
+              <div class="tri-stage-title">📞 ความสัมพันธ์ตรงกับ 9arm (ดร.ธนานนท์) & การอุดช่องโหว่ ThaiJavis</div>
+              <p class="tri-stage-text">วิโรจน์บริหารประเทศด้วยสไตล์เปิดกว้างและไร้พิธีการ เขาโทรหา ดร.ธนานนท์ (9arm) โดยตรงโดยไม่ตั้งตำแหน่งทางการหรือทำโชว์ PR พร้อมถามตรงๆ ถึงจุดอ่อนของระบบ ThaiJavis ที่รัฐบาลชุดก่อนไม่เคยรู้ วิโรจน์รับฟังการอธิบายเชิงลึก ๒ ชั่วโมงเต็มโดยไม่ขัดหรือแก้ตัวแทนรัฐบาลชุดก่อน และมุ่งมั่นนำข้อมูลไปแก้ไขปรับปรุงจนระบบเทคโนโลยีแผ่นดินมั่นคงยิ่งขึ้น</p>
+            </div>
+            <div class="tri-stage">
+              <div class="tri-stage-title">🎨 โครงการมหาชน "คนละไลค์" (Khon La Like Campaign) & ปรากฏการณ์สื่อใหม่</div>
+              <p class="tri-stage-text">ผลงานนวัตกรรมสังคมเด่นคือโครงการ <strong>"คนละไลค์"</strong> รัฐบาลอุดหนุนตรงแก่คอนเทนต์ครีเอเตอร์อายุต่ำกว่า ๓๐ ปี เพื่อสร้างสรรค์เนื้อหาที่เป็นประโยชน์แก่สังคมโดยไม่ผ่านระบบกระทรวงเทอะทะ เกิดเป็นปรากฏการณ์ทางสังคมที่ยอดวิวรวมทะลุพันล้านวิว/เดือน และจุดประกายช่องสื่อประวัติศาสตร์ <strong>SIN ARCHIVE</strong> (สิญจน์) ร่วมมือกับ <strong>Point of View</strong> (พี่วิว) และ 9arm ในการถ่ายทอดประวัติศาสตร์ไทยจนครองใจราษฎรกว่า ๓๑ ล้านคน</p>
             </div>
           </div>
         </div>
