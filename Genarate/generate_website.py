@@ -2307,87 +2307,143 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
 
           <!-- Part 5: Thailand History Festival (3-6 December at BANCC ICONSIAM) -->
-          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(234, 179, 8, 0.35); border-radius: 14px; padding: 24px;">
-            <h4 style="color: #facc15; font-size: 19px; margin: 0 0 14px 0; display: flex; align-items: center; gap: 10px;">
+          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(234, 179, 8, 0.35); border-radius: 14px; padding: 26px;">
+            <h4 style="color: #facc15; font-size: 20px; margin: 0 0 14px 0; display: flex; align-items: center; gap: 10px; font-family: 'Outfit', sans-serif;">
               🏛️ ๕. มหกรรมระดับโลก "#ThailandHistoryFestival" (๓ - ๖ ธันวาคม ณ ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช BANCC)
             </h4>
-            <p style="font-size: 13.5px; color: var(--text-muted); line-height: 1.8; margin-bottom: 16px;">
-              อภิมหกรรมประวัติศาสตร์ครั้งยิ่งใหญ่ที่สุดในประวัติศาสตร์ จัดร่วมโดย <strong>พี่วิว Point of View</strong> และ <strong>สิญจน์ (สิน) SIN ARCHIVE</strong> ในช่วงวันที่ <strong>๓ - ๖ ธันวาคม</strong> (ตรงกับช่วงวันชาติ ๕ ธันวาคม) ณ <strong>ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช (BANCC)</strong> ริมแม่น้ำเจ้าพระยา ข้าง ICONSIAM
+            <p style="font-size: 13.5px; color: var(--text-muted); line-height: 1.8; margin-bottom: 18px;">
+              อภิมหกรรมประวัติศาสตร์ครั้งยิ่งใหญ่ที่สุดในประวัติศาสตร์ จัดร่วมโดย <strong>พี่วิว Point of View</strong> และ <strong>สิญจน์ (สิน) SIN ARCHIVE</strong> ในช่วงวันที่ <strong>๓ - ๖ ธันวาคม</strong> (ตรงกับช่วงวันชาติ ๕ ธันวาคม) ณ <strong>ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช (BANCC)</strong> ริมแม่น้ำเจ้าพระยา ติด ICONSIAM
             </p>
 
             <!-- Display Official Event Posters -->
-            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px; background: rgba(0,0,0,0.3); padding: 18px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.08);">
-              <div style="text-align: center; flex: 1; min-width: 260px; max-width: 420px;">
-                <div style="font-size: 12.5px; color: #facc15; font-weight: 600; margin-bottom: 8px;">🖼️ โปสเตอร์ประชาสัมพันธ์หน้างาน (Front Poster)</div>
-                <img src="images/thailand_history_fest_front.png" alt="Thailand History Festival Front Poster" style="width: 100%; border-radius: 10px; border: 1.5px solid rgba(250, 204, 21, 0.4); box-shadow: 0 6px 16px rgba(0,0,0,0.4);">
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 24px; background: rgba(0,0,0,0.35); padding: 20px; border-radius: 14px; border: 1px solid rgba(250, 204, 21, 0.3);">
+              <div style="text-align: center; flex: 1; min-width: 280px; max-width: 440px;">
+                <div style="font-size: 13px; color: #facc15; font-weight: 700; margin-bottom: 8px;">🖼️ โปสเตอร์ประชาสัมพันธ์หน้างาน (Front Official Poster)</div>
+                <img src="images/thailand_history_fest_front.png" alt="Thailand History Festival Front Poster" style="width: 100%; border-radius: 12px; border: 1.5px solid rgba(250, 204, 21, 0.5); box-shadow: 0 8px 20px rgba(0,0,0,0.5);">
               </div>
-              <div style="text-align: center; flex: 1; min-width: 260px; max-width: 420px;">
-                <div style="font-size: 12.5px; color: #facc15; font-weight: 600; margin-bottom: 8px;">📜 โปสเตอร์รายละเอียดนิทรรศการหลังงาน (Back Poster)</div>
-                <img src="images/thailand_history_fest_back.png" alt="Thailand History Festival Back Poster" style="width: 100%; border-radius: 10px; border: 1.5px solid rgba(250, 204, 21, 0.4); box-shadow: 0 6px 16px rgba(0,0,0,0.4);">
-              </div>
-            </div>
-
-            <!-- Campaign & Secret Episode Narrative -->
-            <div style="background: rgba(0,0,0,0.35); padding: 16px; border-radius: 10px; border-left: 4px solid #facc15; margin-bottom: 18px; font-size: 13px; color: var(--text); line-height: 1.7;">
-              <strong style="color: #facc15; font-size: 14px;">📣 ประกาศลับ Secret Episode & แคมเปญไวรัล:</strong>
-              <p style="margin: 6px 0 0 0; color: var(--text-muted);">
-                เริ่มจากคลิปสั้น ๑๒ วินาที หน้าจอดำตัวอักษรขาว <em>"3-6 ธันวาคม | ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช | #ThailandHistoryFestival"</em> สื่อโซเชียลและทวิตเตอร์ระเบิดใน ๑๐ นาที! ตามด้วยแคมเปญ Trailer ๑-๕ และ Teaser ๕ นาทีพาทัวร์ BANCC ริมแม่น้ำเจ้าพระยา ถ่ายทอดภาพรวม ๔,๐๐๐ ปี และพระราชดำรัส ร.๔ <em>"คนที่เรียนรู้จากประวัติศาสตร์ต่างหากที่เปลี่ยนอะไรได้"</em> ยอดลงทะเบียนเต็มทุกรอบในเวลาอันรวดเร็ว
-              </p>
-            </div>
-
-            <!-- Zone Layout in BANCC -->
-            <div style="font-weight: 700; font-size: 14px; color: #facc15; margin-bottom: 10px;">🏰 การจัดแบ่งโซนนิทรรศการ ณ BANCC (ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช):</div>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-bottom: 18px;">
-              <div style="background: rgba(0,0,0,0.3); padding: 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.06);">
-                <strong style="color: #60a5fa; font-size: 13px;">👑 Bhumibol Royal Plenary Hall:</strong>
-                <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">พิธีเปิดวันที่ ๓ ธันวาคม และเวทีเสวนาใหญ่ตลอด ๔ วัน</div>
-              </div>
-              <div style="background: rgba(0,0,0,0.3); padding: 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.06);">
-                <strong style="color: #4ade80; font-size: 13px;">🏛️ Mega Hall 1 (นิทรรศการ ๔๐,๐๐๐ ปี):</strong>
-                <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">นิทรรศการประวัติศาสตร์ยุคเก่าถึง รธน. ๒๓๗๕ บูธ ๒ ชั้น เพดานสูง ๒๕ เมตร จำลองถ้ำโบราณและภาพเขียนผนังถ้ำ</div>
-              </div>
-              <div style="background: rgba(0,0,0,0.3); padding: 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.06);">
-                <strong style="color: #c084fc; font-size: 13px;">🌐 Mega Hall 2 (Global Creators):</strong>
-                <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">รวม ยูทูบเบอร์ ครีเอเตอร์ประวัติศาสตร์ นักวิชาการ และนักเขียนหนังสือทั่วโลก</div>
-              </div>
-              <div style="background: rgba(0,0,0,0.3); padding: 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.06);">
-                <strong style="color: #fb923c; font-size: 13px;">🎲 Mega Hall 3 (Boardgames & Interactive):</strong>
-                <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">โซนบอร์ดเกมประวัติศาสตร์ และนิทรรศการปฏิสัมพันธ์ทางการแพทย์โดย เอมโมโน (AimMono)</div>
+              <div style="text-align: center; flex: 1; min-width: 280px; max-width: 440px;">
+                <div style="font-size: 13px; color: #facc15; font-weight: 700; margin-bottom: 8px;">📜 โปสเตอร์รายละเอียดนิทรรศการหลังงาน (Back Official Poster)</div>
+                <img src="images/thailand_history_fest_back.png" alt="Thailand History Festival Back Poster" style="width: 100%; border-radius: 12px; border: 1.5px solid rgba(250, 204, 21, 0.5); box-shadow: 0 8px 20px rgba(0,0,0,0.5);">
               </div>
             </div>
 
-            <!-- Core Feature: Lead Your Country -->
-            <div style="background: rgba(147, 51, 234, 0.1); border: 1.5px solid rgba(168, 85, 247, 0.4); border-radius: 12px; padding: 18px; margin-bottom: 14px;">
-              <h5 style="color: #e9d5ff; font-size: 16px; margin: 0 0 8px 0; display: flex; align-items: center; gap: 8px;">
-                🎮 ไฮไลต์สูงสุดใน Mega Hall 4: โซนจำลองประวัติศาสตร์ "Lead Your Country" (powered by ThaiJavis AI)
-              </h5>
-              <p style="font-size: 13px; color: var(--text-muted); line-height: 1.7; margin-bottom: 10px;">
-                แอปพลิเคชันและเว็บจำลองประวัติศาสตร์บนมือถือและคอมพิวเตอร์ <strong>ประมวลผลด้วย ThaiJavis AI Engine</strong> (ดร.ธนานนท์ ช่วยเป็นที่ปรึกษา AI คอนซัลต์เบื้องหลัง) 
-                เปิดโอกาสให้ผู้เล่นสวมบทบาทเปลี่ยนประวัติศาสตร์ด้วยตัวเอง:
-              </p>
-              <div style="font-size: 12.5px; color: var(--text); line-height: 1.7; display: flex; flex-direction: column; gap: 6px;">
-                <div>• <strong>เลือกยุคสมัย & ชาติ:</strong> เลือกช่วงเวลาตั้งแต่ทวารวดี สุโขทัย อยุธยา ธนบุรี ถึงปัจจุบัน</div>
-                <div>• <strong>เลือกตัวละคร:</strong> สวมบทบาทเป็น <em>"บุคคลจริงในประวัติศาสตร์"</em> (เช่น กษัตริย์อยุธยา, พ่อขุนรามคำแหง) หรือ <em>"สร้างตัวละครใหม่"</em> (เช่น ขุนนางอยุธยาฝ่ายการค้า ต่อรองสิทธิ์การค้ากับฮอลันดา/VOC)</div>
-                <div>• <strong>AI Scenario Engine:</strong> ThaiJavis ประมวลผลผลลัพธ์และสร้าง Timeline ใหม่ตามการตัดสินใจของผู้เล่นแบบ Real-time รองรับพร้อมกันหลักพันคนใน Hall 4</div>
-              </div>
+            <!-- Full Campaign Narrative: Secret Episode & Trailers 1-5 & Teaser 5 min -->
+            <div style="background: rgba(0,0,0,0.4); padding: 20px; border-radius: 12px; border-left: 4px solid #facc15; margin-bottom: 22px; font-size: 13px; color: var(--text); line-height: 1.8;">
+              <strong style="color: #facc15; font-size: 15px;">📣 มหากาพย์ประกาศลับ Secret Episode & แคมเปญโปรโมตระดับโลก:</strong>
               
-              <div style="margin-top: 12px; padding-top: 10px; border-top: 1px dashed rgba(255,255,255,0.15); font-size: 12.5px; color: #fdba74;">
-                🔒 <strong>เงื่อนไขสิทธิ์การเข้าถึง (Exclusive Access & FOMO):</strong>
-                <p style="margin: 4px 0 0 0; color: var(--text-muted);">
-                  ในการจัดงาน ๔ วัน แพลตฟอร์ม "Lead Your Country" จะเปิดให้เล่นเฉพาะผู้ที่มางานจริงเท่านั้น โดยสแกน Biometric Facial Scan หน้างานและผูกกับรหัสเฉพาะบุคคล... 
-                  สำหรับประชาชนทั่วไปที่ไม่สะดวกเดินทางมางาน <strong>จะเปิดให้ดาวน์โหลดและใช้งานฟรีทั่วประเทศหลังจากจบงานไปแล้ว ๒ เดือน!</strong>
+              <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px; color: var(--text-muted);">
+                <div>
+                  <strong style="color: #fdba74;">🖤 ประกาศลับ Secret Episode (๑๒ วินาที):</strong> สแกนขึ้นจอดำ ตัวอักษรสีขาว <em>"3-6 ธันวาคม | ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช | #ThailandHistoryFestival"</em> ทวิตเตอร์ระเบิดใน ๑๐ นาทีแรก! ต่อมาพี่วิว Point of View โพสต์ข้อความเดียวกัน ยืนยันการรวมพลังของ ๒ ช่องยักษ์ใหญ่
+                </div>
+                <div>
+                  <strong style="color: #fdba74;">🎥 ซีรีส์ Trailer ๑ ถึง ๕:</strong>
+                  <br>• <strong>Trailer ๑ (๒๘ วินาที):</strong> เสียงน้ำไหลเบาๆ ขึ้นตัวอักษร <em>"๔๐,๐๐๐ ปี"</em> สู่การเฉลยวันที่
+                  <br>• <strong>Trailer ๒ (๓๐ วินาที):</strong> ภาพตัดสลับภาพเขียนถ้ำ ม้วนปาปิรัส อักษรไทยโบราณ แผนที่ศรีวิชัย เสียงสิน <em>"ประวัติศาสตร์ไม่ใช่เรื่องที่ผ่านไปแล้ว มันคือเรื่องที่ยังอยู่กับเรา"</em>
+                  <br>• <strong>Trailer ๓ (๓๐ วินาที):</strong> ดนตรีออเคสตรา ภาพโถง BANCC เผย ๔ ฮอลล์ ไร้ขีดจำกัดประวัติศาสตร์ แวบหน้าจอ <em>"เลือกชาติ"</em>
+                  <br>• <strong>Trailer ๔ (๓๐ วินาที):</strong> พี่วิว <em>"ประวัติศาสตร์ที่คุณรู้จัก..."</em> สิน <em>"อาจไม่ใช่ทั้งหมด"</em> รายชื่อครีเอเตอร์/นักวิชาการทั่วโลกพุ่งเต็มจอ
+                  <br>• <strong>Trailer ๕ (๓๐ วินาที - สุดท้าย):</strong> พรีวิวหน้าจอ Lead Your Country <em>"ทวารวดี | บทบาท: กษัตริย์ | พุทธศตวรรษที่ ๑๒ | คำตอบของคุณจะเปลี่ยนทุกอย่าง"</em> ตั๋วเต็มทุกรอบใน ๓ ชั่วโมง!
+                </div>
+                <div>
+                  <strong style="color: #fdba74;">🎬 Teaser ๕ นาที (๓ วันก่อนวันงาน):</strong> 
+                  <br>• <em>๐:๐๐-๐:๓๐</em> เสียงหัวใจเต้น สินพูด <em>"ผมเคยถามตัวเองว่าประวัติศาสตร์สอนอะไรเรา คำตอบคือมันไม่ได้สอน มันแค่เล่า คนที่เรียนรู้จากมันต่างหากที่เปลี่ยนอะไรได้"</em>
+                  <br>• <em>๐:๓๐-๑:๓๐</em> ภาพมุมสูง BANCC ริมน้ำเจ้าพระยา ใหญ่พอรองรับ ๔๐,๐๐๐ ปี
+                  <br>• <em>๑:๓๐-๒:๓๐</em> ทัวร์ ๔ เมกะฮอลล์ บูธสองชั้นถ้ำโบราณ พี่วิวปรากฏตัวครั้งแรก บอร์ดเกม และประตู Hall 4
+                  <br>• <em>๒:๓๐-๓:๓๐</em> สัมภาษณ์สิน x พี่วิว ริมน้ำเจ้าพระยา <em>"คนไทยไม่ได้ขี้เกียจเรียนรู้ แต่ไม่มีใครเล่าในแบบที่เข้าใจได้"</em>
+                  <br>• <em>๓:๓๐-๔:๓๐</em> พรีวิวฉากจริง: อยุธยา พ.ศ. ๒๑๐๐ ขุนนางฝ่ายการค้า ต่อรองสิทธิ์การค้ากับฮอลันดา/VOC
+                  <br>• <em>๔:๓๐-๕:๐๐</em> ออเคสตราเต็มวง สินพูดส่งท้าย <em>"๔๐,๐๐๐ ปีครับ... รอเราอยู่"</em>
+                </div>
+              </div>
+            </div>
+
+            <!-- BANCC Venue Layout -->
+            <div style="font-weight: 700; font-size: 15px; color: #facc15; margin-bottom: 12px;">🏰 ผังจัดแสดงศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช (BANCC ข้าง ICONSIAM):</div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; margin-bottom: 22px;">
+              
+              <div style="background: rgba(0,0,0,0.35); padding: 16px; border-radius: 12px; border: 1px solid rgba(96, 165, 250, 0.3);">
+                <strong style="color: #60a5fa; font-size: 14px;">👑 Bhumibol Royal Plenary Hall:</strong>
+                <div style="font-size: 12.5px; color: var(--text-muted); margin-top: 6px; line-height: 1.6;">
+                  พิธีเปิดอย่างเป็นทางการในวันที่ ๓ ธันวาคม และใช้เป็นเวทีใหญ่หลักในการบรรยาย เสวนา และเปิดตัวสารคดีประวัติศาสตร์ตลอด ๔ วัน
+                </div>
+              </div>
+
+              <div style="background: rgba(0,0,0,0.35); padding: 16px; border-radius: 12px; border: 1px solid rgba(74, 222, 128, 0.3);">
+                <strong style="color: #4ade80; font-size: 14px;">🏛️ Mega Hall 1 (นิทรรศการ ๔๐,๐๐๐ ปี):</strong>
+                <div style="font-size: 12.5px; color: var(--text-muted); margin-top: 6px; line-height: 1.6;">
+                  นิทรรศการประวัติศาสตร์สยามตั้งแต่ยุคก่อนประวัติศาสตร์ ๔๐,๐๐๐ ปี ถึง รธน. ๒๓๗๕ บูธนิทรรศการสองชั้น เพดานสูง ๒๕ เมตร จำลองถ้ำโบราณและภาพเขียนผนังถ้ำของจริง
+                </div>
+              </div>
+
+              <div style="background: rgba(0,0,0,0.35); padding: 16px; border-radius: 12px; border: 1px solid rgba(192, 132, 252, 0.3);">
+                <strong style="color: #c084fc; font-size: 14px;">🌐 Mega Hall 2 (Global Creators & Authors):</strong>
+                <div style="font-size: 12.5px; color: var(--text-muted); margin-top: 6px; line-height: 1.6;">
+                  รวม ยูทูบเบอร์ ครีเอเตอร์ประวัติศาสตร์ นักวิชาการ และนักเขียนหนังสือประวัติศาสตร์จากทั่วโลก แต่ละคนมีโซนจัดแสดงและพบปะแฟนคลับเฉพาะตัว
+                </div>
+              </div>
+
+              <div style="background: rgba(0,0,0,0.35); padding: 16px; border-radius: 12px; border: 1px solid rgba(251, 146, 60, 0.3);">
+                <strong style="color: #fb923c; font-size: 14px;">🎲 Mega Hall 3 (Boardgames & Medical History):</strong>
+                <div style="font-size: 12.5px; color: var(--text-muted); margin-top: 6px; line-height: 1.6;">
+                  รวมโต๊ะเล่นบอร์ดเกมธีมประวัติศาสตร์นับร้อยโต๊ะ พร้อมโซนนิทรรศการประวัติศาสตร์ทางการแพทย์และการเยียวยาโบราณโดย <strong>เอมโมโน (AimMono)</strong>
+                </div>
+              </div>
+
+              <div style="background: rgba(0,0,0,0.35); padding: 16px; border-radius: 12px; border: 1px solid rgba(56, 189, 248, 0.3);">
+                <strong style="color: #38bdf8; font-size: 14px;">🌊 Riverfront Convention Hall:</strong>
+                <div style="font-size: 12.5px; color: var(--text-muted); margin-top: 6px; line-height: 1.6;">
+                  เวที Panel Discussion วิชาการเชิงลึกและเสวนาทางประวัติศาสตร์ รัฐศาสตร์ ทัศนียภาพกระจกโค้งพาโนรามาวิวแม่น้ำเจ้าพระยา
+                </div>
+              </div>
+
+              <div style="background: rgba(0,0,0,0.35); padding: 16px; border-radius: 12px; border: 1px solid rgba(250, 204, 21, 0.3);">
+                <strong style="color: #facc15; font-size: 14px;">🔒 Biometric Entry Gate (สแกนใบหน้าเข้างาน):</strong>
+                <div style="font-size: 12.5px; color: var(--text-muted); margin-top: 6px; line-height: 1.6;">
+                  ประตูทางเข้างานระบบ Biometric Facial Scanning ไร้ต่อคิว ลิงก์ผูกสิทธิ์ตั๋วเข้างานและรหัสสิทธิ์เฉพาะบุคคลสำหรับใช้ใน Hall 4
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Deep Feature Core: Lead Your Country Simulator (powered by ThaiJavis AI Engine) -->
+            <div style="background: rgba(147, 51, 234, 0.12); border: 1.5px solid rgba(168, 85, 247, 0.45); border-radius: 14px; padding: 22px; margin-bottom: 18px;">
+              <h5 style="color: #e9d5ff; font-size: 17px; margin: 0 0 10px 0; display: flex; align-items: center; gap: 10px;">
+                🎮 ไฮไลต์สูงสุดเต็มพื้นที่ Mega Hall 4: โซนจำลองประวัติศาสตร์ "Lead Your Country" (powered by ThaiJavis AI)
+              </h5>
+              <p style="font-size: 13.5px; color: var(--text-muted); line-height: 1.8; margin-bottom: 14px;">
+                แอปพลิเคชันและพอร์ทัลบนมือถือและคอมพิวเตอร์ <strong>ประมวลผลด้วยระบบ ThaiJavis AI Engine</strong> โดยมี <strong>ดร.ธนานนท์ ปฏิญญาศักดิกุล (9arm)</strong> เข้ามารับหน้าที่เป็นที่ปรึกษา AI คอนซัลต์เบื้องหลัง นำ ThaiJavis AI ที่พัฒนายาวนานหลายสิบปี มาใช้ประมวลผล Scenario สดๆ แบบ Real-time ตามการตัดสินใจของผู้เล่น:
+              </p>
+              
+              <div style="display: flex; flex-direction: column; gap: 10px; font-size: 13px; color: var(--text); line-height: 1.7;">
+                <div style="background: rgba(0,0,0,0.3); padding: 12px 16px; border-radius: 8px; border-left: 3px solid #c084fc;">
+                  <strong style="color: #e9d5ff;">🗺️ ๑. เลือกชาติและยุคสมัย:</strong> เลือกได้ตั้งแต่ยุคทวารวดี, ศรีวิชัย, ขอม, สุโขทัย, อยุธยา, ธนบุรี, รัตนโกสินทร์ ถึงยุคปัจจุบัน
+                </div>
+                <div style="background: rgba(0,0,0,0.3); padding: 12px 16px; border-radius: 8px; border-left: 3px solid #60a5fa;">
+                  <strong style="color: #93c5fd;">👤 ๒. ระบบเลือกตัวละคร ๒ รูปแบบ:</strong>
+                  <br>• <em>บุคคลจริงในประวัติศาสตร์:</em> สวมบทบาทเป็น พ่อขุนรามคำแหง, กษัตริย์อยุธยา หรือผู้นำการเมือง
+                  <br>• <em>สร้างตัวละครใหม่ (Custom Character):</em> สวมบทบาทเป็น ขุนนางฝ่ายการค้า, พ่อค้าข้ามชาติ, หรือพลเมืองทั่วไป เช่น กรณีขุนนางอยุธยาฝ่ายการค้าเจรจาสิทธิการค้ากับบริษัทฮอลันดา (VOC)
+                </div>
+                <div style="background: rgba(0,0,0,0.3); padding: 12px 16px; border-radius: 8px; border-left: 3px solid #4ade80;">
+                  <strong style="color: #86efac;">⚡ ๓. ThaiJavis Real-time Scenario Generator:</strong> ThaiJavis ประมวลผลผลลัพธ์และคำนวณ Timeline ประวัติศาสตร์ทางเลือกใหม่ตามการตัดสินใจของผู้เล่นแบบ Real-time รองรับผู้เล่นพร้อมกันใน Hall 4 ได้มากกว่า <strong>หลักพันคนพร้อมกัน</strong> โดยแต่ละคนจะได้ไทม์ไลน์อิสระของตัวเอง
+                </div>
+              </div>
+
+              <div style="margin-top: 16px; padding: 14px 18px; background: rgba(251, 146, 60, 0.1); border: 1px solid rgba(251, 146, 60, 0.3); border-radius: 10px; font-size: 13px; color: #fdba74; line-height: 1.7;">
+                🔒 <strong>เงื่อนไขสิทธิ์การเข้าถึง (Exclusive Access & FOMO Strategy):</strong>
+                <p style="margin: 6px 0 0 0; color: var(--text-muted);">
+                  แพลตฟอร์ม "Lead Your Country" จะเปิดให้เล่นเฉพาะผู้ที่มางาน BANCC เท่านั้น โดยสแกน Biometric Facial Scan หน้างานและปักพิกัด GPS เฉพาะในฮอลล์... 
+                  <strong>สำหรับประชาชนทั่วไปที่ไม่สะดวกเดินทางมางาน จะเปิดให้ดาวน์โหลดและใช้งานฟรีทั่วประเทศหลังจากจบงานไปแล้ว ๒ เดือน!</strong>
                 </p>
               </div>
             </div>
 
-            <div style="font-size: 12.5px; color: var(--text-muted); font-style: italic; text-align: center;">
-              * งานนี้ ดร.ธนานนท์ (9arm) ได้เข้าเยี่ยมชมงานแบบไม่เป็นทางการในฐานะผู้ชมทั่วไป ร่วมสัมผัสหน้าประวัติศาสตร์ไทยกับประชาชนทุกคน *
+            <div style="font-size: 13px; color: var(--text-muted); font-style: italic; text-align: center; background: rgba(0,0,0,0.3); padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.06);">
+              * ในงานนี้ ดร.ธนานนท์ (9arm) ได้เดินทางเข้าเยี่ยมชมงานแบบไม่เป็นทางการในฐานะผู้ชมทั่วไป เพื่อร่วมสัมผัสบรรยากาศประวัติศาสตร์ไทยกับประชาชนทุกคน *
             </div>
 
           </div>
 
         </div>
       </div>
+    </div>
     </div>
     <!-- Tab 6.75: ธงชาติและเพลงชาติไทย -->
     <div id="national-symbols-tab" class="db-tab-content">
