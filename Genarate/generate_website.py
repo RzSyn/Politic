@@ -2445,7 +2445,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         </div>
       </div>
     </div>
-    </div>
 
     <!-- Tab 13: ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช (Bhumibol Adulyadej National Convention Centre - BANCC) -->
     <div id="bancc-tab" class="db-tab-content">
@@ -6424,7 +6423,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
       </div>
     </div>
 
-  </div>
 </section>'''
 
 # Preamble
