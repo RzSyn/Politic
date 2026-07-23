@@ -6468,33 +6468,36 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
         <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 32px 0;">
 
-        <!-- รักชนก ศรีนอก (ปฏิเสธการบรรจุเป็นทรชน - สู้ดีมาก อยู่ในภาวะก้ำกึ่ง เทาเข้มครึ่งหนึ่ง เทาอ่อนครึ่งหนึ่ง) -->
-        <div class="tri-layout" style="margin-bottom: 32px; background: linear-gradient(135deg, rgba(20, 24, 33, 0.95) 50%, rgba(60, 68, 82, 0.45) 50%); border: 1.5px dashed rgba(160, 174, 192, 0.4); border-radius: 14px; padding: 24px; position: relative;">
-          <div style="position: absolute; top: 16px; right: 20px; font-size: 24px; opacity: 0.7;" title="ปฏิเสธการบรรจุเป็นทรชน - สู้ดีมาก อยู่ในภาวะก้ำกึ่ง">❌</div>
+        <!-- รักชนก ศรีนอก (ปฏิเสธการบรรจุเป็นทรชน - สู้ดีมาก อยู่ในภาวะก้ำกึ่ง เทาเข้มครึ่งหนึ่ง เทาครึ่งหนึ่ง) -->
+        <div class="tri-layout" style="margin-bottom: 32px; background: linear-gradient(135deg, rgba(20, 24, 33, 0.95) 50%, rgba(85, 95, 110, 0.5) 50%); border: 1.5px dashed rgba(148, 163, 184, 0.45); border-radius: 14px; padding: 24px; position: relative;">
+          <div style="position: absolute; top: 16px; right: 20px; font-size: 24px; opacity: 0.75;" title="ปฏิเสธการบรรจุเป็นทรชน - สู้ดีมาก อยู่ในภาวะก้ำกึ่ง (เทาเข้ม ๕๐% / เทา ๕๐%)">❌</div>
           
-          <div class="tri-profile-card" style="background: linear-gradient(180deg, rgba(15, 18, 25, 0.95) 50%, rgba(45, 52, 65, 0.85) 50%); border: 1px solid rgba(160,174,192,0.3);">
-            <img src="images/rukchanok.png" alt="รักชนก ศรีนอก" class="tri-profile-img" style="filter: grayscale(80%) contrast(110%); opacity: 0.85; border-color: rgba(160,174,192,0.4);">
+          <div class="tri-profile-card" style="background: linear-gradient(180deg, rgba(15, 18, 25, 0.95) 50%, rgba(65, 75, 90, 0.85) 50%); border: 1px solid rgba(148,163,184,0.35);">
+            <img src="images/rukchanok.png" alt="รักชนก ศรีนอก" class="tri-profile-img" style="filter: grayscale(70%) contrast(110%); opacity: 0.85; border-color: rgba(148,163,184,0.4);">
             <div class="tri-profile-name" style="color: #cbd5e1; text-decoration: line-through;">รักชนก ศรีนอก</div>
-            <div class="tri-profile-title" style="color: #94a3b8; font-size: 12px; font-weight: 700;">ปฏิเสธการบรรจุเป็นทรชน (สู้ดีมาก - ก้ำกึ่งเทาเข้ม / เทาอ่อน)</div>
-            <div class="tri-meta" style="border-top: 1px solid rgba(255, 255, 255, 0.08); color: #94a3b8;">
+            <div class="tri-profile-title" style="color: #a0aec0; font-size: 12px; font-weight: 700;">ปฏิเสธการบรรจุเป็นทรชน (สู้ดีมาก - ก้ำกึ่งเทาเข้ม / เทา)</div>
+            <div class="tri-meta" style="border-top: 1px solid rgba(255, 255, 255, 0.08); color: #a0aec0;">
               <div style="margin-bottom: 6px; text-decoration: line-through;"><strong>ตำแหน่งสำคัญ:</strong> อดีตนายกรัฐมนตรีคนที่ ๒๒ (นายกหญิงคนที่ ๒)</div>
               <div style="margin-bottom: 6px; text-decoration: line-through;"><strong>พรรคการเมือง:</strong> พรรคก้าวไกล</div>
-              <div style="margin-bottom: 6px;"><strong>โทนสถานะ:</strong> <span style="color: #e2e8f0; font-weight: 700;">⚫ เทาเข้ม ๕๐%</span> | <span style="color: #94a3b8; font-weight: 700;">⚪ เทาอ่อน ๕๐%</span></div>
+              <div style="margin-bottom: 6px;"><strong>โทนสถานะ:</strong> <span style="color: #e2e8f0; font-weight: 700;">⚫ เทาเข้ม ๕๐%</span> | <span style="color: #a0aec0; font-weight: 700;">🩶 เทา ๕๐%</span></div>
               <div style="text-decoration: line-through;"><strong>ผลการวินิจฉัย:</strong> ไม่เข้าเกณฑ์ทรชน (สู้เพื่อสภาและประชาชนอย่างเข้มแข็ง)</div>
             </div>
           </div>
 
-          <div class="tri-bio" style="opacity: 0.9;">
+          <div class="tri-bio" style="opacity: 0.92;">
             <div class="tri-stage">
               <div class="tri-stage-title" style="color: #cbd5e1; display: flex; align-items: center; gap: 8px;">
                 <span>⚖️ บันทึกผลการไต่สวนการบรรจุชื่อในหมวดทรชน (VILLAIN_ENTRY_REJECTED)</span>
-                <span class="badge" style="background: rgba(148, 163, 184, 0.15); color: #cbd5e1; border: 1px solid rgba(148, 163, 184, 0.3); font-size: 10px;">HALF_DARK_HALF_LIGHT_GREY</span>
+                <span class="badge" style="background: rgba(148, 163, 184, 0.2); color: #e2e8f0; border: 1px solid rgba(148, 163, 184, 0.4); font-size: 10px;">HALF_DARK_HALF_MEDIUM_GREY</span>
               </div>
-              <p class="tri-stage-text" style="font-size: 14.5px; color: #cbd5e1; line-height: 1.8;">
+              <p class="tri-stage-text" style="font-size: 14.5px; color: #e2e8f0; line-height: 1.8;">
                 แม้ในอดีตจะมีฝ่ายการเมืองกลุ่มอนุรักษ์นิยมพยายามเสนอชื่อ <strong>รักชนก ศรีนอก</strong> เข้าสู่ทำเนิยบบุคคลสำคัญทรชน จากกรณีข้อพิพาทความขัดแย้งเชิงนโยบายกับฝ่ายความมั่นคงเดิม วิกฤตพยาบาล ๓๔,๐๐๐ คน และการโต้ตอบทางการเมืองที่ดุดัน ทว่าจากผลการสืบสวนเชิงลึกของสภาคณะกรรมการประวัติศาสตร์และทีมนักวิศวกรรมข้อมูล ParadoxAI พบว่า <strong>การกระทำของเธอเกิดจากเจตนารมณ์ในการต่อสู้เพื่อปกป้องสวัสดิการของประชาชน คืนความบริสุทธิ์ให้แก่ระบบรัฐสภา และถอดถอนกลุ่มนิติประหารอย่างเข้มแข็ง ไร้ซึ่งพฤติการณ์ทุจริตเชิงนโยบาย ล้มล้างการปกครอง หรือเอื้อประโยชน์สีเทาแก่ทุนต่างชาติใดๆ</strong>
               </p>
-              <p class="tri-stage-text" style="margin-top: 10px; font-size: 14.5px; color: #94a3b8; line-height: 1.8;">
-                สภาคณะกรรมการฯ จึงมีมติเอกฉันท์ <strong>ปัดตกและปฏิเสธการบรรจุชื่อของ รักชนก ศรีนอก เข้าสู่หมวดทรชนโดยเด็ดขาด</strong> พร้อมบันทึกสถานะของเธอเป็นกรณีพิเศษในรูปแบบ <strong>"โทนก้ำกึ่งเทาเข้มครึ่งหนึ่ง เทาอ่อนครึ่งหนึ่ง" (Dual-Tone Half-Dark Half-Light Gray)</strong> เพื่อสะท้อนถึงการต่อสู้ดุเดือดในสนามการเมืองสยามที่แม้จะสร้างรอยร้าวและความขัดแย้ง แต่เต็มไปด้วยเจตนาอันบริสุทธิ์ในการปกป้องระเบียบรัฐธรรมนูญและประชาธิปไตย
+              <p class="tri-stage-text" style="margin-top: 10px; font-size: 14.5px; color: #fb923c; line-height: 1.8; background: rgba(251, 146, 60, 0.08); border-left: 3px solid #fb923c; padding: 10px 14px; border-radius: 0 6px 6px 0;">
+                ⚠️ <strong>บันทึกข้อบกพร่องด้านการบริหารนโยบายดิจิทัล:</strong> ทว่าในด้านการดำเนินงานพัฒนาเทคโนโลยีแผ่นดิน เธอกลับมีพฤติการณ์ละเลยและบริหารงานบกพร่อง ส่งผลให้ <strong>โครงการ ParadoxAI 2.0 ล่าช้า (เลท) ออกไปถึง ๓ ปีเต็ม</strong> เนื่องจากไม่ค่อยใส่ใจการกำกับดูแล ประสิทธิภาพการทำงานไม่ดี การส่งมอบงบประมาณไม่ครบถ้วนตามงวดงาน และในบางกรณีก็ปฏิเสธหรือไม่ยอมจัดสรรงบประมาณสนับสนุนที่จำเป็น จนสร้างความเสียหายและชะงักงันต่อระบบสวัสดิการดิจิทัลของประชาชน
+              </p>
+              <p class="tri-stage-text" style="margin-top: 10px; font-size: 14.5px; color: #a0aec0; line-height: 1.8;">
+                สภาคณะกรรมการฯ จึงมีมติเอกฉันท์ <strong>ปัดตกและปฏิเสธการบรรจุชื่อของ รักชนก ศรีนอก เข้าสู่หมวดทรชนโดยเด็ดขาด</strong> พร้อมบันทึกสถานะของเธอเป็นกรณีพิเศษในรูปแบบ <strong>"โทนก้ำกึ่งเทาเข้มครึ่งหนึ่ง เทาครึ่งหนึ่ง" (Dual-Tone Half-Dark Half-Medium Gray)</strong> เพื่อสะท้อนถึงการต่อสู้ดุเดือดในสนามการเมืองสยามที่แม้จะสร้างรอยร้าว ความขัดแย้ง และข้อบกพร่องด้านการบริหารงบประมาณ แต่เต็มไปด้วยเจตนาอันบริสุทธิ์ในการปกป้องระเบียบรัฐธรรมนูญและประชาธิปไตย
               </p>
             </div>
           </div>
