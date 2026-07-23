@@ -2487,10 +2487,31 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
         <div style="display: flex; flex-direction: column; gap: 26px;">
 
-          <!-- Section 1: Identity & Architecture -->
+          <!-- SECTION 1: DETAILED PROJECT HISTORY & PURPOSE (MOVED TO TOP) -->
+          <div style="background: rgba(0, 0, 0, 0.45); border: 1.5px solid rgba(250, 204, 21, 0.4); border-radius: 14px; padding: 24px; box-shadow: 0 4px 16px rgba(0,0,0,0.3);">
+            <h4 style="color: #facc15; font-size: 19px; margin: 0 0 14px 0; display: flex; align-items: center; gap: 10px; font-family: 'Outfit', sans-serif;">
+              📜 ๑. ประวัติการจัดสร้างและวัตถุประสงค์โครงการ (ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช)
+            </h4>
+            <div style="font-size: 13.5px; color: var(--text-muted); line-height: 1.85; display: flex; flex-direction: column; gap: 12px; text-align: justify;">
+              <p style="margin: 0;">
+                ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช เป็นโครงการระดับเมกะโปรเจกต์ที่จัดสร้างขึ้นเพื่อเฉลิมพระเกียรติพระบาทสมเด็จพระบรมชนกาธิเบศร มหาภูมิพลอดุลยเดชมหาราช บรมนาถบพิตร (รัชกาลที่ ๙) เพื่อเป็นอนุสรณ์แห่งพระมหากรุณาธิคุณและพระราชกรณียกิจอันเป็นคุณูปการต่อการพัฒนาประเทศไทยในทุกด้าน ตลอดระยะเวลาแห่งการครองราชย์ พร้อมทั้งเป็นสัญลักษณ์ของการพัฒนาประเทศสู่อนาคต และเป็นศูนย์กลางการประชุม การจัดแสดงสินค้า และการแลกเปลี่ยนองค์ความรู้ระดับนานาชาติของประเทศไทย
+              </p>
+              <p style="margin: 0;">
+                แนวคิดในการพัฒนาโครงการเกิดจากความมุ่งหมายที่จะสร้างศูนย์ประชุมและนิทรรศการที่มีมาตรฐานสูงสุดแห่งหนึ่งของโลก สามารถรองรับการประชุมระดับผู้นำโลก การประชุมระหว่างประเทศ งานมหกรรมวิชาการ งานแสดงสินค้า เทคโนโลยี นวัตกรรม วัฒนธรรม และมหกรรมด้านเศรษฐกิจจากทุกภูมิภาค เพื่อยกระดับประเทศไทยให้เป็นศูนย์กลางการประชุมและนิทรรศการของภูมิภาคเอเชียตะวันออกเฉียงใต้ และเป็นหนึ่งในศูนย์กลางสำคัญของโลก
+              </p>
+              <p style="margin: 0;">
+                ด้วยศักยภาพของอาคารที่สามารถรองรับผู้เข้าร่วมงานได้หลายแสนคนต่อวัน ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดชจึงได้รับการยกย่องให้เป็นศูนย์ประชุมและนิทรรศการที่มีขนาดใหญ่ที่สุดในโลกตามแนวคิดของโครงการ และกลายเป็นแลนด์มาร์กสำคัญแห่งใหม่ของประเทศไทย สะท้อนถึงศักยภาพด้านเศรษฐกิจ นวัตกรรม การท่องเที่ยว และการจัดงานระดับนานาชาติ
+              </p>
+              <p style="margin: 0;">
+                ศูนย์ประชุมแห่งนี้ยังเป็นสถานที่จัดงานสำคัญระดับโลกอย่างต่อเนื่อง ไม่ว่าจะเป็นการประชุมสุดยอดผู้นำนานาชาติ การประชุมด้านเศรษฐกิจและการค้า งานมหกรรมเทคโนโลยีระดับโลก งานแสดงนวัตกรรม งานมหกรรมวัฒนธรรม และเทศกาลประวัติศาสตร์ไทย (เช่น <strong>#ThailandHistoryFestival</strong> จัดร่วมโดย พี่วิว Point of View และ สิน SIN ARCHIVE) ตลอดจนงานด้านการศึกษาและวิชาการนานาชาติ ส่งผลให้ประเทศไทยก้าวขึ้นเป็นหนึ่งในจุดหมายปลายทางสำคัญของอุตสาหกรรมการประชุมและนิทรรศการของโลก
+              </p>
+            </div>
+          </div>
+
+          <!-- Section 2: Identity & Architecture -->
           <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(250, 204, 21, 0.25); border-radius: 14px; padding: 22px;">
             <h4 style="color: #facc15; font-size: 18px; margin: 0 0 12px 0; display: flex; align-items: center; gap: 10px;">
-              🏛️ ๑. ข้อมูลส่วนหัว อัตลักษณ์ และสถาปัตยกรรม (Identity & Architecture)
+              🏛️ ๒. ข้อมูลส่วนหัว อัตลักษณ์ และสถาปัตยกรรม (Identity & Architecture)
             </h4>
             <div style="font-size: 13.5px; color: var(--text-muted); line-height: 1.8; display: flex; flex-direction: column; gap: 10px;">
               <div>
@@ -2505,14 +2526,14 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             </div>
           </div>
 
-          <!-- Section 2: Location & Interconnection -->
+          <!-- Section 3: Location & Interconnection -->
           <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(56, 189, 248, 0.25); border-radius: 14px; padding: 22px;">
             <h4 style="color: #38bdf8; font-size: 18px; margin: 0 0 12px 0; display: flex; align-items: center; gap: 10px;">
-              🗺️ ๒. ข้อมูลพิกัดที่ตั้งและการเชื่อมต่อภายนอก (Location & Interconnection)
+              🗺️ ๓. ข้อมูลพิกัดที่ตั้งและการเชื่อมต่อภายนอก (Location & Interconnection)
             </h4>
             <div style="font-size: 13.5px; color: var(--text-muted); line-height: 1.8; display: flex; flex-direction: column; gap: 10px;">
               <div>
-                <strong style="color: var(--text);">• พิกัดที่ตั้ง & การวางตำแหน่งอาคาร:</strong> ตั้งอยู่บนถนนเจริญนคร แขวงคลองต้นไทร เขตคลองสาน กรุงเทพมหานคร บนที่ดินผืนใหญ่ขนาบข้างและเชื่อมต่อตรงกับ **ไอคอนสยาม (ICONSIAM)** ตัวอาคารทอดยาวขนานไปกับโค้งน้ำเจ้าพระยาอย่างสง่างาม
+                <strong style="color: var(--text);">• พิกัดที่ตั้ง & การวางตำแหน่งอาคาร:</strong> ตั้งอยู่บนถนนเจริญนคร แขวงคลองต้นไทร เขตคลองสาน กรุงเทพมหานคร บนที่ดินผืนใหญ่ขนาบข้างและเชื่อมต่อตรงกับ <strong>ไอคอนสยาม (ICONSIAM)</strong> ตัวอาคารทอดยาวขนานไปกับโค้งน้ำเจ้าพระยาอย่างสง่างาม
               </div>
               <div style="background: rgba(0,0,0,0.3); padding: 14px; border-radius: 10px; border-left: 4px solid #38bdf8; margin-top: 4px;">
                 <strong style="color: #93c5fd; font-size: 14px;">🔗 ระบบเชื่อมต่ออาคารอัจฉริยะ (The Synergy Pass):</strong>
@@ -2524,10 +2545,10 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             </div>
           </div>
 
-          <!-- Section 3: Exhibition & Event Zone -->
+          <!-- Section 4: Exhibition & Event Zone -->
           <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(74, 222, 128, 0.25); border-radius: 14px; padding: 22px;">
             <h4 style="color: #4ade80; font-size: 18px; margin: 0 0 12px 0; display: flex; align-items: center; gap: 10px;">
-              🎪 ๓. รายละเอียดโซนจัดงานและนิทรรศการ (Exhibition & Event Zone) — พื้นที่ ๔๕๐,๐๐๐ ตร.ม.
+              🎪 ๔. รายละเอียดโซนจัดงานและนิทรรศการ (Exhibition & Event Zone) — พื้นที่ ๔๕๐,๐๐๐ ตร.ม.
             </h4>
             <p style="font-size: 13.5px; color: var(--text-muted); line-height: 1.7; margin-bottom: 14px;">
               ออกแบบมาเพื่อรองรับงานแสดงสินค้า เทศกาล คอนเสิร์ต และมหกรรมความบันเทิงระดับโลก มีโครงสร้างทางวิศวกรรมขั้นสูง ดังนี้:
@@ -2553,10 +2574,10 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             </div>
           </div>
 
-          <!-- Section 4: Convention & Meeting Zone -->
+          <!-- Section 5: Convention & Meeting Zone -->
           <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(168, 85, 247, 0.25); border-radius: 14px; padding: 22px;">
             <h4 style="color: #c084fc; font-size: 18px; margin: 0 0 12px 0; display: flex; align-items: center; gap: 10px;">
-              🏛️ ๔. รายละเอียดโซนหอประชุมและสัมมนา (Convention & Meeting Zone) — พื้นที่ ๗๕๐,๐๐๐ ตร.ม.
+              🏛️ ๕. รายละเอียดโซนหอประชุมและสัมมนา (Convention & Meeting Zone) — พื้นที่ ๗๕๐,๐๐๐ ตร.ม.
             </h4>
             <p style="font-size: 13.5px; color: var(--text-muted); line-height: 1.7; margin-bottom: 14px;">
               เน้นฟังก์ชันเพื่อการประชุมทางวิชาการ การทูต และการสัมมนาผู้บริหารระดับสูง แบ่งห้องประชุมเป็นรูปแบบต่างๆ ดังนี้:
@@ -2599,10 +2620,10 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             </div>
           </div>
 
-          <!-- Section 5: Specialized Support Facilities -->
+          <!-- Section 6: Specialized Support Facilities -->
           <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(251, 146, 60, 0.25); border-radius: 14px; padding: 22px;">
             <h4 style="color: #fb923c; font-size: 18px; margin: 0 0 12px 0; display: flex; align-items: center; gap: 10px;">
-              🛡️ ๕. พื้นที่สนับสนุนและการจัดการเฉพาะทาง (Specialized Support Facilities)
+              🛡️ ๖. พื้นที่สนับสนุนและการจัดการเฉพาะทาง (Specialized Support Facilities)
             </h4>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px;">
               <div style="background: rgba(0,0,0,0.3); padding: 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.06);">
@@ -2620,16 +2641,16 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <div style="background: rgba(0,0,0,0.3); padding: 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.06);">
                 <strong style="color: #60a5fa; font-size: 13.5px;">📡 Global Media & Broadcasting Hub:</strong>
                 <p style="margin: 6px 0 0 0; font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
-                  ศูนย์ข่าวสารสำหรับสื่อมวลชน รองรับนักข่าวได้ <strong>๓,๐๐๐ คน</strong> มีโต๊ะทำงานพร้อมอินเทอร์เน็ตความเร็วสูงแยกแบนด์วิดท์เฉพาะ มีห้องสตูดิโอถ่ายทอดสดและสถานีส่งสัญญาณดาวเทียมในตัวอาคาร
+                  ศูนย์ข่าวสารสำหรับสื่อมวลชน รองรับนักข่าวได้ <strong>๓,๐๐0 คน</strong> มีโต๊ะทำงานพร้อมอินเทอร์เน็ตความเร็วสูงแยกแบนด์วิดท์เฉพาะ มีห้องสตูดิโอถ่ายทอดสดและสถานีส่งสัญญาณดาวเทียมในตัวอาคาร
                 </p>
               </div>
             </div>
           </div>
 
-          <!-- Section 6: Passenger Logistics & Technology -->
+          <!-- Section 7: Passenger Logistics & Technology -->
           <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(250, 204, 21, 0.25); border-radius: 14px; padding: 22px;">
             <h4 style="color: #facc15; font-size: 18px; margin: 0 0 12px 0; display: flex; align-items: center; gap: 10px;">
-              ⚡ ๖. ระบบบริการและการไหลเวียนของผู้เข้าร่วมงาน (Logistics & Technology)
+              ⚡ ๗. ระบบบริการและการไหลเวียนของผู้เข้าร่วมงาน (Logistics & Technology)
             </h4>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px;">
               <div style="background: rgba(0,0,0,0.3); padding: 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.06);">
@@ -2647,32 +2668,10 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             </div>
           </div>
 
-          <!-- Section 7: Detailed Project History -->
-          <div style="background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(250, 204, 21, 0.3); border-radius: 14px; padding: 24px;">
-            <h4 style="color: #facc15; font-size: 18px; margin: 0 0 14px 0; display: flex; align-items: center; gap: 10px;">
-              📜 ๗. ประวัติการจัดสร้างและวัตถุประสงค์โครงการ (ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช)
-            </h4>
-            <div style="font-size: 13.5px; color: var(--text-muted); line-height: 1.85; display: flex; flex-direction: column; gap: 12px; text-align: justify;">
-              <p style="margin: 0;">
-                ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช เป็นโครงการระดับเมกะโปรเจกต์ที่จัดสร้างขึ้นเพื่อเฉลิมพระเกียรติพระบาทสมเด็จพระบรมชนกาธิเบศร มหาภูมิพลอดุลยเดชมหาราช บรมนาถบพิตร (รัชกาลที่ ๙) เพื่อเป็นอนุสรณ์แห่งพระมหากรุณาธิคุณและพระราชกรณียกิจอันเป็นคุณูปการต่อการพัฒนาประเทศไทยในทุกด้าน ตลอดระยะเวลาแห่งการครองราชย์ พร้อมทั้งเป็นสัญลักษณ์ของการพัฒนาประเทศสู่อนาคต และเป็นศูนย์กลางการประชุม การจัดแสดงสินค้า และการแลกเปลี่ยนองค์ความรู้ระดับนานาชาติของประเทศไทย
-              </p>
-              <p style="margin: 0;">
-                แนวคิดในการพัฒนาโครงการเกิดจากความมุ่งหมายที่จะสร้างศูนย์ประชุมและนิทรรศการที่มีมาตรฐานสูงสุดแห่งหนึ่งของโลก สามารถรองรับการประชุมระดับผู้นำโลก การประชุมระหว่างประเทศ งานมหกรรมวิชาการ งานแสดงสินค้า เทคโนโลยี นวัตกรรม วัฒนธรรม และมหกรรมด้านเศรษฐกิจจากทุกภูมิภาค เพื่อยกระดับประเทศไทยให้เป็นศูนย์กลางการประชุมและนิทรรศการของภูมิภาคเอเชียตะวันออกเฉียงใต้ และเป็นหนึ่งในศูนย์กลางสำคัญของโลก
-              </p>
-              <p style="margin: 0;">
-                ด้วยศักยภาพของอาคารที่สามารถรองรับผู้เข้าร่วมงานได้หลายแสนคนต่อวัน ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดชจึงได้รับการยกย่องให้เป็นศูนย์ประชุมและนิทรรศการที่มีขนาดใหญ่ที่สุดในโลกตามแนวคิดของโครงการ และกลายเป็นแลนด์มาร์กสำคัญแห่งใหม่ของประเทศไทย สะท้อนถึงศักยภาพด้านเศรษฐกิจ นวัตกรรม การท่องเที่ยว และการจัดงานระดับนานาชาติ
-              </p>
-              <p style="margin: 0;">
-                ศูนย์ประชุมแห่งนี้ยังเป็นสถานที่จัดงานสำคัญระดับโลกอย่างต่อเนื่อง ไม่ว่าจะเป็นการประชุมสุดยอดผู้นำนานาชาติ การประชุมด้านเศรษฐกิจและการค้า งานมหกรรมเทคโนโลยีระดับโลก งานแสดงนวัตกรรม งานมหกรรมวัฒนธรรม และเทศกาลประวัติศาสตร์ไทย (เช่น #ThailandHistoryFestival จัดร่วมโดย พี่วิว Point of View และ สิน SIN ARCHIVE) ตลอดจนงานด้านการศึกษาและวิชาการนานาชาติ ส่งผลให้ประเทศไทยก้าวขึ้นเป็นหนึ่งในจุดหมายปลายทางสำคัญของอุตสาหกรรมการประชุมและนิทรรศการของโลก
-              </p>
-            </div>
-          </div>
-
         </div>
       </div>
     </div>
-
-        <!-- Tab 6.75: ธงชาติและเพลงชาติไทย -->
+    <!-- Tab 6.75: ธงชาติและเพลงชาติไทย -->
     <div id="national-symbols-tab" class="db-tab-content">
       <div style="display: flex; gap: 24px; align-items: flex-start; flex-wrap: wrap; text-align: left;">
         
