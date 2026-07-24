@@ -2538,6 +2538,13 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             <h4 style="color: #facc15; font-size: 19px; margin: 0 0 14px 0; display: flex; align-items: center; gap: 10px; font-family: 'Outfit', sans-serif;">
               📜 ๑. ประวัติการจัดสร้างและวัตถุประสงค์โครงการ (ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช)
             </h4>
+            <!-- 🏛️ BANCC: โครงการในสมัยนายกฯ วิโรจน์ ลักขณาดิศร -->
+            <div style="margin-top: 14px; background: rgba(96, 165, 250, 0.08); border-left: 4px solid #60a5fa; padding: 12px 16px; border-radius: 0 8px 8px 0; font-size: 13.5px; color: #e2e8f0; line-height: 1.7;">
+              <strong style="color: #60a5fa; font-size: 14px;">🏛️ อภิมหาโครงการริเริ่มในสมัย นายกรัฐมนตรีวิโรจน์ ลักขณาดิศร (PM 25):</strong>
+              <div style="margin-top: 4px; color: #cbd5e1;">
+                ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช (BANCC) เป็นโครงการริเริ่มหลักของ <strong>นายกรัฐมนตรีวิโรจน์ ลักขณาดิศร</strong> ซึ่งเริ่มจัดสร้างขึ้นในปี พ.ศ. ๒๖๓๗ โดยดำเนินการก่อสร้างเสร็จเร็วกว่ากำหนด งบประมาณไม่บานปลาย ใช้งานได้จริง และกลายเป็นศูนย์กลางการประชุมและการแสดงสินค้าระดับโลกของสยามประเทศ
+              </div>
+            </div>
             <div style="font-size: 13.5px; color: var(--text-muted); line-height: 1.85; display: flex; flex-direction: column; gap: 12px; text-align: justify;">
               <p style="margin: 0;">
                 ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช เป็นโครงการระดับเมกะโปรเจกต์ที่จัดสร้างขึ้นเพื่อเฉลิมพระเกียรติพระบาทสมเด็จพระบรมชนกาธิเบศร มหาภูมิพลอดุลยเดชมหาราช บรมนาถบพิตร (รัชกาลที่ ๙) เพื่อเป็นอนุสรณ์แห่งพระมหากรุณาธิคุณและพระราชกรณียกิจอันเป็นคุณูปการต่อการพัฒนาประเทศไทยในทุกด้าน ตลอดระยะเวลาแห่งการครองราชย์ พร้อมทั้งเป็นสัญลักษณ์ของการพัฒนาประเทศสู่อนาคต และเป็นศูนย์กลางการประชุม การจัดแสดงสินค้า และการแลกเปลี่ยนองค์ความรู้ระดับนานาชาติของประเทศไทย
@@ -5272,7 +5279,52 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         </div>
 
         <div class="goc-section">
-          <h4 class="goc-sec-title">📈 สถานะการดำเนินงานปัจจุบัน (ภายใต้การกำกับดูแลของ รักชนก ศรีนอก)</h4>
+          
+        <!-- 🔄 ตารางเปรียบเทียบการปรับโครงสร้าง GOC ก่อน-หลัง สมัยนายกฯ วิโรจน์ -->
+        <div class="goc-section" style="background: rgba(15, 23, 42, 0.7); border: 1.5px solid rgba(96, 165, 250, 0.4); border-radius: 12px; padding: 20px;">
+          <h4 class="goc-sec-title" style="color: #60a5fa; display: flex; align-items: center; gap: 8px;">
+            🔄 การปรับโครงสร้าง GOC ยุคใหม่ (เปรียบเทียบก่อน-หลัง สมัยนายกรัฐมนตรีวิโรจน์ ลักขณาดิศร)
+          </h4>
+          <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px; line-height: 1.6;">
+            เพื่อเพิ่มประสิทธิภาพและป้องกันความผิดพลาดซ้ำรอยอดีต นายกรัฐมนตรีวิโรจน์ ลักขณาดิศร ได้อนุมัติการปฏิรูปโครงสร้างการปฏิบัติการของ GOC โดยมีเปรียบเทียบความเปลี่ยนแปลงก่อน-หลัง ดังนี้:
+          </p>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;">
+            
+            <!-- Diplomacy Division Before & After -->
+            <div style="background: rgba(0,0,0,0.4); border: 1px solid rgba(96, 165, 250, 0.3); border-radius: 10px; padding: 16px;">
+              <div style="color: #60a5fa; font-weight: 700; font-size: 14.5px; margin-bottom: 10px; border-bottom: 1px solid rgba(96, 165, 250, 0.2); padding-bottom: 6px;">
+                🤝 Diplomacy Division (ฝ่ายการทูตลับ)
+              </div>
+              <div style="margin-bottom: 10px; font-size: 12.5px; line-height: 1.6; background: rgba(239, 68, 68, 0.08); padding: 8px 12px; border-radius: 6px; border-left: 3px solid #ef4444;">
+                <strong style="color: #f87171;">⬅️ ยุคเดิม (ก่อนปรับโครงสร้าง):</strong><br>
+                เน้นการติดตามข่าวกรองทั่วไป เจรจาลับข้ามพรมแดน และคอยจัดทำรายงานเสนอบอร์ดกำกับแบบรายสัปดาห์
+              </div>
+              <div style="font-size: 12.5px; line-height: 1.6; background: rgba(74, 222, 128, 0.08); padding: 8px 12px; border-radius: 6px; border-left: 3px solid #4ade80;">
+                <strong style="color: #4ade80;">➡️ ยุคใหม่ สมัยนายกฯ วิโรจน์ (หลังปรับโครงสร้าง):</strong><br>
+                ยกระดับเป็นระบบทำงาน <strong>Real-Time</strong> ตรวจจับความผิดปกติต่างๆ โดยมุ่งโฟกัสเป้าหมายเฉพาะเจาะจงเมื่อได้รับการสั่งการ ยับยั้งภัยคุกคามล่วงหน้าได้สำเร็จหลายครั้งโดยไม่มีข่าวรั่วสู่สาธารณะ
+              </div>
+            </div>
+
+            <!-- Warfare Division Before & After -->
+            <div style="background: rgba(0,0,0,0.4); border: 1px solid rgba(251, 146, 60, 0.3); border-radius: 10px; padding: 16px;">
+              <div style="color: #fb923c; font-weight: 700; font-size: 14.5px; margin-bottom: 10px; border-bottom: 1px solid rgba(251, 146, 60, 0.2); padding-bottom: 6px;">
+                ⚔️ Warfare Division (ฝ่ายปฏิบัติการพิเศษ)
+              </div>
+              <div style="margin-bottom: 10px; font-size: 12.5px; line-height: 1.6; background: rgba(239, 68, 68, 0.08); padding: 8px 12px; border-radius: 6px; border-left: 3px solid #ef4444;">
+                <strong style="color: #f87171;">⬅️ ยุคเดิม (ก่อนปรับโครงสร้าง):</strong><br>
+                วางแผนยุทธวิธี กองกำลังสนาม ปฏิบัติการคุ้มกันและจู่โจมฉุกเฉิน แยกส่วนทำงานตามคำสั่งของ Joint Command
+              </div>
+              <div style="font-size: 12.5px; line-height: 1.6; background: rgba(74, 222, 128, 0.08); padding: 8px 12px; border-radius: 6px; border-left: 3px solid #4ade80;">
+                <strong style="color: #4ade80;">➡️ ยุคใหม่ สมัยนายกฯ วิโรจน์ (หลังปรับโครงสร้าง):</strong><br>
+                โครงสร้างแสนยานุภาพเข้มข้นเหมือนเดิมทุกประการ <strong>แต่เพิ่มข้อกำหนดเด็ดขาดคือ ต้องทำตามคำสั่งและขึ้นตรงต่อ Diplomacy Division เท่านั้น</strong> เพื่อป้องกันการจู่โจมโดยลำพัง
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <h4 class="goc-sec-title">📈 สถานะการดำเนินงานปัจจุบัน (ภายใต้การกำกับดูแลของ รักชนก ศรีนอก)</h4>
           <p style="margin-bottom: 12px; line-height: 1.5;"><strong>คุณรักชนก ศรีนอก</strong> ในฐานะคณะบริหารฝ่ายยุทธศาสตร์ความมั่นคง ได้ลงนามกำชับให้ <strong>ไตรทิศา</strong> ร่วมออกแบบระบบและวางรากฐานกลไกควบคุมและตรวจสอบ GOC ให้มีความเป็นนิติธรรมและเป็นลายลักษณ์อักษรที่ชัดเจน โดยมาตรการควบคุมที่อยู่ระหว่างขั้นตอนการพัฒนามีดังนี้:</p>
           <ul style="font-size: 13.5px;">
             <li><strong>ระบบจัดทำรายงานตรวจสอบ (Clear Reporting Chain):</strong> ปรับปรุงระบบบันทึกยุทธการและการจัดทำรายงานปฏิบัติงานที่เป็นความลับเพื่อเสนอรายงานต่อบอร์ดกำกับและนายกรัฐมนตรีทุกสัปดาห์</li>
@@ -6082,6 +6134,90 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             <div class="tri-stage">
               <div class="tri-stage-title">🤝 การจัดวางระบบตรวจสอบคลังและ GOC ในเวทีนานาชาติ (Structuring Global Oversight)</div>
               <p class="tri-stage-text">พริษฐ์ได้ผลักดันข้อตกลงและสถาปนาสภากำกับดูแลพิเศษ (Oversight Board) ซึ่งมีผู้ทรงคุณวุฒิจากสากลมาร่วมตรวจเช็คการบริหารงานระบบไซเบอร์ของ GOC และงบประมาณกองทัพ เพื่อป้องกันมิให้มีกลุ่มลับใดนำกำลังทหารหรือเทคโนโลยีไปปั่นหัวชักใยทำลายรัฐสภาไทยอีกในอนาคต</p>
+            </div>
+          </div>
+        </div>
+
+
+        <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 32px 0;">
+
+        <!-- วิโรจน์ ลักขณาดิศร (PM 25) -->
+        <div class="tri-layout" style="margin-bottom: 32px;">
+          <div class="tri-profile-card">
+            <img src="images/pm25.jpg" alt="วิโรจน์ ลักขณาดิศร" class="tri-profile-img">
+            <div class="tri-profile-name">วิโรจน์ ลักขณาดิศร</div>
+            <div class="tri-profile-title">นายกรัฐมนตรีคนที่ ๒๕ แห่งราชอาณาจักรไทย (นายกฯ คนปัจจุบัน)</div>
+            <div class="tri-meta">
+              <div style="margin-bottom: 6px;"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๒๕ (พ.ศ. ๒๖๓๗ - ปัจจุบัน)</div>
+              <div style="margin-bottom: 6px;"><strong>พรรคการเมือง:</strong> พรรคก้าวไกล (หัวหน้าพรรคคนปัจจุบัน)</div>
+              <div style="margin-bottom: 6px;"><strong>โพลคะแนนนิยมปัจจุบัน:</strong> <span style="color: #4ade80; font-weight: 700;">๗๑.๓%</span> (เกือบเท่า Q1 สมัยรักชนก ไร้วิกฤตติดตาม)</div>
+              <div style="margin-bottom: 6px;"><strong>ผลงานเด่น:</strong> สถาปนา BANCC, ThaiJavis 2.0, ปรับโครงสร้าง GOC, ปฏิรูปสาธารณสุข Tech Doctor</div>
+              <div><strong>สถานะสรุปผลงาน:</strong> <span style="color: #60a5fa; font-weight: 700;">ภาคที่ ๑/๒ (ลงครึ่งแรกเรียบร้อย / รอเพิ่มครึ่งหลัง)</span></div>
+            </div>
+          </div>
+
+          <div class="tri-bio">
+            <div class="tri-stage" style="border-left: 4px solid #60a5fa; background: rgba(96, 165, 250, 0.06);">
+              <div class="tri-stage-title" style="color: #60a5fa;">📌 สรุปผลงานบริหารแผ่นดิน นายกรัฐมนตรีวิโรจน์ ลักขณาดิศร (ภาคที่ ๑/๒)</div>
+              <p class="tri-stage-text">
+                หลังพรรคก้าวไกลชนะเลือกตั้งทั่วไป พ.ศ. ๒๖๓๗ นายกรัฐมนตรีวิโรจน์ ลักขณาดิศร ได้ก้าวขึ้นดำรงตำแหน่งผู้นำประเทศคนที่ ๒๕ บริหารแผ่นดินด้วยสไตล์ตรงไปตรงมา ไร้พิธีการ PR และสร้างเสถียรภาพความมั่นคงในทุกมิติ โดยสรุปผลงานสำคัญในระยะแรก (ภาคที่ ๑/๒) ดังนี้:
+              </p>
+            </div>
+
+            <div class="tri-stage">
+              <div class="tri-stage-title">🏥 ด้านสาธารณสุข & การสถาปนามาตรฐาน "Tech Doctor"</div>
+              <p class="tri-stage-text">
+                สานต่อนโยบายสาธารณสุขจากยุคตระกูลชาญวีรกูล เพิ่มโรงพยาบาลมนุษย์ยกระดับครบ <strong>๘０ แห่ง</strong> (จากเดิม ๓๘ แห่ง) บุคลากรทางการแพทย์เพียงพอ อัตราเงินเดือนแข่งขันได้ และสถาปนามาตรฐานวิชาชีพ <strong>Tech Doctor</strong> อย่างเป็นทางการ (หลักสูตร ๓ ปี มีใบอนุญาตวิชาชีพครบถ้วน)
+              </p>
+            </div>
+
+            <div class="tri-stage">
+              <div class="tri-stage-title">🤖 ด้าน AI และเทคโนโลยี (ThaiJavis 2.0 ไร้รอยต่อ)</div>
+              <p class="tri-stage-text">
+                ขับเคลื่อน <strong>ThaiJavis 2.0</strong> เดินหน้าเต็มกำลัง เชื่อมโยงระบบฐานข้อมูลทุกกระทรวงแบบเรียลไทม์ ไร้วิกฤตซ้ำรอยสมัยรักชนก เนื่องจากรัฐบาลวางแผนรองรับและป้องกันความเสี่ยงด้านเทคโนโลยีตั้งแต่แรกเริ่ม
+              </p>
+            </div>
+
+            <div class="tri-stage">
+              <div class="tri-stage-title">🏢 ด้านโครงสร้างพื้นฐาน (สถาปนา BANCC พ.ศ. ๒๖๓๗ & สัปปายะสภาสถาน)</div>
+              <p class="tri-stage-text">
+                ริเริ่มอภิมหาโครงการ <strong>ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช (BANCC)</strong> ในปี พ.ศ. ๒๖๓๗ และก่อสร้างเสร็จเร็วกว่ากำหนด งบประมาณไม่บานปลาย ใช้งานได้จริง กลายเป็นศูนย์กลางประชุมระดับโลก พร้อมทั้งปรับปรุงสัปปายะสภาสถาน แก้ปัญหาน้ำท่วมค้างเก่าในพื้นที่สภาได้เบ็ดเสร็จ
+              </p>
+            </div>
+
+            <div class="tri-stage">
+              <div class="tri-stage-title">🌿 ด้านสิ่งแวดล้อม & กฎหมายขยะเด็ดขาด</div>
+              <p class="tri-stage-text">
+                ส่งผลให้กรุงเทพมหานครและทุกจังหวัด <strong>น้ำไม่ท่วมเป็นครั้งแรกในรอบหลายสิบปี</strong> ผ่านการประสานงานรวดเร็วร่วมกับผู้ว่าราชการจังหวัด, อบจ., และ อบต. วางระบบท่อระบายน้ำใหม่ทั้งหมด และบังคับใช้กฎหมายการทิ้งขยะจริง โดยมีอัตราโทษเด็ดขาดสูงถึง ๑ ใน ๔ ของสิงคโปร์
+              </p>
+            </div>
+
+            <div class="tri-stage">
+              <div class="tri-stage-title">📈 ด้านการค้า & การทูตเชิงรุก SEATO</div>
+              <p class="tri-stage-text">
+                สร้างระบบตลาดตรงผู้ใช้งาน <strong>๔.๒ ล้านคน</strong> ผู้ผลิตรายเล็กมีรายได้เพิ่มขึ้น ๓๑% มูลค่าการค้าระหว่างประเทศเพิ่มขึ้น ๓๓% ด้านการทูต นายกฯ วิโรจน์ เดินทางเยือนด้วยตนเองทุกประเทศสมาชิก SEATO จัดทำสนธิสัญญาการค้าใหม่ครบทุกประเทศ พลิกฟื้นความสัมพันธ์ระหว่างประเทศให้กลับมาดีเยี่ยมหลังยุครักชนก
+              </p>
+            </div>
+
+            <div class="tri-stage">
+              <div class="tri-stage-title">🛡️ ด้านความมั่นคง (การปรับโครงสร้าง GOC ใหม่)</div>
+              <p class="tri-stage-text">
+                ปรับโครงสร้าง GOC ใหม่ โดยยกระดับ <strong>Diplomacy Division</strong> เป็นระบบ Real-Time ตรวจจับความผิดปกติและโฟกัสเป้าหมายตามคำสั่ง ยับยั้งภัยคุกคามล่วงหน้าหลายครั้งโดยไม่มีข่าวรั่ว ส่วน <strong>Warfare Division</strong> คงแสนยานุภาพเด็ดขาดเหมือนเดิมแต่เพิ่มกฎเหล็กต้องทำตามคำสั่ง Diplomacy Division
+              </p>
+            </div>
+
+            <div class="tri-stage">
+              <div class="tri-stage-title">🏛️ ด้านการเมือง วัฒนธรรม & โพลคะแนนนิยม ๗๑.๓%</div>
+              <p class="tri-stage-text">
+                คืนเกียรติยศให้พรรคก้าวไกล ปิดบทเรียนสมัยรักชนกอย่างเป็นทางการ สานต่อนโยบาย "คนละไลค์" จัดงาน Thailand History Festival และสนับสนุน SIN ARCHIVE Remaster ทั้ง ๒ Series ผลโพลคะแนนนิยมปัจจุบันพุ่งสูงถึง <strong>๗๑.๓%</strong> (เกือบเท่า Q1 สมัยรักชนก แต่ไม่มีวิกฤตใหญ่ตามมา)
+              </p>
+            </div>
+
+            <div class="tri-stage" style="border: 1.5px dashed rgba(250, 204, 21, 0.4); background: rgba(250, 204, 21, 0.04);">
+              <div class="tri-stage-title" style="color: #facc15;">⏳ [พื้นที่สำหรับเพิ่มข้อมูลภาค ๒/๒ ในอนาคต]</div>
+              <p class="tri-stage-text" style="color: var(--text-muted); font-style: italic;">
+                เตรียมพร้อมรองรับชุดข้อมูลผลงานใหม่ของนายกรัฐมนตรีวิโรจน์ ลักขณาดิศร ในภาคที่ ๒/๒ เมื่อได้รับข้อมูลเพิ่มเติมจากผู้ใช้...
+              </p>
             </div>
           </div>
         </div>
