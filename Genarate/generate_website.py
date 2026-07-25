@@ -1673,11 +1673,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="judiciary-row" data-category="court-const">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0; font-size: 14px;">๑</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 250px; height: 250px; background: linear-gradient(135deg, #1e293b, #0f172a); border: 2.5px solid rgba(250, 204, 21, 0.55); border-radius: 14px; padding: 12px; box-shadow: 0 6px 16px rgba(0,0,0,0.45); display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; text-align: center;">
-                    <span style="font-size: 54px; margin-bottom: 10px;">📜</span>
-                    <h5 style="color: #facc15; font-size: 15px; margin: 0 0 4px 0; font-family: 'Outfit', sans-serif; font-weight: 700;">ศาลรัฐธรรมนูญ</h5>
-                    <span style="font-size: 11px; color: #94a3b8;">Constitutional Court</span>
-                    <div style="margin-top: 10px; font-size: 10.5px; background: rgba(250, 204, 21, 0.15); color: #fef08a; border: 1px solid rgba(250, 204, 21, 0.3); padding: 3px 8px; border-radius: 4px; font-weight: 600;">องค์กรพิทักษ์ รธน.</div>
+                  <div style="width: 250px; height: 250px; background: #ffffff; border: 2.5px solid rgba(250, 204, 21, 0.55); border-radius: 14px; padding: 8px; box-shadow: 0 6px 16px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                    <img src="images/court_const.png" alt="ตราประจำศาลรัฐธรรมนูญ" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4)); border-radius: 8px;">
                   </div>
                 </td>
                 <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 130px; max-width: 130px; white-space: normal; word-wrap: break-word;">ศาลรัฐธรรมนูญ</td>
@@ -1692,11 +1689,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="judiciary-row" data-category="court-justice">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0; font-size: 14px;">๒</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 250px; height: 250px; background: linear-gradient(135deg, #1e293b, #0f172a); border: 2.5px solid rgba(96, 165, 250, 0.55); border-radius: 14px; padding: 12px; box-shadow: 0 6px 16px rgba(0,0,0,0.45); display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; text-align: center;">
-                    <span style="font-size: 54px; margin-bottom: 10px;">⚖️</span>
-                    <h5 style="color: #60a5fa; font-size: 15px; margin: 0 0 4px 0; font-family: 'Outfit', sans-serif; font-weight: 700;">ศาลยุติธรรม</h5>
-                    <span style="font-size: 11px; color: #94a3b8;">Courts of Justice</span>
-                    <div style="margin-top: 10px; font-size: 10.5px; background: rgba(96, 165, 250, 0.15); color: #bfdbfe; border: 1px solid rgba(96, 165, 250, 0.3); padding: 3px 8px; border-radius: 4px; font-weight: 600;">ระบบ ๓ ชั้นศาลหลัก</div>
+                  <div style="width: 250px; height: 250px; background: #ffffff; border: 2.5px solid rgba(96, 165, 250, 0.55); border-radius: 14px; padding: 8px; box-shadow: 0 6px 16px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                    <img src="images/court_justice.png" alt="ตราประจำศาลยุติธรรม" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4)); border-radius: 8px;">
                   </div>
                 </td>
                 <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 130px; max-width: 130px; white-space: normal; word-wrap: break-word;">ศาลยุติธรรม</td>
@@ -1711,11 +1705,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="judiciary-row" data-category="court-admin">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0; font-size: 14px;">๓</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 250px; height: 250px; background: linear-gradient(135deg, #1e293b, #0f172a); border: 2.5px solid rgba(168, 85, 247, 0.55); border-radius: 14px; padding: 12px; box-shadow: 0 6px 16px rgba(0,0,0,0.45); display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; text-align: center;">
-                    <span style="font-size: 54px; margin-bottom: 10px;">🏛️</span>
-                    <h5 style="color: #c084fc; font-size: 15px; margin: 0 0 4px 0; font-family: 'Outfit', sans-serif; font-weight: 700;">ศาลปกครอง</h5>
-                    <span style="font-size: 11px; color: #94a3b8;">Administrative Courts</span>
-                    <div style="margin-top: 10px; font-size: 10.5px; background: rgba(168, 85, 247, 0.15); color: #e9d5ff; border: 1px solid rgba(168, 85, 247, 0.3); padding: 3px 8px; border-radius: 4px; font-weight: 600;">ระบบ ๒ ชั้นศาลปกครอง</div>
+                  <div style="width: 250px; height: 250px; background: #ffffff; border: 2.5px solid rgba(168, 85, 247, 0.55); border-radius: 14px; padding: 8px; box-shadow: 0 6px 16px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                    <img src="images/court_admin.png" alt="ตราประจำศาลปกครอง" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4)); border-radius: 8px;">
                   </div>
                 </td>
                 <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 130px; max-width: 130px; white-space: normal; word-wrap: break-word;">ศาลปกครอง</td>
@@ -1730,11 +1721,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="judiciary-row" data-category="court-military">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0; font-size: 14px;">๔</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 250px; height: 250px; background: linear-gradient(135deg, #1e293b, #0f172a); border: 2.5px solid rgba(245, 158, 11, 0.55); border-radius: 14px; padding: 12px; box-shadow: 0 6px 16px rgba(0,0,0,0.45); display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; text-align: center;">
-                    <span style="font-size: 54px; margin-bottom: 10px;">🛡️</span>
-                    <h5 style="color: #f59e0b; font-size: 15px; margin: 0 0 4px 0; font-family: 'Outfit', sans-serif; font-weight: 700;">ศาลทหาร</h5>
-                    <span style="font-size: 11px; color: #94a3b8;">Military Courts</span>
-                    <div style="margin-top: 10px; font-size: 10.5px; background: rgba(245, 158, 11, 0.15); color: #fde68a; border: 1px solid rgba(245, 158, 11, 0.3); padding: 3px 8px; border-radius: 4px; font-weight: 600;">วินัย & กฎหมายทหาร</div>
+                  <div style="width: 250px; height: 250px; background: #ffffff; border: 2.5px solid rgba(245, 158, 11, 0.55); border-radius: 14px; padding: 8px; box-shadow: 0 6px 16px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                    <img src="images/court_military.png" alt="ตราประจำศาลทหาร" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4)); border-radius: 8px;">
                   </div>
                 </td>
                 <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 130px; max-width: 130px; white-space: normal; word-wrap: break-word;">ศาลทหาร</td>
