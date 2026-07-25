@@ -5624,10 +5624,10 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
         </div>
 
-        <!-- Section 2: เปรียบเทียบคลองไทย 1.0 vs คลองไทย 2.0 (ParadoxAI Reform Model) -->
+        <!-- Section 2: เปรียบเทียบคลองไทย 1.0 vs คลองไทย 2.0 (ระยะทางที่ลดลง & ยุคสมัยที่สร้าง) -->
         <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 14px; padding: 22px; margin-bottom: 24px;">
           <h4 style="color: #38bdf8; font-size: 16.5px; margin: 0 0 16px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
-            <span>⚡ เปรียบเทียบพัฒนาการ: คลองไทย 1.0 (แนวคิดเดิม) VS คลองไทย 2.0 (โมเดลปฏิรูป ParadoxAI)</span>
+            <span>⚡ รายละเอียดระยะทางที่ลดลง & ยุคสมัยการจัดสร้าง: คลองไทย 1.0 VS คลองไทย 2.0</span>
           </h4>
 
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px;">
@@ -5636,27 +5636,27 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             <div style="background: rgba(30, 41, 59, 0.5); border: 1px solid rgba(148, 163, 184, 0.3); border-radius: 12px; padding: 18px;">
               <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 8px;">
                 <h5 style="color: #cbd5e1; font-size: 15.5px; margin: 0; font-weight: 700;">🌊 คลองไทย 1.0 (แนวคิดดั้งเดิม 9A)</h5>
-                <span style="font-size: 11px; background: rgba(148, 163, 184, 0.2); color: #e2e8f0; padding: 3px 8px; border-radius: 4px;">แนวทางกายภาพ</span>
+                <span style="font-size: 11px; background: rgba(148, 163, 184, 0.2); color: #e2e8f0; padding: 3px 8px; border-radius: 4px; font-weight: 600;">สร้าง/วางแผนในสมัย ร.๕ - ร.๙</span>
               </div>
               <div style="font-size: 12.5px; color: var(--text-muted); line-height: 1.65;">
-                <p style="margin-bottom: 8px;"><strong style="color: #e2e8f0;">📍 แนวเส้นทาง:</strong> แนว 9A ตัดผ่าน กระบี่ - ตรัง - พัทลุง - นครศรีธรรมราช - สงขลา (ความยาวประมาณ ๑๒๘ กิโลเมตร)</p>
-                <p style="margin-bottom: 8px;"><strong style="color: #e2e8f0;">📐 ขนาดคลอง:</strong> ขุดเปิดระดับน้ำทะเล (Sea-level Canal) ความกว้าง ๔๐０ เมตร ลึก ๒๖ เมตร</p>
-                <p style="margin-bottom: 8px;"><strong style="color: #e2e8f0;">🎯 เป้าหมายหลัก:</strong> เน้นการขุดช่องทางเดินเรือเพื่อย่อระยะทางและสร้างท่าเรือน้ำลึก ๒ ฝั่งทะเล</p>
-                <p style="margin: 0;"><strong style="color: #f87171;">⚠️ ข้อกังวลเดิม:</strong> ผลกระทบการแบ่งแยกแผ่นดิน, การปนเปื้อนของน้ำเค็มสู่น้ำใต้ดินเกษตรกรรม และงบประมาณสูง</p>
+                <p style="margin-bottom: 8px;"><strong style="color: #facc15;">👑 ยุคสมัยที่สร้าง/ริเริ่ม:</strong> เริ่มสำรวจในสมัย <strong>รัชกาลที่ ๕</strong> และศึกษาแนว 9A อย่างเป็นทางการในสมัย <strong>รัชกาลที่ ๙ (พ.ศ. ๒๕๔๐-๒๕๔๔)</strong></p>
+                <p style="margin-bottom: 8px;"><strong style="color: #60a5fa;">📉 ระยะทางและเวลาที่ลดลง:</strong> จากเดิมอ้อมช่องแคบมะละกา ๒,๘๐ กิโลเมตร (ใช้เวลา ๕ - ๖ วัน) <strong>ย่อลงเหลือเพียง ๑,๔๐๐ กิโลเมตร (ประหยัดเวลาเดินทางลงเหลือเพียง ๒ - ๒.๕ วัน)</strong> — ลดลงไปกว่า ๑,๔๐๐ กม.</p>
+                <p style="margin-bottom: 8px;"><strong style="color: #e2e8f0;">📍 แนวเส้นทาง:</strong> แนว 9A ตัดผ่าน กระบี่ - ตรัง - พัทลุง - นครศรีธรรมราช - สงขลา (ขุดคลองเปิดกว้าง ๔๐๐ ม. ลึก ๒๖ ม.)</p>
+                <p style="margin: 0;"><strong style="color: #f87171;">⚠️ ข้อกังวลเดิม:</strong> ความเสี่ยงการปนเปื้อนน้ำเค็มสู่น้ำใต้ดินเกษตรกรรม และงบประมาณก่อสร้างสูง</p>
               </div>
             </div>
 
             <!-- คลองไทย 2.0 -->
             <div style="background: rgba(30, 41, 59, 0.5); border: 1px solid rgba(56, 189, 248, 0.4); border-radius: 12px; padding: 18px; background: rgba(56, 189, 248, 0.05);">
               <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; border-bottom: 1px solid rgba(56, 189, 248, 0.2); padding-bottom: 8px;">
-                <h5 style="color: #38bdf8; font-size: 15.5px; margin: 0; font-weight: 700;">🚀 คลองไทย 2.0 (Smart Logistics Corridor)</h5>
-                <span style="font-size: 11px; background: rgba(56, 189, 248, 0.25); color: #7dd3fc; padding: 3px 8px; border-radius: 4px; font-weight: 700;">ParadoxAI Reform</span>
+                <h5 style="color: #38bdf8; font-size: 15.5px; margin: 0; font-weight: 700;">🚀 คลองไทย 2.0 (คลองไทยไมตรีอัจฉริยะ)</h5>
+                <span style="font-size: 11px; background: rgba(56, 189, 248, 0.25); color: #7dd3fc; padding: 3px 8px; border-radius: 4px; font-weight: 700;">อนุมัติ/เปิดใช้ในสมัย ร.๑๐</span>
               </div>
               <div style="font-size: 12.5px; color: var(--text-muted); line-height: 1.65;">
-                <p style="margin-bottom: 8px;"><strong style="color: #7dd3fc;">🔒 ระบบประตูกั้นน้ำอัจฉริยะ (Saltwater Lock System):</strong> ควบคุมการปนเปื้อนน้ำเค็ม 100% พร้อมอุโมงค์ส่งน้ำจืดใต้คลองรักษาเกษตรกรรม</p>
-                <p style="margin-bottom: 8px;"><strong style="color: #7dd3fc;">🚆 ระเบียงโลจิสติกส์ผสมผสาน (Multi-Modal Corridor):</strong> สร้างสะพานเชื่อมแผ่นดินไร้รอยต่อ + รถไฟความเร็วสูงขนส่งสินค้า + ท่อส่งพลังงาน Green Hydrogen</p>
-                <p style="margin-bottom: 8px;"><strong style="color: #7dd3fc;">🤖 AI จราจรเรือ (ThaiJavis Routing):</strong> ระบบจัดจราจรเรืออัตโนมัติ ๒๔ ชม. รองรับเรือสินค้า ๕๐,๐๐๐ ลำ/ปี</p>
-                <p style="margin: 0;"><strong style="color: #4ade80;">✅ นิเวศและสังคม:</strong> พัฒนาเมืองใหม่คู่ขนาน คุ้มครองสิทธิชาวบ้านและสิ่งแวดล้อมทางทะเล</p>
+                <p style="margin-bottom: 8px;"><strong style="color: #facc15;">👑 ยุคสมัยที่สร้าง/เปิดใช้:</strong> อนุมัติจัดสร้างและเปิดใช้งานในสมัย <strong>รัชกาลที่ ๑๐ (ยุคการเมืองจำลองรัฐธรรมนูญ พ.ศ. ๒๕๒๕/PCW Model)</strong></p>
+                <p style="margin-bottom: 8px;"><strong style="color: #4ade80;">📉 ระยะทางและเวลาที่ลดลง:</strong> ด้วยระบบระบายน้ำแล่นฉิวไฮสปีด ย่อระยะทางขนส่งทางทะเลสากล <strong>เหลือเพียง ๑,๓๕๐ กิโลเมตร และลดเวลาแล่นผ่านคลองเหลือเพียง ๘ - ๑๒ ชั่วโมงเท่านั้น!</strong> (ประหยัดเวลาเดินทางรวมทั้งสิ้นเหลือเพียง ๑.๕ วัน)</p>
+                <p style="margin-bottom: 8px;"><strong style="color: #7dd3fc;">🔒 ระบบประตูกั้นน้ำ (Saltwater Lock):</strong> ป้องกันน้ำเค็มปนเปื้อน 100% พร้อมอุโมงค์ส่งน้ำจืดใต้คลอง</p>
+                <p style="margin: 0;"><strong style="color: #7dd3fc;">🚆 โครงข่ายคู่ขนาน:</strong> รถไฟความเร็วสูงขนส่งสินค้า + สายส่งพลังงาน Green Hydrogen + AI จราจรเรือ (ThaiJavis)</p>
               </div>
             </div>
 
