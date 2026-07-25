@@ -995,10 +995,10 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr style="background: rgba(15, 23, 42, 0.95); color: var(--gold-light);">
                 <th style="width: 50px; text-align: center; padding: 14px 6px;">ลำดับ</th>
                 <th style="width: 270px; text-align: center; padding: 14px 8px;">ตราโลโก้ (๒๕๐x๒๕๐ พิกเซล)</th>
-                <th style="width: 100px; text-align: left; padding: 14px 8px;">ชื่อกระทรวง</th>
-                <th style="width: 140px; text-align: center; padding: 14px 8px;">ประเภทโครงสร้าง</th>
-                <th style="padding: 14px 16px; text-align: left;">💡 ทำมาทำไม (ที่มาและความจำเป็น)</th>
-                <th style="padding: 14px 16px; text-align: left;">🎯 มีหน้าที่อะไร (พันธกิจหลัก)</th>
+                <th style="width: 125px; text-align: left; padding: 14px 8px;">ชื่อกระทรวง</th>
+                <th style="width: 130px; text-align: center; padding: 14px 6px;">ประเภทโครงสร้าง</th>
+                <th style="width: 30%; padding: 14px 14px; text-align: left;">💡 ทำมาทำไม (ที่มาและความจำเป็น)</th>
+                <th style="width: 50%; padding: 14px 16px; text-align: left;">🎯 มีหน้าที่อะไร (พันธกิจหลัก)</th>
               </tr>
             </thead>
           <tbody>
@@ -2212,10 +2212,10 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr style="background: rgba(15, 23, 42, 0.95); color: var(--gold-light);">
                 <th style="width: 50px; text-align: center; padding: 14px 6px;">ลำดับ</th>
                 <th style="width: 270px; text-align: center; padding: 14px 8px;">ตราโลโก้ (๒๕๐x๒๕๐ พิกเซล)</th>
-                <th style="width: 100px; text-align: left; padding: 14px 8px;">ชื่อกระทรวง</th>
-                <th style="width: 140px; text-align: center; padding: 14px 8px;">ประเภทโครงสร้าง</th>
-                <th style="padding: 14px 16px; text-align: left;">💡 ทำมาทำไม (ที่มาและความจำเป็น)</th>
-                <th style="padding: 14px 16px; text-align: left;">🎯 มีหน้าที่อะไร (พันธกิจหลัก)</th>
+                <th style="width: 125px; text-align: left; padding: 14px 8px;">ชื่อกระทรวง</th>
+                <th style="width: 130px; text-align: center; padding: 14px 6px;">ประเภทโครงสร้าง</th>
+                <th style="width: 30%; padding: 14px 14px; text-align: left;">💡 ทำมาทำไม (ที่มาและความจำเป็น)</th>
+                <th style="width: 50%; padding: 14px 16px; text-align: left;">🎯 มีหน้าที่อะไร (พันธกิจหลัก)</th>
               </tr>
             </thead>
             <tbody>
@@ -2227,12 +2227,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                     <img src="images/ministry_1.png" alt="โลโก้กระทรวง ลำดับที่ ๑" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 100px; max-width: 100px; white-space: normal; word-wrap: break-word;">สำนักนายกรัฐมนตรี</td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 125px; max-width: 125px; white-space: normal; word-wrap: break-word;">สำนักนายกรัฐมนตรี</td>
                 <td style="text-align: center;">
                   <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ มีฐานะเท่ากระทรวง</span>
                 </td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">เป็นศูนย์กลางการบริหารราชการแผ่นดินของฝ่ายบริหารภายใต้ระบอบประชาธิปไตย วางยุทธศาสตร์ชาติเชิงบูรณาการ รักษาสเถียรภาพทางการเมือง ประสานงานระหว่างกระทรวง และกำกับดูแลหน่วยงานความมั่นคง สื่อรัฐบาล และสำนักงานงบประมาณ เพื่อให้แนวนโยบายของรัฐมนตรีสามารถขับเคลื่อนได้อย่างรวดเร็วและไม่มีคอขวด</td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">• ประสานและจัดทำนโยบายบริหารราชการแผ่นดินของคณะรัฐมนตรี <br> • กำกับดูแลสำนักงบประมาณ, สำนักงานสภามั่นคงแห่งชาติ (สมช.), และสำนักงานกฤษฎีกา <br> • ควบคุมดูแลสื่อมวลชนภาครัฐ (กรมประชาสัมพันธ์, NBT) และศูนย์ข้อมูลข่าวสารของรัฐบาล <br> • เป็นศูนย์บัญชาการวิกฤตชาติตามคำสั่งนายกรัฐมนตรีร่วมกับระบบ ThaiJavis 2.0</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 12px; width: 30%;">เป็นศูนย์กลางการบริหารราชการแผ่นดินของฝ่ายบริหารภายใต้ระบอบประชาธิปไตย วางยุทธศาสตร์ชาติเชิงบูรณาการ รักษาสเถียรภาพทางการเมือง ประสานงานระหว่างกระทรวง และกำกับดูแลหน่วยงานความมั่นคง สื่อรัฐบาล และสำนักงานงบประมาณ เพื่อให้แนวนโยบายของรัฐมนตรีสามารถขับเคลื่อนได้อย่างรวดเร็วและไม่มีคอขวด</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 16px; width: 50%;">• ประสานและจัดทำนโยบายบริหารราชการแผ่นดินของคณะรัฐมนตรี <br> • กำกับดูแลสำนักงบประมาณ, สำนักงานสภามั่นคงแห่งชาติ (สมช.), และสำนักงานกฤษฎีกา <br> • ควบคุมดูแลสื่อมวลชนภาครัฐ (กรมประชาสัมพันธ์, NBT) และศูนย์ข้อมูลข่าวสารของรัฐบาล <br> • เป็นศูนย์บัญชาการวิกฤตชาติตามคำสั่งนายกรัฐมนตรีร่วมกับระบบ ThaiJavis 2.0</td>
               </tr>
 
               <!-- ๒. กระทรวงกลาโหม -->
@@ -2243,12 +2243,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                     <img src="images/ministry_2.png" alt="โลโก้กระทรวง ลำดับที่ ๒" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 100px; max-width: 100px; white-space: normal; word-wrap: break-word;">กระทรวงกลาโหม</td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 125px; max-width: 125px; white-space: normal; word-wrap: break-word;">กระทรวงกลาโหม</td>
                 <td style="text-align: center;">
                   <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
                 </td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">พัฒนาโครงสร้างการป้องกันประเทศให้เข้าสู่ยุคทหารอาชีพ ๑๐๐% ยุติระบบการเกณฑ์ทหารแบบบังคับ นำงบประมาณไปยกระดับสวัสดิการ อาวุธยุทโธปกรณ์ทันสมัย และเทคโนโลยีป้องกันประเทศ พร้อมปรับโครงสร้างกำลังพลให้อยู่ภายใต้การบังคับบัญชาของรัฐบาลพลเรือนที่มาจากประชาชนโดยตรง</td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">• ป้องกันอธิปไตย บูรณภาพแห่งดินแดน และความมั่นคงแห่งรัฐสยาม <br> • บริหารระบบยกเลิกการเกณฑ์ทหารและเปลี่ยนผ่านสู่ทหารกองประจำการสมัครใจ ๑๐๐% <br> • ปรับปรุงสวัสดิการ ที่พักอาศัย ประกันชีวิต และกองทุนการศึกษาให้แก่ทหารชั้นผู้น้อย <br> • ปฏิบัติภารกิจความมั่นคงภาคสนามภายใต้คำสั่งยุทธการของ Joint Command GOC (Warfare Division)</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 12px; width: 30%;">พัฒนาโครงสร้างการป้องกันประเทศให้เข้าสู่ยุคทหารอาชีพ ๑๐๐% ยุติระบบการเกณฑ์ทหารแบบบังคับ นำงบประมาณไปยกระดับสวัสดิการ อาวุธยุทโธปกรณ์ทันสมัย และเทคโนโลยีป้องกันประเทศ พร้อมปรับโครงสร้างกำลังพลให้อยู่ภายใต้การบังคับบัญชาของรัฐบาลพลเรือนที่มาจากประชาชนโดยตรง</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 16px; width: 50%;">• ป้องกันอธิปไตย บูรณภาพแห่งดินแดน และความมั่นคงแห่งรัฐสยาม <br> • บริหารระบบยกเลิกการเกณฑ์ทหารและเปลี่ยนผ่านสู่ทหารกองประจำการสมัครใจ ๑๐๐% <br> • ปรับปรุงสวัสดิการ ที่พักอาศัย ประกันชีวิต และกองทุนการศึกษาให้แก่ทหารชั้นผู้น้อย <br> • ปฏิบัติภารกิจความมั่นคงภาคสนามภายใต้คำสั่งยุทธการของ Joint Command GOC (Warfare Division)</td>
               </tr>
 
               <!-- ๓. กระทรวงการคลัง -->
@@ -2259,12 +2259,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                     <img src="images/ministry_3.png" alt="โลโก้กระทรวง ลำดับที่ ๓" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 100px; max-width: 100px; white-space: normal; word-wrap: break-word;">กระทรวงการคลัง</td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 125px; max-width: 125px; white-space: normal; word-wrap: break-word;">กระทรวงการคลัง</td>
                 <td style="text-align: center;">
                   <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
                 </td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">รักษาวินัยการเงินการคลังของชาติตามหลักความยั่งยืน จัดระบบภาษีที่เป็นธรรมเพื่อลดความเหลื่อมล้ำ ขจัดคอร์รัปชันในระบบงบประมาณแผ่นดิน และกระจายรายได้สู่ท้องถิ่น ๑๐๐% เพื่อป้องกันกลุ่มทุนใหญ่รวบอำนาจและอุดรูรั่วทางการเงินของรัฐ</td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">• จัดทำและบริหารจัดสรรงบประมาณรายจ่ายประจำปีของแผ่นดินอย่างโปร่งใส <br> • จัดเก็บภาษีผ่านระบบสรรพากร สรรพสามิต และศุลกากรดิจิทัล <br> • จัดทำระบบภาษีทรัพย์สิน ภาษีมรดก และภาษีที่ดินอัตราก้าวหน้าเพื่อลดความเหลื่อมล้ำ <br> • บริหารหนี้สาธารณะ เงินคงคลัง และระบบการคลังดิจิทัลเชื่อมต่อ ParadoxAI</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 12px; width: 30%;">รักษาวินัยการเงินการคลังของชาติตามหลักความยั่งยืน จัดระบบภาษีที่เป็นธรรมเพื่อลดความเหลื่อมล้ำ ขจัดคอร์รัปชันในระบบงบประมาณแผ่นดิน และกระจายรายได้สู่ท้องถิ่น ๑๐๐% เพื่อป้องกันกลุ่มทุนใหญ่รวบอำนาจและอุดรูรั่วทางการเงินของรัฐ</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 16px; width: 50%;">• จัดทำและบริหารจัดสรรงบประมาณรายจ่ายประจำปีของแผ่นดินอย่างโปร่งใส <br> • จัดเก็บภาษีผ่านระบบสรรพากร สรรพสามิต และศุลกากรดิจิทัล <br> • จัดทำระบบภาษีทรัพย์สิน ภาษีมรดก และภาษีที่ดินอัตราก้าวหน้าเพื่อลดความเหลื่อมล้ำ <br> • บริหารหนี้สาธารณะ เงินคงคลัง และระบบการคลังดิจิทัลเชื่อมต่อ ParadoxAI</td>
               </tr>
 
               <!-- ๔. กระทรวงการต่างประเทศ -->
@@ -2275,12 +2275,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                     <img src="images/ministry_4.png" alt="โลโก้กระทรวง ลำดับที่ ๔" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 100px; max-width: 100px; white-space: normal; word-wrap: break-word;">กระทรวงการต่างประเทศ</td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 125px; max-width: 125px; white-space: normal; word-wrap: break-word;">กระทรวงการต่างประเทศ</td>
                 <td style="text-align: center;">
                   <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
                 </td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">ดำเนิน การทูตเชิงรุก (Proactive Diplomacy) ในเวทีโลก รักษาสมดุลอำนาจระหว่างมหาอำนาจ สร้างพันธมิตรทางเศรษฐกิจและความมั่นคงใหม่ (เช่น ความร่วมมือ SEATO) ปกป้องผลประโยชน์ของสยามประเทศ และคุ้มครองคนไทยในต่างแดนอย่างทันท่วงที</td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">• เจรจาสนธิสัญญาการค้าเสรี เขตเศรษฐกิจพิเศษ และความร่วมมือ SEATO <br> • คุ้มครอง สวัสดิภาพ และอำนวยความสะดวกแก่คนไทยและแรงงานไทยในต่างประเทศ <br> • ดำเนินการทูตวัฒนธรรมและซอฟต์พาวเวอร์สยามในเวทีประชาคมโลก <br> • ร่วมมือยุทธศาสตร์การเดินเรือและลอจิสติกส์นานาชาติคลองไทยไมตรี ๒.๐</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 12px; width: 30%;">ดำเนิน การทูตเชิงรุก (Proactive Diplomacy) ในเวทีโลก รักษาสมดุลอำนาจระหว่างมหาอำนาจ สร้างพันธมิตรทางเศรษฐกิจและความมั่นคงใหม่ (เช่น ความร่วมมือ SEATO) ปกป้องผลประโยชน์ของสยามประเทศ และคุ้มครองคนไทยในต่างแดนอย่างทันท่วงที</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 16px; width: 50%;">• เจรจาสนธิสัญญาการค้าเสรี เขตเศรษฐกิจพิเศษ และความร่วมมือ SEATO <br> • คุ้มครอง สวัสดิภาพ และอำนวยความสะดวกแก่คนไทยและแรงงานไทยในต่างประเทศ <br> • ดำเนินการทูตวัฒนธรรมและซอฟต์พาวเวอร์สยามในเวทีประชาคมโลก <br> • ร่วมมือยุทธศาสตร์การเดินเรือและลอจิสติกส์นานาชาติคลองไทยไมตรี ๒.๐</td>
               </tr>
 
               <!-- ๕. กระทรวงการท่องเที่ยวและกีฬา -->
@@ -2291,12 +2291,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                     <img src="images/ministry_5.png" alt="โลโก้กระทรวง ลำดับที่ ๕" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 100px; max-width: 100px; white-space: normal; word-wrap: break-word;">กระทรวงการท่องเที่ยวและกีฬา</td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 125px; max-width: 125px; white-space: normal; word-wrap: break-word;">กระทรวงการท่องเที่ยวและกีฬา</td>
                 <td style="text-align: center;">
                   <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
                 </td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">พัฒนาอุตสาหกรรมการท่องเที่ยวให้เป็นเครื่องยนต์ขับเคลื่อนเศรษฐกิจหลัก กระจายรายได้จากการท่องเที่ยวสู่ชุมชนท้องถิ่นทั่วประเทศ ๗๖ จังหวัด ไม่ใช่กระจุกตัวเพียงเมืองใหญ่ พร้อมยกระดับกีฬาไทยสู่มาตรฐานโลกและสร้างเศรษฐกิจกีฬา (Sports Economy)</td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">• ยกระดับมาตรฐานการท่องเที่ยวเชิงธรรมชาติ วัฒนธรรม และประวัติศาสตร์สยาม <br> • บริหารกองทุนสนับสนุนการท่องเที่ยวชุมชน และรับประกันความปลอดภัยของนักท่องเที่ยว <br> • พัฒนานักกีฬาทีมชาติ ศูนย์ฝึกกีฬามาตรฐานสากล และการแข่งขันกีฬาระดับโลก <br> • ส่งเสริมมวยไทย กีฬาพื้นบ้าน และกีฬาอิเล็กทรอนิกส์ (E-Sports) สู่ระดับอาชีพ</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 12px; width: 30%;">พัฒนาอุตสาหกรรมการท่องเที่ยวให้เป็นเครื่องยนต์ขับเคลื่อนเศรษฐกิจหลัก กระจายรายได้จากการท่องเที่ยวสู่ชุมชนท้องถิ่นทั่วประเทศ ๗๖ จังหวัด ไม่ใช่กระจุกตัวเพียงเมืองใหญ่ พร้อมยกระดับกีฬาไทยสู่มาตรฐานโลกและสร้างเศรษฐกิจกีฬา (Sports Economy)</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 16px; width: 50%;">• ยกระดับมาตรฐานการท่องเที่ยวเชิงธรรมชาติ วัฒนธรรม และประวัติศาสตร์สยาม <br> • บริหารกองทุนสนับสนุนการท่องเที่ยวชุมชน และรับประกันความปลอดภัยของนักท่องเที่ยว <br> • พัฒนานักกีฬาทีมชาติ ศูนย์ฝึกกีฬามาตรฐานสากล และการแข่งขันกีฬาระดับโลก <br> • ส่งเสริมมวยไทย กีฬาพื้นบ้าน และกีฬาอิเล็กทรอนิกส์ (E-Sports) สู่ระดับอาชีพ</td>
               </tr>
 
               <!-- ๖. กระทรวงเกษตรและสหกรณ์ -->
@@ -2307,12 +2307,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                     <img src="images/ministry_6.png" alt="โลโก้กระทรวง ลำดับที่ ๖" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 100px; max-width: 100px; white-space: normal; word-wrap: break-word;">กระทรวงเกษตรและสหกรณ์</td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 125px; max-width: 125px; white-space: normal; word-wrap: break-word;">กระทรวงเกษตรและสหกรณ์</td>
                 <td style="text-align: center;">
                   <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
                 </td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">ยกระดับชีวิตเกษตรกรไทยให้พ้นจากวงจรอุบาทว์หนี้สิน โดยนำเทคโนโลยีการเกษตรแม่นยำ (Agri-Tech) และระบบปัญญาประดิษฐ์มาใช้วางแผนการปลูก การบริหารจัดการน้ำ และการแปรรูปสินค้าเกษตรมูลค่าสูง พร้อมสร้างความเข้มแข็งให้ระบบสหกรณ์</td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">• พัฒนาระบบชลประทาน จัดสรรแหล่งน้ำเกษตรทั่วประเทศ และแก้ไขปัญหาภัยแล้ง <br> • ส่งเสริมเกษตรแม่นยำ (Agri-Tech), เกษตรอินทรีย์ และเทคโนโลยีการปรับปรุงพันธุ์พืช/สัตว์ <br> • ปรับโครงสร้างสหกรณ์การเกษตรและสถาบันเกษตรกรให้เข้าถึงตลาดตรงโดยไม่ผ่านคนกลาง <br> • ประสานงานระบบประกันภัยพืชผลการเกษตรร่วมกับกระทรวงหลักประกันสังคมฯ</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 12px; width: 30%;">ยกระดับชีวิตเกษตรกรไทยให้พ้นจากวงจรอุบาทว์หนี้สิน โดยนำเทคโนโลยีการเกษตรแม่นยำ (Agri-Tech) และระบบปัญญาประดิษฐ์มาใช้วางแผนการปลูก การบริหารจัดการน้ำ และการแปรรูปสินค้าเกษตรมูลค่าสูง พร้อมสร้างความเข้มแข็งให้ระบบสหกรณ์</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 16px; width: 50%;">• พัฒนาระบบชลประทาน จัดสรรแหล่งน้ำเกษตรทั่วประเทศ และแก้ไขปัญหาภัยแล้ง <br> • ส่งเสริมเกษตรแม่นยำ (Agri-Tech), เกษตรอินทรีย์ และเทคโนโลยีการปรับปรุงพันธุ์พืช/สัตว์ <br> • ปรับโครงสร้างสหกรณ์การเกษตรและสถาบันเกษตรกรให้เข้าถึงตลาดตรงโดยไม่ผ่านคนกลาง <br> • ประสานงานระบบประกันภัยพืชผลการเกษตรร่วมกับกระทรวงหลักประกันสังคมฯ</td>
               </tr>
 
               <!-- ๗. กระทรวงคมนาคม -->
@@ -2323,12 +2323,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                     <img src="images/ministry_7.png" alt="โลโก้กระทรวง ลำดับที่ ๗" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 100px; max-width: 100px; white-space: normal; word-wrap: break-word;">กระทรวงคมนาคม</td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 125px; max-width: 125px; white-space: normal; word-wrap: break-word;">กระทรวงคมนาคม</td>
                 <td style="text-align: center;">
                   <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
                 </td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">พัฒนาโครงข่ายคมนาคมและระบบลอจิสติกส์อย่างไร้รอยต่อทั้งทางบก ทางน้ำ ทางราง และทางอากาศ เพื่อลดต้นทุนการขนส่งสินค้าของประเทศ เพิ่มขีดความสามารถในการแข่งขัน และให้บริการขนส่งสาธารณะราคาย่อมเยาแก่ประชาชนทุกคน</td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">• บริหารอภิมหาโครงการคลองไทยไมตรี ๒.๐ และพัฒนารูปแบบการเดินเรือขนส่งสินค้าสากล <br> • ขยายโครงข่ายรถไฟความเร็วสูง รถไฟทางคู่ และระบบรถไฟฟ้าขนส่งมวลชนในเมืองใหญ่ <br> • พัฒนาทางหลวงแผ่นดิน มอเตอร์เวย์ ท่าเรือเชิงพาณิชย์ และสนามบินสากลทั่วประเทศ <br> • ควบคุมมาตรฐานความปลอดภัยการจราจรและกำกับดูแลค่าโดยสารขนส่งสาธารณะที่เป็นธรรม</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 12px; width: 30%;">พัฒนาโครงข่ายคมนาคมและระบบลอจิสติกส์อย่างไร้รอยต่อทั้งทางบก ทางน้ำ ทางราง และทางอากาศ เพื่อลดต้นทุนการขนส่งสินค้าของประเทศ เพิ่มขีดความสามารถในการแข่งขัน และให้บริการขนส่งสาธารณะราคาย่อมเยาแก่ประชาชนทุกคน</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 16px; width: 50%;">• บริหารอภิมหาโครงการคลองไทยไมตรี ๒.๐ และพัฒนารูปแบบการเดินเรือขนส่งสินค้าสากล <br> • ขยายโครงข่ายรถไฟความเร็วสูง รถไฟทางคู่ และระบบรถไฟฟ้าขนส่งมวลชนในเมืองใหญ่ <br> • พัฒนาทางหลวงแผ่นดิน มอเตอร์เวย์ ท่าเรือเชิงพาณิชย์ และสนามบินสากลทั่วประเทศ <br> • ควบคุมมาตรฐานความปลอดภัยการจราจรและกำกับดูแลค่าโดยสารขนส่งสาธารณะที่เป็นธรรม</td>
               </tr>
 
               <!-- ๘. กระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม -->
@@ -2339,12 +2339,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                     <img src="images/ministry_8.png" alt="โลโก้กระทรวง ลำดับที่ ๘" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 100px; max-width: 100px; white-space: normal; word-wrap: break-word;">กระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม</td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 125px; max-width: 125px; white-space: normal; word-wrap: break-word;">กระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม</td>
                 <td style="text-align: center;">
                   <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
                 </td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">ปกป้องและฟื้นฟูระบบนิเวศ ป่าไม้ แหล่งน้ำ และทรัพยากรทางทะเล รับมือกับวิกฤตสภาวะภูมิอากาศเปลี่ยนแปลง (Climate Change) ปัญหาน้ำท่วม-ภัยแล้งถาวร และแก้ไขปัญหามลพิษทางอากาศ (PM2.5) อย่างเด็ดขาดด้วยกฎหมายสิ่งแวดล้อมที่เข้มงวด</td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">• วางระบบผันน้ำและอุโมงค์ระบายน้ำร่วมกับ อบจ./อบต. ป้องกันปัญหาน้ำท่วมกรุงเทพฯ และต่างจังหวัด <br> • บังคับใช้กฎหมายควบคุมมลพิษและการทิ้งขยะเด็ดขาด (โทษ ๑/๔ ของสิงคโปร์) <br> • อนุรักษ์ ฟื้นฟูป่าไม้ อุทยานแห่งชาติ และพื้นที่รับน้ำธรรมชาติ (Retention Basins) <br> • บริหารจัดการคาร์บอนเครดิตและส่งเสริมการใช้พลังงานสะอาดในภาคอุตสาหกรรม</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 12px; width: 30%;">ปกป้องและฟื้นฟูระบบนิเวศ ป่าไม้ แหล่งน้ำ และทรัพยากรทางทะเล รับมือกับวิกฤตสภาวะภูมิอากาศเปลี่ยนแปลง (Climate Change) ปัญหาน้ำท่วม-ภัยแล้งถาวร และแก้ไขปัญหามลพิษทางอากาศ (PM2.5) อย่างเด็ดขาดด้วยกฎหมายสิ่งแวดล้อมที่เข้มงวด</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 16px; width: 50%;">• วางระบบผันน้ำและอุโมงค์ระบายน้ำร่วมกับ อบจ./อบต. ป้องกันปัญหาน้ำท่วมกรุงเทพฯ และต่างจังหวัด <br> • บังคับใช้กฎหมายควบคุมมลพิษและการทิ้งขยะเด็ดขาด (โทษ ๑/๔ ของสิงคโปร์) <br> • อนุรักษ์ ฟื้นฟูป่าไม้ อุทยานแห่งชาติ และพื้นที่รับน้ำธรรมชาติ (Retention Basins) <br> • บริหารจัดการคาร์บอนเครดิตและส่งเสริมการใช้พลังงานสะอาดในภาคอุตสาหกรรม</td>
               </tr>
 
               <!-- ๙. กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม -->
@@ -2355,12 +2355,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                     <img src="images/ministry_9.png" alt="โลโก้กระทรวง ลำดับที่ ๙" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 100px; max-width: 100px; white-space: normal; word-wrap: break-word;">กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม</td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 125px; max-width: 125px; white-space: normal; word-wrap: break-word;">กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม</td>
                 <td style="text-align: center;">
                   <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
                 </td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">เป็นโครงกระดูกเหล็กของรัฐดิจิทัล (Digital Government) เชื่อมโยงฐานข้อมูลของทุกกระทรวงเข้าด้วยกันผ่านระบบ ThaiJavis 2.0 คุ้มครองความมั่นคงปลอดภัยไซเบอร์ คุ้มครองข้อมูลส่วนบุคคล และสร้างโครงสร้างพื้นฐานดิจิทัลที่เข้าถึงได้ทุกคน</td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">• บริหารและพัฒนาระบบ ThaiJavis 2.0 ให้เชื่อมโยงและประมวลผลข้อมูลราชการทุกกระทรวงแบบ Real-Time <br> • กำกับดูแลศูนย์การต่อต้านข่าวปลอม (Anti-Fake News) และการปราบปรามอาชญากรรมทางเทคโนโลยี/แก๊งคอลเซ็นเตอร์ <br> • ขยายโครงข่ายบรอดแบนด์อินเทอร์เน็ตความเร็วสูงและระบบคลาวด์ภาครัฐ (Government Cloud) <br> • บังคับใช้กฎหมายคุ้มครองข้อมูลส่วนบุคคล (PDPA) และรักษาความมั่นคงปลอดภัยไซเบอร์ชาติ</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 12px; width: 30%;">เป็นโครงกระดูกเหล็กของรัฐดิจิทัล (Digital Government) เชื่อมโยงฐานข้อมูลของทุกกระทรวงเข้าด้วยกันผ่านระบบ ThaiJavis 2.0 คุ้มครองความมั่นคงปลอดภัยไซเบอร์ คุ้มครองข้อมูลส่วนบุคคล และสร้างโครงสร้างพื้นฐานดิจิทัลที่เข้าถึงได้ทุกคน</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 16px; width: 50%;">• บริหารและพัฒนาระบบ ThaiJavis 2.0 ให้เชื่อมโยงและประมวลผลข้อมูลราชการทุกกระทรวงแบบ Real-Time <br> • กำกับดูแลศูนย์การต่อต้านข่าวปลอม (Anti-Fake News) และการปราบปรามอาชญากรรมทางเทคโนโลยี/แก๊งคอลเซ็นเตอร์ <br> • ขยายโครงข่ายบรอดแบนด์อินเทอร์เน็ตความเร็วสูงและระบบคลาวด์ภาครัฐ (Government Cloud) <br> • บังคับใช้กฎหมายคุ้มครองข้อมูลส่วนบุคคล (PDPA) และรักษาความมั่นคงปลอดภัยไซเบอร์ชาติ</td>
               </tr>
 
               <!-- ๑๐. กระทรวงพลังงาน -->
@@ -2371,12 +2371,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                     <img src="images/ministry_10.png" alt="โลโก้กระทรวง ลำดับที่ ๑๐" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 100px; max-width: 100px; white-space: normal; word-wrap: break-word;">กระทรวงพลังงาน</td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 125px; max-width: 125px; white-space: normal; word-wrap: break-word;">กระทรวงพลังงาน</td>
                 <td style="text-align: center;">
                   <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
                 </td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">สร้างความมั่นคงทางพลังงานให้แก่ประเทศ ปฏิรูปโครงสร้างราคาไฟฟ้า น้ำมัน และก๊าซธรรมชาติให้มีความเป็นธรรม ขจัดระบบสัมปทานผันผวนและการผูกขาดโดยทุนใหญ่ และเปลี่ยนผ่านโครงสร้างพลังงานสยามสู่พลังงานสะอาด ๑๐๐%</td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">• ปรับรื้อโครงสร้างราคาค่าไฟฟ้าและน้ำมันเชื้อเพลิง ลดค่าครองชีพของประชาชนอย่างเป็นรูปธรรม <br> • จัดหาพลังงานไฟฟ้าและเชื้อเพลิงสำรองให้เพียงพอต่อความต้องการของภาคครัวเรือนและอุตสาหกรรม <br> • ส่งเสริมการติดตั้งโซลาร์รูฟท็อป พลังงานลม และพลังงานชีวมวลในระดับชุมชน <br> • กำกับดูแลการสำรวจ ผลิต และบริหารจัดการทรัพยากรปิโตรเลียมในอ่าวไทยและพื้นที่ทับซ้อน</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 12px; width: 30%;">สร้างความมั่นคงทางพลังงานให้แก่ประเทศ ปฏิรูปโครงสร้างราคาไฟฟ้า น้ำมัน และก๊าซธรรมชาติให้มีความเป็นธรรม ขจัดระบบสัมปทานผันผวนและการผูกขาดโดยทุนใหญ่ และเปลี่ยนผ่านโครงสร้างพลังงานสยามสู่พลังงานสะอาด ๑๐๐%</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 16px; width: 50%;">• ปรับรื้อโครงสร้างราคาค่าไฟฟ้าและน้ำมันเชื้อเพลิง ลดค่าครองชีพของประชาชนอย่างเป็นรูปธรรม <br> • จัดหาพลังงานไฟฟ้าและเชื้อเพลิงสำรองให้เพียงพอต่อความต้องการของภาคครัวเรือนและอุตสาหกรรม <br> • ส่งเสริมการติดตั้งโซลาร์รูฟท็อป พลังงานลม และพลังงานชีวมวลในระดับชุมชน <br> • กำกับดูแลการสำรวจ ผลิต และบริหารจัดการทรัพยากรปิโตรเลียมในอ่าวไทยและพื้นที่ทับซ้อน</td>
               </tr>
 
               <!-- ๑๑. กระทรวงพาณิชย์ -->
@@ -2387,12 +2387,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                     <img src="images/ministry_11.png" alt="โลโก้กระทรวง ลำดับที่ ๑๑" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 100px; max-width: 100px; white-space: normal; word-wrap: break-word;">กระทรวงพาณิชย์</td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 125px; max-width: 125px; white-space: normal; word-wrap: break-word;">กระทรวงพาณิชย์</td>
                 <td style="text-align: center;">
                   <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
                 </td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">กำกับดูแลระบบการค้าทั้งภายในและระหว่างประเทศ ป้องกันการทุ่มตลาด การรวมหัวกำหนดราคา และการค้ากำไรเกินควรของกลุ่มทุนใหญ่ พร้อมสร้างช่องทางการตลาดตรงให้แก่ผู้ผลิตรายย่อย เกษตรกร และผู้ประกอบการ SME</td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">• บริหารระบบตลาดตรงดิจิทัลเชื่อมต่อผู้ผลิตรายเล็กกับผู้บริโภคโดยตรง (สร้างรายได้เกษตรกร +๓๑%) <br> • เจรจาขยายตลาดส่งออกสินค้าสยามสู่ประเทศสมาชิก SEATO และตลาดโลก (ส่งออก +๓๓%) <br> • ควบคุมราคาสินค้าอุปโภคบริโภคจำเป็น และปราบปรามสินค้ากักตุนสินค้ากำไรเกินควร <br> • จดทะเบียนพาณิชย์ ส่งเสริมธุรกิจ SME และส่งออกสินค้าสิ่งบ่งชี้ทางภูมิศาสตร์ (GI)</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 12px; width: 30%;">กำกับดูแลระบบการค้าทั้งภายในและระหว่างประเทศ ป้องกันการทุ่มตลาด การรวมหัวกำหนดราคา และการค้ากำไรเกินควรของกลุ่มทุนใหญ่ พร้อมสร้างช่องทางการตลาดตรงให้แก่ผู้ผลิตรายย่อย เกษตรกร และผู้ประกอบการ SME</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 16px; width: 50%;">• บริหารระบบตลาดตรงดิจิทัลเชื่อมต่อผู้ผลิตรายเล็กกับผู้บริโภคโดยตรง (สร้างรายได้เกษตรกร +๓๑%) <br> • เจรจาขยายตลาดส่งออกสินค้าสยามสู่ประเทศสมาชิก SEATO และตลาดโลก (ส่งออก +๓๓%) <br> • ควบคุมราคาสินค้าอุปโภคบริโภคจำเป็น และปราบปรามสินค้ากักตุนสินค้ากำไรเกินควร <br> • จดทะเบียนพาณิชย์ ส่งเสริมธุรกิจ SME และส่งออกสินค้าสิ่งบ่งชี้ทางภูมิศาสตร์ (GI)</td>
               </tr>
 
               <!-- ๑๒. กระทรวงมหาดไทย -->
@@ -2403,12 +2403,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                     <img src="images/ministry_12.png" alt="โลโก้กระทรวง ลำดับที่ ๑๒" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 100px; max-width: 100px; white-space: normal; word-wrap: break-word;">กระทรวงมหาดไทย</td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 125px; max-width: 125px; white-space: normal; word-wrap: break-word;">กระทรวงมหาดไทย</td>
                 <td style="text-align: center;">
                   <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
                 </td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">บำบัดทุกข์ บำรุงสุข ขับเคลื่อนการกระจายอำนาจสู่ท้องถิ่น ๑๐๐% ยกระดับ อบจ. อบต. และเทศบาลให้มีงบประมาณและอำนาจตัดสินใจในการพัฒนาพื้นที่ตนเอง รักษาความสงบเรียบร้อยภายใน และบริหารงานทะเบียนราษฎรอย่างมีประสิทธิภาพ</td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">• ถ่ายโอนภารกิจ งบประมาณ และกำลังคนสู่องค์กรปกครองส่วนท้องถิ่น (อบจ., อบต., เทศบาล) ๑๐๐% <br> • บริหารงานทะเบียนราษฎร บัตรประชาชนดิจิทัล และสัญชาติไทยอย่างถูกต้องโปร่งใส <br> • ป้องกันและบรรเทาสาธารณภัยระดับจังหวัด อำเภอ และตำบลอย่างทันท่วงที <br> • กำกับดูแลงานการปกครองท้องที่ ปราบปรามผู้มีอิทธิพลและสิ่งผิดกฎหมายในระดับชุมชน</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 12px; width: 30%;">บำบัดทุกข์ บำรุงสุข ขับเคลื่อนการกระจายอำนาจสู่ท้องถิ่น ๑๐๐% ยกระดับ อบจ. อบต. และเทศบาลให้มีงบประมาณและอำนาจตัดสินใจในการพัฒนาพื้นที่ตนเอง รักษาความสงบเรียบร้อยภายใน และบริหารงานทะเบียนราษฎรอย่างมีประสิทธิภาพ</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 16px; width: 50%;">• ถ่ายโอนภารกิจ งบประมาณ และกำลังคนสู่องค์กรปกครองส่วนท้องถิ่น (อบจ., อบต., เทศบาล) ๑๐๐% <br> • บริหารงานทะเบียนราษฎร บัตรประชาชนดิจิทัล และสัญชาติไทยอย่างถูกต้องโปร่งใส <br> • ป้องกันและบรรเทาสาธารณภัยระดับจังหวัด อำเภอ และตำบลอย่างทันท่วงที <br> • กำกับดูแลงานการปกครองท้องที่ ปราบปรามผู้มีอิทธิพลและสิ่งผิดกฎหมายในระดับชุมชน</td>
               </tr>
 
               <!-- ๑๓. กระทรวงยุติธรรม -->
@@ -2419,12 +2419,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                     <img src="images/ministry_13.png" alt="โลโก้กระทรวง ลำดับที่ ๑๓" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 100px; max-width: 100px; white-space: normal; word-wrap: break-word;">กระทรวงยุติธรรม</td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 125px; max-width: 125px; white-space: normal; word-wrap: break-word;">กระทรวงยุติธรรม</td>
                 <td style="text-align: center;">
                   <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
                 </td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">อำนวยความยุติธรรมอย่างเสมอภาคเท่าเทียม ไม่เลือกปฏิบัติว่ารวยหรือจน ขจัดระบบสองมาตรฐานในกระบวนการยุติธรรม คุ้มครองสิทธิมนุษยชน ปราบปรามคดีอาชญากรรมพิเศษ และปรับปรุงฟื้นฟูผู้กระทำผิดให้กลับคืนสู่สังคมอย่างมีคุณภาพ</td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">• กำกับดูแลกรมสอบสวนคดีพิเศษ (DSI) ในการปราบปรามคดีฟอกเงิน อาชญากรรมข้ามชาติ และการทุจริต <br> • บริหารงานราชทัณฑ์ พัฒนาระบบเรือนจำ และสวัสดิภาพการคืนคนดีสู่สังคม <br> • ให้ความช่วยเหลือทางกฎหมายแก่ประชาชนผู้ยากไร้ผ่านกองทุนยุติธรรม <br> • คุ้มครองพยาน คุ้มครองผู้เสียหายในคดีอาญา และพัฒนาระบบนิติวิทยาศาสตร์สากล</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 12px; width: 30%;">อำนวยความยุติธรรมอย่างเสมอภาคเท่าเทียม ไม่เลือกปฏิบัติว่ารวยหรือจน ขจัดระบบสองมาตรฐานในกระบวนการยุติธรรม คุ้มครองสิทธิมนุษยชน ปราบปรามคดีอาชญากรรมพิเศษ และปรับปรุงฟื้นฟูผู้กระทำผิดให้กลับคืนสู่สังคมอย่างมีคุณภาพ</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 16px; width: 50%;">• กำกับดูแลกรมสอบสวนคดีพิเศษ (DSI) ในการปราบปรามคดีฟอกเงิน อาชญากรรมข้ามชาติ และการทุจริต <br> • บริหารงานราชทัณฑ์ พัฒนาระบบเรือนจำ และสวัสดิภาพการคืนคนดีสู่สังคม <br> • ให้ความช่วยเหลือทางกฎหมายแก่ประชาชนผู้ยากไร้ผ่านกองทุนยุติธรรม <br> • คุ้มครองพยาน คุ้มครองผู้เสียหายในคดีอาญา และพัฒนาระบบนิติวิทยาศาสตร์สากล</td>
               </tr>
 
               <!-- ๑๔. กระทรวงแรงงานและสวัสดิการสังคม -->
@@ -2435,15 +2435,15 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                     <img src="images/ministry_14.png" alt="โลโก้กระทรวง ลำดับที่ ๑๔" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #60a5fa; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 100px; max-width: 100px; white-space: normal; word-wrap: break-word;">
+                <td style="font-weight: 700; color: #60a5fa; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 125px; max-width: 125px; white-space: normal; word-wrap: break-word;">
                   กระทรวงแรงงานและสวัสดิการสังคม<br>
                   <span style="font-size: 10px; color: #93c5fd; font-weight: 400;">(ควบรวมแทนที่ พม. และ กระทรวงแรงงานเดิม)</span>
                 </td>
                 <td style="text-align: center;">
                   <span style="font-size: 10.5px; background: rgba(96, 165, 250, 0.15); color: #60a5fa; border: 1px solid rgba(96, 165, 250, 0.3); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🔄 ควบรวมแทน พม.+แรงงาน</span>
                 </td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">ควบรวมกระทรวง พม. และกระทรวงแรงงานเดิม เปลี่ยนผ่านระบบสวัสดิการจากการแจกเงินตั้งรับกระจัดกระจาย สู่ระบบดูแลคุณภาพชีวิตเชิงรุกครอบคลุมทุกช่วงวัย (เกิด เกษียณ เจ็บ ตาย) พร้อมพัฒนาทักษะแรงงานไทยรองรับโลกอุตสาหกรรมยุคใหม่</td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">• บริหารระบบสวัสดิการถ้วนหน้า One-Stop Service ครอบคลุมตั้งแต่เด็กแรกเกิด ยันผู้สูงอายุ <br> • พัฒนาทักษะแรงงานยุคใหม่ (Upskill/Reskill) สอดคล้องกับความต้องการของตลาดแรงงานเทคโนโลยี <br> • คุ้มครองแรงงานทั้งในระบบ นอกระบบ และแรงงานแพลตฟอร์ม ให้ได้รับค่าจ้างและสวัสดิการที่เป็นธรรม <br> • เชื่อมต่อ ThaiJavis วิเคราะห์กลุ่มเสี่ยงเปราะบางทางสังคม เพื่อเข้าไปช่วยเหลือเยียวยาก่อนเกิดวิกฤต</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 12px; width: 30%;">ควบรวมกระทรวง พม. และกระทรวงแรงงานเดิม เปลี่ยนผ่านระบบสวัสดิการจากการแจกเงินตั้งรับกระจัดกระจาย สู่ระบบดูแลคุณภาพชีวิตเชิงรุกครอบคลุมทุกช่วงวัย (เกิด เกษียณ เจ็บ ตาย) พร้อมพัฒนาทักษะแรงงานไทยรองรับโลกอุตสาหกรรมยุคใหม่</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 16px; width: 50%;">• บริหารระบบสวัสดิการถ้วนหน้า One-Stop Service ครอบคลุมตั้งแต่เด็กแรกเกิด ยันผู้สูงอายุ <br> • พัฒนาทักษะแรงงานยุคใหม่ (Upskill/Reskill) สอดคล้องกับความต้องการของตลาดแรงงานเทคโนโลยี <br> • คุ้มครองแรงงานทั้งในระบบ นอกระบบ และแรงงานแพลตฟอร์ม ให้ได้รับค่าจ้างและสวัสดิการที่เป็นธรรม <br> • เชื่อมต่อ ThaiJavis วิเคราะห์กลุ่มเสี่ยงเปราะบางทางสังคม เพื่อเข้าไปช่วยเหลือเยียวยาก่อนเกิดวิกฤต</td>
               </tr>
 
               <!-- ๑๕. กระทรวงวัฒนธรรม -->
@@ -2454,12 +2454,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                     <img src="images/ministry_15.png" alt="โลโก้กระทรวง ลำดับที่ ๑๕" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 100px; max-width: 100px; white-space: normal; word-wrap: break-word;">กระทรวงวัฒนธรรม</td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 125px; max-width: 125px; white-space: normal; word-wrap: break-word;">กระทรวงวัฒนธรรม</td>
                 <td style="text-align: center;">
                   <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
                 </td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">อนุรักษ์ ฟื้นฟู และต่อยอดมรดกทางวัฒนธรรม ประวัติศาสตร์ และศิลปะสยาม ส่งเสริมความหลากหลายทางวัฒนธรรม เปิดพื้นที่ให้ศิลปินรุ่นใหม่สร้างสรรค์ผลงาน และนำวัฒนธรรมมาสร้างมูลค่าทางเศรษฐกิจให้แก่ประเทศ</td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">• จัดงานมหกรรมวัฒนธรรมและประวัติศาสตร์ (เช่น Thailand History Festival) และคุ้มครองโบราณสถาน <br> • ส่งเสริมและสนับสนุน SIN ARCHIVE และหอจดหมายเหตุประวัติศาสตร์แห่งชาติ <br> • อุดหนุนทุนสร้างสรรค์แก่งานศิลปะ ดนตรี วรรณกรรม และการแสดงพื้นบ้านทั่วประเทศ <br> • เผยแพร่วัฒนธรรมและอัตลักษณ์สยามในระดับนานาชาติร่วมกับกระทรวงการต่างประเทศ</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 12px; width: 30%;">อนุรักษ์ ฟื้นฟู และต่อยอดมรดกทางวัฒนธรรม ประวัติศาสตร์ และศิลปะสยาม ส่งเสริมความหลากหลายทางวัฒนธรรม เปิดพื้นที่ให้ศิลปินรุ่นใหม่สร้างสรรค์ผลงาน และนำวัฒนธรรมมาสร้างมูลค่าทางเศรษฐกิจให้แก่ประเทศ</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 16px; width: 50%;">• จัดงานมหกรรมวัฒนธรรมและประวัติศาสตร์ (เช่น Thailand History Festival) และคุ้มครองโบราณสถาน <br> • ส่งเสริมและสนับสนุน SIN ARCHIVE และหอจดหมายเหตุประวัติศาสตร์แห่งชาติ <br> • อุดหนุนทุนสร้างสรรค์แก่งานศิลปะ ดนตรี วรรณกรรม และการแสดงพื้นบ้านทั่วประเทศ <br> • เผยแพร่วัฒนธรรมและอัตลักษณ์สยามในระดับนานาชาติร่วมกับกระทรวงการต่างประเทศ</td>
               </tr>
 
               <!-- ๑๖. กระทรวงศึกษาธิการ -->
@@ -2470,15 +2470,15 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                     <img src="images/ministry_16.png" alt="โลโก้กระทรวง ลำดับที่ ๑๖" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #fb923c; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 100px; max-width: 100px; white-space: normal; word-wrap: break-word;">
+                <td style="font-weight: 700; color: #fb923c; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 125px; max-width: 125px; white-space: normal; word-wrap: break-word;">
                   กระทรวงศึกษาธิการ<br>
                   <span style="font-size: 10px; color: #fed7aa; font-weight: 400;">(ดึงมหาวิทยาลัย/อุดมศึกษาจาก อว. เดิมกลับเข้ามา)</span>
                 </td>
                 <td style="text-align: center;">
                   <span style="font-size: 10.5px; background: rgba(251, 146, 60, 0.15); color: #fb923c; border: 1px solid rgba(251, 146, 60, 0.3); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🔄 รวมอุดมศึกษาจาก อว.</span>
                 </td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">ดึงสายงานอุดมศึกษาและมหาวิทยาลัยจาก กระทรวง อว. เดิม กลับมาอยู่ภายใต้ ศธ. เพื่อขจัดคอขวดระหว่างการศึกษาขั้นพื้นฐานกับการศึกษาระดับอุดมศึกษา สร้างเส้นทางการเรียนรู้ของเยาวชนตั้งแต่ปฐมวัยจนจบปริญญาเป็นเนื้อเดียวกันอย่างไร้รอยต่อ</td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">• จัดการเรียนการสอนถ้วนหน้า ฟรี มีคุณภาพ ตั้งแต่ระดับอนุบาลจนจบอุดมศึกษา/อาชีวศึกษา <br> • อนุมัติและพัฒนาหลักสูตรทันสมัย (รวมถึงหลักสูตร Tech Doctor ๓ ปี และวิชาชีพเทคโนโลยี) <br> • บริหารมหาวิทยาลัย สถาบันอาชีวศึกษา และสถาบันการศึกษาทั่วประเทศให้ได้มาตรฐานสากล <br> • กระจายอำนาจบริหารจัดการโรงเรียน คืนครูให้นักเรียน และลดความเหลื่อมล้ำทางศึกษา</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 12px; width: 30%;">ดึงสายงานอุดมศึกษาและมหาวิทยาลัยจาก กระทรวง อว. เดิม กลับมาอยู่ภายใต้ ศธ. เพื่อขจัดคอขวดระหว่างการศึกษาขั้นพื้นฐานกับการศึกษาระดับอุดมศึกษา สร้างเส้นทางการเรียนรู้ของเยาวชนตั้งแต่ปฐมวัยจนจบปริญญาเป็นเนื้อเดียวกันอย่างไร้รอยต่อ</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 16px; width: 50%;">• จัดการเรียนการสอนถ้วนหน้า ฟรี มีคุณภาพ ตั้งแต่ระดับอนุบาลจนจบอุดมศึกษา/อาชีวศึกษา <br> • อนุมัติและพัฒนาหลักสูตรทันสมัย (รวมถึงหลักสูตร Tech Doctor ๓ ปี และวิชาชีพเทคโนโลยี) <br> • บริหารมหาวิทยาลัย สถาบันอาชีวศึกษา และสถาบันการศึกษาทั่วประเทศให้ได้มาตรฐานสากล <br> • กระจายอำนาจบริหารจัดการโรงเรียน คืนครูให้นักเรียน และลดความเหลื่อมล้ำทางศึกษา</td>
               </tr>
 
               <!-- ๑๗. กระทรวงสาธารณสุข -->
@@ -2489,12 +2489,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                     <img src="images/ministry_17.png" alt="โลโก้กระทรวง ลำดับที่ ๑๗" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 100px; max-width: 100px; white-space: normal; word-wrap: break-word;">กระทรวงสาธารณสุข</td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 125px; max-width: 125px; white-space: normal; word-wrap: break-word;">กระทรวงสาธารณสุข</td>
                 <td style="text-align: center;">
                   <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
                 </td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">รับประกันสิทธิการรักษาพยาบาลฟรีและมีคุณภาพถ้วนหน้า ยกระดับโรงพยาบาลชุมชนและโรงพยาบาลศูนย์ทั่วประเทศ ขจัดปัญหาแพทย์-พยาบาลสมองไหล พัฒนานวัตกรรมทางการแพทย์ และผลิตบุคลากร Tech Doctor เพื่อรองรับสังคมสูงวัย</td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">• บริหารโรงพยาบาลมนุษย์ยกระดับมาตรฐานครบ ๘๐ แห่งทั่วประเทศ (จากเดิม ๓๘ แห่ง) <br> • สถาปนาและรับรองใบอนุญาตวิชาชีพ "Tech Doctor" (หลักสูตร ๓ ปี) ร่วมกับสภาวิชาชีพ <br> • ปรับปรุงเงินเดือน สวัสดิการ และชั่วโมงการทำงานของแพทย์ พยาบาล และบุคลากรทางการแพทย์ให้แข่งขันได้ <br> • ควบคุมโรคติดต่อ ป้องกันวิกฤตสาธารณสุข และบริหารระบบระบบแพทย์ดิจิทัล (Telemedicine)</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 12px; width: 30%;">รับประกันสิทธิการรักษาพยาบาลฟรีและมีคุณภาพถ้วนหน้า ยกระดับโรงพยาบาลชุมชนและโรงพยาบาลศูนย์ทั่วประเทศ ขจัดปัญหาแพทย์-พยาบาลสมองไหล พัฒนานวัตกรรมทางการแพทย์ และผลิตบุคลากร Tech Doctor เพื่อรองรับสังคมสูงวัย</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 16px; width: 50%;">• บริหารโรงพยาบาลมนุษย์ยกระดับมาตรฐานครบ ๘๐ แห่งทั่วประเทศ (จากเดิม ๓๘ แห่ง) <br> • สถาปนาและรับรองใบอนุญาตวิชาชีพ "Tech Doctor" (หลักสูตร ๓ ปี) ร่วมกับสภาวิชาชีพ <br> • ปรับปรุงเงินเดือน สวัสดิการ และชั่วโมงการทำงานของแพทย์ พยาบาล และบุคลากรทางการแพทย์ให้แข่งขันได้ <br> • ควบคุมโรคติดต่อ ป้องกันวิกฤตสาธารณสุข และบริหารระบบระบบแพทย์ดิจิทัล (Telemedicine)</td>
               </tr>
 
               <!-- ๑๘. กระทรวงอุตสาหกรรม -->
@@ -2505,12 +2505,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                     <img src="images/ministry_18.png" alt="โลโก้กระทรวง ลำดับที่ ๑๘" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 100px; max-width: 100px; white-space: normal; word-wrap: break-word;">กระทรวงอุตสาหกรรม</td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 125px; max-width: 125px; white-space: normal; word-wrap: break-word;">กระทรวงอุตสาหกรรม</td>
                 <td style="text-align: center;">
                   <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
                 </td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">ส่งเสริมภาคอุตสาหกรรมให้เป็นเครื่องยนต์หลักในการสร้างมูลค่าทางเศรษฐกิจ เปลี่ยนผ่านอุตสาหกรรมแบบเดิมสู่อุตสาหกรรมไฮเทค (New S-Curve) ควบคุมมาตรฐานโรงงานอุตสาหกรรม และดูแลไม่ให้อุตสาหกรรมก่อมลพิษส่งผลกระทบต่อชุมชน</td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">• ส่งเสริมและพัฒนานิคมอุตสาหกรรมเป้าหมายใหม่ (ยานยนต์ไฟฟ้า, หุ่นยนต์, ชีวภาพ, อิเล็กทรอนิกส์) <br> • กำกับดูแลมาตรฐานผลิตภัณฑ์อุตสาหกรรม (มอก.) และระบบรับรองคุณภาพสากล <br> • ให้คำปรึกษาและสนับสนุนทุนปรับเปลี่ยนเครื่องจักรกลและเทคโนโลยีแก่โรงงาน SME <br> • ตรวจสอบความปลอดภัยโรงงานอุตสาหกรรมและการจัดการกากอุตสาหกรรมอันตราย</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 12px; width: 30%;">ส่งเสริมภาคอุตสาหกรรมให้เป็นเครื่องยนต์หลักในการสร้างมูลค่าทางเศรษฐกิจ เปลี่ยนผ่านอุตสาหกรรมแบบเดิมสู่อุตสาหกรรมไฮเทค (New S-Curve) ควบคุมมาตรฐานโรงงานอุตสาหกรรม และดูแลไม่ให้อุตสาหกรรมก่อมลพิษส่งผลกระทบต่อชุมชน</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 16px; width: 50%;">• ส่งเสริมและพัฒนานิคมอุตสาหกรรมเป้าหมายใหม่ (ยานยนต์ไฟฟ้า, หุ่นยนต์, ชีวภาพ, อิเล็กทรอนิกส์) <br> • กำกับดูแลมาตรฐานผลิตภัณฑ์อุตสาหกรรม (มอก.) และระบบรับรองคุณภาพสากล <br> • ให้คำปรึกษาและสนับสนุนทุนปรับเปลี่ยนเครื่องจักรกลและเทคโนโลยีแก่โรงงาน SME <br> • ตรวจสอบความปลอดภัยโรงงานอุตสาหกรรมและการจัดการกากอุตสาหกรรมอันตราย</td>
               </tr>
 
               <!-- ๑๙. กระทรวงนวัตกรรมและเทคโนโลยี -->
@@ -2521,15 +2521,15 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                     <img src="images/ministry_19.png" alt="โลโก้กระทรวง ลำดับที่ ๑๙" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #c084fc; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 100px; max-width: 100px; white-space: normal; word-wrap: break-word;">
+                <td style="font-weight: 700; color: #c084fc; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 125px; max-width: 125px; white-space: normal; word-wrap: break-word;">
                   กระทรวงนวัตกรรมและเทคโนโลยี<br>
                   <span style="font-size: 10px; color: #e9d5ff; font-weight: 400;">(ปรับเปลี่ยนแทนที่สายงานเทคโนโลยีของ อว. เดิม)</span>
                 </td>
                 <td style="text-align: center;">
                   <span style="font-size: 10.5px; background: rgba(192, 132, 252, 0.15); color: #c084fc; border: 1px solid rgba(192, 132, 252, 0.3); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🔄 ปรับโครงสร้างแทน อว.</span>
                 </td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">ปรับรื้อสายงานเทคโนโลยีและนวัตกรรมจาก กระทรวง อว. เดิม ขจัดปัญหางานวิจัยขึ้นหิ้งที่ไม่ถูกนำไปใช้งานจริง โดยเน้นการจับคู่งานวิจัยและนวัตกรรมขั้นสูงกับภาคเอกชนและภาคอุตสาหกรรมเพื่อสร้างมูลค่าเชิงพาณิชย์ทันที</td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">• ใช้ ThaiJavis จับคู่งานวิจัย นวัตกรรม และสิทธิบัตรกับภาคเอกชนและอุตสาหกรรมเพื่อผลิตจริง <br> • สนับสนุนทุนวิจัยเชิงรุกแก่นนักวิจัย สตาร์ทอัป (Startups) และผู้ประกอบการ Deep-Tech <br> • พัฒนาอุทยานวิทยาศาสตร์ (Science Park) และศูนย์ทดสอบนวัตกรรมขั้นสูงทั่วประเทศ <br> • ดึงดูดการลงทุนวิจัยและพัฒนา (R&D) จากบริษัทเทคโนโลยีระดับโลกเข้ามาในสยามประเทศ</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 12px; width: 30%;">ปรับรื้อสายงานเทคโนโลยีและนวัตกรรมจาก กระทรวง อว. เดิม ขจัดปัญหางานวิจัยขึ้นหิ้งที่ไม่ถูกนำไปใช้งานจริง โดยเน้นการจับคู่งานวิจัยและนวัตกรรมขั้นสูงกับภาคเอกชนและภาคอุตสาหกรรมเพื่อสร้างมูลค่าเชิงพาณิชย์ทันที</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 16px; width: 50%;">• ใช้ ThaiJavis จับคู่งานวิจัย นวัตกรรม และสิทธิบัตรกับภาคเอกชนและอุตสาหกรรมเพื่อผลิตจริง <br> • สนับสนุนทุนวิจัยเชิงรุกแก่นนักวิจัย สตาร์ทอัป (Startups) และผู้ประกอบการ Deep-Tech <br> • พัฒนาอุทยานวิทยาศาสตร์ (Science Park) และศูนย์ทดสอบนวัตกรรมขั้นสูงทั่วประเทศ <br> • ดึงดูดการลงทุนวิจัยและพัฒนา (R&D) จากบริษัทเทคโนโลยีระดับโลกเข้ามาในสยามประเทศ</td>
               </tr>
 
               <!-- ๒๐. กระทรวงทรัพย์สินทางปัญญาและเศรษฐกิจสร้างสรรค์ -->
@@ -2540,12 +2540,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                     <img src="images/ministry_20.png" alt="โลโก้กระทรวง ลำดับที่ ๒๐" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #facc15; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 100px; max-width: 100px; white-space: normal; word-wrap: break-word;">กระทรวงทรัพย์สินทางปัญญาและเศรษฐกิจสร้างสรรค์</td>
+                <td style="font-weight: 700; color: #facc15; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 125px; max-width: 125px; white-space: normal; word-wrap: break-word;">กระทรวงทรัพย์สินทางปัญญาและเศรษฐกิจสร้างสรรค์</td>
                 <td style="text-align: center;">
                   <span style="font-size: 10.5px; background: rgba(250, 204, 21, 0.15); color: #facc15; border: 1px solid rgba(250, 204, 21, 0.3); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">✨ จัดตั้งขึ้นใหม่</span>
                 </td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">ยกระดับจากกรมทรัพย์สินทางปัญญาขึ้นเป็นกระทรวงเต็มรูปแบบ เพื่ออุดช่องโหว่และเยียวยาบทเรียนทางประวัติศาสตร์กรณีการละเมิดสิทธิบัตรและลิขสิทธิ์ซอฟต์แวร์ (กรณี Paradox & SKILL.md ของ ดร.ธนานนท์) คุ้มครองทรัพย์สินทางปัญญาเด็ดขาด และผลักดันเศรษฐกิจสร้างสรรค์ดิจิทัล</td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">• ปราบปรามและดำเนินคดีผู้ละเมิดลิขสิทธิ์ สิทธิบัตร และเครื่องหมายการค้าแบบ Real-Time <br> • คุ้มครองลิขสิทธิ์ซอฟต์แวร์ อัลกอริทึม AI โค้ดดิ้ง และสิทธิบัตรนวัตกรรมดิจิทัลทันที <br> • ส่งเสริมอุตสาหกรรมสร้างสรรค์ (Content Creators, พัฒนาเกม, ดนตรี, ภาพยนตร์, วรรณกรรม, ศิลปะ) <br> • บริหารศูนย์บริการจดทะเบียนและรับรองทรัพย์สินทางปัญญาแบบ One-Stop Digital Portal</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 12px; width: 30%;">ยกระดับจากกรมทรัพย์สินทางปัญญาขึ้นเป็นกระทรวงเต็มรูปแบบ เพื่ออุดช่องโหว่และเยียวยาบทเรียนทางประวัติศาสตร์กรณีการละเมิดสิทธิบัตรและลิขสิทธิ์ซอฟต์แวร์ (กรณี Paradox & SKILL.md ของ ดร.ธนานนท์) คุ้มครองทรัพย์สินทางปัญญาเด็ดขาด และผลักดันเศรษฐกิจสร้างสรรค์ดิจิทัล</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 16px; width: 50%;">• ปราบปรามและดำเนินคดีผู้ละเมิดลิขสิทธิ์ สิทธิบัตร และเครื่องหมายการค้าแบบ Real-Time <br> • คุ้มครองลิขสิทธิ์ซอฟต์แวร์ อัลกอริทึม AI โค้ดดิ้ง และสิทธิบัตรนวัตกรรมดิจิทัลทันที <br> • ส่งเสริมอุตสาหกรรมสร้างสรรค์ (Content Creators, พัฒนาเกม, ดนตรี, ภาพยนตร์, วรรณกรรม, ศิลปะ) <br> • บริหารศูนย์บริการจดทะเบียนและรับรองทรัพย์สินทางปัญญาแบบ One-Stop Digital Portal</td>
               </tr>
 
               <!-- ๒๑. กระทรวงหลักประกันและความเป็นธรรมทางสังคม -->
@@ -2556,12 +2556,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                     <img src="images/ministry_21.png" alt="โลโก้กระทรวง ลำดับที่ ๒๑" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #4ade80; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 100px; max-width: 100px; white-space: normal; word-wrap: break-word;">กระทรวงหลักประกันและความเป็นธรรมทางสังคม</td>
+                <td style="font-weight: 700; color: #4ade80; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 125px; max-width: 125px; white-space: normal; word-wrap: break-word;">กระทรวงหลักประกันและความเป็นธรรมทางสังคม</td>
                 <td style="text-align: center;">
                   <span style="font-size: 10.5px; background: rgba(74, 222, 128, 0.15); color: #4ade80; border: 1px solid rgba(74, 222, 128, 0.3); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">✨ จัดตั้งขึ้นใหม่</span>
                 </td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">รวบรวมระบบประกันภัยที่กระจัดกระจายอยู่ในหลายกระทรวง (เช่น ประกันสังคม สปส., ประกันสุขภาพ สปสช., ประกันพืชผลเกษตร) เข้ามาบริหารจัดการภายใต้พอร์ทัลเดียว ป้องกันไม่ให้ประชาชนถูกบริษัทประกันเอกชนเอาเปรียบหรือเบี้ยวจ่าย และประเมินความเสี่ยงล่วงหน้าด้วย AI</td>
-                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">• เป็นศูนย์รวมและบริหารจัดการกองทุนประกันภัยภาครัฐทุกประเภทในพอร์ทัลเดียว <br> • คุ้มครองผู้บริโภคจากการถูกปฏิเสธเคลมประกันภัยหรือถูกเบี้ยวจ่ายจากบริษัทประกันเอกชน <br> • ใช้ ThaiJavis ประเมินความเสี่ยงภัยพิบัติ สภาวะเศรษฐกิจ และโรคระบาดล่วงหน้าเพื่อเยียวยาเชิงรุก <br> • บริหารกองทุนหลักประกันความเสี่ยงทางสังคมสำหรับเกษตรกร ผู้ประกอบอาชีพอิสระ และประชาชน</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 12px; width: 30%;">รวบรวมระบบประกันภัยที่กระจัดกระจายอยู่ในหลายกระทรวง (เช่น ประกันสังคม สปส., ประกันสุขภาพ สปสช., ประกันพืชผลเกษตร) เข้ามาบริหารจัดการภายใต้พอร์ทัลเดียว ป้องกันไม่ให้ประชาชนถูกบริษัทประกันเอกชนเอาเปรียบหรือเบี้ยวจ่าย และประเมินความเสี่ยงล่วงหน้าด้วย AI</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 16px; width: 50%;">• เป็นศูนย์รวมและบริหารจัดการกองทุนประกันภัยภาครัฐทุกประเภทในพอร์ทัลเดียว <br> • คุ้มครองผู้บริโภคจากการถูกปฏิเสธเคลมประกันภัยหรือถูกเบี้ยวจ่ายจากบริษัทประกันเอกชน <br> • ใช้ ThaiJavis ประเมินความเสี่ยงภัยพิบัติ สภาวะเศรษฐกิจ และโรคระบาดล่วงหน้าเพื่อเยียวยาเชิงรุก <br> • บริหารกองทุนหลักประกันความเสี่ยงทางสังคมสำหรับเกษตรกร ผู้ประกอบอาชีพอิสระ และประชาชน</td>
               </tr>
             </tbody>
           </table>
@@ -5332,10 +5332,10 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr style="background: rgba(15, 23, 42, 0.95); color: var(--gold-light);">
                 <th style="width: 50px; text-align: center; padding: 14px 6px;">ลำดับ</th>
                 <th style="width: 270px; text-align: center; padding: 14px 8px;">ตราโลโก้ (๒๕๐x๒๕๐ พิกเซล)</th>
-                <th style="width: 100px; text-align: left; padding: 14px 8px;">ชื่อกระทรวง</th>
-                <th style="width: 140px; text-align: center; padding: 14px 8px;">ประเภทโครงสร้าง</th>
-                <th style="padding: 14px 16px; text-align: left;">💡 ทำมาทำไม (ที่มาและความจำเป็น)</th>
-                <th style="padding: 14px 16px; text-align: left;">🎯 มีหน้าที่อะไร (พันธกิจหลัก)</th>
+                <th style="width: 125px; text-align: left; padding: 14px 8px;">ชื่อกระทรวง</th>
+                <th style="width: 130px; text-align: center; padding: 14px 6px;">ประเภทโครงสร้าง</th>
+                <th style="width: 30%; padding: 14px 14px; text-align: left;">💡 ทำมาทำไม (ที่มาและความจำเป็น)</th>
+                <th style="width: 50%; padding: 14px 16px; text-align: left;">🎯 มีหน้าที่อะไร (พันธกิจหลัก)</th>
               </tr>
             </thead>
           <tbody>
