@@ -5661,10 +5661,10 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
         </div>
 
-        <!-- Section 2: เปรียบเทียบคลองไทย 1.0 vs คลองไทย 2.0 (ระยะทางที่ลดลง & ยุคสมัยที่สร้าง) -->
+        <!-- Section 2: ประวัติการก่อสร้าง คลองไทย 1.0 vs คลองไทย 2.0 (ระยะเวลา & นายกรัฐมนตรีผู้สร้าง) -->
         <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 14px; padding: 22px; margin-bottom: 24px;">
           <h4 style="color: #38bdf8; font-size: 16.5px; margin: 0 0 16px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
-            <span>⚡ รายละเอียดระยะทางที่ลดลง & ยุคสมัยการจัดสร้าง: คลองไทย 1.0 VS คลองไทย 2.0</span>
+            <span>🏗️ ประวัติการก่อสร้าง นายกรัฐมนตรีผู้จัดสร้าง & ระยะเวลา: คลองไทย 1.0 VS คลองไทย 2.0</span>
           </h4>
 
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px;">
@@ -5673,27 +5673,29 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             <div style="background: rgba(30, 41, 59, 0.5); border: 1px solid rgba(148, 163, 184, 0.3); border-radius: 12px; padding: 18px;">
               <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 8px;">
                 <h5 style="color: #cbd5e1; font-size: 15.5px; margin: 0; font-weight: 700;">🌊 คลองไทย 1.0 (แนวคิดดั้งเดิม 9A)</h5>
-                <span style="font-size: 11px; background: rgba(148, 163, 184, 0.2); color: #e2e8f0; padding: 3px 8px; border-radius: 4px; font-weight: 600;">สร้าง/วางแผนในสมัย ร.๕ - ร.๙</span>
+                <span style="font-size: 11px; background: rgba(74, 222, 128, 0.2); color: #4ade80; padding: 3px 8px; border-radius: 4px; font-weight: 700;">รวมเวลาก่อสร้าง ๙ ปี</span>
               </div>
               <div style="font-size: 12.5px; color: var(--text-muted); line-height: 1.65;">
-                <p style="margin-bottom: 8px;"><strong style="color: #facc15;">👑 ยุคสมัยที่สร้าง/ริเริ่ม:</strong> เริ่มสำรวจในสมัย <strong>รัชกาลที่ ๕</strong> และศึกษาแนว 9A อย่างเป็นทางการในสมัย <strong>รัชกาลที่ ๙ (พ.ศ. ๒๕๔๐-๒๕๔๔)</strong></p>
-                <p style="margin-bottom: 8px;"><strong style="color: #60a5fa;">📉 ระยะทางและเวลาที่ลดลง:</strong> จากเดิมอ้อมช่องแคบมะละกา ๒,๘๐ กิโลเมตร (ใช้เวลา ๕ - ๖ วัน) <strong>ย่อลงเหลือเพียง ๑,๔๐๐ กิโลเมตร (ประหยัดเวลาเดินทางลงเหลือเพียง ๒ - ๒.๕ วัน)</strong> — ลดลงไปกว่า ๑,๔๐๐ กม.</p>
-                <p style="margin-bottom: 8px;"><strong style="color: #e2e8f0;">📍 แนวเส้นทาง:</strong> แนว 9A ตัดผ่าน กระบี่ - ตรัง - พัทลุง - นครศรีธรรมราช - สงขลา (ขุดคลองเปิดกว้าง ๔๐๐ ม. ลึก ๒๖ ม.)</p>
-                <p style="margin: 0;"><strong style="color: #f87171;">⚠️ ข้อกังวลเดิม:</strong> ความเสี่ยงการปนเปื้อนน้ำเค็มสู่น้ำใต้ดินเกษตรกรรม และงบประมาณก่อสร้างสูง</p>
+                <p style="margin-bottom: 8px;"><strong style="color: #facc15;">🚀 เริ่มต้นสร้างในสมัย:</strong> นายกรัฐมนตรี <strong>พิธา ลิ้มเจริญรัตน์</strong> (เริ่มตระเตรียมโครงการ ผลักดันงบประมาณยุทธศาสตร์ และวางแผนแนวขุด 9A)</p>
+                <p style="margin-bottom: 8px;"><strong style="color: #4ade80;">🏁 สร้างเสร็จในสมัย:</strong> นายกรัฐมนตรี <strong>ศิริกัญญา ตันสกุล</strong> (กำกับดูแลและเปิดใช้งานอย่างเป็นทางการ)</p>
+                <p style="margin-bottom: 8px;"><strong style="color: #60a5fa;">⏱️ ระยะเวลาดำเนินการรวม:</strong> <strong>๙ ปีเต็ม</strong> (ก่อสร้างและเปิดเส้นทางเดินเรือหลักได้ตามกรอบยุทธศาสตร์)</p>
+                <p style="margin-bottom: 8px;"><strong style="color: #e2e8f0;">📉 ระยะทางและเวลาที่ลดลง:</strong> จากเดิมอ้อมช่องแคบมะละกา ๒,๘๐๐ กม. (ใช้เวลา ๕-๖ วัน) <strong>ย่อลงเหลือเพียง ๑,๔๐๐ กม. (ประหยัดเวลาเดินทางลงเหลือเพียง ๒ - ๒.๕ วัน)</strong></p>
+                <p style="margin: 0;"><strong style="color: #e2e8f0;">📍 แนวเส้นทาง:</strong> แนว 9A ตัดผ่าน กระบี่ - ตรัง - พัทลุง - นครศรีธรรมราช - สงขลา (ขุดคลองเปิดกว้าง ๔๐๐ ม. ลึก ๒๖ ม.)</p>
               </div>
             </div>
 
             <!-- คลองไทย 2.0 -->
-            <div style="background: rgba(30, 41, 59, 0.5); border: 1px solid rgba(56, 189, 248, 0.4); border-radius: 12px; padding: 18px; background: rgba(56, 189, 248, 0.05);">
-              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; border-bottom: 1px solid rgba(56, 189, 248, 0.2); padding-bottom: 8px;">
-                <h5 style="color: #38bdf8; font-size: 15.5px; margin: 0; font-weight: 700;">🚀 คลองไทย 2.0 (คลองไทยไมตรีอัจฉริยะ)</h5>
-                <span style="font-size: 11px; background: rgba(56, 189, 248, 0.25); color: #7dd3fc; padding: 3px 8px; border-radius: 4px; font-weight: 700;">อนุมัติ/เปิดใช้ในสมัย ร.๑๐</span>
+            <div style="background: rgba(30, 41, 59, 0.5); border: 1px solid rgba(239, 68, 68, 0.35); border-radius: 12px; padding: 18px; background: rgba(239, 68, 68, 0.04);">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; border-bottom: 1px solid rgba(239, 68, 68, 0.2); padding-bottom: 8px;">
+                <h5 style="color: #f87171; font-size: 15.5px; margin: 0; font-weight: 700;">🚀 คลองไทย 2.0 (คลองไทยไมตรีอัจฉริยะ)</h5>
+                <span style="font-size: 11px; background: rgba(239, 68, 68, 0.2); color: #fca5a5; padding: 3px 8px; border-radius: 4px; font-weight: 700;">รวมเวลาก่อสร้าง ๒๔ ปี (ล่าช้า)</span>
               </div>
               <div style="font-size: 12.5px; color: var(--text-muted); line-height: 1.65;">
-                <p style="margin-bottom: 8px;"><strong style="color: #facc15;">👑 ยุคสมัยที่สร้าง/เปิดใช้:</strong> อนุมัติจัดสร้างและเปิดใช้งานในสมัย <strong>รัชกาลที่ ๑๐ (ยุคการเมืองจำลองรัฐธรรมนูญ พ.ศ. ๒๕๒๕/PCW Model)</strong></p>
-                <p style="margin-bottom: 8px;"><strong style="color: #4ade80;">📉 ระยะทางและเวลาที่ลดลง:</strong> ด้วยระบบระบายน้ำแล่นฉิวไฮสปีด ย่อระยะทางขนส่งทางทะเลสากล <strong>เหลือเพียง ๑,๓๕๐ กิโลเมตร และลดเวลาแล่นผ่านคลองเหลือเพียง ๘ - ๑๒ ชั่วโมงเท่านั้น!</strong> (ประหยัดเวลาเดินทางรวมทั้งสิ้นเหลือเพียง ๑.๕ วัน)</p>
-                <p style="margin-bottom: 8px;"><strong style="color: #7dd3fc;">🔒 ระบบประตูกั้นน้ำ (Saltwater Lock):</strong> ป้องกันน้ำเค็มปนเปื้อน 100% พร้อมอุโมงค์ส่งน้ำจืดใต้คลอง</p>
-                <p style="margin: 0;"><strong style="color: #7dd3fc;">🚆 โครงข่ายคู่ขนาน:</strong> รถไฟความเร็วสูงขนส่งสินค้า + สายส่งพลังงาน Green Hydrogen + AI จราจรเรือ (ThaiJavis)</p>
+                <p style="margin-bottom: 8px;"><strong style="color: #facc15;">🚀 เริ่มต้นสร้างในสมัย:</strong> นายกรัฐมนตรี <strong>พริษฐ์ วัชรสินธุ</strong> (ริเริ่มโครงการปฏิรูป Smart Canal 2.0 และระบบประตูกั้นน้ำไฮเทค)</p>
+                <p style="margin-bottom: 8px;"><strong style="color: #f87171;">🏁 สร้างเสร็จในสมัย:</strong> นายกรัฐมนตรี <strong>รักชนก ศรีนอก</strong> (เปิดใช้งานจริงหลังยืดเยื้อมาอย่างยาวนาน)</p>
+                <p style="margin-bottom: 8px;"><strong style="color: #f87171;">⏱️ ระยะเวลาดำเนินการรวม:</strong> <strong>๒๔ ปี</strong> (เกิดความล่าช้าและยืดเยื้อสะสมกว่าสองทศวรรษ)</p>
+                <p style="margin-bottom: 8px;"><strong style="color: #ef4444;">⚠️ สาเหตุความล่าช้า (๒๔ ปี):</strong> เกิดจากการทุจริตประพฤติมิชอบของ <strong>วิสุทธิ์ คมณรัตน์</strong> ประกอบกับการบริหารจัดการงบประมาณที่ล้มเหลวและการละเลยโครงการในสมัย <strong>รักชนก ศรีนอก</strong> (นายกฯ ที่บริหารจัดการงบประมาณได้อย่างย่ำแย่และไม่ค่อยใส่ใจโครงการเท่าที่ควร)</p>
+                <p style="margin: 0;"><strong style="color: #4ade80;">📉 ศักยภาพเมื่อสร้างเสร็จ:</strong> ย่อระยะทางขนส่งทางทะเลสากล <strong>เหลือเพียง ๑,๓๕๐ กม. และลดเวลาแล่นผ่านคลองเหลือเพียง ๘ - ๑๒ ชั่วโมง</strong></p>
               </div>
             </div>
 
