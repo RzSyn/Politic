@@ -2808,17 +2808,15 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         // Auto-init: เรียก switchPMEra ทันทีเมื่อหน้าโหลด
         document.addEventListener('DOMContentLoaded', function() {{
           const sel = document.getElementById('pm-era-select');
-          if (sel) {{
-            switchPMEra(sel.value);
-          }}
+          if (sel) switchPMEra(sel.value);
         }});
 
-        // Hook เข้า showDBTab เพื่อ re-trigger เมื่อเปิด legislative-tab
+        // Hook เข้า switchTab (ฟังก์ชัน tab จริง) เพื่อ re-trigger เมื่อเปิด legislative-tab
         (function() {{
-          const _origShowDBTab = window.showDBTab;
-          window.showDBTab = function(tabId) {{
-            if (typeof _origShowDBTab === 'function') _origShowDBTab(tabId);
-            if (tabId === 'legislative') {{
+          const _origSwitchTab = window.switchTab;
+          window.switchTab = function(tabId, btn) {{
+            if (typeof _origSwitchTab === 'function') _origSwitchTab(tabId, btn);
+            if (tabId === 'legislative-tab') {{
               const sel = document.getElementById('pm-era-select');
               if (sel) switchPMEra(sel.value);
             }}
