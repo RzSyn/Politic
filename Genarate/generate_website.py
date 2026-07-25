@@ -2216,7 +2216,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           <div style="background: rgba(255, 255, 255, 0.025); border: 1px solid rgba(249, 115, 22, 0.3); border-radius: 12px; padding: 18px; text-align: center;">
             <div style="font-size: 12.5px; color: var(--text-muted); font-weight: 600;">🗳️ สภาผู้แทนราษฎร (ส.ส.)</div>
             <div style="font-size: 28px; font-weight: 700; color: #f97316; font-family: 'Outfit', sans-serif; margin: 4px 0;">๕๐๐ ที่นั่ง</div>
-            <div style="font-size: 11.5px; color: #4ade80;" id="ss-summary-text">รัฐบาล ๔๐๖ เสียง (๘๑.๒%) | ฝ่ายค้าน ๙๔ เสียง</div>
+            <div style="font-size: 11.5px; color: #4ade80;" id="ss-summary-text">รัฐบาล ๔๐๖ เสียง (๘๑.๒%) | ฝ่ายค้าน ๙๔ เสียง (๑๘.๘%)</div>
           </div>
           <div style="background: rgba(255, 255, 255, 0.025); border: 1px solid rgba(59, 130, 246, 0.3); border-radius: 12px; padding: 18px; text-align: center;">
             <div style="font-size: 12.5px; color: var(--text-muted); font-weight: 600;">⚖️ วุฒิสภา (ส.ว.)</div>
@@ -2225,12 +2225,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
           <div style="background: rgba(255, 255, 255, 0.025); border: 1px solid rgba(74, 222, 128, 0.3); border-radius: 12px; padding: 18px; text-align: center;">
             <div style="font-size: 12.5px; color: var(--text-muted); font-weight: 600;">🟢 ฝ่ายรัฐบาล (Government Coalition)</div>
-            <div style="font-size: 28px; font-weight: 700; color: #4ade80; font-family: 'Outfit', sans-serif; margin: 4px 0;" id="govt-seats-val">๔๐๖ ที่นั่ง</div>
+            <div style="font-size: 28px; font-weight: 700; color: #4ade80; font-family: 'Outfit', sans-serif; margin: 4px 0;" id="govt-seats-val">๔๐๖ ที่นั่ง (๘๑.๒%)</div>
             <div style="font-size: 11.5px; color: var(--text-muted);" id="govt-parties-desc">ก้าวไกล + ประชาธิปัตย์ + ทักษิประชา + ธรรมปัญญา + ไทยรักไทย + กิจสังคม + ระเบียบโลกใหม่</div>
           </div>
           <div style="background: rgba(255, 255, 255, 0.025); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 12px; padding: 18px; text-align: center;">
             <div style="font-size: 12.5px; color: var(--text-muted); font-weight: 600;">🔴 ฝ่ายค้าน (Opposition Coalition)</div>
-            <div style="font-size: 28px; font-weight: 700; color: #f87171; font-family: 'Outfit', sans-serif; margin: 4px 0;" id="opp-seats-val">๙๔ ที่นั่ง</div>
+            <div style="font-size: 28px; font-weight: 700; color: #f87171; font-family: 'Outfit', sans-serif; margin: 4px 0;" id="opp-seats-val">๙๔ ที่นั่ง (๑๘.๘%)</div>
             <div style="font-size: 11.5px; color: var(--text-muted);" id="opp-parties-desc">รวมไทยสร้างชาติ + ชาติพัฒนา + ชาติไทย + ความหวังใหม่ + เสรีรวมไทย</div>
           </div>
         </div>
@@ -2295,8 +2295,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
           <!-- Dynamic Color Legends for MPs -->
           <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; background: rgba(255,255,255,0.02); padding: 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.05); font-size: 12px;" id="mp-legend-container">
-            <div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #f97316; border-radius: 50%; display: inline-block;"></span><strong style="color: #f97316;">พรรคก้าวไกล:</strong> 151 ที่นั่ง (แกนนำรัฐบาล)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #06b6d4; border-radius: 50%; display: inline-block;"></span><strong style="color: #06b6d4;">พรรคประชาธิปัตย์:</strong> 90 ที่นั่ง (พรรคร่วมรัฐบาล)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #ef4444; border-radius: 50%; display: inline-block;"></span><strong style="color: #ef4444;">พรรคทักษิประชา:</strong> 60 ที่นั่ง (พรรคร่วมรัฐบาล)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #a855f7; border-radius: 50%; display: inline-block;"></span><strong style="color: #a855f7;">พรรคธรรมปัญญา:</strong> 40 ที่นั่ง (พรรคร่วมรัฐบาล)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #3b82f6; border-radius: 50%; display: inline-block;"></span><strong style="color: #3b82f6;">พรรคไทยรักไทย:</strong> 30 ที่นั่ง (พรรคร่วมรัฐบาล)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #f59e0b; border-radius: 50%; display: inline-block;"></span><strong style="color: #f59e0b;">พรรคกิจสังคม:</strong> 20 ที่นั่ง (พรรคร่วมรัฐบาล)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #8b5cf6; border-radius: 50%; display: inline-block;"></span><strong style="color: #8b5cf6;">พรรคระเบียบโลกใหม่:</strong> 15 ที่นั่ง (พรรคร่วมรัฐบาล)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #84cc16; border-radius: 50%; display: inline-block;"></span><strong style="color: #84cc16;">พรรครวมไทยสร้างชาติ:</strong> 40 ที่นั่ง (ฝ่ายค้าน)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #14b8a6; border-radius: 50%; display: inline-block;"></span><strong style="color: #14b8a6;">พรรคชาติพัฒนา:</strong> 25 ที่นั่ง (ฝ่ายค้าน)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #eab308; border-radius: 50%; display: inline-block;"></span><strong style="color: #eab308;">พรรคชาติไทย:</strong> 15 ที่นั่ง (ฝ่ายค้าน)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #d946ef; border-radius: 50%; display: inline-block;"></span><strong style="color: #d946ef;">พรรคความหวังใหม่:</strong> 10 ที่นั่ง (ฝ่ายค้าน)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #ec4899; border-radius: 50%; display: inline-block;"></span><strong style="color: #ec4899;">พรรคเสรีรวมไทย:</strong> 4 ที่นั่ง (ฝ่ายค้าน)</div>
-          </div>
+            <div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #f97316; border-radius: 50%; display: inline-block;"></span><strong style="color: #f97316;">พรรคก้าวไกล:</strong> ๑๕๑ ที่นั่ง (๓๐.๒%) (แกนนำรัฐบาล)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #06b6d4; border-radius: 50%; display: inline-block;"></span><strong style="color: #06b6d4;">พรรคประชาธิปัตย์:</strong> ๙๐ ที่นั่ง (๑๘.๐%) (พรรคร่วมรัฐบาล)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #ef4444; border-radius: 50%; display: inline-block;"></span><strong style="color: #ef4444;">พรรคทักษิประชา:</strong> ๖๐ ที่นั่ง (๑๒.๐%) (พรรคร่วมรัฐบาล)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #a855f7; border-radius: 50%; display: inline-block;"></span><strong style="color: #a855f7;">พรรคธรรมปัญญา:</strong> ๔๐ ที่นั่ง (๘.๐%) (พรรคร่วมรัฐบาล)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #3b82f6; border-radius: 50%; display: inline-block;"></span><strong style="color: #3b82f6;">พรรคไทยรักไทย:</strong> ๓๐ ที่นั่ง (๖.๐%) (พรรคร่วมรัฐบาล)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #f59e0b; border-radius: 50%; display: inline-block;"></span><strong style="color: #f59e0b;">พรรคกิจสังคม:</strong> ๒๐ ที่นั่ง (๔.๐%) (พรรคร่วมรัฐบาล)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #8b5cf6; border-radius: 50%; display: inline-block;"></span><strong style="color: #8b5cf6;">พรรคระเบียบโลกใหม่:</strong> ๑๕ ที่นั่ง (๓.๐%) (พรรคร่วมรัฐบาล)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #84cc16; border-radius: 50%; display: inline-block;"></span><strong style="color: #84cc16;">พรรครวมไทยสร้างชาติ:</strong> ๔๐ ที่นั่ง (๘.๐%) (ฝ่ายค้าน)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #14b8a6; border-radius: 50%; display: inline-block;"></span><strong style="color: #14b8a6;">พรรคชาติพัฒนา:</strong> ๒๕ ที่นั่ง (๕.๐%) (ฝ่ายค้าน)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #eab308; border-radius: 50%; display: inline-block;"></span><strong style="color: #eab308;">พรรคชาติไทย:</strong> ๑๕ ที่นั่ง (๓.๐%) (ฝ่ายค้าน)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #d946ef; border-radius: 50%; display: inline-block;"></span><strong style="color: #d946ef;">พรรคความหวังใหม่:</strong> ๑๐ ที่นั่ง (๒.๐%) (ฝ่ายค้าน)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #ec4899; border-radius: 50%; display: inline-block;"></span><strong style="color: #ec4899;">พรรคเสรีรวมไทย:</strong> ๔ ที่นั่ง (๐.๘%) (ฝ่ายค้าน)</div>
+          </div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #06b6d4; border-radius: 50%; display: inline-block;"></span><strong style="color: #06b6d4;">พรรคประชาธิปัตย์:</strong> 90 ที่นั่ง (พรรคร่วมรัฐบาล)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #ef4444; border-radius: 50%; display: inline-block;"></span><strong style="color: #ef4444;">พรรคทักษิประชา:</strong> 60 ที่นั่ง (พรรคร่วมรัฐบาล)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #a855f7; border-radius: 50%; display: inline-block;"></span><strong style="color: #a855f7;">พรรคธรรมปัญญา:</strong> 40 ที่นั่ง (พรรคร่วมรัฐบาล)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #3b82f6; border-radius: 50%; display: inline-block;"></span><strong style="color: #3b82f6;">พรรคไทยรักไทย:</strong> 30 ที่นั่ง (พรรคร่วมรัฐบาล)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #f59e0b; border-radius: 50%; display: inline-block;"></span><strong style="color: #f59e0b;">พรรคกิจสังคม:</strong> 20 ที่นั่ง (พรรคร่วมรัฐบาล)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #8b5cf6; border-radius: 50%; display: inline-block;"></span><strong style="color: #8b5cf6;">พรรคระเบียบโลกใหม่:</strong> 15 ที่นั่ง (พรรคร่วมรัฐบาล)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #84cc16; border-radius: 50%; display: inline-block;"></span><strong style="color: #84cc16;">พรรครวมไทยสร้างชาติ:</strong> 40 ที่นั่ง (ฝ่ายค้าน)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #14b8a6; border-radius: 50%; display: inline-block;"></span><strong style="color: #14b8a6;">พรรคชาติพัฒนา:</strong> 25 ที่นั่ง (ฝ่ายค้าน)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #eab308; border-radius: 50%; display: inline-block;"></span><strong style="color: #eab308;">พรรคชาติไทย:</strong> 15 ที่นั่ง (ฝ่ายค้าน)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #d946ef; border-radius: 50%; display: inline-block;"></span><strong style="color: #d946ef;">พรรคความหวังใหม่:</strong> 10 ที่นั่ง (ฝ่ายค้าน)</div><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #ec4899; border-radius: 50%; display: inline-block;"></span><strong style="color: #ec4899;">พรรคเสรีรวมไทย:</strong> 4 ที่นั่ง (ฝ่ายค้าน)</div>
         </div>
 
         <!-- Section 2: ผังจุดที่นั่ง ส.ว. ๒๐๐ จุด -->
@@ -2371,8 +2371,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
       </div>
 
       <script>
-        const pmErasData = {{
-          "pm-1": {{
+        const pmErasData = {{{{
+          "pm-1": {{{{
             label: "👤 นายกฯ คนที่ ๑: ก้อน หุตะสิงห์ (พระยามโนปกรณ์นิติธาดา) (๒๔๒๑-๒๔๒๙)",
             govt_seats: 300,
             opp_seats: 200,
@@ -2381,11 +2381,11 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             opp_parties: "ผู้แทนประจำมณฑลท้องถิ่น (๒๐٠ ที่นั่ง)",
             badge: "\"สภาผู้แทนราษฎรยุคนายกฯ ก้อน หุตะสิงห์ (พระยามโนปกรณ์นิติธาดา)\"",
             counts: [
-              {{ name: "ผู้แทนสถิตสภาผู้แทนราษฎร", count: 300, color: "#d4af37", side: "ฝ่ายบริหารสภา" }},
-              {{ name: "ผู้แทนประจำมณฑลท้องถิ่น", count: 200, color: "#38bdf8", side: "ผู้แทนสภามณฑล" }}
+              {{{{ name: "ผู้แทนสถิตสภาผู้แทนราษฎร", count: 300, color: "#d4af37", side: "ฝ่ายบริหารสภา" }}}},
+              {{{{ name: "ผู้แทนประจำมณฑลท้องถิ่น", count: 200, color: "#38bdf8", side: "ผู้แทนสภามณฑล" }}}}
             ]
-          }},
-          "pm-2": {{
+          }}}},
+          "pm-2": {{{{
             label: "👤 นายกฯ คนที่ ๒: ศุข ชุมสาย (พระยาศรีวิสารวาจา) (๒๔๒๙-๒๔๓๗)",
             govt_seats: 310,
             opp_seats: 190,
@@ -2394,11 +2394,11 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             opp_parties: "ผู้แทนประจำมณฑลร่วมพิจารณา (๑๙๐ ที่นั่ง)",
             badge: "\"สภาผู้แทนราษฎรยุคนายกฯ ศุข ชุมสาย (พระยาศรีวิสารวาจา)\"",
             counts: [
-              {{ name: "ผู้แทนสายธรรมการและการทูต", count: 310, color: "#38bdf8", side: "ฝ่ายบริหารสภา" }},
-              {{ name: "ผู้แทนประจำมณฑลร่วมพิจารณา", count: 190, color: "#94a3b8", side: "ฝ่ายกลั่นกรองสภา" }}
+              {{{{ name: "ผู้แทนสายธรรมการและการทูต", count: 310, color: "#38bdf8", side: "ฝ่ายบริหารสภา" }}}},
+              {{{{ name: "ผู้แทนประจำมณฑลร่วมพิจารณา", count: 190, color: "#94a3b8", side: "ฝ่ายกลั่นกรองสภา" }}}}
             ]
-          }},
-          "pm-3": {{
+          }}}},
+          "pm-3": {{{{
             label: "👤 นายกฯ คนที่ ๓: ศรีเสนา สมบัติศิริ (พระยาศรีเสนา) (๒๔๓๗-๒๔๔๕)",
             govt_seats: 320,
             opp_seats: 180,
@@ -2407,11 +2407,11 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             opp_parties: "ผู้แทนประจำมณฑลภูมิภาค (๑๘๐ ที่นั่ง)",
             badge: "\"สภาผู้แทนราษฎรยุคนายกฯ ศรีเสนา สมบัติศิริ (พระยาศรีเสนา)\"",
             counts: [
-              {{ name: "ผู้แทนสภาร่วมปฏิรูปรัฐธรรมนูญ", count: 320, color: "#d4af37", side: "ฝ่ายบริหารสภา" }},
-              {{ name: "ผู้แทนประจำมณฑลภูมิภาค", count: 180, color: "#94a3b8", side: "ฝ่ายกลั่นกรองสภา" }}
+              {{{{ name: "ผู้แทนสภาร่วมปฏิรูปรัฐธรรมนูญ", count: 320, color: "#d4af37", side: "ฝ่ายบริหารสภา" }}}},
+              {{{{ name: "ผู้แทนประจำมณฑลภูมิภาค", count: 180, color: "#94a3b8", side: "ฝ่ายกลั่นกรองสภา" }}}}
             ]
-          }},
-          "pm-4": {{
+          }}}},
+          "pm-4": {{{{
             label: "👤 นายกฯ คนที่ ๔: ทักษิณ ชินวัตร (๒๔๔๕-๒๔๕๓)",
             govt_seats: 377,
             opp_seats: 123,
@@ -2420,11 +2420,11 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             opp_parties: "พรรคประชาธิปัตย์ (๑๒๓ ที่นั่ง)",
             badge: "\"สภาผู้แทนราษฎรยุคนายกฯ ทักษิณ ชินวัตร\"",
             counts: [
-              {{ name: "พรรคไทยรักไทย", count: 377, color: "#3b82f6", side: "แกนนำรัฐบาล" }},
-              {{ name: "พรรคประชาธิปัตย์", count: 123, color: "#06b6d4", side: "ฝ่ายค้าน" }}
+              {{{{ name: "พรรคไทยรักไทย", count: 377, color: "#3b82f6", side: "แกนนำรัฐบาล" }}}},
+              {{{{ name: "พรรคประชาธิปัตย์", count: 123, color: "#06b6d4", side: "ฝ่ายค้าน" }}}}
             ]
-          }},
-          "pm-5": {{
+          }}}},
+          "pm-5": {{{{
             label: "👤 นายกฯ คนที่ ๕: สัญญา ธรรมศักดิ์ (๒๔๕๓-๒๔๖๑)",
             govt_seats: 305,
             opp_seats: 195,
@@ -2433,11 +2433,11 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             opp_parties: "พรรคประชาธิปัตย์ (๑๙๕ ที่นั่ง)",
             badge: "\"สภาผู้แทนราษฎรยุคนายกฯ สัญญา ธรรมศักดิ์\"",
             counts: [
-              {{ name: "พรรคแกนนำนิติรัฐ", count: 305, color: "#60a5fa", side: "ฝ่ายบริหาร" }},
-              {{ name: "พรรคประชาธิปัตย์", count: 195, color: "#06b6d4", side: "ฝ่ายค้าน" }}
+              {{{{ name: "พรรคแกนนำนิติรัฐ", count: 305, color: "#60a5fa", side: "ฝ่ายบริหาร" }}}},
+              {{{{ name: "พรรคประชาธิปัตย์", count: 195, color: "#06b6d4", side: "ฝ่ายค้าน" }}}}
             ]
-          }},
-          "pm-6": {{
+          }}}},
+          "pm-6": {{{{
             label: "👤 นายกฯ คนที่ ๖: เสนีย์ ปราโมช (ม.ร.ว.) (๒๔๖๑-๒๔๖๙)",
             govt_seats: 290,
             opp_seats: 210,
@@ -2446,11 +2446,11 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             opp_parties: "พรรคเสรีมนังคสิลา (๒๑๐ ที่นั่ง)",
             badge: "\"สภาผู้แทนราษฎรยุคนายกฯ เสนีย์ ปราโมช (ม.ร.ว.)\"",
             counts: [
-              {{ name: "พรรคประชาธิปัตย์", count: 290, color: "#06b6d4", side: "แกนนำรัฐบาล" }},
-              {{ name: "พรรคเสรีมนังคสิลา", count: 210, color: "#ef4444", side: "ฝ่ายค้าน" }}
+              {{{{ name: "พรรคประชาธิปัตย์", count: 290, color: "#06b6d4", side: "แกนนำรัฐบาล" }}}},
+              {{{{ name: "พรรคเสรีมนังคสิลา", count: 210, color: "#ef4444", side: "ฝ่ายค้าน" }}}}
             ]
-          }},
-          "pm-7": {{
+          }}}},
+          "pm-7": {{{{
             label: "👤 นายกฯ คนที่ ๗: ควง อภัยวงศ์ (๒๔๖๙-๒๔๗๗)",
             govt_seats: 295,
             opp_seats: 205,
@@ -2459,11 +2459,11 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             opp_parties: "พรรคชาติไทย (๒๐๕ ที่นั่ง)",
             badge: "\"สภาผู้แทนราษฎรยุคนายกฯ ควง อภัยวงศ์\"",
             counts: [
-              {{ name: "พรรคประชาธิปัตย์", count: 295, color: "#06b6d4", side: "แกนนำรัฐบาล" }},
-              {{ name: "พรรคชาติไทย", count: 205, color: "#eab308", side: "ฝ่ายค้าน" }}
+              {{{{ name: "พรรคประชาธิปัตย์", count: 295, color: "#06b6d4", side: "แกนนำรัฐบาล" }}}},
+              {{{{ name: "พรรคชาติไทย", count: 205, color: "#eab308", side: "ฝ่ายค้าน" }}}}
             ]
-          }},
-          "pm-8": {{
+          }}}},
+          "pm-8": {{{{
             label: "👤 นายกฯ คนที่ ๘: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (๒๔๗๗-๒๔๘๕)",
             govt_seats: 285,
             opp_seats: 215,
@@ -2472,11 +2472,11 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             opp_parties: "พรรคประชาธิปัตย์ (๒๑๕ ที่นั่ง)",
             badge: "\"สภาผู้แทนราษฎรยุคนายกฯ คึกฤทธิ์ ปราโมช (ม.ร.ว.)\"",
             counts: [
-              {{ name: "พรรคกิจสังคม", count: 285, color: "#f59e0b", side: "แกนนำรัฐบาล" }},
-              {{ name: "พรรคประชาธิปัตย์", count: 215, color: "#06b6d4", side: "ฝ่ายค้าน" }}
+              {{{{ name: "พรรคกิจสังคม", count: 285, color: "#f59e0b", side: "แกนนำรัฐบาล" }}}},
+              {{{{ name: "พรรคประชาธิปัตย์", count: 215, color: "#06b6d4", side: "ฝ่ายค้าน" }}}}
             ]
-          }},
-          "pm-9": {{
+          }}}},
+          "pm-9": {{{{
             label: "👤 นายกฯ คนที่ ๙: อานันท์ ปันยารชุน (๒๔๘๕-๒๔๙๓)",
             govt_seats: 300,
             opp_seats: 200,
@@ -2485,11 +2485,11 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             opp_parties: "พรรคประชาธิปัตย์ (๒๐๐ ที่นั่ง)",
             badge: "\"สภาผู้แทนราษฎรยุคนายกฯ อานันท์ ปันยารชุน\"",
             counts: [
-              {{ name: "พรรคสถาบันการคลังและนิติธรรม", count: 300, color: "#34d399", side: "ฝ่ายบริหาร" }},
-              {{ name: "พรรคประชาธิปัตย์", count: 200, color: "#06b6d4", side: "ฝ่ายค้าน" }}
+              {{{{ name: "พรรคสถาบันการคลังและนิติธรรม", count: 300, color: "#34d399", side: "ฝ่ายบริหาร" }}}},
+              {{{{ name: "พรรคประชาธิปัตย์", count: 200, color: "#06b6d4", side: "ฝ่ายค้าน" }}}}
             ]
-          }},
-          "pm-10": {{
+          }}}},
+          "pm-10": {{{{
             label: "👤 นายกฯ คนที่ ๑๐: ชวน หลีกภัย (๒๔๙๓-๒๕๐๑)",
             govt_seats: 288,
             opp_seats: 212,
@@ -2498,11 +2498,11 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             opp_parties: "พรรคความหวังใหม่ (๒๑๒ ที่นั่ง)",
             badge: "\"สภาผู้แทนราษฎรยุคนายกฯ ชวน หลีกภัย\"",
             counts: [
-              {{ name: "พรรคประชาธิปัตย์", count: 288, color: "#06b6d4", side: "แกนนำรัฐบาล" }},
-              {{ name: "พรรคความหวังใหม่", count: 212, color: "#d946ef", side: "ฝ่ายค้าน" }}
+              {{{{ name: "พรรคประชาธิปัตย์", count: 288, color: "#06b6d4", side: "แกนนำรัฐบาล" }}}},
+              {{{{ name: "พรรคความหวังใหม่", count: 212, color: "#d946ef", side: "ฝ่ายค้าน" }}}}
             ]
-          }},
-          "pm-11": {{
+          }}}},
+          "pm-11": {{{{
             label: "👤 นายกฯ คนที่ ๑๑: บรรหาร ศิลปอาชา (๒๕๐๑-๒๕๐๙)",
             govt_seats: 318,
             opp_seats: 182,
@@ -2511,12 +2511,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             opp_parties: "พรรคความหวังใหม่ (๑๘๒ ที่นั่ง)",
             badge: "\"สภาผู้แทนราษฎรยุคนายกฯ บรรหาร ศิลปอาชา\"",
             counts: [
-              {{ name: "พรรคชาติไทย", count: 140, color: "#eab308", side: "แกนนำรัฐบาล" }},
-              {{ name: "พรรคประชาธิปัตย์", count: 178, color: "#06b6d4", side: "พรรคร่วมรัฐบาล" }},
-              {{ name: "พรรคความหวังใหม่", count: 182, color: "#d946ef", side: "ฝ่ายค้าน" }}
+              {{{{ name: "พรรคชาติไทย", count: 140, color: "#eab308", side: "แกนนำรัฐบาล" }}}},
+              {{{{ name: "พรรคประชาธิปัตย์", count: 178, color: "#06b6d4", side: "พรรคร่วมรัฐบาล" }}}},
+              {{{{ name: "พรรคความหวังใหม่", count: 182, color: "#d946ef", side: "ฝ่ายค้าน" }}}}
             ]
-          }},
-          "pm-12": {{
+          }}}},
+          "pm-12": {{{{
             label: "👤 นายกฯ คนที่ ๑๒: ชวลิต ยงใจยุทธ (พลเอก) (๒๕๐๙-๒๕๑๗)",
             govt_seats: 290,
             opp_seats: 210,
@@ -2525,12 +2525,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             opp_parties: "พรรคประชาธิปัตย์ (๒๑๐ ที่นั่ง)",
             badge: "\"สภาผู้แทนราษฎรยุคนายกฯ ชวลิต ยงใจยุทธ (พลเอก)\"",
             counts: [
-              {{ name: "พรรคความหวังใหม่", count: 135, color: "#d946ef", side: "แกนนำรัฐบาล" }},
-              {{ name: "พรรคชาติไทย", count: 155, color: "#eab308", side: "พรรคร่วมรัฐบาล" }},
-              {{ name: "พรรคประชาธิปัตย์", count: 210, color: "#06b6d4", side: "ฝ่ายค้าน" }}
+              {{{{ name: "พรรคความหวังใหม่", count: 135, color: "#d946ef", side: "แกนนำรัฐบาล" }}}},
+              {{{{ name: "พรรคชาติไทย", count: 155, color: "#eab308", side: "พรรคร่วมรัฐบาล" }}}},
+              {{{{ name: "พรรคประชาธิปัตย์", count: 210, color: "#06b6d4", side: "ฝ่ายค้าน" }}}}
             ]
-          }},
-          "pm-13": {{
+          }}}},
+          "pm-13": {{{{
             label: "👤 นายกฯ คนที่ ๑๓: อภิสิทธิ์ เวชชาชีวะ (๒๕๑๗-๒๕๒๕)",
             govt_seats: 295,
             opp_seats: 205,
@@ -2539,12 +2539,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             opp_parties: "พรรคไทยรักไทย (๒๐๕ ที่นั่ง)",
             badge: "\"สภาผู้แทนราษฎรยุคนายกฯ อภิสิทธิ์ เวชชาชีวะ\"",
             counts: [
-              {{ name: "พรรคประชาธิปัตย์", count: 172, color: "#06b6d4", side: "แกนนำรัฐบาล" }},
-              {{ name: "พรรคชาติไทย", count: 123, color: "#eab308", side: "พรรคร่วมรัฐบาล" }},
-              {{ name: "พรรคไทยรักไทย", count: 205, color: "#3b82f6", side: "ฝ่ายค้าน" }}
+              {{{{ name: "พรรคประชาธิปัตย์", count: 172, color: "#06b6d4", side: "แกนนำรัฐบาล" }}}},
+              {{{{ name: "พรรคชาติไทย", count: 123, color: "#eab308", side: "พรรคร่วมรัฐบาล" }}}},
+              {{{{ name: "พรรคไทยรักไทย", count: 205, color: "#3b82f6", side: "ฝ่ายค้าน" }}}}
             ]
-          }},
-          "pm-14": {{
+          }}}},
+          "pm-14": {{{{
             label: "👤 นายกฯ คนที่ ๑๔: สุวัจน์ ลิปตพัลลภ (๒๕๒๕-๒๕๔๑)",
             govt_seats: 320,
             opp_seats: 180,
@@ -2553,12 +2553,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             opp_parties: "พรรคไทยรักไทย (๑๘๐ ที่นั่ง)",
             badge: "\"สภาผู้แทนราษฎรยุคนายกฯ สุวัจน์ ลิปตพัลลภ\"",
             counts: [
-              {{ name: "พรรคชาติพัฒนา", count: 180, color: "#14b8a6", side: "แกนนำรัฐบาล" }},
-              {{ name: "พรรคประชาธิปัตย์", count: 140, color: "#06b6d4", side: "พรรคร่วมรัฐบาล" }},
-              {{ name: "พรรคไทยรักไทย", count: 180, color: "#3b82f6", side: "ฝ่ายค้าน" }}
+              {{{{ name: "พรรคชาติพัฒนา", count: 180, color: "#14b8a6", side: "แกนนำรัฐบาล" }}}},
+              {{{{ name: "พรรคประชาธิปัตย์", count: 140, color: "#06b6d4", side: "พรรคร่วมรัฐบาล" }}}},
+              {{{{ name: "พรรคไทยรักไทย", count: 180, color: "#3b82f6", side: "ฝ่ายค้าน" }}}}
             ]
-          }},
-          "pm-15": {{
+          }}}},
+          "pm-15": {{{{
             label: "👤 นายกฯ คนที่ ๑๕: พีระพันธุ์ สาลีรัฐวิภาค (๒๕๔๑-๒๕๕๗)",
             govt_seats: 310,
             opp_seats: 190,
@@ -2567,12 +2567,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             opp_parties: "พรรคทักษิประชา (๑๙๐ ที่นั่ง)",
             badge: "\"สภาผู้แทนราษฎรยุคนายกฯ พีระพันธุ์ สาลีรัฐวิภาค\"",
             counts: [
-              {{ name: "พรรครวมไทยสร้างชาติ", count: 175, color: "#84cc16", side: "แกนนำรัฐบาล" }},
-              {{ name: "พรรคประชาธิปัตย์", count: 135, color: "#06b6d4", side: "พรรคร่วมรัฐบาล" }},
-              {{ name: "พรรคทักษิประชา", count: 190, color: "#ef4444", side: "ฝ่ายค้าน" }}
+              {{{{ name: "พรรครวมไทยสร้างชาติ", count: 175, color: "#84cc16", side: "แกนนำรัฐบาล" }}}},
+              {{{{ name: "พรรคประชาธิปัตย์", count: 135, color: "#06b6d4", side: "พรรคร่วมรัฐบาล" }}}},
+              {{{{ name: "พรรคทักษิประชา", count: 190, color: "#ef4444", side: "ฝ่ายค้าน" }}}}
             ]
-          }},
-          "pm-16": {{
+          }}}},
+          "pm-16": {{{{
             label: "👤 นายกฯ คนที่ ๑๖: ธนาธร จึงรุ่งเรืองกิจ (๒๕๕๗-๒๕๖๐)",
             govt_seats: 310,
             opp_seats: 190,
@@ -2581,12 +2581,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             opp_parties: "พรรครวมไทยสร้างชาติ (๑๙๐ ที่นั่ง)",
             badge: "\"สภาผู้แทนราษฎรยุคนายกฯ ธนาธร จึงรุ่งเรืองกิจ\"",
             counts: [
-              {{ name: "พรรคอนาคตใหม่", count: 180, color: "#f97316", side: "แกนนำรัฐบาล" }},
-              {{ name: "พรรคประชาธิปัตย์", count: 130, color: "#06b6d4", side: "พรรคร่วมรัฐบาล" }},
-              {{ name: "พรรครวมไทยสร้างชาติ", count: 190, color: "#84cc16", side: "ฝ่ายค้าน" }}
+              {{{{ name: "พรรคอนาคตใหม่", count: 180, color: "#f97316", side: "แกนนำรัฐบาล" }}}},
+              {{{{ name: "พรรคประชาธิปัตย์", count: 130, color: "#06b6d4", side: "พรรคร่วมรัฐบาล" }}}},
+              {{{{ name: "พรรครวมไทยสร้างชาติ", count: 190, color: "#84cc16", side: "ฝ่ายค้าน" }}}}
             ]
-          }},
-          "pm-17": {{
+          }}}},
+          "pm-17": {{{{
             label: "👤 นายกฯ คนที่ ๑๗: พิธา ลิ้มเจริญรัตน์ (๒๕๖๐-๒๕๗๖)",
             govt_seats: 392,
             opp_seats: 108,
@@ -2595,14 +2595,14 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             opp_parties: "รวมไทยสร้างชาติ (๑๐๘ ที่นั่ง)",
             badge: "\"สภาผู้แทนราษฎรยุคนายกฯ พิธา ลิ้มเจริญรัตน์\"",
             counts: [
-              {{ name: "พรรคก้าวไกล", count: 151, color: "#f97316", side: "แกนนำรัฐบาล" }},
-              {{ name: "พรรคประชาธิปัตย์", count: 120, color: "#06b6d4", side: "พรรคร่วมรัฐบาล" }},
-              {{ name: "พรรคทักษิประชา", count: 101, color: "#ef4444", side: "พรรคร่วมรัฐบาล" }},
-              {{ name: "พรรคธรรมปัญญา", count: 20, color: "#a855f7", side: "พรรคร่วมรัฐบาล" }},
-              {{ name: "พรรครวมไทยสร้างชาติ", count: 108, color: "#84cc16", side: "ฝ่ายค้าน" }}
+              {{{{ name: "พรรคก้าวไกล", count: 151, color: "#f97316", side: "แกนนำรัฐบาล" }}}},
+              {{{{ name: "พรรคประชาธิปัตย์", count: 120, color: "#06b6d4", side: "พรรคร่วมรัฐบาล" }}}},
+              {{{{ name: "พรรคทักษิประชา", count: 101, color: "#ef4444", side: "พรรคร่วมรัฐบาล" }}}},
+              {{{{ name: "พรรคธรรมปัญญา", count: 20, color: "#a855f7", side: "พรรคร่วมรัฐบาล" }}}},
+              {{{{ name: "พรรครวมไทยสร้างชาติ", count: 108, color: "#84cc16", side: "ฝ่ายค้าน" }}}}
             ]
-          }},
-          "pm-18": {{
+          }}}},
+          "pm-18": {{{{
             label: "👤 นายกฯ คนที่ ๑๘: ศิริกัญญา ตันสกุล (๒๕๗๖-๒๕๙๒)",
             govt_seats: 348,
             opp_seats: 152,
@@ -2611,13 +2611,13 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             opp_parties: "รวมไทยสร้างชาติ (๑๕๒ ที่นั่ง)",
             badge: "\"สภาผู้แทนราษฎรยุคนายกฯ ศิริกัญญา ตันสกุล\"",
             counts: [
-              {{ name: "พรรคก้าวไกล", count: 185, color: "#f97316", side: "แกนนำรัฐบาล" }},
-              {{ name: "พรรคประชาธิปัตย์", count: 130, color: "#06b6d4", side: "พรรคร่วมรัฐบาล" }},
-              {{ name: "พรรคธรรมปัญญา", count: 33, color: "#a855f7", side: "พรรคร่วมรัฐบาล" }},
-              {{ name: "พรรครวมไทยสร้างชาติ", count: 152, color: "#84cc16", side: "ฝ่ายค้าน" }}
+              {{{{ name: "พรรคก้าวไกล", count: 185, color: "#f97316", side: "แกนนำรัฐบาล" }}}},
+              {{{{ name: "พรรคประชาธิปัตย์", count: 130, color: "#06b6d4", side: "พรรคร่วมรัฐบาล" }}}},
+              {{{{ name: "พรรคธรรมปัญญา", count: 33, color: "#a855f7", side: "พรรคร่วมรัฐบาล" }}}},
+              {{{{ name: "พรรครวมไทยสร้างชาติ", count: 152, color: "#84cc16", side: "ฝ่ายค้าน" }}}}
             ]
-          }},
-          "pm-19": {{
+          }}}},
+          "pm-19": {{{{
             label: "👤 นายกฯ คนที่ ๑๙: ณัฐพงษ์ เรืองปัญญาวุฒิ (๒๕๙๒-๒๕๙๖)",
             govt_seats: 330,
             opp_seats: 170,
@@ -2626,13 +2626,13 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             opp_parties: "รวมไทยสร้างชาติ (๑๗๐ ที่นั่ง)",
             badge: "\"สภาผู้แทนราษฎรยุคนายกฯ ณัฐพงษ์ เรืองปัญญาวุฒิ\"",
             counts: [
-              {{ name: "พรรคก้าวไกล", count: 170, color: "#f97316", side: "แกนนำรัฐบาล" }},
-              {{ name: "พรรคประชาธิปัตย์", count: 120, color: "#06b6d4", side: "พรรคร่วมรัฐบาล" }},
-              {{ name: "พรรคธรรมปัญญา", count: 40, color: "#a855f7", side: "พรรคร่วมรัฐบาล" }},
-              {{ name: "พรรครวมไทยสร้างชาติ", count: 170, color: "#84cc16", side: "ฝ่ายค้าน" }}
+              {{{{ name: "พรรคก้าวไกล", count: 170, color: "#f97316", side: "แกนนำรัฐบาล" }}}},
+              {{{{ name: "พรรคประชาธิปัตย์", count: 120, color: "#06b6d4", side: "พรรคร่วมรัฐบาล" }}}},
+              {{{{ name: "พรรคธรรมปัญญา", count: 40, color: "#a855f7", side: "พรรคร่วมรัฐบาล" }}}},
+              {{{{ name: "พรรครวมไทยสร้างชาติ", count: 170, color: "#84cc16", side: "ฝ่ายค้าน" }}}}
             ]
-          }},
-          "pm-20": {{
+          }}}},
+          "pm-20": {{{{
             label: "👤 นายกฯ คนที่ ๒๐: พริษฐ์ \"ไอติม\" วัชรสินธุ (๒๕๙๖-๒๖๑๒)",
             govt_seats: 340,
             opp_seats: 160,
@@ -2641,13 +2641,13 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             opp_parties: "รวมไทยสร้างชาติ (๑๖๐ ที่นั่ง)",
             badge: "\"สภาผู้แทนราษฎรยุคนายกฯ พริษฐ์ \"ไอติม\" วัชรสินธุ\"",
             counts: [
-              {{ name: "พรรคก้าวไกล", count: 190, color: "#f97316", side: "แกนนำรัฐบาล" }},
-              {{ name: "พรรคประชาธิปัตย์", count: 110, color: "#06b6d4", side: "พรรคร่วมรัฐบาล" }},
-              {{ name: "พรรคธรรมปัญญา", count: 40, color: "#a855f7", side: "พรรคร่วมรัฐบาล" }},
-              {{ name: "พรรครวมไทยสร้างชาติ", count: 160, color: "#84cc16", side: "ฝ่ายค้าน" }}
+              {{{{ name: "พรรคก้าวไกล", count: 190, color: "#f97316", side: "แกนนำรัฐบาล" }}}},
+              {{{{ name: "พรรคประชาธิปัตย์", count: 110, color: "#06b6d4", side: "พรรคร่วมรัฐบาล" }}}},
+              {{{{ name: "พรรคธรรมปัญญา", count: 40, color: "#a855f7", side: "พรรคร่วมรัฐบาล" }}}},
+              {{{{ name: "พรรครวมไทยสร้างชาติ", count: 160, color: "#84cc16", side: "ฝ่ายค้าน" }}}}
             ]
-          }},
-          "pm-21": {{
+          }}}},
+          "pm-21": {{{{
             label: "👤 นายกฯ คนที่ ๒๑: วิสุทธิ์ คมณรัตน์ (๒๖๑๒-๒๖๑๔)",
             govt_seats: 260,
             opp_seats: 240,
@@ -2656,11 +2656,11 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             opp_parties: "ก้าวไกล + ประชาธิปัตย์ + ธรรมปัญญา (๒๔๐ ที่นั่ง)",
             badge: "\"สภาผู้แทนราษฎรยุคนายกฯ วิสุทธิ์ คมณรัตน์\"",
             counts: [
-              {{ name: "พรรคประชาปิติวัติ", count: 260, color: "#ec4899", side: "ฝ่ายรัฐบาลทุจริต" }},
-              {{ name: "พรรคก้าวไกล + ประชาธิปัตย์", count: 240, color: "#f97316", side: "ฝ่ายค้านพิทักษ์สภา" }}
+              {{{{ name: "พรรคประชาปิติวัติ", count: 260, color: "#ec4899", side: "ฝ่ายรัฐบาลทุจริต" }}}},
+              {{{{ name: "พรรคก้าวไกล + ประชาธิปัตย์", count: 240, color: "#f97316", side: "ฝ่ายค้านพิทักษ์สภา" }}}}
             ]
-          }},
-          "pm-22": {{
+          }}}},
+          "pm-22": {{{{
             label: "👤 นายกฯ คนที่ ๒๒: รักชนก ศรีนอก (๒๖๑๔-๒๖๓๐)",
             govt_seats: 375,
             opp_seats: 125,
@@ -2669,13 +2669,13 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             opp_parties: "รวมไทยสร้างชาติ (๑๒๕ ที่นั่ง)",
             badge: "\"สภาผู้แทนราษฎรยุคนายกฯ รักชนก ศรีนอก\"",
             counts: [
-              {{ name: "พรรคก้าวไกล", count: 265, color: "#f97316", side: "แกนนำรัฐบาล" }},
-              {{ name: "พรรคประชาธิปัตย์", count: 60, color: "#06b6d4", side: "พรรคร่วมรัฐบาล" }},
-              {{ name: "พรรคธรรมปัญญา", count: 50, color: "#a855f7", side: "พรรคร่วมรัฐบาล" }},
-              {{ name: "พรรครวมไทยสร้างชาติ", count: 125, color: "#84cc16", side: "ฝ่ายค้าน" }}
+              {{{{ name: "พรรคก้าวไกล", count: 265, color: "#f97316", side: "แกนนำรัฐบาล" }}}},
+              {{{{ name: "พรรคประชาธิปัตย์", count: 60, color: "#06b6d4", side: "พรรคร่วมรัฐบาล" }}}},
+              {{{{ name: "พรรคธรรมปัญญา", count: 50, color: "#a855f7", side: "พรรคร่วมรัฐบาล" }}}},
+              {{{{ name: "พรรครวมไทยสร้างชาติ", count: 125, color: "#84cc16", side: "ฝ่ายค้าน" }}}}
             ]
-          }},
-          "pm-23": {{
+          }}}},
+          "pm-23": {{{{
             label: "👤 นายกฯ คนที่ ๒๓: นภดนัย ชาญวีรกูล (๒๖๓๐-๒๖๓๕)",
             govt_seats: 298,
             opp_seats: 202,
@@ -2684,12 +2684,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             opp_parties: "ก้าวไกล + ประชาธิปัตย์ (๒๐๒ ที่นั่ง)",
             badge: "\"สภาผู้แทนราษฎรยุคนายกฯ นภดนัย ชาญวีรกูล\"",
             counts: [
-              {{ name: "พรรคภูมิใจไทย", count: 165, color: "#3b82f6", side: "แกนนำรัฐบาล" }},
-              {{ name: "พรรคชาติพัฒนา", count: 133, color: "#14b8a6", side: "พรรคร่วมรัฐบาล" }},
-              {{ name: "พรรคก้าวไกล + ประชาธิปัตย์", count: 202, color: "#f97316", side: "ฝ่ายค้าน" }}
+              {{{{ name: "พรรคภูมิใจไทย", count: 165, color: "#3b82f6", side: "แกนนำรัฐบาล" }}}},
+              {{{{ name: "พรรคชาติพัฒนา", count: 133, color: "#14b8a6", side: "พรรคร่วมรัฐบาล" }}}},
+              {{{{ name: "พรรคก้าวไกล + ประชาธิปัตย์", count: 202, color: "#f97316", side: "ฝ่ายค้าน" }}}}
             ]
-          }},
-          "pm-24": {{
+          }}}},
+          "pm-24": {{{{
             label: "👤 นายกฯ คนที่ ๒๔: อนุเจริญ ชาญวีรกูล (๒๖๓๕-๒๖๓๗)",
             govt_seats: 305,
             opp_seats: 195,
@@ -2698,12 +2698,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             opp_parties: "ก้าวไกล + ประชาธิปัตย์ (๑๙๕ ที่นั่ง)",
             badge: "\"สภาผู้แทนราษฎรยุคนายกฯ อนุเจริญ ชาญวีรกูล\"",
             counts: [
-              {{ name: "พรรคหัวใจไทย", count: 170, color: "#1e293b", side: "แกนนำรัฐบาล" }},
-              {{ name: "พรรคชาติพัฒนา", count: 135, color: "#14b8a6", side: "พรรคร่วมรัฐบาล" }},
-              {{ name: "พรรคก้าวไกล + ประชาธิปัตย์", count: 195, color: "#f97316", side: "ฝ่ายค้าน" }}
+              {{{{ name: "พรรคหัวใจไทย", count: 170, color: "#1e293b", side: "แกนนำรัฐบาล" }}}},
+              {{{{ name: "พรรคชาติพัฒนา", count: 135, color: "#14b8a6", side: "พรรคร่วมรัฐบาล" }}}},
+              {{{{ name: "พรรคก้าวไกล + ประชาธิปัตย์", count: 195, color: "#f97316", side: "ฝ่ายค้าน" }}}}
             ]
-          }},
-          "pm-25": {{
+          }}}},
+          "pm-25": {{{{
             label: "👤 นายกฯ คนที่ ๒๕: วิโรจน์ ลักขณาดิศร (๒๖๓๗-ปัจจุบัน)",
             govt_seats: 406,
             opp_seats: 94,
@@ -2712,21 +2712,21 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             opp_parties: "รวมไทยสร้างชาติ (๔๐) + ชาติพัฒนา (๒๕) + ชาติไทย (๑๕) + ความหวังใหม่ (๑๐) + เสรีรวมไทย (๔)",
             badge: "\"สภาผู้แทนราษฎรยุคปัจจุบัน (วิโรจน์ ลักขณาดิศร)\"",
             counts: [
-              {{ name: "พรรคก้าวไกล", count: 151, color: "#f97316", side: "แกนนำรัฐบาล" }},
-              {{ name: "พรรคประชาธิปัตย์", count: 90, color: "#06b6d4", side: "พรรคร่วมรัฐบาล" }},
-              {{ name: "พรรคทักษิประชา", count: 60, color: "#ef4444", side: "พรรคร่วมรัฐบาล" }},
-              {{ name: "พรรคธรรมปัญญา", count: 40, color: "#a855f7", side: "พรรคร่วมรัฐบาล" }},
-              {{ name: "พรรคไทยรักไทย", count: 30, color: "#3b82f6", side: "พรรคร่วมรัฐบาล" }},
-              {{ name: "พรรคกิจสังคม", count: 20, color: "#f59e0b", side: "พรรคร่วมรัฐบาล" }},
-              {{ name: "พรรคระเบียบโลกใหม่", count: 15, color: "#8b5cf6", side: "พรรคร่วมรัฐบาล" }},
-              {{ name: "พรรครวมไทยสร้างชาติ", count: 40, color: "#84cc16", side: "ฝ่ายค้าน" }},
-              {{ name: "พรรคชาติพัฒนา", count: 25, color: "#14b8a6", side: "ฝ่ายค้าน" }},
-              {{ name: "พรรคชาติไทย", count: 15, color: "#eab308", side: "ฝ่ายค้าน" }},
-              {{ name: "พรรคความหวังใหม่", count: 10, color: "#d946ef", side: "ฝ่ายค้าน" }},
-              {{ name: "พรรคเสรีรวมไทย", count: 4, color: "#ec4899", side: "ฝ่ายค้าน" }}
+              {{{{ name: "พรรคก้าวไกล", count: 151, color: "#f97316", side: "แกนนำรัฐบาล" }}}},
+              {{{{ name: "พรรคประชาธิปัตย์", count: 90, color: "#06b6d4", side: "พรรคร่วมรัฐบาล" }}}},
+              {{{{ name: "พรรคทักษิประชา", count: 60, color: "#ef4444", side: "พรรคร่วมรัฐบาล" }}}},
+              {{{{ name: "พรรคธรรมปัญญา", count: 40, color: "#a855f7", side: "พรรคร่วมรัฐบาล" }}}},
+              {{{{ name: "พรรคไทยรักไทย", count: 30, color: "#3b82f6", side: "พรรคร่วมรัฐบาล" }}}},
+              {{{{ name: "พรรคกิจสังคม", count: 20, color: "#f59e0b", side: "พรรคร่วมรัฐบาล" }}}},
+              {{{{ name: "พรรคระเบียบโลกใหม่", count: 15, color: "#8b5cf6", side: "พรรคร่วมรัฐบาล" }}}},
+              {{{{ name: "พรรครวมไทยสร้างชาติ", count: 40, color: "#84cc16", side: "ฝ่ายค้าน" }}}},
+              {{{{ name: "พรรคชาติพัฒนา", count: 25, color: "#14b8a6", side: "ฝ่ายค้าน" }}}},
+              {{{{ name: "พรรคชาติไทย", count: 15, color: "#eab308", side: "ฝ่ายค้าน" }}}},
+              {{{{ name: "พรรคความหวังใหม่", count: 10, color: "#d946ef", side: "ฝ่ายค้าน" }}}},
+              {{{{ name: "พรรคเสรีรวมไทย", count: 4, color: "#ec4899", side: "ฝ่ายค้าน" }}}}
             ]
-          }}
-        }};
+          }}}}
+        }}}};
 
         function switchPMEra(eraId) {{
           const data = pmErasData[eraId];
@@ -2740,7 +2740,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
           const descTextEl = document.getElementById('pm-era-desc-text');
           if (descTextEl) {{
-            descTextEl.innerHTML = 'ผังจำลองการจัดที่นั่งในห้องประชุมสภาผู้แทนราษฎร แสดงจำนวน <strong>๕๐๐ จุด (๕๐๐ ที่นั่ง)</strong> ฝ่ายรัฐบาล (' + data.govt_parties + ' = ' + toThaiNumerals(data.govt_seats) + ' เสียง) และฝ่ายค้าน (' + data.opp_parties + ' = ' + toThaiNumerals(data.opp_seats) + ' เสียง):';
+            descTextEl.innerHTML = 'ผังจำลองการจัดที่นั่งในห้องประชุมสภาผู้แทนราษฎร แสดงจำนวน <strong>๕๐๐ จุด (๕๐๐ ที่นั่ง)</strong> ฝ่ายรัฐบาล (' + data.govt_parties + ' = ' + toThaiNumerals(data.govt_seats) + ' เสียง / ' + toThaiNumerals(govtPct) + '%) และฝ่ายค้าน (' + data.opp_parties + ' = ' + toThaiNumerals(data.opp_seats) + ' เสียง / ' + toThaiNumerals(oppPct) + '%):';
           }}
 
           const summaryEl = document.getElementById('ss-summary-text');
@@ -2779,13 +2779,14 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           dots.forEach((dot, idx) => {{
             if (idx < seatAssignments.length) {{
               const info = seatAssignments[idx];
+              const pPct = ((info.count / 500) * 100).toFixed(1);
               dot.setAttribute('fill', info.color);
-              dot.setAttribute('data-party', info.name + ' (' + toThaiNumerals(info.count) + ' ที่นั่ง)');
+              dot.setAttribute('data-party', info.name + ' (' + toThaiNumerals(info.count) + ' ที่นั่ง / ' + toThaiNumerals(pPct) + '%)');
               dot.setAttribute('data-side', info.side);
               
               const titleEl = dot.querySelector('title');
               if (titleEl) {{
-                titleEl.textContent = 'ลำดับที่ ' + toThaiNumerals(idx + 1) + ': ' + info.name + ' (' + info.side + ')';
+                titleEl.textContent = 'ลำดับที่ ' + toThaiNumerals(idx + 1) + ': ' + info.name + ' (' + info.side + ' - ' + toThaiNumerals(info.count) + ' ที่นั่ง / ' + toThaiNumerals(pPct) + '%)';
               }}
             }}
           }});
@@ -2794,9 +2795,10 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           if (legendContainer) {{
             let legendHtml = '';
             data.counts.forEach(item => {{
+              const pPct = ((item.count / 500) * 100).toFixed(1);
               legendHtml += '<div style="display: flex; align-items: center; gap: 6px;">' +
                             '<span style="width: 12px; height: 12px; background: ' + item.color + '; border-radius: 50%; display: inline-block;"></span>' +
-                            '<strong style="color: ' + item.color + ';">' + item.name + ':</strong> ' + toThaiNumerals(item.count) + ' ที่นั่ง (' + item.side + ')' +
+                            '<strong style="color: ' + item.color + ';">' + item.name + ':</strong> ' + toThaiNumerals(item.count) + ' ที่นั่ง (' + toThaiNumerals(pPct) + '%) (' + item.side + ')' +
                             '</div>';
             }});
             legendContainer.innerHTML = legendHtml;
