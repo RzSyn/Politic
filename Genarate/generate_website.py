@@ -5558,12 +5558,31 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               🌊 โครงการขุดคลองไทยไมตรี (Thai Canal Maitri 1.0 - 2.0)
             </h2>
             <p style="font-size: 13.5px; color: var(--text-muted); line-height: 1.6; margin: 0;">
-              อภิมหาโครงการยุทธศาสตร์ยกระดับประเทศไทยสู่ "ศูนย์กลางการเดินเรือและการโลจิสติกส์ทางทะเลสากลแห่งอินโด-แปซิฟิก" (Indo-Pacific Maritime Hub)
+              อภิมหาโครงการยุทธศาสตร์ยกระดับประเทศไทยสู่ "ศูนย์กลางการเดินเรือและโลจิสติกส์ทางทะเลสากลแห่งอินโด-แปซิฟิก" (Indo-Pacific Maritime Hub) ซึ่งพัฒนาและต่อยอดมาจากตำนานอภิมหาโครงการ <strong>"คลองกระ" (Kra Isthmus Canal / คลองไทย)</strong> ในประวัติศาสตร์และชีวิตจริง
             </p>
           </div>
           <span style="font-size: 12.5px; background: rgba(56, 189, 248, 0.12); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.3); padding: 6px 14px; border-radius: 20px; font-weight: 600; white-space: nowrap;">
             "เชื่อม ๒ มหาสมุทร • สันติภาพ & โลจิสติกส์โลก"
           </span>
+        </div>
+
+        <!-- Historical Context: จากคลองกระสู่คลองไทยไมตรี -->
+        <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(250, 204, 21, 0.3); border-radius: 14px; padding: 20px; margin-bottom: 24px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 8px;">
+            <h4 style="color: var(--gold-light); font-size: 16px; margin: 0; font-family: 'Outfit', sans-serif; font-weight: 700; display: flex; align-items: center; gap: 8px;">
+              <span>📜 ประวัติศาสตร์ในชีวิตจริง: จาก "คลองกระ" (Kra Isthmus Canal) สู่ "คลองไทยไมตรี"</span>
+            </h4>
+            <span style="font-size: 11px; background: rgba(250, 204, 21, 0.15); color: #fef08a; padding: 3px 10px; border-radius: 4px; font-weight: 600;">มรดกยุทธศาสตร์ ๓๐๐ ปี</span>
+          </div>
+
+          <div style="font-size: 13px; color: var(--text-muted); line-height: 1.68;">
+            <p style="margin-bottom: 8px;">
+              ในชีวิตจริง <strong>โครงการคลองไทยไมตรี</strong> คือการต่อยอดอภิมหาโครงการยุทธศาสตร์ <strong>"คลองกระ" (Kra Isthmus Canal)</strong> หรือ <strong>"คลองไทย"</strong> ซึ่งมีแนวคิดและประวัติศาสตร์ยาวนานกว่า ๓๐๐ ปี นับตั้งแต่สมัยสมเด็จพระนารายณ์มหาราชแห่งกรุงศรีอยุธยา (วิศวกรชาวฝรั่งเศส เดอ ลามาร์ เสนอการขุดคอไกร) และสมัยสมเด็จพระบวรราชเจ้ามหาสุรสิงหนาท ในรัชกาลที่ ๑ แห่งกรุงรัตนโกสินทร์ ที่ทรงมีพระราชดำริให้ขุดคลองลัดเชื่อมทะเลอันดามันกับอ่าวไทยเพื่อประโยชน์ทางการทหารและการค้า
+            </p>
+            <p style="margin: 0;">
+              ต่อมาในยุคปัจจุบัน ได้มีการศึกษาแนวเส้นทางขุดคลองหลายแนวทาง โดยแนวเส้นทางที่สมบูรณ์และได้รับการกล่าวขวัญมากที่สุดคือ <strong>"แนว 9A" (กระบี่ - ตรัง - พัทลุง - นครศรีธรรมราช - สงขลา)</strong> ก่อนจะถูกยกระดับวิสัยทัศน์ในโมเดลปฏิรูปให้เป็น <strong>"โครงการคลองไทยไมตรี ๒.๐ (Smart Logistics & Maitri Corridor)"</strong> ที่รวมการจัดการนวัตกรรมประตูกั้นน้ำ สิ่งแวดล้อม และยุทธศาสตร์การค้าเสรีสากลเข้าด้วยกัน
+            </p>
+          </div>
         </div>
 
         <!-- Section 1: วิสัยทัศน์ & ประโยชน์ทางยุทธศาสตร์ ๓ ประการ -->
