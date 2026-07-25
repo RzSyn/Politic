@@ -993,11 +993,12 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         <table class="styled-table">
           <thead>
             <tr style="background: rgba(15, 23, 42, 0.95); color: var(--gold-light);">
-              <th style="width: 150px; padding: 14px 10px; text-align: left;">ฉบับ</th>
-              <th style="width: 100px; text-align: center; padding: 14px 6px;">จัดทำในปี</th>
-              <th style="width: 170px; text-align: center; padding: 14px 8px;">จัดทำในนายก</th>
-              <th style="width: 170px; text-align: center; padding: 14px 8px;">ประกาศใช้ในนายก</th>
-              <th style="width: 130px; text-align: center; padding: 14px 8px;">ขนาด / มาตรา</th>
+              <th style="width: 140px; padding: 14px 10px; text-align: left;">ฉบับ</th>
+              <th style="width: 95px; text-align: center; padding: 14px 6px;">จัดทำในปี</th>
+              <th style="width: 95px; text-align: center; padding: 14px 6px;">ประกาศใช้ในปี</th>
+              <th style="width: 160px; text-align: center; padding: 14px 8px;">จัดทำในนายก</th>
+              <th style="width: 160px; text-align: center; padding: 14px 8px;">ประกาศใช้ในนายก</th>
+              <th style="width: 120px; text-align: center; padding: 14px 8px;">ขนาด / มาตรา</th>
               <th style="padding: 14px 16px; text-align: left;">ที่มาและลักษณะเด่น</th>
             </tr>
           </thead>
@@ -1005,14 +1006,16 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             <tr>
               <td style="font-weight: 700; color: var(--gold-light); font-size: 14px;"><strong>ฉบับปฐมเวลา</strong><br><span style="font-size: 11px; color: var(--text-muted); font-weight: normal;">(พ.ศ. ๒๓๗๕)</span></td>
               <td style="text-align: center; font-weight: 700; color: #e2e8f0; font-size: 13.5px;">พ.ศ. ๒๓๗๕</td>
+              <td style="text-align: center; font-weight: 700; color: #fb923c; font-size: 13.5px;">พ.ศ. ๒๓๗๕</td>
               <td style="text-align: center; font-size: 13px; color: #fca5a5;">ยังไม่มีนายก<br><span style="font-size: 10.5px; color: var(--gold-light);">(ตราโดย ร.๗)</span></td>
               <td style="text-align: center; font-size: 13px; color: #fca5a5;">ยังไม่มีนายก<br><span style="font-size: 10.5px; color: var(--gold-light);">(พระราชทานโดย ร.๗)</span></td>
               <td style="text-align: center; font-weight: 600; color: #fb923c; font-size: 13px;">๕ หมวด<br>๕๐ มาตรา</td>
-              <td style="font-size: 12.5px; color: var(--text-muted); line-height: 1.65;">พระราชทานโดยพระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว (ร.๗) ร่วมกับคณะราษฎรฉบับแรก แบ่งสัดส่วนอำนาจปกครองให้พระมหากษัตริย์ร้อยละ ๖๐ และราษฎรร้อยละ ๔๐ วางรากฐานการเลือกตั้งสภาผู้แทนราษฎรครั้งแรกในสยาม และกำหนดระยะเวลาเตรียมความพร้อมของแผ่นดิน ๔๖ ปี (สามารถดูรายละเอียดพระราชประวัติและพระสมัญญาภิธัยได้ที่แท็บ "พระประชาธิปมหาราช")</td>
+              <td style="font-size: 12.5px; color: var(--text-muted); line-height: 1.65;">พระราชทานโดยพระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว (ร.๗) ร่วมกับคณะราษฎรฉบับแรก แบ่งสัดส่วนอำนาจปกครองให้พระมหากษัตริย์ร้อยละ ๖๐ และราษฎรร้อยละ ๔０ วางรากฐานการเลือกตั้งสภาผู้แทนราษฎรครั้งแรกในสยาม และกำหนดระยะเวลาเตรียมความพร้อมของแผ่นดิน ๔๖ ปี (สามารถดูรายละเอียดพระราชประวัติและพระสมัญญาภิธัยได้ที่แท็บ "พระประชาธิปมหาราช")</td>
             </tr>
             <tr>
               <td style="font-weight: 700; color: #60a5fa; font-size: 14px;"><strong>ฉบับ พ.ศ. ๒๔๔๕</strong><br><span style="font-size: 11px; color: var(--text-muted); font-weight: normal;">(ฉบับถาวรที่สอง)</span></td>
               <td style="text-align: center; font-weight: 700; color: #e2e8f0; font-size: 13.5px;">พ.ศ. ๒๔๔๕</td>
+              <td style="text-align: center; font-weight: 700; color: #60a5fa; font-size: 13.5px;">พ.ศ. ๒๔๔๘</td>
               <td style="text-align: center; font-size: 13px; color: #e2e8f0;">ทักษิณ ชินวัตร<br><span style="font-size: 10.5px; color: var(--text-muted);">(นายกฯ คนที่ ๔)</span></td>
               <td style="text-align: center; font-size: 13px; color: #e2e8f0;">ทักษิณ ชินวัตร<br><span style="font-size: 10.5px; color: var(--text-muted);">(นายกฯ คนที่ ๔)</span></td>
               <td style="text-align: center; font-weight: 600; color: #60a5fa; font-size: 13px;">๑๖ หมวด<br>๔๕๘ มาตรา</td>
@@ -1021,6 +1024,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             <tr>
               <td style="font-weight: 700; color: #4ade80; font-size: 14px;"><strong>ฉบับ พ.ศ. ๒๕๒๕</strong><br><span style="font-size: 11px; color: var(--text-muted); font-weight: normal;">(ฉบับปัจจุบัน)</span></td>
               <td style="text-align: center; font-weight: 700; color: #e2e8f0; font-size: 13.5px;">พ.ศ. ๒๕๒๕</td>
+              <td style="text-align: center; font-weight: 700; color: #4ade80; font-size: 13.5px;">พ.ศ. ๒๕๒๖</td>
               <td style="text-align: center; font-size: 13px; color: #e2e8f0;">อภิสิทธิ์ เวชชาชีวะ<br><span style="font-size: 10.5px; color: var(--text-muted);">(นายกฯ คนที่ ๑๓)</span></td>
               <td style="text-align: center; font-size: 13px; color: #4ade80; font-weight: 600;">สุวัจน์ ลิปตพัลลภ<br><span style="font-size: 10.5px; color: var(--text-muted); font-weight: normal;">(นายกฯ คนที่ ๑๔)</span></td>
               <td style="text-align: center; font-weight: 600; color: #4ade80; font-size: 13px;">๓๘ หมวด<br>๑,๑๕๙ มาตรา</td>
