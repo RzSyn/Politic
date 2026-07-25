@@ -2281,7 +2281,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
 
           <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px; line-height: 1.6;" id="pm-era-desc-text">
-            ผังจำลองการจัดที่นั่งในห้องประชุมสภาผู้แทนราษฎร แสดงจำนวน <strong>๕๐๐ จุด (๕๐๐ ที่นั่ง)</strong> ฝ่ายรัฐบาลผสม ๗ พรรค (ก้าวไกล ๑๕๑ + ประชาธิปัตย์ ๙๐ + ทักษิประชา ๖๐ + ธรรมปัญญา ๔๐ + ไทยรักไทย ๓๐ + กิจสังคม ๒๐ + ระเบียบโลกใหม่ ๑๕ = ๔๐๖ เสียง) และฝ่ายค้าน ๕ พรรค (รวมไทยสร้างชาติ ๔๐ + ชาติพัฒนา ๒๕ + ชาติไทย ๑๕ + ความหวังใหม่ ๑๐ + เสรีรวมไทย ๔ = ๙๔ เสียง):
+            ผังจำลองการจัดที่นั่งในห้องประชุม' + (data.no_senate ? 'สภานิติบัญญัติแห่งชาติ' : 'สภาผู้แทนราษฎร') + ' แสดงจำนวน <strong>' + toThaiNumerals(totalSeats) + ' จุด (' + toThaiNumerals(totalSeats) + ' ที่นั่ง)</strong> ฝ่ายรัฐบาลผสม ๗ พรรค (ก้าวไกล ๑๕๑ + ประชาธิปัตย์ ๙๐ + ทักษิประชา ๖๐ + ธรรมปัญญา ๔๐ + ไทยรักไทย ๓๐ + กิจสังคม ๒๐ + ระเบียบโลกใหม่ ๑๕ = ๔๐๖ เสียง) และฝ่ายค้าน ๕ พรรค (รวมไทยสร้างชาติ ๔๐ + ชาติพัฒนา ๒๕ + ชาติไทย ๑๕ + ความหวังใหม่ ๑๐ + เสรีรวมไทย ๔ = ๙๔ เสียง):
           </p>
 
           <!-- SVG Hemicycle Diagram 500 dots (Balanced spacing) -->
@@ -2302,7 +2302,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
 
         <!-- Section 2: ผังจุดที่นั่ง ส.ว. ๒๐๐ จุด -->
-        <div style="background: rgba(15, 23, 42, 0.8); border: 1px solid rgba(59, 130, 246, 0.3); border-radius: 14px; padding: 24px; margin-bottom: 32px;">
+        <div id="senate-section-wrapper" style="background: rgba(15, 23, 42, 0.8); border: 1px solid rgba(59, 130, 246, 0.3); border-radius: 14px; padding: 24px; margin-bottom: 32px;">
           <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;">
             <h4 style="color: #60a5fa; font-size: 18px; margin: 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
               <span>⚖️ ผังจุดที่นั่งวุฒิสภา (ส.ว.) - ๒๐๐ จุด</span>
@@ -2375,6 +2375,19 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
       <script>
         const pmErasData = {{
           "pm-1": {{
+            no_senate: true,
+            no_senate: true,
+            no_senate: true,
+            no_senate: true,
+            no_senate: true,
+            no_senate: true,
+            no_senate: true,
+            no_senate: true,
+            no_senate: true,
+            no_senate: true,
+            no_senate: true,
+            no_senate: true,
+            no_senate: true,
             label: '👤 นายกฯ คนที่ ๑: ก้อน หุตะสิงห์ (พระยามโนปกรณ์นิติธาดา) (๒๔๒๑-๒๔๒๙)',
             govt_seats: 95,
             opp_seats: 55,
@@ -2383,8 +2396,22 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             opp_parties: "สนช. ฝ่ายค้าน (55 ที่นั่ง)",
             badge: 'สภาผู้แทนราษฎรยุคนายกฯ ก้อน หุตะสิงห์ (พระยามโนปกรณ์นิติธาดา)',
             counts: [
-              {{ name: "สนช. ฝ่ายรัฐบาล", count: 95, color: "#f59e0b", side: "ฝ่ายรัฐบาล" }},
-              {{ name: "สนช. ฝ่ายค้าน", count: 55, color: "#64748b", side: "ฝ่ายค้าน" }},
+              {{ name: "พรรคภูมิใจไทย", count: 118, color: "#22c55e", side: "แกนนำรัฐบาล" }},
+              {{ name: "พรรครวมไทยสร้างชาติ", count: 55, color: "#84cc16", side: "พรรคร่วมรัฐบาล" }},
+              {{ name: "พรรคพลังประชารัฐ", count: 35, color: "#64748b", side: "พรรคร่วมรัฐบาล" }},
+              {{ name: "พรรคชาติพัฒนา", count: 25, color: "#14b8a6", side: "พรรคร่วมรัฐบาล" }},
+              {{ name: "พรรคชาติไทย", count: 22, color: "#eab308", side: "พรรคร่วมรัฐบาล" }},
+              {{ name: "พรรคประชาธิปัตย์", count: 20, color: "#06b6d4", side: "พรรคร่วมรัฐบาล" }},
+              {{ name: "พรรคเพื่อไทย", count: 16, color: "#dc2626", side: "พรรคร่วมรัฐบาล" }},
+              {{ name: "พรรคกิจสังคม", count: 14, color: "#f59e0b", side: "พรรคร่วมรัฐบาล" }},
+              {{ name: "พรรคก้าวไกล", count: 78, color: "#f97316", side: "ฝ่ายค้าน" }},
+              {{ name: "พรรคทักษิประชา", count: 30, color: "#ef4444", side: "ฝ่ายค้าน" }},
+              {{ name: "พรรคธรรมปัญญา", count: 25, color: "#a855f7", side: "ฝ่ายค้าน" }},
+              {{ name: "พรรคไทยรักไทย", count: 20, color: "#3b82f6", side: "ฝ่ายค้าน" }},
+              {{ name: "พรรคระเบียบโลกใหม่", count: 15, color: "#8b5cf6", side: "ฝ่ายค้าน" }},
+              {{ name: "พรรคเสรีรวมไทย", count: 12, color: "#ec4899", side: "ฝ่ายค้าน" }},
+              {{ name: "พรรคความหวังใหม่", count: 8, color: "#d946ef", side: "ฝ่ายค้าน" }},
+              {{ name: "พรรคอื่นๆ", count: 7, color: "#78716c", side: "ฝ่ายค้าน" }}
             ]
           }},
           "pm-2": {{
@@ -2698,7 +2725,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             opp_parties: "พรรครวมไทยสร้างชาติ + พรรคพลังประชารัฐ + พรรคชาติพัฒนา + พรรคชาติไทย + พรรคภูมิใจไทย + พรรคเพื่อไทย + พรรคความหวังใหม่ + พรรคอื่นๆ (190 ที่นั่ง)",
             badge: 'สภาผู้แทนราษฎรยุคนายกฯ ธนาธร จึงรุ่งเรืองกิจ',
             counts: [
-              {{ name: "พรรคก้าวไกล", count: 128, color: "#f97316", side: "แกนนำรัฐบาล" }},
+              {{ name: "พรรคอนาคตใหม่", count: 128, color: "#f97316", side: "แกนนำรัฐบาล" }},
               {{ name: "พรรคทักษิประชา", count: 45, color: "#ef4444", side: "พรรคร่วมรัฐบาล" }},
               {{ name: "พรรคธรรมปัญญา", count: 35, color: "#a855f7", side: "พรรคร่วมรัฐบาล" }},
               {{ name: "พรรคไทยรักไทย", count: 30, color: "#3b82f6", side: "พรรคร่วมรัฐบาล" }},
@@ -2826,8 +2853,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           }},
           "pm-21": {{
             label: '👤 นายกฯ คนที่ ๒๑: วิสุทธิ์ คมณรัตน์ (๒๖๑๒-๒๖๑๔)',
-            govt_seats: 260,
-            opp_seats: 240,
+            govt_seats: 350,
+            opp_seats: 150,
             desc: "ตัวแทนพรรคประชาปิติวัติโครงสร้างไร้ศูนย์กลาง พยายามแก้ไขรัฐธรรมนูญผ่านช่องโหว่พระบาทสมเด็จพระมหาภูมิพลมหาราช (ร.๙) ไม่ทรงลงพระปรมาภิไธย โดยมีเป้าหมายแฝงเพื่อลดทอนอำนาจรัฐส่วนกลางและสถาบันฯ พร้อมแทรกแซงสภาด้วยทุนต่างชาติ ทว่าเขาต้องพ้นจากตำแหน่งหลังจากเผชิญกับ 'ปฏิบัติการรุ่งอรุณ ๒๒๐' (Operation Dawn 220) นำโดยอดีตนายกฯ พริษฐ์ วัชรสินธุ และไตรทิศา รณปวัตน์ ซึ่งได้ยื่นหลักฐานความทุจริตเชิงลึกและพฤติการณ์รวบอำนาจ (นิติประหารสภา) ต่อศาลรัฐธรรมนูญ ส่งผลให้ศาลรัฐธรรมนูญมีมติเอกฉันท์ ๖ ต่อ ๐ สั่งให้พ้นจากตำแหน่ง บีบให้ลงนามลาออกและยุบสภาไปในที่สุดเนื่องจากหมดทางออก",
             govt_parties: "พรรคก้าวไกล + พรรคทักษิประชา + พรรคธรรมปัญญา + พรรคไทยรักไทย + พรรคประชาธิปัตย์ + พรรคกิจสังคม + พรรคระเบียบโลกใหม่ + พรรคเสรีรวมไทย (260 ที่นั่ง)",
             opp_parties: "พรรครวมไทยสร้างชาติ + พรรคพลังประชารัฐ + พรรคชาติพัฒนา + พรรคชาติไทย + พรรคภูมิใจไทย + พรรคเพื่อไทย + พรรคความหวังใหม่ + พรรคอื่นๆ (240 ที่นั่ง)",
@@ -2965,15 +2992,16 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           const data = pmErasData[eraId];
           if (!data) return;
 
-          const govtPct = ((data.govt_seats / 500) * 100).toFixed(1);
-          const oppPct = ((data.opp_seats / 500) * 100).toFixed(1);
+          const totalSeats = data.govt_seats + data.opp_seats;
+          const govtPct = ((data.govt_seats / totalSeats) * 100).toFixed(1);
+          const oppPct = ((data.opp_seats / totalSeats) * 100).toFixed(1);
 
           const eraBadgeEl = document.getElementById('era-badge-title');
           if (eraBadgeEl) eraBadgeEl.textContent = data.badge.replace(/^"|"$/g, '');
 
           const descTextEl = document.getElementById('pm-era-desc-text');
           if (descTextEl) {{
-            descTextEl.innerHTML = 'ผังจำลองการจัดที่นั่งในห้องประชุมสภาผู้แทนราษฎร แสดงจำนวน <strong>๕๐๐ จุด (๕๐๐ ที่นั่ง)</strong> ฝ่ายรัฐบาล (' + data.govt_parties + ' = ' + toThaiNumerals(data.govt_seats) + ' เสียง / ' + toThaiNumerals(govtPct) + '%) และฝ่ายค้าน (' + data.opp_parties + ' = ' + toThaiNumerals(data.opp_seats) + ' เสียง / ' + toThaiNumerals(oppPct) + '%):';
+            descTextEl.innerHTML = 'ผังจำลองการจัดที่นั่งในห้องประชุม' + (data.no_senate ? 'สภานิติบัญญัติแห่งชาติ' : 'สภาผู้แทนราษฎร') + ' แสดงจำนวน <strong>' + toThaiNumerals(totalSeats) + ' จุด (' + toThaiNumerals(totalSeats) + ' ที่นั่ง)</strong> ฝ่ายรัฐบาล (' + data.govt_parties + ' = ' + toThaiNumerals(data.govt_seats) + ' เสียง / ' + toThaiNumerals(govtPct) + '%) และฝ่ายค้าน (' + data.opp_parties + ' = ' + toThaiNumerals(data.opp_seats) + ' เสียง / ' + toThaiNumerals(oppPct) + '%):';
           }}
 
           const summaryEl = document.getElementById('ss-summary-text');
@@ -3012,7 +3040,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           dots.forEach((dot, idx) => {{
             if (idx < seatAssignments.length) {{
               const info = seatAssignments[idx];
-              const pPct = ((info.count / 500) * 100).toFixed(1);
+              const pPct = ((info.count / totalSeats) * 100).toFixed(1);
               dot.setAttribute('fill', info.color);
               dot.setAttribute('data-party', info.name + ' (' + toThaiNumerals(info.count) + ' ที่นั่ง / ' + toThaiNumerals(pPct) + '%)');
               dot.setAttribute('data-side', info.side);
@@ -3024,11 +3052,18 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             }}
           }});
 
+          
+          // ซ่อน/แสดง สว. ตามยุค
+          const senateSection = document.getElementById('senate-section-wrapper');
+          if (senateSection) {{
+            senateSection.style.display = data.no_senate ? 'none' : '';
+          }}
+
           const legendContainer = document.getElementById('mp-legend-container') || document.getElementById('mp-color-legends');
           if (legendContainer) {{
             let legendHtml = '';
             data.counts.forEach(item => {{
-              const pPct = ((item.count / 500) * 100).toFixed(1);
+              const pPct = ((item.count / totalSeats) * 100).toFixed(1);
               legendHtml += '<div style="display: flex; align-items: center; gap: 6px;">' +
                             '<span style="width: 12px; height: 12px; background: ' + item.color + '; border-radius: 50%; display: inline-block;"></span>' +
                             '<strong style="color: ' + item.color + ';">' + item.name + ':</strong> ' + toThaiNumerals(item.count) + ' ที่นั่ง (' + toThaiNumerals(pPct) + '%) (' + item.side + ')' +
