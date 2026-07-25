@@ -2208,9 +2208,9 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           <table class="styled-table" style="width: 100%; border-collapse: collapse;">
             <thead>
               <tr style="background: rgba(15, 23, 42, 0.9); color: var(--gold-light);">
-                <th style="width: 50px; text-align: center; padding: 12px 6px;">ลำดับ</th>
+                <th style="width: 1px; text-align: center; padding: 12px 4px; white-space: nowrap;">ลำดับ</th>
                 <th style="width: 295px; text-align: center; padding: 12px 6px;">ตราโลโก้</th>
-                <th style="width: 195px; padding: 12px 8px; text-align: left;">ชื่อกระทรวง</th>
+                <th style="width: 230px; padding: 12px 8px; text-align: left;">ชื่อกระทรวง</th>
                 <th style="width: 115px; text-align: center; padding: 12px 6px;">ประเภทโครงสร้าง</th>
                 <th style="padding: 12px; width: 36%;">💡 ทำมาทำไม (ที่มาและความจำเป็น)</th>
                 <th style="padding: 12px; width: 44%;">🎯 มีหน้าที่อะไร (พันธกิจหลัก)</th>
@@ -2219,7 +2219,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             <tbody>
               <!-- ๑. สำนักนายกรัฐมนตรี -->
               <tr class="ministry-row" data-category="core">
-                <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๑</td>
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0; padding: 8px 2px;">๑</td>
                 <td style="text-align: center; padding: 8px;">
                   <div style="width: 285px; height: 285px; background: #ffffff; border: 2.5px solid rgba(250, 204, 21, 0.6); border-radius: 16px; padding: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
                     <img src="images/ministry_1.png" alt="โลโก้กระทรวง ลำดับที่ ๑" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
@@ -2235,7 +2235,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- ๒. กระทรวงกลาโหม -->
               <tr class="ministry-row" data-category="core">
-                <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๒</td>
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0; padding: 8px 2px;">๒</td>
                 <td style="text-align: center; padding: 8px;">
                   <div style="width: 285px; height: 285px; background: #ffffff; border: 2.5px solid rgba(250, 204, 21, 0.6); border-radius: 16px; padding: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
                     <img src="images/ministry_2.png" alt="โลโก้กระทรวง ลำดับที่ ๒" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
@@ -2251,7 +2251,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- ๓. กระทรวงการคลัง -->
               <tr class="ministry-row" data-category="core">
-                <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๓</td>
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0; padding: 8px 2px;">๓</td>
                 <td style="text-align: center; padding: 8px;">
                   <div style="width: 285px; height: 285px; background: #ffffff; border: 2.5px solid rgba(250, 204, 21, 0.6); border-radius: 16px; padding: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
                     <img src="images/ministry_3.png" alt="โลโก้กระทรวง ลำดับที่ ๓" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
@@ -2267,7 +2267,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- ๔. กระทรวงการต่างประเทศ -->
               <tr class="ministry-row" data-category="core">
-                <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๔</td>
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0; padding: 8px 2px;">๔</td>
                 <td style="text-align: center; padding: 8px;">
                   <div style="width: 285px; height: 285px; background: #ffffff; border: 2.5px solid rgba(250, 204, 21, 0.6); border-radius: 16px; padding: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
                     <img src="images/ministry_4.png" alt="โลโก้กระทรวง ลำดับที่ ๔" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
@@ -2283,7 +2283,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- ๕. กระทรวงการท่องเที่ยวและกีฬา -->
               <tr class="ministry-row" data-category="core">
-                <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๕</td>
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0; padding: 8px 2px;">๕</td>
                 <td style="text-align: center; padding: 8px;">
                   <div style="width: 285px; height: 285px; background: #ffffff; border: 2.5px solid rgba(250, 204, 21, 0.6); border-radius: 16px; padding: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
                     <img src="images/ministry_5.png" alt="โลโก้กระทรวง ลำดับที่ ๕" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
@@ -2299,7 +2299,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- ๖. กระทรวงเกษตรและสหกรณ์ -->
               <tr class="ministry-row" data-category="core">
-                <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๖</td>
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0; padding: 8px 2px;">๖</td>
                 <td style="text-align: center; padding: 8px;">
                   <div style="width: 285px; height: 285px; background: #ffffff; border: 2.5px solid rgba(250, 204, 21, 0.6); border-radius: 16px; padding: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
                     <img src="images/ministry_6.png" alt="โลโก้กระทรวง ลำดับที่ ๖" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
@@ -2315,7 +2315,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- ๗. กระทรวงคมนาคม -->
               <tr class="ministry-row" data-category="core">
-                <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๗</td>
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0; padding: 8px 2px;">๗</td>
                 <td style="text-align: center; padding: 8px;">
                   <div style="width: 285px; height: 285px; background: #ffffff; border: 2.5px solid rgba(250, 204, 21, 0.6); border-radius: 16px; padding: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
                     <img src="images/ministry_7.png" alt="โลโก้กระทรวง ลำดับที่ ๗" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
@@ -2331,7 +2331,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- ๘. กระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม -->
               <tr class="ministry-row" data-category="core">
-                <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๘</td>
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0; padding: 8px 2px;">๘</td>
                 <td style="text-align: center; padding: 8px;">
                   <div style="width: 285px; height: 285px; background: #ffffff; border: 2.5px solid rgba(250, 204, 21, 0.6); border-radius: 16px; padding: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
                     <img src="images/ministry_8.png" alt="โลโก้กระทรวง ลำดับที่ ๘" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
@@ -2347,7 +2347,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- ๙. กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม -->
               <tr class="ministry-row" data-category="core">
-                <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๙</td>
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0; padding: 8px 2px;">๙</td>
                 <td style="text-align: center; padding: 8px;">
                   <div style="width: 285px; height: 285px; background: #ffffff; border: 2.5px solid rgba(250, 204, 21, 0.6); border-radius: 16px; padding: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
                     <img src="images/ministry_9.png" alt="โลโก้กระทรวง ลำดับที่ ๙" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
@@ -2363,7 +2363,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- ๑๐. กระทรวงพลังงาน -->
               <tr class="ministry-row" data-category="core">
-                <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๑๐</td>
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0; padding: 8px 2px;">๑๐</td>
                 <td style="text-align: center; padding: 8px;">
                   <div style="width: 285px; height: 285px; background: #ffffff; border: 2.5px solid rgba(250, 204, 21, 0.6); border-radius: 16px; padding: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
                     <img src="images/ministry_10.png" alt="โลโก้กระทรวง ลำดับที่ ๑๐" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
@@ -2379,7 +2379,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- ๑๑. กระทรวงพาณิชย์ -->
               <tr class="ministry-row" data-category="core">
-                <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๑๑</td>
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0; padding: 8px 2px;">๑๑</td>
                 <td style="text-align: center; padding: 8px;">
                   <div style="width: 285px; height: 285px; background: #ffffff; border: 2.5px solid rgba(250, 204, 21, 0.6); border-radius: 16px; padding: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
                     <img src="images/ministry_11.png" alt="โลโก้กระทรวง ลำดับที่ ๑๑" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
@@ -2395,7 +2395,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- ๑๒. กระทรวงมหาดไทย -->
               <tr class="ministry-row" data-category="core">
-                <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๑๒</td>
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0; padding: 8px 2px;">๑๒</td>
                 <td style="text-align: center; padding: 8px;">
                   <div style="width: 285px; height: 285px; background: #ffffff; border: 2.5px solid rgba(250, 204, 21, 0.6); border-radius: 16px; padding: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
                     <img src="images/ministry_12.png" alt="โลโก้กระทรวง ลำดับที่ ๑๒" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
@@ -2411,7 +2411,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- ๑๓. กระทรวงยุติธรรม -->
               <tr class="ministry-row" data-category="core">
-                <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๑๓</td>
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0; padding: 8px 2px;">๑๓</td>
                 <td style="text-align: center; padding: 8px;">
                   <div style="width: 285px; height: 285px; background: #ffffff; border: 2.5px solid rgba(250, 204, 21, 0.6); border-radius: 16px; padding: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
                     <img src="images/ministry_13.png" alt="โลโก้กระทรวง ลำดับที่ ๑๓" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
@@ -2427,7 +2427,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- ๑๔. กระทรวงแรงงานและสวัสดิการสังคม -->
               <tr class="ministry-row" data-category="reformed">
-                <td style="text-align: center; font-weight: 700; color: #60a5fa;">๑๔</td>
+                <td style="text-align: center; font-weight: 700; color: #60a5fa; padding: 8px 2px;">๑๔</td>
                 <td style="text-align: center; padding: 8px;">
                   <div style="width: 285px; height: 285px; background: #ffffff; border: 2.5px solid rgba(250, 204, 21, 0.6); border-radius: 16px; padding: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
                     <img src="images/ministry_14.png" alt="โลโก้กระทรวง ลำดับที่ ๑๔" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
@@ -2446,7 +2446,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- ๑๕. กระทรวงวัฒนธรรม -->
               <tr class="ministry-row" data-category="core">
-                <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๑๕</td>
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0; padding: 8px 2px;">๑๕</td>
                 <td style="text-align: center; padding: 8px;">
                   <div style="width: 285px; height: 285px; background: #ffffff; border: 2.5px solid rgba(250, 204, 21, 0.6); border-radius: 16px; padding: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
                     <img src="images/ministry_15.png" alt="โลโก้กระทรวง ลำดับที่ ๑๕" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
@@ -2462,7 +2462,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- ๑๖. กระทรวงศึกษาธิการ -->
               <tr class="ministry-row" data-category="reformed">
-                <td style="text-align: center; font-weight: 700; color: #fb923c;">๑๖</td>
+                <td style="text-align: center; font-weight: 700; color: #fb923c; padding: 8px 2px;">๑๖</td>
                 <td style="text-align: center; padding: 8px;">
                   <div style="width: 285px; height: 285px; background: #ffffff; border: 2.5px solid rgba(250, 204, 21, 0.6); border-radius: 16px; padding: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
                     <img src="images/ministry_16.png" alt="โลโก้กระทรวง ลำดับที่ ๑๖" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
@@ -2481,7 +2481,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- ๑๗. กระทรวงสาธารณสุข -->
               <tr class="ministry-row" data-category="core">
-                <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๑๗</td>
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0; padding: 8px 2px;">๑๗</td>
                 <td style="text-align: center; padding: 8px;">
                   <div style="width: 285px; height: 285px; background: #ffffff; border: 2.5px solid rgba(250, 204, 21, 0.6); border-radius: 16px; padding: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
                     <img src="images/ministry_17.png" alt="โลโก้กระทรวง ลำดับที่ ๑๗" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
@@ -2497,7 +2497,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- ๑๘. กระทรวงอุตสาหกรรม -->
               <tr class="ministry-row" data-category="core">
-                <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๑๘</td>
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0; padding: 8px 2px;">๑๘</td>
                 <td style="text-align: center; padding: 8px;">
                   <div style="width: 285px; height: 285px; background: #ffffff; border: 2.5px solid rgba(250, 204, 21, 0.6); border-radius: 16px; padding: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
                     <img src="images/ministry_18.png" alt="โลโก้กระทรวง ลำดับที่ ๑๘" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
@@ -2513,7 +2513,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- ๑๙. กระทรวงนวัตกรรมและเทคโนโลยี -->
               <tr class="ministry-row" data-category="reformed">
-                <td style="text-align: center; font-weight: 700; color: #c084fc;">๑๙</td>
+                <td style="text-align: center; font-weight: 700; color: #c084fc; padding: 8px 2px;">๑๙</td>
                 <td style="text-align: center; padding: 8px;">
                   <div style="width: 285px; height: 285px; background: #ffffff; border: 2.5px solid rgba(250, 204, 21, 0.6); border-radius: 16px; padding: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
                     <img src="images/ministry_19.png" alt="โลโก้กระทรวง ลำดับที่ ๑๙" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
@@ -2532,7 +2532,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- ๒๐. กระทรวงทรัพย์สินทางปัญญาและเศรษฐกิจสร้างสรรค์ -->
               <tr class="ministry-row" data-category="new">
-                <td style="text-align: center; font-weight: 700; color: #facc15;">๒๐</td>
+                <td style="text-align: center; font-weight: 700; color: #facc15; padding: 8px 2px;">๒๐</td>
                 <td style="text-align: center; padding: 8px;">
                   <div style="width: 285px; height: 285px; background: #ffffff; border: 2.5px solid rgba(250, 204, 21, 0.6); border-radius: 16px; padding: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
                     <img src="images/ministry_20.png" alt="โลโก้กระทรวง ลำดับที่ ๒๐" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
@@ -2548,7 +2548,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
               <!-- ๒๑. กระทรวงหลักประกันและความเป็นธรรมทางสังคม -->
               <tr class="ministry-row" data-category="new">
-                <td style="text-align: center; font-weight: 700; color: #4ade80;">๒๑</td>
+                <td style="text-align: center; font-weight: 700; color: #4ade80; padding: 8px 2px;">๒๑</td>
                 <td style="text-align: center; padding: 8px;">
                   <div style="width: 285px; height: 285px; background: #ffffff; border: 2.5px solid rgba(250, 204, 21, 0.6); border-radius: 16px; padding: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
                     <img src="images/ministry_21.png" alt="โลโก้กระทรวง ลำดับที่ ๒๑" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
