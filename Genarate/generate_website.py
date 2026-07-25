@@ -687,6 +687,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           <button class="db-tab-btn" onclick="switchTab('paradox-ai-tab', this)">🤖 โครงการ ParadoxAI / ParadoxForward</button>
           <button class="db-tab-btn" onclick="switchTab('khonlalike-tab', this)">🎨 โครงการคนละไลค์ (SIN ARCHIVE & Creators)</button>
           <button class="db-tab-btn" onclick="switchTab('bancc-tab', this)">🏛️ ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช (BANCC)</button>
+          <button class="db-tab-btn" onclick="switchTab('thai-canal-tab', this)">🌊 โครงการคลองไทยไมตรี (Thai Canal 1.0-2.0)</button>
         </div>
       </div>
 
@@ -5543,6 +5544,141 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
       </div>
     </div>
 <!-- Tab 6.8: โครงการ ParadoxAI / ParadoxForward -->
+    <!-- แท็บ ๖.๑๑: โครงการคลองไทยไมตรี (Thai Canal 1.0-2.0) -->
+    <div id="thai-canal-tab" class="db-tab-content">
+      <div style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.95)); border: 1px solid rgba(56, 189, 248, 0.35); border-radius: 16px; padding: 28px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); backdrop-filter: blur(12px);">
+
+        <!-- Header Section -->
+        <div style="border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 18px; margin-bottom: 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <div style="display: inline-block; background: rgba(56, 189, 248, 0.15); border: 1px solid rgba(56, 189, 248, 0.4); color: #38bdf8; font-size: 11.5px; font-weight: 700; padding: 4px 12px; border-radius: 6px; margin-bottom: 8px;">
+              MEGA-INFRASTRUCTURE PROJECT // THAI CANAL MAITRI MODEL (1.0 - 2.0)
+            </div>
+            <h2 style="color: #38bdf8; font-size: 24px; font-weight: 800; margin: 0 0 6px 0; font-family: 'Outfit', sans-serif;">
+              🌊 โครงการขุดคลองไทยไมตรี (Thai Canal Maitri 1.0 - 2.0)
+            </h2>
+            <p style="font-size: 13.5px; color: var(--text-muted); line-height: 1.6; margin: 0;">
+              อภิมหาโครงการยุทธศาสตร์ยกระดับประเทศไทยสู่ "ศูนย์กลางการเดินเรือและการโลจิสติกส์ทางทะเลสากลแห่งอินโด-แปซิฟิก" (Indo-Pacific Maritime Hub)
+            </p>
+          </div>
+          <span style="font-size: 12.5px; background: rgba(56, 189, 248, 0.12); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.3); padding: 6px 14px; border-radius: 20px; font-weight: 600; white-space: nowrap;">
+            "เชื่อม ๒ มหาสมุทร • สันติภาพ & โลจิสติกส์โลก"
+          </span>
+        </div>
+
+        <!-- Section 1: วิสัยทัศน์ & ประโยชน์ทางยุทธศาสตร์ ๓ ประการ -->
+        <div style="margin-bottom: 28px;">
+          <h4 style="color: #38bdf8; font-size: 16.5px; margin: 0 0 16px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
+            <span>🌐 วิสัยทัศน์และศักยภาพการเชื่อมต่อ ๒ มหาสมุทร</span>
+          </h4>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(56, 189, 248, 0.25); border-radius: 12px; padding: 18px;">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                <span style="font-size: 24px;">🛳️</span>
+                <h5 style="color: #7dd3fc; font-size: 15px; margin: 0; font-weight: 700;">ย่อระยะทางและเวลาเดินเรือ</h5>
+              </div>
+              <p style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6; margin: 0;">
+                ประหยัดระยะทางเดินเรือ ๑,๒๐๐ - ๑,๔๐０ กิโลเมตร ลดเวลาเดินทาง ๒.๕ - ๔ วัน โดยไม่ต้องอ้อมผ่านช่องแคบมะละกาที่แออัด ประหยัดค่าน้ำมันเชื้อเพลิงเรือสินค้ามหาศาล
+              </p>
+            </div>
+
+            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(74, 222, 128, 0.25); border-radius: 12px; padding: 18px;">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                <span style="font-size: 24px;">🏭</span>
+                <h5 style="color: #4ade80; font-size: 15px; margin: 0; font-weight: 700;">เขตเศรษฐกิจพิเศษ (TCSEZ)</h5>
+              </div>
+              <p style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6; margin: 0;">
+                จัดตั้งเขตเศรษฐกิจพิเศษคลองไทย ขนานตลอดแนวคลอง รองรับอุตสาหกรรมต่อเรือ-ซ่อมเรือ ท่าเรือคอนเทนเนอร์ระดับโลก คลังสินค้าทรานสิพเมนต์ และเขตปลอดภาษี
+              </p>
+            </div>
+
+            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(250, 204, 21, 0.25); border-radius: 12px; padding: 18px;">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                <span style="font-size: 24px;">🕊️</span>
+                <h5 style="color: #facc15; font-size: 15px; margin: 0; font-weight: 700;">หลักการไมตรี & ความเป็นกลาง</h5>
+              </div>
+              <p style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6; margin: 0;">
+                เปิดเสรีการเดินเรือแก่เรือพาณิชย์ทุกชาติภายใต้หลัก "คลองไทยไมตรี" ห้ามใช้เป็นฐานทัพหรือการคุกคามทางทหาร ยึดมั่นความเป็นกลางและสัญญาสากล
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 2: เปรียบเทียบคลองไทย 1.0 vs คลองไทย 2.0 (ParadoxAI Reform Model) -->
+        <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 14px; padding: 22px; margin-bottom: 24px;">
+          <h4 style="color: #38bdf8; font-size: 16.5px; margin: 0 0 16px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
+            <span>⚡ เปรียบเทียบพัฒนาการ: คลองไทย 1.0 (แนวคิดเดิม) VS คลองไทย 2.0 (โมเดลปฏิรูป ParadoxAI)</span>
+          </h4>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px;">
+            
+            <!-- คลองไทย 1.0 -->
+            <div style="background: rgba(30, 41, 59, 0.5); border: 1px solid rgba(148, 163, 184, 0.3); border-radius: 12px; padding: 18px;">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 8px;">
+                <h5 style="color: #cbd5e1; font-size: 15.5px; margin: 0; font-weight: 700;">🌊 คลองไทย 1.0 (แนวคิดดั้งเดิม 9A)</h5>
+                <span style="font-size: 11px; background: rgba(148, 163, 184, 0.2); color: #e2e8f0; padding: 3px 8px; border-radius: 4px;">แนวทางกายภาพ</span>
+              </div>
+              <div style="font-size: 12.5px; color: var(--text-muted); line-height: 1.65;">
+                <p style="margin-bottom: 8px;"><strong style="color: #e2e8f0;">📍 แนวเส้นทาง:</strong> แนว 9A ตัดผ่าน กระบี่ - ตรัง - พัทลุง - นครศรีธรรมราช - สงขลา (ความยาวประมาณ ๑๒๘ กิโลเมตร)</p>
+                <p style="margin-bottom: 8px;"><strong style="color: #e2e8f0;">📐 ขนาดคลอง:</strong> ขุดเปิดระดับน้ำทะเล (Sea-level Canal) ความกว้าง ๔๐０ เมตร ลึก ๒๖ เมตร</p>
+                <p style="margin-bottom: 8px;"><strong style="color: #e2e8f0;">🎯 เป้าหมายหลัก:</strong> เน้นการขุดช่องทางเดินเรือเพื่อย่อระยะทางและสร้างท่าเรือน้ำลึก ๒ ฝั่งทะเล</p>
+                <p style="margin: 0;"><strong style="color: #f87171;">⚠️ ข้อกังวลเดิม:</strong> ผลกระทบการแบ่งแยกแผ่นดิน, การปนเปื้อนของน้ำเค็มสู่น้ำใต้ดินเกษตรกรรม และงบประมาณสูง</p>
+              </div>
+            </div>
+
+            <!-- คลองไทย 2.0 -->
+            <div style="background: rgba(30, 41, 59, 0.5); border: 1px solid rgba(56, 189, 248, 0.4); border-radius: 12px; padding: 18px; background: rgba(56, 189, 248, 0.05);">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; border-bottom: 1px solid rgba(56, 189, 248, 0.2); padding-bottom: 8px;">
+                <h5 style="color: #38bdf8; font-size: 15.5px; margin: 0; font-weight: 700;">🚀 คลองไทย 2.0 (Smart Logistics Corridor)</h5>
+                <span style="font-size: 11px; background: rgba(56, 189, 248, 0.25); color: #7dd3fc; padding: 3px 8px; border-radius: 4px; font-weight: 700;">ParadoxAI Reform</span>
+              </div>
+              <div style="font-size: 12.5px; color: var(--text-muted); line-height: 1.65;">
+                <p style="margin-bottom: 8px;"><strong style="color: #7dd3fc;">🔒 ระบบประตูกั้นน้ำอัจฉริยะ (Saltwater Lock System):</strong> ควบคุมการปนเปื้อนน้ำเค็ม 100% พร้อมอุโมงค์ส่งน้ำจืดใต้คลองรักษาเกษตรกรรม</p>
+                <p style="margin-bottom: 8px;"><strong style="color: #7dd3fc;">🚆 ระเบียงโลจิสติกส์ผสมผสาน (Multi-Modal Corridor):</strong> สร้างสะพานเชื่อมแผ่นดินไร้รอยต่อ + รถไฟความเร็วสูงขนส่งสินค้า + ท่อส่งพลังงาน Green Hydrogen</p>
+                <p style="margin-bottom: 8px;"><strong style="color: #7dd3fc;">🤖 AI จราจรเรือ (ThaiJavis Routing):</strong> ระบบจัดจราจรเรืออัตโนมัติ ๒๔ ชม. รองรับเรือสินค้า ๕๐,๐๐๐ ลำ/ปี</p>
+                <p style="margin: 0;"><strong style="color: #4ade80;">✅ นิเวศและสังคม:</strong> พัฒนาเมืองใหม่คู่ขนาน คุ้มครองสิทธิชาวบ้านและสิ่งแวดล้อมทางทะเล</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Section 3: สถิติยุทธศาสตร์ & ผลกระทบทางเศรษฐกิจ -->
+        <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(250, 204, 21, 0.25); border-radius: 14px; padding: 22px;">
+          <h4 style="color: var(--gold-light); font-size: 16px; margin: 0 0 16px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
+            <span>📊 ตัวเลขดรรชนียุทธศาสตร์และมูลค่าทางเศรษฐกิจ (Strategic Impact)</span>
+          </h4>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; text-align: center;">
+            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 14px;">
+              <div style="font-size: 24px; font-weight: 800; color: #38bdf8; font-family: 'Outfit', sans-serif;">๑,๒๐๐ กม.</div>
+              <div style="font-size: 12px; font-weight: 700; color: #e2e8f0; margin: 4px 0;">ประหยัดระยะทาง</div>
+              <div style="font-size: 11px; color: var(--text-muted);">ลดเวลาเดินเรือ ๒.๕ - ๔ วัน</div>
+            </div>
+
+            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 14px;">
+              <div style="font-size: 24px; font-weight: 800; color: #4ade80; font-family: 'Outfit', sans-serif;">๕๐,๐๐๐ ลำ</div>
+              <div style="font-size: 12px; font-weight: 700; color: #e2e8f0; margin: 4px 0;">ปริมาณเรือต่อปี</div>
+              <div style="font-size: 11px; color: var(--text-muted);">รองรับเรือ ULCV ขนาดใหญ่สุด</div>
+            </div>
+
+            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 14px;">
+              <div style="font-size: 24px; font-weight: 800; color: #facc15; font-family: 'Outfit', sans-serif;">๕๐๐,๐๐๐</div>
+              <div style="font-size: 12px; font-weight: 700; color: #e2e8f0; margin: 4px 0;">การสร้างงานใหม่</div>
+              <div style="font-size: 11px; color: var(--text-muted);">ตำแหน่งงานทักษะสูงในภูมิภาค</div>
+            </div>
+
+            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 14px;">
+              <div style="font-size: 24px; font-weight: 800; color: #c084fc; font-family: 'Outfit', sans-serif;">๒.๕ ล้านล้าน</div>
+              <div style="font-size: 12px; font-weight: 700; color: #e2e8f0; margin: 4px 0;">เม็ดเงินลงทุนสะสม</div>
+              <div style="font-size: 11px; color: var(--text-muted);">กระตุ้น GDP ประเทศ +๒.๒%/ปี</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
     <div id="paradox-ai-tab" class="db-tab-content">
       <style>
         #paradox-ai-tab {{
