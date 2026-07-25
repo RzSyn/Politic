@@ -242,6 +242,7 @@
           <span>🏛️ ๓. การเมือง การปกครอง & สัญลักษณ์ชาติ</span>
         </div>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px;">
+          <button class="db-tab-btn" onclick="switchTab('judiciary-tab', this)">⚖️ ฝ่ายตุลาการ (ศาลไทย)</button>
           <button class="db-tab-btn" onclick="switchTab('legislative-tab', this)">⚖️ ฝ่ายนิติบัญญัติ (รัฐสภา)</button>
           <button class="db-tab-btn" onclick="switchTab('pms-tab', this)">ทำเนียบนายกรัฐมนตรี (๒๕ ท่าน)</button>
           <button class="db-tab-btn" onclick="switchTab('parties-tab', this)">🗳️ พรรคการเมือง</button>
@@ -1398,6 +1399,179 @@
 
     
     <!-- Tab: ฝ่ายนิติบัญญัติ (รัฐสภาตามรัฐธรรมนูญ ๓ ฉบับ) -->
+    <!-- แท็บ ๖.๙: ฝ่ายตุลาการ & ระบบศาลไทย -->
+    <div id="judiciary-tab" class="db-tab-content">
+      <div style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.95)); border: 1px solid rgba(250, 204, 21, 0.3); border-radius: 16px; padding: 28px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); backdrop-filter: blur(12px);">
+
+        <!-- Header Section -->
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 18px;">
+          <div>
+            <h3 style="color: var(--gold-light); font-size: 22px; font-weight: 700; margin: 0 0 6px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 10px;">
+              <span>⚖️ ฝ่ายตุลาการ & ระบบศาลแห่งราชอาณาจักรไทย</span>
+            </h3>
+            <p style="color: var(--text-muted); font-size: 13.5px; margin: 0; line-height: 1.6;">
+              สถาบันผู้ใช้อำนาจตุลาการในการพิจารณาพิพากษาคดี คุ้มครองสิทธิเสรีภาพของประชาชน และผดุงความยุติธรรมตามบทบัญญัติแห่งรัฐธรรมนูญ
+            </p>
+          </div>
+          <span style="font-size: 12.5px; background: rgba(250, 204, 21, 0.12); color: #facc15; border: 1px solid rgba(250, 204, 21, 0.3); padding: 6px 14px; border-radius: 20px; font-weight: 600; white-space: nowrap;">
+            "พิจารณาพิพากษาคดีในพระปรมาภิไธย"
+          </span>
+        </div>
+
+        <!-- Section 1: ระบบ ๔ ศาลหลักแห่งราชอาณาจักรไทย -->
+        <div style="margin-bottom: 28px;">
+          <h4 style="color: var(--gold); font-size: 16.5px; margin: 0 0 16px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
+            <span>🏛️ โครงสร้างระบบ ๔ ศาลหลักแห่งราชอาณาจักรไทย</span>
+          </h4>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px;">
+            
+            <!-- ๑. ศาลรัฐธรรมนูญ -->
+            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(250, 204, 21, 0.35); border-radius: 12px; padding: 20px;">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                <h5 style="color: #facc15; font-size: 16px; margin: 0; font-family: 'Outfit', sans-serif; font-weight: 700; display: flex; align-items: center; gap: 8px;">
+                  <span>📜 ๑. ศาลรัฐธรรมนูญ (Constitutional Court)</span>
+                </h5>
+                <span style="font-size: 11px; background: rgba(250, 204, 21, 0.2); color: #fef08a; padding: 3px 8px; border-radius: 4px; font-weight: 600;">องค์กรพิทักษ์ รธน.</span>
+              </div>
+              <div style="font-size: 13px; color: var(--text-muted); line-height: 1.65;">
+                <p style="margin-bottom: 8px;"><strong style="color: #e2e8f0;">📌 อำนาจหน้าที่หลัก:</strong> พิจารณาวินิจฉัยความชอบด้วยรัฐธรรมนูญของร่าง พ.ร.บ. หรือกฎหมายที่สภาตราขึ้น, วินิจฉัยปัญหาเกี่ยวกับอำนาจหน้าที่ขององค์กรตามรัฐธรรมนูญ, และวินิจฉัยสมาชิกภาพหรือคุณสมบัติของผู้ดำรงตำแหน่งทางการเมือง</p>
+                <p style="margin-bottom: 8px;"><strong style="color: #60a5fa;">⚖️ องค์คณะตุลาการ:</strong> ประกอบด้วยตุลาการศาลรัฐธรรมนูญ ๙ ท่าน (ผู้พิพากษาศาลฎีกา, ตุลาการศาลปกครองสูงสุด, และผู้ทรงคุณวุฒิทางกฎหมายและรัฐศาสตร์) ผ่านการสรรหาและวุฒิสภาเห็นชอบ</p>
+                <p style="margin: 0;"><strong style="color: #4ade80;">💡 คำวินิจฉัย:</strong> คำวินิจฉัยของศาลรัฐธรรมนูญถือเป็นเด็ดขาด มีผลผูกพันรัฐสภา คณะรัฐมนตรี ศาล และองค์กรอื่นของรัฐทั้งหมด</p>
+              </div>
+            </div>
+
+            <!-- ๒. ศาลยุติธรรม -->
+            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(96, 165, 250, 0.35); border-radius: 12px; padding: 20px;">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                <h5 style="color: #60a5fa; font-size: 16px; margin: 0; font-family: 'Outfit', sans-serif; font-weight: 700; display: flex; align-items: center; gap: 8px;">
+                  <span>⚖️ ๒. ศาลยุติธรรม (Courts of Justice)</span>
+                </h5>
+                <span style="font-size: 11px; background: rgba(96, 165, 250, 0.2); color: #bfdbfe; padding: 3px 8px; border-radius: 4px; font-weight: 600;">ระบบ ๓ ชั้นศาล</span>
+              </div>
+              <div style="font-size: 13px; color: var(--text-muted); line-height: 1.65;">
+                <p style="margin-bottom: 8px;"><strong style="color: #e2e8f0;">📌 อำนาจหน้าที่หลัก:</strong> พิจารณาพิพากษาบรรดาคดีแพ่ง คดีอาญา คดีเยาวชนและครอบครัว คดีแรงงาน คดีภาษี และคดีความทั่วไปทั้งหมดที่ไม่ได้อยู่ในอำนาจของศาลอื่น</p>
+
+                <div style="background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 8px; padding: 10px; margin-bottom: 8px;">
+                  <p style="margin: 0 0 4px 0; font-size: 12px; color: #93c5fd;"><strong style="color: #60a5fa;">🏛️ ศาลชั้นต้น:</strong> ศาลแพ่ง, ศาลอาญา, ศาลจังหวัด, ศาลแขวง และศาลชำนัญพิเศษ</p>
+                  <p style="margin: 0 0 4px 0; font-size: 12px; color: #93c5fd;"><strong style="color: #60a5fa;">⚖️ ศาลอุทธรณ์:</strong> พิจารณาอุทธรณ์คำพิพากษาหรือคำสั่งของศาลชั้นต้น</p>
+                  <p style="margin: 0; font-size: 12px; color: #93c5fd;"><strong style="color: #60a5fa;">👑 ศาลฎีกา:</strong> ศาลสูงสุดแห่งศาลยุติธรรม คำพิพากษาถือเป็นที่สุด นำโดยประธานศาลฎีกา</p>
+                </div>
+
+                <p style="margin: 0;"><strong style="color: #4ade80;">🏛️ บริหารงานบุคคล:</strong> ควบคุมโดย คณะกรรมการบริหารศาลยุติธรรม (ก.ต.) เพื่อความเป็นอิสระของผู้พิพากษา</p>
+              </div>
+            </div>
+
+            <!-- ๓. ศาลปกครอง -->
+            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(168, 85, 247, 0.35); border-radius: 12px; padding: 20px;">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                <h5 style="color: #c084fc; font-size: 16px; margin: 0; font-family: 'Outfit', sans-serif; font-weight: 700; display: flex; align-items: center; gap: 8px;">
+                  <span>🏛️ ๓. ศาลปกครอง (Administrative Courts)</span>
+                </h5>
+                <span style="font-size: 11px; background: rgba(168, 85, 247, 0.2); color: #e9d5ff; padding: 3px 8px; border-radius: 4px; font-weight: 600;">ระบบ ๒ ชั้นศาล</span>
+              </div>
+              <div style="font-size: 13px; color: var(--text-muted); line-height: 1.65;">
+                <p style="margin-bottom: 8px;"><strong style="color: #e2e8f0;">📌 อำนาจหน้าที่หลัก:</strong> พิจารณาพิพากษาคดีข้อพิพาททางปกครองระหว่างหน่วยราชการ หน่วยงานของรัฐ หรือข้าราชการ กับเอกชน หรือระหว่างหน่วยงานรัฐด้วยกันเอง อันเนื่องมาจากการใช้อำนาจตามกฎหมายหรือคำสั่งปกครองที่ไม่ชอบด้วยกฎหมาย</p>
+                
+                <div style="background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 8px; padding: 10px; margin-bottom: 8px;">
+                  <p style="margin: 0 0 4px 0; font-size: 12px; color: #d8b4fe;"><strong style="color: #c084fc;">🏛️ ศาลปกครองชั้นต้น:</strong> ศาลปกครองกลาง และศาลปกครองในภูมิภาค</p>
+                  <p style="margin: 0; font-size: 12px; color: #d8b4fe;"><strong style="color: #c084fc;">👑 ศาลปกครองสูงสุด:</strong> ศาลสูงสุดทางปกครอง นำโดยประธานศาลปกครองสูงสุด พิจารณาอุทธรณ์คำพิพากษา</p>
+                </div>
+
+                <p style="margin: 0;"><strong style="color: #4ade80;">🛡️ คุ้มครองสิทธิ:</strong> เยียวยาความเสียหายแก่ประชาชนจากการกระทำทางปกครองที่ไม่เป็นธรรม</p>
+              </div>
+            </div>
+
+            <!-- ๔. ศาลทหาร -->
+            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(245, 158, 11, 0.35); border-radius: 12px; padding: 20px;">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                <h5 style="color: #f59e0b; font-size: 16px; margin: 0; font-family: 'Outfit', sans-serif; font-weight: 700; display: flex; align-items: center; gap: 8px;">
+                  <span>🛡️ ๔. ศาลทหาร (Military Courts)</span>
+                </h5>
+                <span style="font-size: 11px; background: rgba(245, 158, 11, 0.2); color: #fde68a; padding: 3px 8px; border-radius: 4px; font-weight: 600;">วินัย & กฎหมายทหาร</span>
+              </div>
+              <div style="font-size: 13px; color: var(--text-muted); line-height: 1.65;">
+                <p style="margin-bottom: 8px;"><strong style="color: #e2e8f0;">📌 อำนาจหน้าที่หลัก:</strong> พิจารณาพิพากษาคดีอาญาทหาร ซึ่งผู้กระทำความผิดเป็นบุคคลที่อยู่ในอำนาจศาลทหาร (กำลังพลทหาร ข้าราชการกลาโหม) ในขณะกระทำความผิด หรือคดีเฉพาะตามกฎหมายอัยการศึก</p>
+                <p style="margin-bottom: 8px;"><strong style="color: #60a5fa;">⚖️ ชั้นศาลทหาร:</strong> แบ่งเป็น ศาลทหารชั้นต้น, ศาลทหารกลาง (ชั้นอุทธรณ์), และศาลทหารสูงสุด</p>
+                <p style="margin: 0;"><strong style="color: #4ade80;">🎖️ องค์คณะ:</strong> นายทหารสัญญาบัตรผู้ทรงคุณวุฒิและนายทหารพระธรรมนูญ (ข้าราชการตุลาการทหารสังกัดกระทรวงกลาโหม)</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Section 2: หลักประกันความเป็นอิสระของตุลาการ & องค์กรคณะกรรมการ -->
+        <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(74, 222, 128, 0.25); border-radius: 14px; padding: 22px; margin-bottom: 24px;">
+          <h4 style="color: #4ade80; font-size: 16px; margin: 0 0 14px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
+            <span>🛡️ หลักประกันความเป็นอิสระทางตุลาการ & คณะกรรมการบริหารงานบุคคล</span>
+          </h4>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+            <div style="background: rgba(30, 41, 59, 0.5); border-radius: 10px; padding: 14px;">
+              <h6 style="color: #e2e8f0; font-size: 14px; margin: 0 0 6px 0;">⚖️ อิสระในการพิพากษาคดี</h6>
+              <p style="color: var(--text-muted); font-size: 12.5px; margin: 0; line-height: 1.6;">
+                ผู้พิพากษาและตุลาการมีอิสระในการพิจารณาพิพากษาคดีให้เป็นไปตามรัฐธรรมนูญ กฎหมาย และมโนธรรม ห้ามฝ่ายนิติบัญญัติหรือฝ่ายบริหารเข้าแทรกแซงโดยเด็ดขาด
+              </p>
+            </div>
+
+            <div style="background: rgba(30, 41, 59, 0.5); border-radius: 10px; padding: 14px;">
+              <h6 style="color: #e2e8f0; font-size: 14px; margin: 0 0 6px 0;">👑 การพิจารณาในพระปรมาภิไธย</h6>
+              <p style="color: var(--text-muted); font-size: 12.5px; margin: 0; line-height: 1.6;">
+                บรรดาคำพิพากษาและคำสั่งของศาลทั้งปวงในราชอาณาจักรไทย ทำในพระปรมาภิไธยพระมหากษัตริย์ เพื่อความศักดิ์สิทธิ์และผดุงความยุติธรรมสูงสุด
+              </p>
+            </div>
+
+            <div style="background: rgba(30, 41, 59, 0.5); border-radius: 10px; padding: 14px;">
+              <h6 style="color: #e2e8f0; font-size: 14px; margin: 0 0 6px 0;">🏛️ คณะกรรมการบริหารงานศาล (ก.ต. / ก.ศ. / ก.ศป.)</h6>
+              <p style="color: var(--text-muted); font-size: 12.5px; margin: 0; line-height: 1.6;">
+                บริหารงานบุคคล การแต่งตั้ง เลื่อนขั้น โยกย้าย และลงโทษทางวินัยของผู้พิพากษาและตุลาการ โดยเลือกกันเองภายในองค์กรศาล ปราศจากนักการเมือง
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 3: สรุปกระบวนการยุติธรรม -->
+        <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(212, 175, 55, 0.25); border-radius: 14px; padding: 22px;">
+          <h4 style="color: var(--gold-light); font-size: 16px; margin: 0 0 16px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
+            <span>🔄 ขั้นตอนกระบวนการยุติธรรมทางอาญาและแพ่งในศาลยุติธรรม</span>
+          </h4>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; text-align: center;">
+            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 14px;">
+              <span style="font-size: 20px;">🕵️‍♂️</span>
+              <div style="font-size: 13px; font-weight: 700; color: #facc15; margin: 6px 0 4px 0;">๑. ชั้นสอบสวน</div>
+              <div style="font-size: 11.5px; color: var(--text-muted);">พนักงานสอบสวน (ตำรวจ/DSI) รวบรวมพยานหลักฐาน</div>
+            </div>
+
+            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 14px;">
+              <span style="font-size: 20px;">⚖️</span>
+              <div style="font-size: 13px; font-weight: 700; color: #60a5fa; margin: 6px 0 4px 0;">๒. ชั้นพนักงานอัยการ</div>
+              <div style="font-size: 11.5px; color: var(--text-muted);">พิจารณาสั่งฟ้องหรือสั่งไม่ฟ้องคดีต่อศาล</div>
+            </div>
+
+            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 14px;">
+              <span style="font-size: 20px;">🏛️</span>
+              <div style="font-size: 13px; font-weight: 700; color: #c084fc; margin: 6px 0 4px 0;">๓. ศาลชั้นต้น</div>
+              <div style="font-size: 11.5px; color: var(--text-muted);">ไต่สวนมูลฟ้อง สืบพยาน และอ่านคำพิพากษาชั้นต้น</div>
+            </div>
+
+            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 14px;">
+              <span style="font-size: 20px;">⚖️</span>
+              <div style="font-size: 13px; font-weight: 700; color: #f87171; margin: 6px 0 4px 0;">๔. ศาลอุทธรณ์</div>
+              <div style="font-size: 11.5px; color: var(--text-muted);">พิจารณาแก้อุทธรณ์คำพิพากษาข้อกฎหมาย/ข้อเท็จจริง</div>
+            </div>
+
+            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(250, 204, 21, 0.4); border-radius: 10px; padding: 14px; background: rgba(250, 204, 21, 0.08);">
+              <span style="font-size: 20px;">👑</span>
+              <div style="font-size: 13px; font-weight: 700; color: #fef08a; margin: 6px 0 4px 0;">๕. ศาลฎีกา</div>
+              <div style="font-size: 11.5px; color: var(--text-muted);">ศาลสูงสุด คำพิพากษาเป็นที่สุดและยุติข้อพิพาท</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
     <div id="legislative-tab" class="db-tab-content">
       <div style="background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 16px; padding: 28px; margin-bottom: 28px; backdrop-filter: blur(12px);">
         
