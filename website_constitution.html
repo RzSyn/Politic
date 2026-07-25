@@ -248,6 +248,7 @@
           <button class="db-tab-btn" onclick="switchTab('parties-tab', this)">🗳️ พรรคการเมือง</button>
           <button class="db-tab-btn" onclick="switchTab('independent-organs-tab', this)">⚖️ องค์กรอิสระตามรัฐธรรมนูญ</button>
           <button class="db-tab-btn" onclick="switchTab('ministries-tab', this)">🏛️ กระทรวงแผ่นดิน (โครงสร้างปฏิรูป)</button>
+          <button class="db-tab-btn" onclick="switchTab('local-govt-tab', this)">🏙️ องค์กรปกครองส่วนท้องถิ่น (การกระจายอำนาจ)</button>
           <button class="db-tab-btn" onclick="switchTab('national-symbols-tab', this)">🇹🇭 ธงชาติและเพลงชาติไทย</button>
         </div>
       </div>
@@ -2450,6 +2451,175 @@
 
     <!-- Tab: กระทรวงแผ่นดิน (Ministries Tab - โครงสร้างปฏิรูป PCW Model) -->
         <!-- Tab: กระทรวงแผ่นดิน (Ministries Tab - ทำเนียบกระทรวงเรียงลำดับแบบนายกฯ) -->
+    <!-- แท็บ ๖.๑๐: องค์กรปกครองส่วนท้องถิ่น & การกระจายอำนาจ (ทรงเดียวกับกระทรวง) -->
+    <div id="local-govt-tab" class="db-tab-content">
+      <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(74, 222, 128, 0.35); border-radius: 16px; padding: 24px; margin-bottom: 28px; backdrop-filter: blur(14px);">
+        
+        <!-- Header Banner (โครงสร้างเดียวกับกระทรวง) -->
+        <div style="border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 16px; margin-bottom: 20px;">
+          <div style="display: inline-block; background: rgba(74, 222, 128, 0.15); border: 1px solid rgba(74, 222, 128, 0.4); color: #4ade80; font-size: 11.5px; font-weight: 700; padding: 4px 12px; border-radius: 6px; margin-bottom: 8px;">
+            LOCAL GOVERNMENT REGISTRY // DECENTRALIZATION & SELF-GOVERNANCE MODEL
+          </div>
+          <h2 style="color: #4ade80; font-size: 24px; font-weight: 800; margin: 0 0 6px 0; font-family: 'Outfit', sans-serif;">
+            🏙️ ทำเนียบองค์กรปกครองส่วนท้องถิ่น & การกระจายอำนาจแห่งราชอาณาจักรไทย
+          </h2>
+          <p style="font-size: 13.5px; color: var(--text-muted); line-height: 1.6; margin: 0;">
+            โครงสร้างการปกครองส่วนท้องถิ่นและการกระจายอำนาจสู่ประชาชน ตามบทบัญญัติแห่งรัฐธรรมนูญ เพื่อส่งเสริมหลักการปกครองตนเองและพัฒนาคุณภาพชีวิตประชาชนอย่างยั่งยืน:
+          </p>
+        </div>
+
+        <!-- Filter Buttons (ปุ่มกรองสไตล์เดียวกับกระทรวง แต่ใช้ class แยกเด็ดขาด) -->
+        <div class="local-filters" style="display:flex; gap:8px; margin-bottom:20px; flex-wrap: wrap;">
+          <button class="local-filter-btn active" onclick="filterLocalGovt('all', this)" style="background: #4ade80; color: #000; font-weight: 700; border: 1px solid #4ade80; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 13px;">แสดงทั้งหมด (๕ อปท. หลัก)</button>
+          <button class="local-filter-btn" onclick="filterLocalGovt('general', this)" style="background: rgba(255,255,255,0.05); color: #e2e8f0; border: 1px solid rgba(255,255,255,0.15); padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 13px;">🏛️ ท้องถิ่นรูปแบบทั่วไป (อบจ. / เทศบาล / อบต.)</button>
+          <button class="local-filter-btn" onclick="filterLocalGovt('special', this)" style="background: rgba(255,255,255,0.05); color: #e2e8f0; border: 1px solid rgba(255,255,255,0.15); padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 13px;">👑 ท้องถิ่นรูปแบบพิเศษ (กทม. / เมืองพัทยา)</button>
+          <button class="local-filter-btn" onclick="filterLocalGovt('reform', this)" style="background: rgba(255,255,255,0.05); color: #e2e8f0; border: 1px solid rgba(255,255,255,0.15); padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 13px;">⚡ โครงสร้างปฏิรูปกระจายอำนาจ (PCW Model)</button>
+        </div>
+
+        <!-- Table Container (ตารางโครงสร้างเดียวกับกระทรวง) -->
+        <div class="table-container" style="overflow-x: auto;">
+          <table class="styled-table" style="width: 100%; border-collapse: collapse;">
+            <thead>
+              <tr style="background: rgba(15, 23, 42, 0.95); color: #4ade80;">
+                <th style="width: 45px; text-align: center; padding: 14px 4px;">ลำดับ</th>
+                <th style="width: 260px; text-align: center; padding: 14px 6px;">ตราสัญลักษณ์ประจำองค์กร (๒๕๐x๒๕๐ พิกเซล)</th>
+                <th style="width: 130px; text-align: left; padding: 14px 8px;">ประเภท อปท.</th>
+                <th style="width: 125px; text-align: center; padding: 14px 4px;">รูปแบบ & ฐานะทางกฎหมาย</th>
+                <th style="width: 38%; padding: 14px 12px; text-align: left;">💡 ทำมาทำไม (ที่มาและวัตถุประสงค์)</th>
+                <th style="width: 42%; padding: 14px 16px; text-align: left;">🎯 มีหน้าที่อะไร (อำนาจการบริการสาธารณะ)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- ๑. องค์การบริหารส่วนจังหวัด (อบจ.) -->
+              <tr class="local-row" data-category="general">
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0; font-size: 14px;">๑</td>
+                <td style="text-align: center; padding: 8px;">
+                  <div style="width: 250px; height: 250px; background: #ffffff !important; border: 2.5px solid rgba(74, 222, 128, 0.55); border-radius: 14px; padding: 12px; box-shadow: 0 6px 16px rgba(0,0,0,0.45); display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; text-align: center;">
+                    <span style="font-size: 54px; margin-bottom: 8px;">🏛️</span>
+                    <h5 style="color: #166534; font-size: 15px; margin: 0 0 4px 0; font-family: 'Outfit', sans-serif; font-weight: 800;">องค์การบริหารส่วนจังหวัด</h5>
+                    <span style="font-size: 11px; color: #475569; font-weight: 600;">Provincial Administrative Org. (PAO)</span>
+                    <div style="margin-top: 10px; font-size: 10.5px; background: rgba(74, 222, 128, 0.2); color: #14532d; border: 1px solid rgba(74, 222, 128, 0.4); padding: 3px 8px; border-radius: 4px; font-weight: 700;">รูปทั่วไป (ระดับจังหวัด ๗๖ แห่ง)</div>
+                  </div>
+                </td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 130px; max-width: 130px; white-space: normal; word-wrap: break-word;">องค์การบริหารส่วนจังหวัด (อบจ.)</td>
+                <td style="text-align: center;">
+                  <span style="font-size: 10.5px; background: rgba(74, 222, 128, 0.15); color: #4ade80; border: 1px solid rgba(74, 222, 128, 0.3); padding: 4px 8px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ ท้องถิ่นขนาดใหญ่ระดับจังหวัด</span>
+                </td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 12px; width: 38%;">จัดตั้งขึ้นเพื่อเป็นองค์กรปกครองส่วนท้องถิ่นครอบคลุมพื้นที่ทั้งจังหวัด รับผิดชอบการบริการสาธารณะขนาดใหญ่ที่มีขอบเขตเชื่อมโยงหลายอำเภอ ซึ่งเกินขีดความสามารถของเทศบาลหรือ อบต. ชุมชนย่อย โดยมีนายก อบจ. และสภา อบจ. มาจากการเลือกตั้งโดยตรงของประชาชนในจังหวัดนั้นๆ</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 16px; width: 42%;">• พัฒนาโครงสร้างพื้นฐานระดับจังหวัด (ถนนสายหลัก, สะพาน, แหล่งน้ำขนาดกลาง-ใหญ่) <br> • กำจัดขยะมูลฝอยและสิ่งนิกข์ขยะรวมระดับจังหวัด และการอนุรักษ์สิ่งแวดล้อม <br> • จัดตั้งและส่งเสริมโรงเรียนในสังกัด อบจ., โรงพยาบาลส่งเสริมสุขภาพตำบล (รพ.สต.) <br> • จัดทำผังเมืองรวมจังหวัด และส่งเสริมการท่องเที่ยวและเศรษฐกิจฐานรากในภูมิภาค</td>
+              </tr>
+
+              <!-- ๒. เทศบาล -->
+              <tr class="local-row" data-category="general">
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0; font-size: 14px;">๒</td>
+                <td style="text-align: center; padding: 8px;">
+                  <div style="width: 250px; height: 250px; background: #ffffff !important; border: 2.5px solid rgba(96, 165, 250, 0.55); border-radius: 14px; padding: 12px; box-shadow: 0 6px 16px rgba(0,0,0,0.45); display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; text-align: center;">
+                    <span style="font-size: 54px; margin-bottom: 8px;">🏢</span>
+                    <h5 style="color: #1e40af; font-size: 15px; margin: 0 0 4px 0; font-family: 'Outfit', sans-serif; font-weight: 800;">เทศบาล</h5>
+                    <span style="font-size: 11px; color: #475569; font-weight: 600;">Municipality (City / Town / Sub-district)</span>
+                    <div style="margin-top: 10px; font-size: 10.5px; background: rgba(96, 165, 250, 0.2); color: #1e3a8a; border: 1px solid rgba(96, 165, 250, 0.4); padding: 3px 8px; border-radius: 4px; font-weight: 700;">รูปทั่วไป (นคร/เมือง/ตำบล)</div>
+                  </div>
+                </td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 130px; max-width: 130px; white-space: normal; word-wrap: break-word;">เทศบาล (นคร / เมือง / ตำบล)</td>
+                <td style="text-align: center;">
+                  <span style="font-size: 10.5px; background: rgba(96, 165, 250, 0.15); color: #60a5fa; border: 1px solid rgba(96, 165, 250, 0.3); padding: 4px 8px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏢 ท้องถิ่นชุมชนเมือง</span>
+                </td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 12px; width: 38%;">จัดตั้งขึ้นในพื้นที่ที่มีประชากรและความหนาแน่นของชุมชนเมืองสูง แบ่งเป็น ๓ ระดับ (เทศบาลนคร, เทศบาลเมือง, เทศบาลตำบล) เพื่อทำหน้าที่ดูแลความสะอาด สุขาภิบาล ความปลอดภัย และการบริการสาธารณะในชีวิตประจำวันของพลเมืองในเขตเมือง</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 16px; width: 42%;">• รักษาความสะอาด สุขาภิบาล จัดเก็บและกำจัดขยะมูลฝอยในชุมชนเมือง <br> • ป้องกันและบรรเทาสาธารณภัย (ดับเพลิง/กู้ภัย) งานทะเบียนราษฎรในพื้นที่ <br> • จัดตั้งโรงเรียนเทศบาล ศูนย์พัฒนาเด็กเล็ก และศูนย์บริการสาธารณสุขชุมชน <br> • ก่อสร้างบำรุงรักษาทางบก ทางน้ำ ระบายน้ำ และการควบคุมอาคารตามผังเมือง</td>
+              </tr>
+
+              <!-- ๓. องค์การบริหารส่วนตำบล (อบต.) -->
+              <tr class="local-row" data-category="general">
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0; font-size: 14px;">๓</td>
+                <td style="text-align: center; padding: 8px;">
+                  <div style="width: 250px; height: 250px; background: #ffffff !important; border: 2.5px solid rgba(250, 204, 21, 0.55); border-radius: 14px; padding: 12px; box-shadow: 0 6px 16px rgba(0,0,0,0.45); display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; text-align: center;">
+                    <span style="font-size: 54px; margin-bottom: 8px;">🌾</span>
+                    <h5 style="color: #854d0e; font-size: 15px; margin: 0 0 4px 0; font-family: 'Outfit', sans-serif; font-weight: 800;">องค์การบริหารส่วนตำบล</h5>
+                    <span style="font-size: 11px; color: #475569; font-weight: 600;">Sub-district Administrative Org. (SAO)</span>
+                    <div style="margin-top: 10px; font-size: 10.5px; background: rgba(250, 204, 21, 0.2); color: #713f12; border: 1px solid rgba(250, 204, 21, 0.4); padding: 3px 8px; border-radius: 4px; font-weight: 700;">รูปทั่วไป (ระดับตำบลชนบท)</div>
+                  </div>
+                </td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 130px; max-width: 130px; white-space: normal; word-wrap: break-word;">องค์การบริหารส่วนตำบล (อบต.)</td>
+                <td style="text-align: center;">
+                  <span style="font-size: 10.5px; background: rgba(250, 204, 21, 0.15); color: #facc15; border: 1px solid rgba(250, 204, 21, 0.3); padding: 4px 8px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🌾 ท้องถิ่นระดับตำบลรากหญ้า</span>
+                </td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 12px; width: 38%;">จัดตั้งขึ้นเพื่อกระจายอำนาจสู่ระดับรากหญ้าในเขตนอกเทศบาล ให้ราษฎรในตำบลมีส่วนร่วมในการปกครองตนเอง บริหารจัดการงบประมาณ และแก้ไขปัญหาความต้องการของชุมชนท้องถิ่นโดยตรงผ่านการเลือกตั้งนายก อบต. และสภา อบต.</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 16px; width: 42%;">• พัฒนาโครงสร้างพื้นฐานระดับตำบล (ถนนทางหลวงชนบท, ไฟฟ้าส่องสว่าง, ประปาหมู่บ้าน) <br> • การส่งเสริมอาชีพเกษตรกรรม สหกรณ์ สวัสดิการผู้สูงอายุและผู้พิการในชุมชน <br> • ตรวจสอบดูแลอนุรักษ์ทรัพยากรธรรมชาติ แหล่งน้ำ และสิ่งแวดล้อมในเขตตำบล <br> • ส่งเสริมบำรุงรักษาศิลปะ จารีตประเพณี ภูมิปัญญาท้องถิ่น และวัฒนธรรมอันดีงาม</td>
+              </tr>
+
+              <!-- ๔. กรุงเทพมหานคร (กทม.) -->
+              <tr class="local-row" data-category="special">
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0; font-size: 14px;">๔</td>
+                <td style="text-align: center; padding: 8px;">
+                  <div style="width: 250px; height: 250px; background: #ffffff !important; border: 2.5px solid rgba(192, 132, 252, 0.55); border-radius: 14px; padding: 12px; box-shadow: 0 6px 16px rgba(0,0,0,0.45); display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; text-align: center;">
+                    <span style="font-size: 54px; margin-bottom: 8px;">👑</span>
+                    <h5 style="color: #6b21a8; font-size: 15px; margin: 0 0 4px 0; font-family: 'Outfit', sans-serif; font-weight: 800;">กรุงเทพมหานคร</h5>
+                    <span style="font-size: 11px; color: #475569; font-weight: 600;">Bangkok Metropolitan Admin. (BMA)</span>
+                    <div style="margin-top: 10px; font-size: 10.5px; background: rgba(192, 132, 252, 0.2); color: #581c87; border: 1px solid rgba(192, 132, 252, 0.4); padding: 3px 8px; border-radius: 4px; font-weight: 700;">รูปพิเศษ (มหานครหลวง)</div>
+                  </div>
+                </td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 130px; max-width: 130px; white-space: normal; word-wrap: break-word;">กรุงเทพมหานคร (กทม.)</td>
+                <td style="text-align: center;">
+                  <span style="font-size: 10.5px; background: rgba(192, 132, 252, 0.15); color: #c084fc; border: 1px solid rgba(192, 132, 252, 0.3); padding: 4px 8px; border-radius: 4px; font-weight: 600; white-space: nowrap;">👑 อปท. รูปแบบพิเศษ</span>
+                </td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 12px; width: 38%;">จัดตั้งขึ้นเป็นพิเศษสำหรับเมืองหลวงศูนย์กลางการบริหารประเทศที่มีประชากรหนาแน่นสูงหลายล้านคน รวมอำนาจหน้าที่ของจังหวัดและเทศบาลเข้าด้วยกัน บริหารงานแบบมหานครภายใต้การนำของนายกรัฐมนตรีกรุงเทพมหานคร และสภา กทม. จากการเลือกตั้งโดยตรงของประชาชน กทม.</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 16px; width: 42%;">• การผังเมืองรวมมหานคร การควบคุมอาคาร และการพัฒนาระบบขนส่งมวลชนสาธารณะ <br> • การป้องกันน้ำท่วม การระบายน้ำ การจัดเก็บขยะและการบำบัดน้ำเสียทั่วกรุงเทพฯ <br> • การบริหารการศึกษา รร.สังกัด กทม. และศูนย์สำนักการแพทย์/โรงพยาบาล กทม. <br> • ความสงบเรียบร้อย เทศกิจ การจัดระเบียบเมือง และการส่งเสริมเศรษฐกิจเมืองหลวง</td>
+              </tr>
+
+              <!-- ๕. เมืองพัทยา -->
+              <tr class="local-row" data-category="special">
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0; font-size: 14px;">๕</td>
+                <td style="text-align: center; padding: 8px;">
+                  <div style="width: 250px; height: 250px; background: #ffffff !important; border: 2.5px solid rgba(248, 113, 113, 0.55); border-radius: 14px; padding: 12px; box-shadow: 0 6px 16px rgba(0,0,0,0.45); display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; text-align: center;">
+                    <span style="font-size: 54px; margin-bottom: 8px;">🌊</span>
+                    <h5 style="color: #991b1b; font-size: 15px; margin: 0 0 4px 0; font-family: 'Outfit', sans-serif; font-weight: 800;">เมืองพัทยา</h5>
+                    <span style="font-size: 11px; color: #475569; font-weight: 600;">City of Pattaya (Special Admin.)</span>
+                    <div style="margin-top: 10px; font-size: 10.5px; background: rgba(248, 113, 113, 0.2); color: #7f1d1d; border: 1px solid rgba(248, 113, 113, 0.4); padding: 3px 8px; border-radius: 4px; font-weight: 700;">รูปพิเศษ (เมืองท่องเที่ยวสากล)</div>
+                  </div>
+                </td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 130px; max-width: 130px; white-space: normal; word-wrap: break-word;">เมืองพัทยา</td>
+                <td style="text-align: center;">
+                  <span style="font-size: 10.5px; background: rgba(248, 113, 113, 0.15); color: #f87171; border: 1px solid rgba(248, 113, 113, 0.3); padding: 4px 8px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🌊 อปท. รูปแบบพิเศษ</span>
+                </td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 12px; width: 38%;">จัดตั้งขึ้นเป็นองค์กรปกครองส่วนท้องถิ่นรูปแบบพิเศษเฉพาะแห่ง เพื่อรองรับการเติบโตของเมืองท่องเที่ยวชายฝั่งทะเลระดับโลกและการลงทุนในเขตพัฒนาพิเศษภาคตะวันออก (EEC) ต้องการการบริหารที่มีความยืดหยุ่นและการจัดเก็บรายได้ท้องถิ่นเป็นพิเศษ</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.65; padding: 14px 16px; width: 42%;">• การส่งเสริมโครงสร้างพื้นฐานการท่องเที่ยวและการบริหารจัดการสิ่งแวดล้อมชายหาด <br> • การรักษาความปลอดภัยนักท่องเที่ยว การควบคุมระเบียบเมือง และกิจการสถานบริการ <br> • การบำบัดน้ำเสียและขยะมูลฝอยจากอุตสาหกรรมท่องเที่ยวและพาณิชยกรรมชายฝั่ง <br> • จัดทำแผนพัฒนาเมืองท่องเที่ยวสากล และการบริหารจัดการงบประมาณท้องถิ่นพิเศษ</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Section 2: หลักประกันความเป็นอิสระ & สัดส่วนงบประมาณการกระจายอำนาจ (PCW Reform Model) -->
+        <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(74, 222, 128, 0.25); border-radius: 14px; padding: 22px; margin-top: 24px; margin-bottom: 24px;">
+          <h4 style="color: #4ade80; font-size: 16px; margin: 0 0 14px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
+            <span>⚡ หลักการกระจายอำนาจ & การจัดสรรสัดส่วนงบประมาณ (PCW Model Reform)</span>
+          </h4>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+            <div style="background: rgba(30, 41, 59, 0.5); border-radius: 10px; padding: 14px;">
+              <h6 style="color: #e2e8f0; font-size: 14px; margin: 0 0 6px 0;">🗳️ หลักความชอบธรรมจากการเลือกตั้ง</h6>
+              <p style="color: var(--text-muted); font-size: 12.5px; margin: 0; line-height: 1.6;">
+                ฝ่ายบริหารท้องถิ่น (นายก อบจ./เทศมนตรี/นายก อบต./นายก กทม.) และสภาท้องถิ่น ต้องมาจากการเลือกตั้งโดยตรงของประชาชน ยึดมั่นความยึดโยงกับประชาชนในพื้นที่
+              </p>
+            </div>
+
+            <div style="background: rgba(30, 41, 59, 0.5); border-radius: 10px; padding: 14px;">
+              <h6 style="color: #e2e8f0; font-size: 14px; margin: 0 0 6px 0;">💰 สัดส่วนรายได้ท้องถิ่น ๓๕%+</h6>
+              <p style="color: var(--text-muted); font-size: 12.5px; margin: 0; line-height: 1.6;">
+                ปฏิรูปการจัดสรรรายได้รัฐบาลกลางสู่ท้องถิ่น (Target ๓๕% ของรายได้สุทธิรัฐบาล) ผ่านภาษีจัดเก็บเอง, ภาษีแบ่งจัดเก็บ (VAT, ภาษีสรรพสามิต) และเงินอุดหนุนทั่วไป
+              </p>
+            </div>
+
+            <div style="background: rgba(30, 41, 59, 0.5); border-radius: 10px; padding: 14px;">
+              <h6 style="color: #e2e8f0; font-size: 14px; margin: 0 0 6px 0;">🛡️ การถ่ายโอนภารกิจสาธารณะ</h6>
+              <p style="color: var(--text-muted); font-size: 12.5px; margin: 0; line-height: 1.6;">
+                ถ่ายโอนภารกิจบริการสาธารณะจากส่วนกลางและส่วนภูมิภาค (โรงพยาบาล รพ.สต., โรงเรียน, ทางหลวงท้องถิ่น) ให้ท้องถิ่นบริหารจัดการพร้อมงบประมาณและบุคลากร
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
     <div id="ministries-tab" class="db-tab-content">
       <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(96, 165, 250, 0.35); border-radius: 16px; padding: 24px; margin-bottom: 28px; backdrop-filter: blur(14px);">
         
@@ -17053,6 +17223,36 @@ function signPetition() {
       var rows = container.querySelectorAll('.judiciary-row');
       rows.forEach(function(row) {
         if (category === 'all' || row.getAttribute('data-category') === category) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+    
+
+    function filterLocalGovt(category, btn) {
+      var container = btn.closest('.db-tab-content');
+      if (!container) return;
+
+      var buttons = container.querySelectorAll('.local-filter-btn');
+      buttons.forEach(function(b) {
+        b.classList.remove('active');
+        b.style.background = 'rgba(255,255,255,0.05)';
+        b.style.color = '#e2e8f0';
+        b.style.borderColor = 'rgba(255,255,255,0.15)';
+        b.style.fontWeight = 'normal';
+      });
+
+      btn.classList.add('active');
+      btn.style.background = '#4ade80';
+      btn.style.color = '#000';
+      btn.style.borderColor = '#4ade80';
+      btn.style.fontWeight = '700';
+
+      var rows = container.querySelectorAll('.local-row');
+      rows.forEach(function(row) {
+        if (category === 'all' || row.getAttribute('data-category') === category || (category === 'reform' && row.getAttribute('data-category') === 'special')) {
           row.style.display = '';
         } else {
           row.style.display = 'none';
