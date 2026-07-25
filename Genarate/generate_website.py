@@ -2723,11 +2723,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="local-row" data-category="general">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0; font-size: 14px;">๑</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 250px; height: 250px; background: #ffffff !important; border: 2.5px solid rgba(74, 222, 128, 0.55); border-radius: 14px; padding: 12px; box-shadow: 0 6px 16px rgba(0,0,0,0.45); display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; text-align: center;">
-                    <span style="font-size: 54px; margin-bottom: 8px;">🏛️</span>
-                    <h5 style="color: #166534; font-size: 15px; margin: 0 0 4px 0; font-family: 'Outfit', sans-serif; font-weight: 800;">องค์การบริหารส่วนจังหวัด</h5>
-                    <span style="font-size: 11px; color: #475569; font-weight: 600;">Provincial Administrative Org. (PAO)</span>
-                    <div style="margin-top: 10px; font-size: 10.5px; background: rgba(74, 222, 128, 0.2); color: #14532d; border: 1px solid rgba(74, 222, 128, 0.4); padding: 3px 8px; border-radius: 4px; font-weight: 700;">รูปทั่วไป (ระดับจังหวัด ๗๖ แห่ง)</div>
+                  <div style="width: 250px; height: 250px; background: #ffffff !important; border: 2.5px solid rgba(74, 222, 128, 0.55); border-radius: 14px; padding: 6px; box-shadow: 0 6px 16px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                    <img src="images/local_pao.png" alt="ตราประจำองค์การบริหารส่วนจังหวัด" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff !important; border-radius: 8px;">
                   </div>
                 </td>
                 <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 130px; max-width: 130px; white-space: normal; word-wrap: break-word;">องค์การบริหารส่วนจังหวัด (อบจ.)</td>
@@ -2742,11 +2739,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="local-row" data-category="general">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0; font-size: 14px;">๒</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 250px; height: 250px; background: #ffffff !important; border: 2.5px solid rgba(96, 165, 250, 0.55); border-radius: 14px; padding: 12px; box-shadow: 0 6px 16px rgba(0,0,0,0.45); display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; text-align: center;">
-                    <span style="font-size: 54px; margin-bottom: 8px;">🏢</span>
-                    <h5 style="color: #1e40af; font-size: 15px; margin: 0 0 4px 0; font-family: 'Outfit', sans-serif; font-weight: 800;">เทศบาล</h5>
-                    <span style="font-size: 11px; color: #475569; font-weight: 600;">Municipality (City / Town / Sub-district)</span>
-                    <div style="margin-top: 10px; font-size: 10.5px; background: rgba(96, 165, 250, 0.2); color: #1e3a8a; border: 1px solid rgba(96, 165, 250, 0.4); padding: 3px 8px; border-radius: 4px; font-weight: 700;">รูปทั่วไป (นคร/เมือง/ตำบล)</div>
+                  <div style="width: 250px; height: 250px; background: #ffffff !important; border: 2.5px solid rgba(96, 165, 250, 0.55); border-radius: 14px; padding: 6px; box-shadow: 0 6px 16px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                    <img src="images/local_muni.png" alt="ตราประจำเทศบาล" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff !important; border-radius: 8px;">
                   </div>
                 </td>
                 <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 130px; max-width: 130px; white-space: normal; word-wrap: break-word;">เทศบาล (นคร / เมือง / ตำบล)</td>
@@ -2761,11 +2755,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="local-row" data-category="general">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0; font-size: 14px;">๓</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 250px; height: 250px; background: #ffffff !important; border: 2.5px solid rgba(250, 204, 21, 0.55); border-radius: 14px; padding: 12px; box-shadow: 0 6px 16px rgba(0,0,0,0.45); display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; text-align: center;">
-                    <span style="font-size: 54px; margin-bottom: 8px;">🌾</span>
-                    <h5 style="color: #854d0e; font-size: 15px; margin: 0 0 4px 0; font-family: 'Outfit', sans-serif; font-weight: 800;">องค์การบริหารส่วนตำบล</h5>
-                    <span style="font-size: 11px; color: #475569; font-weight: 600;">Sub-district Administrative Org. (SAO)</span>
-                    <div style="margin-top: 10px; font-size: 10.5px; background: rgba(250, 204, 21, 0.2); color: #713f12; border: 1px solid rgba(250, 204, 21, 0.4); padding: 3px 8px; border-radius: 4px; font-weight: 700;">รูปทั่วไป (ระดับตำบลชนบท)</div>
+                  <div style="width: 250px; height: 250px; background: #ffffff !important; border: 2.5px solid rgba(250, 204, 21, 0.55); border-radius: 14px; padding: 6px; box-shadow: 0 6px 16px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                    <img src="images/local_sao.png" alt="ตราประจำองค์การบริหารส่วนตำบล" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff !important; border-radius: 8px;">
                   </div>
                 </td>
                 <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 130px; max-width: 130px; white-space: normal; word-wrap: break-word;">องค์การบริหารส่วนตำบล (อบต.)</td>
@@ -2780,11 +2771,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="local-row" data-category="special">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0; font-size: 14px;">๔</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 250px; height: 250px; background: #ffffff !important; border: 2.5px solid rgba(192, 132, 252, 0.55); border-radius: 14px; padding: 12px; box-shadow: 0 6px 16px rgba(0,0,0,0.45); display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; text-align: center;">
-                    <span style="font-size: 54px; margin-bottom: 8px;">👑</span>
-                    <h5 style="color: #6b21a8; font-size: 15px; margin: 0 0 4px 0; font-family: 'Outfit', sans-serif; font-weight: 800;">กรุงเทพมหานคร</h5>
-                    <span style="font-size: 11px; color: #475569; font-weight: 600;">Bangkok Metropolitan Admin. (BMA)</span>
-                    <div style="margin-top: 10px; font-size: 10.5px; background: rgba(192, 132, 252, 0.2); color: #581c87; border: 1px solid rgba(192, 132, 252, 0.4); padding: 3px 8px; border-radius: 4px; font-weight: 700;">รูปพิเศษ (มหานครหลวง)</div>
+                  <div style="width: 250px; height: 250px; background: #ffffff !important; border: 2.5px solid rgba(192, 132, 252, 0.55); border-radius: 14px; padding: 6px; box-shadow: 0 6px 16px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                    <img src="images/local_bma.png" alt="ตราประจำกรุงเทพมหานคร" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff !important; border-radius: 8px;">
                   </div>
                 </td>
                 <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 130px; max-width: 130px; white-space: normal; word-wrap: break-word;">กรุงเทพมหานคร (กทม.)</td>
@@ -2799,11 +2787,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="local-row" data-category="special">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0; font-size: 14px;">๕</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 250px; height: 250px; background: #ffffff !important; border: 2.5px solid rgba(248, 113, 113, 0.55); border-radius: 14px; padding: 12px; box-shadow: 0 6px 16px rgba(0,0,0,0.45); display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; text-align: center;">
-                    <span style="font-size: 54px; margin-bottom: 8px;">🌊</span>
-                    <h5 style="color: #991b1b; font-size: 15px; margin: 0 0 4px 0; font-family: 'Outfit', sans-serif; font-weight: 800;">เมืองพัทยา</h5>
-                    <span style="font-size: 11px; color: #475569; font-weight: 600;">City of Pattaya (Special Admin.)</span>
-                    <div style="margin-top: 10px; font-size: 10.5px; background: rgba(248, 113, 113, 0.2); color: #7f1d1d; border: 1px solid rgba(248, 113, 113, 0.4); padding: 3px 8px; border-radius: 4px; font-weight: 700;">รูปพิเศษ (เมืองท่องเที่ยวสากล)</div>
+                  <div style="width: 250px; height: 250px; background: #ffffff !important; border: 2.5px solid rgba(248, 113, 113, 0.55); border-radius: 14px; padding: 6px; box-shadow: 0 6px 16px rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                    <img src="images/local_pattaya.png" alt="ตราประจำเมืองพัทยา" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff !important; border-radius: 8px;">
                   </div>
                 </td>
                 <td style="font-weight: 700; color: #e2e8f0; font-size: 14px; line-height: 1.5; padding: 12px 10px; width: 130px; max-width: 130px; white-space: normal; word-wrap: break-word;">เมืองพัทยา</td>
