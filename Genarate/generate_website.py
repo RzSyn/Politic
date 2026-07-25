@@ -2191,7 +2191,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             🏛️ ทำเนียบกระทรวงแห่งราชอาณาจักรไทย (โครงสร้างปฏิรูป PCW Model)
           </h2>
           <p style="font-size: 13.5px; color: var(--text-muted); line-height: 1.6; margin: 0;">
-            การจัดเรียงทำเนียบกระทรวงเรียงตามลำดับ ๑๒ กระทรวงหลัก ทั้งกระทรวงที่จัดตั้งขึ้นใหม่ กระทรวงที่ปฏิรูป/ควบรวม และกระทรวงหลักของแผ่นดิน:
+            การจัดเรียงทำเนียบกระทรวงเรียงตามลำดับ ๒๑ กระทรวงหลัก ทั้งกระทรวงที่จัดตั้งขึ้นใหม่ กระทรวงที่ปฏิรูป/ควบรวม และกระทรวงหลักของแผ่นดิน:
           </p>
         </div>
 
@@ -2221,10 +2221,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="ministry-row" data-category="core">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๑</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 20px;">🖼️</span>
-                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
-                  </div>
+                  <div style="width: 68px; height: 68px; background: rgba(255,255,255,0.06); border: 1.5px solid rgba(250, 204, 21, 0.45); border-radius: 10px; padding: 4px; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.35);"><img src="images/ministry_1.png" alt="โลโก้กระทรวง ลำดับที่ 1" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));"></div>
                 </td>
                 <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">สำนักนายกรัฐมนตรี</td>
                 <td style="text-align: center;">
@@ -2238,10 +2235,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="ministry-row" data-category="core">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๒</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 20px;">🖼️</span>
-                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
-                  </div>
+                  <div style="width: 68px; height: 68px; background: rgba(255,255,255,0.06); border: 1.5px solid rgba(250, 204, 21, 0.45); border-radius: 10px; padding: 4px; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.35);"><img src="images/ministry_2.png" alt="โลโก้กระทรวง ลำดับที่ 2" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));"></div>
                 </td>
                 <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงกลาโหม</td>
                 <td style="text-align: center;">
@@ -2255,10 +2249,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="ministry-row" data-category="core">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๓</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 20px;">🖼️</span>
-                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
-                  </div>
+                  <div style="width: 68px; height: 68px; background: rgba(255,255,255,0.06); border: 1.5px solid rgba(250, 204, 21, 0.45); border-radius: 10px; padding: 4px; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.35);"><img src="images/ministry_3.png" alt="โลโก้กระทรวง ลำดับที่ 3" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));"></div>
                 </td>
                 <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงการคลัง</td>
                 <td style="text-align: center;">
@@ -2272,10 +2263,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="ministry-row" data-category="core">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๔</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 20px;">🖼️</span>
-                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
-                  </div>
+                  <div style="width: 68px; height: 68px; background: rgba(255,255,255,0.06); border: 1.5px solid rgba(250, 204, 21, 0.45); border-radius: 10px; padding: 4px; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.35);"><img src="images/ministry_4.png" alt="โลโก้กระทรวง ลำดับที่ 4" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));"></div>
                 </td>
                 <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงการต่างประเทศ</td>
                 <td style="text-align: center;">
@@ -2289,10 +2277,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="ministry-row" data-category="core">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๕</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 20px;">🖼️</span>
-                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
-                  </div>
+                  <div style="width: 68px; height: 68px; background: rgba(255,255,255,0.06); border: 1.5px solid rgba(250, 204, 21, 0.45); border-radius: 10px; padding: 4px; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.35);"><img src="images/ministry_5.png" alt="โลโก้กระทรวง ลำดับที่ 5" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));"></div>
                 </td>
                 <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงการท่องเที่ยวและกีฬา</td>
                 <td style="text-align: center;">
@@ -2306,10 +2291,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="ministry-row" data-category="core">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๖</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 20px;">🖼️</span>
-                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
-                  </div>
+                  <div style="width: 68px; height: 68px; background: rgba(255,255,255,0.06); border: 1.5px solid rgba(250, 204, 21, 0.45); border-radius: 10px; padding: 4px; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.35);"><img src="images/ministry_6.png" alt="โลโก้กระทรวง ลำดับที่ 6" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));"></div>
                 </td>
                 <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงเกษตรและสหกรณ์</td>
                 <td style="text-align: center;">
@@ -2323,10 +2305,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="ministry-row" data-category="core">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๗</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 20px;">🖼️</span>
-                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
-                  </div>
+                  <div style="width: 68px; height: 68px; background: rgba(255,255,255,0.06); border: 1.5px solid rgba(250, 204, 21, 0.45); border-radius: 10px; padding: 4px; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.35);"><img src="images/ministry_7.png" alt="โลโก้กระทรวง ลำดับที่ 7" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));"></div>
                 </td>
                 <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงคมนาคม</td>
                 <td style="text-align: center;">
@@ -2340,10 +2319,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="ministry-row" data-category="core">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๘</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 20px;">🖼️</span>
-                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
-                  </div>
+                  <div style="width: 68px; height: 68px; background: rgba(255,255,255,0.06); border: 1.5px solid rgba(250, 204, 21, 0.45); border-radius: 10px; padding: 4px; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.35);"><img src="images/ministry_8.png" alt="โลโก้กระทรวง ลำดับที่ 8" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));"></div>
                 </td>
                 <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม</td>
                 <td style="text-align: center;">
@@ -2357,10 +2333,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="ministry-row" data-category="core">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๙</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 20px;">🖼️</span>
-                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
-                  </div>
+                  <div style="width: 68px; height: 68px; background: rgba(255,255,255,0.06); border: 1.5px solid rgba(250, 204, 21, 0.45); border-radius: 10px; padding: 4px; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.35);"><img src="images/ministry_9.png" alt="โลโก้กระทรวง ลำดับที่ 9" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));"></div>
                 </td>
                 <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม</td>
                 <td style="text-align: center;">
@@ -2374,10 +2347,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="ministry-row" data-category="core">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๑๐</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 20px;">🖼️</span>
-                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
-                  </div>
+                  <div style="width: 68px; height: 68px; background: rgba(255,255,255,0.06); border: 1.5px solid rgba(250, 204, 21, 0.45); border-radius: 10px; padding: 4px; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.35);"><img src="images/ministry_10.png" alt="โลโก้กระทรวง ลำดับที่ 10" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));"></div>
                 </td>
                 <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงพลังงาน</td>
                 <td style="text-align: center;">
@@ -2391,10 +2361,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="ministry-row" data-category="core">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๑๑</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 20px;">🖼️</span>
-                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
-                  </div>
+                  <div style="width: 68px; height: 68px; background: rgba(255,255,255,0.06); border: 1.5px solid rgba(250, 204, 21, 0.45); border-radius: 10px; padding: 4px; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.35);"><img src="images/ministry_11.png" alt="โลโก้กระทรวง ลำดับที่ 11" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));"></div>
                 </td>
                 <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงพาณิชย์</td>
                 <td style="text-align: center;">
@@ -2408,10 +2375,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="ministry-row" data-category="core">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๑๒</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 20px;">🖼️</span>
-                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
-                  </div>
+                  <div style="width: 68px; height: 68px; background: rgba(255,255,255,0.06); border: 1.5px solid rgba(250, 204, 21, 0.45); border-radius: 10px; padding: 4px; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.35);"><img src="images/ministry_12.png" alt="โลโก้กระทรวง ลำดับที่ 12" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));"></div>
                 </td>
                 <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงมหาดไทย</td>
                 <td style="text-align: center;">
@@ -2425,10 +2389,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="ministry-row" data-category="core">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๑๓</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 20px;">🖼️</span>
-                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
-                  </div>
+                  <div style="width: 68px; height: 68px; background: rgba(255,255,255,0.06); border: 1.5px solid rgba(250, 204, 21, 0.45); border-radius: 10px; padding: 4px; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.35);"><img src="images/ministry_13.png" alt="โลโก้กระทรวง ลำดับที่ 13" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));"></div>
                 </td>
                 <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงยุติธรรม</td>
                 <td style="text-align: center;">
@@ -2442,10 +2403,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="ministry-row" data-category="reformed">
                 <td style="text-align: center; font-weight: 700; color: #60a5fa;">๑๔</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(96, 165, 250, 0.5); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 20px;">🖼️</span>
-                    <span style="font-size: 8px; color: #60a5fa; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
-                  </div>
+                  <div style="width: 68px; height: 68px; background: rgba(255,255,255,0.06); border: 1.5px solid rgba(250, 204, 21, 0.45); border-radius: 10px; padding: 4px; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.35);"><img src="images/ministry_14.png" alt="โลโก้กระทรวง ลำดับที่ 14" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));"></div>
                 </td>
                 <td style="font-weight: 700; color: #60a5fa; font-size: 13.5px;">
                   กระทรวงแรงงานและสวัสดิการสังคม<br>
@@ -2462,10 +2420,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="ministry-row" data-category="core">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๑๕</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 20px;">🖼️</span>
-                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
-                  </div>
+                  <div style="width: 68px; height: 68px; background: rgba(255,255,255,0.06); border: 1.5px solid rgba(250, 204, 21, 0.45); border-radius: 10px; padding: 4px; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.35);"><img src="images/ministry_15.png" alt="โลโก้กระทรวง ลำดับที่ 15" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));"></div>
                 </td>
                 <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงวัฒนธรรม</td>
                 <td style="text-align: center;">
@@ -2479,10 +2434,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="ministry-row" data-category="reformed">
                 <td style="text-align: center; font-weight: 700; color: #fb923c;">๑๖</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(251, 146, 60, 0.5); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 20px;">🖼️</span>
-                    <span style="font-size: 8px; color: #fb923c; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
-                  </div>
+                  <div style="width: 68px; height: 68px; background: rgba(255,255,255,0.06); border: 1.5px solid rgba(250, 204, 21, 0.45); border-radius: 10px; padding: 4px; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.35);"><img src="images/ministry_16.png" alt="โลโก้กระทรวง ลำดับที่ 16" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));"></div>
                 </td>
                 <td style="font-weight: 700; color: #fb923c; font-size: 13.5px;">
                   กระทรวงศึกษาธิการ<br>
@@ -2499,10 +2451,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="ministry-row" data-category="core">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๑๗</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 20px;">🖼️</span>
-                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
-                  </div>
+                  <div style="width: 68px; height: 68px; background: rgba(255,255,255,0.06); border: 1.5px solid rgba(250, 204, 21, 0.45); border-radius: 10px; padding: 4px; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.35);"><img src="images/ministry_17.png" alt="โลโก้กระทรวง ลำดับที่ 17" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));"></div>
                 </td>
                 <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงสาธารณสุข</td>
                 <td style="text-align: center;">
@@ -2516,10 +2465,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="ministry-row" data-category="core">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๑๘</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 20px;">🖼️</span>
-                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
-                  </div>
+                  <div style="width: 68px; height: 68px; background: rgba(255,255,255,0.06); border: 1.5px solid rgba(250, 204, 21, 0.45); border-radius: 10px; padding: 4px; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.35);"><img src="images/ministry_18.png" alt="โลโก้กระทรวง ลำดับที่ 18" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));"></div>
                 </td>
                 <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงอุตสาหกรรม</td>
                 <td style="text-align: center;">
@@ -2533,10 +2479,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="ministry-row" data-category="new">
                 <td style="text-align: center; font-weight: 700; color: #facc15;">๑๙</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(250, 204, 21, 0.5); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 20px;">🖼️</span>
-                    <span style="font-size: 8px; color: #facc15; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
-                  </div>
+                  <div style="width: 68px; height: 68px; background: rgba(255,255,255,0.06); border: 1.5px solid rgba(250, 204, 21, 0.45); border-radius: 10px; padding: 4px; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.35);"><img src="images/ministry_19.png" alt="โลโก้กระทรวง ลำดับที่ 19" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));"></div>
                 </td>
                 <td style="font-weight: 700; color: #facc15; font-size: 13.5px;">กระทรวงทรัพย์สินทางปัญญาและเศรษฐกิจสร้างสรรค์</td>
                 <td style="text-align: center;">
@@ -2550,10 +2493,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="ministry-row" data-category="new">
                 <td style="text-align: center; font-weight: 700; color: #4ade80;">๒๐</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(74, 222, 128, 0.5); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 20px;">🖼️</span>
-                    <span style="font-size: 8px; color: #4ade80; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
-                  </div>
+                  <div style="width: 68px; height: 68px; background: rgba(255,255,255,0.06); border: 1.5px solid rgba(250, 204, 21, 0.45); border-radius: 10px; padding: 4px; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.35);"><img src="images/ministry_20.png" alt="โลโก้กระทรวง ลำดับที่ 20" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));"></div>
                 </td>
                 <td style="font-weight: 700; color: #4ade80; font-size: 13.5px;">กระทรวงหลักประกันและความเป็นธรรมทางสังคม</td>
                 <td style="text-align: center;">
@@ -2567,10 +2507,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr class="ministry-row" data-category="reformed">
                 <td style="text-align: center; font-weight: 700; color: #c084fc;">๒๑</td>
                 <td style="text-align: center; padding: 8px;">
-                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(192, 132, 252, 0.5); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 20px;">🖼️</span>
-                    <span style="font-size: 8px; color: #c084fc; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
-                  </div>
+                  <div style="width: 68px; height: 68px; background: rgba(255,255,255,0.06); border: 1.5px solid rgba(250, 204, 21, 0.45); border-radius: 10px; padding: 4px; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.35);"><img src="images/ministry_21.png" alt="โลโก้กระทรวง ลำดับที่ 21" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));"></div>
                 </td>
                 <td style="font-weight: 700; color: #c084fc; font-size: 13.5px;">
                   กระทรวงนวัตกรรมและเทคโนโลยี<br>
