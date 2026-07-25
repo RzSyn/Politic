@@ -3603,11 +3603,34 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             <h4 style="color: #facc15; font-size: 19px; margin: 0 0 14px 0; display: flex; align-items: center; gap: 10px; font-family: 'Outfit', sans-serif;">
               📜 ๑. ประวัติการจัดสร้างและวัตถุประสงค์โครงการ (ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช)
             </h4>
-            <!-- 🏛️ BANCC: โครงการในสมัยนายกฯ วิโรจน์ ลักขณาดิศร -->
-            <div style="margin-top: 14px; background: rgba(96, 165, 250, 0.08); border-left: 4px solid #60a5fa; padding: 12px 16px; border-radius: 0 8px 8px 0; font-size: 13.5px; color: #e2e8f0; line-height: 1.7;">
-              <strong style="color: #60a5fa; font-size: 14px;">🏛️ อภิมหาโครงการริเริ่มในสมัย นายกรัฐมนตรีวิโรจน์ ลักขณาดิศร (PM 25):</strong>
-              <div style="margin-top: 4px; color: #cbd5e1;">
-                ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช (BANCC) เป็นโครงการริเริ่มหลักของ <strong>นายกรัฐมนตรีวิโรจน์ ลักขณาดิศร</strong> ซึ่งเริ่มจัดสร้างขึ้นในปี พ.ศ. ๒๖๓๗ โดยดำเนินการก่อสร้างเสร็จเร็วกว่ากำหนด งบประมาณไม่บานปลาย ใช้งานได้จริง และกลายเป็นศูนย์กลางการประชุมและการแสดงสินค้าระดับโลกของสยามประเทศ
+            <!-- 🏛️ BANCC Construction Performance Box (เริ่มในวิโรจน์ เสร็จในวิโรจน์ รวมใช้เวลา ๓ ปี) -->
+            <div style="margin-top: 16px; background: rgba(74, 222, 128, 0.08); border: 1.5px solid rgba(74, 222, 128, 0.35); padding: 18px; border-radius: 12px; font-size: 13.5px; color: #e2e8f0; line-height: 1.75;">
+              <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; border-bottom: 1px solid rgba(74, 222, 128, 0.2); padding-bottom: 10px; margin-bottom: 12px;">
+                <h5 style="color: #4ade80; font-size: 15.5px; margin: 0; font-weight: 700; font-family: 'Outfit', sans-serif;">
+                  ⚡ ประวัติการจัดสร้างระดับปรากฏการณ์ (เริ่มในสมัยวิโรจน์ • เสร็จในสมัยวิโรจน์ • รวมใช้เวลา ๓ ปี)
+                </h5>
+                <span style="font-size: 11px; background: rgba(74, 222, 128, 0.2); color: #86efac; padding: 3px 10px; border-radius: 4px; font-weight: 700;">
+                  เสร็จก่อนกำหนด ๙ ปี! (-๗๕%)
+                </span>
+              </div>
+              
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 12px;">
+                <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 14px; border-radius: 8px; border-left: 3px solid #facc15;">
+                  <strong style="color: #cbd5e1; font-size: 12px;">👑 นายกรัฐมนตรีผู้ริเริ่ม & ก่อสร้าง:</strong><br>
+                  <span style="color: #facc15; font-size: 13.5px; font-weight: 700;">วิโรจน์ ลักขณาอดิศร (เริ่มและเสร็จในสมัยเดียว)</span>
+                </div>
+                <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 14px; border-radius: 8px; border-left: 3px solid #60a5fa;">
+                  <strong style="color: #cbd5e1; font-size: 12px;">🎯 แผนงาน/เวลาเป้าหมายเดิม:</strong><br>
+                  <span style="color: #93c5fd; font-size: 13.5px; font-weight: 700;">๑๒ ปี</span>
+                </div>
+                <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 14px; border-radius: 8px; border-left: 3px solid #4ade80;">
+                  <strong style="color: #cbd5e1; font-size: 12px;">⏱️ เวลาที่ใช้สร้างจริง:</strong><br>
+                  <span style="color: #4ade80; font-size: 14px; font-weight: 800;">เพียง ๓ ปีเท่านั้น!</span>
+                </div>
+              </div>
+
+              <div style="font-size: 12.5px; color: #cbd5e1;">
+                <strong style="color: #4ade80;">🌟 ผลงานการส่งมอบ (Project Result):</strong> โครงการก่อสร้างยึดมั่นระเบียบวินัยการเงินการคลังสูงสุด ปราศจากการทุจริต คณะทำงานบริหารจัดการเร่งรัดและประสานงานอย่างมีประสิทธิภาพ ส่งผลให้อาคารสร้างเสร็จสมบูรณ์ <strong>ใช้งานได้จริงภายในระยะเวลาเพียง ๓ ปี (จากเป้าหมายเดิม ๑๒ ปี)</strong> โดยส่งมอบผลงาน <strong>ที่มีคุณภาพมาตรฐานระดับสากลสูงสุดและเกินความคาดหมาย</strong> ของทั้งประชาชนชาวไทยและประชาคมโลก!
               </div>
             </div>
             <div style="font-size: 13.5px; color: var(--text-muted); line-height: 1.85; display: flex; flex-direction: column; gap: 12px; text-align: justify;">
