@@ -1658,132 +1658,257 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
       </div>
 
       
-        <!-- Section 3: องค์ประกอบฝ่ายนิติบัญญัติ บทบาท หน้าที่ และการได้มา -->
+        <!-- Section 3: องค์ประกอบฝ่ายนิติบัญญัติ บทบาท หน้าที่ และการได้มา (เปลี่ยนตามรัฐธรรมนูญ) -->
         <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(212, 175, 55, 0.35); border-radius: 14px; padding: 24px; margin-top: 24px; backdrop-filter: blur(10px);">
-          <h4 style="color: var(--gold-light); font-size: 19px; margin: 0 0 12px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 10px;">
-            <span>🏛️ องค์ประกอบฝ่ายนิติบัญญัติ บทบาทหน้าที่ และวิธีการได้มา</span>
-          </h4>
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;">
+            <h4 style="color: var(--gold-light); font-size: 19px; margin: 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 10px;">
+              <span>🏛️ องค์ประกอบฝ่ายนิติบัญญัติ ๘ ตำแหน่งหลัก (ปรับเปลี่ยนตามรัฐธรรมนูญ)</span>
+            </h4>
+            <span id="const-roles-badge" style="font-size: 12px; background: rgba(250, 204, 21, 0.15); color: #facc15; border: 1px solid rgba(250, 204, 21, 0.3); padding: 4px 12px; border-radius: 6px; font-weight: 600;">
+              "ข้อมูลปรับตามฉบับ พ.ศ. ๒๕๒๕"
+            </span>
+          </div>
+          
           <p style="color: var(--text-muted); font-size: 13.5px; margin-bottom: 20px; line-height: 1.6;">
-            สรุปข้อมูลสถาบันนิติบัญญัติ บุคลากรหลักในรัฐสภา ขั้วการเมือง บทบาทหน้าที่ตามกฎหมาย และกระบวนการได้มาตามรัฐธรรมนูญ:
+            รายละเอียดบทบาท หน้าที่ความรับผิดชอบ และวิธีการได้มาของทั้ง ๘ ตำแหน่งหลักในวงงานนิติบัญญัติ ปรับเปลี่ยนตามกฎหมายสูงสุดของรัฐธรรมนูญฉบับที่เลือก:
           </p>
 
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 16px;">
-
-            <!-- ๑. นายกรัฐมนตรี -->
-            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(250, 204, 21, 0.3); border-radius: 10px; padding: 18px;">
-              <h5 style="color: #facc15; font-size: 16px; margin: 0 0 10px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
-                <span>👑 ๑. นายกรัฐมนตรี (Prime Minister)</span>
-              </h5>
-              <div style="font-size: 13px; color: var(--text-muted); line-height: 1.6;">
-                <p style="margin-bottom: 8px;"><strong style="color: #e2e8f0;">📌 บทบาทหน้าที่:</strong> เป็นหัวหน้าฝ่ายบริหารและผู้นำรัฐบาล ทำหน้าที่เสนอร่าง พ.ร.บ., แถลงนโยบายต่อรัฐสภา, ชี้แจงกระทู้ถามสด และรับผิดชอบการบริหารราชการแผ่นดินต่อสภาผู้แทนราษฎร</p>
-                <p style="margin: 0;"><strong style="color: #60a5fa;">📥 ได้มาอย่างไร:</strong> ได้รับการเสนอชื่อจากพรรคการเมืองที่มี ส.ส. ไม่น้อยกว่า ๒๕ คน และได้รับการลงมติเห็นชอบจากที่ประชุมสภาผู้แทนราษฎรด้วยคะแนนเสียงเกินกึ่งหนึ่ง</p>
-              </div>
-            </div>
-
-            <!-- ๒. คณะรัฐมนตรี / รัฐมนตรี (รมต.) -->
-            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(96, 165, 250, 0.3); border-radius: 10px; padding: 18px;">
-              <h5 style="color: #60a5fa; font-size: 16px; margin: 0 0 10px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
-                <span>🏛️ ๒. คณะรัฐมนตรี / รัฐมนตรี (รมต.)</span>
-              </h5>
-              <div style="font-size: 13px; color: var(--text-muted); line-height: 1.6;">
-                <p style="margin-bottom: 8px;"><strong style="color: #e2e8f0;">📌 บทบาทหน้าที่:</strong> บริหารกระทรวงแผ่นดิน, ยกร่างกฎหมายเฉพาะกระทรวงเสนอสภา, เข้าตอบกระทู้ถามของ ส.ส. และออกตราพระราชกฤษฎีกา/กฎกระทรวงในการปฏิบัติงาน</p>
-                <p style="margin: 0;"><strong style="color: #60a5fa;">📥 ได้มาอย่างไร:</strong> นายกรัฐมนตรีเป็นผู้คัดเลือกแต่งตั้งจากผู้ทรงคุณวุฒิหรือ ส.ส. (รวมไม่เกิน ๓๕ คน) และนำความกราบบังคมทูลเพื่อทรงพระกรุณาโปรดเกล้าฯ แต่งตั้ง</p>
-              </div>
-            </div>
-
-            <!-- ๓. สมาชิกสภาผู้แทนราษฎร (ส.ส.) -->
-            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(74, 222, 128, 0.3); border-radius: 10px; padding: 18px;">
-              <h5 style="color: #4ade80; font-size: 16px; margin: 0 0 10px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
-                <span>🗳️ ๓. สมาชิกสภาผู้แทนราษฎร (ส.ส.)</span>
-              </h5>
-              <div style="font-size: 13px; color: var(--text-muted); line-height: 1.6;">
-                <p style="margin-bottom: 8px;"><strong style="color: #e2e8f0;">📌 บทบาทหน้าที่:</strong> ตัวแทนปวงชนชาวไทย ทำหน้าที่ตราและเสนอกฎหมาย (พ.ร.บ.), พิจารณาอนุมัติงบประมาณแผ่นดินประจำปี, ยื่นอภิปรายไม่ไว้วางใจรัฐบาล และทำหน้าที่ในกรรมาธิการ</p>
-                <p style="margin: 0;"><strong style="color: #60a5fa;">📥 ได้มาอย่างไร:</strong> มาจากการเลือกตั้งโดยตรงของประชาชนทั่วประเทศ (๕๐๐ ที่นั่ง) แบ่งเป็นระบบเลือกตั้งแบบแบ่งเขตเลือกตั้ง และระบบบัญชีรายชื่อ (Party-List)</p>
-              </div>
-            </div>
-
-            <!-- ๔. สมาชิกวุฒิสภา (ส.ว.) -->
-            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 10px; padding: 18px;">
-              <h5 style="color: #c084fc; font-size: 16px; margin: 0 0 10px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
-                <span>⚖️ ๔. สมาชิกวุฒิสภา (ส.ว.) — (ฉบับ ๒๕๒๕)</span>
-              </h5>
-              <div style="font-size: 13px; color: var(--text-muted); line-height: 1.6;">
-                <p style="margin-bottom: 8px;"><strong style="color: #e2e8f0;">📌 บทบาทหน้าที่:</strong> สภาที่สอง ทำหน้าที่กลั่นกรองร่างกฎหมายที่ผ่านความเห็นชอบจาก ส.ส., ตรวจสอบถ่วงดุล และให้ความเห็นชอบแต่งตั้งผู้ดำรงตำแหน่งในองค์กรอิสระตามรัฐธรรมนูญ</p>
-                <p style="margin: 0;"><strong style="color: #60a5fa;">📥 ได้มาอย่างไร:</strong> มาจากการคัดเลือกกันเองของผู้สมัครจาก ๒๐ กลุ่มอาชีพ (๒๐๐ ที่นั่ง) ปราศจากสังกัดพรรคการเมืองเพื่อความเป็นกลาง</p>
-              </div>
-            </div>
-
-            <!-- ๕. สมาชิกสภานิติบัญญัติแห่งชาติ (สนช.) -->
-            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 10px; padding: 18px;">
-              <h5 style="color: #f59e0b; font-size: 16px; margin: 0 0 10px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
-                <span>📜 ๕. สมาชิกสภานิติบัญญัติแห่งชาติ (สนช.) — (ฉบับ ๒๓๗๕)</span>
-              </h5>
-              <div style="font-size: 13px; color: var(--text-muted); line-height: 1.6;">
-                <p style="margin-bottom: 8px;"><strong style="color: #e2e8f0;">📌 บทบาทหน้าที่:</strong> สภาเดี่ยวในยุคปฐมเวลา ทำหน้าที่เป็นองค์กรนิติบัญญัติสยาม ยกร่าง ตรากฎหมายแผ่นดิน และควบคุมการบริหารในสภาผู้แทนราษฎรยุคแรก</p>
-                <p style="margin: 0;"><strong style="color: #60a5fa;">📥 ได้มาอย่างไร:</strong> มาจากการเลือกตั้งของราษฎรโดยตรงจำนวน ๑๕๐ คน ไร้สังกัดพรรคการเมือง</p>
-              </div>
-            </div>
-
-            <!-- ๖. ประธานสภาและรองประธานสภา -->
-            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 10px; padding: 18px;">
-              <h5 style="color: var(--gold-light); font-size: 16px; margin: 0 0 10px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
-                <span>🏛️ ๖. ประธานสภาและรองประธานสภา</span>
-              </h5>
-              <div style="font-size: 13px; color: var(--text-muted); line-height: 1.6;">
-                <p style="margin-bottom: 8px;"><strong style="color: #e2e8f0;">📌 บทบาทหน้าที่:</strong> วางตัวเป็นกลางในการปฏิบัติหน้าที่, ควบคุมระเบียบวาระและการประชุมสภา, วินิจฉัยข้อบังคับสภา และนำร่าง พ.ร.บ. ขึ้นทูลเกล้าฯ ถวายเพื่อประกาศใช้</p>
-                <p style="margin: 0;"><strong style="color: #60a5fa;">📥 ได้มาอย่างไร:</strong> สมาชิกสภาผู้แทนราษฎรเลือกลงมติเลือกจาก ส.ส. ในที่ประชุมสภานัดแรกหลังการเลือกตั้ง และได้รับแต่งตั้งตามพระบรมราชโองการ</p>
-              </div>
-            </div>
-
-            <!-- ๗. ฝ่ายรัฐบาล & ฝ่ายค้าน -->
-            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 10px; padding: 18px;">
-              <h5 style="color: #f87171; font-size: 16px; margin: 0 0 10px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
-                <span>⚔️ ๗. ฝ่ายรัฐบาล & ฝ่ายค้าน (Govt & Opposition)</span>
-              </h5>
-              <div style="font-size: 13px; color: var(--text-muted); line-height: 1.6;">
-                <p style="margin-bottom: 8px;"><strong style="color: #4ade80;">🟢 ฝ่ายรัฐบาล:</strong> รวมกลุ่มพรรคการเมืองที่มี ส.ส. รวมกันเกินกึ่งหนึ่ง (๒๕๑+ ที่นั่ง) เพื่อจัดตั้งรัฐบาลบริหารประเทศและผลักดันกฎหมาย</p>
-                <p style="margin: 0;"><strong style="color: #f87171;">🔴 ฝ่ายค้าน:</strong> นำโดยผู้นำฝ่ายค้าน ทำหน้าที่ตรวจสอบการใช้อำนาจรัฐ, ยื่นอภิปรายไม่ไว้วางใจ (ม.๑๕๑), เปิดโปงการทุจริต และเสนอทัศนะกฎหมายทางเลือก</p>
-              </div>
-            </div>
-
-            <!-- ๘. ตำรวจสภา (Parliamentary Guard) -->
-            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(148, 163, 184, 0.3); border-radius: 10px; padding: 18px;">
-              <h5 style="color: #cbd5e1; font-size: 16px; margin: 0 0 10px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
-                <span>🛡️ ๘. ตำรวจสภา (เจ้าหน้าที่รักษาความปลอดภัยรัฐสภา)</span>
-              </h5>
-              <div style="font-size: 13px; color: var(--text-muted); line-height: 1.6;">
-                <p style="margin-bottom: 8px;"><strong style="color: #e2e8f0;">📌 บทบาทหน้าที่:</strong> รักษาความสงบเรียบร้อย ความปลอดภัยของสมาชิกสภา บุคคลสำคัญ และทรัพย์สินบริเวณรัฐสภา ถืออำนาจคุมตัวผู้ก่อความวุ่นวายตามคำสั่งประธานสภา</p>
-                <p style="margin: 0;"><strong style="color: #60a5fa;">📥 ได้มาอย่างไร:</strong> เป็นข้าราชการรัฐสภาสามัญ สังกัดสำนักงานเลขาธิการสภาผู้แทนราษฎร ผ่านการสอบคัดเลือก อบรมกฎหมายสภาและฝึกยุทธวิธีอารักขา</p>
-              </div>
-            </div>
-
+          <!-- Dynamic Roles Container -->
+          <div id="legislative-roles-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 16px;">
+            <!-- JS dynamically injects 8 cards here -->
           </div>
         </div>
 
+      </div>
 
       <script>
-        const constErasData = {{
-          "const-1": {{
+        const constErasData = {{{{
+          "const-1": {{{{
             chamber_title: "🏛️ สภานิติบัญญัติแห่งชาติ (สนช.) — ๑๕๐ ที่นั่ง",
             seats: 150,
             has_senate: false,
-            desc: "ตามรัฐธรรมนูญฉบับปฐมเวลา ร.๗ (พ.ศ. ๒๓๗๕) ฝ่ายนิติบัญญัติประกอบด้วย <strong>สภานิติบัญญัติแห่งชาติ (สนช.) จำนวน ๑๕๐ ที่นั่ง</strong> ไร้สังกัดพรรคการเมือง ทำหน้าที่ยกร่างและพิจารณากฎหมายแผ่นดิน และไม่มีวุฒิสภา"
-          }},
-          "const-2": {{
+            desc: "ตามรัฐธรรมนูญฉบับปฐมเวลา ร.๗ (พ.ศ. ๒๓๗๕) ฝ่ายนิติบัญญัติประกอบด้วย <strong>สภานิติบัญญัติแห่งชาติ (สนช.) จำนวน ๑๕๐ ที่นั่ง</strong> ไร้สังกัดพรรคการเมือง ทำหน้าที่ยกร่างและพิจารณากฎหมายแผ่นดิน และไม่มีวุฒิสภา",
+            badge: "ข้อมูลปรับตามฉบับปฐมเวลา ร.๗ (พ.ศ. ๒๓๗๕)",
+            roles: [
+              {{{{
+                title: "👑 ๑. นายกรัฐมนตรี (ประธานกรรมการราษฎร)",
+                border: "rgba(250, 204, 21, 0.3)",
+                color: "#facc15",
+                duty: "หัวหน้าฝ่ายบริหารปฐมเวลา ทำหน้าที่เสนอกฎหมายแผ่นดิน แถลงการปกครองต่อ สนช. และรับผิดชอบการบริหารราชการแผ่นดินต่อสภานิติบัญญัติแห่งชาติ",
+                obtained: "ได้รับลงมติเลือกและเห็นชอบจากสมาชิกสภานิติบัญญัติแห่งชาติ (สนช.) ในที่ประชุมสภานัดแรก"
+              }}}},
+              {{{{
+                title: "🏛️ ๒. คณะรัฐมนตรี (คณะกรรมการราษฎร ๑๔ ท่าน)",
+                border: "rgba(96, 165, 250, 0.3)",
+                color: "#60a5fa",
+                duty: "บริหารกระทรวงปฐมเวลา ตราข้อบังคับการปกครอง ออกคำสั่งกระทรวง และเข้าชี้แจงการบริหารงานต่อที่ประชุม สนช.",
+                obtained: "สนช. เลือกลงมติแต่งตั้งจากสมาชิก สนช. หรือผู้เชี่ยวชาญรวม ๑๔ ท่าน เพื่อทำหน้าที่บริหารประเทศ"
+              }}}},
+              {{{{
+                title: "🗳️ ๓. สมาชิกสภาผู้แทนราษฎร (ส.ส.)",
+                border: "rgba(148, 163, 184, 0.3)",
+                color: "#94a3b8",
+                duty: "ในยุคปฐมเวลา ร.๗ (พ.ศ. ๒๓๗๕) ยังไม่มีการใช้คำว่า ส.ส. โดยอำนาจนิติบัญญัติทั้งหมดดำเนินการผ่านสมาชิกสภานิติบัญญัติแห่งชาติ (สนช.)",
+                obtained: "ยังไม่มีตำแหน่ง ส.ส. ในรัฐธรรมนูญฉบับที่ ๑ (ใช้ระบบ สนช. สภาเดี่ยว ๑๕๐ ที่นั่ง)"
+              }}}},
+              {{{{
+                title: "⚖️ ๔. สมาชิกวุฒิสภา (ส.ว.)",
+                border: "rgba(148, 163, 184, 0.3)",
+                color: "#94a3b8",
+                duty: "ยุคปฐมเวลา ร.๗ เป็นระบบสภาเดี่ยว ไร้วุฒิสภา (ส.ว.) การพิจารณากฎหมายและตรวจสอบกระทำโดย สนช. เพียงสภาเดียว",
+                obtained: "ไม่มีวุฒิสภาในรัฐธรรมนูญฉบับที่ ๑"
+              }}}},
+              {{{{
+                title: "📜 ๕. สมาชิกสภานิติบัญญัติแห่งชาติ (สนช. ๑๕๐ ที่นั่ง)",
+                border: "rgba(245, 158, 11, 0.3)",
+                color: "#f59e0b",
+                duty: "ตัวแทนปวงชนยุคแรก ทำหน้าที่ยกร่าง พิจารณา ตรากฎหมายแผ่นดิน อภิปรายงบประมาณ และเลือกคณะกรรมการราษฎร",
+                obtained: "มาจากการเลือกตั้งโดยตรงของราษฎรทั่วสยามประเทศจำนวน ๑๕๐ คน ปราศจากสังกัดพรรคการเมือง"
+              }}}},
+              {{{{
+                title: "🏛️ ๖. ประธานสภานิติบัญญัติแห่งชาติ",
+                border: "rgba(212, 175, 55, 0.3)",
+                color: "var(--gold-light)",
+                duty: "ประธานสภาปฐมเวลา วางตัวเป็นกลาง ควบคุมระเบียบการประชุม สนช. นำร่างกฎหมายขึ้นทูลเกล้าฯ ถวายเพื่อประกาศใช้",
+                obtained: "สมาชิก สนช. เลือกลงมติเลือกจากสมาชิก สนช. ในที่ประชุมสภานัดแรก"
+              }}}},
+              {{{{
+                title: "⚔️ ๗. ฝ่ายรัฐบาล & ฝ่ายค้าน (ยุคไร้พรรคการเมือง)",
+                border: "rgba(239, 68, 68, 0.3)",
+                color: "#f87171",
+                duty: "ยังไม่มีระบบพรรคการเมือง สมาชิก สนช. ทั้ง ๑๕๐ คนทำหน้าที่อิสระ อภิปรายและลงมติตามมโนธรรมและประโยชน์ของราษฎร",
+                obtained: "ไม่มีการจัดตั้งขั้วพรรคการเมือง (ทำหน้าที่ผู้แทนอิสระในสภาเดี่ยว)"
+              }}}},
+              {{{{
+                title: "🛡️ ๘. ตำรวจสภานิติบัญญัติแห่งชาติ",
+                border: "rgba(148, 163, 184, 0.3)",
+                color: "#cbd5e1",
+                duty: "รักษาความสงบเรียบร้อยและความปลอดภัยของสมาชิก สนช. และอาคารสภาปฐมเวลา ปฏิบัติหน้าที่ตามสั่งประธาน สนช.",
+                obtained: "เจ้าหน้าที่ตำรวจสังกัดกองอารักขาสภาปฐมเวลา ได้รับการแต่งตั้งตามระเบียบสภา"
+              }}}}
+            ]
+          }}}},
+          "const-2": {{{{
             chamber_title: "🏛️ สภาผู้แทนราษฎร (ส.ส.) — ๕๐๐ ที่นั่ง",
             seats: 500,
             has_senate: false,
-            desc: "ตามรัฐธรรมนูญฉบับ พ.ศ. ๒๔๔๕ ฝ่ายนิติบัญญัติเป็นระบบสภาเดี่ยว ประกอบด้วย <strong>สภาผู้แทนราษฎร (ส.ส.) จำนวน ๕๐๐ ที่นั่ง</strong> ทำหน้าที่ตรากฎหมายและควบคุมการบริหารราชการแผ่นดิน โดยในยุคนี้ไม่มีวุฒิสภา"
-          }},
-          "const-3": {{
+            desc: "ตามรัฐธรรมนูญฉบับ พ.ศ. ๒๔๔๕ ฝ่ายนิติบัญญัติเป็นระบบสภาเดี่ยว ประกอบด้วย <strong>สภาผู้แทนราษฎร (ส.ส.) จำนวน ๕๐๐ ที่นั่ง</strong> ทำหน้าที่ตรากฎหมายและควบคุมการบริหารราชการแผ่นดิน โดยในยุคนี้ไม่มีวุฒิสภา",
+            badge: "ข้อมูลปรับตามฉบับ พ.ศ. ๒๔๔๕",
+            roles: [
+              {{{{
+                title: "👑 ๑. นายกรัฐมนตรี",
+                border: "rgba(250, 204, 21, 0.3)",
+                color: "#facc15",
+                duty: "หัวหน้าฝ่ายบริหารและผู้นำสภาผู้แทนราษฎร เสนอร่าง พ.ร.บ., แถลงนโยบาย, ตอบกระทู้ถาม และรับผิดชอบบริหารแผ่นดินต่อ ส.ส.",
+                obtained: "ได้รับการเสนอชื่อโดย ส.ส. และได้รับมติเห็นชอบเกินกึ่งหนึ่งจากสภาผู้แทนราษฎร (๒๕๑+ เสียง)"
+              }}}},
+              {{{{
+                title: "🏛️ ๒. คณะรัฐมนตรี (รมต. ไม่เกิน ๓๐ ท่าน)",
+                border: "rgba(96, 165, 250, 0.3)",
+                color: "#60a5fa",
+                duty: "บริหารกระทรวง เสนอกฎหมายเฉพาะกระทรวง ตอบกระทู้ถาม ส.ส. และตราพระราชกฤษฎีกาบังคับใช้กฎหมาย",
+                obtained: "นายกรัฐมนตรีคัดเลือกแต่งตั้งจากผู้ทรงคุณวุฒิหรือ ส.ส. และนำความกราบบังคมทูลเพื่อทรงพระกรุณาโปรดเกล้าฯ แต่งตั้ง"
+              }}}},
+              {{{{
+                title: "🗳️ ๓. สมาชิกสภาผู้แทนราษฎร (ส.ส. ๕๐๐ ที่นั่ง)",
+                border: "rgba(74, 222, 128, 0.3)",
+                color: "#4ade80",
+                duty: "ตัวแทนปวงชนในสภาเดี่ยว ตรา พ.ร.บ., อนุมัติงบประมาณแผ่นดิน, ยื่นอภิปรายไม่ไว้วางใจ และทำงานกรรมาธิการ",
+                obtained: "เลือกตั้งโดยตรงจากประชาชน (๕๐๐ ที่นั่ง) ระบบแบ่งเขตเลือกตั้งและบัญชีรายชื่อ"
+              }}}},
+              {{{{
+                title: "⚖️ ๔. สมาชิกวุฒิสภา (ส.ว.)",
+                border: "rgba(148, 163, 184, 0.3)",
+                color: "#94a3b8",
+                duty: "รัฐธรรมนูญฉบับ พ.ศ. ๒๔๔๕ เป็นระบบสภาเดี่ยว ไม่มีวุฒิสภา (ส.ว.) สภาผู้แทนราษฎรทำหน้าที่นิติบัญญัติเต็มรูปแบบสภาเดียว",
+                obtained: "ไม่มีวุฒิสภาในรัฐธรรมนูญฉบับที่ ๒"
+              }}}},
+              {{{{
+                title: "📜 ๕. สมาชิกสภานิติบัญญัติแห่งชาติ (สนช.)",
+                border: "rgba(148, 163, 184, 0.3)",
+                color: "#94a3b8",
+                duty: "สิ้นสุดบทบาท สนช. โดยโครงสร้างสภาแปลงสภาพเป็นสภาผู้แทนราษฎร (ส.ส.) เต็มรูปแบบ ๕๐๐ ที่นั่ง",
+                obtained: "เปลี่ยนผ่านโครงสร้างเป็น ส.ส. ๕๐๐ ที่นั่ง"
+              }}}},
+              {{{{
+                title: "🏛️ ๖. ประธานสภาผู้แทนราษฎร",
+                border: "rgba(212, 175, 55, 0.3)",
+                color: "var(--gold-light)",
+                duty: "ประธานสภาผู้แทนราษฎร วางตัวเป็นกลาง ควบคุมการประชุมสภา วินิจฉัยข้อบังคับ นำร่าง พ.ร.บ. ทูลเกล้าฯ ถวาย",
+                obtained: "ส.ส. เลือกลงมติเลือกจาก ส.ส. ในที่ประชุมสภานัดแรกหลังเลือกตั้ง"
+              }}}},
+              {{{{
+                title: "⚔️ ๗. ฝ่ายรัฐบาล & ฝ่ายค้าน (Govt & Opposition)",
+                border: "rgba(239, 68, 68, 0.3)",
+                color: "#f87171",
+                duty: "ฝ่ายรัฐบาล (๒๕๑+ ที่นั่ง) บริหารประเทศ / ฝ่ายค้านนำโดยผู้นำฝ่ายค้าน ทำหน้าที่อภิปรายไม่ไว้วางใจและตรวจสอบการทุจริต",
+                obtained: "จับขั้วทางการเมืองจากพรรคการเมืองภายหลังทราบผลการเลือกตั้ง ส.ส."
+              }}}},
+              {{{{
+                title: "🛡️ ๘. ตำรวจสภาผู้แทนราษฎร",
+                border: "rgba(148, 163, 184, 0.3)",
+                color: "#cbd5e1",
+                duty: "รักษาความสงบเรียบร้อยและความปลอดภัยของ ส.ส. และทรัพย์สินในสภา คุมตัวผู้ก่อความวุ่นวายตามสั่งประธานสภา",
+                obtained: "ข้าราชการรัฐสภาสามัญ สังกัดสำนักงานเลขาธิการสภาผู้แทนราษฎร"
+              }}}}
+            ]
+          }}}},
+          "const-3": {{{{
             chamber_title: "🏛️ สภาผู้แทนราษฎร (ส.ส.) — ๕๐๐ ที่นั่ง",
             seats: 500,
             has_senate: true,
-            desc: "ตามรัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕ ฝ่ายนิติบัญญัติใช้ระบบสองสภา (Bicameral) ประกอบด้วย <strong>สภาผู้แทนราษฎร (ส.ส.) ๕๐๐ ที่นั่ง</strong> และ <strong>วุฒิสภา (ส.ว.) ๒๐๐ ที่นั่ง</strong> กลั่นกรองกฎหมายและแต่งตั้งองค์กรอิสระ"
-          }}
-        }};
+            desc: "ตามรัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕ ฝ่ายนิติบัญญัติใช้ระบบสองสภา (Bicameral) ประกอบด้วย <strong>สภาผู้แทนราษฎร (ส.ส.) ๕๐๐ ที่นั่ง</strong> และ <strong>วุฒิสภา (ส.ว.) ๒๐๐ ที่นั่ง</strong> กลั่นกรองกฎหมายและแต่งตั้งองค์กรอิสระ",
+            badge: "ข้อมูลปรับตามฉบับ พ.ศ. ๒๕๒๕",
+            roles: [
+              {{{{
+                title: "👑 ๑. นายกรัฐมนตรี (Prime Minister)",
+                border: "rgba(250, 204, 21, 0.3)",
+                color: "#facc15",
+                duty: "หัวหน้าฝ่ายบริหารและผู้นำรัฐสภา เสนอร่าง พ.ร.บ., แถลงนโยบายต่อสภา, ตอบกระทู้ถาม และรับผิดชอบบริหารประเทศต่อสภา",
+                obtained: "เสนอชื่อโดยพรรคการเมืองที่มี ส.ส. ไม่น้อยกว่า ๒๕ คน และได้รับมติเห็นชอบจากสภาผู้แทนราษฎรเกินกึ่งหนึ่ง"
+              }}}},
+              {{{{
+                title: "🏛️ ๒. คณะรัฐมนตรี / รัฐมนตรี (รมต. ๓๕ ท่าน)",
+                border: "rgba(96, 165, 250, 0.3)",
+                color: "#60a5fa",
+                duty: "บริหาร ๒๑ กระทรวงแผ่นดินปฏิรูป, เสนอกฎหมายกระทรวง, เข้าตอบกระทู้ถามสด ส.ส. และออกตราพระราชกฤษฎีกา",
+                obtained: "นายกรัฐมนตรีแต่งตั้งจากผู้ทรงคุณวุฒิหรือ ส.ส. และนำความกราบบังคมทูลเพื่อทรงพระกรุณาโปรดเกล้าฯ แต่งตั้ง"
+              }}}},
+              {{{{
+                title: "🗳️ ๓. สมาชิกสภาผู้แทนราษฎร (ส.ส. ๕๐๐ ที่นั่ง)",
+                border: "rgba(74, 222, 128, 0.3)",
+                color: "#4ade80",
+                duty: "ตัวแทนปวงชน ตราและเสนอกฎหมาย (พ.ร.บ.), พิจารณาอนุมัติงบประมาณแผ่นดิน, อภิปรายไม่ไว้วางใจ และทำงานกรรมาธิการ",
+                obtained: "เลือกตั้งโดยตรงของประชาชนทั่วประเทศ (๕๐๐ ที่นั่ง) ระบบแบ่งเขตและระบบบัญชีรายชื่อ (Party-List)"
+              }}}},
+              {{{{
+                title: "⚖️ ๔. สมาชิกวุฒิสภา (ส.ว. ๒๐๐ ที่นั่ง)",
+                border: "rgba(168, 85, 247, 0.3)",
+                color: "#c084fc",
+                duty: "สภาที่สอง กลั่นกรองร่าง พ.ร.บ. จาก ส.ส., ตรวจสอบถ่วงดุล และให้ความเห็นชอบแต่งตั้งผู้ดำรงตำแหน่งในองค์กรอิสระ",
+                obtained: "คัดเลือกกันเองของผู้สมัครจาก ๒๐ กลุ่มอาชีพ (๒๐๐ ที่นั่ง) ปราศจากสังกัดพรรคการเมือง"
+              }}}},
+              {{{{
+                title: "📜 ๕. สมาชิกสภานิติบัญญัติแห่งชาติ (สนช.)",
+                border: "rgba(148, 163, 184, 0.3)",
+                color: "#94a3b8",
+                duty: "ไม่มีตำแหน่ง สนช. ในฉบับนี้ โดยโครงสร้างเปลี่ยนเป็นระบบสองสภาสมบูรณ์แบบ (สภาผู้แทนราษฎร + วุฒิสภา)",
+                obtained: "ปรับเปลี่ยนเป็นระบบสองสภา ส.ส. (๕๐๐) + ส.ว. (๒๐๐)"
+              }}}},
+              {{{{
+                title: "🏛️ ๖. ประธานรัฐสภา & ประธานสภา",
+                border: "rgba(212, 175, 55, 0.3)",
+                color: "var(--gold-light)",
+                duty: "ประธานสภาผู้แทนราษฎรเป็นประธานรัฐสภาโดยตำแหน่ง วางตัวเป็นกลาง ควบคุมระเบียบการประชุมสภา และนำร่าง พ.ร.บ. ทูลเกล้าฯ",
+                obtained: "ส.ส. เลือกลงมติเลือกจาก ส.ส. ในที่ประชุมสภานัดแรก และได้รับการแต่งตั้งตามพระบรมราชโองการ"
+              }}}},
+              {{{{
+                title: "⚔️ ๗. ฝ่ายรัฐบาล & ฝ่ายค้าน (Govt & Opposition)",
+                border: "rgba(239, 68, 68, 0.3)",
+                color: "#f87171",
+                duty: "ฝ่ายรัฐบาลบริหารประเทศ / ฝ่ายค้านนำโดยผู้นำฝ่ายค้าน ตรวจสอบการทุจริต ยื่นอภิปรายไม่ไว้วางใจ (ม.๑๕๑) และยื่นศาล รธน.",
+                obtained: "จับขั้วทางการเมืองจากพรรคการเมืองภายหลังทราบผลการเลือกตั้ง ส.ส."
+              }}}},
+              {{{{
+                title: "🛡️ ๘. ตำรวจสภา & กองกำลังอารักขา GOC",
+                border: "rgba(148, 163, 184, 0.3)",
+                color: "#cbd5e1",
+                duty: "รักษาความสงบเรียบร้อยและความปลอดภัยบริเวณรัฐสภา พร้อมการประสานอารักขาร่วมกับ GOC ในภารกิจความมั่นคงสภา",
+                obtained: "ข้าราชการรัฐสภาสามัญ สังกัดสำนักงานเลขาธิการสภาผู้แทนราษฎร ประสานปฏิบัติการร่วม"
+              }}}}
+            ]
+          }}}}
+        }}}};
 
-        function switchConstEra(eraId) {{
+        function renderLegislativeRoles(eraId) {{{{
+          const data = constErasData[eraId];
+          if (!data || !data.roles) return;
+
+          const badgeEl = document.getElementById('const-roles-badge');
+          if (badgeEl) badgeEl.textContent = '"' + data.badge + '"';
+
+          const container = document.getElementById('legislative-roles-container');
+          if (!container) return;
+
+          let html = '';
+          data.roles.forEach(role => {{{{
+            html += `
+              <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid ${{{{role.border}}}}; border-radius: 10px; padding: 18px; transition: transform 0.2s ease;">
+                <h5 style="color: ${{{{role.color}}}}; font-size: 15.5px; margin: 0 0 10px 0; font-family: 'Outfit', sans-serif;">
+                  <span>${{{{role.title}}}}</span>
+                </h5>
+                <div style="font-size: 13px; color: var(--text-muted); line-height: 1.6;">
+                  <p style="margin-bottom: 8px;"><strong style="color: #e2e8f0;">📌 บทบาทหน้าที่:</strong> ${{{{role.duty}}}}</p>
+                  <p style="margin: 0;"><strong style="color: #60a5fa;">📥 ได้มาอย่างไร:</strong> ${{{{role.obtained}}}}</p>
+                </div>
+              </div>
+            `;
+          }}}});
+
+          container.innerHTML = html;
+        }}}}
+
+        function switchConstEra(eraId) {{{{
           const data = constErasData[eraId];
           if (!data) return;
 
@@ -1794,26 +1919,34 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           if (descEl) descEl.innerHTML = data.desc;
 
           const senateWrapper = document.getElementById('senate-wrapper');
-          if (senateWrapper) {{
+          if (senateWrapper) {{{{
             senateWrapper.style.display = data.has_senate ? 'block' : 'none';
-          }}
+          }}}}
 
           const svg = document.getElementById('mp-hemicycle-svg');
-          if (!svg) return;
+          if (svg) {{{{
+            const dots = svg.querySelectorAll('circle.seat-dot');
+            dots.forEach((dot, idx) => {{{{
+              if (idx < data.seats) {{{{
+                dot.style.display = '';
+                dot.setAttribute('fill', '#64748b');
+                dot.setAttribute('data-party', 'ที่นั่งสภาแผ่นดิน');
+                const title = dot.querySelector('title');
+                if (title) title.textContent = 'ที่นั่งสภาแผ่นดิน ลำดับที่ ' + (idx + 1);
+              }}}} else {{{{
+                dot.style.display = 'none';
+              }}}}
+            }}}});
+          }}}}
 
-          const dots = svg.querySelectorAll('circle.seat-dot');
-          dots.forEach((dot, idx) => {{
-            if (idx < data.seats) {{
-              dot.style.display = '';
-              dot.setAttribute('fill', '#64748b');
-              dot.setAttribute('data-party', 'ที่นั่งสภาแผ่นดิน');
-              const title = dot.querySelector('title');
-              if (title) title.textContent = 'ที่นั่งสภาแผ่นดิน ลำดับที่ ' + (idx + 1);
-            }} else {{
-              dot.style.display = 'none';
-            }}
-          }});
-        }}
+          // Render dynamic roles
+          renderLegislativeRoles(eraId);
+        }}}}
+
+        // Auto render initial roles on load
+        document.addEventListener('DOMContentLoaded', function() {{{{
+          renderLegislativeRoles('const-3');
+        }}}});
       </script>
     </div>
 
