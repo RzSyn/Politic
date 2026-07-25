@@ -5702,6 +5702,68 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
         </div>
 
+        <!-- Table Section: ตารางเปรียบเทียบประสิทธิภาพขั้นสุดยอด (The Ultimate Delivery Contrast) -->
+        <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(250, 204, 21, 0.35); border-radius: 14px; padding: 22px; margin-bottom: 24px;">
+          <h4 style="color: var(--gold-light); font-size: 16.5px; margin: 0 0 16px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
+            <span>📊 ตารางเปรียบเทียบประสิทธิภาพขั้นสุดยอด (The Ultimate Delivery Contrast)</span>
+          </h4>
+
+          <div style="overflow-x: auto;">
+            <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 13px; color: #e2e8f0;">
+              <thead>
+                <tr style="background: rgba(30, 41, 59, 0.8); border-bottom: 2px solid rgba(250, 204, 21, 0.4);">
+                  <th style="padding: 12px 14px; font-weight: 700; color: #7dd3fc; white-space: nowrap;">อภิมหาโครงการ</th>
+                  <th style="padding: 12px 14px; font-weight: 700; color: #facc15; white-space: nowrap;">คณะผู้นำบริหาร</th>
+                  <th style="padding: 12px 14px; font-weight: 700; color: #cbd5e1; white-space: nowrap; text-align: center;">แผนงานเดิม</th>
+                  <th style="padding: 12px 14px; font-weight: 700; color: #cbd5e1; white-space: nowrap; text-align: center;">เวลาที่ใช้จริง</th>
+                  <th style="padding: 12px 14px; font-weight: 700; color: #4ade80;">ผลงานการส่งมอบ (Project Result)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Row 1: คลองไทย 1.0 -->
+                <tr style="border-bottom: 1px solid rgba(255,255,255,0.08); background: rgba(30, 41, 59, 0.4);">
+                  <td style="padding: 14px; font-weight: 700; color: #38bdf8; white-space: nowrap;">
+                    🌊 คลองไทย 1.0
+                  </td>
+                  <td style="padding: 14px; font-weight: 600; color: #e2e8f0; white-space: nowrap;">
+                    พิธา → ศิริกัญญา
+                  </td>
+                  <td style="padding: 14px; text-align: center; font-weight: 700; color: #cbd5e1; white-space: nowrap;">
+                    ๑๔ ปี
+                  </td>
+                  <td style="padding: 14px; text-align: center; font-weight: 800; color: #4ade80; white-space: nowrap;">
+                    ๙ ปี
+                  </td>
+                  <td style="padding: 14px; line-height: 1.5; color: #4ade80;">
+                    ⚡ <strong>เสร็จก่อนกำหนด ๕ ปีเต็ม! (-๓๕%)</strong><br>
+                    <span style="font-size: 11.5px; color: #94a3b8; font-style: italic;">(สร้างปรากฏการณ์สปีดงานระดับโลก)</span>
+                  </td>
+                </tr>
+
+                <!-- Row 2: คลองไทย 2.0 -->
+                <tr style="border-bottom: 1px solid rgba(255,255,255,0.08); background: rgba(239, 68, 68, 0.05);">
+                  <td style="padding: 14px; font-weight: 700; color: #f87171; white-space: nowrap;">
+                    🚀 คลองไทย 2.0
+                  </td>
+                  <td style="padding: 14px; font-weight: 600; color: #e2e8f0; white-space: nowrap;">
+                    พริษฐ์ → วิสุทธิ์/รักชนก
+                  </td>
+                  <td style="padding: 14px; text-align: center; font-weight: 700; color: #cbd5e1; white-space: nowrap;">
+                    ๑๒ ปี
+                  </td>
+                  <td style="padding: 14px; text-align: center; font-weight: 800; color: #ef4444; white-space: nowrap;">
+                    ๒๔ ปี
+                  </td>
+                  <td style="padding: 14px; line-height: 1.5; color: #f87171;">
+                    🐢 <strong>ล่าช้ากว่าแผนเท่าตัว เลทไป ๑๒ ปี! (+๑๐๐%)</strong><br>
+                    <span style="font-size: 11.5px; color: #cbd5e1; font-style: italic;">(จากพิษโกงของวิสุทธิ์และความละเลยของรักชนก)</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
         <!-- Section 3: สถิติยุทธศาสตร์ & ผลกระทบทางเศรษฐกิจ -->
         <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(250, 204, 21, 0.25); border-radius: 14px; padding: 22px;">
           <h4 style="color: var(--gold-light); font-size: 16px; margin: 0 0 16px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
