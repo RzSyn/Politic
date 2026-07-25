@@ -17,6 +17,17 @@ function switchTab(tabId, btn) {
   
   btn.classList.add('active');
   document.getElementById(tabId).classList.add('active');
+
+  // เมื่อเปิด legislative-tab ให้ sync hemicycle ตาม dropdown ที่เลือกอยู่
+  // ใช้ setTimeout เพื่อให้ inline script ภายใน tab โหลดเสร็จก่อน
+  if (tabId === 'legislative-tab') {
+    setTimeout(function() {
+      const sel = document.getElementById('pm-era-select');
+      if (sel && typeof switchPMEra === 'function') {
+        switchPMEra(sel.value);
+      }
+    }, 50);
+  }
 }
 
 // Toggle Accordion in Early Constitution Tab
