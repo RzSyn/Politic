@@ -570,6 +570,57 @@ for pm in pms:
 pm_table_rows_html = '\n'.join(pm_rows)
 
 dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style="max-width: 1250px;">
+<style>
+  .db-tab-content {{
+    display: none !important;
+  }}
+  .db-tab-content.active {{
+    display: block !important;
+  }}
+  .db-tab-btn {{
+    transition: all 0.25s ease;
+  }}
+  .db-tab-btn.active {{
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.35), rgba(250, 204, 21, 0.2)) !important;
+    border-color: #facc15 !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 12px rgba(250, 204, 21, 0.3) !important;
+    font-weight: 700 !important;
+  }}
+</style>
+<script>
+  function switchTab(tabId, btn) {{
+    var allTabs = document.querySelectorAll('.db-tab-content');
+    allTabs.forEach(function(t) {{
+      t.style.display = 'none';
+      t.classList.remove('active');
+    }});
+
+    var allBtns = document.querySelectorAll('.db-tab-btn');
+    allBtns.forEach(function(b) {{
+      b.classList.remove('active');
+    }});
+
+    var target = document.getElementById(tabId);
+    if (target) {{
+      target.style.display = 'block';
+      target.classList.add('active');
+    }}
+
+    if (btn) {{
+      btn.classList.add('active');
+    }}
+
+    if (tabId === 'legislative-tab') {{
+      var select = document.getElementById('const-era-select');
+      var val = select ? select.value : 'const-3';
+      if (typeof switchConstEra === 'function') {{
+        switchConstEra(val);
+      }}
+    }}
+  }}
+</script>
+
 <script>
   function switchTab(tabId, btn) {{
     var allTabs = document.querySelectorAll('.db-tab-content');
