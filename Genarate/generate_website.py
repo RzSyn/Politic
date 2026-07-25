@@ -3303,7 +3303,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px;">
               <div style="background: rgba(0,0,0,0.3); padding: 14px 18px; border-radius: 10px; border-left: 4px solid #fb923c;">
                 <strong style="color: #fdba74; font-size: 13px;">📋 ช่องผ่านอนุมัติปีแรก:</strong>
-                <div style="color: var(--text); font-size: 16px; font-weight: 700; margin-top: 2px;">๓,๔๐0 ช่องทั่วประเทศ</div>
+                <div style="color: var(--text); font-size: 16px; font-weight: 700; margin-top: 2px;">๓,๔๐๐ ช่องทั่วประเทศ</div>
               </div>
               <div style="background: rgba(0,0,0,0.3); padding: 14px 18px; border-radius: 10px; border-left: 4px solid #4ade80;">
                 <strong style="color: #86efac; font-size: 13px;">📈 ยอดวิวรวมทุกช่องต่อเดือน:</strong>
@@ -3759,7 +3759,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <div style="background: rgba(0,0,0,0.3); padding: 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.06);">
                 <strong style="color: #60a5fa; font-size: 13.5px;">📡 Global Media & Broadcasting Hub:</strong>
                 <p style="margin: 6px 0 0 0; font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
-                  ศูนย์ข่าวสารสำหรับสื่อมวลชน รองรับนักข่าวได้ <strong>๓,๐๐0 คน</strong> มีโต๊ะทำงานพร้อมอินเทอร์เน็ตความเร็วสูงแยกแบนด์วิดท์เฉพาะ มีห้องสตูดิโอถ่ายทอดสดและสถานีส่งสัญญาณดาวเทียมในตัวอาคาร
+                  ศูนย์ข่าวสารสำหรับสื่อมวลชน รองรับนักข่าวได้ <strong>๓,๐๐๐ คน</strong> มีโต๊ะทำงานพร้อมอินเทอร์เน็ตความเร็วสูงแยกแบนด์วิดท์เฉพาะ มีห้องสตูดิโอถ่ายทอดสดและสถานีส่งสัญญาณดาวเทียมในตัวอาคาร
                 </p>
               </div>
             </div>
@@ -6983,7 +6983,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             </div>
 
             <div class="tri-stage">
-              <div class="tri-stage-title">🏛️ การริเริ่มสภาร่างรัฐธรรมนูญ ๓,๐๐0 คนและการสร้างกติกาสูงสุด</div>
+              <div class="tri-stage-title">🏛️ การริเริ่มสภาร่างรัฐธรรมนูญ ๓,๐๐๐ คนและการสร้างกติกาสูงสุด</div>
               <p class="tri-stage-text">อภิสิทธิ์ได้รับการสนับสนุนให้ดำรงตำแหน่งนายกรัฐมนตรีคนที่ ๑๓ ในท่ามกลางช่วงวิกฤตปฏิรูปโครงสร้างทางกฎหมายภายหลังรัฐธรรมนูญฉบับ ๒๔๔๕ เขาได้สร้างประวัติศาสตร์ร่วมกับพระมหากษัตริย์ รัชกาลที่ ๙ และแกนนำเครือข่ายประชาชนในการเสนอแนวคิดให้จัดตั้งสภาร่างรัฐธรรมนูญสัดส่วนประชาชนถึง ๓,๐๐๐ คน เพื่อร่วมทำการอภิปรายและยกร่างข้อบังคับต่าง ๆ ทั่วพระราชอาณาจักร โดยเขาได้นำทัพคณะรัฐมนตรีออกเดินทางไปรับฟังเสียงประชาชนในพื้นที่ห่างไกลทั่วประเทศ เพื่อให้รัฐธรรมนูญฉบับใหม่นี้เป็นสัญลักษณ์ของเจตจำนงของประชาชนอย่างแท้จริง</p>
             </div>
 
@@ -7519,7 +7519,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <div class="tri-stage-title">🎬 มหากาพย์ SIN ARCHIVE Remaster Series (สิญจน์ x พี่วิว Point of View x 9arm x เอมโมโน)</div>
               <p class="tri-stage-text">ก่อให้เกิดการผนึกกำลังครั้งประวัติศาสตร์ของ ๔ ไอดอลในดวงใจ: <strong>สิญจน์ (ภาพกราฟิก)</strong> x <strong>พี่วิว Point of View (ผู้เล่าเรื่องมีชีวิต)</strong> x <strong>9arm (เอกสารลับวงใน)</strong> x <strong>เอมโมโน (ข้อมูลสาธารณสุข)</strong> รังสรรค์สารคดีประวัติศาสตร์ Remaster:
                 <br>• <strong>Series 1 (ยุคการเมือง):</strong> EP.2 ศิริกัญญา & ParadoxAI ("ลูกคนที่สอง") ๖๑M วิว, EP.3 วิกฤตรักชนก & เสียงพยาบาล ๓๔,๐๐๐ คน ๘๙M วิว (9arm ส่ง Line ชมว่าดีที่สุดใน 3 ตอน), EP.4 ยุคนภดนัย-อนุเจริญ ("ทำเสร็จแล้วก็พอ") & นายกฯ วิโรจน์ ๑๐๓M วิว
-                <br>• <strong>Series 2 (มหากาพย์ประวัติศาสตร์ไทย ๔๐,๐๐๐ ปี):</strong> EP.1 ถ่ายทอดรากเหง้า ๔๐,๐๐๐ ปี ๗๔M วิว สู่ EP.10 อ้างอิงพระราชดำรัส ร.๔ <em>"ความรู้ที่ซ่อนอยู่ไม่ใช่ความรู้ ต่อเมื่อถ่ายทอดออกไปจึงจะมีความหมาย"</em> กวาดสถิติสด ๒๔.๑M คน และ <strong>ยอดวิวสะสม ๑๔๒,๐๐๐,๐๐0 วิว</strong> (ยอดซับสไครบ์ช่อง SIN ARCHIVE ๓๑,๒๐๐,๐๐๐ คน / Point of View ๒๔,๘๐๐,๐๐๐ คน)
+                <br>• <strong>Series 2 (มหากาพย์ประวัติศาสตร์ไทย ๔๐,๐๐๐ ปี):</strong> EP.1 ถ่ายทอดรากเหง้า ๔๐,๐๐๐ ปี ๗๔M วิว สู่ EP.10 อ้างอิงพระราชดำรัส ร.๔ <em>"ความรู้ที่ซ่อนอยู่ไม่ใช่ความรู้ ต่อเมื่อถ่ายทอดออกไปจึงจะมีความหมาย"</em> กวาดสถิติสด ๒๔.๑M คน และ <strong>ยอดวิวสะสม ๑๔๒,๐๐๐,๐๐๐ วิว</strong> (ยอดซับสไครบ์ช่อง SIN ARCHIVE ๓๑,๒๐๐,๐๐๐ คน / Point of View ๒๔,๘๐๐,๐๐๐ คน)
               </p>
             </div>
 
