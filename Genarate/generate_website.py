@@ -2210,7 +2210,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <tr style="background: rgba(15, 23, 42, 0.9); color: var(--gold-light);">
                 <th style="width: 50px; text-align: center; padding: 12px 6px;">ลำดับ</th>
                 <th style="width: 295px; text-align: center; padding: 12px 6px;">ตราโลโก้</th>
-                <th style="width: 180px; padding: 12px 8px; text-align: left;">ชื่อกระทรวง</th>
+                <th style="width: 195px; padding: 12px 8px; text-align: left;">ชื่อกระทรวง</th>
                 <th style="width: 115px; text-align: center; padding: 12px 6px;">ประเภทโครงสร้าง</th>
                 <th style="padding: 12px; width: 36%;">💡 ทำมาทำไม (ที่มาและความจำเป็น)</th>
                 <th style="padding: 12px; width: 44%;">🎯 มีหน้าที่อะไร (พันธกิจหลัก)</th>
