@@ -614,6 +614,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           <button class="db-tab-btn" onclick="switchTab('pms-tab', this)">ทำเนียบนายกรัฐมนตรี (๒๕ ท่าน)</button>
           <button class="db-tab-btn" onclick="switchTab('parties-tab', this)">🗳️ พรรคการเมือง</button>
           <button class="db-tab-btn" onclick="switchTab('independent-organs-tab', this)">⚖️ องค์กรอิสระตามรัฐธรรมนูญ</button>
+          <button class="db-tab-btn" onclick="switchTab('ministries-tab', this)">🏛️ กระทรวงแผ่นดิน (โครงสร้างปฏิรูป)</button>
           <button class="db-tab-btn" onclick="switchTab('national-symbols-tab', this)">🇹🇭 ธงชาติและเพลงชาติไทย</button>
         </div>
       </div>
@@ -2175,7 +2176,308 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
     </div>
 
     
-    <!-- Tab 12: โครงการคนละไลค์ (Khon La Like Campaign & SIN ARCHIVE) -->
+
+    <!-- Tab: กระทรวงแผ่นดิน (Ministries Tab - โครงสร้างปฏิรูป PCW Model) -->
+    <div id="ministries-tab" class="db-tab-content">
+      <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(96, 165, 250, 0.35); border-radius: 16px; padding: 28px; margin-bottom: 28px; backdrop-filter: blur(14px);">
+        
+        <!-- Header Banner -->
+        <div style="border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 20px; margin-bottom: 24px;">
+          <div style="display: inline-block; background: rgba(96, 165, 250, 0.15); border: 1px solid rgba(96, 165, 250, 0.4); color: #60a5fa; font-size: 11.5px; font-weight: 700; padding: 4px 12px; border-radius: 6px; margin-bottom: 8px;">
+            REFORMED GOVERNMENT STRUCTURE // PCW MODEL (PROACTIVE, CONNECTED & WISDOM-DRIVEN)
+          </div>
+          <h2 style="color: #60a5fa; font-size: 26px; font-weight: 800; margin: 0 0 8px 0; font-family: 'Outfit', sans-serif; line-height: 1.3;">
+            🏛️ โครงสร้างกระทรวงแห่งราชอาณาจักรไทย (โครงสร้างปฏิรูปยุคนายกฯ วิโรจน์ ลักขณาดิศร)
+          </h2>
+          <p style="font-size: 14px; color: var(--text-muted); line-height: 1.7; margin: 0;">
+            การปรับโครงสร้างกระทรวงครั้งใหญ่เพื่อการบริหารราชการแผ่นดินเชิงรุก (PCW Model) เปลี่ยนผ่านจากการทำงานแบบ "ตั้งรับและกระจัดกระจาย" ไปสู่การใช้เทคโนโลยีปัญญาประดิษฐ์ (ThaiJavis 2.0) ขับเคลื่อนทุกมิติ ควบรวมกระทรวงเดิม สถาปนา ๒ กระทรวงใหม่ คุ้มครองสิทธิทางปัญญา และดูแลวงจรชีวิตประชาชนครบวงจร
+          </p>
+        </div>
+
+        <!-- Section 1: กระทรวงที่จัดตั้งขึ้นใหม่ (Brand-New Ministries - PCW Model) -->
+        <div style="margin-bottom: 32px;">
+          <h3 style="color: #facc15; font-size: 20px; font-weight: 700; margin-bottom: 16px; border-left: 4px solid #facc15; padding-left: 12px; display: flex; align-items: center; gap: 8px;">
+            ✨ ๑. กระทรวงจัดตั้งขึ้นใหม่ (Brand-New Ministries)
+          </h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px;">
+
+            <!-- Ministry 1: กระทรวงทรัพย์สินทางปัญญาและเศรษฐกิจสร้างสรรค์ -->
+            <div style="background: rgba(0, 0, 0, 0.45); border: 1.5px solid rgba(250, 204, 21, 0.4); border-radius: 14px; padding: 22px; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <!-- Logo Placeholder -->
+                <div style="background: rgba(15, 23, 42, 0.8); border: 2px dashed rgba(250, 204, 21, 0.4); border-radius: 12px; padding: 18px; text-align: center; margin-bottom: 16px; min-height: 110px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;">
+                  <div style="font-size: 28px;">🖼️</div>
+                  <div style="color: #facc15; font-size: 12px; font-weight: 700;">[พื้นที่สำหรับใส่โลโก้กระทรวง - รอไฟล์รูปภาพ]</div>
+                  <div style="color: var(--text-muted); font-size: 11px;">Ministry of Intellectual Property & Creative Economy Logo</div>
+                </div>
+
+                <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 10px;">
+                  <h4 style="color: #facc15; font-size: 18px; font-weight: 700; margin: 0;">กระทรวงทรัพย์สินทางปัญญาและเศรษฐกิจสร้างสรรค์</h4>
+                </div>
+                <span style="font-size: 11px; background: rgba(250, 204, 21, 0.15); color: #facc15; border: 1px solid rgba(250, 204, 21, 0.3); padding: 3px 8px; border-radius: 4px; font-weight: 600; display: inline-block; margin-bottom: 14px;">
+                  ✨ [กระทรวงจัดตั้งขึ้นใหม่ - PCW Model]
+                </span>
+
+                <div style="margin-bottom: 14px;">
+                  <strong style="color: var(--gold-light); font-size: 13.5px;">💡 ทำมาทำไม (ที่มาและความจำเป็น):</strong>
+                  <p style="font-size: 13px; color: var(--text-muted); line-height: 1.65; margin: 4px 0 0 0;">
+                    ยกระดับจากกรมทรัพย์สินทางปัญญา เพื่อบังคับใช้กฎหมายลิขสิทธิ์อย่างเด็ดขาด ปกป้องสิทธิผู้สร้างสรรค์และนักพัฒนาเทคโนโลยีทันที โดยเป็นการเยียวยาและปิดช่องโหว่บทเรียนความผิดพลาดในอดีต (กรณีการสูญเสียสิทธิซอฟต์แวร์ Paradox และ SKILL.md ของ ดร.ธนานนท์ ในสมัยรักชนก) พร้อมทั้งผลักดันอุตสาหกรรมสร้างสรรค์ในยุคดิจิทัลอย่างครบวงจร
+                  </p>
+                </div>
+
+                <div>
+                  <strong style="color: #4ade80; font-size: 13.5px;">🎯 มีหน้าที่อะไร (พันธกิจหลัก):</strong>
+                  <ul style="font-size: 12.5px; color: var(--text-muted); line-height: 1.65; padding-left: 18px; margin: 4px 0 0 0;">
+                    <li><strong>Protect (คุ้มครอง):</strong> ดำเนินการปราบปรามการละเมิดลิขสิทธิ์และสิทธิบัตรซอฟต์แวร์ทันที ให้ความคุ้มครองทางกฎหมายแก่ผู้สร้างสรรค์และนักพัฒนาไทยทั้งในและต่างประเทศ</li>
+                    <li><strong>Promote (ส่งเสริม):</strong> สนับสนุนเศรษฐกิจสร้างสรรค์ครอบคลุม ดนตรี, ภาพยนตร์, เกม, ศิลปะ, วรรณกรรม และ Content Creators โดยทำงานร่วมกับกระทรวงนวัตกรรมฯ</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ministry 2: กระทรวงหลักประกันและความเป็นธรรมทางสังคม -->
+            <div style="background: rgba(0, 0, 0, 0.45); border: 1.5px solid rgba(74, 222, 128, 0.4); border-radius: 14px; padding: 22px; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <!-- Logo Placeholder -->
+                <div style="background: rgba(15, 23, 42, 0.8); border: 2px dashed rgba(74, 222, 128, 0.4); border-radius: 12px; padding: 18px; text-align: center; margin-bottom: 16px; min-height: 110px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;">
+                  <div style="font-size: 28px;">🖼️</div>
+                  <div style="color: #4ade80; font-size: 12px; font-weight: 700;">[พื้นที่สำหรับใส่โลโก้กระทรวง - รอไฟล์รูปภาพ]</div>
+                  <div style="color: var(--text-muted); font-size: 11px;">Ministry of Social Guarantees & Justice Logo</div>
+                </div>
+
+                <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 10px;">
+                  <h4 style="color: #4ade80; font-size: 18px; font-weight: 700; margin: 0;">กระทรวงหลักประกันและความเป็นธรรมทางสังคม</h4>
+                </div>
+                <span style="font-size: 11px; background: rgba(74, 222, 128, 0.15); color: #4ade80; border: 1px solid rgba(74, 222, 128, 0.3); padding: 3px 8px; border-radius: 4px; font-weight: 600; display: inline-block; margin-bottom: 14px;">
+                  ✨ [กระทรวงจัดตั้งขึ้นใหม่ - PCW Model]
+                </span>
+
+                <div style="margin-bottom: 14px;">
+                  <strong style="color: #86efac; font-size: 13.5px;">💡 ทำมาทำไม (ที่มาและความจำเป็น):</strong>
+                  <p style="font-size: 13px; color: var(--text-muted); line-height: 1.65; margin: 4px 0 0 0;">
+                    รวบรวมระบบประกันภัยที่กระจัดกระจายอยู่ในหลายกระทรวง (สปส., สปสช., ประกันพืชผลเกษตร) เข้ามาไว้ในพอร์ทัลเดียว ขจัดความซ้ำซ้อนและป้องกันประชาชนถูกเอาเปรียบโดยสัญญาประกันภัยเอกชน
+                  </p>
+                </div>
+
+                <div>
+                  <strong style="color: #4ade80; font-size: 13.5px;">🎯 มีหน้าที่อะไร (พันธกิจหลัก):</strong>
+                  <ul style="font-size: 12.5px; color: var(--text-muted); line-height: 1.65; padding-left: 18px; margin: 4px 0 0 0;">
+                    <li>บริการศูนย์รวมหลักประกันภัยทุกประเภท (สุขภาพ, ว่างงาน, ชราภาพ, พืชผล/ภัยธรรมชาติ, อุบัติเหตุสาธารณะ)</li>
+                    <li>คุ้มครองผู้บริโภคและกำกับดูแลบริษัทประกันภัยเอกชนมิให้บิดพริ้วสัญญา</li>
+                    <li>ใช้ ThaiJavis ประเมินความเสี่ยงล่วงหน้าเพื่อจ่ายเยียวยาและคุ้มครองประชาชนก่อนเกิดวิกฤต</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Section 2: กระทรวงปฏิรูปและควบรวม (Re-structured & Merged Ministries) -->
+        <div style="margin-bottom: 32px;">
+          <h3 style="color: #60a5fa; font-size: 20px; font-weight: 700; margin-bottom: 16px; border-left: 4px solid #60a5fa; padding-left: 12px; display: flex; align-items: center; gap: 8px;">
+            🔄 ๒. กระทรวงปฏิรูปและควบรวม (Re-structured & Merged Ministries)
+          </h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px;">
+
+            <!-- Ministry 3: กระทรวงแรงงานและสวัสดิการสังคม -->
+            <div style="background: rgba(0, 0, 0, 0.45); border: 1.5px solid rgba(96, 165, 250, 0.35); border-radius: 14px; padding: 22px;">
+              <!-- Logo Placeholder -->
+              <div style="background: rgba(15, 23, 42, 0.8); border: 2px dashed rgba(96, 165, 250, 0.4); border-radius: 12px; padding: 16px; text-align: center; margin-bottom: 14px; min-height: 100px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;">
+                <div style="font-size: 26px;">🖼️</div>
+                <div style="color: #60a5fa; font-size: 11.5px; font-weight: 700;">[พื้นที่สำหรับใส่โลโก้กระทรวง - รอไฟล์รูปภาพ]</div>
+                <div style="color: var(--text-muted); font-size: 10.5px;">Ministry of Labour & Social Welfare Logo</div>
+              </div>
+
+              <h4 style="color: #60a5fa; font-size: 17.5px; font-weight: 700; margin: 0 0 6px 0;">กระทรวงแรงงานและสวัสดิการสังคม</h4>
+              <span style="font-size: 11px; background: rgba(96, 165, 250, 0.15); color: #60a5fa; border: 1px solid rgba(96, 165, 250, 0.3); padding: 3px 8px; border-radius: 4px; font-weight: 600; display: inline-block; margin-bottom: 12px;">
+                🔄 [ควบรวม พม. + กระทรวงแรงงาน]
+              </span>
+
+              <div style="margin-bottom: 12px;">
+                <strong style="color: #93c5fd; font-size: 13px;">💡 ทำมาทำไม:</strong>
+                <p style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6; margin: 4px 0 0 0;">
+                  แก้ปัญหากระทรวง พม. เดิมที่ทำงานตั้งรับเน้นแจกเงินสงเคราะห์แต่ไม่ช่วยให้พึ่งพาตนเองได้ และกระทรวงแรงงานทำงานแยกส่วน
+                </p>
+              </div>
+
+              <div>
+                <strong style="color: #60a5fa; font-size: 13px;">🎯 มีหน้าที่อะไร:</strong>
+                <ul style="font-size: 12px; color: var(--text-muted); line-height: 1.6; padding-left: 18px; margin: 4px 0 0 0;">
+                  <li>ดูแลวงจรชีวิตมนุษย์ครบวงจร (เกิด เกษียณ เจ็บ ตาย) + ยกระดับทักษะอาชีพ (Upskill/Reskill) แบบ One-Stop Service</li>
+                  <li>ร่วมมือกับ ThaiJavis วิเคราะห์สภาวะเสี่ยงของประชาชนแบบ Real-Time ส่งสวัสดิการก่อนเกิดปัญหาสังคม</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Ministry 4: กระทรวงนวัตกรรมและเทคโนโลยี -->
+            <div style="background: rgba(0, 0, 0, 0.45); border: 1.5px solid rgba(192, 132, 252, 0.35); border-radius: 14px; padding: 22px;">
+              <!-- Logo Placeholder -->
+              <div style="background: rgba(15, 23, 42, 0.8); border: 2px dashed rgba(192, 132, 252, 0.4); border-radius: 12px; padding: 16px; text-align: center; margin-bottom: 14px; min-height: 100px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;">
+                <div style="font-size: 26px;">🖼️</div>
+                <div style="color: #c084fc; font-size: 11.5px; font-weight: 700;">[พื้นที่สำหรับใส่โลโก้กระทรวง - รอไฟล์รูปภาพ]</div>
+                <div style="color: var(--text-muted); font-size: 10.5px;">Ministry of Innovation & Technology Logo</div>
+              </div>
+
+              <h4 style="color: #c084fc; font-size: 17.5px; font-weight: 700; margin: 0 0 6px 0;">กระทรวงนวัตกรรมและเทคโนโลยี</h4>
+              <span style="font-size: 11px; background: rgba(192, 132, 252, 0.15); color: #c084fc; border: 1px solid rgba(192, 132, 252, 0.3); padding: 3px 8px; border-radius: 4px; font-weight: 600; display: inline-block; margin-bottom: 12px;">
+                🔄 [ปรับรื้อโครงสร้าง อว. สายเทคโนโลยี]
+              </span>
+
+              <div style="margin-bottom: 12px;">
+                <strong style="color: #e9d5ff; font-size: 13px;">💡 ทำมาทำไม:</strong>
+                <p style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6; margin: 4px 0 0 0;">
+                  ขจัดปัญหางานวิจัยขึ้นหิ้ง โดยแยกสายเทคโนโลยีออกจากมหาวิทยาลัย เพื่อโฟกัสการจับคู่งานวิจัยกับภาคเอกชนและอุตสาหกรรมสร้างมูลค่าเศรษฐกิจจริง
+                </p>
+              </div>
+
+              <div>
+                <strong style="color: #c084fc; font-size: 13px;">🎯 มีหน้าที่อะไร:</strong>
+                <ul style="font-size: 12px; color: var(--text-muted); line-height: 1.6; padding-left: 18px; margin: 4px 0 0 0;">
+                  <li>จับคู่งานวิจัยและนวัตกรรมขั้นสูงกับภาคเอกชน/อุตสาหกรรม โดยใช้ ThaiJavis วิเคราะห์จับคู่แม่นยำ</li>
+                  <li>สนับสนุนทุนวิจัยเชิงรุกแก่นักวิจัยและสตาร์ทอัปดิจิทัลสร้างนวัตกรรมแห่งอนาคต</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Ministry 5: กระทรวงศึกษาธิการ -->
+            <div style="background: rgba(0, 0, 0, 0.45); border: 1.5px solid rgba(251, 146, 60, 0.35); border-radius: 14px; padding: 22px;">
+              <!-- Logo Placeholder -->
+              <div style="background: rgba(15, 23, 42, 0.8); border: 2px dashed rgba(251, 146, 60, 0.4); border-radius: 12px; padding: 16px; text-align: center; margin-bottom: 14px; min-height: 100px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;">
+                <div style="font-size: 26px;">🖼️</div>
+                <div style="color: #fb923c; font-size: 11.5px; font-weight: 700;">[พื้นที่สำหรับใส่โลโก้กระทรวง - รอไฟล์รูปภาพ]</div>
+                <div style="color: var(--text-muted); font-size: 10.5px;">Ministry of Education Logo</div>
+              </div>
+
+              <h4 style="color: #fb923c; font-size: 17.5px; font-weight: 700; margin: 0 0 6px 0;">กระทรวงศึกษาธิการ</h4>
+              <span style="font-size: 11px; background: rgba(251, 146, 60, 0.15); color: #fb923c; border: 1px solid rgba(251, 146, 60, 0.3); padding: 3px 8px; border-radius: 4px; font-weight: 600; display: inline-block; margin-bottom: 12px;">
+                🔄 [ควบรวมมหาวิทยาลัยจาก อว. กลับเข้ามา]
+              </span>
+
+              <div style="margin-bottom: 12px;">
+                <strong style="color: #ffedd5; font-size: 13px;">💡 ทำมาทำไม:</strong>
+                <p style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6; margin: 4px 0 0 0;">
+                  ดึงมหาวิทยาลัยกลับมาอยู่กับ ศธ. เพื่อวางเส้นทางพัฒนากำลังคนของประเทศตั้งแต่ระดับอนุบาล โรงเรียน จนถึงอุดมศึกษาให้เป็นเนื้อเดียวกัน
+                </p>
+              </div>
+
+              <div>
+                <strong style="color: #fb923c; font-size: 13px;">🎯 มีหน้าที่อะไร:</strong>
+                <ul style="font-size: 12px; color: var(--text-muted); line-height: 1.6; padding-left: 18px; margin: 4px 0 0 0;">
+                  <li>จัดการศึกษาถ้วนหน้า ตั้งแต่ขั้นพื้นฐานถึงระดับอุดมศึกษา และอนุมัติหลักสูตรวิชาชีพทันสมัย (รวมถึง Tech Doctor ๓ ปี)</li>
+                  <li>กระจายงบประมาณลดความเหลื่อมล้ำทางการศึกษาทั่วประเทศ</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Section 3: กระทรวงหลักของแผ่นดิน (Core Federal Ministries) -->
+        <div>
+          <h3 style="color: #e2e8f0; font-size: 20px; font-weight: 700; margin-bottom: 16px; border-left: 4px solid #e2e8f0; padding-left: 12px; display: flex; align-items: center; gap: 8px;">
+            🏛️ ๓. กระทรวงหลักของแผ่นดิน (Core Federal Ministries)
+          </h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px;">
+
+            <!-- Ministry 6: กระทรวงการคลัง -->
+            <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 18px;">
+              <div style="background: rgba(0,0,0,0.3); border: 1px dashed rgba(255,255,255,0.2); border-radius: 8px; padding: 12px; text-align: center; margin-bottom: 12px;">
+                <div style="font-size: 22px;">🖼️</div>
+                <div style="font-size: 11px; color: var(--text-muted);">[โลโก้กระทรวงการคลัง]</div>
+              </div>
+              <h5 style="color: var(--gold-light); font-size: 16px; margin: 0 0 6px 0;">กระทรวงการคลัง</h5>
+              <div style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">
+                <strong>💡 ทำมาทำไม:</strong> บริหารจัดการวินัยการเงินการคลังของชาติ รักษาสเถียรภาพทางเศรษฐกิจ และปฏิรูปโครงสร้างภาษีที่เป็นธรรม<br>
+                <strong>🎯 หน้าที่หลัก:</strong> จัดทำงบประมาณแผ่นดิน, จัดเก็บภาษีทรัพย์สิน/มรดก, บริหารระบบคลังดิจิทัลร่วมกับ ParadoxAI
+              </div>
+            </div>
+
+            <!-- Ministry 7: กระทรวงการต่างประเทศ -->
+            <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 18px;">
+              <div style="background: rgba(0,0,0,0.3); border: 1px dashed rgba(255,255,255,0.2); border-radius: 8px; padding: 12px; text-align: center; margin-bottom: 12px;">
+                <div style="font-size: 22px;">🖼️</div>
+                <div style="font-size: 11px; color: var(--text-muted);">[โลโก้กระทรวงการต่างประเทศ]</div>
+              </div>
+              <h5 style="color: var(--gold-light); font-size: 16px; margin: 0 0 6px 0;">กระทรวงการต่างประเทศ</h5>
+              <div style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">
+                <strong>💡 ทำมาทำไม:</strong> ดำเนินนโยบายการทูตเชิงรุก คุ้มครองผลประโยชน์ของสยามประเทศและประชาชนในเวทีโลก<br>
+                <strong>🎯 หน้าที่หลัก:</strong> เจรจาสนธิสัญญาการค้าเสรี SEATO, คุ้มครองคนไทยในต่างแดน, พัฒนาความร่วมมือการเดินเรือคลองไทยไมตรี ๒.๐
+              </div>
+            </div>
+
+            <!-- Ministry 8: กระทรวงสาธารณสุข -->
+            <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 18px;">
+              <div style="background: rgba(0,0,0,0.3); border: 1px dashed rgba(255,255,255,0.2); border-radius: 8px; padding: 12px; text-align: center; margin-bottom: 12px;">
+                <div style="font-size: 22px;">🖼️</div>
+                <div style="font-size: 11px; color: var(--text-muted);">[โลโก้กระทรวงสาธารณสุข]</div>
+              </div>
+              <h5 style="color: var(--gold-light); font-size: 16px; margin: 0 0 6px 0;">กระทรวงสาธารณสุข</h5>
+              <div style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">
+                <strong>💡 ทำมาทำไม:</strong> ยกระดับสุขภาวะของประชาชน รับประกันสิทธิการรักษาพยาบาลคุณภาพถ้วนหน้าอย่างเป็นธรรม<br>
+                <strong>🎯 หน้าที่หลัก:</strong> บริหาร รพ.มนุษย์ยกระดับ ๘๐ แห่ง, ผลิตบุคลากรทางการแพทย์ Tech Doctor (หลักสูตร ๓ ปี), ควบคุมโรคระบาด
+              </div>
+            </div>
+
+            <!-- Ministry 9: กระทรวงคมนาคม -->
+            <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 18px;">
+              <div style="background: rgba(0,0,0,0.3); border: 1px dashed rgba(255,255,255,0.2); border-radius: 8px; padding: 12px; text-align: center; margin-bottom: 12px;">
+                <div style="font-size: 22px;">🖼️</div>
+                <div style="font-size: 11px; color: var(--text-muted);">[โลโก้กระทรวงคมนาคม]</div>
+              </div>
+              <h5 style="color: var(--gold-light); font-size: 16px; margin: 0 0 6px 0;">กระทรวงคมนาคม</h5>
+              <div style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">
+                <strong>💡 ทำมาทำไม:</strong> พัฒนาโครงข่ายคมนาคมและระบบลอจิสติกส์ของประเทศ เพื่อเชื่อมโยงการเดินทางและการค้าอย่างมีประสิทธิภาพ<br>
+                <strong>🎯 หน้าที่หลัก:</strong> กำกับดูแลอภิมหาโครงการคลองไทยไมตรี ๒.๐, โครงข่ายรถไฟความเร็วสูง, ท่าเรือพาณิชย์ และระบบขนส่งสาธารณะ
+              </div>
+            </div>
+
+            <!-- Ministry 10: กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม -->
+            <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 18px;">
+              <div style="background: rgba(0,0,0,0.3); border: 1px dashed rgba(255,255,255,0.2); border-radius: 8px; padding: 12px; text-align: center; margin-bottom: 12px;">
+                <div style="font-size: 22px;">🖼️</div>
+                <div style="font-size: 11px; color: var(--text-muted);">[โลโก้กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม]</div>
+              </div>
+              <h5 style="color: var(--gold-light); font-size: 16px; margin: 0 0 6px 0;">กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม</h5>
+              <div style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">
+                <strong>💡 ทำมาทำไม:</strong> วางรากฐานรัฐดิจิทัล คุ้มครองความมั่นคงปลอดภัยไซเบอร์ และพัฒนาโครงสร้างพื้นฐานเทคโนโลยีสารสนเทศ<br>
+                <strong>🎯 หน้าที่หลัก:</strong> บริหารระบบ ThaiJavis 2.0 ร่วมกับทุกกระทรวง, ขยายโครงข่ายอินเทอร์เน็ตถ้วนหน้า, สกัดกั้นภัยไซเบอร์
+              </div>
+            </div>
+
+            <!-- Ministry 11: กระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม -->
+            <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 18px;">
+              <div style="background: rgba(0,0,0,0.3); border: 1px dashed rgba(255,255,255,0.2); border-radius: 8px; padding: 12px; text-align: center; margin-bottom: 12px;">
+                <div style="font-size: 22px;">🖼️</div>
+                <div style="font-size: 11px; color: var(--text-muted);">[โลโก้กระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม]</div>
+              </div>
+              <h5 style="color: var(--gold-light); font-size: 16px; margin: 0 0 6px 0;">กระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม</h5>
+              <div style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">
+                <strong>💡 ทำมาทำไม:</strong> ปกป้องฟื้นฟูธรรมชาติ รับมือภัยพิบัติทางธรรมชาติและวิกฤตสภาวะภูมิอากาศเปลี่ยนแปลง<br>
+                <strong>🎯 หน้าที่หลัก:</strong> วางระบบท่อระบายน้ำเมืองร่วมกับ อบจ./อบต. ป้องกันน้ำท่วมถาวร, บังคับใช้กฎหมายขยะเด็ดขาด (โทษ ๑/๔ สิงคโปร์)
+              </div>
+            </div>
+
+            <!-- Ministry 12: กระทรวงกลาโหม -->
+            <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 18px;">
+              <div style="background: rgba(0,0,0,0.3); border: 1px dashed rgba(255,255,255,0.2); border-radius: 8px; padding: 12px; text-align: center; margin-bottom: 12px;">
+                <div style="font-size: 22px;">🖼️</div>
+                <div style="font-size: 11px; color: var(--text-muted);">[โลโก้กระทรวงกลาโหม]</div>
+              </div>
+              <h5 style="color: var(--gold-light); font-size: 16px; margin: 0 0 6px 0;">กระทรวงกลาโหม</h5>
+              <div style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">
+                <strong>💡 ทำมาทำไม:</strong> คุ้มกันอธิปไตย บูรณภาพแห่งดินแดน และความมั่นคงแห่งรัฐภายใต้การบังคับบัญชาของรัฐบาลพลเรือน<br>
+                <strong>🎯 หน้าที่หลัก:</strong> บริหารระบบทหารสมัครใจ ๑๐๐% (ยกเลิกเกณฑ์ทหาร), สนับสนุนภารกิจความมั่นคงภาคสนามภายใต้ Joint Command GOC
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
         <!-- Tab 12: โครงการคนละไลค์ (Khon La Like Campaign & SIN ARCHIVE) -->
     <div id="khonlalike-tab" class="db-tab-content">
       <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(251, 146, 60, 0.3); border-radius: 16px; padding: 28px; margin-bottom: 28px; backdrop-filter: blur(12px);">
