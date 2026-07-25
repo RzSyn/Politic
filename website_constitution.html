@@ -1600,64 +1600,62 @@
           }
         };
 
-        function updateRoleCardsVisibility(eraId) {{
-          const mpCard = document.getElementById('role-card-mp');
-          const senateCard = document.getElementById('role-card-senate');
-          const nlaCard = document.getElementById('role-card-nla');
-          const badgeEl = document.getElementById('const-roles-badge');
+        function updateRoleCardsVisibility(eraId) {
+          var mpCard = document.getElementById('role-card-mp');
+          var senateCard = document.getElementById('role-card-senate');
+          var nlaCard = document.getElementById('role-card-nla');
+          var badgeEl = document.getElementById('const-roles-badge');
 
-          if (eraId === 'const-1') {{
+          if (eraId === 'const-1') {
             if (mpCard) mpCard.style.display = 'none';
             if (senateCard) senateCard.style.display = 'none';
             if (nlaCard) nlaCard.style.display = 'block';
             if (badgeEl) badgeEl.textContent = '"แสดงเฉพาะตำแหน่งที่มีในฉบับปฐมเวลา ร.๗ (พ.ศ. ๒๓๗๕)"';
-          }} else if (eraId === 'const-2') {{
+          } else if (eraId === 'const-2') {
             if (mpCard) mpCard.style.display = 'block';
             if (senateCard) senateCard.style.display = 'none';
             if (nlaCard) nlaCard.style.display = 'none';
             if (badgeEl) badgeEl.textContent = '"แสดงเฉพาะตำแหน่งที่มีในฉบับ พ.ศ. ๒๔๔๕"';
-          }} else {{
+          } else {
             if (mpCard) mpCard.style.display = 'block';
             if (senateCard) senateCard.style.display = 'block';
             if (nlaCard) nlaCard.style.display = 'none';
             if (badgeEl) badgeEl.textContent = '"แสดงตำแหน่งระบบสองสภาในฉบับ พ.ศ. ๒๕๒๕"';
-          }}
-        }}
+          }
+        }
 
-        function switchConstEra(eraId) {{
-          const data = constErasData[eraId];
+        function switchConstEra(eraId) {
+          var data = constErasData[eraId];
           if (!data) return;
 
-          const titleEl = document.getElementById('const-era-title');
+          var titleEl = document.getElementById('const-era-title');
           if (titleEl) titleEl.textContent = data.chamber_title;
 
-          const descEl = document.getElementById('const-era-desc');
+          var descEl = document.getElementById('const-era-desc');
           if (descEl) descEl.innerHTML = data.desc;
 
-          const senateWrapper = document.getElementById('senate-wrapper');
-          if (senateWrapper) {{
+          var senateWrapper = document.getElementById('senate-wrapper');
+          if (senateWrapper) {
             senateWrapper.style.display = data.has_senate ? 'block' : 'none';
-          }}
+          }
 
-          const svg = document.getElementById('mp-hemicycle-svg');
-          if (svg) {{
-            const dots = svg.querySelectorAll('circle.seat-dot');
-            dots.forEach((dot, idx) => {{
-              if (idx < data.seats) {{
+          var svg = document.getElementById('mp-hemicycle-svg');
+          if (svg) {
+            var dots = svg.querySelectorAll('circle.seat-dot');
+            dots.forEach(function(dot, idx) {
+              if (idx < data.seats) {
                 dot.style.display = '';
                 dot.setAttribute('fill', '#64748b');
                 dot.setAttribute('data-party', 'ที่นั่งสภาแผ่นดิน');
-                const title = dot.querySelector('title');
+                var title = dot.querySelector('title');
                 if (title) title.textContent = 'ที่นั่งสภาแผ่นดิน ลำดับที่ ' + (idx + 1);
-              }} else {{
+              } else {
                 dot.style.display = 'none';
-              }}
-            }});
-          }}
+              }
+            });
+          }
 
           updateRoleCardsVisibility(eraId);
-        }}
-          });
         }
       </script>
     </div>
