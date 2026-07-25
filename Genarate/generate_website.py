@@ -1704,8 +1704,11 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         <!-- Section 3: องค์ประกอบฝ่ายนิติบัญญัติ บทบาท หน้าที่ และการได้มา -->
         <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(212, 175, 55, 0.35); border-radius: 14px; padding: 24px; margin-top: 24px; backdrop-filter: blur(10px);">
           <h4 style="color: var(--gold-light); font-size: 19px; margin: 0 0 12px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 10px;">
-            <span>🏛️ องค์ประกอบฝ่ายนิติบัญญัติ บทบาทหน้าที่ และวิธีการได้มา</span>
+            <span>🏛️ องค์ประกอบฝ่ายนิติบัญญัติ ๘ ตำแหน่งหลัก</span>
           </h4>
+          <span id="const-roles-badge" style="font-size: 12px; background: rgba(250, 204, 21, 0.15); color: #facc15; border: 1px solid rgba(250, 204, 21, 0.3); padding: 4px 12px; border-radius: 6px; font-weight: 600; display: inline-block; margin-bottom: 12px;">
+            "แสดงตำแหน่งระบบสองสภาในฉบับ พ.ศ. ๒๕๒๕"
+          </span>
           <p style="color: var(--text-muted); font-size: 13.5px; margin-bottom: 20px; line-height: 1.6;">
             สรุปข้อมูลสถาบันนิติบัญญัติ บุคลากรหลักในรัฐสภา ขั้วการเมือง บทบาทหน้าที่ตามกฎหมาย และกระบวนการได้มาตามรัฐธรรมนูญ:
           </p>
@@ -1713,7 +1716,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 16px;">
 
             <!-- ๑. นายกรัฐมนตรี -->
-            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(250, 204, 21, 0.3); border-radius: 10px; padding: 18px;">
+            <div id="role-card-pm" style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(250, 204, 21, 0.3); border-radius: 10px; padding: 18px;">
               <h5 style="color: #facc15; font-size: 16px; margin: 0 0 10px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
                 <span>👑 ๑. นายกรัฐมนตรี (Prime Minister)</span>
               </h5>
@@ -1724,7 +1727,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             </div>
 
             <!-- ๒. คณะรัฐมนตรี / รัฐมนตรี (รมต.) -->
-            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(96, 165, 250, 0.3); border-radius: 10px; padding: 18px;">
+            <div id="role-card-cabinet" style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(96, 165, 250, 0.3); border-radius: 10px; padding: 18px;">
               <h5 style="color: #60a5fa; font-size: 16px; margin: 0 0 10px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
                 <span>🏛️ ๒. คณะรัฐมนตรี / รัฐมนตรี (รมต.)</span>
               </h5>
@@ -1735,7 +1738,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             </div>
 
             <!-- ๓. สมาชิกสภาผู้แทนราษฎร (ส.ส.) -->
-            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(74, 222, 128, 0.3); border-radius: 10px; padding: 18px;">
+            <div id="role-card-mp" style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(74, 222, 128, 0.3); border-radius: 10px; padding: 18px;">
               <h5 style="color: #4ade80; font-size: 16px; margin: 0 0 10px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
                 <span>🗳️ ๓. สมาชิกสภาผู้แทนราษฎร (ส.ส.)</span>
               </h5>
@@ -1746,7 +1749,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             </div>
 
             <!-- ๔. สมาชิกวุฒิสภา (ส.ว.) -->
-            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 10px; padding: 18px;">
+            <div id="role-card-senate" style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 10px; padding: 18px;">
               <h5 style="color: #c084fc; font-size: 16px; margin: 0 0 10px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
                 <span>⚖️ ๔. สมาชิกวุฒิสภา (ส.ว.) — (ฉบับ ๒๕๒๕)</span>
               </h5>
@@ -1757,7 +1760,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             </div>
 
             <!-- ๕. สมาชิกสภานิติบัญญัติแห่งชาติ (สนช.) -->
-            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 10px; padding: 18px;">
+            <div id="role-card-nla" style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 10px; padding: 18px;">
               <h5 style="color: #f59e0b; font-size: 16px; margin: 0 0 10px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
                 <span>📜 ๕. สมาชิกสภานิติบัญญัติแห่งชาติ (สนช.) — (ฉบับ ๒๓๗๕)</span>
               </h5>
@@ -1768,7 +1771,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             </div>
 
             <!-- ๖. ประธานสภาและรองประธานสภา -->
-            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 10px; padding: 18px;">
+            <div id="role-card-speaker" style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 10px; padding: 18px;">
               <h5 style="color: var(--gold-light); font-size: 16px; margin: 0 0 10px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
                 <span>🏛️ ๖. ประธานสภาและรองประธานสภา</span>
               </h5>
@@ -1779,7 +1782,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             </div>
 
             <!-- ๗. ฝ่ายรัฐบาล & ฝ่ายค้าน -->
-            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 10px; padding: 18px;">
+            <div id="role-card-parties" style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 10px; padding: 18px;">
               <h5 style="color: #f87171; font-size: 16px; margin: 0 0 10px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
                 <span>⚔️ ๗. ฝ่ายรัฐบาล & ฝ่ายค้าน (Govt & Opposition)</span>
               </h5>
@@ -1790,7 +1793,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             </div>
 
             <!-- ๘. ตำรวจสภา (Parliamentary Guard) -->
-            <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(148, 163, 184, 0.3); border-radius: 10px; padding: 18px;">
+            <div id="role-card-police" style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(148, 163, 184, 0.3); border-radius: 10px; padding: 18px;">
               <h5 style="color: #cbd5e1; font-size: 16px; margin: 0 0 10px 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;">
                 <span>🛡️ ๘. ตำรวจสภา (เจ้าหน้าที่รักษาความปลอดภัยรัฐสภา)</span>
               </h5>
@@ -1826,7 +1829,31 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           }}
         }};
 
-        function switchConstEra(eraId) {{
+        function updateRoleCardsVisibility(eraId) {{{{
+          const mpCard = document.getElementById('role-card-mp');
+          const senateCard = document.getElementById('role-card-senate');
+          const nlaCard = document.getElementById('role-card-nla');
+          const badgeEl = document.getElementById('const-roles-badge');
+
+          if (eraId === 'const-1') {{{{
+            if (mpCard) mpCard.style.display = 'none';
+            if (senateCard) senateCard.style.display = 'none';
+            if (nlaCard) nlaCard.style.display = 'block';
+            if (badgeEl) badgeEl.textContent = '"แสดงเฉพาะตำแหน่งที่มีในฉบับปฐมเวลา ร.๗ (พ.ศ. ๒๓๗๕)"';
+          }}}} else if (eraId === 'const-2') {{{{
+            if (mpCard) mpCard.style.display = 'block';
+            if (senateCard) senateCard.style.display = 'none';
+            if (nlaCard) nlaCard.style.display = 'none';
+            if (badgeEl) badgeEl.textContent = '"แสดงเฉพาะตำแหน่งที่มีในฉบับ พ.ศ. ๒๔๔๕"';
+          }}}} else {{{{
+            if (mpCard) mpCard.style.display = 'block';
+            if (senateCard) senateCard.style.display = 'block';
+            if (nlaCard) nlaCard.style.display = 'none';
+            if (badgeEl) badgeEl.textContent = '"แสดงตำแหน่งระบบสองสภาในฉบับ พ.ศ. ๒๕๒๕"';
+          }}}}
+        }}}}
+
+        function switchConstEra(eraId) {{{{
           const data = constErasData[eraId];
           if (!data) return;
 
@@ -1837,24 +1864,28 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           if (descEl) descEl.innerHTML = data.desc;
 
           const senateWrapper = document.getElementById('senate-wrapper');
-          if (senateWrapper) {{
+          if (senateWrapper) {{{{
             senateWrapper.style.display = data.has_senate ? 'block' : 'none';
-          }}
+          }}}}
 
           const svg = document.getElementById('mp-hemicycle-svg');
-          if (!svg) return;
+          if (svg) {{{{
+            const dots = svg.querySelectorAll('circle.seat-dot');
+            dots.forEach((dot, idx) => {{{{
+              if (idx < data.seats) {{{{
+                dot.style.display = '';
+                dot.setAttribute('fill', '#64748b');
+                dot.setAttribute('data-party', 'ที่นั่งสภาแผ่นดิน');
+                const title = dot.querySelector('title');
+                if (title) title.textContent = 'ที่นั่งสภาแผ่นดิน ลำดับที่ ' + (idx + 1);
+              }}}} else {{{{
+                dot.style.display = 'none';
+              }}}}
+            }}}});
+          }}}}
 
-          const dots = svg.querySelectorAll('circle.seat-dot');
-          dots.forEach((dot, idx) => {{
-            if (idx < data.seats) {{
-              dot.style.display = '';
-              dot.setAttribute('fill', '#64748b');
-              dot.setAttribute('data-party', 'ที่นั่งสภาแผ่นดิน');
-              const title = dot.querySelector('title');
-              if (title) title.textContent = 'ที่นั่งสภาแผ่นดิน ลำดับที่ ' + (idx + 1);
-            }} else {{
-              dot.style.display = 'none';
-            }}
+          updateRoleCardsVisibility(eraId);
+        }}}}
           }});
         }}
       </script>
