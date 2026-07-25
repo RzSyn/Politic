@@ -2197,7 +2197,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
         <!-- Filter Buttons (Like PMs Tab) -->
         <div class="pm-filters" style="display:flex; gap:8px; margin-bottom:20px; flex-wrap: wrap;">
-          <button class="filter-btn active" onclick="filterMinistries('all', this)">แสดงทั้งหมด (๑๒ กระทรวง)</button>
+          <button class="filter-btn active" onclick="filterMinistries('all', this)">แสดงทั้งหมด (๒๑ กระทรวง)</button>
           <button class="filter-btn" onclick="filterMinistries('new', this)">✨ กระทรวงจัดตั้งใหม่ (PCW Model)</button>
           <button class="filter-btn" onclick="filterMinistries('reformed', this)">🔄 กระทรวงปฏิรูป/ควบรวม</button>
           <button class="filter-btn" onclick="filterMinistries('core', this)">🏛️ กระทรวงหลักของแผ่นดิน</button>
@@ -2217,324 +2217,362 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               </tr>
             </thead>
             <tbody>
-              
-              <!-- ๑. กระทรวงทรัพย์สินทางปัญญาและเศรษฐกิจสร้างสรรค์ -->
-              <tr class="ministry-row" data-category="new">
-                <td style="text-align: center; font-weight: 700; color: #facc15;">๑</td>
-                <td style="text-align: center; padding: 10px;">
-                  <div style="width: 72px; height: 72px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(250, 204, 21, 0.5); border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 22px;">🖼️</span>
-                    <span style="font-size: 8.5px; color: #facc15; font-weight: 700; text-align: center; line-height: 1.1;">[รอใส่โลโก้]</span>
+              <!-- ๑. สำนักนายกรัฐมนตรี -->
+              <tr class="ministry-row" data-category="core">
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๑</td>
+                <td style="text-align: center; padding: 8px;">
+                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
+                    <span style="font-size: 20px;">🖼️</span>
+                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #facc15; font-size: 14px;">
-                  กระทรวงทรัพย์สินทางปัญญาและเศรษฐกิจสร้างสรรค์
-                </td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">สำนักนายกรัฐมนตรี</td>
                 <td style="text-align: center;">
-                  <span style="font-size: 11px; background: rgba(250, 204, 21, 0.15); color: #facc15; border: 1px solid rgba(250, 204, 21, 0.3); padding: 4px 8px; border-radius: 4px; font-weight: 600; white-space: nowrap;">
-                    ✨ จัดตั้งขึ้นใหม่
-                  </span>
+                  <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ มีฐานะเท่ากระทรวง</span>
                 </td>
-                <td style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
-                  ยกระดับจากกรมทรัพย์สินทางปัญญา เพื่อบังคับใช้กฎหมายลิขสิทธิ์อย่างเด็ดขาด ปกป้องสิทธิผู้สร้างสรรค์และนักพัฒนาเทคโนโลยีทันที (เยียวยาบทเรียนอดีตกรณี Paradox & SKILL.md ของ ดร.ธนานนท์) และผลักดันเศรษฐกิจสร้างสรรค์ดิจิทัล
-                </td>
-                <td style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
-                  • <strong>Protect (คุ้มครอง):</strong> ปราบปรามการละเมิดลิขสิทธิ์/สิทธิบัตรซอฟต์แวร์ทันที <br>
-                  • <strong>Promote (ส่งเสริม):</strong> สนับสนุน Content Creators, เกม, ดนตรี, ภาพยนตร์, ศิลปะ ร่วมกับกระทรวงนวัตกรรมฯ
-                </td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">ศูนย์กลางการบริหารราชการแผ่นดินของนายกรัฐมนตรีและคณะรัฐมนตรี กำกับดูแลหน่วยงานยุทธศาสตร์ชาติและนโยบายเร่งด่วน</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">• ประสานนโยบายรัฐบาลและคณะรัฐมนตรี <br> • กำกับดูแลหน่วยงานความมั่นคง สื่อรัฐ และงบประมาณยุทธศาสตร์ชาติ</td>
               </tr>
 
-              <!-- ๒. กระทรวงหลักประกันและความเป็นธรรมทางสังคม -->
-              <tr class="ministry-row" data-category="new">
-                <td style="text-align: center; font-weight: 700; color: #4ade80;">๒</td>
-                <td style="text-align: center; padding: 10px;">
-                  <div style="width: 72px; height: 72px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(74, 222, 128, 0.5); border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 22px;">🖼️</span>
-                    <span style="font-size: 8.5px; color: #4ade80; font-weight: 700; text-align: center; line-height: 1.1;">[รอใส่โลโก้]</span>
+              <!-- ๒. กระทรวงกลาโหม -->
+              <tr class="ministry-row" data-category="core">
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๒</td>
+                <td style="text-align: center; padding: 8px;">
+                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
+                    <span style="font-size: 20px;">🖼️</span>
+                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #4ade80; font-size: 14px;">
-                  กระทรวงหลักประกันและความเป็นธรรมทางสังคม
-                </td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงกลาโหม</td>
                 <td style="text-align: center;">
-                  <span style="font-size: 11px; background: rgba(74, 222, 128, 0.15); color: #4ade80; border: 1px solid rgba(74, 222, 128, 0.3); padding: 4px 8px; border-radius: 4px; font-weight: 600; white-space: nowrap;">
-                    ✨ จัดตั้งขึ้นใหม่
-                  </span>
+                  <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
                 </td>
-                <td style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
-                  รวบรวมระบบประกันภัยที่กระจัดกระจายอยู่ในหลายกระทรวง (สปส., สปสช., ประกันพืชผล) เข้ามาไว้ในพอร์ทัลเดียว ป้องกันประชาชนถูกเอาเปรียบโดยเอกชน
-                </td>
-                <td style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
-                  • ศูนย์รวมประกันภัยทุกประเภท (สุขภาพ, ว่างงาน, ชราภาพ, พืชผล/ภัยธรรมชาติ, อุบัติเหตุ) <br>
-                  • คุ้มครองผู้บริโภคจากการถูกเอาเปรียบสัญญาประกัน <br>
-                  • ใช้ ThaiJavis ประเมินความเสี่ยงล่วงหน้าเพื่อคุ้มครองก่อนเกิดวิกฤต
-                </td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">คุ้มกันอธิปไตย บูรณภาพแห่งดินแดน และความมั่นคงแห่งรัฐภายใต้การบังคับบัญชาของรัฐบาลพลเรือน</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">• บริหารระบบทหารสมัครใจ ๑๐๐% (ยกเลิกเกณฑ์ทหาร) <br> • สนับสนุนภารกิจความมั่นคงภาคสนามตามคำสั่ง Joint Command GOC</td>
               </tr>
 
-              <!-- ๓. กระทรวงแรงงานและสวัสดิการสังคม -->
-              <tr class="ministry-row" data-category="reformed">
-                <td style="text-align: center; font-weight: 700; color: #60a5fa;">๓</td>
-                <td style="text-align: center; padding: 10px;">
-                  <div style="width: 72px; height: 72px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(96, 165, 250, 0.5); border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 22px;">🖼️</span>
-                    <span style="font-size: 8.5px; color: #60a5fa; font-weight: 700; text-align: center; line-height: 1.1;">[รอใส่โลโก้]</span>
+              <!-- ๓. กระทรวงการคลัง -->
+              <tr class="ministry-row" data-category="core">
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๓</td>
+                <td style="text-align: center; padding: 8px;">
+                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
+                    <span style="font-size: 20px;">🖼️</span>
+                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #60a5fa; font-size: 14px;">
-                  กระทรวงแรงงานและสวัสดิการสังคม
-                </td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงการคลัง</td>
                 <td style="text-align: center;">
-                  <span style="font-size: 11px; background: rgba(96, 165, 250, 0.15); color: #60a5fa; border: 1px solid rgba(96, 165, 250, 0.3); padding: 4px 8px; border-radius: 4px; font-weight: 600; white-space: nowrap;">
-                    🔄 ปฏิรูป/ควบรวม
-                  </span>
+                  <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
                 </td>
-                <td style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
-                  ควบรวม พม. + กระทรวงแรงงาน แก้ปัญหากระทรวง พม. เดิมที่ตั้งรับเน้นแจกเงินสงเคราะห์แต่ไม่ช่วยให้พึ่งตนเองได้ และแรงงานทำงานแยกส่วน
-                </td>
-                <td style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
-                  • ดูแลวงจรชีวิตมนุษย์ครบวงจร (เกิด เกษียณ เจ็บ ตาย) + ยกระดับทักษะอาชีพ (Upskill/Reskill) แบบ One-Stop Service <br>
-                  • ร่วมกับ ThaiJavis วิเคราะห์สภาวะเสี่ยง Real-Time ส่งสวัสดิการและฝึกอาชีพก่อนเกิดปัญหาสังคม
-                </td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">บริหารจัดการวินัยการเงินการคลังของชาติ รักษาสเถียรภาพทางเศรษฐกิจ และปฏิรูปโครงสร้างภาษีที่เป็นธรรม ป้องกันการรวบอำนาจโดยกลุ่มทุนใหญ่</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">• จัดทำและบริหารงบประมาณแผ่นดินอย่างโปร่งใส <br> • จัดเก็บภาษีทรัพย์สิน/มรดก และบริหารระบบคลังดิจิทัลร่วมกับ ParadoxAI</td>
               </tr>
 
-              <!-- ๔. กระทรวงนวัตกรรมและเทคโนโลยี -->
-              <tr class="ministry-row" data-category="reformed">
-                <td style="text-align: center; font-weight: 700; color: #c084fc;">๔</td>
-                <td style="text-align: center; padding: 10px;">
-                  <div style="width: 72px; height: 72px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(192, 132, 252, 0.5); border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 22px;">🖼️</span>
-                    <span style="font-size: 8.5px; color: #c084fc; font-weight: 700; text-align: center; line-height: 1.1;">[รอใส่โลโก้]</span>
+              <!-- ๔. กระทรวงการต่างประเทศ -->
+              <tr class="ministry-row" data-category="core">
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๔</td>
+                <td style="text-align: center; padding: 8px;">
+                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
+                    <span style="font-size: 20px;">🖼️</span>
+                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #c084fc; font-size: 14px;">
-                  กระทรวงนวัตกรรมและเทคโนโลยี
-                </td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงการต่างประเทศ</td>
                 <td style="text-align: center;">
-                  <span style="font-size: 11px; background: rgba(192, 132, 252, 0.15); color: #c084fc; border: 1px solid rgba(192, 132, 252, 0.3); padding: 4px 8px; border-radius: 4px; font-weight: 600; white-space: nowrap;">
-                    🔄 ปฏิรูป/ควบรวม
-                  </span>
+                  <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
                 </td>
-                <td style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
-                  ปรับรื้อโครงสร้าง อว. สายเทคโนโลยี ขจัดปัญหางานวิจัยขึ้นหิ้ง โดยแยกสายเทคโนโลยีออกจากมหาวิทยาลัยเพื่อโฟกัสการจับคู่งานวิจัยกับภาคอุตสาหกรรม/เอกชนสร้างมูลค่าเศรษฐกิจจริง
-                </td>
-                <td style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
-                  • จับคู่นวัตกรรมขั้นสูงกับภาคเอกชน/อุตสาหกรรม โดยใช้ ThaiJavis จับคู่แม่นยำ <br>
-                  • สนับสนุนทุนวิจัยเชิงรุกแก่นักวิจัยและสตาร์ทอัปดิจิทัลสร้างนวัตกรรมแห่งอนาคต
-                </td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">ดำเนินนโยบายการทูตเชิงรุก คุ้มครองผลประโยชน์ของสยามประเทศในเวทีโลก และสร้างความร่วมมือกับนานาชาติ</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">• เจรจาสนธิสัญญาการค้าเสรี SEATO <br> • คุ้มครองคนไทยในต่างแดน <br> • พัฒนาความร่วมมือการเดินเรือและลอจิสติกส์คลองไทยไมตรี ๒.๐</td>
               </tr>
 
-              <!-- ๕. กระทรวงศึกษาธิการ -->
-              <tr class="ministry-row" data-category="reformed">
-                <td style="text-align: center; font-weight: 700; color: #fb923c;">๕</td>
-                <td style="text-align: center; padding: 10px;">
-                  <div style="width: 72px; height: 72px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(251, 146, 60, 0.5); border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 22px;">🖼️</span>
-                    <span style="font-size: 8.5px; color: #fb923c; font-weight: 700; text-align: center; line-height: 1.1;">[รอใส่โลโก้]</span>
+              <!-- ๕. กระทรวงการท่องเที่ยวและกีฬา -->
+              <tr class="ministry-row" data-category="core">
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๕</td>
+                <td style="text-align: center; padding: 8px;">
+                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
+                    <span style="font-size: 20px;">🖼️</span>
+                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #fb923c; font-size: 14px;">
-                  กระทรวงศึกษาธิการ
-                </td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงการท่องเที่ยวและกีฬา</td>
                 <td style="text-align: center;">
-                  <span style="font-size: 11px; background: rgba(251, 146, 60, 0.15); color: #fb923c; border: 1px solid rgba(251, 146, 60, 0.3); padding: 4px 8px; border-radius: 4px; font-weight: 600; white-space: nowrap;">
-                    🔄 ปฏิรูป/ควบรวม
-                  </span>
+                  <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
                 </td>
-                <td style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
-                  ดึงมหาวิทยาลัยและอุดมศึกษาจาก อว. กลับมาอยู่กับ ศธ. เพื่อวางเส้นทางพัฒนากำลังคนของประเทศตั้งแต่ระดับโรงเรียนถึงอุดมศึกษาเป็นเนื้อเดียวกัน
-                </td>
-                <td style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
-                  • จัดการศึกษาถ้วนหน้า ตั้งแต่ขั้นพื้นฐานถึงอุดมศึกษา และอนุมัติหลักสูตรวิชาชีพทันสมัย (รวมถึง Tech Doctor ๓ ปี) <br>
-                  • กระจายงบประมาณลดความเหลื่อมล้ำทางการศึกษาทั่วประเทศ
-                </td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">ส่งเสริมอุตสาหกรรมการท่องเที่ยว มหกรรมกีฬานานาชาติ และสร้างรายได้เข้าสู่ชุมชนท้องถิ่นทั่วประเทศ</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">• ผลักดันซอฟต์พาวเวอร์การท่องเที่ยวเชิงวัฒนธรรมและประวัติศาสตร์ <br> • พัฒนานักกีฬาทีมชาติและโครงสร้างพื้นฐานการกีฬา</td>
               </tr>
 
-              <!-- ๖. กระทรวงการคลัง -->
+              <!-- ๖. กระทรวงเกษตรและสหกรณ์ -->
               <tr class="ministry-row" data-category="core">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๖</td>
-                <td style="text-align: center; padding: 10px;">
-                  <div style="width: 72px; height: 72px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 22px;">🖼️</span>
-                    <span style="font-size: 8.5px; color: #cbd5e1; font-weight: 700; text-align: center; line-height: 1.1;">[รอใส่โลโก้]</span>
+                <td style="text-align: center; padding: 8px;">
+                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
+                    <span style="font-size: 20px;">🖼️</span>
+                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px;">
-                  กระทรวงการคลัง
-                </td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงเกษตรและสหกรณ์</td>
                 <td style="text-align: center;">
-                  <span style="font-size: 11px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 4px 8px; border-radius: 4px; font-weight: 600; white-space: nowrap;">
-                    🏛️ กระทรวงหลัก
-                  </span>
+                  <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
                 </td>
-                <td style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
-                  บริหารจัดการวินัยการเงินการคลังของชาติ รักษาสเถียรภาพทางเศรษฐกิจ และปฏิรูปโครงสร้างภาษีที่เป็นธรรม ป้องกันการรวบอำนาจโดยกลุ่มทุนใหญ่
-                </td>
-                <td style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
-                  • จัดทำและบริหารงบประมาณแผ่นดินอย่างโปร่งใส <br>
-                  • จัดเก็บภาษีทรัพย์สิน/มรดก และบริหารระบบคลังดิจิทัลร่วมกับ ParadoxAI
-                </td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">พัฒนาภาคการเกษตร ความมั่นคงทางอาหาร ยกระดับรายได้เกษตรกร และส่งเสริมระบบสหกรณ์เข้มแข็ง</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">• วางระบบชลประทานและเทคโนโลยีการเกษตรแม่นยำ (Agri-Tech) <br> • ประสานงานประกันพืชผลร่วมกับกระทรวงหลักประกันสังคมฯ</td>
               </tr>
 
-              <!-- ๗. กระทรวงการต่างประเทศ -->
+              <!-- ๗. กระทรวงคมนาคม -->
               <tr class="ministry-row" data-category="core">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๗</td>
-                <td style="text-align: center; padding: 10px;">
-                  <div style="width: 72px; height: 72px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 22px;">🖼️</span>
-                    <span style="font-size: 8.5px; color: #cbd5e1; font-weight: 700; text-align: center; line-height: 1.1;">[รอใส่โลโก้]</span>
+                <td style="text-align: center; padding: 8px;">
+                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
+                    <span style="font-size: 20px;">🖼️</span>
+                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px;">
-                  กระทรวงการต่างประเทศ
-                </td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงคมนาคม</td>
                 <td style="text-align: center;">
-                  <span style="font-size: 11px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 4px 8px; border-radius: 4px; font-weight: 600; white-space: nowrap;">
-                    🏛️ กระทรวงหลัก
-                  </span>
+                  <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
                 </td>
-                <td style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
-                  ดำเนินนโยบายการทูตเชิงรุก คุ้มครองผลประโยชน์ของสยามประเทศในเวทีโลก และสร้างความร่วมมือกับนานาชาติ
-                </td>
-                <td style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
-                  • เจรจาสนธิสัญญาการค้าเสรี SEATO <br>
-                  • คุ้มครองคนไทยในต่างแดน <br>
-                  • พัฒนาความร่วมมือการเดินเรือและลอจิสติกส์คลองไทยไมตรี ๒.๐
-                </td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">พัฒนาโครงข่ายคมนาคมและระบบลอจิสติกส์ของประเทศ เพื่อเชื่อมโยงการเดินทางและการค้าอย่างมีประสิทธิภาพ</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">• กำกับดูแลอภิมหาโครงการคลองไทยไมตรี ๒.๐ และรถไฟความเร็วสูง <br> • บริหารโครงข่ายถนน ท่าเรือ และขนส่งสาธารณะราคาย่อมเยา</td>
               </tr>
 
-              <!-- ๘. กระทรวงสาธารณสุข -->
+              <!-- ๘. กระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม -->
               <tr class="ministry-row" data-category="core">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๘</td>
-                <td style="text-align: center; padding: 10px;">
-                  <div style="width: 72px; height: 72px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 22px;">🖼️</span>
-                    <span style="font-size: 8.5px; color: #cbd5e1; font-weight: 700; text-align: center; line-height: 1.1;">[รอใส่โลโก้]</span>
+                <td style="text-align: center; padding: 8px;">
+                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
+                    <span style="font-size: 20px;">🖼️</span>
+                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px;">
-                  กระทรวงสาธารณสุข
-                </td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม</td>
                 <td style="text-align: center;">
-                  <span style="font-size: 11px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 4px 8px; border-radius: 4px; font-weight: 600; white-space: nowrap;">
-                    🏛️ กระทรวงหลัก
-                  </span>
+                  <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
                 </td>
-                <td style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
-                  ยกระดับสุขภาวะของประชาชน รับประกันสิทธิการรักษาพยาบาลคุณภาพถ้วนหน้าอย่างเป็นธรรม
-                </td>
-                <td style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
-                  • บริหารโรงพยาบาลมนุษย์ยกระดับ ๘๐ แห่งทั่วประเทศ <br>
-                  • ผลิตและดูแลบุคลากรทางการแพทย์ ควบคุมมาตรฐานวิชาชีพ Tech Doctor (หลักสูตร ๓ ปี) <br>
-                  • ควบคุมโรคระบาด
-                </td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">ปกป้องฟื้นฟูธรรมชาติ รับมือภัยพิบัติทางธรรมชาติและวิกฤตสภาวะภูมิอากาศเปลี่ยนแปลง</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">• วางระบบท่อระบายน้ำเมืองร่วมกับ อบจ./อบต. ป้องกันปัญหาน้ำท่วมถาวร <br> • บังคับใช้กฎหมายการทิ้งขยะเด็ดขาด (โทษ ๑/๔ สิงคโปร์)</td>
               </tr>
 
-              <!-- ๙. กระทรวงคมนาคม -->
+              <!-- ๙. กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม -->
               <tr class="ministry-row" data-category="core">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๙</td>
-                <td style="text-align: center; padding: 10px;">
-                  <div style="width: 72px; height: 72px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 22px;">🖼️</span>
-                    <span style="font-size: 8.5px; color: #cbd5e1; font-weight: 700; text-align: center; line-height: 1.1;">[รอใส่โลโก้]</span>
+                <td style="text-align: center; padding: 8px;">
+                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
+                    <span style="font-size: 20px;">🖼️</span>
+                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px;">
-                  กระทรวงคมนาคม
-                </td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม</td>
                 <td style="text-align: center;">
-                  <span style="font-size: 11px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 4px 8px; border-radius: 4px; font-weight: 600; white-space: nowrap;">
-                    🏛️ กระทรวงหลัก
-                  </span>
+                  <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
                 </td>
-                <td style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
-                  พัฒนาโครงข่ายคมนาคมและระบบลอจิสติกส์ของประเทศ เพื่อเชื่อมโยงการเดินทางและการค้าอย่างมีประสิทธิภาพ
-                </td>
-                <td style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
-                  • กำกับดูแลอภิมหาโครงการคลองไทยไมตรี ๒.๐ และรถไฟความเร็วสูง <br>
-                  • บริหารจัดการโครงข่ายถนน ท่าเรือพรีเมียม และสนามบินนานาชาติ <br>
-                  • ยกระดับระบบขนส่งสาธารณะ
-                </td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">วางรากฐานรัฐดิจิทัล คุ้มครองความมั่นคงปลอดภัยไซเบอร์ และพัฒนาโครงสร้างพื้นฐานเทคโนโลยีสารสนเทศ</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">• บริหารและเชื่อมโยงระบบ ThaiJavis 2.0 ร่วมกับทุกกระทรวง <br> • ขยายโครงข่ายอินเทอร์เน็ตความเร็วสูงถ้วนหน้าและป้องกันภัยไซเบอร์</td>
               </tr>
 
-              <!-- ๑๐. กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม -->
+              <!-- ๑๐. กระทรวงพลังงาน -->
               <tr class="ministry-row" data-category="core">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๑๐</td>
-                <td style="text-align: center; padding: 10px;">
-                  <div style="width: 72px; height: 72px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 22px;">🖼️</span>
-                    <span style="font-size: 8.5px; color: #cbd5e1; font-weight: 700; text-align: center; line-height: 1.1;">[รอใส่โลโก้]</span>
+                <td style="text-align: center; padding: 8px;">
+                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
+                    <span style="font-size: 20px;">🖼️</span>
+                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px;">
-                  กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม
-                </td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงพลังงาน</td>
                 <td style="text-align: center;">
-                  <span style="font-size: 11px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 4px 8px; border-radius: 4px; font-weight: 600; white-space: nowrap;">
-                    🏛️ กระทรวงหลัก
-                  </span>
+                  <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
                 </td>
-                <td style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
-                  วางรากฐานรัฐดิจิทัล คุ้มครองความมั่นคงปลอดภัยไซเบอร์ และพัฒนาโครงสร้างพื้นฐานเทคโนโลยีสารสนเทศ
-                </td>
-                <td style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
-                  • บริหารและเชื่อมโยงระบบ ThaiJavis 2.0 ร่วมกับทุกกระทรวง <br>
-                  • ขยายโครงข่ายอินเทอร์เน็ตความเร็วสูงถ้วนหน้า <br>
-                  • สกัดกั้นภัยไซเบอร์
-                </td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">สร้างความมั่นคงทางพลังงาน ปฏิรูปราคาพลังงานที่เป็นธรรม และเปลี่ยนผ่านสู่พลังงานสะอาดยั่งยืน</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">• จัดหาและจัดสรรพลังงานไฟฟ้าและเชื้อเพลิง <br> • ส่งเสริมพลังงานหมุนเวียนและลดการผูกขาดในอุตสาหกรรมพลังงาน</td>
               </tr>
 
-              <!-- ๑๑. กระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม -->
+              <!-- ๑๑. กระทรวงพาณิชย์ -->
               <tr class="ministry-row" data-category="core">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๑๑</td>
-                <td style="text-align: center; padding: 10px;">
-                  <div style="width: 72px; height: 72px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 22px;">🖼️</span>
-                    <span style="font-size: 8.5px; color: #cbd5e1; font-weight: 700; text-align: center; line-height: 1.1;">[รอใส่โลโก้]</span>
+                <td style="text-align: center; padding: 8px;">
+                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
+                    <span style="font-size: 20px;">🖼️</span>
+                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px;">
-                  กระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม
-                </td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงพาณิชย์</td>
                 <td style="text-align: center;">
-                  <span style="font-size: 11px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 4px 8px; border-radius: 4px; font-weight: 600; white-space: nowrap;">
-                    🏛️ กระทรวงหลัก
-                  </span>
+                  <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
                 </td>
-                <td style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
-                  ปกป้องฟื้นฟูธรรมชาติ รับมือภัยพิบัติทางธรรมชาติและวิกฤตสภาวะภูมิอากาศเปลี่ยนแปลง
-                </td>
-                <td style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
-                  • วางระบบท่อระบายน้ำเมืองร่วมกับ อบจ./อบต. ป้องกันปัญหาน้ำท่วมถาวร <br>
-                  • บังคับใช้กฎหมายการทิ้งขยะเด็ดขาด (โทษ ๑/๔ สิงคโปร์)
-                </td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">กำกับดูแลการค้าภายในและการค้าระหว่างประเทศ คุ้มครองผู้บริโภคจากการค้ากำไรเกินควร</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">• บริหารระบบตลาดตรงและสนับสนุนรายได้ผู้ผลิตรายเล็ก <br> • เจรจาการค้าระหว่างประเทศและควบคุมตราสินค้าเกษตรกรรม</td>
               </tr>
 
-              <!-- ๑๒. กระทรวงกลาโหม -->
+              <!-- ๑๒. กระทรวงมหาดไทย -->
               <tr class="ministry-row" data-category="core">
                 <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๑๒</td>
-                <td style="text-align: center; padding: 10px;">
-                  <div style="width: 72px; height: 72px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
-                    <span style="font-size: 22px;">🖼️</span>
-                    <span style="font-size: 8.5px; color: #cbd5e1; font-weight: 700; text-align: center; line-height: 1.1;">[รอใส่โลโก้]</span>
+                <td style="text-align: center; padding: 8px;">
+                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
+                    <span style="font-size: 20px;">🖼️</span>
+                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
                   </div>
                 </td>
-                <td style="font-weight: 700; color: #e2e8f0; font-size: 14px;">
-                  กระทรวงกลาโหม
-                </td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงมหาดไทย</td>
                 <td style="text-align: center;">
-                  <span style="font-size: 11px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 4px 8px; border-radius: 4px; font-weight: 600; white-space: nowrap;">
-                    🏛️ กระทรวงหลัก
-                  </span>
+                  <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
                 </td>
-                <td style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
-                  คุ้มกันอธิปไตย บูรณภาพแห่งดินแดน และความมั่นคงแห่งรัฐภายใต้การบังคับบัญชาของรัฐบาลพลเรือน
-                </td>
-                <td style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
-                  • บริหารระบบทหารสมัครใจ ๑๐๐% (ยกเลิกเกณฑ์ทหาร) <br>
-                  • สนับสนุนภารกิจความมั่นคงภาคสนามตามคำสั่ง Joint Command และ Diplomacy Division ของ GOC
-                </td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">บำบัดทุกข์ บำรุงสุข กระจายอำนาจการปกครองส่วนท้องถิ่น ๑๐๐% และรักษาความสงบเรียบร้อยภายในประเทศ</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">• สนับสนุนการบริหารงาน อบจ., อบต. และเทศบาลตามหลักกระจายอำนาจ <br> • ทะเบียนราษฎรและงานบรรเทาสาธารณภัยระดับจังหวัด</td>
               </tr>
 
+              <!-- ๑๓. กระทรวงยุติธรรม -->
+              <tr class="ministry-row" data-category="core">
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๑๓</td>
+                <td style="text-align: center; padding: 8px;">
+                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
+                    <span style="font-size: 20px;">🖼️</span>
+                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
+                  </div>
+                </td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงยุติธรรม</td>
+                <td style="text-align: center;">
+                  <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
+                </td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">อำนวยความยุติธรรม ปราบปรามอาชญากรรมพิเศษ คุ้มครองสิทธิมนุษยชน และปรับปรุงฟื้นฟูผู้กระทำความผิด</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">• กำกับดูแลกรมสอบสวนคดีพิเศษ (DSI) และงานราชทัณฑ์ <br> • ให้ความช่วยเหลือทางกฎหมายและกองทุนยุติธรรมแก่ประชาชน</td>
+              </tr>
+
+              <!-- ๑๔. กระทรวงแรงงานและสวัสดิการสังคม -->
+              <tr class="ministry-row" data-category="reformed">
+                <td style="text-align: center; font-weight: 700; color: #60a5fa;">๑๔</td>
+                <td style="text-align: center; padding: 8px;">
+                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(96, 165, 250, 0.5); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
+                    <span style="font-size: 20px;">🖼️</span>
+                    <span style="font-size: 8px; color: #60a5fa; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
+                  </div>
+                </td>
+                <td style="font-weight: 700; color: #60a5fa; font-size: 13.5px;">กระทรวงแรงงานและสวัสดิการสังคม</td>
+                <td style="text-align: center;">
+                  <span style="font-size: 10.5px; background: rgba(96, 165, 250, 0.15); color: #60a5fa; border: 1px solid rgba(96, 165, 250, 0.3); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🔄 ปฏิรูป/ควบรวม</span>
+                </td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">ควบรวม พม. + แรงงาน เปลี่ยนจากแจกเงินตั้งรับ สู่การดูแลคนให้พึ่งพาตนเองได้ครบวงจร (เกิด เกษียณ เจ็บ ตาย)</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">• ดูแลวงจรชีวิตครบวงจร + ยกระดับทักษะอาชีพ (Upskill/Reskill) แบบ One-Stop Service <br> • ใช้ ThaiJavis วิเคราะห์สภาวะเสี่ยง Real-Time</td>
+              </tr>
+
+              <!-- ๑๕. กระทรวงวัฒนธรรม -->
+              <tr class="ministry-row" data-category="core">
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๑๕</td>
+                <td style="text-align: center; padding: 8px;">
+                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
+                    <span style="font-size: 20px;">🖼️</span>
+                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
+                  </div>
+                </td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงวัฒนธรรม</td>
+                <td style="text-align: center;">
+                  <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
+                </td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">อนุรักษ์ ฟื้นฟู สื่อสารมรดกทางวัฒนธรรม ประวัติศาสตร์ไทย และสนับสนุนผลงานสร้างสรรค์รุ่นใหม่</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">• จัดงาน Thailand History Festival และสนับสนุน SIN ARCHIVE <br> • คุ้มครองโบราณสถานและส่งเสริมอัตลักษณ์วัฒนธรรมไทยสู่สากล</td>
+              </tr>
+
+              <!-- ๑๖. กระทรวงศึกษาธิการ -->
+              <tr class="ministry-row" data-category="reformed">
+                <td style="text-align: center; font-weight: 700; color: #fb923c;">๑๖</td>
+                <td style="text-align: center; padding: 8px;">
+                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(251, 146, 60, 0.5); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
+                    <span style="font-size: 20px;">🖼️</span>
+                    <span style="font-size: 8px; color: #fb923c; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
+                  </div>
+                </td>
+                <td style="font-weight: 700; color: #fb923c; font-size: 13.5px;">กระทรวงศึกษาธิการ</td>
+                <td style="text-align: center;">
+                  <span style="font-size: 10.5px; background: rgba(251, 146, 60, 0.15); color: #fb923c; border: 1px solid rgba(251, 146, 60, 0.3); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🔄 ปฏิรูป/ควบรวม</span>
+                </td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">ดึงมหาวิทยาลัยและอุดมศึกษาจาก อว. กลับมาอยู่กับ ศธ. เพื่อวางเส้นทางพัฒนากำลังคนตั้งแต่โรงเรียนถึงอุดมศึกษาเป็นเนื้อเดียวกัน</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">• จัดการศึกษาถ้วนหน้า ตั้งแต่ขั้นพื้นฐานถึงอุดมศึกษา <br> • อนุมัติหลักสูตรทันสมัย (รวมถึง Tech Doctor ๓ ปี) และลดความเหลื่อมล้ำ</td>
+              </tr>
+
+              <!-- ๑๗. กระทรวงสาธารณสุข -->
+              <tr class="ministry-row" data-category="core">
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๑๗</td>
+                <td style="text-align: center; padding: 8px;">
+                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
+                    <span style="font-size: 20px;">🖼️</span>
+                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
+                  </div>
+                </td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงสาธารณสุข</td>
+                <td style="text-align: center;">
+                  <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
+                </td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">ยกระดับสุขภาวะของประชาชน รับประกันสิทธิการรักษาพยาบาลคุณภาพถ้วนหน้าอย่างเป็นธรรม</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">• บริหารโรงพยาบาลมนุษย์ยกระดับ ๘๐ แห่งทั่วประเทศ <br> • ผลิตและดูแลบุคลากรทางการแพทย์ Tech Doctor (หลักสูตร ๓ ปี) และควบคุมโรค</td>
+              </tr>
+
+              <!-- ๑๘. กระทรวงอุตสาหกรรม -->
+              <tr class="ministry-row" data-category="core">
+                <td style="text-align: center; font-weight: 700; color: #e2e8f0;">๑๘</td>
+                <td style="text-align: center; padding: 8px;">
+                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(255,255,255,0.3); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
+                    <span style="font-size: 20px;">🖼️</span>
+                    <span style="font-size: 8px; color: #cbd5e1; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
+                  </div>
+                </td>
+                <td style="font-weight: 700; color: #e2e8f0; font-size: 13.5px;">กระทรวงอุตสาหกรรม</td>
+                <td style="text-align: center;">
+                  <span style="font-size: 10.5px; background: rgba(255, 255, 255, 0.1); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🏛️ กระทรวงหลัก</span>
+                </td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">ส่งเสริมการพัฒนาอุตสาหกรรม การเพิ่มประสิทธิภาพการผลิต และมาตรฐานอุตสาหกรรมที่เป็นมิตรต่อสิ่งแวดล้อม</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">• สนับสนุนอุตสาหกรรมเป้าหมายใหม่ (New S-Curve) และมาตรฐาน มอก. <br> • กำกับดูแลนิคมอุตสาหกรรมและความปลอดภัยโรงงาน</td>
+              </tr>
+
+              <!-- ๑๙. กระทรวงทรัพย์สินทางปัญญาและเศรษฐกิจสร้างสรรค์ -->
+              <tr class="ministry-row" data-category="new">
+                <td style="text-align: center; font-weight: 700; color: #facc15;">๑๙</td>
+                <td style="text-align: center; padding: 8px;">
+                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(250, 204, 21, 0.5); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
+                    <span style="font-size: 20px;">🖼️</span>
+                    <span style="font-size: 8px; color: #facc15; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
+                  </div>
+                </td>
+                <td style="font-weight: 700; color: #facc15; font-size: 13.5px;">กระทรวงทรัพย์สินทางปัญญาและเศรษฐกิจสร้างสรรค์</td>
+                <td style="text-align: center;">
+                  <span style="font-size: 10.5px; background: rgba(250, 204, 21, 0.15); color: #facc15; border: 1px solid rgba(250, 204, 21, 0.3); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">✨ จัดตั้งขึ้นใหม่</span>
+                </td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">ยกระดับจากกรมทรัพย์สินทางปัญญา คุ้มครองลิขสิทธิ์เด็ดขาด ปิดช่องโหว่อดีต (Paradox & SKILL.md ดร.ธนานนท์) + ดันเศรษฐกิจสร้างสรรค์ดิจิทัล</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">• Protect (ปราบการละเมิดลิขสิทธิ์/สิทธิบัตรซอฟต์แวร์ทันที) <br> • Promote (ดัน Content Creators, เกม, ดนตรี, ศิลปะ)</td>
+              </tr>
+
+              <!-- ๒๐. กระทรวงหลักประกันและความเป็นธรรมทางสังคม -->
+              <tr class="ministry-row" data-category="new">
+                <td style="text-align: center; font-weight: 700; color: #4ade80;">๒๐</td>
+                <td style="text-align: center; padding: 8px;">
+                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(74, 222, 128, 0.5); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
+                    <span style="font-size: 20px;">🖼️</span>
+                    <span style="font-size: 8px; color: #4ade80; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
+                  </div>
+                </td>
+                <td style="font-weight: 700; color: #4ade80; font-size: 13.5px;">กระทรวงหลักประกันและความเป็นธรรมทางสังคม</td>
+                <td style="text-align: center;">
+                  <span style="font-size: 10.5px; background: rgba(74, 222, 128, 0.15); color: #4ade80; border: 1px solid rgba(74, 222, 128, 0.3); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">✨ จัดตั้งขึ้นใหม่</span>
+                </td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">รวมระบบประกันกระจัดกระจาย (สปส., สปสช., ประกันพืชผล) ในพอร์ทัลเดียว ป้องกันเอกชนเอาเปรียบ</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">• ศูนย์รวมประกันทุกประเภท + คุ้มครองผู้บริโภค <br> • ใช้ ThaiJavis ประเมินความเสี่ยงล่วงหน้าเยียวยาก่อนเกิดวิกฤต</td>
+              </tr>
+
+              <!-- ๒๑. กระทรวงนวัตกรรมและเทคโนโลยี -->
+              <tr class="ministry-row" data-category="reformed">
+                <td style="text-align: center; font-weight: 700; color: #c084fc;">๒๑</td>
+                <td style="text-align: center; padding: 8px;">
+                  <div style="width: 64px; height: 64px; background: rgba(0,0,0,0.5); border: 1.5px dashed rgba(192, 132, 252, 0.5); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; gap: 2px;">
+                    <span style="font-size: 20px;">🖼️</span>
+                    <span style="font-size: 8px; color: #c084fc; font-weight: 700; text-align: center;">[รอใส่โลโก้]</span>
+                  </div>
+                </td>
+                <td style="font-weight: 700; color: #c084fc; font-size: 13.5px;">กระทรวงนวัตกรรมและเทคโนโลยี</td>
+                <td style="text-align: center;">
+                  <span style="font-size: 10.5px; background: rgba(192, 132, 252, 0.15); color: #c084fc; border: 1px solid rgba(192, 132, 252, 0.3); padding: 3px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap;">🔄 ปฏิรูป/ควบรวม</span>
+                </td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">ปรับรื้อ อว. สายเทคโนโลยี แก้ปัญหางานวิจัยขึ้นหิ้ง จับคู่เอกชนและอุตสาหกรรมสร้างมูลค่าจริง</td>
+                <td style="font-size: 12px; color: var(--text-muted); line-height: 1.55;">• จับคู่นวัตกรรมขั้นสูงกับเอกชนโดยใช้ ThaiJavis <br> • สนับสนุนทุนวิจัยเชิงรุกแก่นักวิจัย/สตาร์ทอัป</td>
+              </tr>
             </tbody>
           </table>
         </div>
