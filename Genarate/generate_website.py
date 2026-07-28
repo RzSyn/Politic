@@ -1759,6 +1759,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 10px;">
           <button class="db-tab-btn" onclick="switchTab('paradox-ai-tab', this)" style="border-color:rgba(192,132,252,0.6);color:#c084fc;">🤖 โครงการ ParadoxAI / ParadoxForward</button>
           <button class="db-tab-btn" onclick="switchTab('khonlalike-tab', this)" style="border-color:rgba(251,146,60,0.6);color:#fb923c;">🎨 โครงการคนละไลค์ (SIN ARCHIVE & Creators)</button>
+          <button class="db-tab-btn" onclick="switchTab('the-plague-series-tab', this)" style="border-color:rgba(229,9,20,0.6);color:#e50914;">🎬 ซีรีส์ The Plague (Netflix)</button>
           <button class="db-tab-btn" onclick="switchTab('bancc-tab', this)" style="border-color:rgba(250,204,21,0.6);color:#facc15;">🏛️ ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช (BANCC)</button>
           <button class="db-tab-btn" onclick="switchTab('thai-canal-tab', this)" style="border-color:rgba(56,189,248,0.6);color:#38bdf8;">🌊 โครงการคลองไทยไมตรี (Thai Canal 1.0-2.0)</button>
         </div>
@@ -20718,6 +20719,139 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         <!-- Tab: รางวัลโนเบลไทย -->
     
     <!-- Tab: ไวรัส Dexibola -->
+    
+    <!-- Tab: ซีรีส์ The Plague (Netflix) -->
+    <div id="the-plague-series-tab" class="db-tab-content">
+      <div style="text-align:left;">
+        <!-- HEADER BANNER -->
+        <div style="display:flex;align-items:center;gap:18px;margin-bottom:24px;border-bottom:2px solid rgba(229,9,20,0.4);background:linear-gradient(135deg, rgba(229,9,20,0.18) 0%, rgba(15,23,42,0.95) 100%);padding:24px;border-radius:18px;box-shadow:0 8px 24px rgba(0,0,0,0.4);">
+          <div style="width:76px;height:76px;background:rgba(229,9,20,0.25);border:2px solid #e50914;border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:42px;box-shadow:0 0 24px rgba(229,9,20,0.4);flex-shrink:0;">
+            🎬
+          </div>
+          <div style="flex:1;">
+            <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:4px;">
+              <h3 style="color:#e50914;font-family:'Outfit',sans-serif;margin:0;font-size:26px;font-weight:800;letter-spacing:0.3px;">The Plague — ซีรีส์ ๒๔ ตอน จาก Netflix Thailand</h3>
+              <span style="background:rgba(229,9,20,0.25);color:#f87171;border:1px solid rgba(229,9,20,0.5);padding:4px 14px;border-radius:20px;font-size:12.5px;font-weight:800;">
+                📺 Netflix Original Series (๒๔ ตอนจบ)
+              </span>
+              <span style="background:rgba(250,204,21,0.2);color:#facc15;border:1px solid rgba(250,204,21,0.5);padding:4px 14px;border-radius:20px;font-size:12.5px;font-weight:800;">
+                🏛️ ครึ่งหลังวาระนายกฯ อภิสิทธิ์ (วาระ ๒)
+              </span>
+            </div>
+            <p style="color:var(--text-muted);font-size:14px;margin:6px 0 0 0;">มหากาพย์ซีรีส์แห่งยุคสมัยที่ดำเนินเรื่อง ๒ ทางคู่ขนาน สะท้อนภาพการอยู่รอดของสยามท่ามกลางมหาวิบัติไวรัส Dexibola ทั่วโลก</p>
+          </div>
+        </div>
+
+        <!-- SECTION 1: TWO PARALLEL WORLDS CONCEPT -->
+        <div style="background:linear-gradient(135deg, rgba(30,41,59,0.9) 0%, rgba(15,23,42,0.95) 100%);border:2px solid rgba(229,9,20,0.35);border-radius:18px;padding:24px;margin-bottom:24px;box-shadow:0 8px 24px rgba(0,0,0,0.35);">
+          <div style="font-size:20px;font-weight:800;color:#e50914;margin-bottom:18px;display:flex;align-items:center;gap:10px;border-bottom:1.5px solid rgba(229,9,20,0.3);padding-bottom:12px;">
+            <span>🌐</span> ๑. โครงเรื่อง ๒ โลกคู่ขนาน & สองพี่น้องอยู่คนละฝั่ง
+          </div>
+
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));gap:20px;margin-bottom:20px;">
+            <!-- SIDE THAILAND -->
+            <div style="background:rgba(15,23,42,0.75);border:1px solid rgba(74,222,128,0.35);border-radius:14px;padding:20px;">
+              <h4 style="color:#4ade80;font-size:17px;font-weight:800;margin:0 0 8px 0;display:flex;align-items:center;gap:8px;">
+                <span>🇹🇭</span> ฝั่งประเทศไทย (ชีวิตปกติ & รอดปลอดภัย)
+              </h4>
+              <p style="font-size:13.5px;color:#e2e8f0;line-height:1.7;margin:0;text-align:justify;">
+                ในขณะที่โลกภายนอกกำลังปั่นป่วนด้วยโรคระบาด Dexibola คนไทยสามารถนั่งดูหนัง ดู Netflix ชิลๆ อยู่ที่บ้านได้อย่างปลอดภัย ด้วยระบบสาธารณสุขและมาตรการป้องกันคุมเข้มของสยามที่ทำงาน 100% ตัวละคร <strong>"คนพี่"</strong> ใช้ชีวิตปกติ ทำงาน และดูข่าวต่างประเทศด้วยความห่วงใย
+              </p>
+            </div>
+
+            <!-- SIDE OVERSEAS -->
+            <div style="background:rgba(15,23,42,0.75);border:1px solid rgba(248,113,113,0.35);border-radius:14px;padding:20px;">
+              <h4 style="color:#f87171;font-size:17px;font-weight:800;margin:0 0 8px 0;display:flex;align-items:center;gap:8px;">
+                <span>🌍</span> ฝั่งต่างประเทศ (วิกฤตสาธารณสุข & ตลาดวัคซีนมืด)
+              </h4>
+              <p style="font-size:13.5px;color:#e2e8f0;line-height:1.7;margin:0;text-align:justify;">
+                ระบบสาธารณสุขล่มสลาย โรงพยาบาลไร้เตียง วัคซีนจริงมีราคาแพงเกินกว่าราษฎรทั่วไปจะเข้าถึงได้ ตัวละคร <strong>"คนน้อง"</strong> ตกอยู่ท่ามกลางความสิ้นหวังในต่างแดน ดิ้นรนเอาชีวิตรอดในสภาพแวดล้อมที่ไร้มาตรการคุ้มครอง
+              </p>
+            </div>
+          </div>
+
+          <!-- PIVOTAL SCENE: BLACK-MARKET VACCINE -->
+          <div style="background:rgba(229,9,20,0.1);border:1.5px solid rgba(229,9,20,0.4);border-radius:14px;padding:20px;margin-top:10px;">
+            <h4 style="color:#f87171;font-size:17px;font-weight:800;margin:0 0 10px 0;display:flex;align-items:center;gap:8px;">
+              <span>💉</span> ฉากสะเทือนอารมณ์: "วัคซีนใต้ดินและการติดเชื้อเกือบตาย"
+            </h4>
+            <p style="font-size:14px;color:#f8fafc;line-height:1.8;margin:0;text-align:justify;">
+              ฉากที่ถูกกล่าวขวัญและสะเทือนใจผู้ชมมากที่สุด เมื่อน้องชายในต่างประเทศแอบหาซื้อ <strong>"วัคซีนใต้ดิน / วัคซีนปลอม"</strong> เพราะวัคซีนจริงราคาแพงเกินไป แต่เมื่อฉีดเข้าไป อาการกลับหนักขึ้นแทนที่จะดีขึ้น เกิดการติดเชื้อรุนแรงเกือบเสียชีวิต พี่ชายฝั่งไทยโทรติดตามด้วยความตื่นตระหนก: <em>"หนูเป็นยังไง?" ... "ไม่ดีครับพี่ ผมฉีดวัคซีน..." ... "วัคซีนอะไร? ของใคร?"</em> เกิดความเงียบสะเทือนขวัญที่ทำให้กระแสโซเชียลระเบิดฮือฮา
+            </p>
+          </div>
+        </div>
+
+        <!-- SECTION 2: SOCIAL REACTION & CHAT DIALOGUE -->
+        <div style="background:linear-gradient(135deg, rgba(30,41,59,0.9) 0%, rgba(15,23,42,0.95) 100%);border:2px solid rgba(56,189,248,0.35);border-radius:18px;padding:24px;margin-bottom:24px;box-shadow:0 8px 24px rgba(0,0,0,0.35);">
+          <div style="font-size:20px;font-weight:800;color:#38bdf8;margin-bottom:18px;display:flex;align-items:center;gap:10px;border-bottom:1.5px solid rgba(56,189,248,0.3);padding-bottom:12px;">
+            <span>💬</span> ๒. กระแส X/Twitter & บทสนทนาระหว่าง สิญจน์ - เอมโมโน - ดร.ธนานนท์
+          </div>
+
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:20px;margin-bottom:20px;">
+            <!-- TWITTER TREND -->
+            <div style="background:rgba(15,23,42,0.75);border:1px solid rgba(56,189,248,0.3);border-radius:14px;padding:18px;">
+              <div style="font-size:13px;color:#38bdf8;font-weight:700;margin-bottom:10px;">🐤 เสียงสะท้อนจากโซเชียลมีเดีย (Twitter Trend)</div>
+              <div style="font-size:13px;color:#cbd5e1;line-height:1.7;">
+                • <em>"The Plague ตอนที่ 3 ดูแล้วขนลุกมาก ฝั่งต่างประเทศโหดมากเลย"</em><br>
+                • <em>"ฝั่งไทยในซีรีส์กับชีวิตจริงตอนนี้เหมือนกันเลย ดูแล้วขำแต่ก็ซึ้ง"</em><br>
+                • <em>"ฉากวัคซีนใต้ดินร้องไห้เลยครับ น้องมันสิ้นหวังมากจนต้องเสี่ยง"</em><br>
+                • <em>"สองพี่น้องอยู่คนละโลกจริงๆ คนหนึ่งชิลๆ อีกคนเกือบตาย"</em>
+              </div>
+            </div>
+
+            <!-- SIN & AMMONO WATCHING TOGETHER -->
+            <div style="background:rgba(15,23,42,0.75);border:1px solid rgba(192,132,252,0.3);border-radius:14px;padding:18px;">
+              <div style="font-size:13px;color:#c084fc;font-weight:700;margin-bottom:10px;">📱 บทสนทนาดูซีรีส์พร้อมกันผ่านโทรศัพท์</div>
+              <div style="font-size:13px;color:#e2e8f0;line-height:1.7;">
+                <strong>เอมโมโน:</strong> <em>"ฝั่งต่างประเทศมันเหมือนที่ผมเห็นมากับตาเลยครับ... ตอนออกไปช่วย มีคนที่ฉีดวัคซีนปลอมมาเยอะมาก บางคนไม่รอด แต่บางคนรอด นั่นแหละครับที่ทำให้ยังทำอยู่"</em><br>
+                <strong>สิญจน์:</strong> <em>"ดร.ธนานนท์ดูด้วยไหมครับ?"</em><br>
+                <strong>เอมโมโน:</strong> <em>"ไม่ดูครับ พี่บอกว่าดูข่าวจริงพอแล้ว ไม่ต้องดูสมมติ"</em>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 3: EPISODE 24 FINALE "A NEW DAY" & HISTORICAL NOTE -->
+        <div style="background:linear-gradient(135deg, rgba(250,204,21,0.15) 0%, rgba(15,23,42,0.95) 100%);border:2.5px solid #facc15;border-radius:18px;padding:24px;box-shadow:0 8px 24px rgba(0,0,0,0.35);">
+          <div style="font-size:20px;font-weight:800;color:#facc15;margin-bottom:18px;display:flex;align-items:center;gap:10px;border-bottom:1.5px solid rgba(250,204,21,0.3);padding-bottom:12px;">
+            <span>🌅</span> ๓. บทสรุปตอนจบ Episode 24 "วันใหม่" & คำสัตย์ปัญญาสาธารณะ
+          </div>
+
+          <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(250,204,21,0.4);border-radius:14px;padding:20px;margin-bottom:20px;line-height:1.8;color:#f8fafc;font-size:14px;text-align:justify;">
+            <strong style="color:#fde047;font-size:16px;display:block;margin-bottom:8px;">🌆 ฉากสองพี่น้องริมแม่น้ำเจ้าพระยา (บทสรุปที่เปลี่ยนสองชีวิตไปตลอดกาล):</strong>
+            หกเดือนต่อมา น้องชายในต่างประเทศรอดชีวิตและตัดสินใจเข้าเรียนต่อเป็น <strong>Tech Doctor</strong> ณ โรงพยาบาลเจ้าพระยา โดยมีเอมโมโนเป็นอาจารย์สอน สองพี่น้องกลับมานั่งริมแม่น้ำเจ้าพระยาที่เดิม เวลาเดิม แสงเดิม:<br>
+            <em>"พี่ครับ... ผมเข้าใจแล้วครับว่าทำไมที่นี่มันต่างกัน เพราะคนที่นี่เชื่อว่าสิ่งที่ทำวันนี้จะส่งผลถึงคนที่ยังไม่เกิดครับ"</em><br>
+            <em>"แล้วที่บ้านเราล่ะครับ?"</em><br>
+            <em>"คนที่บ้านเราเชื่อในวันนี้ครับ ยังไม่เชื่อในพรุ่งนี้... แต่เปลี่ยนได้ครับ ต้องมีคนเริ่มก่อน"</em>
+          </div>
+
+          <!-- CLOSING QUOTE & BOOK NOTE -->
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:20px;">
+            <div style="background:rgba(15,23,42,0.8);border:1px solid #facc15;border-radius:14px;padding:20px;">
+              <div style="font-size:13px;color:#facc15;font-weight:700;margin-bottom:6px;">✨ ข้อความสุดท้ายบนหน้าจอ (Closing Text)</div>
+              <div style="font-size:15px;font-weight:800;color:#ffffff;line-height:1.7;">
+                "มีคนที่เชื่อในพรุ่งนี้มากพอที่จะทำอะไรบางอย่างวันนี้"
+              </div>
+              <div style="font-size:12.5px;color:#cbd5e1;margin-top:8px;">
+                คำกล่าวที่ ดร.ธนานนท์, สิญจน์, ร.๑, ร.๔, ทักษิณ, พิธา, ศิริกัญญา และวีรชนทุกยุคสมัยยึดมั่นยุทธศาสตร์
+              </div>
+            </div>
+
+            <div style="background:rgba(15,23,42,0.8);border:1px solid rgba(168,85,247,0.5);border-radius:14px;padding:20px;">
+              <div style="font-size:13px;color:#c084fc;font-weight:700;margin-bottom:6px;">📚 บันทึกวันแรกในสมุดโน้ตสิญจน์ (หอสมุดศิริปัญญาวิมานสัจ)</div>
+              <div style="font-size:15px;font-weight:800;color:#ffffff;line-height:1.7;">
+                "ความรู้ที่ซ่อนอยู่ไม่ใช่ความรู้ ต่อเมื่อถ่ายทอดออกไปจึงจะมีความหมาย"
+              </div>
+              <div style="font-size:12.5px;color:#c084fc;margin-top:8px;">
+                พระราชดำรัสจดบันทึกโดย พระบาทสมเด็จพระจอมเกล้าเจ้าอยู่หัว (รัชกาลที่ ๔)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <div id="dexibola-virus-tab" class="db-tab-content">
       <div style="text-align:left;">
         <!-- HEADER BANNER -->
