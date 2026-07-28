@@ -20746,7 +20746,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
         </div>
 
-                                <!-- LIVE METRICS GRID (100% EXACT MATHEMATICAL PRECISION) -->
+        <!-- LIVE METRICS GRID -->
         <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:18px;margin-bottom:24px;">
           <!-- CARD 1: CURRENT RATE -->
           <div style="background:linear-gradient(135deg, rgba(30,41,59,0.9) 0%, rgba(15,23,42,0.95) 100%);border:1.5px solid rgba(74,222,128,0.4);border-radius:16px;padding:20px;box-shadow:0 6px 18px rgba(0,0,0,0.35);">
@@ -20781,6 +20781,81 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
         </div>
 
+        <!-- SECTION 1: HISTORICAL TIMELINE OF TSL CURRENCY -->
+        <div style="background:linear-gradient(135deg, rgba(30,41,59,0.9) 0%, rgba(15,23,42,0.95) 100%);border:2px solid rgba(34,197,94,0.35);border-radius:18px;padding:24px;margin-bottom:24px;box-shadow:0 8px 24px rgba(0,0,0,0.35);">
+          <div style="font-size:20px;font-weight:800;color:#4ade80;margin-bottom:18px;display:flex;align-items:center;gap:10px;border-bottom:1.5px solid rgba(34,197,94,0.3);padding-bottom:12px;">
+            <span>📉</span> ๑. ลำดับวิวัฒนาการดัชนีค่าเงิน TSL สากล (TSL Index Timeline)
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:14px;">
+            <div style="background:rgba(15,23,42,0.75);border-left:4px solid #facc15;border-radius:0 12px 12px 0;padding:16px;text-align:left;">
+              <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">
+                <strong style="color:#facc15;font-size:16px;">พ.ศ. ๒๕๖๕ — สถาปนาระเบียบดัชนี TSL (Standard 1.00 USD/THB)</strong>
+                <span style="background:rgba(250,204,21,0.2);color:#facc15;padding:2px 10px;border-radius:12px;font-size:12px;font-weight:700;">1.00 USD/THB</span>
+              </div>
+              <p style="font-size:13px;color:#cbd5e1;margin:6px 0 0 0;line-height:1.6;">
+                กำหนดระเบียบดัชนีการเงิน TSL สากลร่วมกับพันธมิตร ยกระดับสยามสู่การเป็นศูนย์กลางการเงินและการทูตภูมิภาค
+              </p>
+            </div>
+
+            <div style="background:rgba(15,23,42,0.75);border-left:4px solid #4ade80;border-radius:0 12px 12px 0;padding:16px;text-align:left;">
+              <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">
+                <strong style="color:#4ade80;font-size:16px;">พ.ศ. ๒๕๖๗ — ทรงตัวแข็งแกร่งยุคนายกฯ พิธา (1 THB = 92 TSL)</strong>
+                <span style="background:rgba(74,222,128,0.2);color:#4ade80;padding:2px 10px;border-radius:12px;font-size:12px;font-weight:700;">1 TSL ≈ 0.01087 THB</span>
+              </div>
+              <p style="font-size:13px;color:#cbd5e1;margin:6px 0 0 0;line-height:1.6;">
+                หลังนโยบายการทูตยุทธศาสตร์โลก (TSL) และความสำเร็จในการเจรจา FTA สหภาพยุโรป ค่าเงิน TSL มีเสถียรภาพสูง
+              </p>
+            </div>
+
+            <div style="background:rgba(15,23,42,0.75);border-left:4px solid #ef4444;border-radius:0 12px 12px 0;padding:16px;text-align:left;">
+              <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">
+                <strong style="color:#f87171;font-size:16px;">พ.ศ. ๒๖๗๒ — มหาวิบัติ Dexibola & TSL ล่มสลาย (EP 16 Reveal)</strong>
+                <span style="background:rgba(239,68,68,0.2);color:#f87171;padding:2px 10px;border-radius:12px;font-size:12px;font-weight:700;">1 TSL ≈ 0.0031 THB</span>
+              </div>
+              <p style="font-size:13px;color:#cbd5e1;margin:6px 0 0 0;line-height:1.6;">
+                วิกฤตการณ์ Dexibola ทำลายระบบสาธารณสุขและเศรษฐกิจโลก ตลาดการเงินสากล TSL ล่มสลายดิ่งลงสู่ 0.31 THB ต่อ ๑ ดอลลาร์ TSL (เทียบเท่า ๑ บาทไทย = ๓๒๒ ดอลลาร์ TSL)
+              </p>
+            </div>
+
+            <div style="background:rgba(15,23,42,0.75);border-left:4px solid #38bdf8;border-radius:0 12px 12px 0;padding:16px;text-align:left;">
+              <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">
+                <strong style="color:#38bdf8;font-size:16px;">พ.ศ. ๒๖๗๒ — Special EP ถ่ายทอดสดวิเคราะห์ค่าเงินสด Real-Time</strong>
+                <span style="background:rgba(56,189,248,0.2);color:#38bdf8;padding:2px 10px;border-radius:12px;font-size:12px;font-weight:700;">Live Special EP</span>
+              </div>
+              <p style="font-size:13.5px;color:#cbd5e1;margin:6px 0 0 0;line-height:1.6;">
+                ออกอากาศพิเศษสดทั่วโลก วิเคราะห์ประวัติความเป็นมา อัตราแลกเปลี่ยน และทิศทางการฟื้นตัวของเงินตราสากล
+              </p>
+            </div>
+
+            <div style="background:rgba(15,23,42,0.75);border-left:4px solid #fde047;border-radius:0 12px 12px 0;padding:16px;text-align:left;">
+              <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">
+                <strong style="color:#fde047;font-size:16px;">พ.ศ. ๒๖๗๓ — แถลงการณ์โอบามา & TSL เริ่มฟื้นตัว (1 THB = 92 TSL)</strong>
+                <span style="background:rgba(250,204,21,0.2);color:#facc15;padding:2px 10px;border-radius:12px;font-size:12px;font-weight:700;">1 TSL ≈ 0.01087 THB</span>
+              </div>
+              <p style="font-size:13px;color:#cbd5e1;margin:6px 0 0 0;line-height:1.6;">
+                โอบามาออกแถลงการณ์สากล ดัชนี TSL ขยับฟื้นขึ้นสู่ 1.09 สตางค์ (0.01087 THB / 1 THB = 92 TSL): <em>"TSL กำลังฟื้น ช้า แต่มั่นคง เราเรียนรู้ว่าสาธารณสุขไม่ใช่ค่าใช้จ่าย แต่คือการลงทุน"</em>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 2: OBAMA STATEMENT -->
+        <div style="background:linear-gradient(135deg, rgba(250,204,21,0.15) 0%, rgba(15,23,42,0.95) 100%);border:2.5px solid #facc15;border-radius:18px;padding:24px;box-shadow:0 8px 24px rgba(0,0,0,0.35);">
+          <div style="font-size:20px;font-weight:800;color:#facc15;margin-bottom:14px;display:flex;align-items:center;gap:10px;border-bottom:1.5px solid rgba(250,204,21,0.3);padding-bottom:12px;">
+            <span>🎙️</span> ๒. แถลงการณ์การเงินสากลโดยอดีต ปธน. Barack Obama
+          </div>
+          <div style="background:rgba(15,23,42,0.85);border:1px solid #facc15;border-radius:14px;padding:20px;text-align:justify;line-height:1.8;color:#ffffff;font-size:14.5px;">
+            <span style="font-size:32px;color:#facc15;line-height:0;vertical-align:-10px;">“</span>
+            <em>TSL กำลังฟื้นครับ ช้า แต่มั่นคง เราเรียนรู้จากวิกฤตครั้งนี้ว่าระบบสาธารณสุขไม่ใช่ค่าใช้จ่าย แต่คือการลงทุน ประเทศที่รอดพ้นมาได้เพราะมีระบบคุ้มครองชีวิตราษฎรอย่างแท้จริง</em>
+            <span style="font-size:32px;color:#facc15;line-height:0;vertical-align:-10px;">”</span>
+            <div style="margin-top:12px;font-size:12.5px;color:#fde047;font-weight:700;text-align:right;">
+              — Barack Obama (แถลงการณ์ระเบียบการเงินสากล TSL หลังวิกฤต Dexibola)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div id="the-plague-series-tab" class="db-tab-content">
       <div style="text-align:left;">
@@ -21443,6 +21518,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             แสดงผล <strong style="color:#ffffff;" id="nobelVisibleCount">๓๙๑</strong> / ๓๙๑ รายการ
           </div>
         </div>
+
+
 
         <script>
           function filterNobelCards() {{
