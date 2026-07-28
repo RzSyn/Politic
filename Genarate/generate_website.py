@@ -20766,7 +20766,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 </span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">[ระบุชื่อ-นามสกุล หรือชื่อองค์กรผู้ได้รับรางวัล]</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและ[ระบุชื่อ-นามสกุล หรือชื่อองค์กรผู้ได้รับรางวัล]</span>
               </h4>
               <div style="display:flex;gap:18px;align-items:stretch;">
                 <div style="flex:1;background:rgba(30,41,59,0.6);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:14px 18px;font-size:13.5px;color:#e2e8f0;line-height:1.75;text-align:justify;">
@@ -20858,7 +20858,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         <!-- SEARCH CONTROL BAR -->
         <div style="background:rgba(30,41,59,0.75);border:1.5px solid rgba(250,204,21,0.4);border-radius:16px;padding:18px 22px;margin-bottom:24px;box-shadow:0 6px 20px rgba(0,0,0,0.25);display:flex;gap:16px;align-items:center;flex-wrap:wrap;">
           <div style="flex:1;min-width:280px;position:relative;">
-            <input type="text" id="nobelSearchInput" onkeyup="filterNobelCards()" placeholder="🔍 ค้นหารางวัลโนเบลไทย (ค้นหาตามชื่อผู้ได้รับรางวัล, สาขา, ปี พ.ศ., หรือนายกรัฐมนตรี...)" style="width:100%;background:rgba(15,23,42,0.85);border:1.5px solid rgba(250,204,21,0.4);border-radius:10px;padding:12px 16px;color:#ffffff;font-size:14px;outline:none;box-sizing:border-box;box-shadow:inset 0 2px 6px rgba(0,0,0,0.3);">
+            <input type="text" id="nobelSearchInput" onkeyup="filterNobelCards()" placeholder="🔍 ค้นหารางวัลโนเบลไทย (ค้นหาตามชื่อคณะ/องค์กร, สาขา, ปี พ.ศ., หรือนายกรัฐมนตรี...)" style="width:100%;background:rgba(15,23,42,0.85);border:1.5px solid rgba(250,204,21,0.4);border-radius:10px;padding:12px 16px;color:#ffffff;font-size:14px;outline:none;box-sizing:border-box;box-shadow:inset 0 2px 6px rgba(0,0,0,0.3);">
           </div>
           <div style="font-size:13.5px;color:#fde047;font-weight:700;background:rgba(234,179,8,0.12);border:1px solid rgba(234,179,8,0.3);padding:8px 16px;border-radius:10px;white-space:nowrap;" id="nobelCountDisplay">
             แสดงผล <strong style="color:#ffffff;" id="nobelVisibleCount">๓๙๑</strong> / ๓๙๑ รายการ
@@ -20886,6 +20886,121 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
 <div class="nobel-cards-container">
 
+          <!-- DEDICATED PM NOBEL ITEM: THAKSIN SHINAWATRA -->
+          <div class="nobel-card-item" style="background:linear-gradient(135deg, rgba(234,179,8,0.18) 0%, rgba(15,23,42,0.95) 100%);border:2.5px solid #facc15;border-radius:18px;padding:24px;display:flex;gap:24px;align-items:flex-start;box-shadow:0 10px 30px rgba(250,204,21,0.25);position:relative;overflow:hidden;margin-bottom:20px;">
+            <div style="position:absolute;top:0;left:0;width:8px;height:100%;background:linear-gradient(to bottom, #facc15, #eab308);"></div>
+            <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:200px;">
+              <div style="width:130px;height:130px;background:rgba(30,41,59,0.9);border:2.5px solid #facc15;border-radius:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 20px rgba(250,204,21,0.4);overflow:hidden;">
+                <img src="images/nobel_seal_1.png" alt="Nobel Seal" style="width:100%;height:100%;object-fit:cover;border-radius:18px;">
+              </div>
+              <div style="background:rgba(234,179,8,0.2);border:1px solid #facc15;border-radius:12px;padding:10px 12px;text-align:center;width:100%;margin-top:14px;box-sizing:border-box;">
+                <div style="font-size:11px;color:#facc15;font-weight:700;">รางวัลเกียรติยศสูงสุดนายกรัฐมนตรี</div>
+                <div style="font-size:14px;font-weight:800;color:#ffffff;margin-top:2px;">ปีที่ได้รางวัล</div>
+                <div style="font-size:13px;color:#fde047;font-weight:700;margin-top:2px;">พ.ศ. 2544 (ค.ศ. 2001)</div>
+              </div>
+            </div>
+            <div style="flex:1;">
+              <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px;">
+                <span style="background:rgba(192,132,252,0.25);color:#c084fc;border:1px solid rgba(192,132,252,0.5);padding:6px 14px;border-radius:20px;font-size:13px;font-weight:700;">
+                  🕊️ สาขาสันติภาพสากล และ 🩺 สรีรวิทยาการแพทย์
+                </span>
+                <span style="background:rgba(250,204,21,0.25);color:#facc15;border:1px solid #facc15;padding:6px 14px;border-radius:20px;font-size:12.5px;font-weight:800;">
+                  🏆 รางวัลโนเบลเกียรติยศนายกรัฐมนตรี
+                </span>
+                <span style="background:rgba(251,146,60,0.25);color:#fb923c;border:1px solid #fb923c;padding:4px 12px;border-radius:14px;font-size:12px;font-weight:800;">🔥 ผู้นำนวัตกรรมรัฐสวัสดิการ</span>
+              </div>
+              <h4 style="color:#ffffff;font-size:20px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
+                👑 ผู้ได้รับรางวัล: <span style="color:#facc15;">นายกรัฐมนตรี ทักษิณ ชินวัตร และคณะรัฐมนตรีสวัสดิการสุขภาพถ้วนหน้า</span>
+              </h4>
+              <div style="font-size:13px;color:#fb923c;font-weight:700;margin-bottom:12px;background:rgba(251,146,60,0.15);border-left:4px solid #fb923c;padding:6px 14px;border-radius:4px;">
+                🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกรัฐมนตรีคนที่ 4)
+              </div>
+              <div style="display:flex;gap:18px;align-items:stretch;">
+                <div style="flex:1;background:rgba(30,41,59,0.75);border:1px solid rgba(250,204,21,0.3);border-radius:14px;padding:16px 20px;font-size:14px;color:#f8fafc;line-height:1.8;text-align:justify;">
+                  <strong style="color:#facc15;display:block;margin-bottom:6px;font-size:15px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
+                  รางวัลโนเบลสันติภาพและการแพทย์สากลเกียรติยศ มอบแด่ นายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4) และคณะบริหารแผ่นดิน ในฐานะผู้นำผู้สร้างสรรค์นวัตกรรมระบบหลักประกันสุขภาพถ้วนหน้า (30 บาทรักษาทุกโรค) การปรับโครงสร้างกระทรวงเศรษฐกิจ การจัดตั้งกระทรวงทรัพย์สินทางปัญญาฯ และการยกระดับคุณภาพชีวิตราษฎรไทยจนกลายเป็นโมเดลสาธารณสุขและสวัสดิการต้นแบบระดับโลก
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DEDICATED PM NOBEL ITEM: PITA LIMJAROENRAT -->
+          <div class="nobel-card-item" style="background:linear-gradient(135deg, rgba(251,146,60,0.18) 0%, rgba(15,23,42,0.95) 100%);border:2.5px solid #fb923c;border-radius:18px;padding:24px;display:flex;gap:24px;align-items:flex-start;box-shadow:0 10px 30px rgba(251,146,60,0.25);position:relative;overflow:hidden;margin-bottom:20px;">
+            <div style="position:absolute;top:0;left:0;width:8px;height:100%;background:linear-gradient(to bottom, #fb923c, #f97316);"></div>
+            <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:200px;">
+              <div style="width:130px;height:130px;background:rgba(30,41,59,0.9);border:2.5px solid #fb923c;border-radius:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 20px rgba(251,146,60,0.4);overflow:hidden;">
+                <img src="images/nobel_seal_5.png" alt="Nobel Seal" style="width:100%;height:100%;object-fit:cover;border-radius:18px;">
+              </div>
+              <div style="background:rgba(251,146,60,0.2);border:1px solid #fb923c;border-radius:12px;padding:10px 12px;text-align:center;width:100%;margin-top:14px;box-sizing:border-box;">
+                <div style="font-size:11px;color:#fb923c;font-weight:700;">รางวัลเกียรติยศสูงสุดนายกรัฐมนตรี</div>
+                <div style="font-size:14px;font-weight:800;color:#ffffff;margin-top:2px;">ปีที่ได้รางวัล</div>
+                <div style="font-size:13px;color:#fde047;font-weight:700;margin-top:2px;">พ.ศ. 2635 (ค.ศ. 1992)</div>
+              </div>
+            </div>
+            <div style="flex:1;">
+              <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px;">
+                <span style="background:rgba(251,146,60,0.25);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:6px 14px;border-radius:20px;font-size:13px;font-weight:700;">
+                  📈 สาขาเศรษฐศาสตร์ และ ⚛️ สถาปัตยกรรมเทคโนโลยี
+                </span>
+                <span style="background:rgba(250,204,21,0.25);color:#facc15;border:1px solid #facc15;padding:6px 14px;border-radius:20px;font-size:12.5px;font-weight:800;">
+                  🏆 รางวัลโนเบลเกียรติยศนายกรัฐมนตรี
+                </span>
+                <span style="background:rgba(96,165,250,0.25);color:#60a5fa;border:1px solid #60a5fa;padding:4px 12px;border-radius:14px;font-size:12px;font-weight:800;">🔥 ผู้นำนวัตกรรมก้าวไกลยุคใหม่</span>
+              </div>
+              <h4 style="color:#ffffff;font-size:20px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
+                👑 ผู้ได้รับรางวัล: <span style="color:#facc15;">นายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ และคณะกรรมาธิการปฏิรูปโครงสร้างนวัตกรรมแห่งชาติ</span>
+              </h4>
+              <div style="font-size:13px;color:#fb923c;font-weight:700;margin-bottom:12px;background:rgba(251,146,60,0.15);border-left:4px solid #fb923c;padding:6px 14px;border-radius:4px;">
+                🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกรัฐมนตรีคนที่ 24)
+              </div>
+              <div style="display:flex;gap:18px;align-items:stretch;">
+                <div style="flex:1;background:rgba(30,41,59,0.75);border:1px solid rgba(251,146,60,0.3);border-radius:14px;padding:16px 20px;font-size:14px;color:#f8fafc;line-height:1.8;text-align:justify;">
+                  <strong style="color:#facc15;display:block;margin-bottom:6px;font-size:15px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
+                  รางวัลโนเบลเศรษฐศาสตร์และเทคโนโลยีสากลเกียรติยศ มอบแด่ นายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 24) ในฐานะผู้นำการปฏิรูปนวัตกรรมเศรษฐกิจสร้างสรรค์ (Creative Economy) การกระจายอำนาจงบประมาณท้องถิ่น 100% การยกระดับระบบปัญญาประดิษฐ์ ParadoxAI และ ThaiJavis บริหารแผ่นดิน สร้างความเติบโตทางเศรษฐกิจควบคู่ความเท่าเทียมอย่างเป็นรูปธรรม
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DEDICATED PM NOBEL ITEM: WIROJ LAKKHANADISORN -->
+          <div class="nobel-card-item" style="background:linear-gradient(135deg, rgba(96,165,250,0.18) 0%, rgba(15,23,42,0.95) 100%);border:2.5px solid #60a5fa;border-radius:18px;padding:24px;display:flex;gap:24px;align-items:flex-start;box-shadow:0 10px 30px rgba(96,165,250,0.25);position:relative;overflow:hidden;margin-bottom:20px;">
+            <div style="position:absolute;top:0;left:0;width:8px;height:100%;background:linear-gradient(to bottom, #60a5fa, #3b82f6);"></div>
+            <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:200px;">
+              <div style="width:130px;height:130px;background:rgba(30,41,59,0.9);border:2.5px solid #60a5fa;border-radius:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 20px rgba(96,165,250,0.4);overflow:hidden;">
+                <img src="images/nobel_seal_4.png" alt="Nobel Seal" style="width:100%;height:100%;object-fit:cover;border-radius:18px;">
+              </div>
+              <div style="background:rgba(96,165,250,0.2);border:1px solid #60a5fa;border-radius:12px;padding:10px 12px;text-align:center;width:100%;margin-top:14px;box-sizing:border-box;">
+                <div style="font-size:11px;color:#60a5fa;font-weight:700;">รางวัลเกียรติยศสูงสุดนายกรัฐมนตรี</div>
+                <div style="font-size:14px;font-weight:800;color:#ffffff;margin-top:2px;">ปีที่ได้รางวัล</div>
+                <div style="font-size:13px;color:#fde047;font-weight:700;margin-top:2px;">พ.ศ. 2637 (ค.ศ. 1994)</div>
+              </div>
+            </div>
+            <div style="flex:1;">
+              <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px;">
+                <span style="background:rgba(96,165,250,0.25);color:#60a5fa;border:1px solid rgba(96,165,250,0.5);padding:6px 14px;border-radius:20px;font-size:13px;font-weight:700;">
+                  🕊️ สาขาสันติภาพสากล และ 🏛️ ธรรมาภิบาลบริหารรัฐกิจ
+                </span>
+                <span style="background:rgba(250,204,21,0.25);color:#facc15;border:1px solid #facc15;padding:6px 14px;border-radius:20px;font-size:12.5px;font-weight:800;">
+                  🏆 รางวัลโนเบลเกียรติยศนายกรัฐมนตรี
+                </span>
+                <span style="background:rgba(74,222,128,0.25);color:#4ade80;border:1px solid #4ade80;padding:4px 12px;border-radius:14px;font-size:12px;font-weight:800;">🔥 ผู้นำปฏิรูปโครงสร้างกระทรวง</span>
+              </div>
+              <h4 style="color:#ffffff;font-size:20px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
+                👑 ผู้ได้รับรางวัล: <span style="color:#facc15;">นายกรัฐมนตรี วิโรจน์ ลักขณาดิศร และคณะกรรมาธิการธรรมาภิบาลแผ่นดิน</span>
+              </h4>
+              <div style="font-size:13px;color:#fb923c;font-weight:700;margin-bottom:12px;background:rgba(251,146,60,0.15);border-left:4px solid #fb923c;padding:6px 14px;border-radius:4px;">
+                🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกรัฐมนตรีคนที่ 25 - รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕)
+              </div>
+              <div style="display:flex;gap:18px;align-items:stretch;">
+                <div style="flex:1;background:rgba(30,41,59,0.75);border:1px solid rgba(96,165,250,0.3);border-radius:14px;padding:16px 20px;font-size:14px;color:#f8fafc;line-height:1.8;text-align:justify;">
+                  <strong style="color:#facc15;display:block;margin-bottom:6px;font-size:15px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
+                  รางวัลโนเบลสันติภาพและธรรมาภิบาลรัฐกิจสากลเกียรติยศ มอบแด่ นายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25) ในฐานะผู้นำการปฏิรูปโครงสร้างกระทรวงครั้งใหญ่ (ตั้งกระทรวงทรัพย์สินทางปัญญาฯ และกระทรวงหลักประกันฯ) ดึงมหาวิทยาลัยกลับ ศธ. ยกระดับ ThaiJavis 2.0 ปราบปรามส่วยและทุจริตคอร์รัปชัน สถาปนามาตรฐานความโปร่งใสระดับสากล
+                </div>
+              </div>
+            </div>
+          </div>
+
+
           <!-- NOBEL ITEM 1 -->
           <div class="nobel-card-item" style="background:rgba(15,23,42,0.85);border:2px solid rgba(250,204,21,0.35);border-radius:18px;padding:24px;display:flex;gap:24px;align-items:flex-start;box-shadow:0 8px 24px rgba(0,0,0,0.4);position:relative;overflow:hidden;margin-bottom:20px;">
             <div style="position:absolute;top:0;left:0;width:6px;height:100%;background:linear-gradient(to bottom, #facc15, #eab308);"></div>
@@ -20910,7 +21025,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ชัชวาลย์ เตชะอนันต์ และสถาบันเทคโนโลยี ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)
@@ -20952,7 +21067,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นายแพทย์สยามวิชญ์ และคณะนักวิจัยเวชศาสตร์เขตร้อนแห่งสยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและศ.ดร.นายแพทย์สยามวิชญ์ และคณะนักวิจัยเวชศาสตร์เขตร้อนแห่งสยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)
@@ -20994,7 +21109,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. พิชญะ พงษ์สยาม และสถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)
@@ -21036,7 +21151,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ภัทรพล วิชญางกูร และสถาบันเทคโนโลยี สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)
@@ -21078,7 +21193,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ ธีรภัทร พิพัฒนกุล</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและพิพัฒนกุล</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)
@@ -21120,7 +21235,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ศิรินทร์ มหาคุณ และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)
@@ -21162,7 +21277,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. พงศธร วิชญางกูร และสถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)
@@ -21204,7 +21319,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ภัทรพล วิชญางกูร และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)
@@ -21246,7 +21361,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. อนันตชัย ปัญญาวงศ์ และ ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)
@@ -21288,7 +21403,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. ชัชวาลย์ วณิชกุล และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)
@@ -21330,7 +21445,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ธนานนท์ ชาญเวช และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)
@@ -21372,7 +21487,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ธนานนท์ เตชะอนันต์ และ มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)
@@ -21414,7 +21529,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ ดนัย โชติช่วง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและโชติช่วง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)
@@ -21456,7 +21571,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. พงศธร วิชญางกูร และสถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)
@@ -21498,7 +21613,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. เมธาสิทธิ์ รัตนเสวี และสถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)
@@ -21540,7 +21655,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. ศิรินทร์ ชาญเวช และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
@@ -21582,7 +21697,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
@@ -21624,7 +21739,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. พงศธร วณิชกุล และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
@@ -21666,7 +21781,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
@@ -21708,7 +21823,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
@@ -21750,7 +21865,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ นลินี เตชะอนันต์</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและเตชะอนันต์</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
@@ -21792,7 +21907,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ พงศธร พิพัฒนกุล</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและพิพัฒนกุล</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
@@ -21834,7 +21949,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ธนานนท์ เตชะอนันต์ และสถาบันเทคโนโลยี สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
@@ -21876,7 +21991,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
@@ -21918,7 +22033,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. กิตติกร พิพัฒนกุล และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและสมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
@@ -21960,7 +22075,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. ดนัย พิพัฒนกุล และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
@@ -22002,7 +22117,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ พิชญะ เตชะอนันต์</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและเตชะอนันต์</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
@@ -22044,7 +22159,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ วรมน วณิชกุล</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและวณิชกุล</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
@@ -22086,7 +22201,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ธนานนท์ มหาคุณ และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
@@ -22128,7 +22243,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. เมธาสิทธิ์ เตชะอนันต์ และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
@@ -22170,7 +22285,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ดนัย วงศ์สยาม และสถาบันเทคโนโลยี มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
@@ -22212,7 +22327,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. พงศธร ปัญญาวงศ์ และสถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ควง อภัยวงศ์ (นายกฯ คนที่ 7)
@@ -22254,7 +22369,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. อนันตชัย วณิชกุล และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ควง อภัยวงศ์ (นายกฯ คนที่ 7)
@@ -22296,7 +22411,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. พิชญะ วิชญางกูร และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
@@ -22338,7 +22453,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. วรมน เตชะอนันต์ และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
@@ -22380,7 +22495,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. เมธาสิทธิ์ วณิชกุล และ มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
@@ -22422,7 +22537,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ปานไพลิน วณิชกุล และ มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
@@ -22464,7 +22579,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. กิตติกร บวรธรรม และสถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
@@ -22506,7 +22621,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. พงศธร โชติช่วง และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
@@ -22548,7 +22663,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. พิชญะ เจริญศิริ และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
@@ -22590,7 +22705,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. วรปรัชญ์ รัตนเสวี และสถาบันเทคโนโลยี สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
@@ -22632,7 +22747,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. วรปรัชญ์ วิชญางกูร และสถาบันเทคโนโลยี ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
@@ -22674,7 +22789,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ชลธี วณิชกุล และ มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
@@ -22716,7 +22831,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. อัครเดช เตชะอนันต์ และสถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
@@ -22758,7 +22873,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ เมธาสิทธิ์ บวรธรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและบวรธรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
@@ -22800,7 +22915,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ปิยพงษ์ โชติช่วง และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
@@ -22842,7 +22957,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ กิตติกร พงษ์สยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและพงษ์สยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
@@ -22884,7 +22999,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ธีรภัทร บวรธรรม และสถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
@@ -22926,7 +23041,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ศิรินทร์ สิริปัญญา และสถาบันเทคโนโลยี สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
@@ -22968,7 +23083,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ภัทรพล วณิชกุล และสถาบันเทคโนโลยี สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
@@ -23010,7 +23125,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. วรมน วิชญางกูร และสถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
@@ -23052,7 +23167,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
@@ -23094,7 +23209,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ปิยพงษ์ โชติช่วง และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
@@ -23136,7 +23251,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
@@ -23178,7 +23293,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. กานต์ พงษ์สยาม และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อานันท์ ปันยารชุน (นายกฯ คนที่ 9)
@@ -23220,7 +23335,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ สยามวิชญ์ ชาญเวช</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและชาญเวช</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
@@ -23262,7 +23377,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ธนานนท์ บวรธรรม และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
@@ -23304,7 +23419,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. พงศธร รัตนเสวี และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
@@ -23346,7 +23461,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ปานไพลิน ชาญเวช และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
@@ -23388,7 +23503,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ภัทรพล พิพัฒนกุล และ มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
@@ -23430,7 +23545,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ภัทรพล วิชญางกูร และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
@@ -23472,7 +23587,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ดนัย วงศ์สยาม และสถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
@@ -23514,7 +23629,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. ปานไพลิน รัตนเสวี และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
@@ -23556,7 +23671,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. เมธาสิทธิ์ ปัญญาวงศ์ และ สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
@@ -23598,7 +23713,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ธนานนท์ ชาญเวช และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
@@ -23640,7 +23755,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ อนันตชัย โชติช่วง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและโชติช่วง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
@@ -23682,7 +23797,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ภัทรพล สิริปัญญา และ ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
@@ -23724,7 +23839,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ดนัย วงศ์สยาม และสถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
@@ -23766,7 +23881,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ธีรภัทร พิพัฒนกุล และสถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
@@ -23808,7 +23923,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. ธนานนท์ พิพัฒนกุล และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
@@ -23850,7 +23965,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ภัทรพล เจริญศิริ และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
@@ -23892,7 +24007,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. วรมน เตชะอนันต์ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและสมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
@@ -23934,7 +24049,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. สยามวิชญ์ รัตนเสวี และ มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
@@ -23976,7 +24091,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. ชัชวาลย์ โชติช่วง และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
@@ -24018,7 +24133,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ ศิรินทร์ พงษ์สยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและพงษ์สยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
@@ -24060,7 +24175,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
@@ -24102,7 +24217,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. วรปรัชญ์ ปัญญาวงศ์ และ ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
@@ -24144,7 +24259,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. สยามวิชญ์ เตชะอนันต์ และสถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
@@ -24186,7 +24301,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. วรปรัชญ์ มหาคุณ และสถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
@@ -24228,7 +24343,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. สยามวิชญ์ พิพัฒนกุล และสถาบันเทคโนโลยี ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
@@ -24270,7 +24385,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. วรมน พงษ์สยาม และสถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
@@ -24312,7 +24427,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
@@ -24354,7 +24469,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. วรมน ปัญญาวงศ์ และสถาบันเทคโนโลยี มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
@@ -24396,7 +24511,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ พิชญะ ชาญเวช</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและชาญเวช</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
@@ -24438,7 +24553,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. พิชญะ ปัญญาวงศ์ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
@@ -24480,7 +24595,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
@@ -24522,7 +24637,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. วรปรัชญ์ บวรธรรม และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
@@ -24564,7 +24679,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. วรมน วิชญางกูร และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
@@ -24606,7 +24721,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. วรปรัชญ์ สิริปัญญา และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
@@ -24648,7 +24763,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. สยามวิชญ์ รัตนเสวี และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
@@ -24690,7 +24805,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
@@ -24732,7 +24847,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ธนานนท์ เจริญศิริ และสถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
@@ -24774,7 +24889,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
@@ -24816,7 +24931,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ วรมน เตชะอนันต์</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและเตชะอนันต์</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
@@ -24858,7 +24973,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. กิตติกร วิชญางกูร และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
@@ -24900,7 +25015,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. พิชญะ วิชญางกูร และสถาบันเทคโนโลยี ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ธนาธร จึงรุ่งเรืองกิจ (นายกฯ คนที่ 16)
@@ -24942,7 +25057,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. อัครเดช พงษ์สยาม และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -24984,7 +25099,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ วรปรัชญ์ พงษ์สยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและพงษ์สยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -25026,7 +25141,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. อัครเดช พิพัฒนกุล และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -25068,7 +25183,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. พงศธร ชาญเวช และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -25110,7 +25225,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -25152,7 +25267,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ชลธี สิริปัญญา และสถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -25194,7 +25309,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -25236,7 +25351,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -25278,7 +25393,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. อัครเดช เจริญศิริ และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -25320,7 +25435,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ศิรินทร์ วณิชกุล และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -25362,7 +25477,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ศิรินทร์ วณิชกุล และสถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -25404,7 +25519,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. สยามวิชญ์ ชาญเวช และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -25446,7 +25561,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. วรปรัชญ์ สิริปัญญา และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -25488,7 +25603,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. อัครเดช พิพัฒนกุล และสถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -25530,7 +25645,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. กานต์ มหาคุณ และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -25572,7 +25687,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -25614,7 +25729,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ธีรภัทร รัตนเสวี และ มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -25656,7 +25771,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. นลินี เจริญศิริ และ สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -25698,7 +25813,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. นลินี รัตนเสวี และ สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -25740,7 +25855,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ชลธี รัตนเสวี และสถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -25782,7 +25897,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. ชัชวาลย์ พงษ์สยาม และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -25824,7 +25939,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. วรปรัชญ์ วณิชกุล และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -25866,7 +25981,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. พิชญะ โชติช่วง และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -25908,7 +26023,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ กานต์ วงศ์สยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและวงศ์สยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -25950,7 +26065,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ชัชวาลย์ บวรธรรม และสถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -25992,7 +26107,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. วรมน พิพัฒนกุล และสถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -26034,7 +26149,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ธนานนท์ สิริปัญญา และสถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -26076,7 +26191,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ ชลธี ชาญเวช</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและชาญเวช</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -26118,7 +26233,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ภัทรพล โชติช่วง และสถาบันเทคโนโลยี มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -26160,7 +26275,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ ธนานนท์ วณิชกุล</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและวณิชกุล</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -26202,7 +26317,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ ศิรินทร์ พงษ์สยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและพงษ์สยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -26244,7 +26359,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. ปานไพลิน บวรธรรม และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -26286,7 +26401,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. ศิรินทร์ รัตนเสวี และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -26328,7 +26443,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ธนานนท์ ปัญญาวงศ์ และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -26370,7 +26485,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ปานไพลิน บวรธรรม และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -26412,7 +26527,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. อัครเดช รัตนเสวี และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -26454,7 +26569,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. กานต์ เจริญศิริ และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -26496,7 +26611,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ ศิรินทร์ รัตนเสวี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและรัตนเสวี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -26538,7 +26653,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. อัครเดช วณิชกุล และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -26580,7 +26695,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ ภัทรพล รัตนเสวี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและรัตนเสวี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -26622,7 +26737,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. กานต์ มหาคุณ และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -26664,7 +26779,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. นลินี โชติช่วง และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -26706,7 +26821,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ พงศธร พงษ์สยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและพงษ์สยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -26748,7 +26863,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. วรปรัชญ์ วงศ์สยาม และ สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -26790,7 +26905,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ชัชวาลย์ รัตนเสวี และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -26832,7 +26947,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -26874,7 +26989,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. ธีรภัทร สิริปัญญา และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -26916,7 +27031,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. นลินี วงศ์สยาม และ มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -26958,7 +27073,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. วรมน วิชญางกูร และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -27000,7 +27115,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. ภัทรพล บวรธรรม และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -27042,7 +27157,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ชลธี ชาญเวช และสถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -27084,7 +27199,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ดนัย บวรธรรม และ สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -27126,7 +27241,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ปิยพงษ์ สิริปัญญา และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -27168,7 +27283,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. พงศธร สิริปัญญา และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -27210,7 +27325,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. ภัทรพล เตชะอนันต์ และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -27252,7 +27367,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ธีรภัทร ปัญญาวงศ์ และสถาบันเทคโนโลยี สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -27294,7 +27409,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. กิตติกร สิริปัญญา และสถาบันเทคโนโลยี มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -27336,7 +27451,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. กิตติกร วณิชกุล และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -27378,7 +27493,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. พงศธร ปัญญาวงศ์ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -27420,7 +27535,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. เมธาสิทธิ์ วณิชกุล และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -27462,7 +27577,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ศิรินทร์ พงษ์สยาม และ สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -27504,7 +27619,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ดนัย พงษ์สยาม และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -27546,7 +27661,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ธนานนท์ วงศ์สยาม และสถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -27588,7 +27703,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. อนันตชัย ปัญญาวงศ์ และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -27630,7 +27745,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. นลินี เจริญศิริ และสถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -27672,7 +27787,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ปิยพงษ์ วงศ์สยาม และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -27714,7 +27829,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ธนานนท์ วงศ์สยาม และสถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -27756,7 +27871,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. วรปรัชญ์ วิชญางกูร และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -27798,7 +27913,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ วรปรัชญ์ โชติช่วง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและโชติช่วง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -27840,7 +27955,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ชลธี โชติช่วง และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -27882,7 +27997,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. อนันตชัย วณิชกุล และสถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -27924,7 +28039,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. สยามวิชญ์ ชาญเวช และสถาบันเทคโนโลยี มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -27966,7 +28081,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ พงศธร วิชญางกูร</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและวิชญางกูร</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -28008,7 +28123,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. เมธาสิทธิ์ พิพัฒนกุล และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -28050,7 +28165,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -28092,7 +28207,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -28134,7 +28249,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ธนานนท์ บวรธรรม และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -28176,7 +28291,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. เมธาสิทธิ์ วงศ์สยาม และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -28218,7 +28333,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -28260,7 +28375,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. ภัทรพล โชติช่วง และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -28302,7 +28417,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. นลินี รัตนเสวี และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -28344,7 +28459,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ อัครเดช ชาญเวช</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและชาญเวช</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -28386,7 +28501,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ชลธี พงษ์สยาม และสถาบันเทคโนโลยี สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -28428,7 +28543,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. ธนานนท์ วณิชกุล และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -28470,7 +28585,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. พงศธร พิพัฒนกุล และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -28512,7 +28627,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ธนานนท์ ปัญญาวงศ์ และ ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -28554,7 +28669,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ชัชวาลย์ เจริญศิริ และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -28596,7 +28711,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ปิยพงษ์ พิพัฒนกุล และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -28638,7 +28753,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ปานไพลิน วิชญางกูร และ ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -28680,7 +28795,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -28722,7 +28837,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -28764,7 +28879,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. กิตติกร วิชญางกูร และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -28806,7 +28921,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -28848,7 +28963,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -28890,7 +29005,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ศิรินทร์ เจริญศิริ และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -28932,7 +29047,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. อัครเดช สิริปัญญา และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -28974,7 +29089,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ชัชวาลย์ ชาญเวช และสถาบันเทคโนโลยี มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -29016,7 +29131,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -29058,7 +29173,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ปานไพลิน ชาญเวช และ ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -29100,7 +29215,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. นลินี วิชญางกูร และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -29142,7 +29257,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. นลินี สิริปัญญา และ มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -29184,7 +29299,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ภัทรพล วิชญางกูร และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -29226,7 +29341,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -29268,7 +29383,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. วรมน บวรธรรม และสถาบันเทคโนโลยี ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -29310,7 +29425,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ชัชวาลย์ บวรธรรม และสถาบันเทคโนโลยี มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -29352,7 +29467,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ ศิรินทร์ รัตนเสวี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและรัตนเสวี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -29394,7 +29509,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <span style="background:rgba(251,146,60,0.2);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:4px 12px;border-radius:14px;font-size:12px;font-weight:700;">🔥 นวัตกร / นักวิจัยคนรุ่นใหม่</span>
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ชัชวาลย์ โชติช่วง และสถาบันเทคโนโลยี มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)
@@ -29436,7 +29551,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. เมธาสิทธิ์ บวรธรรม และ มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
@@ -29478,7 +29593,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. วรปรัชญ์ พงษ์สยาม และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
@@ -29520,7 +29635,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ อนันตชัย พิพัฒนกุล</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและพิพัฒนกุล</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
@@ -29562,7 +29677,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. ปานไพลิน วณิชกุล และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
@@ -29604,7 +29719,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ กานต์ วงศ์สยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและวงศ์สยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
@@ -29646,7 +29761,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. วรมน เตชะอนันต์ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
@@ -29688,7 +29803,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ชลธี วิชญางกูร และ ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
@@ -29730,7 +29845,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
@@ -29772,7 +29887,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ปิยพงษ์ วิชญางกูร และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
@@ -29814,7 +29929,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. กิตติกร พิพัฒนกุล และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
@@ -29856,7 +29971,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. ธนานนท์ บวรธรรม และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
@@ -29898,7 +30013,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ศิรินทร์ ชาญเวช และ สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
@@ -29940,7 +30055,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ สยามวิชญ์ พงษ์สยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและพงษ์สยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
@@ -29982,7 +30097,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. ชัชวาลย์ พงษ์สยาม และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
@@ -30024,7 +30139,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ปิยพงษ์ พงษ์สยาม และสถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
@@ -30066,7 +30181,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ภัทรพล รัตนเสวี และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
@@ -30108,7 +30223,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. กิตติกร บวรธรรม และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
@@ -30150,7 +30265,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. นลินี บวรธรรม และสถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
@@ -30192,7 +30307,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. วรปรัชญ์ ปัญญาวงศ์ และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
@@ -30234,7 +30349,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. พิชญะ วงศ์สยาม และ ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
@@ -30276,7 +30391,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. กานต์ วิชญางกูร และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
@@ -30318,7 +30433,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
@@ -30360,7 +30475,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. สยามวิชญ์ เจริญศิริ และสถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
@@ -30402,7 +30517,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ ดนัย เตชะอนันต์</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและเตชะอนันต์</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
@@ -30444,7 +30559,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
@@ -30486,7 +30601,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. กานต์ วงศ์สยาม และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
@@ -30528,7 +30643,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. วรมน พิพัฒนกุล และ มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)
@@ -30570,7 +30685,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. พงศธร โชติช่วง และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)
@@ -30612,7 +30727,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ปิยพงษ์ เจริญศิริ และ สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)
@@ -30654,7 +30769,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. พงศธร รัตนเสวี และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)
@@ -30696,7 +30811,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. สยามวิชญ์ บวรธรรม และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)
@@ -30738,7 +30853,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. พิชญะ วงศ์สยาม และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)
@@ -30780,7 +30895,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)
@@ -30822,7 +30937,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)
@@ -30864,7 +30979,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ พงศธร เจริญศิริ</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและเจริญศิริ</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)
@@ -30906,7 +31021,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. นลินี โชติช่วง และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
@@ -30948,7 +31063,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. วรมน วณิชกุล และ ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
@@ -30990,7 +31105,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. วรมน พงษ์สยาม และ ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
@@ -31032,7 +31147,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. กิตติกร บวรธรรม และสถาบันเทคโนโลยี ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
@@ -31074,7 +31189,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
@@ -31116,7 +31231,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. นลินี พิพัฒนกุล และ สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
@@ -31158,7 +31273,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
@@ -31200,7 +31315,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ สยามวิชญ์ พิพัฒนกุล</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและพิพัฒนกุล</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
@@ -31242,7 +31357,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. พิชญะ วงศ์สยาม และ มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
@@ -31284,7 +31399,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ธนานนท์ เจริญศิริ และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
@@ -31326,7 +31441,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
@@ -31368,7 +31483,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. พงศธร รัตนเสวี และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
@@ -31410,7 +31525,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ภัทรพล ปัญญาวงศ์ และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
@@ -31452,7 +31567,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ชัชวาลย์ พิพัฒนกุล และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
@@ -31494,7 +31609,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ วรมน ปัญญาวงศ์</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและปัญญาวงศ์</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
@@ -31536,7 +31651,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. วรมน มหาคุณ และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
@@ -31578,7 +31693,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ วรปรัชญ์ วงศ์สยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและวงศ์สยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
@@ -31620,7 +31735,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ ปิยพงษ์ เจริญศิริ</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและเจริญศิริ</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
@@ -31662,7 +31777,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
@@ -31704,7 +31819,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
@@ -31746,7 +31861,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ดนัย พงษ์สยาม และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและสมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
@@ -31788,7 +31903,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. วรปรัชญ์ รัตนเสวี และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและสมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
@@ -31830,7 +31945,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
@@ -31872,7 +31987,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
@@ -31914,7 +32029,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
@@ -31956,7 +32071,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. สยามวิชญ์ วงศ์สยาม และสถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
@@ -31998,7 +32113,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ปานไพลิน โชติช่วง และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
@@ -32040,7 +32155,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. อัครเดช เตชะอนันต์ และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อนุเจริญ ชาญวีรกูล (วาระแรก) (นายกฯ คนที่ 24)
@@ -32082,7 +32197,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. พิชญะ ชาญเวช และ มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -32124,7 +32239,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. วรปรัชญ์ รัตนเสวี และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -32166,7 +32281,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ศิรินทร์ เตชะอนันต์ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและสมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -32208,7 +32323,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ศิรินทร์ เจริญศิริ และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -32250,7 +32365,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. วรมน บวรธรรม และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -32292,7 +32407,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ปานไพลิน ชาญเวช และสถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -32334,7 +32449,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -32376,7 +32491,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. เมธาสิทธิ์ มหาคุณ และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -32418,7 +32533,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -32460,7 +32575,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ เมธาสิทธิ์ วณิชกุล</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและวณิชกุล</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -32502,7 +32617,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. ปานไพลิน วณิชกุล และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -32544,7 +32659,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. วรมน พิพัฒนกุล และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -32586,7 +32701,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. อนันตชัย เตชะอนันต์ และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -32628,7 +32743,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ปิยพงษ์ รัตนเสวี และสถาบันเทคโนโลยี สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -32670,7 +32785,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ศิรินทร์ พงษ์สยาม และสถาบันเทคโนโลยี สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -32712,7 +32827,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -32754,7 +32869,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ชัชวาลย์ โชติช่วง และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -32796,7 +32911,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ธีรภัทร สิริปัญญา และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและสมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -32838,7 +32953,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ธีรภัทร โชติช่วง และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและสมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -32880,7 +32995,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. วรปรัชญ์ เตชะอนันต์ และ ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -32922,7 +33037,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. วรปรัชญ์ วณิชกุล และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -32964,7 +33079,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. อัครเดช ปัญญาวงศ์ และสถาบันเทคโนโลยี สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -33006,7 +33121,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. พิชญะ โชติช่วง และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -33048,7 +33163,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ปิยพงษ์ บวรธรรม และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -33090,7 +33205,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. วรมน วณิชกุล และสถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -33132,7 +33247,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. กิตติกร สิริปัญญา และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -33174,7 +33289,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. พงศธร เจริญศิริ และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -33216,7 +33331,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. อัครเดช โชติช่วง และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -33258,7 +33373,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -33300,7 +33415,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. วรปรัชญ์ ชาญเวช และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -33342,7 +33457,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. กิตติกร เจริญศิริ และสถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -33384,7 +33499,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. เมธาสิทธิ์ สิริปัญญา และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -33426,7 +33541,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. นลินี วณิชกุล และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -33468,7 +33583,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -33510,7 +33625,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ชัชวาลย์ วิชญางกูร และ ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -33552,7 +33667,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. พิชญะ รัตนเสวี และ สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -33594,7 +33709,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ชลธี พิพัฒนกุล และสถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -33636,7 +33751,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -33678,7 +33793,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. พิชญะ บวรธรรม และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -33720,7 +33835,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ธีรภัทร วณิชกุล และสถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -33762,7 +33877,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. วรมน โชติช่วง และสถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -33804,7 +33919,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. วรปรัชญ์ วงศ์สยาม และสถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -33846,7 +33961,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ภัทรพล รัตนเสวี และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -33888,7 +34003,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ กานต์ พงษ์สยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและพงษ์สยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -33930,7 +34045,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. พงศธร พงษ์สยาม และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -33972,7 +34087,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ปานไพลิน เตชะอนันต์ และ ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -34014,7 +34129,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. พิชญะ โชติช่วง และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -34056,7 +34171,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. นลินี โชติช่วง และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -34098,7 +34213,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ สยามวิชญ์ เจริญศิริ</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและเจริญศิริ</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -34140,7 +34255,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -34182,7 +34297,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ธีรภัทร วิชญางกูร และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -34224,7 +34339,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ อัครเดช สิริปัญญา</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและสิริปัญญา</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -34266,7 +34381,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ศิรินทร์ มหาคุณ และสถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -34308,7 +34423,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. กานต์ พงษ์สยาม และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -34350,7 +34465,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. อัครเดช ปัญญาวงศ์ และสถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -34392,7 +34507,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. นลินี วิชญางกูร และ มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -34434,7 +34549,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ชลธี พิพัฒนกุล และสถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -34476,7 +34591,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ชัชวาลย์ วิชญางกูร และสถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -34518,7 +34633,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -34560,7 +34675,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. เมธาสิทธิ์ ปัญญาวงศ์ และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -34602,7 +34717,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ ปิยพงษ์ ปัญญาวงศ์</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและปัญญาวงศ์</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -34644,7 +34759,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. เมธาสิทธิ์ พงษ์สยาม และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -34686,7 +34801,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ อนันตชัย พงษ์สยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและพงษ์สยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -34728,7 +34843,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ชลธี รัตนเสวี และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -34770,7 +34885,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ชลธี สิริปัญญา และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -34812,7 +34927,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ดนัย วิชญางกูร และ สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -34854,7 +34969,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. กานต์ พิพัฒนกุล และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -34896,7 +35011,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ภัทรพล เตชะอนันต์ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและสมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -34938,7 +35053,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -34980,7 +35095,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. วรปรัชญ์ โชติช่วง และสถาบันเทคโนโลยี มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -35022,7 +35137,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. อัครเดช วิชญางกูร และสถาบันเทคโนโลยี ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -35064,7 +35179,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -35106,7 +35221,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. ธนานนท์ บวรธรรม และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -35148,7 +35263,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. วรปรัชญ์ บวรธรรม และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -35190,7 +35305,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ปานไพลิน พงษ์สยาม และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -35232,7 +35347,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ภัทรพล วิชญางกูร และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -35274,7 +35389,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. พิชญะ พงษ์สยาม และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -35316,7 +35431,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. อนันตชัย วิชญางกูร และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -35358,7 +35473,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. วรมน วงศ์สยาม และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -35400,7 +35515,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ภัทรพล วิชญางกูร และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและสมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -35442,7 +35557,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ดนัย วงศ์สยาม และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -35484,7 +35599,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. นลินี รัตนเสวี และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -35526,7 +35641,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. สยามวิชญ์ เตชะอนันต์ และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -35568,7 +35683,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. ดนัย วงศ์สยาม และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -35610,7 +35725,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -35652,7 +35767,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. กานต์ เจริญศิริ และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -35694,7 +35809,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ธีรภัทร สิริปัญญา และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -35736,7 +35851,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. กานต์ สิริปัญญา และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -35778,7 +35893,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ดนัย วณิชกุล และสถาบันเทคโนโลยี สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -35820,7 +35935,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. อนันตชัย ปัญญาวงศ์ และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -35862,7 +35977,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. พงศธร บวรธรรม และ มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -35904,7 +36019,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ดนัย บวรธรรม และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -35946,7 +36061,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. วรมน ชาญเวช และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -35988,7 +36103,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. กานต์ ชาญเวช และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -36030,7 +36145,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ธนานนท์ เตชะอนันต์ และสถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -36072,7 +36187,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ชัชวาลย์ รัตนเสวี และสถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -36114,7 +36229,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. สยามวิชญ์ เตชะอนันต์ และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -36156,7 +36271,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. สยามวิชญ์ เจริญศิริ และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -36198,7 +36313,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ศิรินทร์ เจริญศิริ และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -36240,7 +36355,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ดนัย บวรธรรม และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและสมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -36282,7 +36397,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. พิชญะ พงษ์สยาม และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -36324,7 +36439,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. อัครเดช ชาญเวช และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -36366,7 +36481,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ ชัชวาลย์ ชาญเวช</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและชาญเวช</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -36408,7 +36523,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -36450,7 +36565,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. วรมน ชาญเวช และสถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -36492,7 +36607,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. พงศธร วิชญางกูร และ สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -36534,7 +36649,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ศิรินทร์ วิชญางกูร และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -36576,7 +36691,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. อนันตชัย บวรธรรม และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -36618,7 +36733,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ธนานนท์ ปัญญาวงศ์ และสถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -36660,7 +36775,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -36702,7 +36817,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">มหาปราชญ์ ดนัย สิริปัญญา</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและสิริปัญญา</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -36744,7 +36859,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร. วรมน บวรธรรม และคณะเศรษฐศาสตร์แผ่นดิน</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะเศรษฐศาสตร์แผ่นดิน</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -36786,7 +36901,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะกรรมการเจรจาสันติภาพ และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
@@ -36828,7 +36943,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ธีรภัทร ชาญเวช และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)
@@ -36870,7 +36985,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. อัครเดช บวรธรรม และสถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)
@@ -36912,7 +37027,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. วรปรัชญ์ มหาคุณ และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)
@@ -36954,7 +37069,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ศิรินทร์ ชาญเวช และสถาบันเทคโนโลยี มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)
@@ -36996,7 +37111,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. อัครเดช รัตนเสวี และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)
@@ -37038,7 +37153,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ปิยพงษ์ วงศ์สยาม และสถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)
@@ -37080,7 +37195,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ดนัย วิชญางกูร และสถาบันเทคโนโลยี ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันเทคโนโลยี ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)
@@ -37122,7 +37237,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ดนัย พงษ์สยาม และ มูลนิธิสันติภาพแหลมทอง</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">มูลนิธิสันติภาพแหลมทอง</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)
@@ -37164,7 +37279,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. นลินี สิริปัญญา และ สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันวิจัยการแพทย์แผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)
@@ -37206,7 +37321,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.นพ. ปิยพงษ์ มหาคุณ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">คณะนักวิจัยและสมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)
@@ -37248,7 +37363,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ศ.ดร.ญ. ปานไพลิน ชาญเวช และสถาบันชีววิทยานวัตกรรมแผ่นดินไทย</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">สถาบันชีววิทยานวัตกรรมแผ่นดินไทย</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)
@@ -37290,7 +37405,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 
               </div>
               <h4 style="color:#ffffff;font-size:18px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">ดร. ชลธี เจริญศิริ และศูนย์วัสดุนวัตกรรม</span>
+                👥 คณะ/องค์กรผู้ได้รับรางวัล: <span style="color:#facc15;">ศูนย์วัสดุนวัตกรรม</span>
               </h4>
               <div style="font-size:12.5px;color:#fb923c;font-weight:600;margin-bottom:12px;background:rgba(251,146,60,0.1);border-left:3px solid #fb923c;padding:5px 12px;border-radius:4px;">
                 🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)
