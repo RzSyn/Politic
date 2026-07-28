@@ -20962,7 +20962,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             var cH = H - padT - padB;
 
             function xPos(i) {{ return padL + (i / (data.length - 1)) * cW; }}
-            function yPos(v) {{ return padT + cH - ((v - minV) / range) * cH; }}
+            // INVERTED: high rate (322 crisis) = bottom, low rate (92 stable) = top
+            function yPos(v) {{ return padT + ((v - minV) / range) * cH; }}
 
             ctx.clearRect(0, 0, W, H);
 
@@ -21010,9 +21011,10 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             ctx.lineTo(xPos(0), padT + cH);
             ctx.closePath();
             var aGrad = ctx.createLinearGradient(0, padT, 0, padT + cH);
-            aGrad.addColorStop(0, 'rgba(74,222,128,0.18)');
-            aGrad.addColorStop(0.5, 'rgba(239,68,68,0.08)');
-            aGrad.addColorStop(1, 'rgba(0,0,0,0)');
+            // Gradient: top=stable(green fade), bottom=crisis(red glow)
+            aGrad.addColorStop(0, 'rgba(74,222,128,0.06)');
+            aGrad.addColorStop(0.7, 'rgba(239,68,68,0.15)');
+            aGrad.addColorStop(1, 'rgba(239,68,68,0.30)');
             ctx.fillStyle = aGrad;
             ctx.fill();
 
