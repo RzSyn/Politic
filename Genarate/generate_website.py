@@ -20764,12 +20764,20 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               </div>
             </div>
 
-            <!-- METRIC 3: MORTALITY -->
+            <!-- METRIC 3: MORTALITY GLOBAL VS THAILAND -->
             <div style="background:rgba(15,23,42,0.75);border:1px solid rgba(239,68,68,0.5);border-radius:14px;padding:18px;">
-              <div style="font-size:12px;color:#ef4444;font-weight:700;">💀 อัตราตายทั่วโลก (Mortality Rate)</div>
-              <div style="font-size:24px;font-weight:800;color:#f87171;margin-top:2px;">๖๗% (Global 67%)</div>
-              <div style="font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.6;">
-                สร้างความตื่นตระหนกและภาวะวิกฤตสาธารณสุขล่มสลายในหลายทวีปทั่วโลก
+              <div style="font-size:12px;color:#ef4444;font-weight:700;">💀 อัตราการเสียชีวิต (Mortality Rate)</div>
+              <div style="display:flex;align-items:center;gap:14px;margin-top:4px;">
+                <div>
+                  <div style="font-size:20px;font-weight:900;color:#f87171;">๖๗% <span style="font-size:11px;color:#cbd5e1;font-weight:600;">(ทั่วโลก)</span></div>
+                </div>
+                <div style="height:24px;width:1px;background:rgba(255,255,255,0.2);"></div>
+                <div>
+                  <div style="font-size:20px;font-weight:900;color:#4ade80;">๐% <span style="font-size:11px;color:#4ade80;font-weight:700;">(ในประเทศไทย)</span></div>
+                </div>
+              </div>
+              <div style="font-size:13px;color:#cbd5e1;margin-top:8px;line-height:1.6;">
+                อัตราการเสียชีวิตในประเทศไทยเป็น <strong style="color:#4ade80;">๐% (ไม่มีผู้เสียชีวิตแม้แต่รายเดียว!)</strong> ขณะที่ทั่วโลกดิ่งวิกฤตมีอัตราตายสูงถึง ๖๗%
               </div>
             </div>
 
