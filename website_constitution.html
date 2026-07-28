@@ -22762,8 +22762,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
             ctx.lineTo(xPos(0), padT + cH);
             ctx.closePath();
             var aGrad = ctx.createLinearGradient(0, padT, 0, padT + cH);
-            // Gradient: top=stable(green fade), bottom=crisis(red glow)
-            aGrad.addColorStop(0, 'rgba(74,222,128,0.06)');
+            // Gradient: top=amber(unstable), bottom=crisis(red)
+            aGrad.addColorStop(0, 'rgba(228,180,41,0.06)');
             aGrad.addColorStop(0.7, 'rgba(239,68,68,0.15)');
             aGrad.addColorStop(1, 'rgba(239,68,68,0.30)');
             ctx.fillStyle = aGrad;
@@ -22809,18 +22809,18 @@ svg.leaflet-image-layer.leaflet-interactive path {
             var pulse = 0.5 + 0.5 * Math.sin(animFrame * 0.12);
             ctx.beginPath();
             ctx.arc(lastX, lastY, 7 + pulse * 3, 0, Math.PI * 2);
-            ctx.fillStyle = 'rgba(74,222,128,' + (0.15 + pulse * 0.15) + ')';
+            ctx.fillStyle = 'rgba(228,180,41,' + (0.15 + pulse * 0.15) + ')';
             ctx.fill();
             ctx.beginPath();
             ctx.arc(lastX, lastY, 4, 0, Math.PI * 2);
-            ctx.fillStyle = '#4ade80';
-            ctx.shadowColor = '#4ade80';
+            ctx.fillStyle = '#e4b429';
+            ctx.shadowColor = '#e4b429';
             ctx.shadowBlur = 12;
             ctx.fill();
             ctx.shadowBlur = 0;
 
             // CURRENT PRICE LINE
-            ctx.strokeStyle = 'rgba(74,222,128,0.35)';
+            ctx.strokeStyle = 'rgba(228,180,41,0.35)';
             ctx.lineWidth = 1;
             ctx.setLineDash([6, 4]);
             ctx.beginPath();
@@ -22831,7 +22831,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
             // Y-AXIS PRICE TAG (current)
             var curRate = data[data.length - 1];
-            ctx.fillStyle = '#4ade80';
+            ctx.fillStyle = '#e4b429';
             ctx.fillRect(2, lastY - 10, padL - 6, 20);
             ctx.fillStyle = '#0a0f1e';
             ctx.font = 'bold 10px monospace';
@@ -22846,21 +22846,31 @@ svg.leaflet-image-layer.leaflet-interactive path {
               var delta = curRate - lastPrice;
               var pct = (delta / lastPrice * 100).toFixed(2);
               deltaEl.innerText = (delta >= 0 ? '▲ +' : '▼ ') + pct + '%';
-              deltaEl.style.color = delta >= 0 ? '#4ade80' : '#f87171';
+              deltaEl.style.color = delta >= 0 ? '#fbbf24' : '#f87171';
             }
           }
 
-          // Live data extension — append new tick every 90 frames (~1.5s) for slow realistic feel
+          // Live volatile tick — TSL is unstable currency, always fluctuating
           var tslTickCounter = 0;
+          var tslTickInterval = 22;  // frames until next tick (randomized)
+          var tslMomentum = 0;       // momentum carry between ticks
           function liveUpdate() {
             animFrame++;
             tslTickCounter++;
-            if (tslTickCounter >= 90) {
+            if (tslTickCounter >= tslTickInterval) {
               tslTickCounter = 0;
+              // Randomize next interval: 12-35 frames (0.2s-0.58s)
+              tslTickInterval = 12 + Math.floor(Math.random() * 24);
               var last = liveData[liveData.length - 1];
-              var noise = (Math.random() - 0.5) * 0.6;
-              var newVal = last + noise;
-              newVal = Math.max(88.5, Math.min(96.5, newVal));
+              // Regime volatility: mild near 92, spike occasionally
+              var regime = Math.random();
+              var spike = regime > 0.85 ? (Math.random() - 0.5) * 16 : 0; // 15% chance of spike
+              var baseNoise = (Math.random() - 0.5) * 8;  // ±4 base
+              var pull = (92 - last) * 0.04;              // weak gravity toward 92
+              tslMomentum = tslMomentum * 0.6 + (baseNoise + spike) * 0.4;
+              var newVal = last + tslMomentum + pull;
+              // Clamp: currency unstable but within plausible recovery range
+              newVal = Math.max(80, Math.min(110, newVal));
               lastPrice = last;
               liveData.push(newVal);
               if (liveData.length > 1000) liveData.shift();
@@ -22878,9 +22888,9 @@ svg.leaflet-image-layer.leaflet-interactive path {
               b.style.color = '#94a3b8';
             });
             if (btn) {
-              btn.style.background = 'rgba(74,222,128,0.2)';
-              btn.style.borderColor = '#4ade80';
-              btn.style.color = '#4ade80';
+              btn.style.background = 'rgba(228,180,41,0.2)';
+              btn.style.borderColor = '#e4b429';
+              btn.style.color = '#e4b429';
             }
           };
 
