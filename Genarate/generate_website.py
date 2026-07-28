@@ -20832,10 +20832,10 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             <!-- FACTOR 4: GLOBAL AID & VACCINE EXPORT POLICY -->
             <div style="background:rgba(15,23,42,0.75);border:1px solid rgba(250,204,21,0.35);border-radius:14px;padding:20px;">
               <h4 style="color:#facc15;font-size:17px;font-weight:800;margin:0 0 8px 0;display:flex;align-items:center;gap:8px;">
-                <span>💉</span> ส่งทีมแพทย์ช่วย ๑๒ ประเทศ & นโยบายวัคซีนสากล
+                <span>💉</span> วัคซีนจาก ๓ ผู้รอดชีวิตชาวไทย & การช่วยเหลือสากล
               </h4>
               <p style="font-size:13.5px;color:#e2e8f0;line-height:1.7;margin:0;text-align:justify;">
-                ไทยส่งทีมแพทย์และวัคซีนประสิทธิภาพสูงช่วยเหลือ ๑๒ ประเทศพันธมิตร โดยกำหนดเงื่อนไขการขายวัคซีนตามขนาดประเทศและความสัมพันธ์ทางการทูต <strong>(ห้ามรีเซลซื้อขายต่อเด็ดขาด)</strong> เพื่อป้องกันการกักตุนและกระจายวัคซีนอย่างเป็นธรรม
+                วัคซีนถูกสกัดและผลิตได้อย่างรวดเร็วเป็นพิเศษ <strong>โดยดึงจากภูมิคุ้มกันพลาสมาของผู้ติดเชื้อชาวไทยทั้ง ๓ รายที่ไม่เสียชีวิต!</strong> นำมาพัฒนาเป็นวัคซีนประสิทธิภาพสูงส่งทีมแพทย์ช่วยเหลือ ๑๒ ประเทศพันธมิตร ขายตามขนาดประเทศและความสัมพันธ์ทางการทูต <strong>(ห้ามรีเซลซื้อขายต่อเด็ดขาด)</strong>
               </p>
             </div>
           </div>
