@@ -20925,10 +20925,13 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
           // Color per segment
           function getColor(rate) {{
-            if (rate > 200) return '#ef4444';
-            if (rate > 130) return '#fb923c';
-            if (rate < 95) return '#4ade80';
-            return '#38bdf8';
+            // TSL economy scale: bad → medium → almost-good (never truly green)
+            if (rate > 250) return '#b91c1c';   // dark red — full collapse
+            if (rate > 200) return '#ef4444';   // red — crisis
+            if (rate > 150) return '#f97316';   // orange — bad
+            if (rate > 110) return '#fb923c';   // light orange — below average
+            if (rate > 95)  return '#fbbf24';   // amber — borderline
+            return '#e4b429';                   // gold/amber — stable but not good
           }}
 
           function drawChart() {{
