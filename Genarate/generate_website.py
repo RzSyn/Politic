@@ -1722,7 +1722,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           <button class="db-tab-btn" onclick="switchTab('pms-tab', this)" style="border-color:rgba(250,204,21,0.6);color:#facc15;">🏛️ ทำเนียบนายกรัฐมนตรี (๒๘ ท่าน)</button>
           <button class="db-tab-btn" onclick="switchTab('national-symbols-tab', this)" style="border-color:rgba(248,113,113,0.6);color:#f87171;">🇹🇭 ธงชาติและเพลงชาติไทย</button>
           <button class="db-tab-btn" onclick="switchTab('thai-nobel-tab', this)" style="border-color:rgba(234,179,8,0.6);color:#facc15;">🏆 รางวัลโนเบลไทย</button>
-          <button class="db-tab-btn" onclick="switchTab('dexibola-virus-tab', this)" style="border-color:rgba(239,68,68,0.6);color:#f87171;">🦠 ไวรัส Dexibola</button>
         </div>
         <!-- แถวที่ ๒ (๕ ปุ่ม) -->
         <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px;">
@@ -1748,6 +1747,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           <button class="db-tab-btn" onclick="switchTab('laos-kingdom-tab', this)" style="border-color:rgba(250,204,21,0.6);color:#facc15;">🇱🇦 ราชอาณาประชาชนลาว</button>
           <button class="db-tab-btn" onclick="switchTab('alliances-disputes-tab', this)" style="border-color:rgba(192,132,252,0.6);color:#c084fc;">🤝 องค์การพันธมิตร & ศาลสากล</button>
           <button class="db-tab-btn" onclick="switchTab('international-missions-tab', this)" style="border-color:rgba(96,165,250,0.6);color:#60a5fa;">🛡️ ภารกิจ & วิกฤตการณ์สากล</button>
+          <button class="db-tab-btn" onclick="switchTab('dexibola-virus-tab', this)" style="border-color:rgba(239,68,68,0.6);color:#f87171;">🦠 ไวรัส Dexibola</button>
         </div>
       </div>
 
