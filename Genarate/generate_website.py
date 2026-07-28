@@ -20953,8 +20953,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             }}
 
             if (data.length < 2) return;
-            var maxV = Math.max.apply(null, data) * 1.06;
-            var minV = Math.min.apply(null, data) * 0.94;
+            var maxV = 340;  // just above crisis peak (322)
+            var minV = 75;   // just below stable rate (92)
             var range = maxV - minV;
             var padL = 52, padR = 18, padT = 22, padB = 32;
             var cW = W - padL - padR;
