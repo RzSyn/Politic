@@ -20721,6 +20721,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
     <!-- Tab: ไวรัส Dexibola -->
     
     <!-- Tab: ซีรีส์ The Plague (Netflix) -->
+    <!-- Tab: ซีรีส์ The Plague (Netflix) -->
     <div id="the-plague-series-tab" class="db-tab-content">
       <div style="text-align:left;">
         <!-- HEADER BANNER -->
@@ -20730,86 +20731,162 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
           <div style="flex:1;">
             <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:4px;">
-              <h3 style="color:#e50914;font-family:'Outfit',sans-serif;margin:0;font-size:26px;font-weight:800;letter-spacing:0.3px;">The Plague — ซีรีส์ ๒๔ ตอน จาก Netflix Thailand</h3>
+              <h3 style="color:#e50914;font-family:'Outfit',sans-serif;margin:0;font-size:26px;font-weight:800;letter-spacing:0.3px;">The Plague — มหากาพย์ซีรีส์ ๒๔ ตอน + Special EP จาก Netflix Thailand</h3>
               <span style="background:rgba(229,9,20,0.25);color:#f87171;border:1px solid rgba(229,9,20,0.5);padding:4px 14px;border-radius:20px;font-size:12.5px;font-weight:800;">
-                📺 Netflix Original Series (๒๔ ตอนจบ)
+                📺 Netflix Real-Time Broadcasting (๒๔ ตอนจบ)
               </span>
               <span style="background:rgba(250,204,21,0.2);color:#facc15;border:1px solid rgba(250,204,21,0.5);padding:4px 14px;border-radius:20px;font-size:12.5px;font-weight:800;">
-                🏛️ ครึ่งหลังวาระนายกฯ อภิสิทธิ์ (วาระ ๒)
+                🏛️ ยุคอภิสิทธิ์ วาระ ๒ (Dexibola Crisis)
               </span>
             </div>
-            <p style="color:var(--text-muted);font-size:14px;margin:6px 0 0 0;">มหากาพย์ซีรีส์แห่งยุคสมัยที่ดำเนินเรื่อง ๒ ทางคู่ขนาน สะท้อนภาพการอยู่รอดของสยามท่ามกลางมหาวิบัติไวรัส Dexibola ทั่วโลก</p>
+            <p style="color:var(--text-muted);font-size:14px;margin:6px 0 0 0;">โครงเรื่องดำเนินเรื่อง ๒ ทางคู่ขนาน สะท้อนภาพจริงของโลกสองใบ: ฝั่งไทยปลอดภัยรอดพ้นวิกฤต VS ฝั่งต่างประเทศล่มสลาย</p>
           </div>
         </div>
 
-        <!-- SECTION 1: TWO PARALLEL WORLDS CONCEPT -->
+        <!-- SECTION 1: ARCHITECTURE OF EPISODES 1-15 & SPECIAL EP -->
         <div style="background:linear-gradient(135deg, rgba(30,41,59,0.9) 0%, rgba(15,23,42,0.95) 100%);border:2px solid rgba(229,9,20,0.35);border-radius:18px;padding:24px;margin-bottom:24px;box-shadow:0 8px 24px rgba(0,0,0,0.35);">
           <div style="font-size:20px;font-weight:800;color:#e50914;margin-bottom:18px;display:flex;align-items:center;gap:10px;border-bottom:1.5px solid rgba(229,9,20,0.3);padding-bottom:12px;">
-            <span>🌐</span> ๑. โครงเรื่อง ๒ โลกคู่ขนาน & สองพี่น้องอยู่คนละฝั่ง
+            <span>🎞️</span> ๑. โครงสร้างบทละคร: ตอนที่ ๑ - ๑๕ & Special EP สด Real-Time
           </div>
 
-          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));gap:20px;margin-bottom:20px;">
-            <!-- SIDE THAILAND -->
-            <div style="background:rgba(15,23,42,0.75);border:1px solid rgba(74,222,128,0.35);border-radius:14px;padding:20px;">
-              <h4 style="color:#4ade80;font-size:17px;font-weight:800;margin:0 0 8px 0;display:flex;align-items:center;gap:8px;">
-                <span>🇹🇭</span> ฝั่งประเทศไทย (ชีวิตปกติ & รอดปลอดภัย)
-              </h4>
-              <p style="font-size:13.5px;color:#e2e8f0;line-height:1.7;margin:0;text-align:justify;">
-                ในขณะที่โลกภายนอกกำลังปั่นป่วนด้วยโรคระบาด Dexibola คนไทยสามารถนั่งดูหนัง ดู Netflix ชิลๆ อยู่ที่บ้านได้อย่างปลอดภัย ด้วยระบบสาธารณสุขและมาตรการป้องกันคุมเข้มของสยามที่ทำงาน 100% ตัวละคร <strong>"คนพี่"</strong> ใช้ชีวิตปกติ ทำงาน และดูข่าวต่างประเทศด้วยความห่วงใย
-              </p>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(310px, 1fr));gap:18px;margin-bottom:20px;">
+            <!-- EP 1-15 -->
+            <div style="background:rgba(15,23,42,0.8);border:1px solid rgba(229,9,20,0.4);border-radius:14px;padding:18px;">
+              <div style="font-size:13px;color:#f87171;font-weight:700;margin-bottom:6px;">📺 ตอนที่ ๑ - ๑๕: อิงเหตุการณ์จริงในอดีต (เปลี่ยนชื่อ)</div>
+              <div style="font-size:13.5px;color:#e2e8f0;line-height:1.7;text-align:justify;">
+                ดำเนินเรื่อง ๒ ฝั่งคู่ขนาน: ฝั่งไทยชิลๆ รอดปลอดภัย นั่งดู Netflix อยู่บ้าน สวนทางกับฝั่งต่างประเทศที่วุ่นวาย ทุจริตในรัฐบาล และระบบสาธารณสุขล่มสลาย พร้อมฉากสะเทือนขวัญ <strong>"วัคซีนใต้ดิน"</strong> ที่น้องชายฉีดเข้าไปแล้วติดเชื้อรุนแรงเกือบเสียชีวิต
+              </div>
             </div>
 
-            <!-- SIDE OVERSEAS -->
-            <div style="background:rgba(15,23,42,0.75);border:1px solid rgba(248,113,113,0.35);border-radius:14px;padding:20px;">
-              <h4 style="color:#f87171;font-size:17px;font-weight:800;margin:0 0 8px 0;display:flex;align-items:center;gap:8px;">
-                <span>🌍</span> ฝั่งต่างประเทศ (วิกฤตสาธารณสุข & ตลาดวัคซีนมืด)
-              </h4>
-              <p style="font-size:13.5px;color:#e2e8f0;line-height:1.7;margin:0;text-align:justify;">
-                ระบบสาธารณสุขล่มสลาย โรงพยาบาลไร้เตียง วัคซีนจริงมีราคาแพงเกินกว่าราษฎรทั่วไปจะเข้าถึงได้ ตัวละคร <strong>"คนน้อง"</strong> ตกอยู่ท่ามกลางความสิ้นหวังในต่างแดน ดิ้นรนเอาชีวิตรอดในสภาพแวดล้อมที่ไร้มาตรการคุ้มครอง
-              </p>
+            <!-- EP 16 REVEAL -->
+            <div style="background:rgba(15,23,42,0.8);border:1px solid rgba(250,204,21,0.4);border-radius:14px;padding:18px;">
+              <div style="font-size:13px;color:#facc15;font-weight:700;margin-bottom:6px;">💥 ตอนที่ ๑๖: การเปิดเผยความจริง & TSL ล่มสลาย</div>
+              <div style="font-size:13.5px;color:#e2e8f0;line-height:1.7;text-align:justify;">
+                เฉลยให้คนดูทั่วโลกช็อกว่า <strong>"เหตุการณ์ในซีรีส์ทั้งหมดคือเรื่องจริง!"</strong> พร้อมเผชิญหน้ามหาวิบัติการเงินโลก <strong>TSL ล่มสลาย</strong> จาก 0.89 ดิ่งลงเหลือ 0.31 ดอลลาร์ต่อบาท
+              </div>
             </div>
-          </div>
 
-          <!-- PIVOTAL SCENE: BLACK-MARKET VACCINE -->
-          <div style="background:rgba(229,9,20,0.1);border:1.5px solid rgba(229,9,20,0.4);border-radius:14px;padding:20px;margin-top:10px;">
-            <h4 style="color:#f87171;font-size:17px;font-weight:800;margin:0 0 10px 0;display:flex;align-items:center;gap:8px;">
-              <span>💉</span> ฉากสะเทือนอารมณ์: "วัคซีนใต้ดินและการติดเชื้อเกือบตาย"
-            </h4>
-            <p style="font-size:14px;color:#f8fafc;line-height:1.8;margin:0;text-align:justify;">
-              ฉากที่ถูกกล่าวขวัญและสะเทือนใจผู้ชมมากที่สุด เมื่อน้องชายในต่างประเทศแอบหาซื้อ <strong>"วัคซีนใต้ดิน / วัคซีนปลอม"</strong> เพราะวัคซีนจริงราคาแพงเกินไป แต่เมื่อฉีดเข้าไป อาการกลับหนักขึ้นแทนที่จะดีขึ้น เกิดการติดเชื้อรุนแรงเกือบเสียชีวิต พี่ชายฝั่งไทยโทรติดตามด้วยความตื่นตระหนก: <em>"หนูเป็นยังไง?" ... "ไม่ดีครับพี่ ผมฉีดวัคซีน..." ... "วัคซีนอะไร? ของใคร?"</em> เกิดความเงียบสะเทือนขวัญที่ทำให้กระแสโซเชียลระเบิดฮือฮา
-            </p>
+            <!-- SPECIAL EP -->
+            <div style="background:rgba(15,23,42,0.8);border:1px solid rgba(56,189,248,0.4);border-radius:14px;padding:18px;">
+              <div style="font-size:13px;color:#38bdf8;font-weight:700;margin-bottom:6px;">🎙️ Special EP: ถ่ายทอดสด Real-Time วิเคราะห์ค่าเงิน</div>
+              <div style="font-size:13.5px;color:#e2e8f0;line-height:1.7;text-align:justify;">
+                ออกอากาศพิเศษแบบ Real-Time สดทั่วโลก วิเคราะห์ดัชนีค่าเงิน ประวัติความเป็นมาของ TSL และอัตราแลกเปลี่ยนสากลสดๆ ท่ามกลางวิกฤตเศรษฐกิจโลก
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- SECTION 2: SOCIAL REACTION & CHAT DIALOGUE -->
+        <!-- SECTION 2: CHRONOLOGY OF EPISODES 16 - 24 -->
         <div style="background:linear-gradient(135deg, rgba(30,41,59,0.9) 0%, rgba(15,23,42,0.95) 100%);border:2px solid rgba(56,189,248,0.35);border-radius:18px;padding:24px;margin-bottom:24px;box-shadow:0 8px 24px rgba(0,0,0,0.35);">
           <div style="font-size:20px;font-weight:800;color:#38bdf8;margin-bottom:18px;display:flex;align-items:center;gap:10px;border-bottom:1.5px solid rgba(56,189,248,0.3);padding-bottom:12px;">
-            <span>💬</span> ๒. กระแส X/Twitter & บทสนทนาระหว่าง สิญจน์ - เอมโมโน - ดร.ธนานนท์
+            <span>🗓️</span> ๒. จดหมายเหตุรายตอน: ตอนที่ ๑๖ - ๒๔ (ไม่มีสคริปต์ ออกอากาศทุก ๒ สัปดาห์)
           </div>
 
-          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:20px;margin-bottom:20px;">
-            <!-- TWITTER TREND -->
-            <div style="background:rgba(15,23,42,0.75);border:1px solid rgba(56,189,248,0.3);border-radius:14px;padding:18px;">
-              <div style="font-size:13px;color:#38bdf8;font-weight:700;margin-bottom:10px;">🐤 เสียงสะท้อนจากโซเชียลมีเดีย (Twitter Trend)</div>
-              <div style="font-size:13px;color:#cbd5e1;line-height:1.7;">
-                • <em>"The Plague ตอนที่ 3 ดูแล้วขนลุกมาก ฝั่งต่างประเทศโหดมากเลย"</em><br>
-                • <em>"ฝั่งไทยในซีรีส์กับชีวิตจริงตอนนี้เหมือนกันเลย ดูแล้วขำแต่ก็ซึ้ง"</em><br>
-                • <em>"ฉากวัคซีนใต้ดินร้องไห้เลยครับ น้องมันสิ้นหวังมากจนต้องเสี่ยง"</em><br>
-                • <em>"สองพี่น้องอยู่คนละโลกจริงๆ คนหนึ่งชิลๆ อีกคนเกือบตาย"</em>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:16px;">
+            <!-- EP 16 -->
+            <div style="background:rgba(15,23,42,0.75);border:1px solid rgba(239,68,68,0.35);border-radius:12px;padding:16px;">
+              <div style="font-size:12px;color:#ef4444;font-weight:800;">EP 16</div>
+              <div style="font-size:15px;font-weight:800;color:#ffffff;margin-top:2px;">TSL ล่มสลาย</div>
+              <div style="font-size:12.5px;color:#cbd5e1;margin-top:4px;">วิกฤตการณ์ทางการเงินโลกดิ่งลงอย่างรุนแรง ตลาดเงินสากลปั่นป่วน</div>
+            </div>
+
+            <!-- EP 17 -->
+            <div style="background:rgba(15,23,42,0.75);border:1px solid rgba(251,146,60,0.35);border-radius:12px;padding:16px;">
+              <div style="font-size:12px;color:#fb923c;font-weight:800;">EP 17</div>
+              <div style="font-size:15px;font-weight:800;color:#ffffff;margin-top:2px;">หลังพายุ TSL เริ่มฟื้น</div>
+              <div style="font-size:12.5px;color:#cbd5e1;margin-top:4px;">พายุวิกฤตเริ่มสงบ ดัชนี TSL เริ่มทรงตัวและส่งสัญญาณฟื้นตัวช้าๆ</div>
+            </div>
+
+            <!-- EP 18 -->
+            <div style="background:rgba(15,23,42,0.75);border:1px solid rgba(250,204,21,0.35);border-radius:12px;padding:16px;">
+              <div style="font-size:12px;color:#facc15;font-weight:800;">EP 18</div>
+              <div style="font-size:15px;font-weight:800;color:#ffffff;margin-top:2px;">โลกเริ่มฟื้นตัว</div>
+              <div style="font-size:12.5px;color:#cbd5e1;margin-top:4px;">นานาชาติเริ่มควบคุมการแพร่ระบาด Dexibola ด้วยวัคซีนที่ได้รับจากไทย</div>
+            </div>
+
+            <!-- EP 19 -->
+            <div style="background:rgba(15,23,42,0.75);border:1px solid rgba(239,68,68,0.4);border-radius:12px;padding:16px;">
+              <div style="font-size:12px;color:#f87171;font-weight:800;">EP 19</div>
+              <div style="font-size:15px;font-weight:800;color:#ffffff;margin-top:2px;">Fiumicino โรม ถูกประท้วงปิด</div>
+              <div style="font-size:12.5px;color:#cbd5e1;margin-top:4px;">น้องชายพยายามบินกลับไทย แต่สนามบิน Fiumicino ณ กรุงโรม ถูกมวลชนประท้วงปิด อิตาลีล่มสลาย</div>
+            </div>
+
+            <!-- EP 20 -->
+            <div style="background:rgba(15,23,42,0.75);border:1px solid rgba(74,222,128,0.35);border-radius:12px;padding:16px;">
+              <div style="font-size:12px;color:#4ade80;font-weight:800;">EP 20</div>
+              <div style="font-size:15px;font-weight:800;color:#ffffff;margin-top:2px;">หนีไป VRN Verona บินมาไทยสำเร็จ</div>
+              <div style="font-size:12.5px;color:#cbd5e1;margin-top:4px;">น้องหนีไปยังสนามบิน VRN (Verona) ซึ่งเป็นสนามบินเล็ก หลบเลี่ยงเป้าประท้วง บินกลับสยามปลอดภัย</div>
+            </div>
+
+            <!-- EP 21 -->
+            <div style="background:rgba(15,23,42,0.75);border:1px solid rgba(56,189,248,0.35);border-radius:12px;padding:16px;">
+              <div style="font-size:12px;color:#38bdf8;font-weight:800;">EP 21</div>
+              <div style="font-size:15px;font-weight:800;color:#ffffff;margin-top:2px;">ความสงบสุข ณ กรุงเทพฯ</div>
+              <div style="font-size:12.5px;color:#cbd5e1;margin-top:4px;">น้องสัมผัสความสงบใจกลางกรุงเทพฯ และตระหนักว่าโลกสองใบมันแตกต่างกันมหาศาลเพียงใด</div>
+            </div>
+
+            <!-- EP 22 -->
+            <div style="background:rgba(15,23,42,0.75);border:1px solid rgba(192,132,252,0.35);border-radius:12px;padding:16px;">
+              <div style="font-size:12px;color:#c084fc;font-weight:800;">EP 22</div>
+              <div style="font-size:15px;font-weight:800;color:#ffffff;margin-top:2px;">สถาปนา "โรงพยาบาลมนุษย์"</div>
+              <div style="font-size:12.5px;color:#cbd5e1;margin-top:4px;">โรงพยาบาลมนุษย์ (Human Hospital) ได้รับชื่อของตัวเองอย่างเป็นทางการ ไม่ใช่แค่สาขาย่อยอีกต่อไป!</div>
+            </div>
+
+            <!-- EP 23 -->
+            <div style="background:rgba(15,23,42,0.75);border:1px solid rgba(248,113,113,0.4);border-radius:12px;padding:16px;">
+              <div style="font-size:12px;color:#f87171;font-weight:800;">EP 23</div>
+              <div style="font-size:15px;font-weight:800;color:#ffffff;margin-top:2px;">อิตาลีปฏิวัติโดยประชาชน</div>
+              <div style="font-size:12.5px;color:#cbd5e1;margin-top:4px;">น้องได้รับการฟื้นฟูจิตใจในไทย ขณะที่ประเทศอิตาลีเกิดเหตุการณ์ปฏิวัติโดยประชาชน (People's Revolution)</div>
+            </div>
+
+            <!-- EP 24 -->
+            <div style="background:rgba(15,23,42,0.75);border:1px solid rgba(250,204,21,0.5);border-radius:12px;padding:16px;">
+              <div style="font-size:12px;color:#facc15;font-weight:800;">EP 24</div>
+              <div style="font-size:15px;font-weight:800;color:#ffffff;margin-top:2px;">วันใหม่ (A New Day)</div>
+              <div style="font-size:12.5px;color:#cbd5e1;margin-top:4px;">น้องเรียน Tech Doctor ณ รพ.เจ้าพระยา TSL ขยับขึ้นเป็น 0.44 ดอลลาร์ สองพี่น้องนั่งคุยกันริมแม่น้ำเจ้าพระยา</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 3: EPISODE 24 FINALE & HISTORICAL NOTE -->
+        <div style="background:linear-gradient(135deg, rgba(250,204,21,0.15) 0%, rgba(15,23,42,0.95) 100%);border:2.5px solid #facc15;border-radius:18px;padding:24px;box-shadow:0 8px 24px rgba(0,0,0,0.35);">
+          <div style="font-size:20px;font-weight:800;color:#facc15;margin-bottom:18px;display:flex;align-items:center;gap:10px;border-bottom:1.5px solid rgba(250,204,21,0.3);padding-bottom:12px;">
+            <span>🌅</span> ๓. บทสรุปภาพยนตร์ & วจีแห่งประวัติศาสตร์สยาม
+          </div>
+
+          <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(250,204,21,0.4);border-radius:14px;padding:20px;margin-bottom:20px;line-height:1.8;color:#f8fafc;font-size:14px;text-align:justify;">
+            <strong style="color:#fde047;font-size:16px;display:block;margin-bottom:8px;">🌆 ฉากสองพี่น้องริมแม่น้ำเจ้าพระยา (บทสรุปที่เปลี่ยนสองชีวิตไปตลอดกาล):</strong>
+            น้องชายในต่างประเทศรอดชีวิตและเข้าเรียนต่อเป็น <strong>Tech Doctor</strong> ณ โรงพยาบาลเจ้าพระยา (โดยมีเอมโมโนเป็นอาจารย์สอน) สองพี่น้องนั่งคุยกันริมแม่น้ำเจ้าพระยาที่เดิม เวลาเดิม แสงเดิม:<br>
+            <em>"พี่ครับ... ผมเข้าใจแล้วครับว่าทำไมที่นี่มันต่างกัน เพราะคนที่นี่เชื่อว่าสิ่งที่ทำวันนี้จะส่งผลถึงคนที่ยังไม่เกิดครับ"</em><br>
+            <em>"แล้วที่บ้านเราล่ะครับ?"</em><br>
+            <em>"คนที่บ้านเราเชื่อในวันนี้ครับ ยังไม่เชื่อในพรุ่งนี้... แต่เปลี่ยนได้ครับ ต้องมีคนเริ่มก่อน"</em>
+          </div>
+
+          <!-- CLOSING QUOTE & BOOK NOTE -->
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:20px;">
+            <div style="background:rgba(15,23,42,0.8);border:1px solid #facc15;border-radius:14px;padding:20px;">
+              <div style="font-size:13px;color:#facc15;font-weight:700;margin-bottom:6px;">✨ ข้อความสุดท้ายบนหน้าจอ (Closing Text)</div>
+              <div style="font-size:16px;font-weight:900;color:#ffffff;line-height:1.7;">
+                "มีคนที่เชื่อในพรุ่งนี้มากพอที่จะทำอะไรบางอย่างวันนี้"
+              </div>
+              <div style="font-size:12.5px;color:#cbd5e1;margin-top:8px;">
+                คำกล่าวที่ ดร.ธนานนท์, สิญจน์, ร.๑, ร.๔, ทักษิณ, พิธา, ศิริกัญญา และวีรชนทุกยุคสมัยยึดมั่นยุทธศาสตร์
               </div>
             </div>
 
-            <!-- SIN & AMMONO WATCHING TOGETHER -->
-            <div style="background:rgba(15,23,42,0.75);border:1px solid rgba(192,132,252,0.3);border-radius:14px;padding:18px;">
-              <div style="font-size:13px;color:#c084fc;font-weight:700;margin-bottom:10px;">📱 บทสนทนาดูซีรีส์พร้อมกันผ่านโทรศัพท์</div>
-              <div style="font-size:13px;color:#e2e8f0;line-height:1.7;">
-                <strong>เอมโมโน:</strong> <em>"ฝั่งต่างประเทศมันเหมือนที่ผมเห็นมากับตาเลยครับ... ตอนออกไปช่วย มีคนที่ฉีดวัคซีนปลอมมาเยอะมาก บางคนไม่รอด แต่บางคนรอด นั่นแหละครับที่ทำให้ยังทำอยู่"</em><br>
-                <strong>สิญจน์:</strong> <em>"ดร.ธนานนท์ดูด้วยไหมครับ?"</em><br>
-                <strong>เอมโมโน:</strong> <em>"ไม่ดูครับ พี่บอกว่าดูข่าวจริงพอแล้ว ไม่ต้องดูสมมติ"</em>
+            <div style="background:rgba(15,23,42,0.8);border:1px solid rgba(168,85,247,0.5);border-radius:14px;padding:20px;">
+              <div style="font-size:13px;color:#c084fc;font-weight:700;margin-bottom:6px;">📚 บันทึกวันแรกในสมุดโน้ตสิญจน์ (หอสมุดศิริปัญญาวิมานสัจ)</div>
+              <div style="font-size:16px;font-weight:900;color:#ffffff;line-height:1.7;">
+                "ความรู้ที่ซ่อนอยู่ไม่ใช่ความรู้ ต่อเมื่อถ่ายทอดออกไปจึงจะมีความหมาย"
+              </div>
+              <div style="font-size:12.5px;color:#c084fc;margin-top:8px;">
+                พระราชดำรัสจดบันทึกโดย พระบาทสมเด็จพระจอมเกล้าเจ้าอยู่หัว (รัชกาลที่ ๔)
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
         <!-- SECTION 3: EPISODE 24 FINALE "A NEW DAY" & HISTORICAL NOTE -->
         <div style="background:linear-gradient(135deg, rgba(250,204,21,0.15) 0%, rgba(15,23,42,0.95) 100%);border:2.5px solid #facc15;border-radius:18px;padding:24px;box-shadow:0 8px 24px rgba(0,0,0,0.35);">
