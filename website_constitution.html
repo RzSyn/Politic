@@ -22573,71 +22573,6 @@ svg.leaflet-image-layer.leaflet-interactive path {
           </div>
         </div>
 
-                <!-- INTERACTIVE FINANCIAL CHART WIDGET (TRADINGVIEW / BLOOMBERG TERMINAL STYLE) -->
-        <div style="background:linear-gradient(135deg, rgba(15,23,42,0.98) 0%, rgba(30,41,59,0.95) 100%);border:2px solid rgba(74,222,128,0.5);border-radius:18px;padding:24px;margin-bottom:24px;box-shadow:0 10px 30px rgba(0,0,0,0.5);position:relative;overflow:hidden;">
-          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;border-bottom:1.5px solid rgba(74,222,128,0.3);padding-bottom:14px;margin-bottom:18px;">
-            <div style="display:flex;align-items:center;gap:10px;">
-              <span style="font-size:24px;">📊</span>
-              <div>
-                <h4 style="color:#4ade80;font-family:'Outfit',sans-serif;margin:0;font-size:20px;font-weight:800;letter-spacing:0.3px;">กราฟดัชนีอัตราแลกเปลี่ยน TSL/THB Real-Time (TSL Currency Chart)</h4>
-                <div style="font-size:12px;color:#94a3b8;margin-top:2px;">Bloomberg Terminal Style · Interactive Time Series Index</div>
-              </div>
-            </div>
-            <div style="display:flex;align-items:center;gap:8px;">
-              <button onclick="setTslChartRange('ALL', this)" class="tsl-range-btn active" style="background:rgba(74,222,128,0.2);border:1px solid #4ade80;color:#4ade80;padding:4px 12px;border-radius:8px;font-size:12px;font-weight:800;cursor:pointer;">ALL (ประวัติศาสตร์)</button>
-              <button onclick="setTslChartRange('CRISIS', this)" class="tsl-range-btn" style="background:rgba(239,68,68,0.15);border:1px solid rgba(239,68,68,0.5);color:#f87171;padding:4px 12px;border-radius:8px;font-size:12px;font-weight:700;cursor:pointer;">วิกฤต Dexibola</button>
-              <button onclick="setTslChartRange('RECOVERY', this)" class="tsl-range-btn" style="background:rgba(250,204,21,0.15);border:1px solid rgba(250,204,21,0.5);color:#facc15;padding:4px 12px;border-radius:8px;font-size:12px;font-weight:700;cursor:pointer;">ยุคฟื้นตัว</button>
-            </div>
-          </div>
-
-          <!-- CHART CONTAINER WITH CANVAS & SVG GRID -->
-          <div style="position:relative;height:280px;width:100%;background:rgba(10,15,28,0.9);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:16px;box-sizing:border-box;">
-            <!-- GRID SVG BACKGROUND -->
-            <svg id="tslChartSvg" style="width:100%;height:100%;overflow:visible;">
-              <defs>
-                <linearGradient id="tslAreaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" stop-color="#4ade80" stop-opacity="0.4"/>
-                  <stop offset="100%" stop-color="#4ade80" stop-opacity="0.0"/>
-                </linearGradient>
-                <linearGradient id="tslLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stop-color="#facc15"/>
-                  <stop offset="40%" stop-color="#4ade80"/>
-                  <stop offset="70%" stop-color="#ef4444"/>
-                  <stop offset="100%" stop-color="#38bdf8"/>
-                </linearGradient>
-              </defs>
-
-              <!-- GRID LINES -->
-              <line x1="0" y1="20%" x2="100%" y2="20%" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4"/>
-              <line x1="0" y1="40%" x2="100%" y2="40%" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4"/>
-              <line x1="0" y1="60%" x2="100%" y2="60%" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4"/>
-              <line x1="0" y1="80%" x2="100%" y2="80%" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4"/>
-
-              <!-- CHART POLYLINE AREA & LINE -->
-              <polygon id="tslChartArea" points="0,220 50,80 150,80 280,240 380,180 500,80 500,240 0,240" fill="url(#tslAreaGrad)"/>
-              <polyline id="tslChartLine" points="0,220 50,80 150,80 280,240 380,180 500,80" fill="none" stroke="url(#tslLineGrad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-
-              <!-- KEY DATAPOINT CIRCLES -->
-              <circle cx="50" cy="80" r="6" fill="#4ade80" stroke="#ffffff" stroke-width="2"><title>พ.ศ. ๒๕๖๗: ๑ บาท = ๙๒ TSL (จุดทรงตัวพีค)</title></circle>
-              <circle cx="280" cy="240" r="7" fill="#ef4444" stroke="#ffffff" stroke-width="2"><title>พ.ศ. ๒๖๗๒: ๑ TSL = 0.0031 บาท (วิกฤต Dexibola)</title></circle>
-              <circle cx="500" cy="80" r="6" fill="#38bdf8" stroke="#ffffff" stroke-width="2"><title>พ.ศ. ๒๖๗๓: ๑ บาท = ๙๒ TSL (แถลงการณ์โอบามา)</title></circle>
-            </svg>
-
-            <!-- CHART DATA LABELS -->
-            <div style="position:absolute;bottom:8px;left:16px;right:16px;display:flex;justify-content:space-between;font-size:11px;color:#94a3b8;font-weight:700;">
-              <span>พ.ศ. ๒๕๖๕ (ก่อตั้ง TSL)</span>
-              <span style="color:#4ade80;">พ.ศ. ๒๕๖๗ (ยุคพิธา 92 TSL)</span>
-              <span style="color:#f87171;">พ.ศ. ๒๖๗๒ (วิกฤต 322 TSL)</span>
-              <span style="color:#38bdf8;">พ.ศ. ๒๖๗๓ (ฟื้นตัว 92 TSL)</span>
-            </div>
-          </div>
-
-          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:14px;background:rgba(15,23,42,0.8);padding:10px 16px;border-radius:10px;border:1px solid rgba(255,255,255,0.08);font-size:12.5px;color:#cbd5e1;">
-            <div>📌 <strong style="color:#4ade80;">คำอธิบายกราฟ:</strong> กราฟแสดงเส้นความผันผวนของค่าเงิน TSL สากลต่อ ๑ บาทไทย ในช่วงวิกฤตการณ์โลกและยุคฟื้นตัวสู่ดุลยภาพ</div>
-            <div style="color:#fde047;font-weight:700;">สถิติสูงสุด: 1 THB = 92 TSL | ต่ำสุด: 1 THB = 322 TSL</div>
-          </div>
-        </div>
-
         <!-- ANIMATED FINANCIAL CHART WIDGET (Bloomberg Terminal Style) -->
         <div style="background:linear-gradient(160deg,#0a0f1e 0%,#0d1a2e 100%);border:1.5px solid rgba(74,222,128,0.45);border-radius:18px;padding:22px;margin-bottom:24px;box-shadow:0 12px 40px rgba(0,0,0,0.6);position:relative;overflow:hidden;">
 
@@ -22914,17 +22849,21 @@ svg.leaflet-image-layer.leaflet-interactive path {
             }
           }
 
-          // Live data extension — randomly add tiny fluctuations at the end
+          // Live data extension — append new tick every 90 frames (~1.5s) for slow realistic feel
+          var tslTickCounter = 0;
           function liveUpdate() {
             animFrame++;
-            var last = liveData[liveData.length - 1];
-            var noise = (Math.random() - 0.5) * 0.8;
-            var newVal = last + noise;
-            // Clamp near 92 (current stable era)
-            newVal = Math.max(88, Math.min(97, newVal));
-            liveData.push(newVal);
-            if (liveData.length > 1000) liveData.shift();
-            lastPrice = liveData[liveData.length - 2] || last;
+            tslTickCounter++;
+            if (tslTickCounter >= 90) {
+              tslTickCounter = 0;
+              var last = liveData[liveData.length - 1];
+              var noise = (Math.random() - 0.5) * 0.6;
+              var newVal = last + noise;
+              newVal = Math.max(88.5, Math.min(96.5, newVal));
+              lastPrice = last;
+              liveData.push(newVal);
+              if (liveData.length > 1000) liveData.shift();
+            }
             drawChart();
             requestAnimationFrame(liveUpdate);
           }
