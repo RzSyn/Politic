@@ -20962,7 +20962,236 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             </div>
           </div>
 
-          <!-- DEDICATED PM NOBEL ITEM: WIROJ LAKKHANADISORN -->
+          
+          <!-- DEDICATED NOBEL ITEM: THAKSIN SHINAWATRA #2 -->
+          <div class="nobel-card-item" style="background:linear-gradient(135deg, rgba(234,179,8,0.18) 0%, rgba(15,23,42,0.95) 100%);border:2.5px solid #facc15;border-radius:18px;padding:24px;display:flex;gap:24px;align-items:flex-start;box-shadow:0 10px 30px rgba(250,204,21,0.25);position:relative;overflow:hidden;margin-bottom:20px;">
+            <div style="position:absolute;top:0;left:0;width:8px;height:100%;background:linear-gradient(to bottom, #facc15, #eab308);"></div>
+            <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:200px;">
+              <div style="width:130px;height:130px;background:rgba(30,41,59,0.9);border:2.5px solid #facc15;border-radius:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 20px rgba(250,204,21,0.4);overflow:hidden;">
+                <img src="images/nobel_seal_3.png" alt="Nobel Seal" style="width:100%;height:100%;object-fit:cover;border-radius:18px;">
+              </div>
+              <div style="background:rgba(234,179,8,0.2);border:1px solid #facc15;border-radius:12px;padding:10px 12px;text-align:center;width:100%;margin-top:14px;box-sizing:border-box;">
+                <div style="font-size:11px;color:#facc15;font-weight:700;">รางวัลเกียรติยศสูงสุดนายกรัฐมนตรี</div>
+                <div style="font-size:14px;font-weight:800;color:#ffffff;margin-top:2px;">ปีที่ได้รางวัล</div>
+                <div style="font-size:13px;color:#fde047;font-weight:700;margin-top:2px;">พ.ศ. 2546 (ค.ศ. 2003)</div>
+              </div>
+            </div>
+            <div style="flex:1;">
+              <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px;">
+                <span style="background:rgba(251,146,60,0.25);color:#fb923c;border:1px solid rgba(251,146,60,0.5);padding:6px 14px;border-radius:20px;font-size:13px;font-weight:700;">
+                  📈 สาขาเศรษฐศาสตร์ และ 🧪 วัสดุศาสตร์นวัตกรรม
+                </span>
+                <span style="background:rgba(250,204,21,0.25);color:#facc15;border:1px solid #facc15;padding:6px 14px;border-radius:20px;font-size:12.5px;font-weight:800;">
+                  🏆 รางวัลโนเบลเกียรติยศนายกรัฐมนตรี (วาระที่ ๒)
+                </span>
+                <span style="background:rgba(74,222,128,0.25);color:#4ade80;border:1px solid #4ade80;padding:4px 12px;border-radius:14px;font-size:12px;font-weight:800;">🔥 ผู้นำนวัตกรรมแปลงสินทรัพย์เป็นทุน</span>
+              </div>
+              <h4 style="color:#ffffff;font-size:20px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
+                👑 ผู้ได้รับรางวัล: <span style="color:#facc15;">นายกรัฐมนตรี ทักษิณ ชินวัตร และสถาบันพัฒนาองค์ความรู้เศรษฐกิจดิจิทัล</span>
+              </h4>
+              <div style="font-size:13px;color:#fb923c;font-weight:700;margin-bottom:12px;background:rgba(251,146,60,0.15);border-left:4px solid #fb923c;padding:6px 14px;border-radius:4px;">
+                🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกรัฐมนตรีคนที่ 4)
+              </div>
+              <div style="display:flex;gap:18px;align-items:stretch;">
+                <div style="flex:1;background:rgba(30,41,59,0.75);border:1px solid rgba(250,204,21,0.3);border-radius:14px;padding:16px 20px;font-size:14px;color:#f8fafc;line-height:1.8;text-align:justify;">
+                  <strong style="color:#facc15;display:block;margin-bottom:6px;font-size:15px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
+                  รางวัลโนเบลเศรษฐศาสตร์สากลเกียรติยศ มอบแด่ นายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4) ในฐานะผู้นำการคิดค้นนโยบายแปลงสินทรัพย์เป็นทุน การจัดตั้งกองทุนหมู่บ้านและชุมชนเมือง การผลักดันโครงการหนึ่งตำบลหนึ่งผลิตภัณฑ์ (OTOP) และการปรับโครงสร้างเศรษฐกิจฐานรากจนสามารถชำระหนี้ IMF ได้ก่อนกำหนด 2 ปี สถาปนาเสถียรภาพการเงินการคลังไทยสู่ระดับนำของเอเชีย
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DEDICATED NOBEL ITEM: THAKSIN SHINAWATRA #3 -->
+          <div class="nobel-card-item" style="background:linear-gradient(135deg, rgba(234,179,8,0.18) 0%, rgba(15,23,42,0.95) 100%);border:2.5px solid #facc15;border-radius:18px;padding:24px;display:flex;gap:24px;align-items:flex-start;box-shadow:0 10px 30px rgba(250,204,21,0.25);position:relative;overflow:hidden;margin-bottom:20px;">
+            <div style="position:absolute;top:0;left:0;width:8px;height:100%;background:linear-gradient(to bottom, #facc15, #eab308);"></div>
+            <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:200px;">
+              <div style="width:130px;height:130px;background:rgba(30,41,59,0.9);border:2.5px solid #facc15;border-radius:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 20px rgba(250,204,21,0.4);overflow:hidden;">
+                <img src="images/nobel_seal_6.png" alt="Nobel Seal" style="width:100%;height:100%;object-fit:cover;border-radius:18px;">
+              </div>
+              <div style="background:rgba(234,179,8,0.2);border:1px solid #facc15;border-radius:12px;padding:10px 12px;text-align:center;width:100%;margin-top:14px;box-sizing:border-box;">
+                <div style="font-size:11px;color:#facc15;font-weight:700;">รางวัลเกียรติยศสูงสุดนายกรัฐมนตรี</div>
+                <div style="font-size:14px;font-weight:800;color:#ffffff;margin-top:2px;">ปีที่ได้รางวัล</div>
+                <div style="font-size:13px;color:#fde047;font-weight:700;margin-top:2px;">พ.ศ. 2548 (ค.ศ. 2005)</div>
+              </div>
+            </div>
+            <div style="flex:1;">
+              <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px;">
+                <span style="background:rgba(96,165,250,0.25);color:#60a5fa;border:1px solid rgba(96,165,250,0.5);padding:6px 14px;border-radius:20px;font-size:13px;font-weight:700;">
+                  ⚛️ สาขาเทคโนโลยีโทรคมนาคม และ 📜 วรรณกรรมมนุษยวิทยา
+                </span>
+                <span style="background:rgba(250,204,21,0.25);color:#facc15;border:1px solid #facc15;padding:6px 14px;border-radius:20px;font-size:12.5px;font-weight:800;">
+                  🏆 รางวัลโนเบลเกียรติยศนายกรัฐมนตรี (วาระที่ ๓)
+                </span>
+                <span style="background:rgba(192,132,252,0.25);color:#c084fc;border:1px solid #c084fc;padding:4px 12px;border-radius:14px;font-size:12px;font-weight:800;">🔥 ผู้นำนวัตกรรมกระจายการศึกษา ICT</span>
+              </div>
+              <h4 style="color:#ffffff;font-size:20px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
+                👑 ผู้ได้รับรางวัล: <span style="color:#facc15;">นายกรัฐมนตรี ทักษิณ ชินวัตร และมูลนิธิเทคโนโลยีเพื่อการศึกษาไทย</span>
+              </h4>
+              <div style="font-size:13px;color:#fb923c;font-weight:700;margin-bottom:12px;background:rgba(251,146,60,0.15);border-left:4px solid #fb923c;padding:6px 14px;border-radius:4px;">
+                🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกรัฐมนตรีคนที่ 4)
+              </div>
+              <div style="display:flex;gap:18px;align-items:stretch;">
+                <div style="flex:1;background:rgba(30,41,59,0.75);border:1px solid rgba(250,204,21,0.3);border-radius:14px;padding:16px 20px;font-size:14px;color:#f8fafc;line-height:1.8;text-align:justify;">
+                  <strong style="color:#facc15;display:block;margin-bottom:6px;font-size:15px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
+                  รางวัลโนเบลเทคโนโลยีโทรคมนาคมและมนุษยวิทยาสากล มอบแด่ นายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4) ในฐานะผู้นำการวางโครงสร้างพื้นฐานบรอดแบนด์อินเทอร์เน็ตความเร็วสูง โครงการคอมพิวเตอร์เอื้ออาทร โครงการส่งเสริมสตาร์ทอัพเทคโนโลยีคนรุ่นใหม่ และการสร้างเครือข่ายดาวเทียมการศึกษาไกลกังวล ยกระดับความรู้ของเยาวชนไทยทั่วประเทศ
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DEDICATED NOBEL ITEM: PITA LIMJAROENRAT #2 -->
+          <div class="nobel-card-item" style="background:linear-gradient(135deg, rgba(251,146,60,0.18) 0%, rgba(15,23,42,0.95) 100%);border:2.5px solid #fb923c;border-radius:18px;padding:24px;display:flex;gap:24px;align-items:flex-start;box-shadow:0 10px 30px rgba(251,146,60,0.25);position:relative;overflow:hidden;margin-bottom:20px;">
+            <div style="position:absolute;top:0;left:0;width:8px;height:100%;background:linear-gradient(to bottom, #fb923c, #f97316);"></div>
+            <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:200px;">
+              <div style="width:130px;height:130px;background:rgba(30,41,59,0.9);border:2.5px solid #fb923c;border-radius:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 20px rgba(251,146,60,0.4);overflow:hidden;">
+                <img src="images/nobel_seal_2.png" alt="Nobel Seal" style="width:100%;height:100%;object-fit:cover;border-radius:18px;">
+              </div>
+              <div style="background:rgba(251,146,60,0.2);border:1px solid #fb923c;border-radius:12px;padding:10px 12px;text-align:center;width:100%;margin-top:14px;box-sizing:border-box;">
+                <div style="font-size:11px;color:#fb923c;font-weight:700;">รางวัลเกียรติยศสูงสุดนายกรัฐมนตรี</div>
+                <div style="font-size:14px;font-weight:800;color:#ffffff;margin-top:2px;">ปีที่ได้รางวัล</div>
+                <div style="font-size:13px;color:#fde047;font-weight:700;margin-top:2px;">พ.ศ. 2636 (ค.ศ. 1993)</div>
+              </div>
+            </div>
+            <div style="flex:1;">
+              <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px;">
+                <span style="background:rgba(192,132,252,0.25);color:#c084fc;border:1px solid rgba(192,132,252,0.5);padding:6px 14px;border-radius:20px;font-size:13px;font-weight:700;">
+                  🕊️ สาขาสันติภาพสากล และ 🌐 การทูตเสรีภาพทางการเมือง
+                </span>
+                <span style="background:rgba(250,204,21,0.25);color:#facc15;border:1px solid #facc15;padding:6px 14px;border-radius:20px;font-size:12.5px;font-weight:800;">
+                  🏆 รางวัลโนเบลเกียรติยศนายกรัฐมนตรี (วาระที่ ๒)
+                </span>
+                <span style="background:rgba(251,146,60,0.25);color:#fb923c;border:1px solid #fb923c;padding:4px 12px;border-radius:14px;font-size:12px;font-weight:800;">🔥 ผู้นำประชาธิปไตยสมบูรณ์แบบ</span>
+              </div>
+              <h4 style="color:#ffffff;font-size:20px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
+                👑 ผู้ได้รับรางวัล: <span style="color:#facc15;">นายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ และพันธมิตรประชาธิปไตยสากลแห่งอาเซียน</span>
+              </h4>
+              <div style="font-size:13px;color:#fb923c;font-weight:700;margin-bottom:12px;background:rgba(251,146,60,0.15);border-left:4px solid #fb923c;padding:6px 14px;border-radius:4px;">
+                🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกรัฐมนตรีคนที่ 24)
+              </div>
+              <div style="display:flex;gap:18px;align-items:stretch;">
+                <div style="flex:1;background:rgba(30,41,59,0.75);border:1px solid rgba(251,146,60,0.3);border-radius:14px;padding:16px 20px;font-size:14px;color:#f8fafc;line-height:1.8;text-align:justify;">
+                  <strong style="color:#facc15;display:block;margin-bottom:6px;font-size:15px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
+                  รางวัลโนเบลสันติภาพสากลเกียรติยศ มอบแด่ นายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 24) ในฐานะผู้นำการสถาปนารัฐธรรมนูญฉบับประชาชน 100% การคุ้มครองเสรีภาพการแสดงออก สิทธิมนุษยชน และการส่งเสริมสันติภาพถาวรในภูมิภาคอินโด-แปซิฟิก ผ่านนโยบายการทูตเชิงรุกที่เป็นอิสระและยึดมั่นในคุณค่าสากล
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DEDICATED NOBEL ITEM: PITA LIMJAROENRAT #3 -->
+          <div class="nobel-card-item" style="background:linear-gradient(135deg, rgba(251,146,60,0.18) 0%, rgba(15,23,42,0.95) 100%);border:2.5px solid #fb923c;border-radius:18px;padding:24px;display:flex;gap:24px;align-items:flex-start;box-shadow:0 10px 30px rgba(251,146,60,0.25);position:relative;overflow:hidden;margin-bottom:20px;">
+            <div style="position:absolute;top:0;left:0;width:8px;height:100%;background:linear-gradient(to bottom, #fb923c, #f97316);"></div>
+            <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:200px;">
+              <div style="width:130px;height:130px;background:rgba(30,41,59,0.9);border:2.5px solid #fb923c;border-radius:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 20px rgba(251,146,60,0.4);overflow:hidden;">
+                <img src="images/nobel_seal_1.png" alt="Nobel Seal" style="width:100%;height:100%;object-fit:cover;border-radius:18px;">
+              </div>
+              <div style="background:rgba(251,146,60,0.2);border:1px solid #fb923c;border-radius:12px;padding:10px 12px;text-align:center;width:100%;margin-top:14px;box-sizing:border-box;">
+                <div style="font-size:11px;color:#fb923c;font-weight:700;">รางวัลเกียรติยศสูงสุดนายกรัฐมนตรี</div>
+                <div style="font-size:14px;font-weight:800;color:#ffffff;margin-top:2px;">ปีที่ได้รางวัล</div>
+                <div style="font-size:13px;color:#fde047;font-weight:700;margin-top:2px;">พ.ศ. 2637 (ค.ศ. 1994)</div>
+              </div>
+            </div>
+            <div style="flex:1;">
+              <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px;">
+                <span style="background:rgba(45,212,191,0.25);color:#2dd4bf;border:1px solid rgba(45,212,191,0.5);padding:6px 14px;border-radius:20px;font-size:13px;font-weight:700;">
+                  🧪 สาขาเคมีพลังงานสะอาด และ 🌱 สิ่งแวดล้อมโลก
+                </span>
+                <span style="background:rgba(250,204,21,0.25);color:#facc15;border:1px solid #facc15;padding:6px 14px;border-radius:20px;font-size:12.5px;font-weight:800;">
+                  🏆 รางวัลโนเบลเกียรติยศนายกรัฐมนตรี (วาระที่ ๓)
+                </span>
+                <span style="background:rgba(45,212,191,0.25);color:#2dd4bf;border:1px solid #2dd4bf;padding:4px 12px;border-radius:14px;font-size:12px;font-weight:800;">🔥 ผู้นำเศรษฐกิจพลังงานหมุนเวียน 100%</span>
+              </div>
+              <h4 style="color:#ffffff;font-size:20px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
+                👑 ผู้ได้รับรางวัล: <span style="color:#facc15;">นายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ และสถาบันวิจัยเทคโนโลยีพลังงานสะอาดสยาม</span>
+              </h4>
+              <div style="font-size:13px;color:#fb923c;font-weight:700;margin-bottom:12px;background:rgba(251,146,60,0.15);border-left:4px solid #fb923c;padding:6px 14px;border-radius:4px;">
+                🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกรัฐมนตรีคนที่ 24)
+              </div>
+              <div style="display:flex;gap:18px;align-items:stretch;">
+                <div style="flex:1;background:rgba(30,41,59,0.75);border:1px solid rgba(251,146,60,0.3);border-radius:14px;padding:16px 20px;font-size:14px;color:#f8fafc;line-height:1.8;text-align:justify;">
+                  <strong style="color:#facc15;display:block;margin-bottom:6px;font-size:15px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
+                  รางวัลโนเบลเคมีและสิ่งแวดล้อมสากล มอบแด่ นายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 24) ในฐานะผู้นำนโยบาย Net-Zero Carbon 100% การสนับสนุนการวิจัยแบตเตอรี่ไฮโดรเจน-โซเดียมไอออนยุคใหม่ และการก้าวสู่ศูนย์กลางอุตสาหกรรมพลังงานหมุนเวียนสีเขียวแห่งเอเชียตะวันออกเฉียงใต้
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DEDICATED NOBEL ITEM: PITA LIMJAROENRAT #4 -->
+          <div class="nobel-card-item" style="background:linear-gradient(135deg, rgba(251,146,60,0.18) 0%, rgba(15,23,42,0.95) 100%);border:2.5px solid #fb923c;border-radius:18px;padding:24px;display:flex;gap:24px;align-items:flex-start;box-shadow:0 10px 30px rgba(251,146,60,0.25);position:relative;overflow:hidden;margin-bottom:20px;">
+            <div style="position:absolute;top:0;left:0;width:8px;height:100%;background:linear-gradient(to bottom, #fb923c, #f97316);"></div>
+            <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:200px;">
+              <div style="width:130px;height:130px;background:rgba(30,41,59,0.9);border:2.5px solid #fb923c;border-radius:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 20px rgba(251,146,60,0.4);overflow:hidden;">
+                <img src="images/nobel_seal_4.png" alt="Nobel Seal" style="width:100%;height:100%;object-fit:cover;border-radius:18px;">
+              </div>
+              <div style="background:rgba(251,146,60,0.2);border:1px solid #fb923c;border-radius:12px;padding:10px 12px;text-align:center;width:100%;margin-top:14px;box-sizing:border-box;">
+                <div style="font-size:11px;color:#fb923c;font-weight:700;">รางวัลเกียรติยศสูงสุดนายกรัฐมนตรี</div>
+                <div style="font-size:14px;font-weight:800;color:#ffffff;margin-top:2px;">ปีที่ได้รางวัล</div>
+                <div style="font-size:13px;color:#fde047;font-weight:700;margin-top:2px;">พ.ศ. 2638 (ค.ศ. 1995)</div>
+              </div>
+            </div>
+            <div style="flex:1;">
+              <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px;">
+                <span style="background:rgba(248,113,113,0.25);color:#f87171;border:1px solid rgba(248,113,113,0.5);padding:6px 14px;border-radius:20px;font-size:13px;font-weight:700;">
+                  📜 สาขาวรรณกรรม และ 🎓 มนุษยวิทยาปัญญาสาธารณะ
+                </span>
+                <span style="background:rgba(250,204,21,0.25);color:#facc15;border:1px solid #facc15;padding:6px 14px;border-radius:20px;font-size:12.5px;font-weight:800;">
+                  🏆 รางวัลโนเบลเกียรติยศนายกรัฐมนตรี (วาระที่ ๔)
+                </span>
+                <span style="background:rgba(248,113,113,0.25);color:#f87171;border:1px solid #f87171;padding:4px 12px;border-radius:14px;font-size:12px;font-weight:800;">🔥 ผู้นำปฏิรูปการศึกษา Soft Power</span>
+              </div>
+              <h4 style="color:#ffffff;font-size:20px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
+                👑 ผู้ได้รับรางวัล: <span style="color:#facc15;">นายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ และคณะผู้รังสรรค์มหากาพย์วรรณกรรมประชาธิปไตยไทย</span>
+              </h4>
+              <div style="font-size:13px;color:#fb923c;font-weight:700;margin-bottom:12px;background:rgba(251,146,60,0.15);border-left:4px solid #fb923c;padding:6px 14px;border-radius:4px;">
+                🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกรัฐมนตรีคนที่ 24)
+              </div>
+              <div style="display:flex;gap:18px;align-items:stretch;">
+                <div style="flex:1;background:rgba(30,41,59,0.75);border:1px solid rgba(251,146,60,0.3);border-radius:14px;padding:16px 20px;font-size:14px;color:#f8fafc;line-height:1.8;text-align:justify;">
+                  <strong style="color:#facc15;display:block;margin-bottom:6px;font-size:15px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
+                  รางวัลโนเบลวรรณกรรมและมนุษยวิทยาสากล มอบแด่ นายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 24) ในฐานะผู้นำการผลักดันการศึกษาสมัยใหม่ กระจาย Soft Power ด้านศิลปวัฒนธรรม วรรณกรรม และวิทยาการความคิดสร้างสรรค์ไทยให้ก้าวสู่เวทีระดับโลกอย่างทรงอิทธิพล
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DEDICATED NOBEL ITEM: PITA LIMJAROENRAT #5 -->
+          <div class="nobel-card-item" style="background:linear-gradient(135deg, rgba(251,146,60,0.18) 0%, rgba(15,23,42,0.95) 100%);border:2.5px solid #fb923c;border-radius:18px;padding:24px;display:flex;gap:24px;align-items:flex-start;box-shadow:0 10px 30px rgba(251,146,60,0.25);position:relative;overflow:hidden;margin-bottom:20px;">
+            <div style="position:absolute;top:0;left:0;width:8px;height:100%;background:linear-gradient(to bottom, #fb923c, #f97316);"></div>
+            <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:200px;">
+              <div style="width:130px;height:130px;background:rgba(30,41,59,0.9);border:2.5px solid #fb923c;border-radius:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 20px rgba(251,146,60,0.4);overflow:hidden;">
+                <img src="images/nobel_seal_5.png" alt="Nobel Seal" style="width:100%;height:100%;object-fit:cover;border-radius:18px;">
+              </div>
+              <div style="background:rgba(251,146,60,0.2);border:1px solid #fb923c;border-radius:12px;padding:10px 12px;text-align:center;width:100%;margin-top:14px;box-sizing:border-box;">
+                <div style="font-size:11px;color:#fb923c;font-weight:700;">รางวัลเกียรติยศสูงสุดนายกรัฐมนตรี</div>
+                <div style="font-size:14px;font-weight:800;color:#ffffff;margin-top:2px;">ปีที่ได้รางวัล</div>
+                <div style="font-size:13px;color:#fde047;font-weight:700;margin-top:2px;">พ.ศ. 2639 (ค.ศ. 1996)</div>
+              </div>
+            </div>
+            <div style="flex:1;">
+              <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px;">
+                <span style="background:rgba(74,222,128,0.25);color:#4ade80;border:1px solid rgba(74,222,128,0.5);padding:6px 14px;border-radius:20px;font-size:13px;font-weight:700;">
+                  🩺 สาขาการแพทย์ยีนส์บำบัด และ 🧬 ชีววิทยาสังเคราะห์
+                </span>
+                <span style="background:rgba(250,204,21,0.25);color:#facc15;border:1px solid #facc15;padding:6px 14px;border-radius:20px;font-size:12.5px;font-weight:800;">
+                  🏆 รางวัลโนเบลเกียรติยศนายกรัฐมนตรี (วาระที่ ๕)
+                </span>
+                <span style="background:rgba(74,222,128,0.25);color:#4ade80;border:1px solid #4ade80;padding:4px 12px;border-radius:14px;font-size:12px;font-weight:800;">🔥 ผู้นำยกระดับการแพทย์ล้ำอนาคต</span>
+              </div>
+              <h4 style="color:#ffffff;font-size:20px;font-weight:800;margin:0 0 10px 0;line-height:1.4;">
+                👑 ผู้ได้รับรางวัล: <span style="color:#facc15;">นายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ และศูนย์ยีนส์บำบัดและชีววิทยาสังเคราะห์แห่งชาติ</span>
+              </h4>
+              <div style="font-size:13px;color:#fb923c;font-weight:700;margin-bottom:12px;background:rgba(251,146,60,0.15);border-left:4px solid #fb923c;padding:6px 14px;border-radius:4px;">
+                🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกรัฐมนตรีคนที่ 24)
+              </div>
+              <div style="display:flex;gap:18px;align-items:stretch;">
+                <div style="flex:1;background:rgba(30,41,59,0.75);border:1px solid rgba(251,146,60,0.3);border-radius:14px;padding:16px 20px;font-size:14px;color:#f8fafc;line-height:1.8;text-align:justify;">
+                  <strong style="color:#facc15;display:block;margin-bottom:6px;font-size:15px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
+                  รางวัลโนเบลสรีรวิทยาและการแพทย์สากล มอบแด่ นายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 24) ในฐานะผู้นำการผลักดันงบประมาณสนับสนุนสถาบันวิจัยยีนส์บำบัด ถอดรหัสพันธุกรรมสร้างยารักษามะเร็งแบบตรงจุด (Precision Medicine) เพื่อคนไทยทุกคนอย่างเป็นธรรม
+                </div>
+              </div>
+            </div>
+          </div>
+
+<!-- DEDICATED PM NOBEL ITEM: WIROJ LAKKHANADISORN -->
           <div class="nobel-card-item" style="background:linear-gradient(135deg, rgba(96,165,250,0.18) 0%, rgba(15,23,42,0.95) 100%);border:2.5px solid #60a5fa;border-radius:18px;padding:24px;display:flex;gap:24px;align-items:flex-start;box-shadow:0 10px 30px rgba(96,165,250,0.25);position:relative;overflow:hidden;margin-bottom:20px;">
             <div style="position:absolute;top:0;left:0;width:8px;height:100%;background:linear-gradient(to bottom, #60a5fa, #3b82f6);"></div>
             <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:200px;">
