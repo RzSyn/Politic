@@ -20886,6 +20886,318 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
         </div>
 
+        <!-- ANIMATED FINANCIAL CHART WIDGET (Bloomberg Terminal Style) -->
+        <div style="background:linear-gradient(160deg,#0a0f1e 0%,#0d1a2e 100%);border:1.5px solid rgba(74,222,128,0.45);border-radius:18px;padding:22px;margin-bottom:24px;box-shadow:0 12px 40px rgba(0,0,0,0.6);position:relative;overflow:hidden;">
+
+          <!-- CHART HEADER -->
+          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:14px;">
+            <div>
+              <div style="font-size:19px;font-weight:800;color:#4ade80;font-family:'Outfit',sans-serif;letter-spacing:0.3px;">📊 กราฟดัชนี THB/TSL · Live Streaming</div>
+              <div style="font-size:12px;color:#64748b;margin-top:2px;">Thai Baht vs. TSL Dollar · Historical + Real-Time Feed · <span id="tslLiveLabel" style="color:#4ade80;font-weight:700;">●&nbsp;LIVE</span></div>
+            </div>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
+              <div id="tslCurrentPriceBox" style="background:rgba(74,222,128,0.12);border:1px solid #4ade80;border-radius:10px;padding:7px 16px;text-align:center;">
+                <div style="font-size:11px;color:#94a3b8;font-weight:600;">1 บาท = _____ TSL</div>
+                <div id="tslLivePrice" style="font-size:24px;font-weight:900;color:#4ade80;letter-spacing:0.5px;">92.00</div>
+                <div id="tslLiveDelta" style="font-size:11px;font-weight:700;color:#4ade80;">▲ +0.00%</div>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:6px;">
+                <button onclick="tslSetMode('ALL',this)" class="tsl-chart-btn tsl-active-btn" style="background:rgba(74,222,128,0.18);border:1px solid #4ade80;color:#4ade80;padding:4px 12px;border-radius:8px;font-size:12px;font-weight:800;cursor:pointer;width:100%;">▶ ทั้งหมด</button>
+                <button onclick="tslSetMode('CRISIS',this)" class="tsl-chart-btn" style="background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.4);color:#f87171;padding:4px 12px;border-radius:8px;font-size:12px;font-weight:700;cursor:pointer;width:100%;">💀 วิกฤต</button>
+                <button onclick="tslSetMode('RECOVERY',this)" class="tsl-chart-btn" style="background:rgba(56,189,248,0.1);border:1px solid rgba(56,189,248,0.4);color:#38bdf8;padding:4px 12px;border-radius:8px;font-size:12px;font-weight:700;cursor:pointer;width:100%;">🟢 ฟื้นตัว</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- CANVAS CHART -->
+          <canvas id="tslChart" style="width:100%;height:280px;border-radius:12px;display:block;" height="280"></canvas>
+
+          <!-- BOTTOM LABELS -->
+          <div style="display:flex;justify-content:space-between;font-size:11px;color:#475569;font-weight:700;margin-top:10px;flex-wrap:wrap;gap:6px;">
+            <span>พ.ศ. ๒๕๖๕ · ก่อตั้ง TSL</span>
+            <span style="color:#4ade80;">๒๕๖๗ · ยุคพิธา (92 TSL)</span>
+            <span style="color:#f87171;">๒๖๗๒ · วิกฤต (322 TSL)</span>
+            <span style="color:#38bdf8;">๒๖๗๓ · ฟื้นตัว (92 TSL)</span>
+            <span style="color:#facc15;">ปัจจุบัน ▶</span>
+          </div>
+
+          <!-- KEY EVENT ANNOTATIONS -->
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px;padding:12px;background:rgba(15,23,42,0.7);border-radius:12px;border:1px solid rgba(255,255,255,0.07);">
+            <div style="font-size:11.5px;color:#fde047;font-weight:700;display:flex;align-items:center;gap:5px;"><span style="width:10px;height:3px;background:#facc15;display:inline-block;border-radius:2px;"></span> ยุคก่อตั้ง (1→280 TSL/THB)</div>
+            <div style="font-size:11.5px;color:#4ade80;font-weight:700;display:flex;align-items:center;gap:5px;"><span style="width:10px;height:3px;background:#4ade80;display:inline-block;border-radius:2px;"></span> ยุคเสถียรภาพ (92 TSL/THB)</div>
+            <div style="font-size:11.5px;color:#f87171;font-weight:700;display:flex;align-items:center;gap:5px;"><span style="width:10px;height:3px;background:#ef4444;display:inline-block;border-radius:2px;"></span> Dexibola Crisis (ต่ำสุด 322 TSL)</div>
+            <div style="font-size:11.5px;color:#38bdf8;font-weight:700;display:flex;align-items:center;gap:5px;"><span style="width:10px;height:3px;background:#38bdf8;display:inline-block;border-radius:2px;"></span> ยุคฟื้นตัว (92 TSL/THB)</div>
+          </div>
+        </div>
+        <style>
+          @keyframes tslBlink {{ 0%,100% {{ opacity:1; }} 50% {{ opacity:0.3; }} }}
+          #tslLiveLabel {{ animation: tslBlink 1.4s infinite; }}
+        </style>
+        <script>
+        (function() {{
+          var canvas = document.getElementById('tslChart');
+          if (!canvas) return;
+          var ctx = canvas.getContext('2d');
+
+          // Seed-based pseudo-random for consistent noise
+          function seededRand(seed) {{
+            var x = Math.sin(seed + 1) * 10000;
+            return x - Math.floor(x);
+          }}
+
+          // Generate realistic TSL/THB historical data
+          // THB→TSL rate: higher = stronger baht (more TSL per 1 THB)
+          // Timeline: 2565→2573 BE (2022→2030 CE)
+          function buildData() {{
+            var pts = [];
+            var totalPts = 800;
+            for (var i = 0; i < totalPts; i++) {{
+              var t = i / totalPts; // 0..1 represents 2565..2573
+              var rate;
+              var noise = (seededRand(i*7.3) - 0.5) * 6;
+
+              if (t < 0.10) {{
+                // 2565: Foundation era, 1→280 TSL/THB climbing fast
+                rate = 1 + t/0.10 * 180 + noise;
+              }} else if (t < 0.30) {{
+                // Settling towards 92 TSL/THB (note: 280 was peak early, 92 is "stable high")
+                // Actually per lore: 280 was early, 92 is the later stable
+                // So rate drops from 280 to 92 as economy normalizes
+                rate = 280 - (t - 0.10)/0.20 * 188 + noise * 2;
+              }} else if (t < 0.50) {{
+                // 2567 Pita era: stable at ~92 TSL/THB
+                rate = 92 + noise * 1.5;
+              }} else if (t < 0.60) {{
+                // 2572: Start of Dexibola, rate climbs rapidly (THB vs TSL ratio rises)
+                rate = 92 + (t - 0.50)/0.10 * 230 + noise * 3;
+              }} else if (t < 0.65) {{
+                // Peak crisis: 322 TSL/THB
+                rate = 322 + (seededRand(i*3.1) - 0.5) * 20;
+              }} else if (t < 0.75) {{
+                // Recovery: dropping back from 322 towards 92
+                rate = 322 - (t - 0.65)/0.10 * 230 + noise * 3;
+              }} else {{
+                // 2573+ Post-crisis stable at 92 TSL/THB
+                rate = 92 + noise * 1.2;
+              }}
+
+              pts.push(Math.max(1, rate));
+            }}
+            return pts;
+          }}
+
+          var baseData = buildData();
+          var liveData = baseData.slice();
+          var displayMode = 'ALL';
+          var animFrame = 0;
+          var lastPrice = liveData[liveData.length - 1];
+
+          // Color per segment
+          function getColor(rate) {{
+            if (rate > 200) return '#ef4444';
+            if (rate > 130) return '#fb923c';
+            if (rate < 95) return '#4ade80';
+            return '#38bdf8';
+          }}
+
+          function drawChart() {{
+            var W = canvas.offsetWidth;
+            var H = canvas.offsetHeight;
+            canvas.width = W;
+            canvas.height = H;
+
+            var data;
+            if (displayMode === 'CRISIS') {{
+              var start = Math.floor(liveData.length * 0.48);
+              var end   = Math.floor(liveData.length * 0.76);
+              data = liveData.slice(start, end);
+            }} else if (displayMode === 'RECOVERY') {{
+              var start = Math.floor(liveData.length * 0.62);
+              data = liveData.slice(start);
+            }} else {{
+              data = liveData;
+            }}
+
+            if (data.length < 2) return;
+            var maxV = Math.max.apply(null, data) * 1.06;
+            var minV = Math.min.apply(null, data) * 0.94;
+            var range = maxV - minV;
+            var padL = 52, padR = 18, padT = 22, padB = 32;
+            var cW = W - padL - padR;
+            var cH = H - padT - padB;
+
+            function xPos(i) {{ return padL + (i / (data.length - 1)) * cW; }}
+            function yPos(v) {{ return padT + cH - ((v - minV) / range) * cH; }}
+
+            ctx.clearRect(0, 0, W, H);
+
+            // Background
+            var bgGrad = ctx.createLinearGradient(0, 0, 0, H);
+            bgGrad.addColorStop(0, '#060c18');
+            bgGrad.addColorStop(1, '#0a1525');
+            ctx.fillStyle = bgGrad;
+            ctx.fillRect(0, 0, W, H);
+
+            // Grid lines
+            var gridCount = 5;
+            ctx.strokeStyle = 'rgba(255,255,255,0.05)';
+            ctx.lineWidth = 1;
+            for (var g = 0; g <= gridCount; g++) {{
+              var gy = padT + (g / gridCount) * cH;
+              ctx.beginPath();
+              ctx.moveTo(padL, gy);
+              ctx.lineTo(W - padR, gy);
+              ctx.stroke();
+              var gVal = Math.round(maxV - (g / gridCount) * range);
+              ctx.fillStyle = '#475569';
+              ctx.font = 'bold 10px monospace';
+              ctx.textAlign = 'right';
+              ctx.fillText(gVal, padL - 6, gy + 4);
+            }}
+
+            // Vertical time-grid
+            for (var vg = 0; vg <= 4; vg++) {{
+              var vx = padL + (vg / 4) * cW;
+              ctx.beginPath();
+              ctx.strokeStyle = 'rgba(255,255,255,0.04)';
+              ctx.moveTo(vx, padT);
+              ctx.lineTo(vx, padT + cH);
+              ctx.stroke();
+            }}
+
+            // AREA FILL (gradient per zone)
+            ctx.beginPath();
+            ctx.moveTo(xPos(0), yPos(data[0]));
+            for (var i = 1; i < data.length; i++) {{
+              ctx.lineTo(xPos(i), yPos(data[i]));
+            }}
+            ctx.lineTo(xPos(data.length - 1), padT + cH);
+            ctx.lineTo(xPos(0), padT + cH);
+            ctx.closePath();
+            var aGrad = ctx.createLinearGradient(0, padT, 0, padT + cH);
+            aGrad.addColorStop(0, 'rgba(74,222,128,0.18)');
+            aGrad.addColorStop(0.5, 'rgba(239,68,68,0.08)');
+            aGrad.addColorStop(1, 'rgba(0,0,0,0)');
+            ctx.fillStyle = aGrad;
+            ctx.fill();
+
+            // MAIN LINE (segmented coloring)
+            for (var i = 0; i < data.length - 1; i++) {{
+              var avgRate = (data[i] + data[i+1]) / 2;
+              ctx.beginPath();
+              ctx.strokeStyle = getColor(avgRate);
+              ctx.lineWidth = 2.2;
+              ctx.shadowColor = getColor(avgRate);
+              ctx.shadowBlur = 4;
+              ctx.moveTo(xPos(i), yPos(data[i]));
+              ctx.lineTo(xPos(i+1), yPos(data[i+1]));
+              ctx.stroke();
+            }}
+            ctx.shadowBlur = 0;
+
+            // CRISIS ZONE HIGHLIGHT
+            if (displayMode === 'ALL') {{
+              var crisisStartX = padL + cW * 0.50;
+              var crisisEndX = padL + cW * 0.76;
+              ctx.fillStyle = 'rgba(239,68,68,0.06)';
+              ctx.fillRect(crisisStartX, padT, crisisEndX - crisisStartX, cH);
+              ctx.strokeStyle = 'rgba(239,68,68,0.25)';
+              ctx.lineWidth = 1;
+              ctx.setLineDash([4, 4]);
+              ctx.beginPath();
+              ctx.moveTo(crisisStartX, padT);
+              ctx.lineTo(crisisStartX, padT + cH);
+              ctx.stroke();
+              ctx.setLineDash([]);
+              ctx.fillStyle = '#ef4444';
+              ctx.font = 'bold 9.5px sans-serif';
+              ctx.textAlign = 'left';
+              ctx.fillText('◀ Dexibola Crisis ▶', crisisStartX + 4, padT + 14);
+            }}
+
+            // LIVE TRAILING DOT
+            var lastX = xPos(data.length - 1);
+            var lastY = yPos(data[data.length - 1]);
+            var pulse = 0.5 + 0.5 * Math.sin(animFrame * 0.12);
+            ctx.beginPath();
+            ctx.arc(lastX, lastY, 7 + pulse * 3, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(74,222,128,' + (0.15 + pulse * 0.15) + ')';
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(lastX, lastY, 4, 0, Math.PI * 2);
+            ctx.fillStyle = '#4ade80';
+            ctx.shadowColor = '#4ade80';
+            ctx.shadowBlur = 12;
+            ctx.fill();
+            ctx.shadowBlur = 0;
+
+            // CURRENT PRICE LINE
+            ctx.strokeStyle = 'rgba(74,222,128,0.35)';
+            ctx.lineWidth = 1;
+            ctx.setLineDash([6, 4]);
+            ctx.beginPath();
+            ctx.moveTo(padL, lastY);
+            ctx.lineTo(lastX, lastY);
+            ctx.stroke();
+            ctx.setLineDash([]);
+
+            // Y-AXIS PRICE TAG (current)
+            var curRate = data[data.length - 1];
+            ctx.fillStyle = '#4ade80';
+            ctx.fillRect(2, lastY - 10, padL - 6, 20);
+            ctx.fillStyle = '#0a0f1e';
+            ctx.font = 'bold 10px monospace';
+            ctx.textAlign = 'center';
+            ctx.fillText(curRate.toFixed(1), (padL - 4) / 2, lastY + 4);
+
+            // Update HUD
+            var priceEl = document.getElementById('tslLivePrice');
+            var deltaEl = document.getElementById('tslLiveDelta');
+            if (priceEl) priceEl.innerText = curRate.toFixed(2);
+            if (deltaEl) {{
+              var delta = curRate - lastPrice;
+              var pct = (delta / lastPrice * 100).toFixed(2);
+              deltaEl.innerText = (delta >= 0 ? '▲ +' : '▼ ') + pct + '%';
+              deltaEl.style.color = delta >= 0 ? '#4ade80' : '#f87171';
+            }}
+          }}
+
+          // Live data extension — randomly add tiny fluctuations at the end
+          function liveUpdate() {{
+            animFrame++;
+            var last = liveData[liveData.length - 1];
+            var noise = (Math.random() - 0.5) * 0.8;
+            var newVal = last + noise;
+            // Clamp near 92 (current stable era)
+            newVal = Math.max(88, Math.min(97, newVal));
+            liveData.push(newVal);
+            if (liveData.length > 1000) liveData.shift();
+            lastPrice = liveData[liveData.length - 2] || last;
+            drawChart();
+            requestAnimationFrame(liveUpdate);
+          }}
+
+          window.tslSetMode = function(mode, btn) {{
+            displayMode = mode;
+            var btns = document.querySelectorAll('.tsl-chart-btn');
+            btns.forEach(function(b) {{
+              b.style.background = 'rgba(255,255,255,0.04)';
+              b.style.borderColor = 'rgba(255,255,255,0.15)';
+              b.style.color = '#94a3b8';
+            }});
+            if (btn) {{
+              btn.style.background = 'rgba(74,222,128,0.2)';
+              btn.style.borderColor = '#4ade80';
+              btn.style.color = '#4ade80';
+            }}
+          }};
+
+          // Kick off
+          window.addEventListener('resize', drawChart);
+          requestAnimationFrame(liveUpdate);
+        }})();
+        </script>
+
         <!-- SECTION 1: HISTORICAL TIMELINE OF TSL CURRENCY -->
         <div style="background:linear-gradient(135deg, rgba(30,41,59,0.9) 0%, rgba(15,23,42,0.95) 100%);border:2px solid rgba(34,197,94,0.35);border-radius:18px;padding:24px;margin-bottom:24px;box-shadow:0 8px 24px rgba(0,0,0,0.35);">
           <div style="font-size:20px;font-weight:800;color:#4ade80;margin-bottom:18px;display:flex;align-items:center;gap:10px;border-bottom:1.5px solid rgba(34,197,94,0.3);padding-bottom:12px;">
