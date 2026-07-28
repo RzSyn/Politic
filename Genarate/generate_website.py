@@ -20773,7 +20773,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   [พื้นที่สำหรับกรอกข้อมูลคำประกาศเกียรติคุณ สปีชรับรางวัล รายละเอียดงานวิจัย/นวัตกรรม หรือเหตุผลที่คณะกรรมการรางวัลโนเบลแถลงมอบรางวัล]
                 </div>
-                <img src="images/laureates/laureate_1.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
             </div>
           </div>
@@ -20923,7 +20922,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_1.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -20966,7 +20964,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการค้นพบกลไกการยับยั้งและสร้างภูมิคุ้มกันโรคไข้เลือดออกและโรคอุบัติใหม่ในเขตร้อนได้เป็นครั้งแรกของโลก ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4) สถาปนาราษฎรสวัสดิการสุขภาพถ้วนหน้าเป็นปฐมบทแห่งรางวัลโนเบลไทย (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_2.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -21009,7 +21006,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_3.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -21052,7 +21048,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_4.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -21095,7 +21090,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_5.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -21138,7 +21132,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_6.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -21181,7 +21174,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_7.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -21224,7 +21216,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_8.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -21267,7 +21258,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_9.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -21310,7 +21300,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_10.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -21353,7 +21342,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_11.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -21396,7 +21384,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_12.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -21439,7 +21426,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_13.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -21482,7 +21468,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_14.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -21525,7 +21510,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_15.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -21568,7 +21552,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
                 </div>
-                <img src="images/laureates/laureate_1.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -21611,7 +21594,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
                 </div>
-                <img src="images/laureates/laureate_2.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -21654,7 +21636,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
                 </div>
-                <img src="images/laureates/laureate_3.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -21697,7 +21678,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
                 </div>
-                <img src="images/laureates/laureate_4.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -21740,7 +21720,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
                 </div>
-                <img src="images/laureates/laureate_5.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -21783,7 +21762,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
                 </div>
-                <img src="images/laureates/laureate_6.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -21826,7 +21804,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
                 </div>
-                <img src="images/laureates/laureate_7.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -21869,7 +21846,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
                 </div>
-                <img src="images/laureates/laureate_8.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -21912,7 +21888,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
                 </div>
-                <img src="images/laureates/laureate_9.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -21955,7 +21930,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
                 </div>
-                <img src="images/laureates/laureate_10.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -21998,7 +21972,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
                 </div>
-                <img src="images/laureates/laureate_11.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -22041,7 +22014,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
                 </div>
-                <img src="images/laureates/laureate_12.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -22084,7 +22056,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
                 </div>
-                <img src="images/laureates/laureate_13.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -22127,7 +22098,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
                 </div>
-                <img src="images/laureates/laureate_14.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -22170,7 +22140,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
                 </div>
-                <img src="images/laureates/laureate_15.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -22213,7 +22182,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)
                 </div>
-                <img src="images/laureates/laureate_1.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -22256,7 +22224,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ควง อภัยวงศ์ (นายกฯ คนที่ 7)
                 </div>
-                <img src="images/laureates/laureate_2.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -22299,7 +22266,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ควง อภัยวงศ์ (นายกฯ คนที่ 7)
                 </div>
-                <img src="images/laureates/laureate_3.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -22342,7 +22308,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
                 </div>
-                <img src="images/laureates/laureate_4.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -22385,7 +22350,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
                 </div>
-                <img src="images/laureates/laureate_5.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -22428,7 +22392,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
                 </div>
-                <img src="images/laureates/laureate_6.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -22471,7 +22434,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
                 </div>
-                <img src="images/laureates/laureate_7.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -22514,7 +22476,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
                 </div>
-                <img src="images/laureates/laureate_8.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -22557,7 +22518,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
                 </div>
-                <img src="images/laureates/laureate_9.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -22600,7 +22560,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
                 </div>
-                <img src="images/laureates/laureate_10.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -22643,7 +22602,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
                 </div>
-                <img src="images/laureates/laureate_11.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -22686,7 +22644,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
                 </div>
-                <img src="images/laureates/laureate_12.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -22729,7 +22686,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
                 </div>
-                <img src="images/laureates/laureate_13.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -22772,7 +22728,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
                 </div>
-                <img src="images/laureates/laureate_14.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -22815,7 +22770,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
                 </div>
-                <img src="images/laureates/laureate_15.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -22858,7 +22812,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
                 </div>
-                <img src="images/laureates/laureate_1.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -22901,7 +22854,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
                 </div>
-                <img src="images/laureates/laureate_2.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -22944,7 +22896,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
                 </div>
-                <img src="images/laureates/laureate_3.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -22987,7 +22938,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
                 </div>
-                <img src="images/laureates/laureate_4.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -23030,7 +22980,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
                 </div>
-                <img src="images/laureates/laureate_5.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -23073,7 +23022,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
                 </div>
-                <img src="images/laureates/laureate_6.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -23116,7 +23064,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
                 </div>
-                <img src="images/laureates/laureate_7.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -23159,7 +23106,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
                 </div>
-                <img src="images/laureates/laureate_8.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -23202,7 +23148,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)
                 </div>
-                <img src="images/laureates/laureate_9.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -23245,7 +23190,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี อานันท์ ปันยารชุน (นายกฯ คนที่ 9)
                 </div>
-                <img src="images/laureates/laureate_10.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -23288,7 +23232,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
                 </div>
-                <img src="images/laureates/laureate_11.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -23331,7 +23274,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
                 </div>
-                <img src="images/laureates/laureate_12.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -23374,7 +23316,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
                 </div>
-                <img src="images/laureates/laureate_13.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -23417,7 +23358,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
                 </div>
-                <img src="images/laureates/laureate_14.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -23460,7 +23400,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
                 </div>
-                <img src="images/laureates/laureate_15.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -23503,7 +23442,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
                 </div>
-                <img src="images/laureates/laureate_1.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -23546,7 +23484,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
                 </div>
-                <img src="images/laureates/laureate_2.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -23589,7 +23526,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
                 </div>
-                <img src="images/laureates/laureate_3.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -23632,7 +23568,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
                 </div>
-                <img src="images/laureates/laureate_4.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -23675,7 +23610,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
                 </div>
-                <img src="images/laureates/laureate_5.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -23718,7 +23652,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
                 </div>
-                <img src="images/laureates/laureate_6.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -23761,7 +23694,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
                 </div>
-                <img src="images/laureates/laureate_7.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -23804,7 +23736,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
                 </div>
-                <img src="images/laureates/laureate_8.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -23847,7 +23778,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
                 </div>
-                <img src="images/laureates/laureate_9.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -23890,7 +23820,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)
                 </div>
-                <img src="images/laureates/laureate_10.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -23933,7 +23862,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
                 </div>
-                <img src="images/laureates/laureate_11.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -23976,7 +23904,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
                 </div>
-                <img src="images/laureates/laureate_12.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -24019,7 +23946,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
                 </div>
-                <img src="images/laureates/laureate_13.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -24062,7 +23988,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
                 </div>
-                <img src="images/laureates/laureate_14.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -24105,7 +24030,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
                 </div>
-                <img src="images/laureates/laureate_15.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -24148,7 +24072,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
                 </div>
-                <img src="images/laureates/laureate_1.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -24191,7 +24114,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
                 </div>
-                <img src="images/laureates/laureate_2.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -24234,7 +24156,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
                 </div>
-                <img src="images/laureates/laureate_3.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -24277,7 +24198,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
                 </div>
-                <img src="images/laureates/laureate_4.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -24320,7 +24240,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
                 </div>
-                <img src="images/laureates/laureate_5.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -24363,7 +24282,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
                 </div>
-                <img src="images/laureates/laureate_6.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -24406,7 +24324,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
                 </div>
-                <img src="images/laureates/laureate_7.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -24449,7 +24366,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
                 </div>
-                <img src="images/laureates/laureate_8.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -24492,7 +24408,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
                 </div>
-                <img src="images/laureates/laureate_9.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -24535,7 +24450,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
                 </div>
-                <img src="images/laureates/laureate_10.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -24578,7 +24492,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
                 </div>
-                <img src="images/laureates/laureate_11.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -24621,7 +24534,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
                 </div>
-                <img src="images/laureates/laureate_12.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -24664,7 +24576,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
                 </div>
-                <img src="images/laureates/laureate_13.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -24707,7 +24618,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
                 </div>
-                <img src="images/laureates/laureate_14.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -24750,7 +24660,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
                 </div>
-                <img src="images/laureates/laureate_15.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -24793,7 +24702,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
                 </div>
-                <img src="images/laureates/laureate_1.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -24836,7 +24744,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
                 </div>
-                <img src="images/laureates/laureate_2.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -24879,7 +24786,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
                 </div>
-                <img src="images/laureates/laureate_3.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -24922,7 +24828,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
                 </div>
-                <img src="images/laureates/laureate_4.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -24965,7 +24870,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)
                 </div>
-                <img src="images/laureates/laureate_5.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -25008,7 +24912,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ธนาธร จึงรุ่งเรืองกิจ (นายกฯ คนที่ 16)
                 </div>
-                <img src="images/laureates/laureate_6.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -25051,7 +24954,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_7.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -25094,7 +24996,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_8.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -25137,7 +25038,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_9.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -25180,7 +25080,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_10.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -25223,7 +25122,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_11.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -25266,7 +25164,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_12.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -25309,7 +25206,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_13.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -25352,7 +25248,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_14.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -25395,7 +25290,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_15.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -25438,7 +25332,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_1.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -25481,7 +25374,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_2.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -25524,7 +25416,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_3.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -25567,7 +25458,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_4.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -25610,7 +25500,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_5.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -25653,7 +25542,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_6.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -25696,7 +25584,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_7.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -25739,7 +25626,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_8.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -25782,7 +25668,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_9.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -25825,7 +25710,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_10.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -25868,7 +25752,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_11.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -25911,7 +25794,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_12.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -25954,7 +25836,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_13.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -25997,7 +25878,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_14.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -26040,7 +25920,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_15.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -26083,7 +25962,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_1.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -26126,7 +26004,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_2.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -26169,7 +26046,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_3.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -26212,7 +26088,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_4.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -26255,7 +26130,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_5.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -26298,7 +26172,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_6.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -26341,7 +26214,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_7.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -26384,7 +26256,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_8.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -26427,7 +26298,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_9.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -26470,7 +26340,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_10.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -26513,7 +26382,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_11.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -26556,7 +26424,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_12.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -26599,7 +26466,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_13.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -26642,7 +26508,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_14.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -26685,7 +26550,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_15.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -26728,7 +26592,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_1.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -26771,7 +26634,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_2.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -26814,7 +26676,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_3.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -26857,7 +26718,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_4.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -26900,7 +26760,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_5.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -26943,7 +26802,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_6.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -26986,7 +26844,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_7.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -27029,7 +26886,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_8.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -27072,7 +26928,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_9.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -27115,7 +26970,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_10.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -27158,7 +27012,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_11.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -27201,7 +27054,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_12.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -27244,7 +27096,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_13.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -27287,7 +27138,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_14.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -27330,7 +27180,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_15.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -27373,7 +27222,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_1.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -27416,7 +27264,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_2.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -27459,7 +27306,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_3.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -27502,7 +27348,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_4.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -27545,7 +27390,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_5.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -27588,7 +27432,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_6.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -27631,7 +27474,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_7.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -27674,7 +27516,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_8.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -27717,7 +27558,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_9.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -27760,7 +27600,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_10.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -27803,7 +27642,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_11.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -27846,7 +27684,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_12.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -27889,7 +27726,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_13.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -27932,7 +27768,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_14.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -27975,7 +27810,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_15.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -28018,7 +27852,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_1.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -28061,7 +27894,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_2.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -28104,7 +27936,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_3.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -28147,7 +27978,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_4.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -28190,7 +28020,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_5.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -28233,7 +28062,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_6.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -28276,7 +28104,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_7.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -28319,7 +28146,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_8.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -28362,7 +28188,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_9.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -28405,7 +28230,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_10.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -28448,7 +28272,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_11.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -28491,7 +28314,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_12.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -28534,7 +28356,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_13.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -28577,7 +28398,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_14.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -28620,7 +28440,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_15.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -28663,7 +28482,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_1.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -28706,7 +28524,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_2.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -28749,7 +28566,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_3.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -28792,7 +28608,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_4.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -28835,7 +28650,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_5.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -28878,7 +28692,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_6.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -28921,7 +28734,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_7.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -28964,7 +28776,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_8.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -29007,7 +28818,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_9.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -29050,7 +28860,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_10.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -29093,7 +28902,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_11.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -29136,7 +28944,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_12.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -29179,7 +28986,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_13.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -29222,7 +29028,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_14.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -29265,7 +29070,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_15.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -29308,7 +29112,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_1.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -29351,7 +29154,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_2.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -29394,7 +29196,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_3.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -29437,7 +29238,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_4.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -29480,7 +29280,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_5.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -29523,7 +29322,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_6.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -29566,7 +29364,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_7.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -29609,7 +29406,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17) (ผลงานวิจัยและนวัตกรรมโดยคณะนักวิทยาศาสตร์และมหาปราชญ์คนรุ่นใหม่ไฟแรงแห่งสยาม)
                 </div>
-                <img src="images/laureates/laureate_8.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -29652,7 +29448,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
                 </div>
-                <img src="images/laureates/laureate_9.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -29695,7 +29490,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
                 </div>
-                <img src="images/laureates/laureate_10.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -29738,7 +29532,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
                 </div>
-                <img src="images/laureates/laureate_11.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -29781,7 +29574,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
                 </div>
-                <img src="images/laureates/laureate_12.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -29824,7 +29616,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
                 </div>
-                <img src="images/laureates/laureate_13.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -29867,7 +29658,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
                 </div>
-                <img src="images/laureates/laureate_14.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -29910,7 +29700,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
                 </div>
-                <img src="images/laureates/laureate_15.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -29953,7 +29742,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
                 </div>
-                <img src="images/laureates/laureate_1.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -29996,7 +29784,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
                 </div>
-                <img src="images/laureates/laureate_2.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -30039,7 +29826,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
                 </div>
-                <img src="images/laureates/laureate_3.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -30082,7 +29868,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
                 </div>
-                <img src="images/laureates/laureate_4.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -30125,7 +29910,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
                 </div>
-                <img src="images/laureates/laureate_5.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -30168,7 +29952,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
                 </div>
-                <img src="images/laureates/laureate_6.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -30211,7 +29994,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
                 </div>
-                <img src="images/laureates/laureate_7.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -30254,7 +30036,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
                 </div>
-                <img src="images/laureates/laureate_8.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -30297,7 +30078,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
                 </div>
-                <img src="images/laureates/laureate_9.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -30340,7 +30120,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
                 </div>
-                <img src="images/laureates/laureate_10.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -30383,7 +30162,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
                 </div>
-                <img src="images/laureates/laureate_11.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -30426,7 +30204,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
                 </div>
-                <img src="images/laureates/laureate_12.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -30469,7 +30246,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
                 </div>
-                <img src="images/laureates/laureate_13.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -30512,7 +30288,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
                 </div>
-                <img src="images/laureates/laureate_14.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -30555,7 +30330,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
                 </div>
-                <img src="images/laureates/laureate_15.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -30598,7 +30372,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
                 </div>
-                <img src="images/laureates/laureate_1.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -30641,7 +30414,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
                 </div>
-                <img src="images/laureates/laureate_2.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -30684,7 +30456,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
                 </div>
-                <img src="images/laureates/laureate_3.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -30727,7 +30498,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)
                 </div>
-                <img src="images/laureates/laureate_4.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -30770,7 +30540,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)
                 </div>
-                <img src="images/laureates/laureate_5.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -30813,7 +30582,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)
                 </div>
-                <img src="images/laureates/laureate_6.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -30856,7 +30624,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)
                 </div>
-                <img src="images/laureates/laureate_7.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -30899,7 +30666,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)
                 </div>
-                <img src="images/laureates/laureate_8.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -30942,7 +30708,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)
                 </div>
-                <img src="images/laureates/laureate_9.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -30985,7 +30750,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)
                 </div>
-                <img src="images/laureates/laureate_10.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -31028,7 +30792,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)
                 </div>
-                <img src="images/laureates/laureate_11.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -31071,7 +30834,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)
                 </div>
-                <img src="images/laureates/laureate_12.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -31114,7 +30876,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)
                 </div>
-                <img src="images/laureates/laureate_13.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -31157,7 +30918,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
                 </div>
-                <img src="images/laureates/laureate_14.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -31200,7 +30960,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
                 </div>
-                <img src="images/laureates/laureate_15.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -31243,7 +31002,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
                 </div>
-                <img src="images/laureates/laureate_1.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -31286,7 +31044,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
                 </div>
-                <img src="images/laureates/laureate_2.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -31329,7 +31086,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
                 </div>
-                <img src="images/laureates/laureate_3.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -31372,7 +31128,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
                 </div>
-                <img src="images/laureates/laureate_4.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -31415,7 +31170,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
                 </div>
-                <img src="images/laureates/laureate_5.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -31458,7 +31212,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
                 </div>
-                <img src="images/laureates/laureate_6.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -31501,7 +31254,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
                 </div>
-                <img src="images/laureates/laureate_7.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -31544,7 +31296,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
                 </div>
-                <img src="images/laureates/laureate_8.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -31587,7 +31338,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
                 </div>
-                <img src="images/laureates/laureate_9.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -31630,7 +31380,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
                 </div>
-                <img src="images/laureates/laureate_10.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -31673,7 +31422,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
                 </div>
-                <img src="images/laureates/laureate_11.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -31716,7 +31464,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
                 </div>
-                <img src="images/laureates/laureate_12.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -31759,7 +31506,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
                 </div>
-                <img src="images/laureates/laureate_13.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -31802,7 +31548,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
                 </div>
-                <img src="images/laureates/laureate_14.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -31845,7 +31590,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
                 </div>
-                <img src="images/laureates/laureate_15.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -31888,7 +31632,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
                 </div>
-                <img src="images/laureates/laureate_1.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -31931,7 +31674,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
                 </div>
-                <img src="images/laureates/laureate_2.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -31974,7 +31716,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
                 </div>
-                <img src="images/laureates/laureate_3.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -32017,7 +31758,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
                 </div>
-                <img src="images/laureates/laureate_4.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -32060,7 +31800,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
                 </div>
-                <img src="images/laureates/laureate_5.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -32103,7 +31842,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
                 </div>
-                <img src="images/laureates/laureate_6.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -32146,7 +31884,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
                 </div>
-                <img src="images/laureates/laureate_7.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -32189,7 +31926,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
                 </div>
-                <img src="images/laureates/laureate_8.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -32232,7 +31968,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
                 </div>
-                <img src="images/laureates/laureate_9.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -32275,7 +32010,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)
                 </div>
-                <img src="images/laureates/laureate_10.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -32318,7 +32052,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี อนุเจริญ ชาญวีรกูล (วาระแรก) (นายกฯ คนที่ 24)
                 </div>
-                <img src="images/laureates/laureate_11.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -32361,7 +32094,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_12.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -32404,7 +32136,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_13.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -32447,7 +32178,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_14.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -32490,7 +32220,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_15.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -32533,7 +32262,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_1.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -32576,7 +32304,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_2.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -32619,7 +32346,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_3.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -32662,7 +32388,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_4.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -32705,7 +32430,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_5.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -32748,7 +32472,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_6.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -32791,7 +32514,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_7.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -32834,7 +32556,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_8.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -32877,7 +32598,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_9.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -32920,7 +32640,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_10.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -32963,7 +32682,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_11.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -33006,7 +32724,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_12.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -33049,7 +32766,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_13.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -33092,7 +32808,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_14.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -33135,7 +32850,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_15.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -33178,7 +32892,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_1.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -33221,7 +32934,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_2.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -33264,7 +32976,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_3.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -33307,7 +33018,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_4.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -33350,7 +33060,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_5.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -33393,7 +33102,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_6.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -33436,7 +33144,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_7.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -33479,7 +33186,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_8.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -33522,7 +33228,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_9.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -33565,7 +33270,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_10.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -33608,7 +33312,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_11.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -33651,7 +33354,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_12.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -33694,7 +33396,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_13.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -33737,7 +33438,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_14.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -33780,7 +33480,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_15.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -33823,7 +33522,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_1.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -33866,7 +33564,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_2.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -33909,7 +33606,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_3.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -33952,7 +33648,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_4.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -33995,7 +33690,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_5.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -34038,7 +33732,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_6.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -34081,7 +33774,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_7.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -34124,7 +33816,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_8.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -34167,7 +33858,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_9.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -34210,7 +33900,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_10.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -34253,7 +33942,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_11.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -34296,7 +33984,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_12.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -34339,7 +34026,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_13.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -34382,7 +34068,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_14.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -34425,7 +34110,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_15.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -34468,7 +34152,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_1.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -34511,7 +34194,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_2.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -34554,7 +34236,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_3.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -34597,7 +34278,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_4.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -34640,7 +34320,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_5.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -34683,7 +34362,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_6.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -34726,7 +34404,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_7.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -34769,7 +34446,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_8.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -34812,7 +34488,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_9.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -34855,7 +34530,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_10.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -34898,7 +34572,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_11.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -34941,7 +34614,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_12.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -34984,7 +34656,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_13.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -35027,7 +34698,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_14.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -35070,7 +34740,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_15.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -35113,7 +34782,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_1.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -35156,7 +34824,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_2.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -35199,7 +34866,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_3.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -35242,7 +34908,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_4.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -35285,7 +34950,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_5.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -35328,7 +34992,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_6.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -35371,7 +35034,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_7.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -35414,7 +35076,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_8.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -35457,7 +35118,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_9.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -35500,7 +35160,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_10.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -35543,7 +35202,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_11.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -35586,7 +35244,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_12.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -35629,7 +35286,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_13.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -35672,7 +35328,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_14.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -35715,7 +35370,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_15.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -35758,7 +35412,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_1.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -35801,7 +35454,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_2.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -35844,7 +35496,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_3.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -35887,7 +35538,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_4.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -35930,7 +35580,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_5.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -35973,7 +35622,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_6.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -36016,7 +35664,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_7.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -36059,7 +35706,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_8.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -36102,7 +35748,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_9.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -36145,7 +35790,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_10.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -36188,7 +35832,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_11.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -36231,7 +35874,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_12.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -36274,7 +35916,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_13.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -36317,7 +35958,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_14.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -36360,7 +36000,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_15.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -36403,7 +36042,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_1.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -36446,7 +36084,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_2.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -36489,7 +36126,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_3.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -36532,7 +36168,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_4.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -36575,7 +36210,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_5.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -36618,7 +36252,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_6.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -36661,7 +36294,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_7.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -36704,7 +36336,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_8.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -36747,7 +36378,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_9.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -36790,7 +36420,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_10.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -36833,7 +36462,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_11.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -36876,7 +36504,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_12.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -36919,7 +36546,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_13.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -36962,7 +36588,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_14.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -37005,7 +36630,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_15.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -37048,7 +36672,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_1.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -37091,7 +36714,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_2.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -37134,7 +36756,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_3.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -37177,7 +36798,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)
                 </div>
-                <img src="images/laureates/laureate_4.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -37220,7 +36840,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)
                 </div>
-                <img src="images/laureates/laureate_5.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -37263,7 +36882,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)
                 </div>
-                <img src="images/laureates/laureate_6.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -37306,7 +36924,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)
                 </div>
-                <img src="images/laureates/laureate_7.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -37349,7 +36966,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)
                 </div>
-                <img src="images/laureates/laureate_8.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -37392,7 +37008,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)
                 </div>
-                <img src="images/laureates/laureate_9.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -37435,7 +37050,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)
                 </div>
-                <img src="images/laureates/laureate_10.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -37478,7 +37092,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)
                 </div>
-                <img src="images/laureates/laureate_11.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -37521,7 +37134,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)
                 </div>
-                <img src="images/laureates/laureate_12.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -37564,7 +37176,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)
                 </div>
-                <img src="images/laureates/laureate_13.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -37607,7 +37218,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)
                 </div>
-                <img src="images/laureates/laureate_14.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -37650,7 +37260,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นนวัตกรรมการสังเคราะห์วัคซีนความไวสูง (mRNA-Quantum Nano Vaccine) ที่สังเคราะห์และกระจายฉีดสู้ไวรัสกลายพันธุ์ทั่วโลกได้ภายใน ๗๒ ชั่วโมง ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28) ยุคตรวจสุขภาพถ้วนหน้า ๗๑%
                 </div>
-                <img src="images/laureates/laureate_15.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
@@ -37693,7 +37302,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <strong style="color:#facc15;display:block;margin-bottom:4px;">📑 สรุปผลงานและเกียรติประวัติ (Description):</strong>
                   สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)
                 </div>
-                <img src="images/laureates/laureate_1.png" alt="ภาพผู้ได้รับรางวัล" style="width:130px;height:auto;object-fit:cover;border-radius:14px;flex-shrink:0;">
               </div>
 
             </div>
