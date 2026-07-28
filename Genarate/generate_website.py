@@ -20961,8 +20961,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             var cH = H - padT - padB;
 
             function xPos(i) {{ return padL + (i / (data.length - 1)) * cW; }}
-            // INVERTED: high rate (322 crisis) = bottom, low rate (92 stable) = top
-            function yPos(v) {{ return padT + ((v - minV) / range) * cH; }}
+            // CORRECT: high value = top (low y), low value = bottom (high y)
+            function yPos(v) {{ return padT + ((maxV - v) / range) * cH; }}
 
             ctx.clearRect(0, 0, W, H);
 
@@ -20984,7 +20984,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               ctx.lineTo(W - padR, gy);
               ctx.stroke();
               var gVal = Math.round(maxV - (g / gridCount) * range);
-              ctx.fillStyle = '#475569';
+              ctx.fillStyle = '#6b7280';
               ctx.font = 'bold 10px monospace';
               ctx.textAlign = 'right';
               ctx.fillText(gVal, padL - 6, gy + 4);
@@ -21112,7 +21112,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               var last = liveData[liveData.length - 1];
               // Regime volatility: base ±8, with 20% chance of large spike ±25
               var regime = Math.random();
-              var spike = regime > 0.80 ? (Math.random() - 0.4) * 50 : 0; // 20% spike (biased slightly up)
+              var spike = regime > 0.55 ? (Math.random() - 0.4) * 50 : 0; // 45% spike chance
               var baseNoise = (Math.random() - 0.48) * 16;  // ±8 base, slight upward bias
               // Gravity: pull back toward center (130) only when far from it
               var center = 130;
