@@ -20961,8 +20961,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             var cH = H - padT - padB;
 
             function xPos(i) {{ return padL + (i / (data.length - 1)) * cW; }}
-            // CORRECT: high value = top (low y), low value = bottom (high y)
-            function yPos(v) {{ return padT + ((maxV - v) / range) * cH; }}
+            // Exchange rate: high TSL = TSL weak (CRISIS) = bottom, low TSL = stable = top
+            function yPos(v) {{ return padT + ((v - minV) / range) * cH; }}
 
             ctx.clearRect(0, 0, W, H);
 
@@ -20983,7 +20983,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               ctx.moveTo(padL, gy);
               ctx.lineTo(W - padR, gy);
               ctx.stroke();
-              var gVal = Math.round(maxV - (g / gridCount) * range);
+              // g=0 = top = LOW value, g=gridCount = bottom = HIGH value
+              var gVal = Math.round(minV + (g / gridCount) * range);
               ctx.fillStyle = '#6b7280';
               ctx.font = 'bold 10px monospace';
               ctx.textAlign = 'right';
