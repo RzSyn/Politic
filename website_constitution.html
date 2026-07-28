@@ -22479,6 +22479,18 @@ svg.leaflet-image-layer.leaflet-interactive path {
     <!-- Tab: แดชบอร์ดดัชนีระบบการเงิน TSL -->
     <div id="tsl-dashboard-tab" class="db-tab-content">
       <div style="text-align:left;">
+        <!-- LIVE TICKER BANNER -->
+        <div style="background:#0f172a;border:1px solid rgba(74,222,128,0.3);border-radius:12px;padding:10px 18px;margin-bottom:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;box-shadow:0 4px 16px rgba(0,0,0,0.4);">
+          <div style="display:flex;align-items:center;gap:10px;">
+            <span style="display:inline-block;width:10px;height:10px;background:#4ade80;border-radius:50%;box-shadow:0 0 10px #4ade80;animation:tslPulse 1.5s infinite;"></span>
+            <span style="font-size:12.5px;font-weight:800;color:#4ade80;letter-spacing:0.5px;">🔴 LIVE STREAMING FINANCIAL DATA</span>
+            <span style="font-size:11px;color:#94a3b8;background:rgba(255,255,255,0.05);padding:2px 8px;border-radius:6px;">Latency: 12ms</span>
+          </div>
+          <div style="font-size:12px;color:#e2e8f0;font-family:'Outfit',monospace;">
+            <span style="color:#94a3b8;">Market Status:</span> <strong style="color:#4ade80;">OPEN / HIGHLY STABLE</strong> | <span id="tslClock" style="color:#fde047;font-weight:700;"></span>
+          </div>
+        </div>
+
         <!-- HEADER BANNER -->
         <div style="display:flex;align-items:center;gap:18px;margin-bottom:24px;border-bottom:2px solid rgba(34,197,94,0.4);background:linear-gradient(135deg, rgba(34,197,94,0.18) 0%, rgba(15,23,42,0.95) 100%);padding:24px;border-radius:18px;box-shadow:0 8px 24px rgba(0,0,0,0.4);">
           <div style="width:76px;height:76px;background:rgba(34,197,94,0.25);border:2px solid #4ade80;border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:42px;box-shadow:0 0 24px rgba(74,222,128,0.4);flex-shrink:0;">
@@ -22486,22 +22498,22 @@ svg.leaflet-image-layer.leaflet-interactive path {
           </div>
           <div style="flex:1;">
             <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:4px;">
-              <h3 style="color:#4ade80;font-family:'Outfit',sans-serif;margin:0;font-size:26px;font-weight:800;letter-spacing:0.3px;">แดชบอร์ดดัชนีระบบการเงิน TSL & ทุนสำรองสากล</h3>
+              <h3 style="color:#4ade80;font-family:'Outfit',sans-serif;margin:0;font-size:26px;font-weight:800;letter-spacing:0.3px;">แดชบอร์ดดัชนีระบบการเงิน TSL & ทุนสำรองสากล Real-Time</h3>
               <span style="background:rgba(34,197,94,0.25);color:#4ade80;border:1px solid rgba(34,197,94,0.5);padding:4px 14px;border-radius:20px;font-size:12.5px;font-weight:800;">
-                📊 Real-Time Financial Index
+                ⚡ Live Index Engine
               </span>
               <span style="background:rgba(250,204,21,0.2);color:#facc15;border:1px solid rgba(250,204,21,0.5);padding:4px 14px;border-radius:20px;font-size:12.5px;font-weight:800;">
-                🌐 ระเบียบการเงินโลกยุคหลัง Dexibola
+                🌐 สกุลเงินอันดับ ๑ ของโลก
               </span>
             </div>
-            <p style="color:var(--text-muted);font-size:14px;margin:6px 0 0 0;">ระบบติดตามสถิติอัตราแลกเปลี่ยนดอลลาร์ TSL สากล, ความผันผวนยามวิกฤต และการฟื้นตัวสู่ระเบียบการเงินสากลใหม่</p>
+            <p style="color:var(--text-muted);font-size:14px;margin:6px 0 0 0;">ระบบติดตามสถิติอัตราแลกเปลี่ยนดอลลาร์ TSL สากล เครื่องมือคำนวณแปลงค่าเงินสด Real-Time และดัชนีทุนสำรองแผ่นดิน</p>
           </div>
         </div>
 
         <!-- LIVE METRICS GRID -->
         <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:18px;margin-bottom:24px;">
           <!-- CARD 1: CURRENT RATE -->
-          <div style="background:linear-gradient(135deg, rgba(30,41,59,0.9) 0%, rgba(15,23,42,0.95) 100%);border:1.5px solid rgba(74,222,128,0.4);border-radius:16px;padding:20px;box-shadow:0 6px 18px rgba(0,0,0,0.35);">
+          <div style="background:linear-gradient(135deg, rgba(30,41,59,0.9) 0%, rgba(15,23,42,0.95) 100%);border:1.5px solid rgba(74,222,128,0.4);border-radius:16px;padding:20px;box-shadow:0 6px 18px rgba(0,0,0,0.35);position:relative;">
             <div style="font-size:12.5px;color:#4ade80;font-weight:700;">📈 อัตราแลกเปลี่ยน TSL ปัจจุบัน (Post-Crisis Rate)</div>
             <div style="font-size:26px;font-weight:900;color:#ffffff;margin:6px 0 2px 0;">๑ บาท = ๙๒ TSL</div>
             <div style="font-size:13px;color:#4ade80;font-weight:700;margin-top:4px;">(1 TSL ≈ 0.01087 บาท / 1.09 สตางค์)</div>
@@ -22518,10 +22530,10 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
           <!-- CARD 3: CRISIS BOTTOM -->
           <div style="background:linear-gradient(135deg, rgba(30,41,59,0.9) 0%, rgba(15,23,42,0.95) 100%);border:1.5px solid rgba(239,68,68,0.4);border-radius:16px;padding:20px;box-shadow:0 6px 18px rgba(0,0,0,0.35);">
-            <div style="font-size:12.5px;color:#f87171;font-weight:700;">💀 จุดต่ำสุด TSL ยามวิกฤต (Dexibola Bottom)</div>
+            <div style="font-size:12.5px;color:#f87171;font-weight:700;">💀 จุดต่ำสุด TSL ยามวิกฤต (Crisis Bottom)</div>
             <div style="font-size:26px;font-weight:900;color:#f87171;margin:6px 0 2px 0;">1 TSL = 0.0031 บาท</div>
             <div style="font-size:13px;color:#f87171;font-weight:700;margin-top:4px;">(0.31 สตางค์ / ๑ บาท = ๓๒๒ TSL)</div>
-            <div style="font-size:12px;color:#ef4444;margin-top:4px;">🔴 สถิติดิ่งเหวช่วงอิตาลีล่มสลาย EP 16</div>
+            <div style="font-size:12px;color:#ef4444;margin-top:4px;">🔴 สถิติดิ่งเหวช่วงต่างประเทศล่มสลาย EP 16</div>
           </div>
 
           <!-- CARD 4: THAI GDP -->
@@ -22530,6 +22542,34 @@ svg.leaflet-image-layer.leaflet-interactive path {
             <div style="font-size:26px;font-weight:900;color:#38bdf8;margin:6px 0 2px 0;">+19.72%</div>
             <div style="font-size:13px;color:#38bdf8;font-weight:700;margin-top:4px;">(บาทไทยสถาปนาอันดับ ๑ ของโลก)</div>
             <div style="font-size:12px;color:#cbd5e1;margin-top:4px;">🚀 เติบโตพุ่งทะยานสวนทางโลกที่ดิ่งลง</div>
+          </div>
+        </div>
+
+        <!-- REAL-TIME INTERACTIVE CURRENCY CONVERTER WIDGET -->
+        <div style="background:linear-gradient(135deg, rgba(15,23,42,0.95) 0%, rgba(30,41,59,0.9) 100%);border:2px solid rgba(74,222,128,0.5);border-radius:18px;padding:24px;margin-bottom:24px;box-shadow:0 8px 24px rgba(0,0,0,0.4);">
+          <div style="font-size:18px;font-weight:800;color:#4ade80;margin-bottom:16px;display:flex;align-items:center;gap:10px;border-bottom:1.5px solid rgba(74,222,128,0.3);padding-bottom:10px;">
+            <span>🧮</span> เครื่องมือแปลงอัตราแลกเปลี่ยน Real-Time (Live TSL Currency Converter)
+          </div>
+
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:20px;align-items:center;">
+            <!-- INPUT THB -->
+            <div style="background:rgba(15,23,42,0.8);border:1px solid rgba(74,222,128,0.3);border-radius:14px;padding:16px;">
+              <label style="font-size:12px;color:#4ade80;font-weight:700;display:block;margin-bottom:6px;">🇹🇭 จำนวนเงินบาทไทย (THB):</label>
+              <input type="number" id="tslInputTHB" value="100" oninput="calcTSLFromTHB()" style="width:100%;background:rgba(30,41,59,0.9);border:1px solid rgba(74,222,128,0.5);border-radius:10px;padding:10px 14px;color:#ffffff;font-size:20px;font-weight:800;outline:none;box-sizing:border-box;">
+              <div style="font-size:11.5px;color:#cbd5e1;margin-top:6px;">๑ บาทไทย = ๙๒.๐๐ TSL</div>
+            </div>
+
+            <!-- EQUAL ARROW -->
+            <div style="text-align:center;font-size:28px;color:#4ade80;font-weight:900;">
+              ⇄
+            </div>
+
+            <!-- RESULT TSL -->
+            <div style="background:rgba(15,23,42,0.8);border:1px solid rgba(250,204,21,0.3);border-radius:14px;padding:16px;">
+              <label style="font-size:12px;color:#facc15;font-weight:700;display:block;margin-bottom:6px;">🌐 จำนวนเงินดอลลาร์ TSL (TSL USD):</label>
+              <input type="number" id="tslInputTSL" value="9200" oninput="calcTHBFromTSL()" style="width:100%;background:rgba(30,41,59,0.9);border:1px solid rgba(250,204,21,0.5);border-radius:10px;padding:10px 14px;color:#fde047;font-size:20px;font-weight:800;outline:none;box-sizing:border-box;">
+              <div style="font-size:11.5px;color:#cbd5e1;margin-top:6px;" id="tslSatangDisplay">๑ TSL ≈ ๐.๐๑๐๘๗ บาท (๑.๐๙ สตางค์)</div>
+            </div>
           </div>
         </div>
 
@@ -22562,11 +22602,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
             <div style="background:rgba(15,23,42,0.75);border-left:4px solid #ef4444;border-radius:0 12px 12px 0;padding:16px;text-align:left;">
               <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">
-                <strong style="color:#f87171;font-size:16px;">พ.ศ. ๒๖๗๒ — มหาวิบัติ Dexibola & TSL ล่มสลาย (EP 16 Reveal)</strong>
+                <strong style="color:#f87171;font-size:16px;">พ.ศ. ๒๖๗๒ — วิกฤตการณ์การเงินสากล & TSL ล่มสลาย (EP 16 Reveal)</strong>
                 <span style="background:rgba(239,68,68,0.2);color:#f87171;padding:2px 10px;border-radius:12px;font-size:12px;font-weight:700;">1 TSL ≈ 0.0031 THB</span>
               </div>
               <p style="font-size:13px;color:#cbd5e1;margin:6px 0 0 0;line-height:1.6;">
-                วิกฤตการณ์ Dexibola ทำลายระบบสาธารณสุขและเศรษฐกิจโลก ตลาดการเงินสากล TSL ล่มสลายดิ่งลงสู่ 0.31 THB ต่อ ๑ ดอลลาร์ TSL (เทียบเท่า ๑ บาทไทย = ๓๒๒ ดอลลาร์ TSL)
+                วิกฤตการณ์การเงินโลกทำลายระบบสาธารณสุขและเศรษฐกิจต่างประเทศ ตลาดการเงินสากล TSL ล่มสลายดิ่งลงสู่ 0.0031 THB ต่อ ๑ ดอลลาร์ TSL (เทียบเท่า ๑ บาทไทย = ๓๒๒ ดอลลาร์ TSL)
               </p>
             </div>
 
@@ -22602,12 +22642,35 @@ svg.leaflet-image-layer.leaflet-interactive path {
             <em>TSL กำลังฟื้นครับ ช้า แต่มั่นคง เราเรียนรู้จากวิกฤตครั้งนี้ว่าระบบสาธารณสุขไม่ใช่ค่าใช้จ่าย แต่คือการลงทุน ประเทศที่รอดพ้นมาได้เพราะมีระบบคุ้มครองชีวิตราษฎรอย่างแท้จริง</em>
             <span style="font-size:32px;color:#facc15;line-height:0;vertical-align:-10px;">”</span>
             <div style="margin-top:12px;font-size:12.5px;color:#fde047;font-weight:700;text-align:right;">
-              — Barack Obama (แถลงการณ์ระเบียบการเงินสากล TSL หลังวิกฤต Dexibola)
+              — Barack Obama (แถลงการณ์ระเบียบการเงินสากล TSL หลังวิกฤตการเมืองและเศรษฐกิจโลก)
             </div>
           </div>
         </div>
       </div>
     </div>
+    
+    <script>
+      function updateTSLClock() {
+        var now = new Date();
+        var str = now.toLocaleTimeString('th-TH') + ' UTC+7';
+        var el = document.getElementById('tslClock');
+        if (el) el.innerText = str;
+      }
+      setInterval(updateTSLClock, 1000);
+      updateTSLClock();
+
+      function calcTSLFromTHB() {
+        var thb = parseFloat(document.getElementById('tslInputTHB').value) || 0;
+        var tsl = (thb * 92).toFixed(2);
+        document.getElementById('tslInputTSL').value = tsl;
+      }
+
+      function calcTHBFromTSL() {
+        var tsl = parseFloat(document.getElementById('tslInputTSL').value) || 0;
+        var thb = (tsl / 92).toFixed(2);
+        document.getElementById('tslInputTHB').value = thb;
+      }
+    </script>
 
     <div id="the-plague-series-tab" class="db-tab-content">
       <div style="text-align:left;">
