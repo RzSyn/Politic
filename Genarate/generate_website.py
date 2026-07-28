@@ -20710,139 +20710,4058 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
     </div>
 
     <!-- Tab: รางวัลโนเบลไทย -->
+        <!-- Tab: รางวัลโนเบลไทย -->
+        <!-- Tab: รางวัลโนเบลไทย -->
     <div id="thai-nobel-tab" class="db-tab-content">
       <div style="text-align:left;">
         <!-- Header Banner -->
-        <div style="display:flex;align-items:center;gap:18px;margin-bottom:24px;border-bottom:2px solid rgba(234,179,8,0.35);background:linear-gradient(135deg, rgba(234,179,8,0.08) 0%, rgba(15,23,42,0.4) 100%);padding:22px;border-radius:16px;box-shadow:0 6px 20px rgba(0,0,0,0.3);">
-          <div style="width:72px;height:72px;background:rgba(234,179,8,0.15);border:2px solid #facc15;border-radius:18px;display:flex;align-items:center;justify-content:center;font-size:38px;box-shadow:0 0 20px rgba(250,204,21,0.3);flex-shrink:0;">
+        <div style="display:flex;align-items:center;gap:18px;margin-bottom:24px;border-bottom:2px solid rgba(234,179,8,0.35);background:linear-gradient(135deg, rgba(234,179,8,0.12) 0%, rgba(15,23,42,0.6) 100%);padding:24px;border-radius:18px;box-shadow:0 8px 24px rgba(0,0,0,0.35);">
+          <div style="width:76px;height:76px;background:rgba(234,179,8,0.18);border:2px solid #facc15;border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:42px;box-shadow:0 0 24px rgba(250,204,21,0.35);flex-shrink:0;">
             🏆
           </div>
-          <div>
-            <h3 style="color:#facc15;font-family:'Outfit',sans-serif;margin:0;font-size:26px;font-weight:800;letter-spacing:0.3px;">ทำเนียบผู้ได้รับรางวัลโนเบลแห่งประเทศไทย (Thai Nobel Laureates Registry)</h3>
-            <p style="color:var(--text-muted);font-size:14px;margin:6px 0 0 0;">จดหมายเหตุประกาศเกียรติคุณและเกียรติยศระดับสากลสูงสุดแห่งผู้สร้างสรรค์นวัตกรรม สันติภาพ วิทยาศาสตร์ การแพทย์ และวรรณกรรมไทย</p>
+          <div style="flex:1;">
+            <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:4px;">
+              <h3 style="color:#facc15;font-family:'Outfit',sans-serif;margin:0;font-size:26px;font-weight:800;letter-spacing:0.3px;">ทำเนียบผู้ได้รับรางวัลโนเบลแห่งประเทศไทย (Thai Nobel Laureates Registry)</h3>
+              <span style="background:rgba(250,204,21,0.2);color:#facc15;border:1px solid rgba(250,204,21,0.4);padding:3px 12px;border-radius:20px;font-size:12.5px;font-weight:700;">
+                รวมทั้งสิ้น ๓๙๑ รายการ
+              </span>
+            </div>
+            <p style="color:var(--text-muted);font-size:14px;margin:6px 0 0 0;">จดหมายเหตุประกาศเกียรติคุณและเกียรติยศระดับสากลสูงสุดแห่งผู้สร้างสรรค์นวัตกรรม สันติภาพ วิทยาศาสตร์ การแพทย์ และวรรณกรรมไทย (พ.ศ. ๒๔๔๕ – ๒๖๗๒)</p>
           </div>
         </div>
 
-        <!-- Info / Guidance Box -->
-        <div style="background:rgba(30, 41, 59, 0.75);border:1.5px solid rgba(250,204,21,0.4);border-radius:14px;padding:18px 22px;margin-bottom:28px;box-shadow:0 4px 16px rgba(0,0,0,0.25);">
-          <div style="font-size:16px;font-weight:700;color:#facc15;margin-bottom:8px;display:flex;align-items:center;gap:8px;">
-            <span>💡</span> โครงสร้าง Template ข้อมูลรางวัลโนเบลไทย (๓ ช่องมาตรฐาน)
+        <!-- Search & Control Bar -->
+        <div style="background:rgba(30,41,59,0.75);border:1.5px solid rgba(250,204,21,0.4);border-radius:16px;padding:18px 22px;margin-bottom:24px;box-shadow:0 6px 20px rgba(0,0,0,0.25);display:flex;gap:16px;align-items:center;flex-wrap:wrap;">
+          <div style="flex:1;min-width:280px;position:relative;">
+            <input type="text" id="nobelSearchInput" onkeyup="filterNobelCards()" placeholder="🔍 ค้นหารางวัลโนเบลไทย (ค้นหาตามชื่อผู้ได้รับรางวัล, สาขา, ปี พ.ศ., หรือนายกรัฐมนตรี...)" style="width:100%;background:rgba(15,23,42,0.85);border:1.5px solid rgba(250,204,21,0.4);border-radius:10px;padding:12px 16px;color:#ffffff;font-size:14px;outline:none;box-sizing:border-box;box-shadow:inset 0 2px 6px rgba(0,0,0,0.3);">
           </div>
-          <div style="font-size:13.5px;color:#e2e8f0;line-height:1.7;">
-            แบบฟอร์มบันทึกข้อมูลจัดเตรียมโครงสร้าง ๓ ช่องหลักเพื่อรองรับการกรอกข้อมูลอย่างเป็นระบบ: 
-            <strong style="color:#facc15;">๑. ปีที่ได้รับรางวัล (Year Awarded)</strong> &nbsp;|&nbsp; 
-            <strong style="color:#60a5fa;">๒. สาขาที่ได้รับรางวัล (Nobel Field / Category)</strong> &nbsp;|&nbsp; 
-            <strong style="color:#4ade80;">๓. ผู้ได้รับรางวัล (Laureate Name / Organization)</strong>
+          <div style="font-size:13.5px;color:#fde047;font-weight:700;background:rgba(234,179,8,0.12);border:1px solid rgba(234,179,8,0.3);padding:8px 16px;border-radius:10px;white-space:nowrap;" id="nobelCountDisplay">
+            แสดงผล <strong style="color:#ffffff;" id="nobelVisibleCount">๓๙๑</strong> / ๓๙๑ รายการ
           </div>
         </div>
 
-        <!-- Template Cards Container (Modelled after PM Tab Design) -->
-        <div style="display:grid;grid-template-columns:1fr;gap:24px;">
+        <!-- CSS Styles for Nobel Cards -->
+        <style>
+          .nobel-card-grid {{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            gap: 20px;
+          }}
+          .nobel-card {{
+            background: rgba(15, 23, 42, 0.85);
+            border: 1.5px solid rgba(250, 204, 21, 0.3);
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+            backdrop-filter: blur(10px);
+            transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }}
+          .nobel-card:hover {{
+            transform: translateY(-4px);
+            border-color: rgba(250, 204, 21, 0.65);
+            box-shadow: 0 12px 30px rgba(250, 204, 21, 0.2);
+          }}
+          .nobel-header {{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            border-bottom: 1px solid rgba(250, 204, 21, 0.2);
+            padding-bottom: 10px;
+          }}
+          .nobel-no {{
+            font-size: 11.5px;
+            font-weight: 700;
+            background: rgba(250, 204, 21, 0.15);
+            color: #facc15;
+            border: 1px solid rgba(250, 204, 21, 0.35);
+            padding: 3px 10px;
+            border-radius: 20px;
+          }}
+          .nobel-year {{
+            font-size: 13px;
+            font-weight: 800;
+            color: #fde047;
+            font-family: 'Outfit', sans-serif;
+          }}
+          .nobel-category {{
+            font-size: 13px;
+            font-weight: 700;
+            color: #60a5fa;
+            margin-bottom: 8px;
+            background: rgba(59, 130, 246, 0.12);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            padding: 6px 12px;
+            border-radius: 8px;
+          }}
+          .nobel-laureate {{
+            font-size: 15.5px;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 8px;
+            line-height: 1.4;
+          }}
+          .nobel-pm {{
+            font-size: 12px;
+            font-weight: 600;
+            color: #fb923c;
+            margin-bottom: 10px;
+            background: rgba(251, 146, 60, 0.1);
+            border-left: 3px solid #fb923c;
+            padding: 4px 10px;
+            border-radius: 4px;
+          }}
+          .nobel-desc {{
+            font-size: 12.5px;
+            color: #cbd5e1;
+            line-height: 1.7;
+            background: rgba(30, 41, 59, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            padding: 12px;
+            border-radius: 10px;
+            text-align: justify;
+          }}
+        </style>
 
-          <!-- TEMPLATE ITEM 1 -->
-          <div style="background:rgba(15,23,42,0.85);border:2px solid rgba(250,204,21,0.35);border-radius:18px;padding:26px;display:flex;gap:26px;align-items:flex-start;box-shadow:0 8px 24px rgba(0,0,0,0.4);position:relative;overflow:hidden;">
-            <div style="position:absolute;top:0;left:0;width:6px;height:100%;background:linear-gradient(to bottom, #facc15, #eab308);"></div>
-            <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:240px;">
-              <div style="width:140px;height:140px;background:rgba(30,41,59,0.9);border:2px dashed rgba(250,204,21,0.5);border-radius:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,0.5);color:#facc15;">
-                <span style="font-size:48px;">🏆</span>
-                <span style="font-size:11px;color:var(--text-muted);margin-top:4px;">[รูปภาพผู้ได้รับรางวัล]</span>
-              </div>
-              <div style="background:rgba(234,179,8,0.12);border:1px solid rgba(234,179,8,0.4);border-radius:12px;padding:10px 14px;text-align:center;width:100%;margin-top:14px;box-sizing:border-box;">
-                <div style="font-size:11px;color:#facc15;font-weight:700;letter-spacing:0.5px;">องค์ประกอบที่ ๑</div>
-                <div style="font-size:15px;font-weight:800;color:#ffffff;margin-top:2px;">ปีที่ได้รางวัล</div>
-                <div style="font-size:13px;color:#fde047;font-weight:700;margin-top:2px;">[ระบุ พ.ศ. / ค.ศ.]</div>
-              </div>
-            </div>
-            <div style="flex:1;min-width:0;">
-              <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap;">
-                <span style="background:rgba(59,130,246,0.18);color:#60a5fa;border:1px solid rgba(59,130,246,0.4);padding:4px 12px;border-radius:20px;font-size:12.5px;font-weight:700;">
-                  🏷️ สาขาที่ได้รางวัล: [ระบุสาขาโนเบล เช่น สาขาสันติภาพ / การแพทย์ / ฟิสิกส์]
-                </span>
-                <span style="background:rgba(34,197,94,0.15);color:#4ade80;border:1px solid rgba(34,197,94,0.3);padding:4px 10px;border-radius:20px;font-size:11.5px;font-weight:600;">
-                  Template #๑
-                </span>
-              </div>
-              <div style="font-size:22px;font-weight:800;color:#ffffff;margin-bottom:12px;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#facc15;">[ระบุชื่อ-นามสกุล หรือชื่อองค์กรผู้ได้รับรางวัล]</span>
-              </div>
-              <div style="background:rgba(30,41,59,0.5);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:16px;margin-top:10px;font-size:14px;color:#cbd5e1;line-height:1.8;">
-                <strong style="color:#fde047;display:block;margin-bottom:6px;">📝 สรุปผลงานและเกียรติประวัติ (Description):</strong>
-                [พื้นที่สำหรับกรอกข้อมูลคำประกาศเกียรติคุณ สปีชรับรางวัล รายละเอียดงานวิจัย/นวัตกรรม หรือเหตุผลที่คณะกรรมการรางวัลโนเบลแถลงมอบรางวัล]
-              </div>
-            </div>
-          </div>
+        <script>
+          function filterNobelCards() {{
+            var input = document.getElementById('nobelSearchInput');
+            var filter = input.value.toLowerCase();
+            var cards = document.getElementsByClassName('nobel-card');
+            var visibleCount = 0;
+            for (var i = 0; i < cards.length; i++) {{
+              var text = cards[i].innerText.toLowerCase();
+              if (text.indexOf(filter) > -1) {{
+                cards[i].style.display = "";
+                visibleCount++;
+              }} else {{
+                cards[i].style.display = "none";
+              }}
+            }}
+            document.getElementById('nobelVisibleCount').innerText = visibleCount;
+          }}
+        </script>
 
-          <!-- TEMPLATE ITEM 2 -->
-          <div style="background:rgba(15,23,42,0.85);border:2px solid rgba(250,204,21,0.35);border-radius:18px;padding:26px;display:flex;gap:26px;align-items:flex-start;box-shadow:0 8px 24px rgba(0,0,0,0.4);position:relative;overflow:hidden;">
-            <div style="position:absolute;top:0;left:0;width:6px;height:100%;background:linear-gradient(to bottom, #60a5fa, #3b82f6);"></div>
-            <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:240px;">
-              <div style="width:140px;height:140px;background:rgba(30,41,59,0.9);border:2px dashed rgba(96,165,250,0.5);border-radius:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,0.5);color:#60a5fa;">
-                <span style="font-size:48px;">🎖️</span>
-                <span style="font-size:11px;color:var(--text-muted);margin-top:4px;">[รูปภาพผู้ได้รับรางวัล]</span>
-              </div>
-              <div style="background:rgba(59,130,246,0.12);border:1px solid rgba(59,130,246,0.4);border-radius:12px;padding:10px 14px;text-align:center;width:100%;margin-top:14px;box-sizing:border-box;">
-                <div style="font-size:11px;color:#60a5fa;font-weight:700;letter-spacing:0.5px;">องค์ประกอบที่ ๑</div>
-                <div style="font-size:15px;font-weight:800;color:#ffffff;margin-top:2px;">ปีที่ได้รางวัล</div>
-                <div style="font-size:13px;color:#93c5fd;font-weight:700;margin-top:2px;">[ระบุ พ.ศ. / ค.ศ.]</div>
-              </div>
-            </div>
-            <div style="flex:1;min-width:0;">
-              <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap;">
-                <span style="background:rgba(59,130,246,0.18);color:#60a5fa;border:1px solid rgba(59,130,246,0.4);padding:4px 12px;border-radius:20px;font-size:12.5px;font-weight:700;">
-                  🏷️ สาขาที่ได้รางวัล: [ระบุสาขาโนเบล]
-                </span>
-                <span style="background:rgba(34,197,94,0.15);color:#4ade80;border:1px solid rgba(34,197,94,0.3);padding:4px 10px;border-radius:20px;font-size:11.5px;font-weight:600;">
-                  Template #๒
-                </span>
-              </div>
-              <div style="font-size:22px;font-weight:800;color:#ffffff;margin-bottom:12px;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#60a5fa;">[ระบุชื่อ-นามสกุล หรือชื่อองค์กรผู้ได้รับรางวัล]</span>
-              </div>
-              <div style="background:rgba(30,41,59,0.5);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:16px;margin-top:10px;font-size:14px;color:#cbd5e1;line-height:1.8;">
-                <strong style="color:#93c5fd;display:block;margin-bottom:6px;">📝 สรุปผลงานและเกียรติประวัติ (Description):</strong>
-                [พื้นที่สำหรับกรอกข้อมูลคำประกาศเกียรติคุณ สปีชรับรางวัล รายละเอียดงานวิจัย/นวัตกรรม หรือเหตุผลที่คณะกรรมการรางวัลโนเบลแถลงมอบรางวัล]
-              </div>
-            </div>
-          </div>
-
-          <!-- TEMPLATE ITEM 3 -->
-          <div style="background:rgba(15,23,42,0.85);border:2px solid rgba(250,204,21,0.35);border-radius:18px;padding:26px;display:flex;gap:26px;align-items:flex-start;box-shadow:0 8px 24px rgba(0,0,0,0.4);position:relative;overflow:hidden;">
-            <div style="position:absolute;top:0;left:0;width:6px;height:100%;background:linear-gradient(to bottom, #4ade80, #22c55e);"></div>
-            <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:240px;">
-              <div style="width:140px;height:140px;background:rgba(30,41,59,0.9);border:2px dashed rgba(74,222,128,0.5);border-radius:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,0.5);color:#4ade80;">
-                <span style="font-size:48px;">🎖️</span>
-                <span style="font-size:11px;color:var(--text-muted);margin-top:4px;">[รูปภาพผู้ได้รับรางวัล]</span>
-              </div>
-              <div style="background:rgba(34,197,94,0.12);border:1px solid rgba(34,197,94,0.4);border-radius:12px;padding:10px 14px;text-align:center;width:100%;margin-top:14px;box-sizing:border-box;">
-                <div style="font-size:11px;color:#4ade80;font-weight:700;letter-spacing:0.5px;">องค์ประกอบที่ ๑</div>
-                <div style="font-size:15px;font-weight:800;color:#ffffff;margin-top:2px;">ปีที่ได้รางวัล</div>
-                <div style="font-size:13px;color:#86efac;font-weight:700;margin-top:2px;">[ระบุ พ.ศ. / ค.ศ.]</div>
-              </div>
-            </div>
-            <div style="flex:1;min-width:0;">
-              <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap;">
-                <span style="background:rgba(59,130,246,0.18);color:#60a5fa;border:1px solid rgba(59,130,246,0.4);padding:4px 12px;border-radius:20px;font-size:12.5px;font-weight:700;">
-                  🏷️ สาขาที่ได้รางวัล: [ระบุสาขาโนเบล]
-                </span>
-                <span style="background:rgba(34,197,94,0.15);color:#4ade80;border:1px solid rgba(34,197,94,0.3);padding:4px 10px;border-radius:20px;font-size:11.5px;font-weight:600;">
-                  Template #๓
-                </span>
-              </div>
-              <div style="font-size:22px;font-weight:800;color:#ffffff;margin-bottom:12px;">
-                👤 ผู้ได้รับรางวัล: <span style="color:#4ade80;">[ระบุชื่อ-นามสกุล หรือชื่อองค์กรผู้ได้รับรางวัล]</span>
-              </div>
-              <div style="background:rgba(30,41,59,0.5);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:16px;margin-top:10px;font-size:14px;color:#cbd5e1;line-height:1.8;">
-                <strong style="color:#86efac;display:block;margin-bottom:6px;">📝 สรุปผลงานและเกียรติประวัติ (Description):</strong>
-                [พื้นที่สำหรับกรอกข้อมูลคำประกาศเกียรติคุณ สปีชรับรางวัล รายละเอียดงานวิจัย/นวัตกรรม หรือเหตุผลที่คณะกรรมการรางวัลโนเบลแถลงมอบรางวัล]
-              </div>
-            </div>
-          </div>
-
-        </div>
+        <!-- 391 Cards Grid Container -->
+<div class="nobel-card-grid">
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 1 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2445 (ค.ศ. 1902)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. วรมน พิพัฒนกุล และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 2 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2445 (ค.ศ. 1902)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 3 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2445 (ค.ศ. 1902)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. กานต์ มหาคุณ และสถาบันเทคโนโลยี มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 4 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2446 (ค.ศ. 1903)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 1)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นายแพทย์สยามวิชญ์ และคณะนักวิจัยเวชศาสตร์เขตร้อนแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการค้นพบกลไกการยับยั้งและสร้างภูมิคุ้มกันโรคไข้เลือดออกและโรคอุบัติใหม่ในเขตร้อนได้เป็นครั้งแรกของโลก ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4) สถาปนาราษฎรสวัสดิการสุขภาพถ้วนหน้าเป็นปฐมบทแห่งรางวัลโนเบลไทย</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 5 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2446 (ค.ศ. 1903)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. วรมน บวรธรรม และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 6 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2448 (ค.ศ. 1905)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 2)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ศิรินทร์ วณิชกุล และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 7 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2448 (ค.ศ. 1905)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 8 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2449 (ค.ศ. 1906)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 3)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. เมธาสิทธิ์ วงศ์สยาม และ มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 9 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2449 (ค.ศ. 1906)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ ธนานนท์ บวรธรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 10 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2450 (ค.ศ. 1907)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 4)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ศิรินทร์ เตชะอนันต์ และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 11 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2450 (ค.ศ. 1907)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ นลินี สิริปัญญา</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 12 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2451 (ค.ศ. 1908)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 5)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ชลธี ปัญญาวงศ์ และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 13 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2451 (ค.ศ. 1908)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. สยามวิชญ์ เจริญศิริ และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 14 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2452 (ค.ศ. 1909)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 6)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. กิตติกร วิชญางกูร และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 15 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2453 (ค.ศ. 1910)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 7)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ดนัย สิริปัญญา และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร (นายกฯ คนที่ 4)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 16 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2454 (ค.ศ. 1911)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 8)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ปานไพลิน พงษ์สยาม และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 17 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2454 (ค.ศ. 1911)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ภัทรพล พิพัฒนกุล และสถาบันเทคโนโลยี ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 18 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2455 (ค.ศ. 1912)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 9)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. อนันตชัย เจริญศิริ และ สถาบันวิจัยการแพทย์แผ่นดินไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 19 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2456 (ค.ศ. 1913)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. วรมน พงษ์สยาม และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 20 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2457 (ค.ศ. 1914)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. อัครเดช วณิชกุล และสถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 21 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2457 (ค.ศ. 1914)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการแพทย์แผ่นดินไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 22 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2457 (ค.ศ. 1914)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ ดนัย วงศ์สยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 23 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2458 (ค.ศ. 1915)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 10)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. นลินี โชติช่วง และ สถาบันวิจัยการแพทย์แผ่นดินไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 24 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2458 (ค.ศ. 1915)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. พงศธร พิพัฒนกุล และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 25 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2458 (ค.ศ. 1915)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ วรมน รัตนเสวี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 26 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2459 (ค.ศ. 1916)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 11)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. กิตติกร มหาคุณ และ ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 27 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2459 (ค.ศ. 1916)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ดนัย เตชะอนันต์ และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 28 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2459 (ค.ศ. 1916)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. พิชญะ เตชะอนันต์ และสถาบันเทคโนโลยี มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 29 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2460 (ค.ศ. 1917)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 12)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. กานต์ พงษ์สยาม และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 30 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2461 (ค.ศ. 1918)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. นลินี วณิชกุล และสถาบันเทคโนโลยี สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี สัญญา ธรรมศักดิ์ (นายกฯ คนที่ 5)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 31 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2462 (ค.ศ. 1919)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ชลธี รัตนเสวี และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 32 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2463 (ค.ศ. 1920)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 13)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ปานไพลิน เจริญศิริ และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 33 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2463 (ค.ศ. 1920)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. วรมน รัตนเสวี และสถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 34 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2463 (ค.ศ. 1920)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. พงศธร ปัญญาวงศ์ และสถาบันเทคโนโลยี ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 35 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2464 (ค.ศ. 1921)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 14)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. เมธาสิทธิ์ วิชญางกูร และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 36 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2464 (ค.ศ. 1921)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. อนันตชัย เจริญศิริ และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 37 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2466 (ค.ศ. 1923)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. นลินี เจริญศิริ และสถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 38 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2467 (ค.ศ. 1924)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ดนัย ชาญเวช และสถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 39 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2467 (ค.ศ. 1924)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. นลินี เจริญศิริ และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 40 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2469 (ค.ศ. 1926)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ อัครเดช วงศ์สยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี เสนีย์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 6)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 41 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2470 (ค.ศ. 1927)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. พงศธร สิริปัญญา และสถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 42 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2471 (ค.ศ. 1928)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 15)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. นลินี โชติช่วง และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 43 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2471 (ค.ศ. 1928)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. สยามวิชญ์ เตชะอนันต์ และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 44 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2471 (ค.ศ. 1928)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. กิตติกร รัตนเสวี และสถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 45 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2471 (ค.ศ. 1928)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ชัชวาลย์ สิริปัญญา และสถาบันเทคโนโลยี สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 46 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2473 (ค.ศ. 1930)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ สยามวิชญ์ เจริญศิริ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 47 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2474 (ค.ศ. 1931)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 16)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. สยามวิชญ์ เจริญศิริ และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 48 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2474 (ค.ศ. 1931)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ชลธี สิริปัญญา และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 49 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2474 (ค.ศ. 1931)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. วรมน ปัญญาวงศ์ และสถาบันเทคโนโลยี สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 50 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2475 (ค.ศ. 1932)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ กิตติกร บวรธรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 51 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2475 (ค.ศ. 1932)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ศิรินทร์ สิริปัญญา และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 52 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2475 (ค.ศ. 1932)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. ธีรภัทร ชาญเวช และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 53 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2475 (ค.ศ. 1932)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. ธนานนท์ เตชะอนันต์ และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 54 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2476 (ค.ศ. 1933)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 55 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2477 (ค.ศ. 1934)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ อัครเดช รัตนเสวี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี ควง อภัยวงศ์ (นายกฯ คนที่ 7)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 56 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2479 (ค.ศ. 1936)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 17)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. วรมน บวรธรรม และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 57 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2479 (ค.ศ. 1936)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. ธนานนท์ เจริญศิริ และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 58 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2480 (ค.ศ. 1937)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการแพทย์แผ่นดินไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 59 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2481 (ค.ศ. 1938)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 18)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ดนัย สิริปัญญา และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 60 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2481 (ค.ศ. 1938)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. วรมน มหาคุณ และสถาบันเทคโนโลยี มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 61 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2481 (ค.ศ. 1938)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. วรปรัชญ์ มหาคุณ และสถาบันเทคโนโลยี สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 62 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2482 (ค.ศ. 1939)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 19)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ธนานนท์ เตชะอนันต์ และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 63 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2483 (ค.ศ. 1940)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ธนานนท์ สิริปัญญา และสถาบันเทคโนโลยี มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 64 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2484 (ค.ศ. 1941)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. สยามวิชญ์ เจริญศิริ และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 65 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2484 (ค.ศ. 1941)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. เมธาสิทธิ์ ปัญญาวงศ์ และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 66 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2485 (ค.ศ. 1942)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. ชัชวาลย์ ปัญญาวงศ์ และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี คึกฤทธิ์ ปราโมช (ม.ร.ว.) (นายกฯ คนที่ 8)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 67 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2486 (ค.ศ. 1943)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 20)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. พงศธร ชาญเวช และ มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 68 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2486 (ค.ศ. 1943)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ ธนานนท์ เจริญศิริ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 69 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2487 (ค.ศ. 1944)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 21)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. พงศธร สิริปัญญา และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 70 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2487 (ค.ศ. 1944)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. สยามวิชญ์ วงศ์สยาม และสถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 71 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2487 (ค.ศ. 1944)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. เมธาสิทธิ์ วงศ์สยาม และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 72 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2488 (ค.ศ. 1945)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. อัครเดช พงษ์สยาม และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 73 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2488 (ค.ศ. 1945)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ศิรินทร์ พิพัฒนกุล และสถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 74 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2489 (ค.ศ. 1946)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 22)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. วรปรัชญ์ สิริปัญญา และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 75 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2490 (ค.ศ. 1947)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 23)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. พิชญะ โชติช่วง และ ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 76 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2490 (ค.ศ. 1947)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. พงศธร วงศ์สยาม และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 77 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2490 (ค.ศ. 1947)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ กิตติกร ปัญญาวงศ์</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 78 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2491 (ค.ศ. 1948)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 24)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. อนันตชัย มหาคุณ และ ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 79 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2491 (ค.ศ. 1948)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ปานไพลิน ปัญญาวงศ์ และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 80 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2492 (ค.ศ. 1949)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 25)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ปิยพงษ์ รัตนเสวี และ สถาบันวิจัยการแพทย์แผ่นดินไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 81 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2493 (ค.ศ. 1950)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 26)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. พงศธร มหาคุณ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 82 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2493 (ค.ศ. 1950)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. วรปรัชญ์ ชาญเวช และสถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 83 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2493 (ค.ศ. 1950)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี อานันท์ ปันยารชุน (นายกฯ คนที่ 9)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 84 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2494 (ค.ศ. 1951)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 27)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. สยามวิชญ์ บวรธรรม และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 85 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2494 (ค.ศ. 1951)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ภัทรพล วงศ์สยาม และสถาบันเทคโนโลยี สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 86 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2494 (ค.ศ. 1951)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. พิชญะ บวรธรรม และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 87 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2495 (ค.ศ. 1952)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 28)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. นลินี วณิชกุล และ มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 88 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2495 (ค.ศ. 1952)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ปิยพงษ์ มหาคุณ และสถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 89 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2496 (ค.ศ. 1953)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 29)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ชัชวาลย์ วณิชกุล และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 90 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2497 (ค.ศ. 1954)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 30)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. พิชญะ พิพัฒนกุล และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 91 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2497 (ค.ศ. 1954)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 92 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2497 (ค.ศ. 1954)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ชลธี วิชญางกูร และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 93 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2497 (ค.ศ. 1954)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 94 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2497 (ค.ศ. 1954)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. อนันตชัย พงษ์สยาม และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 95 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2498 (ค.ศ. 1955)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 31)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. เมธาสิทธิ์ วณิชกุล และ ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 96 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2499 (ค.ศ. 1956)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. ปิยพงษ์ ชาญเวช และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 97 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2500 (ค.ศ. 1957)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 32)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. อัครเดช บวรธรรม และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 98 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2501 (ค.ศ. 1958)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 33)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. พงศธร ชาญเวช และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ชวน หลีกภัย (นายกฯ คนที่ 10)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 99 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2502 (ค.ศ. 1959)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. สยามวิชญ์ รัตนเสวี และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: บรรหาร ศิลปอาชา (นายกฯ คนที่ 11)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี บรรหาร ศิลปอาชา (นายกฯ คนที่ 11)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 100 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2504 (ค.ศ. 1961)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. นลินี ปัญญาวงศ์ และสถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: บรรหาร ศิลปอาชา (นายกฯ คนที่ 11)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี บรรหาร ศิลปอาชา (นายกฯ คนที่ 11)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 101 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2504 (ค.ศ. 1961)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ชลธี เจริญศิริ และสถาบันเทคโนโลยี สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: บรรหาร ศิลปอาชา (นายกฯ คนที่ 11)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี บรรหาร ศิลปอาชา (นายกฯ คนที่ 11)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 102 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2505 (ค.ศ. 1962)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. พงศธร เจริญศิริ และสถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: บรรหาร ศิลปอาชา (นายกฯ คนที่ 11)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี บรรหาร ศิลปอาชา (นายกฯ คนที่ 11)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 103 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2506 (ค.ศ. 1963)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 34)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. พงศธร บวรธรรม และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: บรรหาร ศิลปอาชา (นายกฯ คนที่ 11)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี บรรหาร ศิลปอาชา (นายกฯ คนที่ 11)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 104 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2506 (ค.ศ. 1963)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. พงศธร วิชญางกูร และสถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: บรรหาร ศิลปอาชา (นายกฯ คนที่ 11)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี บรรหาร ศิลปอาชา (นายกฯ คนที่ 11)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 105 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2507 (ค.ศ. 1964)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: บรรหาร ศิลปอาชา (นายกฯ คนที่ 11)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี บรรหาร ศิลปอาชา (นายกฯ คนที่ 11)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 106 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2507 (ค.ศ. 1964)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: บรรหาร ศิลปอาชา (นายกฯ คนที่ 11)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี บรรหาร ศิลปอาชา (นายกฯ คนที่ 11)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 107 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2507 (ค.ศ. 1964)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. ปิยพงษ์ ปัญญาวงศ์ และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: บรรหาร ศิลปอาชา (นายกฯ คนที่ 11)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี บรรหาร ศิลปอาชา (นายกฯ คนที่ 11)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 108 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2508 (ค.ศ. 1965)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: บรรหาร ศิลปอาชา (นายกฯ คนที่ 11)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี บรรหาร ศิลปอาชา (นายกฯ คนที่ 11)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 109 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2509 (ค.ศ. 1966)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 35)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. กิตติกร พงษ์สยาม และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: บรรหาร ศิลปอาชา (นายกฯ คนที่ 11)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี บรรหาร ศิลปอาชา (นายกฯ คนที่ 11)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 110 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2509 (ค.ศ. 1966)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: บรรหาร ศิลปอาชา (นายกฯ คนที่ 11)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี บรรหาร ศิลปอาชา (นายกฯ คนที่ 11)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 111 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2510 (ค.ศ. 1967)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 36)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. นลินี มหาคุณ และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ชวลิต ยงใจยุทธ (พลเอก) (นายกฯ คนที่ 12)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ชวลิต ยงใจยุทธ (พลเอก) (นายกฯ คนที่ 12)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 112 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2510 (ค.ศ. 1967)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ ภัทรพล พิพัฒนกุล</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ชวลิต ยงใจยุทธ (พลเอก) (นายกฯ คนที่ 12)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี ชวลิต ยงใจยุทธ (พลเอก) (นายกฯ คนที่ 12)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 113 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2510 (ค.ศ. 1967)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ปานไพลิน เตชะอนันต์ และสถาบันเทคโนโลยี ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ชวลิต ยงใจยุทธ (พลเอก) (นายกฯ คนที่ 12)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ชวลิต ยงใจยุทธ (พลเอก) (นายกฯ คนที่ 12)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 114 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2511 (ค.ศ. 1968)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. อัครเดช พงษ์สยาม และสถาบันเทคโนโลยี ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ชวลิต ยงใจยุทธ (พลเอก) (นายกฯ คนที่ 12)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ชวลิต ยงใจยุทธ (พลเอก) (นายกฯ คนที่ 12)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 115 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2511 (ค.ศ. 1968)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. พิชญะ วิชญางกูร และสถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ชวลิต ยงใจยุทธ (พลเอก) (นายกฯ คนที่ 12)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ชวลิต ยงใจยุทธ (พลเอก) (นายกฯ คนที่ 12)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 116 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2513 (ค.ศ. 1970)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 37)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. พงศธร เตชะอนันต์ และ ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ชวลิต ยงใจยุทธ (พลเอก) (นายกฯ คนที่ 12)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ชวลิต ยงใจยุทธ (พลเอก) (นายกฯ คนที่ 12)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 117 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2514 (ค.ศ. 1971)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 38)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ธนานนท์ โชติช่วง และ มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ชวลิต ยงใจยุทธ (พลเอก) (นายกฯ คนที่ 12)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ชวลิต ยงใจยุทธ (พลเอก) (นายกฯ คนที่ 12)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 118 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2515 (ค.ศ. 1972)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 39)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ชัชวาลย์ สิริปัญญา และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ชวลิต ยงใจยุทธ (พลเอก) (นายกฯ คนที่ 12)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ชวลิต ยงใจยุทธ (พลเอก) (นายกฯ คนที่ 12)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 119 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2515 (ค.ศ. 1972)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ชวลิต ยงใจยุทธ (พลเอก) (นายกฯ คนที่ 12)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี ชวลิต ยงใจยุทธ (พลเอก) (นายกฯ คนที่ 12)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 120 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2516 (ค.ศ. 1973)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ปานไพลิน ชาญเวช และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ชวลิต ยงใจยุทธ (พลเอก) (นายกฯ คนที่ 12)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี ชวลิต ยงใจยุทธ (พลเอก) (นายกฯ คนที่ 12)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 121 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2516 (ค.ศ. 1973)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. พิชญะ พิพัฒนกุล และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ชวลิต ยงใจยุทธ (พลเอก) (นายกฯ คนที่ 12)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี ชวลิต ยงใจยุทธ (พลเอก) (นายกฯ คนที่ 12)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 122 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2517 (ค.ศ. 1974)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ชวลิต ยงใจยุทธ (พลเอก) (นายกฯ คนที่ 12)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี ชวลิต ยงใจยุทธ (พลเอก) (นายกฯ คนที่ 12)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 123 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2518 (ค.ศ. 1975)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 40)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. กานต์ เจริญศิริ และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 124 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2518 (ค.ศ. 1975)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 125 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2518 (ค.ศ. 1975)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ชลธี มหาคุณ และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 126 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2521 (ค.ศ. 1978)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. อนันตชัย สิริปัญญา และสถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 127 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2521 (ค.ศ. 1978)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 128 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2521 (ค.ศ. 1978)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 129 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2521 (ค.ศ. 1978)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ พงศธร วงศ์สยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 130 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2522 (ค.ศ. 1979)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 41)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ชลธี เตชะอนันต์ และ มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 131 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2522 (ค.ศ. 1979)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. พงศธร รัตนเสวี และสถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 132 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2524 (ค.ศ. 1981)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 42)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. อนันตชัย บวรธรรม และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 133 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2525 (ค.ศ. 1982)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. สยามวิชญ์ วงศ์สยาม และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระแรก) (นายกฯ คนที่ 13)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 134 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2526 (ค.ศ. 1983)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 135 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2526 (ค.ศ. 1983)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. ปานไพลิน เจริญศิริ และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 136 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2528 (ค.ศ. 1985)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 43)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. วรมน เตชะอนันต์ และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 137 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2528 (ค.ศ. 1985)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ธีรภัทร เจริญศิริ และสถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 138 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2528 (ค.ศ. 1985)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 139 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2528 (ค.ศ. 1985)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. นลินี เตชะอนันต์ และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 140 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2529 (ค.ศ. 1986)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 44)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ธีรภัทร มหาคุณ และ มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 141 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2529 (ค.ศ. 1986)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. กิตติกร เจริญศิริ และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 142 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2530 (ค.ศ. 1987)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ดนัย มหาคุณ และสถาบันเทคโนโลยี สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 143 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2531 (ค.ศ. 1988)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ธีรภัทร รัตนเสวี และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 144 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2532 (ค.ศ. 1989)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 45)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. สยามวิชญ์ ปัญญาวงศ์ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 145 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2532 (ค.ศ. 1989)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 146 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2533 (ค.ศ. 1990)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 46)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. สยามวิชญ์ พงษ์สยาม และ มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 147 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2533 (ค.ศ. 1990)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. อนันตชัย รัตนเสวี และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 148 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2533 (ค.ศ. 1990)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. เมธาสิทธิ์ สิริปัญญา และสถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 149 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2534 (ค.ศ. 1991)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. วรมน เตชะอนันต์ และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 150 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2534 (ค.ศ. 1991)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ ธนานนท์ มหาคุณ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 151 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2535 (ค.ศ. 1992)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 47)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ธีรภัทร พงษ์สยาม และ ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 152 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2535 (ค.ศ. 1992)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. ชัชวาลย์ ปัญญาวงศ์ และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 153 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2535 (ค.ศ. 1992)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. นลินี พิพัฒนกุล และสถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 154 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2536 (ค.ศ. 1993)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. กานต์ รัตนเสวี และสถาบันเทคโนโลยี สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 155 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2536 (ค.ศ. 1993)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 156 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2537 (ค.ศ. 1994)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. เมธาสิทธิ์ รัตนเสวี และสถาบันเทคโนโลยี สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 157 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2537 (ค.ศ. 1994)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ วรมน วิชญางกูร</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 158 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2537 (ค.ศ. 1994)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ ชลธี เจริญศิริ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 159 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2538 (ค.ศ. 1995)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 48)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ปิยพงษ์ บวรธรรม และ ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 160 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2538 (ค.ศ. 1995)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. เมธาสิทธิ์ ปัญญาวงศ์ และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 161 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2539 (ค.ศ. 1996)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 162 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2539 (ค.ศ. 1996)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ศิรินทร์ พิพัฒนกุล และสถาบันเทคโนโลยี สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 163 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2540 (ค.ศ. 1997)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. พิชญะ วงศ์สยาม และสถาบันเทคโนโลยี สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 164 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2541 (ค.ศ. 1998)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 165 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2541 (ค.ศ. 1998)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ กานต์ วิชญางกูร</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ (นายกฯ คนที่ 14)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 166 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2542 (ค.ศ. 1999)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. กานต์ โชติช่วง และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 167 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2542 (ค.ศ. 1999)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ วรมน พงษ์สยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 168 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2542 (ค.ศ. 1999)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ สยามวิชญ์ เตชะอนันต์</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 169 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2543 (ค.ศ. 2000)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 49)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ธนานนท์ บวรธรรม และ ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 170 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2543 (ค.ศ. 2000)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. ปานไพลิน ปัญญาวงศ์ และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 171 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2543 (ค.ศ. 2000)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. วรมน พงษ์สยาม และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 172 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2543 (ค.ศ. 2000)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ธีรภัทร สิริปัญญา และสถาบันเทคโนโลยี สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 173 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2544 (ค.ศ. 2001)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ชัชวาลย์ วงศ์สยาม และสถาบันเทคโนโลยี ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 174 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2544 (ค.ศ. 2001)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. ปานไพลิน วงศ์สยาม และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 175 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2545 (ค.ศ. 2002)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 50)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ชลธี พงษ์สยาม และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 176 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2545 (ค.ศ. 2002)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ ภัทรพล พิพัฒนกุล</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 177 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2546 (ค.ศ. 2003)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 51)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. เมธาสิทธิ์ วิชญางกูร และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 178 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2548 (ค.ศ. 2005)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ธนานนท์ พงษ์สยาม และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 179 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2548 (ค.ศ. 2005)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. ธีรภัทร พงษ์สยาม และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 180 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2549 (ค.ศ. 2006)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 52)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ชัชวาลย์ เตชะอนันต์ และ มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 181 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2549 (ค.ศ. 2006)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 182 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2549 (ค.ศ. 2006)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. กิตติกร วิชญางกูร และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 183 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2549 (ค.ศ. 2006)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 184 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2551 (ค.ศ. 2008)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 53)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. กิตติกร พิพัฒนกุล และ สถาบันวิจัยการแพทย์แผ่นดินไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 185 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2551 (ค.ศ. 2008)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ธนานนท์ วณิชกุล และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 186 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2551 (ค.ศ. 2008)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ดนัย โชติช่วง และสถาบันเทคโนโลยี สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 187 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2552 (ค.ศ. 2009)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. กิตติกร พิพัฒนกุล และสถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 188 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2552 (ค.ศ. 2009)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ อนันตชัย พงษ์สยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 189 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2553 (ค.ศ. 2010)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 54)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. นลินี เจริญศิริ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 190 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2553 (ค.ศ. 2010)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ ปิยพงษ์ ปัญญาวงศ์</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 191 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2554 (ค.ศ. 2011)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. อนันตชัย โชติช่วง และสถาบันเทคโนโลยี สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 192 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2555 (ค.ศ. 2012)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. กานต์ เตชะอนันต์ และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 193 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2555 (ค.ศ. 2012)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. ชัชวาลย์ มหาคุณ และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 194 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2555 (ค.ศ. 2012)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. นลินี วณิชกุล และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 195 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2556 (ค.ศ. 2013)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 55)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. อนันตชัย รัตนเสวี และ ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 196 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2556 (ค.ศ. 2013)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. กานต์ มหาคุณ และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 197 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2556 (ค.ศ. 2013)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. วรปรัชญ์ เตชะอนันต์ และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 198 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2557 (ค.ศ. 2014)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. กิตติกร วณิชกุล และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 199 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2557 (ค.ศ. 2014)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ วรปรัชญ์ เจริญศิริ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 200 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2557 (ค.ศ. 2014)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ สยามวิชญ์ รัตนเสวี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 201 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2557 (ค.ศ. 2014)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พีระพันธุ์ สาลีรัฐวิภาค (นายกฯ คนที่ 15)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 202 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2558 (ค.ศ. 2015)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ดนัย มหาคุณ และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ธนาธร จึงรุ่งเรืองกิจ (นายกฯ คนที่ 16)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี ธนาธร จึงรุ่งเรืองกิจ (นายกฯ คนที่ 16)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 203 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2559 (ค.ศ. 2016)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. พงศธร เตชะอนันต์ และสถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ธนาธร จึงรุ่งเรืองกิจ (นายกฯ คนที่ 16)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ธนาธร จึงรุ่งเรืองกิจ (นายกฯ คนที่ 16)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 204 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2559 (ค.ศ. 2016)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. อัครเดช พิพัฒนกุล และสถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ธนาธร จึงรุ่งเรืองกิจ (นายกฯ คนที่ 16)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ธนาธร จึงรุ่งเรืองกิจ (นายกฯ คนที่ 16)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 205 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2559 (ค.ศ. 2016)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. พิชญะ ชาญเวช และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ธนาธร จึงรุ่งเรืองกิจ (นายกฯ คนที่ 16)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี ธนาธร จึงรุ่งเรืองกิจ (นายกฯ คนที่ 16)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 206 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2559 (ค.ศ. 2016)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ ธนานนท์ ปัญญาวงศ์</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ธนาธร จึงรุ่งเรืองกิจ (นายกฯ คนที่ 16)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี ธนาธร จึงรุ่งเรืองกิจ (นายกฯ คนที่ 16)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 207 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2560 (ค.ศ. 2017)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ กานต์ โชติช่วง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ธนาธร จึงรุ่งเรืองกิจ (นายกฯ คนที่ 16)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี ธนาธร จึงรุ่งเรืองกิจ (นายกฯ คนที่ 16)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 208 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2561 (ค.ศ. 2018)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 56)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. กิตติกร เจริญศิริ และ ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 209 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2562 (ค.ศ. 2019)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 57)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. วรมน เจริญศิริ และ ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 210 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2563 (ค.ศ. 2020)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 58)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. นลินี ปัญญาวงศ์ และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 211 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2564 (ค.ศ. 2021)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 59)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ธีรภัทร พิพัฒนกุล และ สถาบันวิจัยการแพทย์แผ่นดินไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 212 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2565 (ค.ศ. 2022)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 60)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. พิชญะ พงษ์สยาม และ มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 213 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2565 (ค.ศ. 2022)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ พิชญะ เจริญศิริ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 214 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2566 (ค.ศ. 2023)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 61)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ชลธี พงษ์สยาม และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 215 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2566 (ค.ศ. 2023)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. เมธาสิทธิ์ วณิชกุล และสถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 216 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2567 (ค.ศ. 2024)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 62)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. กานต์ เจริญศิริ และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 217 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2567 (ค.ศ. 2024)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 218 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2567 (ค.ศ. 2024)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. ภัทรพล ชาญเวช และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 219 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2567 (ค.ศ. 2024)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ปานไพลิน พิพัฒนกุล และสถาบันเทคโนโลยี ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 220 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2567 (ค.ศ. 2024)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. ชลธี วิชญางกูร และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 221 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2568 (ค.ศ. 2025)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 63)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ธีรภัทร รัตนเสวี และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 222 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2570 (ค.ศ. 2027)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ชลธี วิชญางกูร และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 223 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2570 (ค.ศ. 2027)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. วรมน ชาญเวช และสถาบันเทคโนโลยี มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 224 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2570 (ค.ศ. 2027)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ เมธาสิทธิ์ ปัญญาวงศ์</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 225 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2571 (ค.ศ. 2028)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. ปิยพงษ์ พงษ์สยาม และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 226 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2572 (ค.ศ. 2029)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ชลธี ชาญเวช และสถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 227 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2573 (ค.ศ. 2030)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 64)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ปานไพลิน เจริญศิริ และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 228 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2573 (ค.ศ. 2030)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. ปิยพงษ์ ปัญญาวงศ์ และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 229 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2573 (ค.ศ. 2030)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. อนันตชัย ปัญญาวงศ์ และสถาบันเทคโนโลยี มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 230 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2573 (ค.ศ. 2030)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 231 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2574 (ค.ศ. 2031)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 65)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. พิชญะ วณิชกุล และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 232 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2574 (ค.ศ. 2031)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. นลินี เจริญศิริ และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 233 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2575 (ค.ศ. 2032)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ เมธาสิทธิ์ พิพัฒนกุล</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 234 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2576 (ค.ศ. 2033)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 66)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ปานไพลิน มหาคุณ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พิธา ลิ้มเจริญรัตน์ (นายกฯ คนที่ 17)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 235 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2577 (ค.ศ. 2034)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. วรปรัชญ์ สิริปัญญา และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 236 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2577 (ค.ศ. 2034)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. กิตติกร รัตนเสวี และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 237 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2578 (ค.ศ. 2035)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 67)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ชลธี พิพัฒนกุล และ สถาบันวิจัยการแพทย์แผ่นดินไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 238 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2578 (ค.ศ. 2035)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ปานไพลิน โชติช่วง และสถาบันเทคโนโลยี สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 239 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2580 (ค.ศ. 2037)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. สยามวิชญ์ วณิชกุล และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 240 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2580 (ค.ศ. 2037)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. อัครเดช พงษ์สยาม และสถาบันเทคโนโลยี สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 241 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2582 (ค.ศ. 2039)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 68)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. วรปรัชญ์ ปัญญาวงศ์ และ มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 242 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2582 (ค.ศ. 2039)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ธีรภัทร รัตนเสวี และสถาบันเทคโนโลยี สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 243 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2583 (ค.ศ. 2040)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 69)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ดนัย รัตนเสวี และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 244 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2583 (ค.ศ. 2040)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ กานต์ เจริญศิริ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 245 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2583 (ค.ศ. 2040)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 246 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2584 (ค.ศ. 2041)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. กานต์ วณิชกุล และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 247 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2584 (ค.ศ. 2041)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. กานต์ พงษ์สยาม และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 248 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2584 (ค.ศ. 2041)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ กานต์ วงศ์สยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 249 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2585 (ค.ศ. 2042)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 70)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. สยามวิชญ์ เตชะอนันต์ และ สถาบันวิจัยการแพทย์แผ่นดินไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 250 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2585 (ค.ศ. 2042)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ธีรภัทร สิริปัญญา และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 251 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2585 (ค.ศ. 2042)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ชัชวาลย์ เจริญศิริ และสถาบันเทคโนโลยี ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 252 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2586 (ค.ศ. 2043)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 71)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ภัทรพล วิชญางกูร และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 253 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2586 (ค.ศ. 2043)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. เมธาสิทธิ์ ชาญเวช และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 254 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2587 (ค.ศ. 2044)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 72)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. วรมน โชติช่วง และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 255 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2587 (ค.ศ. 2044)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 256 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2587 (ค.ศ. 2044)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 257 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2588 (ค.ศ. 2045)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ กานต์ ชาญเวช</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 258 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2589 (ค.ศ. 2046)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 73)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. วรมน สิริปัญญา และ สถาบันวิจัยการแพทย์แผ่นดินไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 259 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2589 (ค.ศ. 2046)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. ชัชวาลย์ มหาคุณ และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 260 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2589 (ค.ศ. 2046)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ดนัย ชาญเวช และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 261 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2590 (ค.ศ. 2047)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 74)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. วรมน วิชญางกูร และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 262 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2590 (ค.ศ. 2047)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ชัชวาลย์ เตชะอนันต์ และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 263 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2591 (ค.ศ. 2048)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 75)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ดนัย รัตนเสวี และ สถาบันวิจัยการแพทย์แผ่นดินไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 264 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2591 (ค.ศ. 2048)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ดนัย พิพัฒนกุล และสถาบันเทคโนโลยี ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 265 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2592 (ค.ศ. 2049)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 76)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ชลธี รัตนเสวี และ มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 266 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2592 (ค.ศ. 2049)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. ภัทรพล สิริปัญญา และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 267 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2592 (ค.ศ. 2049)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. กิตติกร วงศ์สยาม และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 268 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2592 (ค.ศ. 2049)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี ศิริกัญญา ตันสกุล (นายกฯ คนที่ 18)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 269 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2593 (ค.ศ. 2050)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 77)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ธีรภัทร โชติช่วง และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 270 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2593 (ค.ศ. 2050)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 271 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2593 (ค.ศ. 2050)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 272 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2594 (ค.ศ. 2051)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ธนานนท์ พงษ์สยาม และสถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 273 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2594 (ค.ศ. 2051)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. พงศธร สิริปัญญา และสถาบันเทคโนโลยี สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 274 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2595 (ค.ศ. 2052)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 78)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. สยามวิชญ์ พิพัฒนกุล และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 275 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2595 (ค.ศ. 2052)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 276 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2595 (ค.ศ. 2052)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 277 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2596 (ค.ศ. 2053)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. นลินี วงศ์สยาม และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี ณัฐพงษ์ เรืองปัญญาวุฒิ (นายกฯ คนที่ 19)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 278 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2597 (ค.ศ. 2054)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 79)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. พิชญะ โชติช่วง และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 279 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2597 (ค.ศ. 2054)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 280 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2597 (ค.ศ. 2054)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 281 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2598 (ค.ศ. 2055)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 80)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ชลธี วณิชกุล และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 282 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2598 (ค.ศ. 2055)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. อนันตชัย โชติช่วง และสถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 283 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2598 (ค.ศ. 2055)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. นลินี เจริญศิริ และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 284 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2598 (ค.ศ. 2055)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. นลินี พงษ์สยาม และสถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 285 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2599 (ค.ศ. 2056)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 81)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ธีรภัทร เตชะอนันต์ และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 286 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2600 (ค.ศ. 2057)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 287 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2601 (ค.ศ. 2058)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 82)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. วรมน สิริปัญญา และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 288 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2601 (ค.ศ. 2058)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. สยามวิชญ์ พงษ์สยาม และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 289 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2602 (ค.ศ. 2059)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ ภัทรพล บวรธรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 290 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2603 (ค.ศ. 2060)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 83)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ศิรินทร์ วิชญางกูร และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 291 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2603 (ค.ศ. 2060)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. อัครเดช วณิชกุล และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 292 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2603 (ค.ศ. 2060)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. สยามวิชญ์ โชติช่วง และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 293 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2603 (ค.ศ. 2060)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ดนัย วิชญางกูร และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 294 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2605 (ค.ศ. 2062)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 84)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. กิตติกร วิชญางกูร และ มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 295 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2606 (ค.ศ. 2063)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 85)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ศิรินทร์ มหาคุณ และ มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 296 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2606 (ค.ศ. 2063)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. กานต์ สิริปัญญา และสถาบันเทคโนโลยี ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 297 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2607 (ค.ศ. 2064)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 86)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. กานต์ มหาคุณ และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 298 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2607 (ค.ศ. 2064)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 299 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2607 (ค.ศ. 2064)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. ปานไพลิน วิชญางกูร และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 300 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2609 (ค.ศ. 2066)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. อัครเดช พงษ์สยาม และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 301 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2609 (ค.ศ. 2066)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. เมธาสิทธิ์ เจริญศิริ และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 302 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2610 (ค.ศ. 2067)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 87)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. อนันตชัย วิชญางกูร และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 303 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2610 (ค.ศ. 2067)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. พงศธร รัตนเสวี และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 304 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2610 (ค.ศ. 2067)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ปานไพลิน วิชญางกูร และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 305 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2612 (ค.ศ. 2069)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. สยามวิชญ์ สิริปัญญา และสถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 306 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2612 (ค.ศ. 2069)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 307 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2612 (ค.ศ. 2069)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ศิรินทร์ บวรธรรม และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี พริษฐ์ วัชรสินธุ (ไอติม) (นายกฯ คนที่ 20)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 308 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2615 (ค.ศ. 2072)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. อนันตชัย รัตนเสวี และสถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 309 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2616 (ค.ศ. 2073)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 88)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. พิชญะ พงษ์สยาม และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 310 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2616 (ค.ศ. 2073)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. วรมน โชติช่วง และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 311 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2617 (ค.ศ. 2074)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 89)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. อัครเดช พิพัฒนกุล และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 312 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2618 (ค.ศ. 2075)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ ภัทรพล มหาคุณ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 313 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2618 (ค.ศ. 2075)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. เมธาสิทธิ์ พิพัฒนกุล และสถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 314 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2619 (ค.ศ. 2076)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 90)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ชัชวาลย์ ชาญเวช และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 315 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2619 (ค.ศ. 2076)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ปิยพงษ์ วิชญางกูร และสถาบันเทคโนโลยี มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 316 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2619 (ค.ศ. 2076)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 317 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2620 (ค.ศ. 2077)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ อัครเดช วณิชกุล</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 318 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2621 (ค.ศ. 2078)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 91)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ภัทรพล พิพัฒนกุล และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 319 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2621 (ค.ศ. 2078)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. อัครเดช สิริปัญญา และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 320 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2623 (ค.ศ. 2080)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ชัชวาลย์ สิริปัญญา และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 321 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2623 (ค.ศ. 2080)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. สยามวิชญ์ เตชะอนันต์ และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 322 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2625 (ค.ศ. 2082)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 92)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. เมธาสิทธิ์ โชติช่วง และ ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 323 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2625 (ค.ศ. 2082)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ พงศธร มหาคุณ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 324 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2625 (ค.ศ. 2082)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ ดนัย บวรธรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 325 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2626 (ค.ศ. 2083)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 93)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. อนันตชัย เตชะอนันต์ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 326 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2626 (ค.ศ. 2083)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ศิรินทร์ ปัญญาวงศ์ และสถาบันเทคโนโลยี ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 327 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2626 (ค.ศ. 2083)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. กิตติกร โชติช่วง และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 328 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2627 (ค.ศ. 2084)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 94)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. อัครเดช รัตนเสวี และ มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 329 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2627 (ค.ศ. 2084)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. พิชญะ โชติช่วง และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 330 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2629 (ค.ศ. 2086)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. กานต์ มหาคุณ และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 331 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2629 (ค.ศ. 2086)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. กานต์ วิชญางกูร และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 332 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2630 (ค.ศ. 2087)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. สยามวิชญ์ วิชญางกูร และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี รักชนก ศรีนอก (นายกฯ คนที่ 22)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 333 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2631 (ค.ศ. 2088)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ พิชญะ พิพัฒนกุล</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: นภดนัย ชาญวีรกูล (วาระแรก) (นายกฯ คนที่ 23)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี นภดนัย ชาญวีรกูล (วาระแรก) (นายกฯ คนที่ 23)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 334 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2631 (ค.ศ. 2088)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. กิตติกร โชติช่วง และสถาบันเทคโนโลยี สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: นภดนัย ชาญวีรกูล (วาระแรก) (นายกฯ คนที่ 23)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี นภดนัย ชาญวีรกูล (วาระแรก) (นายกฯ คนที่ 23)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 335 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2632 (ค.ศ. 2089)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 95)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. พงศธร สิริปัญญา และ มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: นภดนัย ชาญวีรกูล (วาระแรก) (นายกฯ คนที่ 23)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี นภดนัย ชาญวีรกูล (วาระแรก) (นายกฯ คนที่ 23)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 336 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2633 (ค.ศ. 2090)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการแพทย์แผ่นดินไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: นภดนัย ชาญวีรกูล (วาระแรก) (นายกฯ คนที่ 23)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี นภดนัย ชาญวีรกูล (วาระแรก) (นายกฯ คนที่ 23)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 337 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2633 (ค.ศ. 2090)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการแพทย์แผ่นดินไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: นภดนัย ชาญวีรกูล (วาระแรก) (นายกฯ คนที่ 23)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี นภดนัย ชาญวีรกูล (วาระแรก) (นายกฯ คนที่ 23)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 338 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2633 (ค.ศ. 2090)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. อัครเดช สิริปัญญา และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: นภดนัย ชาญวีรกูล (วาระแรก) (นายกฯ คนที่ 23)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี นภดนัย ชาญวีรกูล (วาระแรก) (นายกฯ คนที่ 23)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 339 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2633 (ค.ศ. 2090)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ ภัทรพล วณิชกุล</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: นภดนัย ชาญวีรกูล (วาระแรก) (นายกฯ คนที่ 23)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี นภดนัย ชาญวีรกูล (วาระแรก) (นายกฯ คนที่ 23)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 340 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2634 (ค.ศ. 2091)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการแพทย์แผ่นดินไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: นภดนัย ชาญวีรกูล (วาระแรก) (นายกฯ คนที่ 23)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี นภดนัย ชาญวีรกูล (วาระแรก) (นายกฯ คนที่ 23)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 341 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2634 (ค.ศ. 2091)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ธนานนท์ รัตนเสวี และสถาบันเทคโนโลยี ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: นภดนัย ชาญวีรกูล (วาระแรก) (นายกฯ คนที่ 23)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี นภดนัย ชาญวีรกูล (วาระแรก) (นายกฯ คนที่ 23)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 342 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2635 (ค.ศ. 2092)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 96)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ชลธี วิชญางกูร และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: นภดนัย ชาญวีรกูล (วาระแรก) (นายกฯ คนที่ 23)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี นภดนัย ชาญวีรกูล (วาระแรก) (นายกฯ คนที่ 23)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 343 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2635 (ค.ศ. 2092)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. วรปรัชญ์ รัตนเสวี และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: นภดนัย ชาญวีรกูล (วาระแรก) (นายกฯ คนที่ 23)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี นภดนัย ชาญวีรกูล (วาระแรก) (นายกฯ คนที่ 23)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 344 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2637 (ค.ศ. 2094)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ภัทรพล สิริปัญญา และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อนุเจริญ ชาญวีรกูล (วาระแรก) (นายกฯ คนที่ 24)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี อนุเจริญ ชาญวีรกูล (วาระแรก) (นายกฯ คนที่ 24)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 345 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2637 (ค.ศ. 2094)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อนุเจริญ ชาญวีรกูล (วาระแรก) (นายกฯ คนที่ 24)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี อนุเจริญ ชาญวีรกูล (วาระแรก) (นายกฯ คนที่ 24)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 346 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2639 (ค.ศ. 2096)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ วรปรัชญ์ ปัญญาวงศ์</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 347 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2640 (ค.ศ. 2097)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. กานต์ มหาคุณ และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 348 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2640 (ค.ศ. 2097)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ชัชวาลย์ ชาญเวช และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 349 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2641 (ค.ศ. 2098)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. อัครเดช เตชะอนันต์ และสถาบันเทคโนโลยี สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 350 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2641 (ค.ศ. 2098)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 351 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2641 (ค.ศ. 2098)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ปานไพลิน มหาคุณ และสถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 352 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2642 (ค.ศ. 2099)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 97)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. กานต์ เจริญศิริ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 353 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2642 (ค.ศ. 2099)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ธีรภัทร เจริญศิริ และสถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 354 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2643 (ค.ศ. 2100)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. อนันตชัย เจริญศิริ และสถาบันเทคโนโลยี สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 355 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2643 (ค.ศ. 2100)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ปานไพลิน รัตนเสวี และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 356 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2645 (ค.ศ. 2102)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 98)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. กิตติกร วณิชกุล และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 357 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2645 (ค.ศ. 2102)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 358 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2645 (ค.ศ. 2102)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. อนันตชัย บวรธรรม และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 359 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2645 (ค.ศ. 2102)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ นลินี เจริญศิริ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 360 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2645 (ค.ศ. 2102)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. วรปรัชญ์ พงษ์สยาม และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 361 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2646 (ค.ศ. 2103)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. ธีรภัทร บวรธรรม และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 362 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2648 (ค.ศ. 2105)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ ดนัย พิพัฒนกุล</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 363 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2650 (ค.ศ. 2107)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 99)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ปานไพลิน วิชญางกูร และ มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 364 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2651 (ค.ศ. 2108)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 100)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. เมธาสิทธิ์ สิริปัญญา และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี วิโรจน์ ลักขณาดิศร (นายกฯ คนที่ 25)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 365 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2654 (ค.ศ. 2111)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. วรปรัชญ์ รัตนเสวี และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: นภดนัย ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 26)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี นภดนัย ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 26)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 366 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2655 (ค.ศ. 2112)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 101)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. พิชญะ ปัญญาวงศ์ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: นภดนัย ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 26)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี นภดนัย ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 26)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 367 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2655 (ค.ศ. 2112)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ดนัย เตชะอนันต์ และสถาบันเทคโนโลยี สถาบันปัญญาประดิษฐ์สยาม (ParadoxAI Lab)</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: นภดนัย ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 26)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี นภดนัย ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 26)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 368 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2656 (ค.ศ. 2113)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการแพทย์แผ่นดินไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: นภดนัย ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 26)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี นภดนัย ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 26)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 369 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2657 (ค.ศ. 2114)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 102)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. นลินี สิริปัญญา และ สถาบันวิจัยการแพทย์แผ่นดินไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: นภดนัย ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 26)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี นภดนัย ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 26)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 370 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2657 (ค.ศ. 2114)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ธนานนท์ วิชญางกูร และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: นภดนัย ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 26)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี นภดนัย ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 26)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 371 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2658 (ค.ศ. 2115)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อนุเจริญ ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 27)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี อนุเจริญ ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 27)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 372 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2659 (ค.ศ. 2116)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อนุเจริญ ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 27)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี อนุเจริญ ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 27)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 373 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2660 (ค.ศ. 2117)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 103)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. พิชญะ มหาคุณ และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อนุเจริญ ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 27)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี อนุเจริญ ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 27)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 374 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2660 (ค.ศ. 2117)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. วรมน ชาญเวช และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อนุเจริญ ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 27)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี อนุเจริญ ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 27)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 375 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2662 (ค.ศ. 2119)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. กิตติกร ปัญญาวงศ์ และสถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อนุเจริญ ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 27)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี อนุเจริญ ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 27)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 376 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2664 (ค.ศ. 2121)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 104)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ดนัย ชาญเวช และ สถาบันวิจัยการคลังและเศรษฐกิจแผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อนุเจริญ ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 27)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี อนุเจริญ ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 27)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 377 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2664 (ค.ศ. 2121)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ธีรภัทร สิริปัญญา และสถาบันเทคโนโลยี สถาบันวิจัยการแพทย์แผ่นดินไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อนุเจริญ ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 27)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี อนุเจริญ ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 27)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 378 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2665 (ค.ศ. 2122)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 105)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ภัทรพล โชติช่วง และ ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อนุเจริญ ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 27)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี อนุเจริญ ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 27)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 379 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2665 (ค.ศ. 2122)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เศรษฐศาสตร์และการคลังแผ่นดิน</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร. ธีรภัทร สิริปัญญา และคณะเศรษฐศาสตร์แผ่นดิน</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อนุเจริญ ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 27)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นแบบจำลองวินัยการเงินการคลัง การกระจายอำนาจงบประมาณท้องถิ่น และระบบเศรษฐกิจเพื่อความเท่าเทียม ในรัชสมัยนายกรัฐมนตรี อนุเจริญ ชาญวีรกูล (วาระสอง) (นายกฯ คนที่ 27)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 380 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2666 (ค.ศ. 2123)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 106)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. อัครเดช สิริปัญญา และ ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 381 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2666 (ค.ศ. 2123)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. กานต์ วิชญางกูร และสถาบันเทคโนโลยี มูลนิธิสันติภาพแหลมทอง</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 382 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2668 (ค.ศ. 2125)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 107)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. ชลธี วิชญางกูร และ สถาบันวิจัยการแพทย์แผ่นดินไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 383 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2668 (ค.ศ. 2125)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ดนัย ปัญญาวงศ์ และสถาบันเทคโนโลยี สมาคมวรรณกรรมและมนุษยวิทยาแห่งสยาม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 384 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2668 (ค.ศ. 2125)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: สันติภาพสากล</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: คณะกรรมการเจรจาสันติภาพ และ สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการเจรจาสันติภาพสากล ยุติความขัดแย้งผ่านองค์กร SEATO, GOC และสนธิสัญญาคลองไทยไมตรี ๒.๐ ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 385 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2669 (ค.ศ. 2126)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. กานต์ เตชะอนันต์ และสถาบันเทคโนโลยี ศูนย์นวัตกรรมคลองไทยไมตรี</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 386 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2670 (ค.ศ. 2127)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 108)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.นพ. สยามวิชญ์ รัตนเสวี และ ศูนย์วิจัยวิทยาศาสตร์และเทคโนโลยีแห่งชาติ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการวิจัยและค้นพบการรักษาระดับระดับโมเลกุล นวัตกรรมยารักษาโรค ยกระดับวงการแพทย์ไทยสู่สากล ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 387 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2670 (ค.ศ. 2127)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. วรปรัชญ์ พิพัฒนกุล และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 388 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2670 (ค.ศ. 2127)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: ฟิสิกส์และสถาปัตยกรรมเทคโนโลยี</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. ชัชวาลย์ วณิชกุล และสถาบันเทคโนโลยี สถาบันชีววิทยานวัตกรรมแห่งประเทศไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการพัฒนาทฤษฎีประมวลผลเชิงควอนตัมและระบบ ParadoxAI / ThaiJavis 2.0 สถาปัตยกรรมปัญญาประดิษฐ์เพื่อการบริหารแผ่นดิน ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 389 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2671 (ค.ศ. 2128)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: เคมีและวัสดุศาสตร์นวัตกรรม</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ดร. กานต์ วงศ์สยาม และศูนย์วัสดุนวัตกรรม</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นวัสดุตัวนำยิ่งยวดและเทคโนโลยีรีไซเคิลพลังงานสะอาด ๑๐๐% ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 390 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2671 (ค.ศ. 2128)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: วรรณกรรมและมนุษยวิทยา</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: มหาปราชญ์ กานต์ เจริญศิริ</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับบทกวีและมหากาพย์วรรณกรรมที่สะท้อนอุดมการณ์เสรีภาพ ประชาธิปไตย และมนุษยธรรมในมหาอำนาจสยาม ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)</div>
+    </div>
+<div class="nobel-card">
+      <div class="nobel-header">
+        <span class="nobel-no">ลำดับที่ 391 / ๓๙๑</span>
+        <span class="nobel-year">พ.ศ. 2672 (ค.ศ. 2129)</span>
+      </div>
+      <div class="nobel-category">🏷️ สาขา: การแพทย์และสรีรวิทยา 🩺 (รางวัลทางการแพทย์ชิ้นที่ 109)</div>
+      <div class="nobel-laureate">👤 ผู้ได้รับรางวัล: ศ.ดร.ญ. ปานไพลิน ชาญเวช และสถาบันชีววิทยานวัตกรรมแผ่นดินไทย</div>
+      <div class="nobel-pm">🏛️ ยุคสมัยนายกรัฐมนตรี: อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28)</div>
+      <div class="nobel-desc">📝 คำประกาศเกียรติคุณ: สำหรับการคิดค้นนวัตกรรมการสังเคราะห์วัคซีนความไวสูง (mRNA-Quantum Nano Vaccine) ที่สังเคราะห์และกระจายฉีดสู้ไวรัสกลายพันธุ์ทั่วโลกได้ภายใน ๗๒ ชั่วโมง ในรัชสมัยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ (วาระสอง) (นายกฯ คนที่ 28) ยุคตรวจสุขภาพถ้วนหน้า ๗๑%</div>
+    </div>
+</div>
       </div>
     </div>
 
-    <!-- Tab 10: บุคคลสำคัญ -->
+<!-- Tab 10: บุคคลสำคัญ -->
 
 
     <div id="figures-tab" class="db-tab-content">
