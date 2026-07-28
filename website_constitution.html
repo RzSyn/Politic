@@ -22862,15 +22862,20 @@ svg.leaflet-image-layer.leaflet-interactive path {
               // Randomize next interval: 12-35 frames (0.2s-0.58s)
               tslTickInterval = 12 + Math.floor(Math.random() * 24);
               var last = liveData[liveData.length - 1];
-              // Regime volatility: mild near 92, spike occasionally
+              // Regime volatility: base ±8, with 20% chance of large spike ±25
               var regime = Math.random();
-              var spike = regime > 0.85 ? (Math.random() - 0.5) * 16 : 0; // 15% chance of spike
-              var baseNoise = (Math.random() - 0.5) * 8;  // ±4 base
-              var pull = (92 - last) * 0.04;              // weak gravity toward 92
-              tslMomentum = tslMomentum * 0.6 + (baseNoise + spike) * 0.4;
+              var spike = regime > 0.80 ? (Math.random() - 0.4) * 50 : 0; // 20% spike (biased slightly up)
+              var baseNoise = (Math.random() - 0.48) * 16;  // ±8 base, slight upward bias
+              // Gravity: pull back toward center (130) only when far from it
+              var center = 130;
+              var pull = (center - last) * 0.02;
+              tslMomentum = tslMomentum * 0.65 + (baseNoise + spike) * 0.35;
               var newVal = last + tslMomentum + pull;
-              // Clamp: currency unstable but within plausible recovery range
-              newVal = Math.max(80, Math.min(110, newVal));
+              // Clamp strictly 92–169 (unstable but within lore range)
+              newVal = Math.max(92, Math.min(169, newVal));
+              // Bounce off walls to avoid sticking
+              if (newVal <= 92.5) tslMomentum = Math.abs(tslMomentum) * 0.8;
+              if (newVal >= 168.5) tslMomentum = -Math.abs(tslMomentum) * 0.8;
               lastPrice = last;
               liveData.push(newVal);
               if (liveData.length > 1000) liveData.shift();
