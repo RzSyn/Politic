@@ -12,3 +12,8 @@ Thumbs.db
 
 # Test/Temporary files
 test.pdf
+scratch/
+.tempmediaStorage/
+*.py
+!.git*
+!Genarate/generate_website.py
