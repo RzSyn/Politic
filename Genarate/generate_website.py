@@ -20880,43 +20880,39 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             return x - Math.floor(x);
           }}
 
-          // Generate realistic TSL/THB historical data
-          // THB→TSL rate: higher = stronger baht (more TSL per 1 THB)
+          // Generate realistic TSL/THB historical data using random walk + phase targets
           // Timeline: 2565→2573 BE (2022→2030 CE)
           function buildData() {{
             var pts = [];
-            var totalPts = 800;
+            var totalPts = 1000;
+            // [start_t, end_t, start_rate, end_rate, volatility]
+            var phases = [
+              [0.00, 0.08,   92,  92,  4],
+              [0.08, 0.18,   92, 280,  20],
+              [0.18, 0.35,  280,  92,  22],
+              [0.35, 0.50,   92,  92,   5],
+              [0.50, 0.58,   92, 322,  28],
+              [0.58, 0.66,  322, 322,  30],
+              [0.66, 0.78,  322,  92,  24],
+              [0.78, 1.00,   92,  92,   4],
+            ];
+            var prevRate = 92;
             for (var i = 0; i < totalPts; i++) {{
-              var t = i / totalPts; // 0..1 represents 2565..2573
-              var rate;
-              var noise = (seededRand(i*7.3) - 0.5) * 6;
-
-              if (t < 0.10) {{
-                // 2565: Foundation era, 1→280 TSL/THB climbing fast
-                rate = 1 + t/0.10 * 180 + noise;
-              }} else if (t < 0.30) {{
-                // Settling towards 92 TSL/THB (note: 280 was peak early, 92 is "stable high")
-                // Actually per lore: 280 was early, 92 is the later stable
-                // So rate drops from 280 to 92 as economy normalizes
-                rate = 280 - (t - 0.10)/0.20 * 188 + noise * 2;
-              }} else if (t < 0.50) {{
-                // 2567 Pita era: stable at ~92 TSL/THB
-                rate = 92 + noise * 1.5;
-              }} else if (t < 0.60) {{
-                // 2572: Start of Dexibola, rate climbs rapidly (THB vs TSL ratio rises)
-                rate = 92 + (t - 0.50)/0.10 * 230 + noise * 3;
-              }} else if (t < 0.65) {{
-                // Peak crisis: 322 TSL/THB
-                rate = 322 + (seededRand(i*3.1) - 0.5) * 20;
-              }} else if (t < 0.75) {{
-                // Recovery: dropping back from 322 towards 92
-                rate = 322 - (t - 0.65)/0.10 * 230 + noise * 3;
-              }} else {{
-                // 2573+ Post-crisis stable at 92 TSL/THB
-                rate = 92 + noise * 1.2;
+              var t = i / (totalPts - 1);
+              var ph = phases[phases.length - 1];
+              for (var p = 0; p < phases.length; p++) {{
+                if (t >= phases[p][0] && t <= phases[p][1]) {{ ph = phases[p]; break; }}
               }}
-
-              pts.push(Math.max(1, rate));
+              var pLen = ph[1] - ph[0];
+              var pProgress = pLen > 0 ? (t - ph[0]) / pLen : 1;
+              var target = ph[2] + (ph[3] - ph[2]) * pProgress;
+              var r = Math.sin(i * 7.3 + 1) * 10000; r -= Math.floor(r);
+              var r2 = Math.sin(i * 13.7 + 5) * 10000; r2 -= Math.floor(r2);
+              var noise = (r - 0.5) * ph[4] * 2 + (r2 - 0.5) * ph[4] * 0.5;
+              var pull = (target - prevRate) * 0.16;
+              prevRate = prevRate + pull + noise;
+              prevRate = Math.max(1, prevRate);
+              pts.push(prevRate);
             }}
             return pts;
           }}
