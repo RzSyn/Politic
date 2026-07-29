@@ -15658,8 +15658,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
 
                 
-<div </div>
-id="geopolitics-tab" class="db-tab-content">
+</div>
+<div id="geopolitics-tab" class="db-tab-content">
       <style scoped>
         #geopolitics-tab {{
           padding: 10px 0;
