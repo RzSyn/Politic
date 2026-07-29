@@ -1625,6 +1625,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
 
       target.classList.add('active');
+      target.style.display = 'block';
 
 
     }}
