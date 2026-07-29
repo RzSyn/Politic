@@ -15657,7 +15657,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
     <!-- Tab 9: ภูมิรัฐศาสตร์โลก -->
 
 
-                <div </div>
+                
 id="geopolitics-tab" class="db-tab-content">
       <style scoped>
         #geopolitics-tab {{
