@@ -15657,7 +15657,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
     <!-- Tab 9: ภูมิรัฐศาสตร์โลก -->
 
 
-                <div id="geopolitics-tab" class="db-tab-content">
+                <div </div>
+id="geopolitics-tab" class="db-tab-content">
       <style scoped>
         #geopolitics-tab {{
           padding: 10px 0;
@@ -17211,7 +17212,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           </div>
         </div>
       </div>
-    </div>
+    
 
     <div id="dexibola-virus-tab" class="db-tab-content">
       <div style="text-align:left;">
@@ -34308,6 +34309,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
       </div>
     </div>
 
+
+
 <!-- Tab 10: บุคคลสำคัญ -->
 
 
@@ -37060,6 +37063,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
 
     </div>
+
+
 
 
     <!-- Tab 11: บุคคลสำคัญ ทรชน -->
@@ -40312,7 +40317,11 @@ function signPetition() {{
 </body>
 
 
+</div>
+</div>
+</div>
 </html>'''
+
 
 
 with open(output_html_path, 'w', encoding='utf-8') as f:
