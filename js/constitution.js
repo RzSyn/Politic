@@ -6,7 +6,7 @@ function closeSidebar() {
   document.getElementById('sidebar').classList.remove('open');
 }
 
-// Switch Tab in Dashboard (Bulletproof Implementation)
+// Switch Tab in Dashboard (Premium Animation - No Scroll Warp)
 function switchTab(tabId, btn) {
   const card = btn ? (btn.closest ? btn.closest('.dashboard-card') : document.querySelector('.dashboard-card')) : document.querySelector('.dashboard-card');
   const tabs = document.querySelectorAll('.db-tab-btn');
@@ -17,19 +17,20 @@ function switchTab(tabId, btn) {
     t.classList.remove('active'); 
   });
   
-  // 2. Strictly collapse and hide all inactive tab contents completely
+  // 2. Collapse and hide all inactive tab contents
   contents.forEach(function(c) { 
     c.classList.remove('active');
     c.style.setProperty('display', 'none', 'important');
     c.style.setProperty('visibility', 'hidden', 'important');
     c.style.setProperty('height', '0', 'important');
     c.style.setProperty('overflow', 'hidden', 'important');
+    c.style.setProperty('animation', 'none', 'important');
   });
   
   // 3. Highlight clicked button
   if (btn) btn.classList.add('active');
   
-  // 4. Activate and expand target tab
+  // 4. Activate and animate target tab (NO SCROLL WARP)
   var target = document.getElementById(tabId);
   if (target) {
     target.classList.add('active');
@@ -37,16 +38,10 @@ function switchTab(tabId, btn) {
     target.style.setProperty('visibility', 'visible', 'important');
     target.style.setProperty('height', 'auto', 'important');
     target.style.setProperty('overflow', 'visible', 'important');
-    target.style.setProperty('animation', 'none', 'important');
-    void target.offsetWidth; // Force reflow for smooth re-trigger
-    target.style.setProperty('animation', 'dbFadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards', 'important');
     
-    // 5. Instantly scroll browser window to top of dashboard card so active tab is 100% in focus
-    var dashboardCard = document.querySelector('.dashboard-card');
-    if (dashboardCard) {
-      var topPos = dashboardCard.getBoundingClientRect().top + window.pageYOffset - 80;
-      window.scrollTo({ top: topPos, behavior: 'smooth' });
-    }
+    // Force reflow and apply high-end blur spring fade-in animation
+    void target.offsetWidth;
+    target.style.setProperty('animation', 'dbTabContentIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards', 'important');
   }
 
   // Special tab callbacks

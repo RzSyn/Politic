@@ -1541,6 +1541,22 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
   }}
 }}
 
+@keyframes dbTabContentIn {{
+  0% {{
+    opacity: 0;
+    transform: translateY(16px) scale(0.985);
+    filter: blur(4px);
+  }}
+  60% {{
+    filter: blur(0px);
+  }}
+  100% {{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0px);
+  }}
+}}
+
 .db-tab-content {{
 
 
