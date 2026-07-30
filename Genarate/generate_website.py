@@ -1601,36 +1601,26 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
 
   function switchTab(tabId, btn) {{
-
-
     var tabs = document.querySelectorAll('.db-tab-btn');
-
-
     var contents = document.querySelectorAll('.db-tab-content');
-
-
-    tabs.forEach(function(t) {{ t.classList.remove('active'); }});
-
-
-    contents.forEach(function(c) {{ c.classList.remove('active'); }});
-
-
+    
+    tabs.forEach(function(t) {{ 
+      t.classList.remove('active'); 
+    }});
+    
+    contents.forEach(function(c) {{ 
+      c.classList.remove('active');
+      c.style.setProperty('display', 'none', 'important');
+    }});
+    
     if (btn) btn.classList.add('active');
-
-
+    
     var target = document.getElementById(tabId);
-
-
     if (target) {{
-
-
       target.classList.add('active');
-      target.style.display = 'block';
-
-
+      target.style.setProperty('display', 'block', 'important');
     }}
-
-
+    
     if (tabId === 'geopolitics-tab') {{
       if (window.initGeopoliticsMap) window.initGeopoliticsMap();
       setTimeout(function() {{ if (window.geopoliticsMapInstance) window.geopoliticsMapInstance.invalidateSize(); }}, 50);
