@@ -5663,7 +5663,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <span style="font-size: 13px; color: #fef08a; font-weight: 700; font-family: 'Outfit', sans-serif;">🎵 เพลง "ผู้แทนอิสระ" (Independent Representative)</span>
                   <span style="font-size: 10px; background: rgba(74,222,128,0.15); color: #4ade80; padding: 2px 8px; border-radius: 4px; font-weight: 600;">AUDIO &amp; LYRICS AVAILABLE</span>
                 </div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/independent.mp3" style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
                   <source src="audio/independent.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -5734,7 +5734,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <span style="font-size: 13px; color: #fef08a; font-weight: 700; font-family: 'Outfit', sans-serif;">🎵 เพลง "ก้าวไกลก้าวหน้า"</span>
                   <span style="font-size: 10px; background: rgba(74,222,128,0.15); color: #4ade80; padding: 2px 8px; border-radius: 4px; font-weight: 600;">AUDIO &amp; LYRICS AVAILABLE</span>
                 </div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/mfp_kaoklai.mp3" style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
                   <source src="audio/mfp_kaoklai.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -5809,7 +5809,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <span style="font-size: 13px; color: #fef08a; font-weight: 700; font-family: 'Outfit', sans-serif;">🎵 เพลง "ทักษิณเพื่อประชาชน"</span>
                   <span style="font-size: 10px; background: rgba(74,222,128,0.15); color: #4ade80; padding: 2px 8px; border-radius: 4px; font-weight: 600;">AUDIO &amp; LYRICS AVAILABLE</span>
                 </div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/thaksipracha.mp3" style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
                   <source src="audio/thaksipracha.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -5884,7 +5884,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <span style="font-size: 13px; color: #fef08a; font-weight: 700; font-family: 'Outfit', sans-serif;">🎵 เพลง "แสงแห่งธรรมปัญญา"</span>
                   <span style="font-size: 10px; background: rgba(74,222,128,0.15); color: #4ade80; padding: 2px 8px; border-radius: 4px; font-weight: 600;">AUDIO &amp; LYRICS AVAILABLE</span>
                 </div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/thampanya.mp3" style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
                   <source src="audio/thampanya.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -5959,7 +5959,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <span style="font-size: 13px; color: #fef08a; font-weight: 700; font-family: 'Outfit', sans-serif;">🎵 เพลง "บทเพลงแห่งนโยบายพรรคไทยรักไทย"</span>
                   <span style="font-size: 10px; background: rgba(74,222,128,0.15); color: #4ade80; padding: 2px 8px; border-radius: 4px; font-weight: 600;">AUDIO &amp; LYRICS AVAILABLE</span>
                 </div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/trt_policy.mp3" style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
                   <source src="audio/trt_policy.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -6034,7 +6034,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <span style="font-size: 13px; color: #fef08a; font-weight: 700; font-family: 'Outfit', sans-serif;">🎵 เพลง "ประชาธิปัตย์มาแล้ว"</span>
                   <span style="font-size: 10px; background: rgba(74,222,128,0.15); color: #4ade80; padding: 2px 8px; border-radius: 4px; font-weight: 600;">AUDIO &amp; LYRICS AVAILABLE</span>
                 </div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/democrat.mp3" style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
                   <source src="audio/democrat.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -6109,7 +6109,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <span style="font-size: 13px; color: #fef08a; font-weight: 700; font-family: 'Outfit', sans-serif;">🎵 เพลง "รวมไทยสร้างชาติ"</span>
                   <span style="font-size: 10px; background: rgba(74,222,128,0.15); color: #4ade80; padding: 2px 8px; border-radius: 4px; font-weight: 600;">AUDIO &amp; LYRICS AVAILABLE</span>
                 </div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/utn.mp3" style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
                   <source src="audio/utn.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -6184,7 +6184,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <span style="font-size: 13px; color: #fef08a; font-weight: 700; font-family: 'Outfit', sans-serif;">🎵 เพลง "พรรคความหวังใหม่"</span>
                   <span style="font-size: 10px; background: rgba(74,222,128,0.15); color: #4ade80; padding: 2px 8px; border-radius: 4px; font-weight: 600;">AUDIO &amp; LYRICS AVAILABLE</span>
                 </div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/nap.mp3" style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
                   <source src="audio/nap.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -6259,7 +6259,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <span style="font-size: 13px; color: #fef08a; font-weight: 700; font-family: 'Outfit', sans-serif;">🎵 เพลง "No Problem" (โดย แอด คาราบาว)</span>
                   <span style="font-size: 10px; background: rgba(74,222,128,0.15); color: #4ade80; padding: 2px 8px; border-radius: 4px; font-weight: 600;">AUDIO &amp; LYRICS AVAILABLE</span>
                 </div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/cp_noproblem.mp3" style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
                   <source src="audio/cp_noproblem.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -6334,7 +6334,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <span style="font-size: 13px; color: #fef08a; font-weight: 700; font-family: 'Outfit', sans-serif;">🎵 เพลง "มาร์ชพรรคชาติไทย"</span>
                   <span style="font-size: 10px; background: rgba(74,222,128,0.15); color: #4ade80; padding: 2px 8px; border-radius: 4px; font-weight: 600;">AUDIO &amp; LYRICS AVAILABLE</span>
                 </div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/chartthai_march.mp3" style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
                   <source src="audio/chartthai_march.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -6409,7 +6409,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <span style="font-size: 13px; color: #fef08a; font-weight: 700; font-family: 'Outfit', sans-serif;">🎵 เพลง "คึกฤทธิ์คิดลึก"</span>
                   <span style="font-size: 10px; background: rgba(74,222,128,0.15); color: #4ade80; padding: 2px 8px; border-radius: 4px; font-weight: 600;">AUDIO &amp; LYRICS AVAILABLE</span>
                 </div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/sap_kukrit.mp3" style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
                   <source src="audio/sap_kukrit.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -6484,7 +6484,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <span style="font-size: 13px; color: #fef08a; font-weight: 700; font-family: 'Outfit', sans-serif;">🎵 เพลง "พรรคภูมิใจไทย"</span>
                   <span style="font-size: 10px; background: rgba(74,222,128,0.15); color: #4ade80; padding: 2px 8px; border-radius: 4px; font-weight: 600;">AUDIO &amp; LYRICS AVAILABLE</span>
                 </div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/bhumjaithai.mp3" style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
                   <source src="audio/bhumjaithai.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -6559,7 +6559,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <span style="font-size: 13px; color: #fef08a; font-weight: 700; font-family: 'Outfit', sans-serif;">🎵 เพลง "หัวใจน้ำเงินดำ"</span>
                   <span style="font-size: 10px; background: rgba(74,222,128,0.15); color: #4ade80; padding: 2px 8px; border-radius: 4px; font-weight: 600;">AUDIO &amp; LYRICS AVAILABLE</span>
                 </div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/huajaithai.mp3" style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
                   <source src="audio/huajaithai.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -6634,7 +6634,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <span style="font-size: 13px; color: #fef08a; font-weight: 700; font-family: 'Outfit', sans-serif;">🎵 เพลง "ระเบียบโลกใหม่"</span>
                   <span style="font-size: 10px; background: rgba(74,222,128,0.15); color: #4ade80; padding: 2px 8px; border-radius: 4px; font-weight: 600;">AUDIO &amp; LYRICS AVAILABLE</span>
                 </div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/rabiablokmai.mp3" style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
                   <source src="audio/rabiablokmai.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -6709,7 +6709,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <span style="font-size: 13px; color: #fef08a; font-weight: 700; font-family: 'Outfit', sans-serif;">🎵 เพลง "พรรคเสรีรวมไทย"</span>
                   <span style="font-size: 10px; background: rgba(74,222,128,0.15); color: #4ade80; padding: 2px 8px; border-radius: 4px; font-weight: 600;">AUDIO &amp; LYRICS AVAILABLE</span>
                 </div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/seri_ruam_thai.mp3" style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
                   <source src="audio/seri_ruam_thai.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -6784,7 +6784,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <span style="font-size: 13px; color: #fef08a; font-weight: 700; font-family: 'Outfit', sans-serif;">🎵 เพลง "คิดใหม่ ทำใหม่ กล้าเปลี่ยนแปลง"</span>
                   <span style="font-size: 10px; background: rgba(74,222,128,0.15); color: #4ade80; padding: 2px 8px; border-radius: 4px; font-weight: 600;">AUDIO &amp; LYRICS AVAILABLE</span>
                 </div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/trc_change.mp3" style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
                   <source src="audio/trc_change.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -6880,7 +6880,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <span style="font-size: 13px; color: #fef08a; font-weight: 700; font-family: 'Outfit', sans-serif;">🎵 เพลง "The Future of Our Country"</span>
                   <span style="font-size: 10px; background: rgba(74,222,128,0.15); color: #4ade80; padding: 2px 8px; border-radius: 4px; font-weight: 600;">AUDIO &amp; LYRICS AVAILABLE</span>
                 </div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/ffp_future.mp3" style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
                   <source src="audio/ffp_future.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -6921,7 +6921,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <span style="font-size: 13px; color: #fef08a; font-weight: 700; font-family: 'Outfit', sans-serif;">🎵 เพลง "คบเพลิงแห่งการส่งต่อ"</span>
                   <span style="font-size: 10px; background: rgba(74,222,128,0.15); color: #4ade80; padding: 2px 8px; border-radius: 4px; font-weight: 600;">AUDIO &amp; LYRICS AVAILABLE</span>
                 </div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/songtor.mp3" style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
                   <source src="audio/songtor.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -6991,7 +6991,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <span style="font-size: 13px; color: #fef08a; font-weight: 700; font-family: 'Outfit', sans-serif;">🎵 เพลง "คนเท่ากัน"</span>
                   <span style="font-size: 10px; background: rgba(74,222,128,0.15); color: #4ade80; padding: 2px 8px; border-radius: 4px; font-weight: 600;">AUDIO &amp; LYRICS AVAILABLE</span>
                 </div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/prachapitiwat.mp3" style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
                   <source src="audio/prachapitiwat.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -7066,7 +7066,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <span style="font-size: 13px; color: #fef08a; font-weight: 700; font-family: 'Outfit', sans-serif;">🎵 เพลง "มหาประชาชนเจ้าของอำนาจ"</span>
                   <span style="font-size: 10px; background: rgba(74,222,128,0.15); color: #4ade80; padding: 2px 8px; border-radius: 4px; font-weight: 600;">AUDIO &amp; LYRICS AVAILABLE</span>
                 </div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/old_prachachon.mp3" style="width: 100%; height: 36px; border-radius: 6px; margin-bottom: 8px;">
                   <source src="audio/old_prachachon.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -11737,7 +11737,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               </div>
               <div style="padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.08);">
                 <div style="font-size: 12px; color: #4ade80; font-weight: 700; margin-bottom: 6px;">🎵 ฟังเพลงสรรเสริญพระบารมี (รัชกาลที่ ๙):</div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/sansoen_phra_barami.mp3" style="width: 100%; height: 36px; border-radius: 8px;">
                   <source src="audio/sansoen_phra_barami.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -11771,7 +11771,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               </div>
               <div style="padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.08);">
                 <div style="font-size: 12px; color: #4ade80; font-weight: 700; margin-bottom: 6px;">🎵 ฟังเพลงสดุดีมหาราชา:</div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/sadudee_maharacha.mp3" style="width: 100%; height: 36px; border-radius: 8px;">
                   <source src="audio/sadudee_maharacha.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -11799,7 +11799,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               </div>
               <div style="padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.08);">
                 <div style="font-size: 12.5px; color: #4ade80; font-weight: 700; margin-bottom: 6px;">🎵 ฟังเพลงมหาฤกษ์ (ต้นฉบับ):</div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/maha_roek.mp3" style="width: 100%; height: 36px; border-radius: 8px;">
                   <source src="audio/maha_roek.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -11827,7 +11827,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               </div>
               <div style="padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.08);">
                 <div style="font-size: 12px; color: #4ade80; font-weight: 700; margin-bottom: 6px;">🎵 ฟังเพลงมหาชัย (ฉบับบรรเลง):</div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/maha_chai.mp3" style="width: 100%; height: 36px; border-radius: 8px;">
                   <source src="audio/maha_chai.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -11865,7 +11865,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               </div>
               <div style="padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.08);">
                 <div style="font-size: 12px; color: #4ade80; font-weight: 700; margin-bottom: 6px;">🎵 ฟังเพลงมหาชัย (ฉบับมีคำร้อง):</div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/maha_chai_vocal.mp3" style="width: 100%; height: 36px; border-radius: 8px;">
                   <source src="audio/maha_chai_vocal.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -11906,7 +11906,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               </div>
               <div style="padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.08);">
                 <div style="font-size: 12.5px; color: #4ade80; font-weight: 700; margin-bottom: 6px;">🎵 ฟังเพลงภูมิแผ่นดิน นวมินทร์มหาราชา:</div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/bhumibol_navamin.mp3" style="width: 100%; height: 36px; border-radius: 8px;">
                   <source src="audio/bhumibol_navamin.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -11980,7 +11980,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               </span>
               <div style="margin-top: 12px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.08);">
                 <div style="font-size: 12.5px; color: #4ade80; font-weight: 700; margin-bottom: 6px;">🎵 กดฟังเพลงชาติ เวอร์ชัน ๑ (Official Version):</div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/anthem_v1_official.mp3" style="width: 100%; height: 36px; border-radius: 8px;">
                   <source src="audio/anthem_v1_official.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -11997,7 +11997,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               </span>
               <div style="margin-top: 12px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.08);">
                 <div style="font-size: 12.5px; color: #4ade80; font-weight: 700; margin-bottom: 6px;">🎵 กดฟังเพลงชาติ เวอร์ชัน ๒ (Soft &amp; Strong Version):</div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/anthem_v2_soft_strong.mp3" style="width: 100%; height: 36px; border-radius: 8px;">
                   <source src="audio/anthem_v2_soft_strong.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -12014,7 +12014,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               </span>
               <div style="margin-top: 12px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.08);">
                 <div style="font-size: 12.5px; color: #4ade80; font-weight: 700; margin-bottom: 6px;">🎵 กดฟังเพลงชาติ เวอร์ชัน ๓ (Ballroom Version):</div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/anthem_v3_ballroom.mp3" style="width: 100%; height: 36px; border-radius: 8px;">
                   <source src="audio/anthem_v3_ballroom.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -12031,7 +12031,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               </span>
               <div style="margin-top: 12px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.08);">
                 <div style="font-size: 12.5px; color: #4ade80; font-weight: 700; margin-bottom: 6px;">🎵 กดฟังเพลงชาติ เวอร์ชัน ๔ (Modern Dance Version):</div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/anthem_v4_modern_dance.mp3" style="width: 100%; height: 36px; border-radius: 8px;">
                   <source src="audio/anthem_v4_modern_dance.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -12048,7 +12048,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               </span>
               <div style="margin-top: 12px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.08);">
                 <div style="font-size: 12.5px; color: #4ade80; font-weight: 700; margin-bottom: 6px;">🎵 กดฟังเพลงชาติ เวอร์ชัน ๕ (Kids/Choir Version):</div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/anthem_v5_kids_choir.mp3" style="width: 100%; height: 36px; border-radius: 8px;">
                   <source src="audio/anthem_v5_kids_choir.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>
@@ -12065,7 +12065,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               </span>
               <div style="margin-top: 12px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.08);">
                 <div style="font-size: 12.5px; color: #4ade80; font-weight: 700; margin-bottom: 6px;">🎵 กดฟังเพลงชาติ เวอร์ชัน ๖ (Traditional Instrument Version):</div>
-                <audio controls style="width: 100%; height: 36px; border-radius: 8px;">
+                <audio controls preload="metadata" playsinline webkit-playsinline src="audio/anthem_v6_traditional.mp3" style="width: 100%; height: 36px; border-radius: 8px;">
                   <source src="audio/anthem_v6_traditional.mp3" type="audio/mpeg">
                   เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
                 </audio>

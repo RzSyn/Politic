@@ -42,6 +42,14 @@ function switchTab(tabId, btn) {
     // Force reflow and apply high-end blur spring fade-in animation
     void target.offsetWidth;
     target.style.setProperty('animation', 'dbTabContentIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards', 'important');
+    
+    // Auto load audio metadata for mobile browsers on tab activation
+    var audios = target.querySelectorAll('audio');
+    audios.forEach(function(a) {
+      if (a.paused && a.readyState === 0) {
+        a.load();
+      }
+    });
   }
 
   // Special tab callbacks
