@@ -1530,7 +1530,18 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 <style>
 
 
-  .db-tab-content {{
+  @keyframes dbFadeIn {{
+  0% {{
+    opacity: 0;
+    transform: translateY(14px) scale(0.995);
+  }}
+  100% {{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }}
+}}
+
+.db-tab-content {{
 
 
     display: none;

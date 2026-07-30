@@ -37,6 +37,9 @@ function switchTab(tabId, btn) {
     target.style.setProperty('visibility', 'visible', 'important');
     target.style.setProperty('height', 'auto', 'important');
     target.style.setProperty('overflow', 'visible', 'important');
+    target.style.setProperty('animation', 'none', 'important');
+    void target.offsetWidth; // Force reflow for smooth re-trigger
+    target.style.setProperty('animation', 'dbFadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards', 'important');
     
     // 5. Instantly scroll browser window to top of dashboard card so active tab is 100% in focus
     var dashboardCard = document.querySelector('.dashboard-card');
