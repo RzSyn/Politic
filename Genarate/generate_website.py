@@ -1604,38 +1604,21 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
     var tabs = document.querySelectorAll('.db-tab-btn');
     var contents = document.querySelectorAll('.db-tab-content');
     
-    // 1. Remove active highlight from all tab buttons
     tabs.forEach(function(t) {{ 
       t.classList.remove('active'); 
     }});
     
-    // 2. Strictly collapse and hide all inactive tab contents completely
     contents.forEach(function(c) {{ 
       c.classList.remove('active');
       c.style.setProperty('display', 'none', 'important');
-      c.style.setProperty('visibility', 'hidden', 'important');
-      c.style.setProperty('height', '0', 'important');
-      c.style.setProperty('overflow', 'hidden', 'important');
     }});
     
-    // 3. Highlight clicked button
     if (btn) btn.classList.add('active');
     
-    // 4. Activate and expand target tab
     var target = document.getElementById(tabId);
     if (target) {{
       target.classList.add('active');
       target.style.setProperty('display', 'block', 'important');
-      target.style.setProperty('visibility', 'visible', 'important');
-      target.style.setProperty('height', 'auto', 'important');
-      target.style.setProperty('overflow', 'visible', 'important');
-      
-      // 5. Instantly scroll browser window to top of dashboard card so active tab is 100% in focus
-      var dashboardCard = document.querySelector('.dashboard-card');
-      if (dashboardCard) {{
-        var topPos = dashboardCard.getBoundingClientRect().top + window.pageYOffset - 80;
-        window.scrollTo({{ top: topPos, behavior: 'smooth' }});
-      }}
     }}
     
     if (tabId === 'geopolitics-tab') {{
@@ -14873,7 +14856,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             </div>
             <div style="font-size: 13.5px; color: #cbd5e1; line-height: 1.8;">
               • <strong>หลักการทางการทูต:</strong> <em>"ไทยไม่ครอบงำ ลาวไม่ปฏิเสธ เท่าเทียมกัน 100%"</em> จับมือบริหารภูมิภาคกับ **นายกฯ พริษฐ์ วัชรสินธุ** อย่างเท่าเทียม<br>
-              • <strong>รถไฟฟ้าลาว-ไทย (High-Speed Rail):</strong> หลวงพระบาง ถึง กรุงเทพมหานคร ใช้เวลาเพียง ๔.๕ ชั่วโมง ถึงคลองไทยไมตรี ๖ ชั่วโมง (มรดกทางรางจาก **นายกฯ ศิริกัญญา ตันสกุล**)<br>
+              • <strong>รถไฟฟ้าลาว-ไทย (High-Speed Rail):** หลวงพระบาง ถึง กรุงเทพมหานคร ใช้เวลาเพียง ๔.๕ ชั่วโมง ถึงคลองไทยไมตรี ๖ ชั่วโมง (มรดกทางรางจาก **นายกฯ ศิริกัญญา ตันสกุล**)<br>
               • <strong>กองทุนสีเขียวล้านช้าง:</strong> ลาวนำเงินร่วมลงทุนในอภิมหาโครงการคลองไทยไมตรี ได้รับผลประโยชน์ทางเศรษฐกิจร่วมกันโดยตรง<br>
               • <strong>ความร่วมมือข่าวกรอง GOC:</strong> นายราชพิทักษ์ส่งทีมชายแดนเข้าช่วยเหลือ GOC จับกุมผู้ต้องหาข้ามแดนใน <em>Operation Homeland</em>
             </div>
@@ -40112,7 +40095,9 @@ svg.leaflet-image-layer.leaflet-interactive path {{
 
   {preamble_texts}
 
-</div>
+
+
+
 
 <!-- INTERACTIVE ORG CHART -->
 

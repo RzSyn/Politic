@@ -6,20 +6,47 @@ function closeSidebar() {
   document.getElementById('sidebar').classList.remove('open');
 }
 
-// Switch Tab in Dashboard
+// Switch Tab in Dashboard (Bulletproof Implementation)
 function switchTab(tabId, btn) {
-  const card = btn.closest('.dashboard-card');
-  const tabs = card.querySelectorAll('.db-tab-btn');
-  const contents = card.querySelectorAll('.db-tab-content');
+  const card = btn ? (btn.closest ? btn.closest('.dashboard-card') : document.querySelector('.dashboard-card')) : document.querySelector('.dashboard-card');
+  const tabs = document.querySelectorAll('.db-tab-btn');
+  const contents = document.querySelectorAll('.db-tab-content');
   
-  tabs.forEach(t => t.classList.remove('active'));
-  contents.forEach(c => c.classList.remove('active'));
+  // 1. Remove active highlight from all tab buttons
+  tabs.forEach(function(t) { 
+    t.classList.remove('active'); 
+  });
   
-  btn.classList.add('active');
-  document.getElementById(tabId).classList.add('active');
+  // 2. Strictly collapse and hide all inactive tab contents completely
+  contents.forEach(function(c) { 
+    c.classList.remove('active');
+    c.style.setProperty('display', 'none', 'important');
+    c.style.setProperty('visibility', 'hidden', 'important');
+    c.style.setProperty('height', '0', 'important');
+    c.style.setProperty('overflow', 'hidden', 'important');
+  });
+  
+  // 3. Highlight clicked button
+  if (btn) btn.classList.add('active');
+  
+  // 4. Activate and expand target tab
+  var target = document.getElementById(tabId);
+  if (target) {
+    target.classList.add('active');
+    target.style.setProperty('display', 'block', 'important');
+    target.style.setProperty('visibility', 'visible', 'important');
+    target.style.setProperty('height', 'auto', 'important');
+    target.style.setProperty('overflow', 'visible', 'important');
+    
+    // 5. Instantly scroll browser window to top of dashboard card so active tab is 100% in focus
+    var dashboardCard = document.querySelector('.dashboard-card');
+    if (dashboardCard) {
+      var topPos = dashboardCard.getBoundingClientRect().top + window.pageYOffset - 80;
+      window.scrollTo({ top: topPos, behavior: 'smooth' });
+    }
+  }
 
-  // เมื่อเปิด legislative-tab ให้ sync hemicycle ตาม dropdown ที่เลือกอยู่
-  // ใช้ setTimeout เพื่อให้ inline script ภายใน tab โหลดเสร็จก่อน
+  // Special tab callbacks
   if (tabId === 'legislative-tab') {
     setTimeout(function() {
       const sel = document.getElementById('pm-era-select');
@@ -27,6 +54,13 @@ function switchTab(tabId, btn) {
         switchPMEra(sel.value);
       }
     }, 50);
+  }
+  
+  if (tabId === 'geopolitics-tab') {
+    if (window.initGeopoliticsMap) window.initGeopoliticsMap();
+    setTimeout(function() {
+      if (window.geopoliticsMap) window.geopoliticsMap.invalidateSize();
+    }, 100);
   }
 }
 
