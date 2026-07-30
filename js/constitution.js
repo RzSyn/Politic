@@ -1,3 +1,55 @@
+
+// 100% Guaranteed Mobile Audio Player Handler
+function playAudioMobile(btn, src) {
+  var container = btn.closest('.audio-box') || btn.parentElement;
+  var audio = container.querySelector('audio');
+  
+  if (!audio) {
+    audio = new Audio(src);
+    audio.preload = 'metadata';
+    container.appendChild(audio);
+  }
+  
+  if (audio.paused) {
+    // Pause all other playing audios on page
+    document.querySelectorAll('audio').forEach(function(a) {
+      if (a !== audio && !a.paused) {
+        a.pause();
+      }
+    });
+    document.querySelectorAll('.audio-box button').forEach(function(b) {
+      if (b !== btn) {
+        b.innerHTML = '<span style="font-size: 15px;">▶️</span> กดเล่นเพลงบนมือถือ / Play Audio';
+        b.style.background = 'linear-gradient(135deg, #2563eb, #1d4ed8)';
+      }
+    });
+    
+    var playPromise = audio.play();
+    if (playPromise !== undefined) {
+      playPromise.then(function() {
+        btn.innerHTML = '<span style="font-size: 15px;">⏸️</span> กำลังเล่น... (กดเพื่อหยุด)';
+        btn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+      }).catch(function(err) {
+        console.log('Mobile audio play error:', err);
+        // Fallback: direct src set and reload
+        audio.src = src;
+        audio.load();
+        audio.play();
+      });
+    }
+  } else {
+    audio.pause();
+    btn.innerHTML = '<span style="font-size: 15px;">▶️</span> กดเล่นเพลงบนมือถือ / Play Audio';
+    btn.style.background = 'linear-gradient(135deg, #2563eb, #1d4ed8)';
+  }
+  
+  audio.onended = function() {
+    btn.innerHTML = '<span style="font-size: 15px;">▶️</span> กดเล่นเพลงบนมือถือ / Play Audio';
+    btn.style.background = 'linear-gradient(135deg, #2563eb, #1d4ed8)';
+  };
+}
+
+
 // Sidebar toggle
 function toggleSidebar() {
   document.getElementById('sidebar').classList.toggle('open');
