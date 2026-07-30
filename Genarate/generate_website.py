@@ -1619,6 +1619,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
     if (target) {{
       target.classList.add('active');
       target.style.setProperty('display', 'block', 'important');
+      target.scrollIntoView({{ behavior: 'smooth', block: 'start' }});
     }}
     
     if (tabId === 'geopolitics-tab') {{
@@ -14856,7 +14857,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             </div>
             <div style="font-size: 13.5px; color: #cbd5e1; line-height: 1.8;">
               • <strong>หลักการทางการทูต:</strong> <em>"ไทยไม่ครอบงำ ลาวไม่ปฏิเสธ เท่าเทียมกัน 100%"</em> จับมือบริหารภูมิภาคกับ **นายกฯ พริษฐ์ วัชรสินธุ** อย่างเท่าเทียม<br>
-              • <strong>รถไฟฟ้าลาว-ไทย (High-Speed Rail):** หลวงพระบาง ถึง กรุงเทพมหานคร ใช้เวลาเพียง ๔.๕ ชั่วโมง ถึงคลองไทยไมตรี ๖ ชั่วโมง (มรดกทางรางจาก **นายกฯ ศิริกัญญา ตันสกุล**)<br>
+              • <strong>รถไฟฟ้าลาว-ไทย (High-Speed Rail):</strong> หลวงพระบาง ถึง กรุงเทพมหานคร ใช้เวลาเพียง ๔.๕ ชั่วโมง ถึงคลองไทยไมตรี ๖ ชั่วโมง (มรดกทางรางจาก **นายกฯ ศิริกัญญา ตันสกุล**)<br>
               • <strong>กองทุนสีเขียวล้านช้าง:</strong> ลาวนำเงินร่วมลงทุนในอภิมหาโครงการคลองไทยไมตรี ได้รับผลประโยชน์ทางเศรษฐกิจร่วมกันโดยตรง<br>
               • <strong>ความร่วมมือข่าวกรอง GOC:</strong> นายราชพิทักษ์ส่งทีมชายแดนเข้าช่วยเหลือ GOC จับกุมผู้ต้องหาข้ามแดนใน <em>Operation Homeland</em>
             </div>
@@ -40095,9 +40096,7 @@ svg.leaflet-image-layer.leaflet-interactive path {{
 
   {preamble_texts}
 
-
-
-
+</div>
 
 <!-- INTERACTIVE ORG CHART -->
 
