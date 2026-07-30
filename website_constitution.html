@@ -1782,22 +1782,38 @@ svg.leaflet-image-layer.leaflet-interactive path {
     var tabs = document.querySelectorAll('.db-tab-btn');
     var contents = document.querySelectorAll('.db-tab-content');
     
+    // 1. Remove active highlight from all tab buttons
     tabs.forEach(function(t) { 
       t.classList.remove('active'); 
     });
     
+    // 2. Strictly collapse and hide all inactive tab contents completely
     contents.forEach(function(c) { 
       c.classList.remove('active');
       c.style.setProperty('display', 'none', 'important');
+      c.style.setProperty('visibility', 'hidden', 'important');
+      c.style.setProperty('height', '0', 'important');
+      c.style.setProperty('overflow', 'hidden', 'important');
     });
     
+    // 3. Highlight clicked button
     if (btn) btn.classList.add('active');
     
+    // 4. Activate and expand target tab
     var target = document.getElementById(tabId);
     if (target) {
       target.classList.add('active');
       target.style.setProperty('display', 'block', 'important');
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      target.style.setProperty('visibility', 'visible', 'important');
+      target.style.setProperty('height', 'auto', 'important');
+      target.style.setProperty('overflow', 'visible', 'important');
+      
+      // 5. Instantly scroll browser window to top of dashboard card so active tab is 100% in focus
+      var dashboardCard = document.querySelector('.dashboard-card');
+      if (dashboardCard) {
+        var topPos = dashboardCard.getBoundingClientRect().top + window.pageYOffset - 80;
+        window.scrollTo({ top: topPos, behavior: 'smooth' });
+      }
     }
     
     if (tabId === 'geopolitics-tab') {
