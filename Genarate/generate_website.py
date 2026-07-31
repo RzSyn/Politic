@@ -16180,7 +16180,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
           <iframe src="world_map.html" style="width:100%; height:680px; border:2px solid rgba(250,204,21,0.35); border-radius:16px; box-shadow:0 8px 32px rgba(0,0,0,0.6); background:#070a12; display:block;" frameborder="0" title="แผนที่ภูมิรัฐศาสตร์โลก (ระเบียบใหม่)"></iframe>
         </div>
 
-        <div class="geo-header">
+        <div style="width: 100%; text-align: center; margin-bottom: 20px;"><img src="images/seato_brics_emblem.jpg" alt="SEATO-BRICS Emblem" style="max-width: 100%; height: auto; border: 2px solid rgba(250,204,21,0.4); border-radius: 14px; box-shadow: 0 8px 32px rgba(0,0,0,0.6); display: inline-block;"></div>
+<div class="geo-header">
           <h3 style="color: var(--accent-orange); font-family: 'Outfit', sans-serif; font-size: 24px; margin-bottom: 8px;">🌍 ระเบียบภูมิรัฐศาสตร์โลกใหม่ (New Geopolitical Order)</h3>
           <p style="color: var(--text-muted); font-size: 14.5px; margin-bottom: 0;">ระเบียบโลกใหม่ในลักษณะ "ราชจักรวรรดิ" (Royal Empire) เช่น สหพันธราชจักรวรรดิรัสเซีย ที่บริหารโดย "ปธานาทิปดี" (President) เป็นผู้มีอำนาจสูงสุดของแผ่นดิน และ "จักรพรรดิ" (Emperor) ทรงอยู่ภายใต้รัฐธรรมนูญจำลองสูงสุดอย่างเคร่งครัด</p>
         </div>
@@ -16224,185 +16225,239 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
 </div>
 
-<!-- 🗺️ SUPERPOWER STRATEGIC INFLUENCE MATRIX TAB -->
+
+    <!-- 🗺️ SUPERPOWER STRATEGIC INFLUENCE MATRIX TAB -->
     <div id="superpower-matrix-tab" class="db-tab-content">
       <div style="background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 16px; padding: 28px; margin-bottom: 28px; backdrop-filter: blur(12px);">
         
-        <!-- Header Banner -->
+        <!-- Header Banner with SEATO-BRICS Official Emblem -->
         <div style="border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 20px; margin-bottom: 24px;">
+          
+          <div style="width: 100%; text-align: center; margin-bottom: 20px;">
+            <img src="images/seato_brics_emblem.jpg" alt="SEATO-BRICS Emblem (Led by Thailand)" style="max-width: 100%; height: auto; border: 2px solid rgba(250,204,21,0.4); border-radius: 14px; box-shadow: 0 8px 32px rgba(0,0,0,0.6); display: inline-block;">
+          </div>
+
           <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 12px;">
             <h3 style="color: var(--gold-light); font-size: 22px; font-weight: 700; margin: 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 10px;">
               <span>🗺️ แผนผังดุลอำนาจและพันธมิตรมหาอำนาจโลก (Superpower Strategic Influence Matrix)</span>
             </h3>
-            <span style="background: rgba(129, 140, 248, 0.15); border: 1px solid #818cf8; color: #c7d2fe; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 20px;">
-              ระเบียบโลกใหม่ ๕ ขั้วอำนาจยุทธศาสตร์ (New World Order)
+            <span style="background: rgba(234, 179, 8, 0.15); border: 1px solid #facc15; color: #fde047; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 20px;">
+              SEATO - BRICS: Unity • Sovereignty • Prosperity (Led by Thailand)
             </span>
           </div>
           <p style="color: #cbd5e1; font-size: 13.5px; margin: 0; line-height: 1.6;">
-            วิเคราะห์โครงสร้างดุลอำนาจสากลในระเบียบโลกใหม่ (New Geopolitical Order) เชื่อมโยงกับฐานข้อมูลภูมิรัฐศาสตร์โลก 
-            แสดงการจัดแบ่งขั้วอำนาจ ๕ กลุ่มหลัก, อิทธิพลของพันธมิตร <strong>SEATO-BRICS</strong> ที่มีประเทศไทยเป็นศูนย์กลาง, สหพันธราชจักรวรรดิรัสเซีย, 
-            สาธารณรัฐจีน (ROC), สหพันธรัฐใหม่ (TSL) ร่วมกับ NATO-EU และโครงข่ายสันติภาพอาณาจักรลาว
+            วิเคราะห์โครงสร้างดุลอำนาจสากลในระเบียบโลกใหม่ (New Geopolitical Order) โดยมีพันธมิตรมหาอำนาจ <strong>SEATO-BRICS</strong> นำโดยประเทศไทย 
+            ครอบคลุมสมาชิกมหาอำนาจหลัก ได้แก่ <strong>สหพันธราชจักรวรรดิรัสเซีย (Russia)</strong>, <strong>สาธารณรัฐจีน (China - ROC)</strong>, บราซิล (Brazil), อินเดีย (India), แอฟริกาใต้ (South Africa) และชาติภาคีเอเชียตะวันออกเฉียงใต้ (SEATO) รวมกันกว่า ๗๐% ของประชากรโลก
           </p>
         </div>
 
-        <!-- 5 Superpower Factions Grid -->
+
+        <!-- Official Geopolitical World Map & Detailed Analysis -->
+        <div style="margin-bottom: 28px; background: rgba(0,0,0,0.4); border: 1px solid rgba(250,204,21,0.35); border-radius: 16px; padding: 24px; box-shadow: 0 8px 32px rgba(0,0,0,0.5);">
+          
+          <div style="width: 100%; text-align: center; margin-bottom: 20px;">
+            <img src="images/seato_brics_world_map.png" alt="Official SEATO-BRICS World Geopolitical Alliance Map" style="max-width: 100%; height: auto; border: 2px solid rgba(250,204,21,0.4); border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.6); display: inline-block;">
+            <div style="font-size: 11.5px; color: #94a3b8; margin-top: 8px; font-weight: 600;">
+              🗺️ แผนที่ระเบียบภูมิรัฐศาสตร์โลกใหม่ (SEATO-BRICS & Global Alliances Map)
+            </div>
+          </div>
+
+          <h4 style="color: #fde047; font-size: 16px; font-weight: 800; margin: 0 0 14px 0; display: flex; align-items: center; gap: 8px;">
+            <span>🔍 บทวิเคราะห์โครงสร้างยุทธศาสตร์จากแผนที่โลก (Strategic Map Analysis)</span>
+          </h4>
+
+          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 16px;">
+            
+            <!-- Analysis 1: Russia core role -->
+            <div style="background: rgba(15,23,42,0.7); border: 1px solid rgba(239,68,68,0.4); border-radius: 10px; padding: 14px;">
+              <div style="font-size: 13px; font-weight: 800; color: #f87171; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
+                <span>🧱 ๑. สหพันธราชจักรวรรดิรัสเซีย (สมาชิกสำคัญ SEATO+BRICS)</span>
+              </div>
+              <p style="font-size: 12px; color: #cbd5e1; margin: 0; line-height: 1.5;">
+                ปรากฏในแผนที่ด้วยสัญลักษณ์สีน้ำตาลแดง (สมาชิกสำคัญ) ครอบคลุมอาณาเขตมหาศาลทางซีกโลกเหนือและยูเรเชีย 
+                ทำหน้าที่เป็น <strong>ปราการความมั่นคงและคลังทรัพยากรพลังงานหลัก</strong> ของพันธมิตร SEATO-BRICS ร่วมกับสยาม
+              </p>
+            </div>
+
+            <!-- Analysis 2: SEATO-BRICS Alliance sphere -->
+            <div style="background: rgba(15,23,42,0.7); border: 1px solid rgba(250,204,21,0.4); border-radius: 10px; padding: 14px;">
+              <div style="font-size: 13px; font-weight: 800; color: #facc15; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
+                <span>🟧 ๒. เขตอิทธิพลกลุ่มพันธมิตร SEATO+BRICS (สีส้ม)</span>
+              </div>
+              <p style="font-size: 12px; color: #cbd5e1; margin: 0; line-height: 1.5;">
+                ครอบคลุมพื้นที่ส่วนใหญ่ของโลก ได้แก่ ประเทศไทย (ศูนย์กลาง SEATO), สาธารณรัฐจีน (ROC), อินเดีย, เอเชียกลาง, ตะวันออกกลาง, ออสเตรเลีย, แอฟริกาใต้-ตะวันออก, อเมริกาใต้ (บราซิล/ชิลี) และมลรัฐอะแลสกา 
+                ครองสัดส่วนทรัพยากรและประชากรกว่า ๗๐% ของโลก
+              </p>
+            </div>
+
+            <!-- Analysis 3: Western Alliance EU+NATO -->
+            <div style="background: rgba(15,23,42,0.7); border: 1px solid rgba(96,165,250,0.4); border-radius: 10px; padding: 14px;">
+              <div style="font-size: 13px; font-weight: 800; color: #60a5fa; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
+                <span>🔷 ๓. ขั้วพันธมิตรตะวันตก EU+NATO (สีฟ้า & สหรัฐฯ/เยอรมนี)</span>
+              </div>
+              <p style="font-size: 12px; color: #cbd5e1; margin: 0; line-height: 1.5;">
+                ประกอบด้วย สหรัฐอเมริกา (TSL) และ เยอรมนี (สมาชิกสำคัญสีน้ำเงินเข้มลายดาว) ร่วมกับ แคนาดา, กรีนแลนด์, ยุโรปตะวันตก และสแกนดิเนเวีย ควบคุมเขตยุทธศาสตร์แอตแลนติก
+              </p>
+            </div>
+
+            <!-- Analysis 4: Non-aligned / Conflict zones -->
+            <div style="background: rgba(15,23,42,0.7); border: 1px solid rgba(148,163,184,0.4); border-radius: 10px; padding: 14px;">
+              <div style="font-size: 13px; font-weight: 800; color: #94a3b8; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
+                <span>⬛ ๔. เขตไร้ฝักฝ่าย / สภาพอนาธิปไตย (สีดำ)</span>
+              </div>
+              <p style="font-size: 12px; color: #cbd5e1; margin: 0; line-height: 1.5;">
+                พื้นที่ที่ไม่สังกัดฝ่ายใด เช่น เม็กซิโก, อเมริกากลาง, ภูมิภาคซาฮารา/ซาเฮลในแอฟริกาตะวันตก และพื้นที่บางส่วนของอเมริกาใต้ เป็นเขตกันชนยุทธศาสตร์และพื้นที่เฝ้าระวังความมั่นคงสากล
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- SEATO-BRICS Core Member Nations Matrix -->
         <h4 style="color: #fde047; font-size: 16px; font-weight: 700; margin: 0 0 16px 0; display: flex; align-items: center; gap: 8px;">
-          <span>🌍 ๕ ขั้วมหาอำนาจหลักในระเบียบโลกใหม่ (5 Core Geopolitical Factions)</span>
+          <span>🌍 พันธมิตรมหาอำนาจหลักในกลุ่ม SEATO-BRICS (นำโดยประเทศไทย)</span>
         </h4>
 
         <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 28px;">
           
-          <!-- Faction 1: SEATO-BRICS -->
-          <div style="background: linear-gradient(135deg, rgba(234,179,8,0.15), rgba(0,0,0,0.45)); border: 1px solid #facc15; border-radius: 12px; padding: 20px;">
+          <!-- Member 1: Thailand (Leader) -->
+          <div style="background: linear-gradient(135deg, rgba(234,179,8,0.18), rgba(0,0,0,0.45)); border: 1px solid #facc15; border-radius: 12px; padding: 20px;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
               <h5 style="color: #fde047; font-size: 16px; font-weight: 800; margin: 0; display: flex; align-items: center; gap: 8px;">
-                <span>🤝 ๑. กลุ่มพันธมิตร SEATO-BRICS (นำโดยประเทศไทย)</span>
+                <span>🇹🇭 ประเทศไทย (Thailand - ผู้นำพันธมิตร SEATO-BRICS)</span>
               </h5>
-              <span style="background: #facc15; color: #0f172a; font-size: 10.5px; font-weight: 800; padding: 2px 8px; border-radius: 4px;">ประชากร ๗๐% ของโลก</span>
+              <span style="background: #facc15; color: #0f172a; font-size: 10.5px; font-weight: 800; padding: 2px 8px; border-radius: 4px;">ศูนย์กลางยุทธศาสตร์</span>
             </div>
             <p style="color: #e2e8f0; font-size: 12.5px; margin: 0 0 12px 0; line-height: 1.6;">
-              กลุ่มความร่วมมือด้านเศรษฐกิจและความมั่นคงที่ใหญ่ที่สุดในโลก นำโดยประเทศไทย ครอบคลุมประชากรกว่าร้อยละ ๗๐ ของโลก 
-              มีการปรับโครงสร้างฟื้นฟูสถาปนาองค์กร <strong>SEATO</strong> ขึ้นมาใหม่ โดยมีสำนักงานใหญ่ตั้งอยู่ ณ กรุงเทพมหานคร ส่งผลให้ไทยเป็นศูนย์กลางและมีอำนาจนำในภูมิภาคเอเชียตะวันออกเฉียงใต้อย่างเด็ดขาด
+              ศูนย์กลางการบริหารงานและความมั่นคงของกลุ่มพันธมิตร SEATO-BRICS โดยเป็นที่ตั้งของสำนักงานใหญ่ SEATO ณ กรุงเทพมหานคร 
+              ถืออธิปไตยเหนือโครงการ <strong>คลองไทยไมตรี (๓.๙ ล้านล้านบาท)</strong> เชื่อมมหาสมุทรอันดามันและอ่าวไทย มีอำนาจนำทางยุทธศาสตร์และการเดินเรือพาณิชย์สากล
             </p>
             <div style="background: rgba(0,0,0,0.3); padding: 10px 12px; border-radius: 8px; font-size: 11.5px; color: #cbd5e1; display: flex; flex-direction: column; gap: 4px;">
-              <div><strong style="color: #facc15;">ศูนย์กลางยุทธศาสตร์:</strong> กรุงเทพมหานคร (สำนักงานใหญ่ SEATO) & คลองไทยไมตรี</div>
-              <div><strong style="color: #facc15;">ความมั่นคงทางทะเล:</strong> ควบคุมเส้นทางเดินเรือเชื่อมอันดามัน-อ่าวไทย (ลงทุน ๓.๙ ล้านล้านบาท)</div>
+              <div><strong style="color: #facc15;">ระบอบการปกครอง:</strong> ราชาธิปไตยภายใต้รัฐธรรมนูญ & ระบบสภาสยาม</div>
+              <div><strong style="color: #facc15;">สกุลเงินหลัก:</strong> บาทสยาม (THB)</div>
             </div>
           </div>
 
-          <!-- Faction 2: Russia -->
-          <div style="background: linear-gradient(135deg, rgba(168,85,247,0.15), rgba(0,0,0,0.45)); border: 1px solid #c084fc; border-radius: 12px; padding: 20px;">
+          <!-- Member 2: Russia (Federal Royal Empire) -->
+          <div style="background: linear-gradient(135deg, rgba(168,85,247,0.18), rgba(0,0,0,0.45)); border: 1px solid #c084fc; border-radius: 12px; padding: 20px;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
               <h5 style="color: #e9d5ff; font-size: 16px; font-weight: 800; margin: 0; display: flex; align-items: center; gap: 8px;">
-                <span>🇷🇺 ๒. สหพันธราชจักรวรรดิรัสเซีย (Royal Empire of Russia)</span>
+                <span>🇷🇺 สหพันธราชจักรวรรดิรัสเซีย (Russia - สมาชิกหลัก BRICS)</span>
               </h5>
               <span style="background: #c084fc; color: #0f172a; font-size: 10.5px; font-weight: 800; padding: 2px 8px; border-radius: 4px;">มหาอำนาจยูเรเชีย</span>
             </div>
             <p style="color: #e2e8f0; font-size: 12.5px; margin: 0 0 12px 0; line-height: 1.6;">
-              มหาประเทศในซีกโลกเหนือใช้ระบบ <strong>"สหพันธราชจักรวรรดิ" (Federal Royal Empire)</strong> สถาปนาตำแหน่ง <strong>"ปธานาทิปดี" (President)</strong> เป็นผู้มีอำนาจบริหารสูงสุดของแผ่นดิน 
-              โดยองค์ <strong>"จักรพรรดิ" (Emperor)</strong> ทรงดำรงอยู่ภายใต้รัฐธรรมนูญจำลองสูงสุดอย่างเคร่งครัด ไร้สิทธิ์แทรกแซงฝ่ายบริหารโดยตรง
+              มหาประเทศซีกโลกเหนือในพันธมิตร SEATO-BRICS ใช้ระบบ <strong>"สหพันธราชจักรวรรดิ" (Federal Royal Empire)</strong> โดยสถาปนาตำแหน่ง <strong>"ปธานาทิปดี" (President)</strong> เป็นผู้มีอำนาจบริหารสูงสุดของแผ่นดิน 
+              และองค์ <strong>"จักรพรรดิ" (Emperor)</strong> ดำรงอยู่ภายใต้รัฐธรรมนูญจำลองอย่างเคร่งครัด คุ้มครองความมั่นคงและทรัพยากรพลังงานยูเรเชีย
             </p>
             <div style="background: rgba(0,0,0,0.3); padding: 10px 12px; border-radius: 8px; font-size: 11.5px; color: #cbd5e1; display: flex; flex-direction: column; gap: 4px;">
               <div><strong style="color: #c084fc;">โครงสร้างบริหาร:</strong> ปธานาทิปดี (ฝ่ายบริหาร) + องค์จักรพรรดิ (ใต้รัฐธรรมนูญ)</div>
-              <div><strong style="color: #c084fc;">เขตความมั่นคง:</strong> ยูเรเชีย, อาร์กติก, คุ้มครองทรัพยากรพลังงานซีกโลกเหนือ</div>
+              <div><strong style="color: #c084fc;">สกุลเงินหลัก:</strong> รูเบิลรัสเซีย (RUB)</div>
             </div>
           </div>
 
-          <!-- Faction 3: Republic of China (ROC) -->
-          <div style="background: linear-gradient(135deg, rgba(96,165,250,0.15), rgba(0,0,0,0.45)); border: 1px solid #60a5fa; border-radius: 12px; padding: 20px;">
+          <!-- Member 3: Republic of China (ROC) -->
+          <div style="background: linear-gradient(135deg, rgba(96,165,250,0.18), rgba(0,0,0,0.45)); border: 1px solid #60a5fa; border-radius: 12px; padding: 20px;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
               <h5 style="color: #93c5fd; font-size: 16px; font-weight: 800; margin: 0; display: flex; align-items: center; gap: 8px;">
-                <span>🇨🇳 ๓. สาธารณรัฐจีน (Republic of China - ROC)</span>
+                <span>🇨🇳 สาธารณรัฐจีน (China / ROC - สมาชิกหลัก BRICS)</span>
               </h5>
               <span style="background: #60a5fa; color: #0f172a; font-size: 10.5px; font-weight: 800; padding: 2px 8px; border-radius: 4px;">ประชาธิปไตยเอกภาพ</span>
             </div>
             <p style="color: #e2e8f0; font-size: 12.5px; margin: 0 0 12px 0; line-height: 1.6;">
-              มหาประเทศจีนสถาปนาและปกครองโดยระบอบประชาธิปไตยเต็มรูปแบบอย่างเป็นปึกแผ่นทั่วทุกตารางนิ้วรวมถึงพื้นที่ดินแดนไต้หวัน 
-              โดยไม่มีการแยกเขตหรือลัทธิรัฐบาลซ้อนกัน นำความสงบและเสถียรภาพสากลกลับคืนสู่พื้นที่เอเชียตะวันออกอย่างมั่นคง
+              มหาประเทศจีนในพันธมิตร SEATO-BRICS สถาปนาและปกครองโดยระบอบประชาธิปไตยเต็มรูปแบบอย่างเป็นปึกแผ่นทั่วทุกตารางนิ้วรวมถึงพื้นที่ดินแดนไต้หวัน 
+              โดยไม่มีการแยกเขตหรือลัทธิรัฐบาลซ้อนกัน นำเสถียรภาพอุตสาหกรรมชิปเซ็ตและการค้าเอเชียตะวันออกร่วมกับสยาม
             </p>
             <div style="background: rgba(0,0,0,0.3); padding: 10px 12px; border-radius: 8px; font-size: 11.5px; color: #cbd5e1; display: flex; flex-direction: column; gap: 4px;">
               <div><strong style="color: #60a5fa;">เอกภาพแผ่นดิน:</strong> รวมศูนย์แผ่นดินใหญ่และไต้หวันเป็นระบอบเดียว</div>
-              <div><strong style="color: #60a5fa;">บทบาทสากล:</strong> พันธมิตรความมั่นคงเอเชียตะวันออกและการค้าเสรีสากล</div>
+              <div><strong style="color: #60a5fa;">สกุลเงินหลัก:</strong> หยวนจีน (CNY)</div>
             </div>
           </div>
 
-          <!-- Faction 4: TSL & EU / NATO -->
-          <div style="background: linear-gradient(135deg, rgba(52,211,153,0.15), rgba(0,0,0,0.45)); border: 1px solid #34d399; border-radius: 12px; padding: 20px;">
+          <!-- Member 4: Brazil, India, South Africa & SEATO Nations -->
+          <div style="background: linear-gradient(135deg, rgba(52,211,153,0.18), rgba(0,0,0,0.45)); border: 1px solid #34d399; border-radius: 12px; padding: 20px;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
               <h5 style="color: #a7f3d0; font-size: 16px; font-weight: 800; margin: 0; display: flex; align-items: center; gap: 8px;">
-                <span>🇪🇺 ๔. สหพันธรัฐใหม่ (TSL) & สหภาพยุโรป (EU/NATO)</span>
+                <span>🇧🇷 🇮🇳 🇿🇦 บราซิล อินเดีย แอฟริกาใต้ & พันธมิตร SEATO</span>
               </h5>
-              <span style="background: #34d399; color: #0f172a; font-size: 10.5px; font-weight: 800; padding: 2px 8px; border-radius: 4px;">พันธมิตรแอตแลนติก</span>
+              <span style="background: #34d399; color: #0f172a; font-size: 10.5px; font-weight: 800; padding: 2px 8px; border-radius: 4px;">เศรษฐกิจข้ามทวีป</span>
             </div>
             <p style="color: #e2e8f0; font-size: 12.5px; margin: 0 0 12px 0; line-height: 1.6;">
-              โครงสร้างใหม่ของทวีปอเมริกาเหนือที่รวมเอา ๕๐ รัฐเดิมเข้าเป็นเอกรัฐหนึ่งเดียวอย่างเป็นทางการ ภายใต้การนำร่วม 
-              และได้ตกลงเข้าเป็นสมาชิกอย่างเป็นทางการของสหภาพยุโรป (EU) และองค์การความมั่นคงแอตแลนติกเหนือ (NATO) บริหารระบบเงิน TSL
+              พันธมิตรความร่วมมือข้ามทวีปอเมริกาใต้ (บราซิล), เอเชียใต้ (อินเดีย), แอฟริกา (แอฟริกาใต้) และประเทศภาคี SEATO ในอาเซียน 
+              ร่วมสร้างระบบการค้าพหุภาคี คุ้มครองอธิปไตยทรัพยากรธรรมชาติ และดุลความมั่นคงสากลร่วมกับประเทศไทย
             </p>
             <div style="background: rgba(0,0,0,0.3); padding: 10px 12px; border-radius: 8px; font-size: 11.5px; color: #cbd5e1; display: flex; flex-direction: column; gap: 4px;">
-              <div><strong style="color: #34d399;">กลุ่มพันธมิตร:</strong> สหพันธรัฐใหม่ TSL + สหภาพยุโรป (EU) + NATO</div>
-              <div><strong style="color: #34d399;">ระบบการเงิน:</strong> แดชบอร์ดระบบเงิน TSL และการค้าแอตแลนติก</div>
+              <div><strong style="color: #34d399;">ขอบเขตพันธมิตร:</strong> เอเชียใต้, อเมริกาใต้, แอฟริกาใต้, อาเซียน</div>
+              <div><strong style="color: #34d399;">บทบาทความมั่นคง:</strong> คุ้มครองเส้นทางขนส่งวัตถุดิบและทรัพยากรโลก</div>
             </div>
           </div>
 
         </div>
 
-        <!-- Geopolitical Flashpoints & Dispute Case Study -->
-        <div style="margin-bottom: 28px; background: rgba(0,0,0,0.35); border: 1px solid rgba(248,113,113,0.3); border-radius: 12px; padding: 20px;">
-          <h4 style="color: #f87171; font-size: 15px; font-weight: 700; margin: 0 0 12px 0; display: flex; align-items: center; gap: 8px;">
-            <span>🚢 กรณีศึกษายุทธศาสตร์: ข้อพิพาทคลองไทยไมตรี & มติ SEATO-UN</span>
+        <!-- Western Block Comparison: TSL & EU/NATO -->
+        <div style="margin-bottom: 28px; background: rgba(0,0,0,0.35); border: 1px solid rgba(96,165,250,0.3); border-radius: 12px; padding: 20px;">
+          <h4 style="color: #60a5fa; font-size: 15px; font-weight: 700; margin: 0 0 10px 0; display: flex; align-items: center; gap: 8px;">
+            <span>🌐 ขั้วมหาอำนาจตะวันตก: สหพันธรัฐใหม่ (TSL) & สหภาพยุโรป (EU/NATO)</span>
           </h4>
           <p style="color: #e2e8f0; font-size: 12.5px; margin: 0 0 12px 0; line-height: 1.6;">
-            อภิมหาโครงการขุดคลองไทยไมตรีเชื่อมต่อระหว่างทะเลอันดามันและอ่าวไทย ก่อสร้างแล้วเสร็จในปี พ.ศ. ๒๕๘๘ ด้วยเม็ดเงินลงทุนมหาศาล ๓.๙ ล้านล้านบาท 
-            ปฏิวัติเส้นทางคมนาคมพาณิชย์และการเดินเรือโลก 
-            <br>แม้มาเลเซียได้ยื่นคัดค้านหลังโครงการแล้วเสร็จ <strong>แต่พ่ายแพ้ในเวทีระงับพิพาทร่วม SEATO-UN</strong> เนื่องจากไม่ได้ออกเสียงปฏิเสธตั้งแต่ระเบียบวาระก่อตั้งแรกเริ่ม ส่งผลให้ประเทศไทยถืออธิปไตยเหนือช่องทางเดินเรือสากลนี้อย่างสมบูรณ์ 100%
+            ขั้วมหาอำนาจตะวันตกเกิดจากการรวมตัวของทวีปอเมริกาเหนือ ๕๐ รัฐเดิมเข้าเป็น <strong>สหพันธรัฐใหม่ (TSL)</strong> เอกรัฐหนึ่งเดียว 
+            และเข้าร่วมเป็นสมาชิกสถิตย์ของ <strong>สหภาพยุโรป (EU)</strong> และ <strong>NATO</strong> เพื่อคานดุลยภาพทางเศรษฐกิจและความมั่นคงกับกลุ่มพันธมิตร SEATO-BRICS
           </p>
-          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; text-align: center; font-size: 11.5px;">
-            <div style="background: rgba(15,23,42,0.8); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 10px;">
-              <div style="color: #facc15; font-weight: 700;">มูลค่าโครงการ</div>
-              <div style="color: #ffffff; font-weight: 800; margin-top: 2px;">๓.๙ ล้านล้านบาท</div>
-            </div>
-            <div style="background: rgba(15,23,42,0.8); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 10px;">
-              <div style="color: #34d399; font-weight: 700;">ปีที่เสร็จสิ้น</div>
-              <div style="color: #ffffff; font-weight: 800; margin-top: 2px;">พ.ศ. ๒๕๘๘</div>
-            </div>
-            <div style="background: rgba(15,23,42,0.8); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 10px;">
-              <div style="color: #60a5fa; font-weight: 700;">มติระงับพิพาท</div>
-              <div style="color: #ffffff; font-weight: 800; margin-top: 2px;">ชนะคดีใน SEATO-UN</div>
-            </div>
-          </div>
         </div>
 
         <!-- Strategic Comparison Table -->
         <div style="background: rgba(0,0,0,0.3); border-radius: 12px; border: 1px solid rgba(255,255,255,0.08); overflow: hidden;">
-          <div style="background: rgba(15,23,42,0.85); padding: 12px 18px; font-size: 13px; font-weight: 800; color: #c084fc; border-bottom: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center;">
-            <span>📊 ตารางเปรียบเทียบสัดส่วนดุลอำนาจและศักยภาพทางยุทธศาสตร์ (Superpower Comparison)</span>
+          <div style="background: rgba(15,23,42,0.85); padding: 12px 18px; font-size: 13px; font-weight: 800; color: #fde047; border-bottom: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center;">
+            <span>📊 ตารางเปรียบเทียบโครงสร้างมหาอำนาจในกลุ่ม SEATO-BRICS vs ขั้วตะวันตก</span>
             <span style="font-size: 11px; color: #94a3b8; font-weight: 600;">ข้อมูลระเบียบโลกใหม่</span>
           </div>
           <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 12px;">
             <thead>
               <tr style="background: rgba(0,0,0,0.4); color: #94a3b8; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <th style="padding: 10px 14px;">ประเทศ / พันธมิตร</th>
                 <th style="padding: 10px 14px;">กลุ่มมหาอำนาจ</th>
                 <th style="padding: 10px 14px;">ระบอบการปกครอง</th>
-                <th style="padding: 10px 14px;">ศูนย์กลางทางยุทธศาสตร์</th>
                 <th style="padding: 10px 14px; text-align: center;">สกุลเงินหลัก</th>
-                <th style="padding: 10px 14px; text-align: center;">พันธมิตรความมั่นคง</th>
+                <th style="padding: 10px 14px; text-align: center;">ศูนย์กลางยุทธศาสตร์</th>
               </tr>
             </thead>
             <tbody>
               <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding: 10px 14px; font-weight: 700; color: #fde047;">🤝 SEATO-BRICS (ไทย)</td>
+                <td style="padding: 10px 14px; font-weight: 700; color: #fde047;">🇹🇭 ประเทศไทย (ผู้นำ)</td>
+                <td style="padding: 10px 14px; color: #facc15; font-weight: 700;">SEATO - BRICS</td>
                 <td style="padding: 10px 14px; color: #cbd5e1;">ราชาธิปไตยภายใต้ รธน. & สภาสยาม</td>
-                <td style="padding: 10px 14px; color: #cbd5e1;">กรุงเทพมหานคร / คลองไทย</td>
                 <td style="padding: 10px 14px; text-align: center; color: #34d399; font-weight: 700;">บาทสยาม (THB)</td>
-                <td style="padding: 10px 14px; text-align: center; color: #facc15; font-weight: 700;">SEATO-BRICS (๗๐% โลก)</td>
+                <td style="padding: 10px 14px; text-align: center; color: #facc15;">กรุงเทพฯ / คลองไทย</td>
               </tr>
               <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
                 <td style="padding: 10px 14px; font-weight: 700; color: #e9d5ff;">🇷🇺 สหพันธราชจักรวรรดิรัสเซีย</td>
+                <td style="padding: 10px 14px; color: #c084fc; font-weight: 700;">SEATO - BRICS (สมาชิก R)</td>
                 <td style="padding: 10px 14px; color: #cbd5e1;">ปธานาทิปดี & จักรพรรดิใต้ รธน.</td>
-                <td style="padding: 10px 14px; color: #cbd5e1;">มอสโก / ยูเรเชีย</td>
-                <td style="padding: 10px 14px; text-align: center; color: #c084fc; font-weight: 700;">รูเบิล (RUB)</td>
-                <td style="padding: 10px 14px; text-align: center; color: #c084fc; font-weight: 700;">สนธิสัญญายูเรเชีย</td>
+                <td style="padding: 10px 14px; text-align: center; color: #c084fc; font-weight: 700;">รูเบิลรัสเซีย (RUB)</td>
+                <td style="padding: 10px 14px; text-align: center; color: #c084fc;">มอสโก / ยูเรเชีย</td>
               </tr>
               <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
                 <td style="padding: 10px 14px; font-weight: 700; color: #93c5fd;">🇨🇳 สาธารณรัฐจีน (ROC)</td>
+                <td style="padding: 10px 14px; color: #60a5fa; font-weight: 700;">SEATO - BRICS (สมาชิก C)</td>
                 <td style="padding: 10px 14px; color: #cbd5e1;">ประชาธิปไตยเอกภาพ (จีน+ไต้หวัน)</td>
-                <td style="padding: 10px 14px; color: #cbd5e1;">ไทเป-เบจิ่ง / เอเชียตะวันออก</td>
-                <td style="padding: 10px 14px; text-align: center; color: #60a5fa; font-weight: 700;">หยวน (CNY)</td>
-                <td style="padding: 10px 14px; text-align: center; color: #60a5fa; font-weight: 700;">พันธมิตรความมั่นคงเอเชีย</td>
+                <td style="padding: 10px 14px; text-align: center; color: #60a5fa; font-weight: 700;">หยวนจีน (CNY)</td>
+                <td style="padding: 10px 14px; text-align: center; color: #60a5fa;">ไทเป-เบจิ่ง / เอเชียตะวันออก</td>
               </tr>
               <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding: 10px 14px; font-weight: 700; color: #a7f3d0;">🇪🇺 สหพันธรัฐใหม่ (TSL) / EU</td>
-                <td style="padding: 10px 14px; color: #cbd5e1;">สหพันธรัฐร่วมเอกรัฐ ๕๐ รัฐเดิม</td>
-                <td style="padding: 10px 14px; color: #cbd5e1;">บรัสเซลส์ / อเมริกาเหนือ</td>
-                <td style="padding: 10px 14px; text-align: center; color: #34d399; font-weight: 700;">ระบบเงิน TSL / ยูโร</td>
-                <td style="padding: 10px 14px; text-align: center; color: #34d399; font-weight: 700;">NATO / EU Alliance</td>
+                <td style="padding: 10px 14px; font-weight: 700; color: #a7f3d0;">🇧🇷 🇮🇳 🇿🇦 บราซิล อินเดีย แอฟริกาใต้</td>
+                <td style="padding: 10px 14px; color: #34d399; font-weight: 700;">SEATO - BRICS (สมาชิก B, I, S)</td>
+                <td style="padding: 10px 14px; color: #cbd5e1;">สหายพันธมิตรความมั่นคงพหุภาคี</td>
+                <td style="padding: 10px 14px; text-align: center; color: #34d399; font-weight: 700;">สกุลเงินภาคี BRICS</td>
+                <td style="padding: 10px 14px; text-align: center; color: #34d399;">อเมริกาใต้ / เอเชียใต้ / แอฟริกา</td>
               </tr>
               <tr>
-                <td style="padding: 10px 14px; font-weight: 700; color: #fbcfe8;">🇱🇦 ราชอาณาประชาชนลาว</td>
-                <td style="padding: 10px 14px; color: #cbd5e1;">ราชาธิปไตยประชาธิปไตยพันธมิตร</td>
-                <td style="padding: 10px 14px; color: #cbd5e1;">นครหลวงเวียงจันทน์ / แม่น้ำโขง</td>
-                <td style="padding: 10px 14px; text-align: center; color: #f472b6; font-weight: 700;">กีบ / บาทสยาม</td>
-                <td style="padding: 10px 14px; text-align: center; color: #f472b6; font-weight: 700;">สนธิสัญญาไมตรีสยาม-ลาว</td>
+                <td style="padding: 10px 14px; font-weight: 700; color: #60a5fa;">🇪🇺 สหพันธรัฐใหม่ (TSL) / EU</td>
+                <td style="padding: 10px 14px; color: #93c5fd; font-weight: 700;">ขั้วตะวันตก (NATO - EU)</td>
+                <td style="padding: 10px 14px; color: #cbd5e1;">สหพันธรัฐร่วมเอกรัฐ ๕๐ รัฐเดิม</td>
+                <td style="padding: 10px 14px; text-align: center; color: #60a5fa; font-weight: 700;">ระบบเงิน TSL / ยูโร</td>
+                <td style="padding: 10px 14px; text-align: center; color: #60a5fa;">บรัสเซลส์ / อเมริกาเหนือ</td>
               </tr>
             </tbody>
           </table>
@@ -16411,8 +16466,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
       </div>
     </div>
 
-
-    
 
     <div id="world-economy-tab" class="db-tab-content">
       <style scoped>
