@@ -23,7 +23,7 @@ const path = require('path');
         'judiciary-tab', 'legislative-tab', 'hierarchy-laws-tab', 'parties-tab', 'orange-party-tab',
         'independent-organs-tab', 'local-govt-tab', 'ministries-tab', 'khonlalike-tab',
         'bancc-tab', 'flag-tab', 'national-songs-tab', 'thai-canal-tab',
-        'paradox-ai-tab', 'pms-tab', 'goc-tab', 'geopolitics-tab',
+        'paradox-ai-tab', 'pms-tab', 'goc-tab', 'geopolitics-tab', 'superpower-matrix-tab',
         'world-economy-tab', 'laos-kingdom-tab', 'alliances-disputes-tab', 'international-missions-tab',
         'tsl-dashboard-tab', 'the-plague-series-tab', 'dexibola-virus-tab', 'thai-nobel-tab',
         'figures-tab', 'villains-tab'
