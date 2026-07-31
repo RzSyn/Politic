@@ -16397,13 +16397,22 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         </div>
 
         <!-- Western Block Comparison: TSL & EU/NATO -->
-        <div style="margin-bottom: 28px; background: rgba(0,0,0,0.35); border: 1px solid rgba(96,165,250,0.3); border-radius: 12px; padding: 20px;">
-          <h4 style="color: #60a5fa; font-size: 15px; font-weight: 700; margin: 0 0 10px 0; display: flex; align-items: center; gap: 8px;">
-            <span>🌐 ขั้วมหาอำนาจตะวันตก: สหพันธรัฐใหม่ (TSL) & สหภาพยุโรป (EU/NATO)</span>
+        <div style="margin-bottom: 28px; background: rgba(0,0,0,0.35); border: 1px solid rgba(96,165,250,0.35); border-radius: 12px; padding: 20px;">
+          
+          <div style="width: 100%; text-align: center; margin-bottom: 16px;">
+            <img src="images/tsl_eu_nato_emblem.jpg" alt="The New Sovereign League (TSL) & European Union / NATO Alliance Emblem" style="max-width: 100%; height: auto; border: 2px solid rgba(96,165,250,0.4); border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.6); display: inline-block;">
+            <div style="font-size: 11.5px; color: #94a3b8; margin-top: 8px; font-weight: 600;">
+              🦅 ตราสัญลักษณ์พันธมิตรความมั่นคงแอตแลนติก: The New Sovereign League (TSL) & European Union / NATO Alliance
+            </div>
+          </div>
+
+          <h4 style="color: #60a5fa; font-size: 16px; font-weight: 800; margin: 0 0 10px 0; display: flex; align-items: center; gap: 8px;">
+            <span>🌐 ขั้วมหาอำนาจตะวันตก: สหพันธรัฐใหม่ (TSL) & สหภาพยุโรป (EU/NATO Alliance)</span>
           </h4>
-          <p style="color: #e2e8f0; font-size: 12.5px; margin: 0 0 12px 0; line-height: 1.6;">
-            ขั้วมหาอำนาจตะวันตกเกิดจากการรวมตัวของทวีปอเมริกาเหนือ ๕๐ รัฐเดิมเข้าเป็น <strong>สหพันธรัฐใหม่ (TSL)</strong> เอกรัฐหนึ่งเดียว 
-            และเข้าร่วมเป็นสมาชิกสถิตย์ของ <strong>สหภาพยุโรป (EU)</strong> และ <strong>NATO</strong> เพื่อคานดุลยภาพทางเศรษฐกิจและความมั่นคงกับกลุ่มพันธมิตร SEATO-BRICS
+          <p style="color: #e2e8f0; font-size: 12.5px; margin: 0; line-height: 1.6;">
+            ขั้วมหาอำนาจตะวันตกสถาปนาขึ้นจากการรวมตัวทางยุทธศาสตร์ของทวีปอเมริกาเหนือ ๕๐ รัฐเดิมเข้าเป็น <strong>สหพันธรัฐใหม่ (The New Sovereign League - TSL)</strong> เอกรัฐหนึ่งเดียว 
+            ภายใต้หลักการ <em>Unity • Liberty • Security • Prosperity</em> และรวมเป็นพันธมิตรความมั่นคงสถิตย์กับ <strong>สหภาพยุโรป (European Union) & NATO</strong> 
+            เพื่อคานดุลยภาพทางยุทธศาสตร์ เทคโนโลยี และการเงินสากลกับกลุ่มพันธมิตร SEATO-BRICS ที่นำโดยประเทศไทย
           </p>
         </div>
 
@@ -17014,6 +17023,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
     
     <!-- Tab: แดชบอร์ดดัชนีระบบการเงิน TSL -->
     <div id="tsl-dashboard-tab" class="db-tab-content">
+        <div style="width: 100%; text-align: center; margin-bottom: 20px;"><img src="images/tsl_eu_nato_emblem.jpg" alt="TSL Alliance Emblem" style="max-width: 100%; height: auto; border: 2px solid rgba(96,165,250,0.4); border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.6); display: inline-block;"></div>
       <div style="text-align:left;">
         <!-- LIVE TICKER BANNER -->
         <div style="background:#0f172a;border:1px solid rgba(74,222,128,0.3);border-radius:12px;padding:10px 18px;margin-bottom:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;box-shadow:0 4px 16px rgba(0,0,0,0.4);">
