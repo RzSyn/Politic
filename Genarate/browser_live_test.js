@@ -20,7 +20,7 @@ const path = require('path');
     const tabIds = [
         'history-tab', 'referendum-tab', 'constitutions-tab', 'early-const-tab',
         'rama7-tab', 'rama9-tab', 'chakri-tab', 'siripanya-tab',
-        'judiciary-tab', 'legislative-tab', 'parties-tab', 'orange-party-tab',
+        'judiciary-tab', 'legislative-tab', 'hierarchy-laws-tab', 'parties-tab', 'orange-party-tab',
         'independent-organs-tab', 'local-govt-tab', 'ministries-tab', 'khonlalike-tab',
         'bancc-tab', 'flag-tab', 'national-songs-tab', 'thai-canal-tab',
         'paradox-ai-tab', 'pms-tab', 'goc-tab', 'geopolitics-tab',

@@ -1971,8 +1971,9 @@ function playAudioMobile(btn, src) {
           <button class="db-tab-btn" onclick="switchTab('national-songs-tab', this)" style="border-color:rgba(234,179,8,0.6);color:#fde047;">🎵 เพลงสำคัญของชาติ</button>
           <button class="db-tab-btn" onclick="switchTab('thai-nobel-tab', this)" style="border-color:rgba(234,179,8,0.6);color:#facc15;">🏆 รางวัลโนเบลไทย</button>
         </div>
-        <!-- แถวที่ ๒ (๕ ปุ่ม) -->
-        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px;">
+        <!-- แถวที่ ๒ (๖ ปุ่ม) -->
+        <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px;">
+          <button class="db-tab-btn" onclick="switchTab('hierarchy-laws-tab', this)" style="border-color:rgba(168,85,247,0.6);color:#c084fc;">📜 ลำดับศักดิ์กฎหมาย</button>
           <button class="db-tab-btn" onclick="switchTab('parties-tab', this)" style="border-color:rgba(192,132,252,0.6);color:#c084fc;">🗳️ พรรคการเมือง</button>
           <button class="db-tab-btn" onclick="switchTab('orange-party-tab', this)" style="border-color:rgba(251,146,60,0.6);color:#fb923c;">🟠 พรรคสีส้ม</button>
           <button class="db-tab-btn" onclick="switchTab('independent-organs-tab', this)" style="border-color:rgba(45,212,191,0.6);color:#2dd4bf;">⚖️ องค์กรอิสระตามรัฐธรรมนูญ</button>
@@ -6336,6 +6337,243 @@ function playAudioMobile(btn, src) {
 
 
 <!-- Tab: พรรคการเมือง -->
+
+
+    
+    <!-- 📜 HIERARCHY OF THAI LAWS TAB -->
+    <div id="hierarchy-laws-tab" class="db-tab-content">
+      <div style="background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 16px; padding: 28px; margin-bottom: 28px; backdrop-filter: blur(12px);">
+        
+        <!-- Header Banner -->
+        <div style="border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 20px; margin-bottom: 24px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 12px;">
+            <h3 style="color: var(--gold-light); font-size: 22px; font-weight: 700; margin: 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 10px;">
+              <span>📜 แผนผังลำดับศักดิ์ของกฎหมายไทย (Hierarchy of Thai Laws)</span>
+            </h3>
+            <span style="background: rgba(168, 85, 247, 0.15); border: 1px solid #c084fc; color: #e9d5ff; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 20px;">
+              ๗ ชั้นลำดับศักดิ์ & หลักนิติศาสตร์สากล
+            </span>
+          </div>
+          <p style="color: #cbd5e1; font-size: 13.5px; margin: 0; line-height: 1.6;">
+            ระบบลำดับศักดิ์กฎหมายไทยกำหนดให้กฎหมายที่มีลำดับศักดิ์สูงกว่าย่อมเหนือกว่ากฎหมายลำดับต่ำกว่า กฎหมายที่มีลำดับศักดิ์ต่ำกว่าจะขัดหรือแย้งต่อกฎหมายลำดับสูงกว่าไม่ได้ 
+            หากขัดกัน กฎหมายลำดับต่ำกว่าจะไม่มีผลบังคับใช้ตามหลักนิติธรรม
+          </p>
+        </div>
+
+        <!-- 3 Core Legal Principles (หลักนิติศาสตร์สากล) -->
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 28px;">
+          <div style="background: rgba(0, 0, 0, 0.35); border: 1px solid rgba(234, 179, 8, 0.3); border-radius: 12px; padding: 16px;">
+            <div style="font-size: 13px; font-weight: 800; color: #facc15; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
+              <span>⚖️ ๑. Lex Superior</span>
+            </div>
+            <div style="font-size: 12px; font-weight: 700; color: #ffffff; margin-bottom: 4px;">Lex Superior Derogat Legi Inferiori</div>
+            <p style="font-size: 11.5px; color: #94a3b8; margin: 0; line-height: 1.5;">
+              กฎหมายลำดับสูงกว่าย่อมเหนือกว่าและยกเว้นกฎหมายลำดับต่ำกว่า (กฎหมายลำดับล่างจะขัดแย้งกับกฎหมายลำดับบนไม่ได้)
+            </p>
+          </div>
+          <div style="background: rgba(0, 0, 0, 0.35); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 12px; padding: 16px;">
+            <div style="font-size: 13px; font-weight: 800; color: #38bdf8; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
+              <span>⚖️ ๒. Lex Specialis</span>
+            </div>
+            <div style="font-size: 12px; font-weight: 700; color: #ffffff; margin-bottom: 4px;">Lex Specialis Derogat Legi Generali</div>
+            <p style="font-size: 11.5px; color: #94a3b8; margin: 0; line-height: 1.5;">
+              กฎหมายเฉพาะย่อมบังคับใช้เหนือและยกเว้นกฎหมายทั่วไป (หากกรณีมีบทเฉพาะเจาะจง ให้ใช้กฎหมายเฉพาะก่อน)
+            </p>
+          </div>
+          <div style="background: rgba(0, 0, 0, 0.35); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 12px; padding: 16px;">
+            <div style="font-size: 13px; font-weight: 800; color: #c084fc; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
+              <span>⚖️ ๓. Lex Posterior</span>
+            </div>
+            <div style="font-size: 12px; font-weight: 700; color: #ffffff; margin-bottom: 4px;">Lex Posterior Derogat Legi Priori</div>
+            <p style="font-size: 11.5px; color: #94a3b8; margin: 0; line-height: 1.5;">
+              กฎหมายใหม่อย่างย่อมยกเว้นและยกเลิกกฎหมายเก่า (หากกฎหมายลำดับเท่ากันขัดกัน ให้ใช้ฉบับที่ตราขึ้นภายหลัง)
+            </p>
+          </div>
+        </div>
+
+        <!-- 7 Tiers Pyramid Stack -->
+        <h4 style="color: #fde047; font-size: 16px; font-weight: 700; margin: 0 0 16px 0; display: flex; align-items: center; gap: 8px;">
+          <span>🏛️ ลำดับชั้นศักดิ์ของกฎหมายไทย ๗ ระดับ (7 Tiers of Law Hierarchy)</span>
+        </h4>
+
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          
+          <!-- TIER 1: รัฐธรรมนูญ -->
+          <div style="background: linear-gradient(135deg, rgba(234,179,8,0.18), rgba(0,0,0,0.4)); border: 1px solid #facc15; border-radius: 12px; padding: 18px; box-shadow: 0 4px 16px rgba(234,179,8,0.1);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px; margin-bottom: 10px;">
+              <div>
+                <span style="background: #facc15; color: #0f172a; font-size: 11px; font-weight: 800; padding: 2px 8px; border-radius: 4px; text-transform: uppercase;">ชั้นที่ ๑ (ลำดับสูงสุด)</span>
+                <h5 style="color: #ffffff; font-size: 16px; font-weight: 800; margin: 6px 0 0 0;">๑. รัฐธรรมนูญแห่งราชอาณาจักรไทย (Constitution of Thailand)</h5>
+              </div>
+              <span style="background: rgba(234,179,8,0.2); border: 1px solid #facc15; color: #fde047; font-size: 11.5px; font-weight: 700; padding: 4px 10px; border-radius: 6px;">
+                ตราโดย: ประชาชน / สภาร่างรัฐธรรมนูญ (สสร.) / พระมหากษัตริย์ทรงลงพระปรมาภิไธย
+              </span>
+            </div>
+            <p style="color: #e2e8f0; font-size: 12.5px; margin: 0 0 10px 0; line-height: 1.6;">
+              กฎหมายสูงสุดในการปกครองประเทศ กำหนดโครงสร้างอำนาจอธิปไตย (นิติบัญญัติ, บริหาร, ตุลาการ), รับรองสิทธิเสรีภาพของประชาชน และวางบทบัญญัติการบริหารราชการแผ่นดิน
+            </p>
+            <div style="display: flex; gap: 16px; font-size: 11.5px; color: #94a3b8; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 8px;">
+              <div><strong style="color: #facc15;">การตรวจสอบ:</strong> ศาลรัฐธรรมนูญมีอำนาจวินิจฉัยว่ากฎหมายอื่นขัดหรือแย้งต่อรัฐธรรมนูญหรือไม่</div>
+              <div><strong style="color: #facc15;">ตัวอย่าง:</strong> รัฐธรรมนูญแห่งราชอาณาจักรไทย พุทธศักราช ๒๕๖๐ (และฉบับจำลอง ๒๕๖๒, ๒๕๖๖)</div>
+            </div>
+          </div>
+
+          <!-- TIER 2: พระราชบัญญัติประกอบรัฐธรรมนูญ -->
+          <div style="background: linear-gradient(135deg, rgba(168,85,247,0.18), rgba(0,0,0,0.4)); border: 1px solid #c084fc; border-radius: 12px; padding: 18px;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px; margin-bottom: 10px;">
+              <div>
+                <span style="background: #c084fc; color: #0f172a; font-size: 11px; font-weight: 800; padding: 2px 8px; border-radius: 4px; text-transform: uppercase;">ชั้นที่ ๒</span>
+                <h5 style="color: #ffffff; font-size: 16px; font-weight: 800; margin: 6px 0 0 0;">๒. พระราชบัญญัติประกอบรัฐธรรมนูญ (พ.ร.ป. / Organic Acts)</h5>
+              </div>
+              <span style="background: rgba(168,85,247,0.2); border: 1px solid #c084fc; color: #e9d5ff; font-size: 11.5px; font-weight: 700; padding: 4px 10px; border-radius: 6px;">
+                ตราโดย: รัฐสภา (สภาผู้แทนราษฎร + วุฒิสภา)
+              </span>
+            </div>
+            <p style="color: #e2e8f0; font-size: 12.5px; margin: 0 0 10px 0; line-height: 1.6;">
+              กฎหมายลูกที่ตราขึ้นเพื่อขยายความรายละเอียดที่กำหนดไว้ในรัฐธรรมนูญโดยเฉพาะ เช่น กลไกการเลือกตั้ง พรรคการเมือง และองค์กรอิสระ มีขั้นตอนการพิจารณาพิเศษที่เข้มงวดกว่า พ.ร.บ. ทั่วไป
+            </p>
+            <div style="display: flex; gap: 16px; font-size: 11.5px; color: #94a3b8; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 8px;">
+              <div><strong style="color: #c084fc;">เงื่อนไขพิเศษ:</strong> ต้องได้รับเสียงเกินกึ่งหนึ่งของรัฐสภา และส่งศาลรัฐธรรมนูญตรวจสอบก่อนนำขึ้นทูลเกล้าฯ</div>
+              <div><strong style="color: #c084fc;">ตัวอย่าง:</strong> พ.ร.ป.ว่าด้วยพรรคการเมือง, พ.ร.ป.ว่าด้วยการเลือกตั้ง ส.ส., พ.ร.ป.ว่าด้วย ป.ป.ช.</div>
+            </div>
+          </div>
+
+          <!-- TIER 3: พระราชบัญญัติ & พระราชกำหนด -->
+          <div style="background: linear-gradient(135deg, rgba(96,165,250,0.18), rgba(0,0,0,0.4)); border: 1px solid #60a5fa; border-radius: 12px; padding: 18px;">
+            <div style="display: flex; justify-content: space-between; align- items: flex-start; flex-wrap: wrap; gap: 10px; margin-bottom: 10px;">
+              <div>
+                <span style="background: #60a5fa; color: #0f172a; font-size: 11px; font-weight: 800; padding: 2px 8px; border-radius: 4px; text-transform: uppercase;">ชั้นที่ ๓</span>
+                <h5 style="color: #ffffff; font-size: 16px; font-weight: 800; margin: 6px 0 0 0;">๓. พระราชบัญญัติ (พ.ร.บ. / Acts) & พระราชกำหนด (พ.ร.ก. / Emergency Decrees)</h5>
+              </div>
+              <span style="background: rgba(96,165,250,0.2); border: 1px solid #60a5fa; color: #93c5fd; font-size: 11.5px; font-weight: 700; padding: 4px 10px; border-radius: 6px;">
+                ตราโดย: รัฐสภา (พ.ร.บ.) / คณะรัฐมนตรี (พ.ร.ก.)
+              </span>
+            </div>
+            <p style="color: #e2e8f0; font-size: 12.5px; margin: 0 0 10px 0; line-height: 1.6;">
+              กฎหมายหลักที่ออกมากำหนดสิทธิ หน้าที่ และบทลงโทษบังคับใช้กับประชาชนทั่วไป 
+              <br>• <strong>พ.ร.บ.</strong> เสนอโดย ครม. / ส.ส. ไม่น้อยกว่า 20 คน / ประชาชนผู้มีสิทธิเลือกตั้ง 10,000 คน 
+              <br>• <strong>พ.ร.ก.</strong> ตราโดย ครม. ในกรณีฉุกเฉินที่มีความจำเป็นรีบด่วนเพื่อรักษาความมั่นคงหรือความปลอดภัยสาธารณะ (มีศักดิ์เท่า พ.ร.บ. แต่ต้องเสนอรัฐสภาอนุมัติภายหลัง)
+            </p>
+            <div style="display: flex; gap: 16px; font-size: 11.5px; color: #94a3b8; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 8px;">
+              <div><strong style="color: #60a5fa;">ตัวอย่าง พ.ร.บ.:</strong> ประมวลกฎหมายอาญา, ประมวลกฎหมายแพ่งและพาณิชย์, พ.ร.บ.การศึกษาแห่งชาติ</div>
+              <div><strong style="color: #60a5fa;">ตัวอย่าง พ.ร.ก.:</strong> พ.ร.ก.การบริหารราชการในสถานการณ์ฉุกเฉิน, พ.ร.ก.กู้เงินเพื่อแก้ไขปัญหาภัยพิบัติ</div>
+            </div>
+          </div>
+
+          <!-- TIER 4: กฎมณเฑียรบาล -->
+          <div style="background: linear-gradient(135deg, rgba(244,63,94,0.18), rgba(0,0,0,0.4)); border: 1px solid #fb7185; border-radius: 12px; padding: 18px;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px; margin-bottom: 10px;">
+              <div>
+                <span style="background: #fb7185; color: #0f172a; font-size: 11px; font-weight: 800; padding: 2px 8px; border-radius: 4px; text-transform: uppercase;">ชั้นที่ ๔</span>
+                <h5 style="color: #ffffff; font-size: 16px; font-weight: 800; margin: 6px 0 0 0;">๔. กฎมณเฑียรบาล (Palace Law)</h5>
+              </div>
+              <span style="background: rgba(244,63,94,0.2); border: 1px solid #fb7185; color: #fecdd3; font-size: 11.5px; font-weight: 700; padding: 4px 10px; border-radius: 6px;">
+                ตราโดย: พระมหากษัตริย์ตามพระราชประเพณี
+              </span>
+            </div>
+            <p style="color: #e2e8f0; font-size: 12.5px; margin: 0 0 10px 0; line-height: 1.6;">
+              กฎหมายโบราณราชประเพณีเกี่ยวกับเรื่องส่วนพระองค์ กิจการในพระราชวัง และการสืบราชสันตติวงศ์ ตามบทบัญญัติรัฐธรรมนูญเกี่ยวกับการสืบราชสมบัติ
+            </p>
+            <div style="font-size: 11.5px; color: #94a3b8; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 8px;">
+              <strong style="color: #fb7185;">ตัวอย่างสำคัญ:</strong> กฎมณเฑียรบาลว่าด้วยการสืบราชสันตติวงศ์ พุทธศักราช ๒๔๖๗
+            </div>
+          </div>
+
+          <!-- TIER 5: พระราชกฤษฎีกา -->
+          <div style="background: linear-gradient(135deg, rgba(52,211,153,0.18), rgba(0,0,0,0.4)); border: 1px solid #34d399; border-radius: 12px; padding: 18px;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px; margin-bottom: 10px;">
+              <div>
+                <span style="background: #34d399; color: #0f172a; font-size: 11px; font-weight: 800; padding: 2px 8px; border-radius: 4px; text-transform: uppercase;">ชั้นที่ ๕</span>
+                <h5 style="color: #ffffff; font-size: 16px; font-weight: 800; margin: 6px 0 0 0;">๕. พระราชกฤษฎีกา (พ.ร.ฎ. / Royal Decrees)</h5>
+              </div>
+              <span style="background: rgba(52,211,153,0.2); border: 1px solid #34d399; color: #a7f3d0; font-size: 11.5px; font-weight: 700; padding: 4px 10px; border-radius: 6px;">
+                ตราโดย: พระมหากษัตริย์โดยคำแนะนำของคณะรัฐมนตรี
+              </span>
+            </div>
+            <p style="color: #e2e8f0; font-size: 12.5px; margin: 0 0 10px 0; line-height: 1.6;">
+              กฎหมายที่ออกโดยฝ่ายบริหาร (ครม.) อาศัยอำนาจตามที่รัฐธรรมนูญหรือ พ.ร.บ. ให้อำนาจไว้ เพื่อการบริหารงานแผ่นดิน
+            </p>
+            <div style="font-size: 11.5px; color: #94a3b8; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 8px;">
+              <strong style="color: #34d399;">ตัวอย่าง:</strong> พ.ร.ฎ.ยุบสภาผู้แทนราษฎร, พ.ร.ฎ.เรียกประชุมรัฐสภา, พ.ร.ฎ.เวนคืนอสังหาริมทรัพย์, พ.ร.ฎ.จัดตั้งองค์กรมหาชน
+            </div>
+          </div>
+
+          <!-- TIER 6: กฎกระทรวง / ประกาศกระทรวง -->
+          <div style="background: linear-gradient(135deg, rgba(251,146,60,0.18), rgba(0,0,0,0.4)); border: 1px solid #fb923c; border-radius: 12px; padding: 18px;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px; margin-bottom: 10px;">
+              <div>
+                <span style="background: #fb923c; color: #0f172a; font-size: 11px; font-weight: 800; padding: 2px 8px; border-radius: 4px; text-transform: uppercase;">ชั้นที่ ๖</span>
+                <h5 style="color: #ffffff; font-size: 16px; font-weight: 800; margin: 6px 0 0 0;">๖. กฎกระทรวง / ประกาศกระทรวง / ระเบียบ / ข้อบังคับ</h5>
+              </div>
+              <span style="background: rgba(251,146,60,0.2); border: 1px solid #fb923c; color: #ffedd5; font-size: 11.5px; font-weight: 700; padding: 4px 10px; border-radius: 6px;">
+                ตราโดย: รัฐมนตรีว่าการกระทรวงเจ้ากระทรวง
+              </span>
+            </div>
+            <p style="color: #e2e8f0; font-size: 12.5px; margin: 0 0 10px 0; line-height: 1.6;">
+              กฎหมายลำดับรองที่รัฐมนตรีเจ้ากระทรวงออกตามอำนาจที่ พ.ร.บ. กำหนดไว้ เพื่อวางเกณฑ์ละเอียดทางเทคนิค ปฏิบัติการ อัตราค่าธรรมเนียม หรือคุณสมบัติผู้ขออนุญาต
+            </p>
+            <div style="font-size: 11.5px; color: #94a3b8; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 8px;">
+              <strong style="color: #fb923c;">ตัวอย่าง:</strong> กฎกระทรวงกำหนดมาตรฐานความปลอดภัยในการทำงาน, ประกาศกระทรวงสาธารณสุขว่าด้วยอัตราค่าบริการทางการแพทย์
+            </div>
+          </div>
+
+          <!-- TIER 7: กฎหมายองค์กรปกครองส่วนท้องถิ่น -->
+          <div style="background: linear-gradient(135deg, rgba(56,189,248,0.18), rgba(0,0,0,0.4)); border: 1px solid #38bdf8; border-radius: 12px; padding: 18px;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px; margin-bottom: 10px;">
+              <div>
+                <span style="background: #38bdf8; color: #0f172a; font-size: 11px; font-weight: 800; padding: 2px 8px; border-radius: 4px; text-transform: uppercase;">ชั้นที่ ๗ (ระดับท้องถิ่น)</span>
+                <h5 style="color: #ffffff; font-size: 16px; font-weight: 800; margin: 6px 0 0 0;">๗. กฎหมายองค์กรปกครองส่วนท้องถิ่น (Local Ordinances)</h5>
+              </div>
+              <span style="background: rgba(56,189,248,0.2); border: 1px solid #38bdf8; color: #e0f2fe; font-size: 11.5px; font-weight: 700; padding: 4px 10px; border-radius: 6px;">
+                ตราโดย: สภาท้องถิ่น (สภา กทม. / สภาเมืองพัทยา / สภา อบจ. / สภาเทศบาล / สภา อบต.)
+              </span>
+            </div>
+            <p style="color: #e2e8f0; font-size: 12.5px; margin: 0 0 10px 0; line-height: 1.6;">
+              กฎหมายลำดับรองระดับท้องถิ่น ออกโดยฝ่ายสภาท้องถิ่นเพื่อบังคับใช้เฉพาะภายในเขตพื้นที่การปกครองของตนเองตามที่ พ.ร.บ. จัดตั้งองค์กรปกครองส่วนท้องถิ่นให้อำนาจไว้
+            </p>
+            <div style="font-size: 11.5px; color: #94a3b8; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 8px;">
+              <strong style="color: #38bdf8;">ตัวอย่าง:</strong> ข้อบัญญัติกรุงเทพมหานครเรื่องการควบคุมอาคาร, ข้อบัญญัติเมืองพัทยาเรื่องการจัดเก็บภาษีป้าย, เทศบัญญัติเรื่องการกำจัดขยะมูลฝอย
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Legislative Workflow Diagram (กระบวนการตรากฎหมาย) -->
+        <div style="margin-top: 28px; background: rgba(0,0,0,0.3); border-radius: 12px; border: 1px solid rgba(255,255,255,0.08); padding: 20px;">
+          <h4 style="color: #38bdf8; font-size: 15px; font-weight: 700; margin: 0 0 14px 0; display: flex; align-items: center; gap: 8px;">
+            <span>🔄 กระบวนการตราพระราชบัญญัติ (Standard Legislative Workflow)</span>
+          </h4>
+          <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; text-align: center;">
+            <div style="background: rgba(15,23,42,0.8); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 12px;">
+              <div style="font-size: 20px; margin-bottom: 4px;">📝</div>
+              <div style="font-size: 11.5px; font-weight: 700; color: #facc15;">ขั้นที่ ๑: เสนอร่าง</div>
+              <div style="font-size: 10.5px; color: #94a3b8; margin-top: 2px;">เสนอโดย ครม. / ส.ส. 20 คน / ประชาชน 10,000 คน</div>
+            </div>
+            <div style="background: rgba(15,23,42,0.8); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 12px;">
+              <div style="font-size: 20px; margin-bottom: 4px;">🏛️</div>
+              <div style="font-size: 11.5px; font-weight: 700; color: #60a5fa;">ขั้นที่ ๒: สภาผู้แทนฯ</div>
+              <div style="font-size: 10.5px; color: #94a3b8; margin-top: 2px;">พิจารณา 3 วาระ (รับหลักการ > กรรมาธิการ > รายมาตรา)</div>
+            </div>
+            <div style="background: rgba(15,23,42,0.8); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 12px;">
+              <div style="font-size: 20px; margin-bottom: 4px;">🗳️</div>
+              <div style="font-size: 11.5px; font-weight: 700; color: #c084fc;">ขั้นที่ ๓: วุฒิสภา</div>
+              <div style="font-size: 10.5px; color: #94a3b8; margin-top: 2px;">เห็นชอบ / แก้ไข / ยับยั้ง (ภายใน 60 วัน)</div>
+            </div>
+            <div style="background: rgba(15,23,42,0.8); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 12px;">
+              <div style="font-size: 20px; margin-bottom: 4px;">⚖️</div>
+              <div style="font-size: 11.5px; font-weight: 700; color: #4ade80;">ขั้นที่ ๔: ศาล รธน. ตรวจ</div>
+              <div style="font-size: 10.5px; color: #94a3b8; margin-top: 2px;">ตรวจสอบความชอบด้วยรัฐธรรมนูญก่อนนำขึ้นทูลเกล้าฯ</div>
+            </div>
+            <div style="background: rgba(15,23,42,0.8); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 12px;">
+              <div style="font-size: 20px; margin-bottom: 4px;">👑</div>
+              <div style="font-size: 11.5px; font-weight: 700; color: #fde047;">ขั้นที่ ๕: ทรงลงพระปรมาภิไธย</div>
+              <div style="font-size: 10.5px; color: #94a3b8; margin-top: 2px;">นายกฯ นำขึ้นทูลเกล้าฯ และประกาศในราชกิจจานุเบกษา</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
 
     <div id="parties-tab" class="db-tab-content">
