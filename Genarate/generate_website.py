@@ -5658,37 +5658,43 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <h5 style="color: #ffffff; font-size: 16px; font-weight: 800; margin: 6px 0 0 0;">๒. พระราชบัญญัติประกอบรัฐธรรมนูญ (พ.ร.ป. / Organic Acts)</h5>
               </div>
               <span style="background: rgba(168,85,247,0.2); border: 1px solid #c084fc; color: #e9d5ff; font-size: 11.5px; font-weight: 700; padding: 4px 10px; border-radius: 6px;">
-                ตราโดย: รัฐสภา (สภาผู้แทนราษฎร + วุฒิสภา)
+                ตราโดย: รัฐสภา & พระมหากษัตริย์ทรงลงพระปรมาภิไธย
               </span>
             </div>
             <p style="color: #e2e8f0; font-size: 12.5px; margin: 0 0 10px 0; line-height: 1.6;">
               กฎหมายลูกที่ตราขึ้นเพื่อขยายความรายละเอียดที่กำหนดไว้ในรัฐธรรมนูญโดยเฉพาะ เช่น กลไกการเลือกตั้ง พรรคการเมือง และองค์กรอิสระ มีขั้นตอนการพิจารณาพิเศษที่เข้มงวดกว่า พ.ร.บ. ทั่วไป
             </p>
-            <div style="display: flex; gap: 16px; font-size: 11.5px; color: #94a3b8; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 8px;">
-              <div><strong style="color: #c084fc;">เงื่อนไขพิเศษ:</strong> ต้องได้รับเสียงเกินกึ่งหนึ่งของรัฐสภา และส่งศาลรัฐธรรมนูญตรวจสอบก่อนนำขึ้นทูลเกล้าฯ</div>
-              <div><strong style="color: #c084fc;">ตัวอย่าง:</strong> พ.ร.ป.ว่าด้วยพรรคการเมือง, พ.ร.ป.ว่าด้วยการเลือกตั้ง ส.ส., พ.ร.ป.ว่าด้วย ป.ป.ช.</div>
+            <div style="display: flex; flex-direction: column; gap: 6px; font-size: 11.5px; color: #94a3b8; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 8px;">
+              <div><strong style="color: #f87171;">⚠️ เงื่อนไขการทรงลงพระปรมาภิไธยบังคับเด็ดขาด:</strong> พระมหากษัตริย์ต้องทรงลงพระปรมาภิไธยใน พ.ร.ป. ทุกฉบับก่อนประกาศใช้ <span style="color: #ef4444; font-weight: 800;">"หากไม่ทรงลงพระปรมาภิไธย ถือว่าไม่ผ่านและไม่มีผลบังคับใช้เป็นอันขาด"</span></div>
+              <div style="display: flex; gap: 16px; margin-top: 2px;">
+                <div><strong style="color: #c084fc;">เงื่อนไขสภา:</strong> ต้องได้รับเสียงเห็นชอบเกินกึ่งหนึ่งของรัฐสภา และต้องส่งศาลรัฐธรรมนูญตรวจสอบก่อนนำขึ้นทูลเกล้าฯ</div>
+                <div><strong style="color: #c084fc;">ตัวอย่าง:</strong> พ.ร.ป.ว่าด้วยพรรคการเมือง, พ.ร.ป.ว่าด้วยการเลือกตั้ง ส.ส., พ.ร.ป.ว่าด้วย ป.ป.ช.</div>
+              </div>
             </div>
           </div>
 
           <!-- TIER 3: พระราชบัญญัติ & พระราชกำหนด -->
           <div style="background: linear-gradient(135deg, rgba(96,165,250,0.18), rgba(0,0,0,0.4)); border: 1px solid #60a5fa; border-radius: 12px; padding: 18px;">
-            <div style="display: flex; justify-content: space-between; align- items: flex-start; flex-wrap: wrap; gap: 10px; margin-bottom: 10px;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px; margin-bottom: 10px;">
               <div>
                 <span style="background: #60a5fa; color: #0f172a; font-size: 11px; font-weight: 800; padding: 2px 8px; border-radius: 4px; text-transform: uppercase;">ชั้นที่ ๓</span>
                 <h5 style="color: #ffffff; font-size: 16px; font-weight: 800; margin: 6px 0 0 0;">๓. พระราชบัญญัติ (พ.ร.บ. / Acts) & พระราชกำหนด (พ.ร.ก. / Emergency Decrees)</h5>
               </div>
               <span style="background: rgba(96,165,250,0.2); border: 1px solid #60a5fa; color: #93c5fd; font-size: 11.5px; font-weight: 700; padding: 4px 10px; border-radius: 6px;">
-                ตราโดย: รัฐสภา (พ.ร.บ.) / คณะรัฐมนตรี (พ.ร.ก.)
+                ตราโดย: รัฐสภา (พ.ร.บ.) / ครม. (พ.ร.ก.) & พระมหากษัตริย์ทรงลงพระปรมาภิไธย
               </span>
             </div>
             <p style="color: #e2e8f0; font-size: 12.5px; margin: 0 0 10px 0; line-height: 1.6;">
-              กฎหมายหลักที่ออกมากำหนดสิทธิ หน้าที่ และบทลงโทษบังคับใช้กับประชาชนทั่วไป 
-              <br>• <strong>พ.ร.บ.</strong> เสนอโดย ครม. / ส.ส. ไม่น้อยกว่า 20 คน / ประชาชนผู้มีสิทธิเลือกตั้ง 10,000 คน 
+              กฎหมายหลักที่ออกมากำหนดสิทธิ หน้าที่ และบทลงโทษบังคับใช้กับประชาชนทั่วไป
+              <br>• <strong>พ.ร.บ.</strong> เสนอโดย ครม. / ส.ส. ไม่น้อยกว่า 20 คน / ประชาชนผู้มีสิทธิเลือกตั้ง 10,000 คน
               <br>• <strong>พ.ร.ก.</strong> ตราโดย ครม. ในกรณีฉุกเฉินที่มีความจำเป็นรีบด่วนเพื่อรักษาความมั่นคงหรือความปลอดภัยสาธารณะ (มีศักดิ์เท่า พ.ร.บ. แต่ต้องเสนอรัฐสภาอนุมัติภายหลัง)
             </p>
-            <div style="display: flex; gap: 16px; font-size: 11.5px; color: #94a3b8; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 8px;">
-              <div><strong style="color: #60a5fa;">ตัวอย่าง พ.ร.บ.:</strong> ประมวลกฎหมายอาญา, ประมวลกฎหมายแพ่งและพาณิชย์, พ.ร.บ.การศึกษาแห่งชาติ</div>
-              <div><strong style="color: #60a5fa;">ตัวอย่าง พ.ร.ก.:</strong> พ.ร.ก.การบริหารราชการในสถานการณ์ฉุกเฉิน, พ.ร.ก.กู้เงินเพื่อแก้ไขปัญหาภัยพิบัติ</div>
+            <div style="display: flex; flex-direction: column; gap: 6px; font-size: 11.5px; color: #94a3b8; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 8px;">
+              <div><strong style="color: #fde047;">👑 การตราและการบังคับใช้:</strong> พระมหากษัตริย์ทรงลงพระปรมาภิไธยประกาศใช้ในราชกิจจานุเบกษา กฎหมายจึงจะมีผลบังคับใช้โดยสมบูรณ์</div>
+              <div style="display: flex; gap: 16px; margin-top: 2px;">
+                <div><strong style="color: #60a5fa;">ตัวอย่าง พ.ร.บ.:</strong> ประมวลกฎหมายอาญา, ประมวลกฎหมายแพ่งและพาณิชย์, พ.ร.บ.การศึกษาแห่งชาติ</div>
+                <div><strong style="color: #60a5fa;">ตัวอย่าง พ.ร.ก.:</strong> พ.ร.ก.การบริหารราชการในสถานการณ์ฉุกเฉิน, พ.ร.ก.กู้เงินเพื่อแก้ไขปัญหาภัยพิบัติ</div>
+              </div>
             </div>
           </div>
 
