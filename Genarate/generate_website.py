@@ -7444,26 +7444,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
     <!-- Tab: พรรคสีส้ม -->
 
 
-                                                            </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+
 
 <div id="orange-party-tab" class="db-tab-content">
       <div style="text-align:left;">
@@ -8323,7 +8304,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
   </div>
   <div style="font-size:13px;font-weight:700;color:#f97316;margin-top:10px;line-height:1.35;">จัดตั้งรัฐบาลสถาปนานายกฯ คนที่ ๒๙ (ศ.ดร.ปิยบุตร แสงกนกกุล)</div>
 </div>
-              </div>
               <div style="flex-grow:1;">
                 <div style="display:inline-block;background:rgba(251,146,60,0.25);border:1.5px solid #fb923c;color:#fb923c;padding:4px 14px;border-radius:20px;font-size:14px;font-weight:800;margin-bottom:8px;box-shadow:0 0 10px rgba(251,146,60,0.3);">🏷️ ฉายานายกรัฐมนตรี: "นายกแห่งความมั่นคง"</div>
                 <div style="font-size:24px;font-weight:800;color:#fb923c;">นายกรัฐมนตรีคนที่ ๒๙: ศ.ดร.ปิยบุตร แสงกนกกุล</div>
@@ -8333,13 +8313,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <div>• <strong>🏷️ ฉายานายกรัฐมนตรี: "นายกแห่งความมั่นคง":</strong> บริหารแผ่นดินภายใต้บริบทมหาเสถียรภาพสยาม <em>"เป็นสมัยที่มั่นคงที่สุด ประเทศไทยไม่มีอะไรให้ทำ ทั้งในและนอกประเทศ"</em> ไร้วิกฤต ประเทศมั่นคง สว่างสดใส และสงบสุขสูงสุด</div>
                   <div>• <strong>📜 การเสนอแต่งตั้ง ส.ส.ร. ยกร่าง รธน. ใหม่ & มติปัดตก:</strong> มีความพยายามขับเคลื่อนทางนิติศาสตร์เสนอกระบวนการยกร่างรัฐธรรมนูญฉบับใหม่ทั้งฉบับ แต่ถูกสภาร่างรัฐธรรมนูญ (ส.ส.ร.) และสภาสยามปัดตกเนื่องจากรัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕ มีความครบถ้วนสมบูรณ์และเป็นเลิศอยู่แล้ว ส.ส.ร. จึงแนะนำให้เปลี่ยนไปตรา <strong>พระราชบัญญัติประกอบรัฐธรรมนูญ (พ.ร.ป. / Organic Acts)</strong> ขยายความกฎหมายลูกแทน ซึ่งสามารถตรา พ.ร.ป. สำคัญสำเร็จอย่างเรียบร้อย</div>
                   <div>• <strong>⚖️ สไตล์การบริหารนิติศาสตร์:</strong> บริหารงานด้วยแนวคิด <em>พยายามทำหลายอย่าง — ไม่สำเร็จสักอย่าง แต่ไม่เคยล้มเหลวสักอย่าง</em> รักษาระดับความมั่นคงและดุลยภาพทางกฎหมายอย่างมั่นคง</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
 <div id="independent-organs-tab" class="db-tab-content">
 
@@ -12725,18 +12698,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
       </div>
     </div>
 
-    </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+    
 
 <div id="thai-canal-tab" class="db-tab-content">
 
@@ -16351,8 +16313,6 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 <div
 </div>
 
-</div>
-</div>
 </div>
 
 <div id="geopolitics-tab" class="db-tab-content">
