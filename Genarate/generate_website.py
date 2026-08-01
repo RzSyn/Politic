@@ -366,7 +366,7 @@ pms = [
 
     {"num": 27, "name": "อนุเจริญ ชาญวีรกูล (วาระสอง)", "years": "2657-2665", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "นายกรัฐมนตรีคนที่ ๒๗ บริหารวาระเต็ม ๘ ปี (พ.ศ. ๒๖๕๗ - ๒๖๖๕) ภายใต้สโลแกน 'ครั้งแรกมาทำให้เสร็จ คราวนี้มาทำให้ยั่งยืน' ผลักดันพลังงานสะอาด ๑๐0%, ทุนส่งนักเรียนไทยเรียนต่างประเทศ ๓ เท่า, ผลักดันภาพยนตร์เข้าชิง Oscar ๒ เรื่อง, ดนตรีติด Billboard Global, อาหารไทยขึ้นทะเบียน UNESCO และระบบบำนาญถ้วนหน้า โพลคะแนนนิยม ๘๑.๔%"},
 
-    {"num": 28, "name": "อภิสิทธิ์ เวชชาชีวะ (วาระสอง)", "years": "2665-ปัจจุบัน", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "นายกรัฐมนตรีคนที่ ๒๘ (พรรคประชาธิปัตย์) กลับมาดำรงตำแหน่งวาระที่สอง บริหารด้วยสไตล์เงียบแต่ทำจริง ผลงานสำคัญครึ่งวาระแรกได้แก่ โครงการหมู่บ้าน HL ช่วยเหลือคนไร้บ้าน ๘๗,๐๐๐ คนให้พึ่งพาตนเองได้ ๖๑% และการยกระดับสุขภาพถ้วนหน้ามาตรฐานเดียวทั่วประเทศ ประชาชนเข้าตรวจสุขภาพ ๗๑%"}
+    {"num": 28, "name": "อภิสิทธิ์ เวชชาชีวะ (วาระสอง)", "years": "2665-ปัจจุบัน", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "นายกรัฐมนตรีคนที่ ๒๘ (พรรคประชาธิปัตย์) กลับมาดำรงตำแหน่งวาระที่สอง บริหารด้วยสไตล์เงียบแต่ทำจริง ผลงานสำคัญยิ่งใหญ่ได้แก่ การนำประเทศผ่านพ้นวิกฤตไวรัส Dexibola โดยสยามเป็นประเทศเดียวที่ไม่โดนผลกระทบ ไม่มีผู้เสียชีวิต ผู้ติดเชื้อ ๓ รายหายป่วย 100% และผลิตวัคซีนสำเร็จใน ๓ สัปดาห์, พร้อมโครงการหมู่บ้าน HL ช่วยเหลือคนไร้บ้าน ๘๗,๐๐๐ คนให้พึ่งพาตนเองได้ ๖๑% และยกระดับสุขภาพถ้วนหน้ามาตรฐานเดียวทั่วประเทศ"}
 
 ]
 
@@ -37092,7 +37092,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <div style="margin-bottom: 6px;"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๒๘ (กลับมาดำรงตำแหน่งอีกครั้ง)</div>
 
 
-              <div style="margin-bottom: 6px;"><strong>นโยบายหลักครึ่งวาระแรก:</strong> หมู่บ้าน HL + สุขภาพถ้วนหน้ามาตรฐานเดียวทั่วประเทศ</div>
+              <div style="margin-bottom: 6px;"><strong>นโยบาย & ผลงานหลัก:</strong> ชัยชนะวิกฤตไวรัส Dexibola (ไร้ผู้เสียชีวิต/ผลิตวัคซีนใน ๓ สัปดาห์) + หมู่บ้าน HL + สุขภาพถ้วนหน้า</div>
 
 
               <div><strong>สไตล์:</strong> <span style="color: #a5b4fc; font-weight: 600;">เงียบ แต่ทำจริง — ไม่ยาว ไม่หรู</span></div>
@@ -37106,6 +37106,40 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
           <div class="tri-bio">
 
+
+            <!-- 🦠 วิกฤตการณ์ไวรัส Dexibola (Dexibola Virus Crisis Victory) -->
+            <div class="tri-stage" style="border-left: 4px solid #ef4444; background: linear-gradient(135deg, rgba(239,68,68,0.12), rgba(15,23,42,0.75)); margin-bottom: 22px; border-radius: 12px; padding: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.4); border: 1px solid rgba(239,68,68,0.3);">
+              <div class="tri-stage-title" style="color: #f87171; font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+                <span>🦠 วิกฤตการณ์ไวรัส Dexibola — ชัยชนะทางการแพทย์สยามและมาตรการระดับโลก</span>
+                <span style="background: rgba(34,197,94,0.2); border: 1px solid #22c55e; color: #4ade80; font-size: 11.5px; font-weight: 700; padding: 3px 10px; border-radius: 12px;">
+                  อัตราการเสียชีวิต 0% (ไร้ผู้เสียชีวิตแม้แต่รายเดียว)
+                </span>
+              </div>
+              <div style="font-size: 13.5px; color: var(--text-muted); line-height: 1.85; margin-top: 12px;">
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 16px;">
+                  <div style="background: rgba(34,197,94,0.14); border-radius: 10px; padding: 14px; text-align: center; border: 1px solid rgba(34,197,94,0.35);">
+                    <div style="font-size: 26px; font-weight: 800; color: #4ade80;">0 คน</div>
+                    <div style="font-size: 12px; color: #e2e8f0; margin-top: 4px; font-weight: 600;">จำนวนผู้เสียชีวิตในประเทศ</div>
+                  </div>
+                  <div style="background: rgba(56,189,248,0.14); border-radius: 10px; padding: 14px; text-align: center; border: 1px solid rgba(56,189,248,0.35);">
+                    <div style="font-size: 26px; font-weight: 800; color: #38bdf8;">3 / 3 คน</div>
+                    <div style="font-size: 12px; color: #e2e8f0; margin-top: 4px; font-weight: 600;">ผู้ติดเชื้อรักษาหายป่วย 100%</div>
+                  </div>
+                  <div style="background: rgba(250,204,21,0.14); border-radius: 10px; padding: 14px; text-align: center; border: 1px solid rgba(250,204,21,0.35);">
+                    <div style="font-size: 26px; font-weight: 800; color: #facc15;">3 สัปดาห์</div>
+                    <div style="font-size: 12px; color: #e2e8f0; margin-top: 4px; font-weight: 600;">สกัดผลิตวัคซีนสำเร็จ</div>
+                  </div>
+                </div>
+                <div style="background: rgba(15,23,42,0.6); border-radius: 10px; padding: 14px; border-left: 3px solid #38bdf8; margin-bottom: 12px;">
+                  <p style="color: #e2e8f0; font-size: 13px; margin: 0; line-height: 1.75;">
+                    นายกรัฐมนตรีอภิสิทธิ์ เวชชาชีวะ (วาระสอง) บริหารจัดการและพาประเทศไทยผ่านพ้นวิกฤตการณ์ <strong>ไวรัส Dexibola</strong> ได้อย่างสมบูรณ์แบบ 
+                    ส่งผลให้ประเทศไทยเป็น <strong>ประเทศเดียวในโลกที่แทบไม่ได้รับผลกระทบทางสุขภาพและเศรษฐกิจเลย</strong> 
+                    โดยผู้ติดเชื้อทั้ง ๓ รายแรกในประเทศได้รับการรักษาจนหายป่วยสนิท 100% โดยไม่มีผู้เสียชีวิตแม้แต่รายเดียว 
+                    นอกจากนี้ ทีมนักวิจัยการแพทย์ไทยยังสามารถสกัดสารภูมิคุ้มกันจากผู้ป่วยทั้ง ๓ ราย นำไปสู่การพัฒนาและ <strong>ผลิตวัคซีนป้องกันไวรัส Dexibola ได้สำเร็จภายในระยะเวลาเพียง ๓ สัปดาห์</strong> สร้างประวัติศาสตร์ความมั่นคงทางสุขภาพสากล
+                  </p>
+                </div>
+              </div>
+            </div>
 
             <!-- หมู่บ้าน HL -->
 
