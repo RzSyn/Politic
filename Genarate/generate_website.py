@@ -366,9 +366,9 @@ pms = [
 
     {"num": 27, "name": "อนุเจริญ ชาญวีรกูล (วาระสอง)", "years": "2657-2665", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "นายกรัฐมนตรีคนที่ ๒๗ บริหารวาระเต็ม ๘ ปี (พ.ศ. ๒๖๕๗ - ๒๖๖๕) ภายใต้สโลแกน 'ครั้งแรกมาทำให้เสร็จ คราวนี้มาทำให้ยั่งยืน' ผลักดันพลังงานสะอาด ๑๐0%, ทุนส่งนักเรียนไทยเรียนต่างประเทศ ๓ เท่า, ผลักดันภาพยนตร์เข้าชิง Oscar ๒ เรื่อง, ดนตรีติด Billboard Global, อาหารไทยขึ้นทะเบียน UNESCO และระบบบำนาญถ้วนหน้า โพลคะแนนนิยม ๘๑.๔%"},
 
-    {"num": 28, "name": "อภิสิทธิ์ เวชชาชีวะ (วาระสอง)", "years": "2665-ปัจจุบัน", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "นายกรัฐมนตรีคนที่ ๒๘ (พรรคประชาธิปัตย์) กลับมาดำรงตำแหน่งวาระที่สอง บริหารด้วยสไตล์เงียบแต่ทำจริง ผลงานสำคัญยิ่งใหญ่ได้แก่ การนำประเทศผ่านพ้นวิกฤตไวรัส Dexibola โดยสยามเป็นประเทศเดียวที่ไม่โดนผลกระทบ ไม่มีผู้เสียชีวิต ผู้ติดเชื้อ ๓ รายหายป่วย 100% และผลิตวัคซีนสำเร็จใน ๓ สัปดาห์, พร้อมโครงการหมู่บ้าน HL ช่วยเหลือคนไร้บ้าน ๘๗,๐๐๐ คนให้พึ่งพาตนเองได้ ๖๑% และยกระดับสุขภาพถ้วนหน้ามาตรฐานเดียวทั่วประเทศ"},
+    {"num": 28, "name": "อภิสิทธิ์ เวชชาชีวะ (วาระสอง)", "years": "2665-2672", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "นายกรัฐมนตรีคนที่ ๒๘ (พรรคประชาธิปัตย์) กลับมาดำรงตำแหน่งวาระที่สอง บริหารด้วยสไตล์เงียบแต่ทำจริง ผลงานสำคัญยิ่งใหญ่ได้แก่ การนำประเทศผ่านพ้นวิกฤตไวรัส Dexibola โดยสยามเป็นประเทศเดียวที่ไม่โดนผลกระทบ ไม่มีผู้เสียชีวิต ผู้ติดเชื้อ ๓ รายหายป่วย 100% และผลิตวัคซีนสำเร็จใน ๓ สัปดาห์, พร้อมโครงการหมู่บ้าน HL ช่วยเหลือคนไร้บ้าน ๘๗,๐๐๐ คนให้พึ่งพาตนเองได้ ๖๑% และยกระดับสุขภาพถ้วนหน้ามาตรฐานเดียวทั่วประเทศ"},
 
-    {"num": 29, "name": "ศ.ดร.ปิยบุตร แสงกนกกุล", "years": "2672-ปัจจุบัน", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "นายกรัฐมนตรีคนที่ ๒๙ (พรรคก้าวไกล) บริหารด้วยความมุ่งมั่นทางนิติศาสตร์และวิชาการ สไตล์พยายามทำหลายอย่างไม่สำเร็จสักอย่างแต่ไม่ล้มเหลวสักอย่าง เป็นสมัยที่มั่นคงที่สุดประเทศไทยไม่มีอะไรให้ทำทั้งในและนอกประเทศ มีความพยายามยกร่างรัฐธรรมนูญฉบับใหม่แต่ฉบับเดิมสมบูรณ์อยู่แล้วเลยถูก ส.ส.ร. ปัดตก แล้วแนะนำให้เปลี่ยนไปตรา พระราชบัญญัติประกอบรัฐธรรมนูญ (พ.ร.ป.) แทน"}
+    {"num": 29, "name": "ศ.ดร.ปิยบุตร แสงกนกกุล", "years": "2672-2680", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "นายกรัฐมนตรีคนที่ ๒๙ (พรรคก้าวไกล) บริหารด้วยความมุ่งมั่นทางนิติศาสตร์และวิชาการ สไตล์พยายามทำหลายอย่างไม่สำเร็จสักอย่างแต่ไม่ล้มเหลวสักอย่าง เป็นสมัยที่มั่นคงที่สุดประเทศไทยไม่มีอะไรให้ทำทั้งในและนอกประเทศ มีความพยายามยกร่างรัฐธรรมนูญฉบับใหม่แต่ฉบับเดิมสมบูรณ์อยู่แล้วเลยถูก ส.ส.ร. ปัดตก แล้วแนะนำให้เปลี่ยนไปตรา พระราชบัญญัติประกอบรัฐธรรมนูญ (พ.ร.ป.) แทน"}
 
 ]
 
@@ -8271,6 +8271,65 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <div>• <strong>🏛️ ปรับโครงสร้างกระทรวงครั้งใหญ่:</strong> สถาปนากระทรวงทรัพย์สินทางปัญญาและนวัตกรรมดิจิทัล และกระทรวงหลักประกันสังคมถ้วนหน้าเพื่อรองรับสวัสดิการประชาชน</div>
                   <div>• <strong>🎓 ดึงมหาวิทยาลัยกลับ ศธ.:</strong> ดึงสถาบันอุดมศึกษาและมหาวิทยาลัยทั่วประเทศกลับมาขึ้นตรงกับกระทรวงศึกษาธิการ เพื่อปฏิรูปการศึกษาแบบบูรณาการตั้งแต่ปฐมวัยถึงปริญญาเอก</div>
                   <div>• <strong>🤖 ThaiJavis 2.0 & แก้ปัญหาน้ำท่วมถาวร:</strong> ยกระดับระบบ AI แผ่นดิน ThaiJavis 2.0 ครอบคลุมงานบริการรัฐ และบริหารจัดการระบบระบายน้ำ โครงสร้างพื้นฐานป้องกันน้ำท่วมถาวรทั่วประเทศ</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 7. ศ.ดร.ปิยบุตร (ก้าวไกล) - "นายกแห่งความมั่นคง" -->
+            <div style="background:rgba(15,23,42,0.85);border:2px solid #fb923c;border-radius:18px;padding:28px;display:flex;gap:28px;align-items:flex-start;box-shadow:0 8px 24px rgba(251,146,60,0.25);">
+              <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:350px;">
+                <img src="images/piyabutr.jpg" alt="ศ.ดร.ปิยบุตร แสงกนกกุล" style="width:200px;height:250px;object-fit:cover;border-radius:14px;border:3px solid #fb923c;box-shadow:0 8px 20px rgba(0,0,0,0.6);display:block;">
+                <div style="background:#2b221d;border:2px solid #5a4537;border-radius:18px;padding:16px 14px;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,0.45);width:100%;max-width:350px;margin-top:14px;box-sizing:border-box;">
+  <div style="font-size:14px;font-weight:800;color:#fed7aa;margin-bottom:10px;border-bottom:1px solid #4a382c;padding-bottom:6px;letter-spacing:0.2px;">🗳️ สถิติผลเลือกตั้ง & โพลนิยม ๑ วาระ</div>
+  <!-- Term 1 -->
+  <div style="background:rgba(28,22,19,0.8);border:1px solid #3d3029;border-radius:12px;padding:10px 10px 12px 10px;margin-bottom:10px;">
+    <div style="font-size:12px;color:#fb923c;font-weight:700;text-align:left;margin-bottom:4px;">• วาระที่ ๑ (พ.ศ. ๒๖๗๒)</div>
+    <div style="font-size:24px;font-weight:900;color:#f97316;font-family:'Outfit',sans-serif;letter-spacing:-0.5px;line-height:1.1;">19,100,520</div>
+    
+    <!-- Separate % Popular Vote & % MP Seats -->
+    <div style="display:flex;flex-direction:column;gap:4px;margin-top:6px;margin-bottom:8px;font-size:11.5px;">
+      <div style="background:rgba(249,115,22,0.15);border:1px solid rgba(249,115,22,0.4);color:#fdba74;padding:3px 8px;border-radius:6px;font-weight:700;display:flex;justify-content:space-between;">
+        <span>🗳️ Popular Vote:</span>
+        <strong style="color:#ffffff;">50.12%</strong>
+      </div>
+      <div style="background:rgba(56,189,248,0.15);border:1px solid rgba(56,189,248,0.4);color:#7dd3fc;padding:3px 8px;border-radius:6px;font-weight:700;display:flex;justify-content:space-between;">
+        <span>🏛️ ส.ส. ในสภา (251/500):</span>
+        <strong style="color:#ffffff;">50.2%</strong>
+      </div>
+    </div>
+
+    <div style="background:rgba(251,146,60,0.12);border:1px solid rgba(251,146,60,0.3);border-radius:8px;padding:5px 8px;margin-bottom:8px;display:flex;justify-content:space-between;font-size:11.5px;color:#fed7aa;">
+      <span>📊 โพลแรก: <strong>52.4%</strong></span>
+      <span>📈 โพลหลัง: <strong>54.8%</strong></span>
+    </div>
+
+    <div style="background:#14100e;border:1px solid #2e241f;border-radius:10px;padding:6px 4px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px;">
+      <div>
+        <div style="font-size:16px;font-weight:800;color:#ffffff;">251</div>
+        <div style="font-size:10px;color:#9ca3af;">ส.ส. รวม (50.2%)</div>
+      </div>
+      <div>
+        <div style="font-size:16px;font-weight:800;color:#ffffff;">196</div>
+        <div style="font-size:10px;color:#9ca3af;">แบ่งเขต</div>
+      </div>
+      <div>
+        <div style="font-size:16px;font-weight:800;color:#ffffff;">55</div>
+        <div style="font-size:10px;color:#9ca3af;">บัญชีรายชื่อ</div>
+      </div>
+    </div>
+  </div>
+  <div style="font-size:13px;font-weight:700;color:#f97316;margin-top:10px;line-height:1.35;">จัดตั้งรัฐบาลสถาปนานายกฯ คนที่ ๒๙ (ศ.ดร.ปิยบุตร แสงกนกกุล)</div>
+</div>
+              </div>
+              <div style="flex-grow:1;">
+                <div style="display:inline-block;background:rgba(251,146,60,0.25);border:1.5px solid #fb923c;color:#fb923c;padding:4px 14px;border-radius:20px;font-size:14px;font-weight:800;margin-bottom:8px;box-shadow:0 0 10px rgba(251,146,60,0.3);">🏷️ ฉายานายกรัฐมนตรี: "นายกแห่งความมั่นคง"</div>
+                <div style="font-size:24px;font-weight:800;color:#fb923c;">นายกรัฐมนตรีคนที่ ๒๙: ศ.ดร.ปิยบุตร แสงกนกกุล</div>
+                <div style="font-size:15px;color:#fdba74;margin-top:4px;margin-bottom:14px;font-weight:700;">🟠 พรรคก้าวไกล · พ.ศ. ๒๖๗๒ – ๒๖๘๐</div>
+
+                <div style="font-size:15px;color:var(--text-muted);line-height:1.85;display:flex;flex-direction:column;gap:8px;">
+                  <div>• <strong>🏷️ ฉายานายกรัฐมนตรี: "นายกแห่งความมั่นคง":</strong> บริหารแผ่นดินภายใต้บริบทมหาเสถียรภาพสยาม <em>"เป็นสมัยที่มั่นคงที่สุด ประเทศไทยไม่มีอะไรให้ทำ ทั้งในและนอกประเทศ"</em> ไร้วิกฤต ประเทศมั่นคง สว่างสดใส และสงบสุขสูงสุด</div>
+                  <div>• <strong>📜 การเสนอแต่งตั้ง ส.ส.ร. ยกร่าง รธน. ใหม่ & มติปัดตก:</strong> มีความพยายามขับเคลื่อนทางนิติศาสตร์เสนอกระบวนการยกร่างรัฐธรรมนูญฉบับใหม่ทั้งฉบับ แต่ถูกสภาร่างรัฐธรรมนูญ (ส.ส.ร.) และสภาสยามปัดตกเนื่องจากรัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕ มีความครบถ้วนสมบูรณ์และเป็นเลิศอยู่แล้ว ส.ส.ร. จึงแนะนำให้เปลี่ยนไปตรา <strong>พระราชบัญญัติประกอบรัฐธรรมนูญ (พ.ร.ป. / Organic Acts)</strong> ขยายความกฎหมายลูกแทน ซึ่งสามารถตรา พ.ร.ป. สำคัญสำเร็จอย่างเรียบร้อย</div>
+                  <div>• <strong>⚖️ สไตล์การบริหารนิติศาสตร์:</strong> บริหารงานด้วยแนวคิด <em>พยายามทำหลายอย่าง — ไม่สำเร็จสักอย่าง แต่ไม่เคยล้มเหลวสักอย่าง</em> รักษาระดับความมั่นคงและดุลยภาพทางกฎหมายอย่างมั่นคง</div>
                 </div>
               </div>
             </div>
