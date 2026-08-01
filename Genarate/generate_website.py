@@ -1302,14 +1302,15 @@ def get_party_html(num):
         25: ("ก้าวไกล", "#FF4F00", "logo_mf.svg"),
         26: ("หัวใจไทย", "#1E3A8A", "logo_huajaithai.png"),
         27: ("หัวใจไทย", "#1E3A8A", "logo_huajaithai.png"),
-        28: ("ประชาธิปัตย์", "#3B82F6", "logo_dem.svg")
+        28: ("ประชาธิปัตย์", "#3B82F6", "logo_dem.svg"),
+        29: ("ก้าวไกล", "#FF4F00", "logo_mf.svg")
     }
 
 
     name, color, filename = parties.get(num, ("อิสระ", "#9CA3AF", ""))
 
 
-    if num in [6, 7, 10, 11, 13, 15, 16, 17, 18, 19, 20, 22, 23, 24, 25, 26, 27, 28]:
+    if num in [6, 7, 10, 11, 13, 15, 16, 17, 18, 19, 20, 22, 23, 24, 25, 26, 27, 28, 29]:
 
 
         logo_style = f"width: 170px; height: 170px; display: flex; align-items: center; justify-content: center; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.95); border-radius: 12px; padding: 10px; box-sizing: border-box; margin: 0 auto 6px auto; box-shadow: 0 4px 10px rgba(0,0,0,0.15);"
@@ -1426,7 +1427,7 @@ for pm in pms:
     note_str = esc(pm['note']).replace('\n', '<br>')
 
 
-    is_bold = pm['num'] in [4, 13, 14, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
+    is_bold = pm['num'] in [4, 13, 14, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
 
 
     name_display = format_pm_name_html(pm['name'], is_bold)
@@ -1482,6 +1483,8 @@ for pm in pms:
         img_filename = "wiroj.jpg"
     elif pm['num'] == 28:
         img_filename = "abhisit.jpg"
+    elif pm['num'] == 29:
+        img_filename = "piyabutr.jpg"
 
 
     pm_rows.append(f'''<tr class="pm-row" data-era="{era_class}">
@@ -5960,7 +5963,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <div style="font-size:13.5px;"><strong style="color:var(--text);">หัวหน้าพรรค/ผู้นำ:</strong> <span style="color:var(--text-muted);"><strong style="color:#fb923c;">ศ.ดร.ปิยบุตร แสงกนกกุล (หัวหน้าพรรคคนปัจจุบัน)</strong> &nbsp;|&nbsp; อดีตหัวหน้าพรรค: วิโรจน์ ลักขณาดิศร (อดีตนายกฯ คนที่ ๒๕), พิธา ลิ้มเจริญรัตน์, ศิริกัญญา ตันสกุล, ณัฐพงษ์ เรืองปัญญาวุฒิ, พริษฐ์ วัชรสินธุ, รักชนก ศรีนอก</span></div>
 
 
-              <div style="font-size:13px;color:var(--text-muted);line-height:1.6;margin-top:6px;">ก่อตั้งสืบต่อจากพรรคอนาคตใหม่หลังถูกยุบ พ.ศ. ๒๕๖๐ เป็นพรรคแกนนำรัฐบาลประชาธิปไตยที่ส่งนายกรัฐมนตรีถึง ๕ คน ตั้งแต่ พิธา ถึง รักชนก ศรีนอก</div>
+              <div style="font-size:13px;color:var(--text-muted);line-height:1.6;margin-top:6px;">ก่อตั้งสืบต่อจากพรรคอนาคตใหม่หลังถูกยุบ พ.ศ. ๒๕๖๐ เป็นพรรคแกนนำรัฐบาลประชาธิปไตยที่ส่งนายกรัฐมนตรีถึง ๗ คน (พิธา, ศิริกัญญา, ณัฐพงษ์, พริษฐ์, รักชนก, วิโรจน์ และ ศ.ดร.ปิยบุตร แสงกนกกุล)</div>
 
 
               <div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.06);">
@@ -5975,7 +5978,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 <strong style="color:#38bdf8;font-size:12px;display:block;margin-top:6px;">วิเคราะห์เชิงอุดมการณ์และบทบาทรัฐศาสตร์:</strong>
 
 
-                <p style="font-size:12.5px;color:var(--text-muted);line-height:1.6;margin:4px 0 0 0;">ในเชิงวาทศิลป์ทางการเมือง สโลแกนนี้ทำหน้าที่เชื่อมโยงประเด็นการปฏิรูปโครงสร้างเชิงระบบ (การเมืองดี) เข้ากับปัญหาความกินดีอยู่ดีพื้นฐาน (ปากท้องดี) เพื่อสื่อสารว่าเสรีภาพทางการเมืองและสวัสดิการของประชาชนเป็นเรื่องที่แยกจากกันไม่ได้ ในเส้นทางประวัติศาสตร์นี้ ก้าวไกลเป็นพรรคแกนนำเสรีนิยมก้าวหน้าที่มั่นคงสูง สามารถรักษาสถานะพรรคแกนนำจัดตั้งรัฐบาลที่ส่งนายกรัฐมนตรีถึง ๕ คน และร่วมกับ ดร.ธนานนท์ ในการรักษาระบบ ParadoxAI 2.0 เพื่อจัดการงบสาธารณสุขและสวัสดิการให้มีความโปร่งใส</p>
+                <p style="font-size:12.5px;color:var(--text-muted);line-height:1.6;margin:4px 0 0 0;">ในเชิงวาทศิลป์ทางการเมือง สโลแกนนี้ทำหน้าที่เชื่อมโยงประเด็นการปฏิรูปโครงสร้างเชิงระบบ (การเมืองดี) เข้ากับปัญหาความกินดีอยู่ดีพื้นฐาน (ปากท้องดี) เพื่อสื่อสารว่าเสรีภาพทางการเมืองและสวัสดิการของประชาชนเป็นเรื่องที่แยกจากกันไม่ได้ ในเส้นทางประวัติศาสตร์นี้ ก้าวไกลเป็นพรรคแกนนำเสรีนิยมก้าวหน้าที่มั่นคงสูง สามารถรักษาสถานะพรรคแกนนำจัดตั้งรัฐบาลที่ส่งนายกรัฐมนตรีถึง ๗ คน และร่วมกับ ดร.ธนานนท์ ในการรักษาระบบ ParadoxAI 2.0 เพื่อจัดการงบสาธารณสุขและสวัสดิการให้มีความโปร่งใส</p>
 
 
               </div>
