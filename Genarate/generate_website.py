@@ -7574,9 +7574,9 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
     </div>
   </div>
   <div style="font-size:13px;font-weight:700;color:#f97316;margin-top:10px;line-height:1.35;">จัดตั้งรัฐบาลสถาปนานายกฯ คนที่ ๑๖ (ธนาธร จึงรุ่งเรืองกิจ)</div>
-</div></div>
-            </div>
-            <div style="flex-grow:1;">
+</div>
+</div>
+<div style="flex-grow:1;">
               <div style="display:inline-block;background:rgba(251,146,60,0.15);border:1px solid rgba(251,146,60,0.4);color:#fb923c;padding:4px 14px;border-radius:20px;font-size:13.5px;font-weight:700;margin-bottom:8px;">🏷️ ฉายานายกรัฐมนตรี: "นายกส้มผลแรก"</div>
               <div style="font-size:24px;font-weight:800;color:#fb923c;">นายกรัฐมนตรีคนที่ ๑๖: ธนาธร จึงรุ่งเรืองกิจ</div>
               <div style="font-size:15px;color:#fdba74;margin-top:4px;margin-bottom:14px;font-weight:700;">🟠 พรรคอนาคตใหม่ · พ.ศ. ๒๕๕๗ – ๒๕๖๐ (๓ ปี)</div>
@@ -7746,9 +7746,9 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
     </div>
   </div>
   <div style="font-size:13px;font-weight:700;color:#f97316;margin-top:10px;line-height:1.35;">จัดตั้งรัฐบาลสถาปนานายกฯ คนที่ ๑๗ (พิธา ลิ้มเจริญรัตน์)</div>
-</div></div>
-              </div>
-              <div style="flex-grow:1;">
+</div>
+</div>
+<div style="flex-grow:1;">
                 <div style="display:inline-block;background:rgba(251,146,60,0.15);border:1px solid rgba(251,146,60,0.4);color:#fb923c;padding:4px 14px;border-radius:20px;font-size:13.5px;font-weight:700;margin-bottom:8px;">🏷️ ฉายานายกรัฐมนตรี: "นายกแห่งการเปลี่ยนแปลง"</div>
                 <div style="font-size:24px;font-weight:800;color:#fb923c;">นายกรัฐมนตรีคนที่ ๑๗: พิธา ลิ้มเจริญรัตน์</div>
                 <div style="font-size:15px;color:#fdba74;margin-top:4px;margin-bottom:14px;font-weight:700;">🟠 พรรคก้าวไกล · พ.ศ. ๒๕๖๐ – ๒๕๗๖ (๑๖ ปี · ๒ วาระ)</div>
@@ -7765,6 +7765,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 </div>
               </div>
             </div>
+</div>
 
             <!-- 2. ศิริกัญญา (ก้าวไกล) -->
             <div style="background:rgba(15,23,42,0.85);border:2px solid rgba(251,146,60,0.35);border-radius:18px;padding:28px;display:flex;gap:28px;align-items:flex-start;box-shadow:0 6px 20px rgba(0,0,0,0.4);">
@@ -7847,9 +7848,9 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
     </div>
   </div>
   <div style="font-size:13px;font-weight:700;color:#f97316;margin-top:10px;line-height:1.35;">จัดตั้งรัฐบาลสถาปนานายกฯ คนที่ ๑๘ (ศิริกัญญา ตันสกุล)</div>
-</div></div>
-              </div>
-              <div style="flex-grow:1;">
+</div>
+</div>
+<div style="flex-grow:1;">
                 <div style="display:inline-block;background:rgba(251,146,60,0.15);border:1px solid rgba(251,146,60,0.4);color:#fb923c;padding:4px 14px;border-radius:20px;font-size:13.5px;font-weight:700;margin-bottom:8px;">🏷️ ฉายานายกรัฐมนตรี: "นายกแห่งเศรษฐกิจ"</div>
                 <div style="font-size:24px;font-weight:800;color:#fb923c;">นายกรัฐมนตรีคนที่ ๑๘: ศิริกัญญา ตันสกุล</div>
                 <div style="font-size:15px;color:#fdba74;margin-top:4px;margin-bottom:14px;font-weight:700;">🟠 พรรคก้าวไกล · พ.ศ. ๒๕๗๖ – ๒๕๙๒ (๑๖ ปี · ๒ วาระ)</div>
@@ -7862,6 +7863,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                 </div>
               </div>
             </div>
+</div>
 
             <!-- 3. ณัฐพงษ์ (ก้าวไกล) -->
             <div style="background:rgba(15,23,42,0.85);border:2px solid rgba(251,146,60,0.35);border-radius:18px;padding:28px;display:flex;gap:28px;align-items:flex-start;box-shadow:0 6px 20px rgba(0,0,0,0.4);">
@@ -7944,9 +7946,9 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
     </div>
   </div>
   <div style="font-size:13px;font-weight:700;color:#f97316;margin-top:10px;line-height:1.35;">จัดตั้งรัฐบาลสถาปนานายกฯ คนที่ ๑๙ (ณัฐพงษ์ เรืองปัญญาวุฒิ)</div>
-</div></div>
-              </div>
-              <div style="flex-grow:1;">
+</div>
+</div>
+<div style="flex-grow:1;">
                 <div style="display:inline-block;background:rgba(251,146,60,0.15);border:1px solid rgba(251,146,60,0.4);color:#fb923c;padding:4px 14px;border-radius:20px;font-size:13.5px;font-weight:700;margin-bottom:8px;">🏷️ ฉายานายกรัฐมนตรี: "นายกแห่งเทคโนโลยี"</div>
                 <div style="font-size:24px;font-weight:800;color:#fb923c;">นายกรัฐมนตรีคนที่ ๑๙: ณัฐพงษ์ เรืองปัญญาวุฒิ</div>
                 <div style="font-size:15px;color:#fdba74;margin-top:4px;margin-bottom:14px;font-weight:700;">🟠 พรรคก้าวไกล · พ.ศ. ๒๕๙๒ – ๒๕๙๖ (๔ ปี)</div>
@@ -7958,6 +7960,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <div>• <strong>📱 สมาร์ทซิตี้กระจายอำนาจท้องถิ่น:</strong> กระจายอำนาจบริหารและงบพัฒนาท้องถิ่นตรงสู่ประชาชนผ่านระบบแอปพลิเคชันเทคโนโลยีสมาร์ทซิตี้</div>
                 </div>
               </div>
+</div>
             
 
             <!-- 4. พริษฐ์ (ก้าวไกล) -->
@@ -8041,9 +8044,9 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
     </div>
   </div>
   <div style="font-size:13px;font-weight:700;color:#f97316;margin-top:10px;line-height:1.35;">จัดตั้งรัฐบาลสถาปนานายกฯ คนที่ ๒๐ (พริษฐ์ วัชรสินธุ)</div>
-</div></div>
-              </div>
-              <div style="flex-grow:1;">
+</div>
+</div>
+<div style="flex-grow:1;">
                 <div style="display:inline-block;background:rgba(251,146,60,0.15);border:1px solid rgba(251,146,60,0.4);color:#fb923c;padding:4px 14px;border-radius:20px;font-size:13.5px;font-weight:700;margin-bottom:8px;">🏷️ ฉายานายกรัฐมนตรี: "นายกแห่งวิสัยทัศน์"</div>
                 <div style="font-size:24px;font-weight:800;color:#fb923c;">นายกรัฐมนตรีคนที่ ๒๐: พริษฐ์ (ไอติม) วัชรสินธุ</div>
                 <div style="font-size:15px;color:#fdba74;margin-top:4px;margin-bottom:14px;font-weight:700;">🟠 พรรคก้าวไกล · พ.ศ. ๒๕๙๖ – ๒๖๑๒ (๑๖ ปี · ๒ วาระ)</div>
@@ -8055,6 +8058,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <div>• <strong>🌅 ปฏิบัติการรุ่งอรุณ ๒๒٠ (Operation Dawn 220):</strong> นำปฏิบัติการสภาแก้ไขปัญหานิติประหารสภาแผ่นดินและฟื้นฟูเสถียรภาพรัฐธรรมนูญอย่างสงบเรียบร้อย</div>
                 </div>
               </div>
+</div>
             
 
             <!-- 5. รักชนก (ก้าวไกล) - Pale Gray Custom Theme + Grayscale Photo + Bad Achievements from Villains Tab -->
@@ -8138,9 +8142,9 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
     </div>
   </div>
   <div style="font-size:13px;font-weight:700;color:#f97316;margin-top:10px;line-height:1.35;">จัดตั้งรัฐบาลสถาปนานายกฯ คนที่ ๒๒ (รักชนก ศรีนอก)</div>
-</div></div>
-              </div>
-              <div style="flex-grow:1;">
+</div>
+</div>
+<div style="flex-grow:1;">
                 <div style="display:inline-block;background:rgba(239, 68, 68, 0.15);border:1px solid rgba(239, 68, 68, 0.4);color:#f87171;padding:4px 14px;border-radius:20px;font-size:13.5px;font-weight:800;margin-bottom:8px;">🏷️ ฉายานายกรัฐมนตรี: "นายกส้มเน่าหนึ่งเดียว"</div>
                 <div style="font-size:24px;font-weight:800;color:#cbd5e1;">นายกรัฐมนตรีคนที่ ๒๒: รักชนก ศรีนอก</div>
                 <div style="font-size:15px;color:#94a3b8;margin-top:4px;margin-bottom:14px;font-weight:700;">⚪ พรรคก้าวไกล · พ.ศ. ๒๖๑๔ – ๒๖๓₀ (๑๖ ปี · ๒ วาระ)</div>
@@ -8160,6 +8164,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   </div>
                 </div>
               </div>
+</div>
             
 
             <!-- 6. วิโรจน์ (ก้าวไกล) - "นายกส้มที่แท้จริง" (วาระแรก 41.8% / วาระสอง 54.9%) -->
@@ -8243,9 +8248,9 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
     </div>
   </div>
   <div style="font-size:13px;font-weight:700;color:#f97316;margin-top:10px;line-height:1.35;">จัดตั้งรัฐบาลสถาปนานายกฯ คนที่ ๒๕ (วิโรจน์ ลักขณาดิศร)</div>
-</div></div>
-              </div>
-              <div style="flex-grow:1;">
+</div>
+</div>
+<div style="flex-grow:1;">
                 <div style="display:inline-block;background:rgba(251,146,60,0.25);border:1.5px solid #fb923c;color:#fb923c;padding:4px 14px;border-radius:20px;font-size:14px;font-weight:800;margin-bottom:8px;box-shadow:0 0 10px rgba(251,146,60,0.3);">🏷️ ฉายานายกรัฐมนตรี: "นายกส้มที่แท้จริง"</div>
                 <div style="font-size:24px;font-weight:800;color:#fb923c;">นายกรัฐมนตรีคนที่ ๒๕: วิโรจน์ ลักขณาดิศร</div>
                 <div style="font-size:15px;color:#fdba74;margin-top:4px;margin-bottom:14px;font-weight:700;">🟠 พรรคก้าวไกล · พ.ศ. ๒๕๖๓๗ – ๒๖๕๓ (๑๖ ปี · ๒ วาระ)</div>
@@ -8257,6 +8262,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <div>• <strong>🤖 ThaiJavis 2.0 & แก้ปัญหาน้ำท่วมถาวร:</strong> ยกระดับระบบ AI แผ่นดิน ThaiJavis 2.0 ครอบคลุมงานบริการรัฐ และบริหารจัดการระบบระบายน้ำ โครงสร้างพื้นฐานป้องกันน้ำท่วมถาวรทั่วประเทศ</div>
                 </div>
               </div>
+</div>
             
 
             <!-- 7. ศ.ดร.ปิยบุตร (ก้าวไกล) - "นายกแห่งความมั่นคง" -->
@@ -8304,7 +8310,8 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
   </div>
   <div style="font-size:13px;font-weight:700;color:#f97316;margin-top:10px;line-height:1.35;">จัดตั้งรัฐบาลสถาปนานายกฯ คนที่ ๒๙ (ศ.ดร.ปิยบุตร แสงกนกกุล)</div>
 </div>
-              <div style="flex-grow:1;">
+</div>
+<div style="flex-grow:1;">
                 <div style="display:inline-block;background:rgba(251,146,60,0.25);border:1.5px solid #fb923c;color:#fb923c;padding:4px 14px;border-radius:20px;font-size:14px;font-weight:800;margin-bottom:8px;box-shadow:0 0 10px rgba(251,146,60,0.3);">🏷️ ฉายานายกรัฐมนตรี: "นายกแห่งความมั่นคง"</div>
                 <div style="font-size:24px;font-weight:800;color:#fb923c;">นายกรัฐมนตรีคนที่ ๒๙: ศ.ดร.ปิยบุตร แสงกนกกุล</div>
                 <div style="font-size:15px;color:#fdba74;margin-top:4px;margin-bottom:14px;font-weight:700;">🟠 พรรคก้าวไกล · พ.ศ. ๒๖๗๒ – ๒๖๘๐</div>
@@ -8315,7 +8322,18 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                   <div>• <strong>⚖️ สไตล์การบริหารนิติศาสตร์:</strong> บริหารงานด้วยแนวคิด <em>พยายามทำหลายอย่าง — ไม่สำเร็จสักอย่าง แต่ไม่เคยล้มเหลวสักอย่าง</em> รักษาระดับความมั่นคงและดุลยภาพทางกฎหมายอย่างมั่นคง</div>
 
 
-</div></div></div></div></div><div id="independent-organs-tab" class="db-tab-content">
+</div>
+</div></div></div>
+
+
+
+
+
+
+
+
+
+</div><div id="independent-organs-tab" class="db-tab-content">
 
 
       <div style="background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(212, 175, 55, 0.2); border-radius: 16px; padding: 28px; margin-bottom: 28px; backdrop-filter: blur(12px);">
