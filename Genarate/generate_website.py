@@ -368,7 +368,8 @@ pms = [
 
     {"num": 28, "name": "อภิสิทธิ์ เวชชาชีวะ (วาระสอง)", "years": "2665-2672", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "นายกรัฐมนตรีคนที่ ๒๘ (พรรคประชาธิปัตย์) กลับมาดำรงตำแหน่งวาระที่สอง บริหารด้วยสไตล์เงียบแต่ทำจริง ผลงานสำคัญยิ่งใหญ่ได้แก่ การนำประเทศผ่านพ้นวิกฤตไวรัส Dexibola โดยสยามเป็นประเทศเดียวที่ไม่โดนผลกระทบ ไม่มีผู้เสียชีวิต ผู้ติดเชื้อ ๓ รายหายป่วย 100% และผลิตวัคซีนสำเร็จใน ๓ สัปดาห์, พร้อมโครงการหมู่บ้าน HL ช่วยเหลือคนไร้บ้าน ๘๗,๐๐๐ คนให้พึ่งพาตนเองได้ ๖๑% และยกระดับสุขภาพถ้วนหน้ามาตรฐานเดียวทั่วประเทศ"},
 
-    {"num": 29, "name": "ศ.ดร.ปิยบุตร แสงกนกกุล", "years": "2672-2680", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "นายกรัฐมนตรีคนที่ ๒๙ (พรรคก้าวไกล) บริหารด้วยความมุ่งมั่นทางนิติศาสตร์และวิชาการ สไตล์พยายามทำหลายอย่างไม่สำเร็จสักอย่างแต่ไม่ล้มเหลวสักอย่าง เป็นสมัยที่มั่นคงที่สุดประเทศไทยไม่มีอะไรให้ทำทั้งในและนอกประเทศ มีความพยายามยกร่างรัฐธรรมนูญฉบับใหม่แต่ฉบับเดิมสมบูรณ์อยู่แล้วเลยถูก ส.ส.ร. ปัดตก แล้วแนะนำให้เปลี่ยนไปตรา พระราชบัญญัติประกอบรัฐธรรมนูญ (พ.ร.ป.) แทน"}
+    {"num": 29, "name": "ศ.ดร.ปิยบุตร แสงกนกกุล", "years": "2672-2680", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "นายกรัฐมนตรีคนที่ ๒๙ (พรรคก้าวไกล) บริหารด้วยความมุ่งมั่นทางนิติศาสตร์และวิชาการ สไตล์พยายามทำหลายอย่างไม่สำเร็จสักอย่างแต่ไม่ล้มเหลวสักอย่าง เป็นสมัยที่มั่นคงที่สุดประเทศไทยไม่มีอะไรให้ทำทั้งในและนอกประเทศ มีความพยายามยกร่างรัฐธรรมนูญฉบับใหม่แต่ฉบับเดิมสมบูรณ์อยู่แล้วเลยถูก ส.ส.ร. ปัดตก แล้วแนะนำให้เปลี่ยนไปตรา พระราชบัญญัติประกอบรัฐธรรมนูญ (พ.ร.ป.) แทน"},
+    {"num": 30, "name": "ทักษิณ ชินวัตร (วาระสอง)", "years": "2680-ปัจจุบัน", "era": "รัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕", "era_class": "era-3", "note": "นายกรัฐมนตรีคนที่ ๓๐ (พรรคทักษิประชา) คัมแบ็กบริหารแผ่นดินวาระสอง ชนะเลือกตั้งมหาแลนด์สไลด์ ๗๒.๘๐% (๓๖๔ ที่นั่ง) กวาด กทม. เกลี้ยงทุกเขต ประพันธ์หนังสือประวัติศาสตร์ทางเลือก ๔ เล่ม มียอดจำหน่าย ๒๑ ล้านเล่ม และจัดงาน Thailand Alternate History Festival ณ BANCC"}
 
 ]
 
@@ -6040,10 +6041,10 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               </div>
 
 
-              <div style="font-size:13.5px;"><strong style="color:var(--text);">หัวหน้าพรรค:</strong> <span style="color:var(--text-muted);"><strong style="color:#facc15;">ทักษิณ ชินวัตร (หัวหน้าพรรคคนปัจจุบัน - อดีตนายกฯ คนที่ ๔)</strong></span></div>
+              <div style="font-size:13.5px;"><strong style="color:var(--text);">หัวหน้าพรรค:</strong> <span style="color:var(--text-muted);"><strong style="color:#facc15;">ทักษิณ ชินวัตร (หัวหน้าพรรคคนปัจจุบัน & นายกรัฐมนตรีคนที่ ๓๐ วาระสอง)</strong></span></div>
 
 
-              <div style="font-size:13px;color:var(--text-muted);line-height:1.6;margin-top:6px;">พรรคที่อดีตนายกฯ ทักษิณ ชินวัตร สังกัดอยู่ในปัจจุบัน สืบสานอุดมการณ์เศรษฐกิจประชานิยมและการพัฒนาชนบท</div>
+              <div style="font-size:13px;color:var(--text-muted);line-height:1.6;margin-top:6px;">พรรคแกนนำรัฐบาลปัจจุบันที่ ทักษิณ ชินวัตร ดำรงตำแหน่งนายกรัฐมนตรีคนที่ ๓๐ (วาระสอง) ชนะเลือกตั้งมหาประวัติศาสตร์ ๗๒.๘๐% (๓๖๔ ที่นั่ง) กวาด กทม. เกลี้ยงทุกเขต สืบสานอุดมการณ์เศรษฐกิจประชานิยมและการพัฒนาชนบทถ้วนหน้า</div>
 
 
               <div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.06);">
@@ -14603,7 +14604,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
       <p style="margin-bottom: 16px; font-size: 15px; color: var(--text-muted);">
 
 
-        ทำเนียบนายกรัฐมนตรีทั้ง ๒๕ คนของประเทศไทย ทุกท่านมาจากการเลือกตั้งตามครรลองประชาธิปไตย (ไม่มีรัฐประหาร):
+        ทำเนียบนายกรัฐมนตรีทั้ง ๓๐ คนของประเทศไทย ทุกท่านมาจากการเลือกตั้งตามครรลองประชาธิปไตย (ไม่มีรัฐประหาร):
 
 
       </p>
@@ -37701,6 +37702,79 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
 
         <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 32px 0;">
 
+
+        
+        <!-- ทักษิณ ชินวัตร (วาระสอง) — PM30 -->
+        <div class="tri-layout" style="margin-bottom: 32px;">
+          <div class="tri-profile-card" style="border: 2px solid #facc15; background: rgba(15, 23, 42, 0.9);">
+            <img src="images/pm30.jpg" alt="ทักษิณ ชินวัตร (วาระสอง)" class="tri-profile-img" style="border: 3px solid #facc15;">
+            <div class="tri-profile-name" style="color: #facc15;">ทักษิณ ชินวัตร (วาระสอง)</div>
+            <div class="tri-profile-title">นายกรัฐมนตรีคนที่ ๓๐ แห่งราชอาณาจักรไทย</div>
+            <div class="tri-meta">
+              <div style="margin-bottom: 6px;"><strong>พรรคการเมือง:</strong> <span style="color: #facc15; font-weight: 700;">พรรคทักษิประชา</span></div>
+              <div style="margin-bottom: 6px;"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๓๐ (พ.ศ. ๒๖๘๐ – ปัจจุบัน)</div>
+              <div style="margin-bottom: 6px;"><strong>บริบทรัชสมัย:</strong> <span style="color: #4ade80; font-weight: 600;">"คัมแบ็กมหาแลนด์สไลด์ ๗๒.๘๐% — กวาด กทม. เกลี้ยงทุกเขต"</span></div>
+              <div><strong>สไตล์บริหาร:</strong> <span style="color: #fef08a; font-weight: 600;">เศรษฐกิจประชานิยมขั้นสูง & ประวัติศาสตร์ทางเลือก ๒๑ ล้านเล่ม</span></div>
+            </div>
+          </div>
+
+          <div class="tri-bio">
+            
+            <!-- คืนประกาศผลความนิยม & ชนะเลือกตั้งมหาแลนด์สไลด์ -->
+            <div class="tri-stage" style="border-left: 4px solid #facc15; background: rgba(250,204,21,0.08); margin-bottom: 18px; border-radius: 12px; padding: 20px; border: 1px solid rgba(250,204,21,0.25);">
+              <div class="tri-stage-title" style="color: #facc15; font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+                <span>🗳️ คืนประกาศผลความนิยม & ชัยชนะเลือกตั้งมหาแลนด์สไลด์ พ.ศ. ๒๖๘๐</span>
+                <span style="background: rgba(250,204,21,0.2); border: 1px solid #facc15; color: #fef08a; font-size: 11.5px; font-weight: 700; padding: 3px 10px; border-radius: 12px;">
+                  Popular Vote 72.9% • ส.ส. 364/500 ที่นั่ง (72.80%)
+                </span>
+              </div>
+              <div style="font-size: 13.5px; color: var(--text-muted); line-height: 1.85; margin-top: 12px;">
+                <div style="background: rgba(15,23,42,0.8); border: 1px solid rgba(250,204,21,0.3); border-radius: 10px; padding: 14px; margin-bottom: 12px;">
+                  <div style="font-size: 13px; color: #fef08a; font-weight: 700; margin-bottom: 6px;">📊 วิวัฒนาการผลโพลความนิยมคืนประกาศตัวเลขขึ้นจอ:</div>
+                  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 12.5px;">
+                    <div style="background: rgba(0,0,0,0.4); padding: 8px 12px; border-radius: 8px; border-left: 3px solid #64748b;">
+                      <strong>โพลช่วงแรก (แคนดิเดตปริศนา):</strong><br>
+                      <span style="font-size: 16px; color: #94a3b8; font-weight: 800;">พรรคทักษิประชา — 41%</span>
+                    </div>
+                    <div style="background: rgba(250,204,21,0.15); padding: 8px 12px; border-radius: 8px; border-left: 3px solid #facc15;">
+                      <strong>โพลหลังเปิดตัวทักษิณ (1 สัปดาห์ก่อนเลือกตั้ง):</strong><br>
+                      <span style="font-size: 16px; color: #facc15; font-weight: 800;">พรรคทักษิประชา — 68.7%</span>
+                    </div>
+                  </div>
+                </div>
+                <p style="color: #e2e8f0; font-size: 13px; margin: 0; line-height: 1.75;">
+                  <strong>สถิติผลการเลือกตั้ง พ.ศ. ๒๖๘๐:</strong> พรรคทักษิประชาชนะเลือกตั้งถล่มทลายได้ <strong>72.9% Popular Vote</strong> คว้า ส.ส. แบ่งเขต <strong>291 ที่นั่ง จาก 400 เขต (กวาดกรุงเทพมหานครเกลี้ยงทุกเขต)</strong> รวม ส.ส. ทั้งหมด <strong>364 คน จาก 500 คน (72.80%)</strong> สร้างสถิติมหาแลนด์สไลด์เกือบทำลายสถิติสูงสุดของนายกฯ พิธา ลิ้มเจริญรัตน์ วาระสอง (76.8% - 384 คน)
+                </p>
+              </div>
+            </div>
+
+            <!-- ซีรีส์หนังสือประวัติศาสตร์ทางเลือก 21 ล้านเล่ม & งาน Festival ณ BANCC -->
+            <div class="tri-stage" style="border-left: 4px solid #38bdf8; background: rgba(56,189,248,0.08); margin-bottom: 18px; border-radius: 12px; padding: 20px; border: 1px solid rgba(56,189,248,0.25);">
+              <div class="tri-stage-title" style="color: #38bdf8; font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+                <span>📚 ซีรีส์หนังสือ ๒๑ ล้านเล่ม & Thailand Alternate History Festival ณ BANCC</span>
+                <span style="background: rgba(56,189,248,0.2); border: 1px solid #38bdf8; color: #7dd3fc; font-size: 11.5px; font-weight: 700; padding: 3px 10px; border-radius: 12px;">
+                  ๔ เล่ม ยอดขาย 21,000,000 เล่ม • BANCC Hall
+                </span>
+              </div>
+              <div style="font-size: 13.5px; color: var(--text-muted); line-height: 1.85; margin-top: 10px;">
+                <p style="color: #cbd5e1; font-size: 13px; margin: 0 0 10px 0; line-height: 1.75;">
+                  เขียนผลงานหนังสือประวัติศาสตร์ทางเลือก ๔ เล่มจบในชื่อซีรีส์ <strong>"Thailand Alternate Timeline : The Stagnant Decades ทศวรรษที่หายไป"</strong> มียอดจำหน่ายรวมกันถล่มทลายถึง <strong>21,000,000 เล่ม (๒๑ ล้านเล่ม)</strong>
+                </p>
+                <div style="background: rgba(15,23,42,0.8); border: 1px solid rgba(56,189,248,0.3); border-radius: 10px; padding: 12px 16px; font-size: 12.5px; color: #e2e8f0;">
+                  <strong style="color: #38bdf8;">🎪 คณะผู้จัดงาน Thailand Alternate History Festival ณ BANCC:</strong>
+                  <ul style="margin: 6px 0 0 0; padding-left: 20px; color: #94a3b8; line-height: 1.7;">
+                    <li><strong style="color: #facc15;">สิน / SIN ARCHIVE</strong> (ช่องประวัติศาสตร์อันดับ ๑ สอยผู้ติดตาม 31.2M Subs)</li>
+                    <li><strong style="color: #38bdf8;">พี่วิว / Point of View</strong> (ครีเอเตอร์ประวัติศาสตร์มหาชน 24.8M Subs)</li>
+                    <li><strong style="color: #f472b6;">ทักษิณ ชินวัตร</strong> (นายกรัฐมนตรีคนที่ ๓๐ แห่งประเทศไทย)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 32px 0;">
 
         <!-- สายสิญจน์ พณิชไพโรจน์ -->
 
