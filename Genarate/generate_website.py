@@ -1304,14 +1304,15 @@ def get_party_html(num):
         26: ("หัวใจไทย", "#1E3A8A", "logo_huajaithai.png"),
         27: ("หัวใจไทย", "#1E3A8A", "logo_huajaithai.png"),
         28: ("ประชาธิปัตย์", "#3B82F6", "logo_dem.svg"),
-        29: ("ก้าวไกล", "#FF4F00", "logo_mf.svg")
+        29: ("ก้าวไกล", "#FF4F00", "logo_mf.svg"),
+        30: ("ทักษิประชา", "#facc15", "logo_thaksipracha.png")
     }
 
 
     name, color, filename = parties.get(num, ("อิสระ", "#9CA3AF", ""))
 
 
-    if num in [6, 7, 10, 11, 13, 15, 16, 17, 18, 19, 20, 22, 23, 24, 25, 26, 27, 28, 29]:
+    if num in [6, 7, 10, 11, 13, 15, 16, 17, 18, 19, 20, 22, 23, 24, 25, 26, 27, 28, 29, 30]:
 
 
         logo_style = f"width: 170px; height: 170px; display: flex; align-items: center; justify-content: center; background: #ffffff; border: 1.5px solid rgba(255,255,255,0.95); border-radius: 12px; padding: 10px; box-sizing: border-box; margin: 0 auto 6px auto; box-shadow: 0 4px 10px rgba(0,0,0,0.15);"
@@ -1743,7 +1744,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
         <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; margin-bottom: 10px;">
           <button class="db-tab-btn" onclick="switchTab('judiciary-tab', this)" style="border-color:rgba(168,85,247,0.6);color:#c084fc;">⚖️ ฝ่ายตุลาการ (ศาลไทย)</button>
           <button class="db-tab-btn" onclick="switchTab('legislative-tab', this)" style="border-color:rgba(96,165,250,0.6);color:#60a5fa;">⚖️ ฝ่ายนิติบัญญัติ (รัฐสภา)</button>
-          <button class="db-tab-btn" onclick="switchTab('pms-tab', this)" style="border-color:rgba(250,204,21,0.6);color:#facc15;">🏛️ ทำเนียบนายกรัฐมนตรี (๒๘ ท่าน)</button>
+          <button class="db-tab-btn" onclick="switchTab('pms-tab', this)" style="border-color:rgba(250,204,21,0.6);color:#facc15;">🏛️ ทำเนียบนายกรัฐมนตรี (๓๐ ท่าน)</button>
           <button class="db-tab-btn" onclick="switchTab('flag-tab', this)" style="border-color:rgba(248,113,113,0.6);color:#f87171;">🇹🇭 ธงชาติไทย</button>
           <button class="db-tab-btn" onclick="switchTab('national-songs-tab', this)" style="border-color:rgba(234,179,8,0.6);color:#fde047;">🎵 เพลงสำคัญของชาติ</button>
           <button class="db-tab-btn" onclick="switchTab('thai-nobel-tab', this)" style="border-color:rgba(234,179,8,0.6);color:#facc15;">🏆 รางวัลโนเบลไทย</button>
@@ -37767,6 +37768,24 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
                     <li><strong style="color: #38bdf8;">พี่วิว / Point of View</strong> (ครีเอเตอร์ประวัติศาสตร์มหาชน 24.8M Subs)</li>
                     <li><strong style="color: #f472b6;">ทักษิณ ชินวัตร</strong> (นายกรัฐมนตรีคนที่ ๓๐ แห่งประเทศไทย)</li>
                   </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- การปฏิรูปมหาภาค Thaksinomics 2.0 & สวัสดิการคลาวด์ชีวภาพ -->
+            <div class="tri-stage" style="border-left: 4px solid #4ade80; background: rgba(74,222,128,0.08); margin-bottom: 18px; border-radius: 12px; padding: 20px; border: 1px solid rgba(74,222,128,0.25);">
+              <div class="tri-stage-title" style="color: #4ade80; font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+                <span>🚀 การปฏิรูปมหาภาค Thaksinomics 2.0 & สวัสดิการคลาวด์ชีวภาพระดับโมเลกุล</span>
+                <span style="background: rgba(74,222,128,0.2); border: 1px solid #4ade80; color: #86efac; font-size: 11.5px; font-weight: 700; padding: 3px 10px; border-radius: 12px;">
+                  กองทุน 10,000 ชุมชน • Biological Cloud Health
+                </span>
+              </div>
+              <div style="font-size: 13.5px; color: var(--text-muted); line-height: 1.85; margin-top: 10px;">
+                <p style="color: #e2e8f0; font-size: 13px; margin: 0 0 10px 0; line-height: 1.75;">
+                  ต่อยอดโมเดลเศรษฐกิจประชานิยมมหาภาค Thaksinomics 2.0 ยกระดับกองทุนหมู่บ้านและชุมชนเมืองสู่ <strong>"กองทุนนวัตกรรมชุมชนดิจิทัล ๑๐,๐๐๐ แห่งทั่วประเทศ"</strong> ปรับปรุงระบบ 30 บาทรักษาทุกโรคเดิม เข้าสู่โครงข่ายคลาวด์ชีวภาพระดับโมเลกุล (Biological Cloud Health) ร่วมกับระบบ AI แผ่นดิน ParadoxAI
+                </p>
+                <div style="background: rgba(15,23,42,0.8); border: 1px solid rgba(74,222,128,0.3); border-radius: 10px; padding: 12px 16px; font-size: 12.5px; color: #cbd5e1; line-height: 1.7;">
+                  <strong style="color: #4ade80;">🌐 ยุทธศาสตร์การทูตและเศรษฐกิจมหาอำนาจสยาม:</strong> กระชับความร่วมมือทางเศรษฐกิจกับกลุ่มความมั่นคง SEATO-BRICS ขยายดุลการค้าการส่งออกนวัตกรรมและสินค้านวัตกรรมเกษตรสยามสู่ตลาดโลกอย่างยั่งยืน
                 </div>
               </div>
             </div>
