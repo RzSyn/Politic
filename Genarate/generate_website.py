@@ -3458,6 +3458,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
               <strong>ผู้ดำรงตำแหน่ง:</strong><br>
               <span style="color: #fef08a;">สมเด็จพระเทพรัตนราชสุดา เจ้าฟ้ามหาจักรีสิรินธรฯ สยามบรมราชกุมารี</span>
             </div>
+          </div>
                     <!-- 6. สมเด็จพระเจ้าลูกเธอ -->
           <div style="background: rgba(15, 23, 42, 0.85); border: 1.5px solid rgba(250, 204, 21, 0.4); border-radius: 14px; padding: 16px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: space-between; box-shadow: 0 6px 18px rgba(0,0,0,0.3); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
             <div style="width: 100%; border-radius: 10px; overflow: hidden; border: 2px solid #facc15; margin-bottom: 12px; aspect-ratio: 4/5; box-shadow: 0 4px 12px rgba(0,0,0,0.4);">
