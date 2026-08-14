@@ -3381,7 +3381,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             <div style="width: 100%; border-radius: 10px; overflow: hidden; border: 2px solid #facc15; margin-bottom: 12px; aspect-ratio: 4/5; box-shadow: 0 4px 12px rgba(0,0,0,0.4);">
               <img src="images/royal_king.jpg" alt="พระมหากษัตริย์" style="width: 100%; height: 100%; object-fit: cover; object-position: top; display: block;">
             </div>
-            <div style="background: rgba(250, 204, 21, 0.15); border: 1px solid #facc15; color: #facc15; font-size: 12px; font-weight: 800; padding: 4px 8px; border-radius: 8px; margin-bottom: 8px; width: 100%; box-sizing: border-box; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+            <div style="background: rgba(250, 204, 21, 0.15); border: 1px solid #facc15; color: #facc15; font-size: 12px; font-weight: 800; padding: 4px 8px; border-radius: 8px; margin-bottom: 8px; width: 100%; box-sizing: border-box; white-space: normal; word-break: break-word; line-height: 1.35; display: flex; align-items: center; justify-content: center; text-align: center; min-height: 44px;">
               ๑. พระมหากษัตริย์
             </div>
             <div style="font-size: 12.5px; font-weight: 700; color: #ffffff; line-height: 1.5; font-family: 'Inter', sans-serif;">
@@ -3396,7 +3396,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             <div style="width: 100%; border-radius: 10px; overflow: hidden; border: 2px solid #facc15; margin-bottom: 12px; aspect-ratio: 4/5; box-shadow: 0 4px 12px rgba(0,0,0,0.4);">
               <img src="images/royal_mother.png" alt="สมเด็จพระบรมราชชนนี" style="width: 100%; height: 100%; object-fit: cover; object-position: top; display: block;">
             </div>
-            <div style="background: rgba(250, 204, 21, 0.15); border: 1px solid #facc15; color: #facc15; font-size: 12px; font-weight: 800; padding: 4px 8px; border-radius: 8px; margin-bottom: 8px; width: 100%; box-sizing: border-box; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+            <div style="background: rgba(250, 204, 21, 0.15); border: 1px solid #facc15; color: #facc15; font-size: 12px; font-weight: 800; padding: 4px 8px; border-radius: 8px; margin-bottom: 8px; width: 100%; box-sizing: border-box; white-space: normal; word-break: break-word; line-height: 1.35; display: flex; align-items: center; justify-content: center; text-align: center; min-height: 44px;">
               ๒. สมเด็จพระบรมราชชนนี
             </div>
             <div style="font-size: 12.5px; font-weight: 700; color: #ffffff; line-height: 1.5; font-family: 'Inter', sans-serif;">
@@ -3411,7 +3411,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             <div style="width: 100%; border-radius: 10px; overflow: hidden; border: 2px solid #facc15; margin-bottom: 12px; aspect-ratio: 4/5; box-shadow: 0 4px 12px rgba(0,0,0,0.4);">
               <img src="images/royal_queen.webp" alt="สมเด็จพระบรมราชินีนาถ" style="width: 100%; height: 100%; object-fit: cover; object-position: top; display: block;">
             </div>
-            <div style="background: rgba(250, 204, 21, 0.15); border: 1px solid #facc15; color: #facc15; font-size: 12px; font-weight: 800; padding: 4px 8px; border-radius: 8px; margin-bottom: 8px; width: 100%; box-sizing: border-box; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+            <div style="background: rgba(250, 204, 21, 0.15); border: 1px solid #facc15; color: #facc15; font-size: 12px; font-weight: 800; padding: 4px 8px; border-radius: 8px; margin-bottom: 8px; width: 100%; box-sizing: border-box; white-space: normal; word-break: break-word; line-height: 1.35; display: flex; align-items: center; justify-content: center; text-align: center; min-height: 44px;">
               ๓. สมเด็จพระบรมราชินีนาถ
             </div>
             <div style="font-size: 12.5px; font-weight: 700; color: #ffffff; line-height: 1.5; font-family: 'Inter', sans-serif;">
@@ -3425,7 +3425,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             <div style="width: 100%; border-radius: 10px; overflow: hidden; border: 2px solid #facc15; margin-bottom: 12px; aspect-ratio: 4/5; box-shadow: 0 4px 12px rgba(0,0,0,0.4);">
               <img src="images/royal_crown_prince.jpg" alt="สยามมกุฎราชกุมาร" style="width: 100%; height: 100%; object-fit: cover; object-position: top; display: block;">
             </div>
-            <div style="background: rgba(250, 204, 21, 0.15); border: 1px solid #facc15; color: #facc15; font-size: 11px; font-weight: 800; padding: 4px 6px; border-radius: 8px; margin-bottom: 8px; width: 100%; box-sizing: border-box; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;" title="๔. สมเด็จพระบรมราชนัดดาธิราช สยามมกุฎราชกุมาร">
+            <div style="background: rgba(250, 204, 21, 0.15); border: 1px solid #facc15; color: #facc15; font-size: 11px; font-weight: 800; padding: 4px 6px; border-radius: 8px; margin-bottom: 8px; width: 100%; box-sizing: border-box; white-space: normal; word-break: break-word; line-height: 1.35; display: flex; align-items: center; justify-content: center; text-align: center; min-height: 44px;" title="๔. สมเด็จพระบรมราชนัดดาธิราช สยามมกุฎราชกุมาร">
               ๔. สมเด็จพระบรมราชนัดดาธิราช สยามมกุฎราชกุมาร
             </div>
             <div style="font-size: 12px; font-weight: 700; color: #ffffff; line-height: 1.45; font-family: 'Inter', sans-serif;">
@@ -3439,7 +3439,7 @@ dashboard_html = f'''<section id="history_and_pms" class="chapter-section" style
             <div style="width: 100%; border-radius: 10px; overflow: hidden; border: 2px solid #facc15; margin-bottom: 12px; aspect-ratio: 4/5; box-shadow: 0 4px 12px rgba(0,0,0,0.4);">
               <img src="images/royal_princess.jpg" alt="สมเด็จพระเทพรัตนราชสุดาฯ" style="width: 100%; height: 100%; object-fit: cover; object-position: top; display: block;">
             </div>
-            <div style="background: rgba(250, 204, 21, 0.15); border: 1px solid #facc15; color: #facc15; font-size: 11px; font-weight: 800; padding: 4px 6px; border-radius: 8px; margin-bottom: 8px; width: 100%; box-sizing: border-box; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;" title="๕. สมเด็จพระเทพรัตนราชสุดาฯ สยามบรมราชกุมารี">
+            <div style="background: rgba(250, 204, 21, 0.15); border: 1px solid #facc15; color: #facc15; font-size: 11px; font-weight: 800; padding: 4px 6px; border-radius: 8px; margin-bottom: 8px; width: 100%; box-sizing: border-box; white-space: normal; word-break: break-word; line-height: 1.35; display: flex; align-items: center; justify-content: center; text-align: center; min-height: 44px;" title="๕. สมเด็จพระเทพรัตนราชสุดาฯ สยามบรมราชกุมารี">
               ๕. สมเด็จพระเทพรัตนราชสุดาฯ สยามบรมราชกุมารี
             </div>
             <div style="font-size: 12px; font-weight: 700; color: #ffffff; line-height: 1.45; font-family: 'Inter', sans-serif;">
