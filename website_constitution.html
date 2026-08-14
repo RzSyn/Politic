@@ -1850,7 +1850,19 @@ function playAudioMobile(btn, src) {
           box-shadow: 0 4px 15px rgba(0,0,0,0.5) !important;
         }
 
-      </style>
+      
+    .royal-grid-2x4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr) !important;
+      gap: 16px;
+    }
+    @media (max-width: 768px) {
+      .royal-grid-2x4 {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+    }
+
+</style>
 
 
 <script>
@@ -4135,7 +4147,7 @@ function playAudioMobile(btn, src) {
           </span>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 16px;">
+        <div class="royal-grid-2x4" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;">
           
           <!-- 1. พระมหากษัตริย์ -->
           <div style="background: rgba(15, 23, 42, 0.85); border: 1.5px solid rgba(250, 204, 21, 0.4); border-radius: 14px; padding: 16px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: space-between; box-shadow: 0 6px 18px rgba(0,0,0,0.3); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
