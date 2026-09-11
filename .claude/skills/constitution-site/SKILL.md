@@ -201,6 +201,7 @@ Every one of these cost a failed command in real sessions.
 | Downloading from Wikimedia with no User-Agent | HTTP 200 but the body is a ~2 KB HTML error page, saved happily under a `.svg`/`.png` name | Always send `curl -A "<something descriptive>"`; check the first bytes are not `<!DOCTYPE html>` |
 | Counting `<svg` / `</svg>` across the whole file | Reports one unclosed tag; the extra `<svg` is a string inside minified Leaflet at line ~1361 | Only count inside markup, or ignore `<script>` regions |
 | `file://` with Thai path in the browser tool | Cannot open | Validate structurally instead; browser preview is not available for this file |
+| Screenshot of the preview comes back solid dark navy | The Browser pane is hidden (`tabs_context` says so); the page itself is fine | Check `tabs_context` first; while hidden, verify with `javascript_tool` (innerText, computed colour, getBoundingClientRect) instead of retrying screenshots |
 
 **Always read a file's real bytes before assuming.** Reading
 `website_constitution.html` whole fails (5 MB > 256 KB limit) — use `offset`/
