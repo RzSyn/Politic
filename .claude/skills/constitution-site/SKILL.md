@@ -330,6 +330,21 @@ grep -c '๒๖๙๘-ปัจจุบัน' website_constitution.html       
 grep -n 'นายกรัฐมนตรีคนปัจจุบัน' website_constitution.html  # only one Thai PM
 ```
 
+**Article numbers are referenced everywhere.** On 2026-09-16 a new มาตรา ๒๙๖
+(the constitution-drafting procedure) was inserted into หมวด ๑๒ and every
+article from the old ๒๙๖ up shifted by one, so the charter now has
+**๑,๑๖๐ มาตรา**. Doing that touched: `id="art_N"`, `data-target="N"`
+cross-refs, "มาตรา N" / "ม.N" text including lists and ranges
+("ม.๑,๑๕๓-๑,๑๖๐", "มาตรา ๘๐๒ และ ๑๑๖๐"), the sidebar nav ranges, the
+chapter-map cards, ~160 refs across 17 dashboard tabs, and totals
+("๑,๑๖๐ มาตรา"). **Never renumber inside `.compare-container`** — those panes
+quote 2540 numbering even in their "ฉบับแก้ไขใหม่" half. Check afterwards that
+ids run 1..N with no gaps, every `data-target` resolves, and the nav ranges are
+contiguous. Historical statements keep historical counts: the referendum tab's
+"ฉบับที่ผ่านมติ" stays ๑,๑๕๙ because ม.๒๙๖ was added after promulgation.
+Clauses (๒)–(๗) of ม.๒๙๕ sit as loose text in a `div.normal-text` *after* the
+card closes, not inside it.
+
 **`timelineData`** (around line 2396) is an array of
 `{title, desc1, desc2, desc3, result}` rendered by `selectTimelineEra(index)`.
 It is index-driven with no hardcoded length, so adding entries is safe — but
@@ -502,7 +517,12 @@ buttons 53 == panels: True
 13 inline <script> blocks, all pass node --check
 0 broken local references
 pms-tab: 34 rows (1 header + 33 PMs), every row 7 cells
+charter: 1,160 article cards art_1..art_1160 contiguous; 377 data-target cross-refs all resolve;
+         38 sidebar chapters with contiguous ranges ม.๑-๑,๑๖๐; data-origin values:
+         original, modified, ch13_16, ch17_26, ch27_36, special, transitional, later
 ```
+
+(Panel count has since grown past 53 — trust `validate.py`'s buttons == panels check over the number above.)
 
 Check all inline scripts:
 

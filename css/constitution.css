@@ -477,6 +477,7 @@ body.theme-bw .emblem-bw { display: inline-block; }
 .article-card[data-origin="ch27_36"] { border-left-color: var(--accent-purple); }
 .article-card[data-origin="special"] { border-left-color: var(--accent-gold); }
 .article-card[data-origin="transitional"] { border-left-color: var(--accent-blue); }
+.article-card[data-origin="later"] { border-left-color: #22d3ee; }
 
 .article-header { margin-bottom:8px; }
 .badge {
@@ -489,6 +490,7 @@ body.theme-bw .emblem-bw { display: inline-block; }
 .badge-ref3 { background:rgba(245,158,11,0.15); color:#fbbf24; }
 .badge-ref45 { background:rgba(139,92,246,0.15); color:#a78bfa; }
 .badge-special { background:rgba(212,168,67,0.2); color:var(--gold-light); }
+.badge-later { background:rgba(34,211,238,0.15); color:#22d3ee; }
 
 .article-text { font-size:16px; line-height:1.8; }
 .art-num { font-weight:800; color:var(--gold); font-size:17px; }
@@ -1180,6 +1182,7 @@ body.theme-aero .badge-modified,
 body.theme-aero .badge-assembly, 
 body.theme-aero .badge-ref3, 
 body.theme-aero .badge-ref45, 
+body.theme-aero .badge-later, 
 body.theme-aero .badge-special {
   color: #1e293b !important;
   font-weight: 700 !important;
@@ -1317,6 +1320,12 @@ body.theme-bw .mourning-container {
   background: rgba(239, 68, 68, 0.15) !important;
   color: var(--accent-red) !important;
   border: 1px solid rgba(239, 68, 68, 0.3) !important;
+  font-weight: 600;
+}
+.badge-stat-later {
+  background: rgba(34, 211, 238, 0.12) !important;
+  color: #22d3ee !important;
+  border: 1px solid rgba(34, 211, 238, 0.3) !important;
   font-weight: 600;
 }
 .badge-stat-original {
