@@ -259,6 +259,13 @@ invent, and keep invented figures internally consistent:
 
 ## RULE 6 — Site conventions
 
+**คณะราษฎร vs คณะประชาราษฎร.** In canon, คณะราษฎร is หลวงประดิษฐ์มนูธรรม's
+faction and is always framed negatively. Any *positive* people's movement uses
+the name **คณะประชาราษฎร** (user ruling 2026-09-16) — e.g. the ๒๕๗๓ youth
+movement "คณะประชาราษฎรที่ ๓" and its "หมุดประชาราษฎรที่ ๓". Never write
+คณะราษฎร in a positive light. Likewise ปรีดี / เจ้าพระยาประดิษฐ์มนูธรรม is the
+proven assassin in the ร.๘ case — no text may call him vindicated.
+
 **Numerals.** Thai numerals (๐-๙) for years, counts, article numbers. Arabic is
 tolerated inside statistics blocks where the site already mixes them.
 
