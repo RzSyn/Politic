@@ -7,7 +7,7 @@
 <title>รัฐธรรมนูญแห่งราชอาณาจักรไทย (ฉบับจำลอง)</title>
 <script>document.documentElement.classList.add('js');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800&family=Srisakdi:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800&family=Srisakdi:wght@400;700&family=Taviraj:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="../images/Thai_Garuda_emblem.png">
 <style>
 :root {
@@ -219,12 +219,11 @@ a { color: inherit; text-decoration: none; }
 .chip i { width: 7px; height: 7px; border-radius: 50%; background: #facc15; box-shadow: 0 0 10px #facc15; animation: pulse 2s ease-in-out infinite; }
 @keyframes pulse { 50% { opacity: 0.35; } }
 .hero h1 {
-  font-family: 'Outfit', 'Sarabun', sans-serif; font-weight: 800;
-  font-size: clamp(30px, 7.4vw, 60px); line-height: 1.18; letter-spacing: 0.3px;
-  background: linear-gradient(135deg, #fff 35%, var(--gold-2) 70%, var(--gold) 100%);
-  -webkit-background-clip: text; background-clip: text; color: transparent;
+  font-family: 'Taviraj', 'Sarabun', serif; font-weight: 600;
+  font-size: clamp(30px, 7.4vw, 58px); line-height: 1.35; letter-spacing: 0.01em;
+  color: #f4ead2; text-shadow: 0 2px 18px rgba(0, 0, 0, 0.6);
 }
-.hero .era { margin-top: 10px; font-size: clamp(17px, 4.2vw, 22px); color: var(--gold-2); font-weight: 600; }
+.hero .era { margin-top: 12px; font-family: 'Taviraj', 'Sarabun', serif; font-size: clamp(17px, 4.2vw, 22px); color: #d9b965; font-weight: 500; letter-spacing: 0.02em; }
 .hero .lead { margin: 18px auto 0; max-width: 620px; font-size: clamp(15px, 3.8vw, 17.5px); color: var(--muted); font-weight: 300; line-height: 1.85; }
 .cta { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 32px; }
 .scroll-cue {
@@ -242,7 +241,7 @@ body.ready .h-item { animation: up 1s var(--ease) forwards; animation-delay: cal
 section.block { padding: 88px 0; position: relative; }
 section.block.alt { background: linear-gradient(180deg, var(--bg), var(--bg-2) 30%, var(--bg-2) 70%, var(--bg)); }
 .eyebrow { font-family: 'Outfit', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; }
-.h2 { margin-top: 8px; font-size: clamp(26px, 6vw, 38px); font-weight: 800; line-height: 1.3; color: #fff; }
+.h2 { margin-top: 8px; font-family: 'Taviraj', 'Sarabun', serif; font-size: clamp(26px, 6vw, 38px); font-weight: 600; line-height: 1.35; color: #f4ead2; }
 .desc { margin-top: 10px; color: var(--muted); font-size: 16px; font-weight: 300; max-width: 640px; }
 .head { margin-bottom: 40px; }
 
@@ -387,7 +386,7 @@ html.lock .hero { height: 100vh; height: 100svh; overflow-y: auto; }
   <div class="hero-inner">
     <img class="hero-emblem h-item" style="--i:0" src="../images/Thai_Garuda_emblem.png" alt="ตราครุฑพ่าห์">
     <div class="h-item" style="--i:1"><span class="chip"><i></i>ปัจจุบัน พ.ศ. ๒๗๒๓</span></div>
-    <h1 class="h-item" style="--i:2">รัฐธรรมนูญแห่ง<wbr>ราชอาณาจักรไทย</h1>
+    <h1 class="h-item" style="--i:2">รัฐธรรมนูญ<br>แห่งราชอาณาจักรไทย</h1>
     <div class="era h-item" style="--i:3">พุทธศักราช ๒๕๒๕ · ฉบับจำลอง</div>
     <p class="lead h-item" style="--i:4">ฉบับประชาชนเป็นใหญ่ ผ่านประชามติ ๕ รอบ พร้อมประวัติศาสตร์สยามทางเลือกตั้งแต่การพระราชทานรัฐธรรมนูญ พ.ศ. ๒๓๗๕ จนถึงปัจจุบัน</p>
     <div class="cta h-item" style="--i:5">
