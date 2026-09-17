@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
 
-<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700;800&family=Taviraj:wght@500;600&display=swap" rel="stylesheet">
 
 
 <link rel="stylesheet" href="css/constitution.css?v=20260916">
@@ -1958,6 +1958,7 @@ function playAudioMobile(btn, src) {
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px;">
           <button class="db-tab-btn active" onclick="switchTab('history-tab', this)" style="border-color:rgba(250,204,21,0.6);color:#facc15;">📜 ประวัติศาสตร์ประชาธิปไตย</button>
           <button class="db-tab-btn" onclick="switchTab('sappaya-tab', this)" style="border-color:rgba(250,204,21,0.6);color:#facc15;">🏛️ สัปปายะสภาสถาน</button>
+          <button class="db-tab-btn" onclick="switchTab('portrait-hall-tab', this)" style="border-color:rgba(212,175,55,0.6);color:#d4af37;">🖼️ หอภาพเหมือน</button>
           <button class="db-tab-btn" onclick="switchTab('drafting-process-tab', this)" style="border-color:rgba(52,211,153,0.6);color:#34d399;">📝 กระบวนการร่างรัฐธรรมนูญ</button>
           <button class="db-tab-btn" onclick="switchTab('referendum-tab', this)" style="border-color:rgba(251,146,60,0.6);color:#fb923c;">🗳️ มหากาพย์ประชามติ ๕ รอบ</button>
           <button class="db-tab-btn" onclick="switchTab('constitutions-tab', this)" style="border-color:rgba(234,179,8,0.6);color:#fde047;">📜 รัฐธรรมนูญ ๓ ฉบับหลัก</button>
@@ -2867,6 +2868,25 @@ function playAudioMobile(btn, src) {
         </div><div style="background:rgba(250,204,21,0.05); border:1px solid rgba(250,204,21,0.26); border-left:4px solid #facc15; border-radius:10px; padding:16px 20px; margin-top:20px;">
           <div style="font-size:13.5px; color:#fde047; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:8px;">🔗 อ่านต่อ</div>
           <div style="font-size:12.8px; color:var(--text-muted); line-height:1.85;">แถบ <strong style="color:var(--text);">⚖️ ฝ่ายนิติบัญญัติ (รัฐสภา)</strong> &middot; <strong style="color:var(--text);">🏛️ ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช (BANCC)</strong> &middot; <strong style="color:var(--text);">🏛️ มรดกและสถาบันแห่งชาติ</strong> &middot; <strong style="color:var(--text);">👑 พระประชาธิปมหาราช (ร.๗)</strong></div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="portrait-hall-tab" class="db-tab-content">
+
+      <div style="text-align:left;">
+
+        <div style="display:flex; align-items:center; gap:18px; margin-bottom:22px; border-bottom:2px solid rgba(212,175,55,0.4); background:linear-gradient(135deg, rgba(212,175,55,0.15) 0%, rgba(15,23,42,0.95) 100%); padding:24px; border-radius:18px; box-shadow:0 8px 24px rgba(0,0,0,0.4);">
+          <div style="width:76px; height:76px; background:rgba(212,175,55,0.2); border:2px solid #d4af37; border-radius:20px; display:flex; align-items:center; justify-content:center; font-size:40px; box-shadow:0 0 24px rgba(212,175,55,0.35); flex-shrink:0;">🖼️</div>
+          <div style="flex:1;">
+            <h3 style="color:#d4af37; font-family:'Outfit',sans-serif; margin:0 0 6px 0; font-size:25px; font-weight:800;">หอภาพเหมือน</h3>
+            <p style="color:var(--text-muted); font-size:14px; margin:0; line-height:1.6;">ทางเดินภาพเหมือนพระมหากษัตริย์ ๙ รัชกาลแห่งราชวงศ์จักรี และนายกรัฐมนตรีแห่งราชอาณาจักรไทยทั้ง ๓๓ คน &mdash; เดินชมได้ด้วยตนเอง</p>
+          </div>
+        </div><portrait-hall base="images/hall/" style="height:min(78vh,720px); min-height:460px; border:1px solid rgba(212,175,55,0.35); border-radius:4px; box-shadow:0 12px 40px rgba(0,0,0,0.55);"></portrait-hall><div style="background:rgba(212,175,55,0.05); border:1px solid rgba(212,175,55,0.26); border-left:4px solid #d4af37; border-radius:10px; padding:16px 20px; margin-top:20px;">
+          <div style="font-size:13.5px; color:#d4af37; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:8px;">🧭 วิธีเดินชม</div>
+          <div style="font-size:12.8px; color:var(--text-muted); line-height:1.85;">ลากเมาส์หรือปัดนิ้วไปทางซ้าย-ขวาเพื่อเดินไปตามทางเดิน &middot; กดปุ่ม ‹ › หรือลูกศรบนแป้นพิมพ์เพื่อเลื่อนทีละภาพ &middot; แตะรางด้านล่างเพื่อข้ามไปยังช่วงรัชกาลหรือนายกรัฐมนตรีที่ต้องการ &mdash; ภาพไกลจะพร่ามัวและค่อย ๆ ชัดเมื่อเดินเข้าใกล้ พระบรมฉายาลักษณ์รัชกาลที่ ๙ ประดิษฐานในกรอบทองเพียงองค์เดียว</div>
         </div>
 
       </div>
@@ -72502,6 +72522,8 @@ function playAudioMobile(btn, src) {
 
 
 <script src="js/constitution.js"></script>
+<script src="js/hall-data.js"></script>
+<script src="js/portrait-hall.js"></script>
 
 
 <script>
