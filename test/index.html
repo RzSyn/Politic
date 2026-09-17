@@ -253,32 +253,24 @@ footer { padding: 36px 0 calc(36px + env(safe-area-inset-bottom)); border-top: 1
 footer a { color: var(--gold); }
 
 /* ═════════════ PAGE TRANSITIONS (สำรวจเนื้อหา) ═════════════ */
-/* fold: the hero turns away like a book page */
-.turn { position: fixed; inset: 0; z-index: 90; pointer-events: none; perspective: 2200px; }
-.turn .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.2)); animation: shadeOut 1.2s ease forwards; }
-.turn .leaf { position: absolute; inset: 0; transform-origin: left center; transform-style: preserve-3d; animation: leafTurn 1.2s cubic-bezier(0.645, 0.045, 0.355, 1) forwards; }
-.turn .front, .turn .back { position: absolute; inset: 0; overflow: hidden; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
-.turn .front { background: var(--bg); box-shadow: inset -2px 0 0 rgba(212, 175, 55, 0.5); }
-.turn .front::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, transparent 35%, rgba(0, 0, 0, 0.55)); opacity: 0; animation: curl 1.2s ease forwards; }
-.turn .back { transform: rotateY(180deg); background: linear-gradient(270deg, #221c10, #0e0e13 70%); box-shadow: inset 2px 0 0 rgba(212, 175, 55, 0.35); }
-.turn .h-item { animation: none !important; opacity: 1 !important; transform: none !important; }
-@keyframes leafTurn { to { transform: rotateY(-180deg); } }
-@keyframes curl { 50% { opacity: 1; } 100% { opacity: 1; } }
-@keyframes shadeOut { to { opacity: 0; } }
-/* sun: a sunburst floods the screen white, then fades onto the new page */
-.sunfx { position: fixed; inset: 0; z-index: 90; pointer-events: none; overflow: hidden; transition: opacity 0.9s ease; }
+/* sun: light bursts from behind the Garuda, floods the screen warm gold,
+   then fades onto the explore section */
+.hero-emblem { transition: filter 0.35s ease, transform 0.35s var(--ease); }
+.hero.charging .hero-emblem { filter: drop-shadow(0 0 40px rgba(255, 226, 140, 0.95)) brightness(1.15); transform: scale(1.06); }
+.sunfx { position: fixed; inset: 0; z-index: 90; pointer-events: none; overflow: hidden; transition: opacity 1s ease; }
 .sunfx.out { opacity: 0; }
 .sunfx .core { position: absolute; left: var(--x); top: var(--y); width: 60px; height: 60px; margin: -30px 0 0 -30px; border-radius: 50%;
-  background: radial-gradient(circle, #fff 0 30%, #fff3c4 50%, rgba(243, 220, 138, 0.6) 65%, rgba(212, 175, 55, 0) 72%);
-  transform: scale(0); animation: sunGrow 0.85s cubic-bezier(0.55, 0, 0.9, 0.3) forwards; }
+  background: radial-gradient(circle, #fff1c2 0 22%, #e8c56a 48%, rgba(212, 175, 55, 0.55) 62%, rgba(212, 175, 55, 0) 72%);
+  transform: scale(0); animation: sunGrow 0.9s cubic-bezier(0.55, 0, 0.9, 0.3) forwards; }
 .sunfx .sun-rays { position: absolute; left: var(--x); top: var(--y); width: 2400px; height: 2400px; margin: -1200px 0 0 -1200px;
-  background: repeating-conic-gradient(rgba(255, 240, 190, 0.55) 0deg 3deg, transparent 3deg 15deg);
+  background: repeating-conic-gradient(rgba(243, 220, 138, 0.3) 0deg 3deg, transparent 3deg 15deg);
   -webkit-mask: radial-gradient(circle, #000 0%, transparent 50%); mask: radial-gradient(circle, #000 0%, transparent 50%);
-  opacity: 0; animation: raysOut 0.85s ease-out forwards; }
-.sunfx .white { position: absolute; inset: 0; background: #fffaf0; opacity: 0; animation: whiteIn 0.85s cubic-bezier(0.7, 0, 1, 0.5) forwards; }
+  opacity: 0; animation: raysOut 0.9s ease-out forwards; }
+.sunfx .glow { position: absolute; inset: 0; opacity: 0; animation: glowIn 0.9s cubic-bezier(0.7, 0, 1, 0.5) forwards;
+  background: radial-gradient(circle at var(--x) var(--y), #f3dc8a 0%, #b8913a 45%, #5c4716 100%); }
 @keyframes sunGrow { 60% { transform: scale(6); } 100% { transform: scale(70); } }
 @keyframes raysOut { 0% { opacity: 0; transform: scale(0.1) rotate(0deg); } 30% { opacity: 1; } 100% { opacity: 1; transform: scale(1.4) rotate(40deg); } }
-@keyframes whiteIn { 0%, 55% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes glowIn { 0%, 50% { opacity: 0; } 100% { opacity: 1; } }
 
 /* ═════════════ RESPONSIVE ═════════════ */
 @media (max-width: 900px) {
@@ -545,11 +537,6 @@ footer a { color: var(--gold); }
       if (p < 1) setTimeout(step, 16);
     })();
   }
-  // "สำรวจเนื้อหา": cover the screen with a page turn (default) or a sunburst
-  // (?fx=sun), jump to the explore section underneath, then uncover it
-  var exploreBtn = document.querySelector('.btn.ghost[href="#explore"]');
-  var fx = /[?&]fx=sun\b/.test(location.search) ? 'sun' : 'fold';
-  var busy = false;
   function jumpTo(el) {
     var y = el.getBoundingClientRect().top + window.pageYOffset;
     root.style.scrollBehavior = 'auto';
@@ -557,39 +544,49 @@ footer a { color: var(--gold); }
     root.style.scrollBehavior = '';
     reveal();
   }
-  function foldFx(target, done) {
-    var hero = document.querySelector('.hero'), r = hero.getBoundingClientRect();
-    var clone = hero.cloneNode(true);
-    clone.removeAttribute('id');
-    Array.prototype.forEach.call(clone.querySelectorAll('[id]'), function (n) { n.removeAttribute('id'); });
-    clone.style.cssText = 'position:absolute;left:0;right:0;margin:0;min-height:0;top:' + r.top + 'px;height:' + r.height + 'px;';
-    var turn = document.createElement('div');
-    turn.className = 'turn';
-    turn.innerHTML = '<div class="shade"></div><div class="leaf"><div class="front"></div><div class="back"></div></div>';
-    turn.querySelector('.front').appendChild(clone);
-    document.body.appendChild(turn);
-    jumpTo(target);
-    setTimeout(function () { turn.parentNode.removeChild(turn); done(); }, 1300);
-  }
-  function sunFx(e, target, done) {
-    var x = e.clientX, y = e.clientY;
-    if (!x && !y) { var b = exploreBtn.getBoundingClientRect(); x = b.left + b.width / 2; y = b.top + b.height / 2; }
-    var s = document.createElement('div');
-    s.className = 'sunfx';
-    s.style.setProperty('--x', x + 'px');
-    s.style.setProperty('--y', y + 'px');
-    s.innerHTML = '<div class="sun-rays"></div><div class="core"></div><div class="white"></div>';
-    document.body.appendChild(s);
-    setTimeout(function () { jumpTo(target); s.classList.add('out'); }, 820);
-    setTimeout(function () { s.parentNode.removeChild(s); done(); }, 1800);
-  }
+
+  // "สำรวจเนื้อหา": the sun behind the Garuda flares, floods the screen,
+  // and fades out onto the explore section
+  var exploreBtn = document.querySelector('.btn.ghost[href="#explore"]');
+  var busy = false;
   exploreBtn.addEventListener('click', function (e) {
     e.preventDefault();
     if (busy) return;
     busy = true;
-    var target = document.getElementById('explore');
-    var done = function () { busy = false; };
-    if (fx === 'sun') sunFx(e, target, done); else foldFx(target, done);
+    var hero = document.querySelector('.hero');
+    var r = document.querySelector('.hero-emblem').getBoundingClientRect();
+    var s = document.createElement('div');
+    s.className = 'sunfx';
+    s.style.setProperty('--x', (r.left + r.width / 2) + 'px');
+    s.style.setProperty('--y', (r.top + r.height / 2) + 'px');
+    s.innerHTML = '<div class="sun-rays"></div><div class="glow"></div><div class="core"></div>';
+    hero.classList.add('charging');
+    setTimeout(function () { document.body.appendChild(s); }, 250);
+    setTimeout(function () {
+      hero.classList.remove('charging');
+      jumpTo(document.getElementById('explore'));
+      s.classList.add('out');
+    }, 1150);
+    setTimeout(function () { s.parentNode.removeChild(s); busy = false; }, 2200);
+  });
+
+  // mouse icon: glide down to the stats with an eased scroll we drive
+  // ourselves, since some phones ignore CSS smooth scrolling
+  function glideTo(y, dur) {
+    var y0 = window.pageYOffset, dy = y - y0, t0 = Date.now();
+    root.style.scrollBehavior = 'auto';
+    (function step() {
+      var p = Math.min(1, (Date.now() - t0) / dur);
+      var e = p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
+      window.scrollTo(0, y0 + dy * e);
+      if (p < 1) setTimeout(step, 12);
+      else { root.style.scrollBehavior = ''; reveal(); }
+    })();
+  }
+  document.querySelector('.scroll-cue').addEventListener('click', function (e) {
+    e.preventDefault();
+    var t = document.getElementById('stats');
+    glideTo(t.getBoundingClientRect().top + window.pageYOffset - 10, 1100);
   });
 
   // plain scroll check instead of IntersectionObserver: it behaves the same
