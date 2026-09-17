@@ -7,7 +7,7 @@
 <title>รัฐธรรมนูญแห่งราชอาณาจักรไทย (ฉบับจำลอง)</title>
 <script>document.documentElement.classList.add('js');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800&family=Srisakdi:wght@400;700&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="../images/Thai_Garuda_emblem.png">
 <style>
 :root {
@@ -125,6 +125,7 @@ a { color: inherit; text-decoration: none; }
 @keyframes fade { to { opacity: 1; } }
 
 /* ═════════════ HALL OF PORTRAITS (intro, part 2) ═════════════ */
+#intro, #intro .intro-title, #intro .intro-year, #intro .hall-title small { font-family: 'Srisakdi', 'Sarabun', serif; }
 .hall {
   position: absolute; inset: 0; overflow: hidden; opacity: 0; transition: opacity 1.2s ease;
   perspective: 800px; perspective-origin: 50% 46%;
@@ -133,21 +134,53 @@ a { color: inherit; text-decoration: none; }
 #intro.hall-on .hall { opacity: 1; }
 #intro.hall-on .intro-content { opacity: 0; transform: scale(0.94); filter: blur(4px); }
 #intro.leave .hall { opacity: 0; transition: opacity 0.5s ease; }
-.hall-world { position: absolute; left: 50%; top: 46%; width: 0; height: 0; transform-style: preserve-3d; }
-.hall-world > div { position: absolute; left: 0; top: 0; }
+.hall-bob { position: absolute; inset: 0; transform-style: preserve-3d; }
+@keyframes hallBob { 0%, 100% { transform: translate3d(0, 0, 0); } 50% { transform: translate3d(0, -4px, 0); } }
+.hall-world { position: absolute; left: 50%; top: 46%; width: 0; height: 0; transform-style: preserve-3d; will-change: transform; }
+.hall-world > div { position: absolute; left: 0; top: 0; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
 .hf { width: var(--fw); margin-left: calc(var(--fw) / -2); margin-top: calc(var(--fh) / -2); display: none; }
 .hf::before {
   content: ''; position: absolute; left: -35%; right: -35%; top: calc(var(--fh) * -0.45); height: calc(var(--fh) * 0.95);
   background: radial-gradient(ellipse at 50% 0%, rgba(255, 230, 160, 0.2), transparent 70%); pointer-events: none;
 }
 .hf-frame {
-  position: relative; height: var(--fh); padding: calc(var(--fw) * 0.045); filter: blur(var(--b, 0px));
-  background: linear-gradient(145deg, #f3dc8a, #9c7a24 40%, #e9c46a 65%, #7a5c16);
-  box-shadow: 0 0 0 2px #2b210c, 0 calc(var(--fw) * 0.08) calc(var(--fw) * 0.25) rgba(0, 0, 0, 0.75), 0 0 calc(var(--fw) * 0.35) rgba(212, 175, 55, 0.25);
+  position: relative; height: var(--fh); padding: calc(var(--fw) * 0.045);
+  background:
+    repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.16) 0 2px, transparent 2px 6px, rgba(255, 200, 140, 0.05) 6px 7px, transparent 7px 11px),
+    repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.12) 0 1px, transparent 1px 9px),
+    linear-gradient(135deg, #6b4526 0%, #3d2513 30%, #7a4f2a 52%, #33200f 78%, #5a3a1f 100%);
+  box-shadow:
+    inset calc(var(--fw) * 0.012) calc(var(--fw) * 0.012) calc(var(--fw) * 0.02) rgba(255, 210, 150, 0.22),
+    inset calc(var(--fw) * -0.014) calc(var(--fw) * -0.014) calc(var(--fw) * 0.024) rgba(0, 0, 0, 0.6),
+    0 0 0 2px #1a0f06, 0 calc(var(--fw) * 0.08) calc(var(--fw) * 0.25) rgba(0, 0, 0, 0.75), 0 0 calc(var(--fw) * 0.3) rgba(255, 190, 110, 0.12);
 }
-.hf-frame img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 25%; background: #15120c; }
+.hf-frame .hf-pic { box-shadow: 0 0 0 calc(var(--fw) * 0.01) #c9a24a, 0 0 0 calc(var(--fw) * 0.02) #24160a, inset 0 0 calc(var(--fw) * 0.05) rgba(0, 0, 0, 0.55); }
+.hf.king9 .hf-frame {
+  padding: calc(var(--fw) * 0.09);
+  background: linear-gradient(135deg, #fff1b8 0%, #d4a93c 16%, #8a6414 30%, #f7dc85 46%, #b8871f 60%, #fff0b0 76%, #9c7418 100%);
+  box-shadow:
+    inset 0 0 0 calc(var(--fw) * 0.012) #fff3c4, inset 0 0 0 calc(var(--fw) * 0.026) #8a6414,
+    inset 0 0 calc(var(--fw) * 0.06) rgba(90, 60, 5, 0.75),
+    0 0 0 3px #5c420c, 0 0 calc(var(--fw) * 0.5) rgba(255, 215, 110, 0.45), 0 calc(var(--fw) * 0.1) calc(var(--fw) * 0.3) rgba(0, 0, 0, 0.8);
+}
+.hf.king9 .hf-frame::after {   /* beading around the gilt */
+  content: ''; position: absolute; inset: calc(var(--fw) * 0.038); pointer-events: none;
+  border: calc(var(--fw) * 0.013) dotted rgba(255, 248, 215, 0.9); border-radius: 2px;
+}
+.hf.king9 .hf-frame::before {  /* rosettes on the four corners */
+  --rose: radial-gradient(circle, #fffbe6 0 20%, #e8c25a 22% 40%, #7a5610 42% 50%, #f3d27a 52% 58%, transparent 60%);
+  content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background:
+    var(--rose) left top / calc(var(--fw) * 0.09) calc(var(--fw) * 0.09) no-repeat,
+    var(--rose) right top / calc(var(--fw) * 0.09) calc(var(--fw) * 0.09) no-repeat,
+    var(--rose) left bottom / calc(var(--fw) * 0.09) calc(var(--fw) * 0.09) no-repeat,
+    var(--rose) right bottom / calc(var(--fw) * 0.09) calc(var(--fw) * 0.09) no-repeat;
+}
+.hf.king9 .hf-pic { box-shadow: 0 0 0 calc(var(--fw) * 0.012) #fff3c4, 0 0 0 calc(var(--fw) * 0.022) #7a5610, inset 0 0 calc(var(--fw) * 0.05) rgba(0, 0, 0, 0.45); }
+.hf-pic { position: relative; width: 100%; height: 100%; overflow: hidden; background: #15120c; }
+.hf-pic img { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 25%; }
 .hf-cap {
-  width: 122%; margin: calc(var(--fw) * 0.07) 0 0 -11%; filter: blur(var(--b, 0px));
+  width: 122%; margin: calc(var(--fw) * 0.07) 0 0 -11%;
   text-align: center; line-height: 1.4; color: #e8dcc0; text-wrap: balance;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.95), 0 0 3px rgba(0, 0, 0, 0.9);
 }
@@ -387,7 +420,7 @@ html.lock .hero { height: 100vh; height: 100svh; overflow-y: auto; }
 <div id="intro" aria-hidden="true">
   <div class="panel top"></div>
   <div class="panel bottom"></div>
-  <div class="hall"><div class="hall-world"></div><div class="hall-fog"></div><div class="hall-title"><small></small><b></b><span></span></div><div class="hall-cheer"></div><div class="hall-bar"><i></i></div></div>
+  <div class="hall"><div class="hall-bob"><div class="hall-world"></div></div><div class="hall-fog"></div><div class="hall-title"><small></small><b></b><span></span></div><div class="hall-cheer"></div><div class="hall-bar"><i></i></div></div>
   <div class="intro-content">
     <div class="seal">
       <svg viewBox="0 0 200 200"><circle class="ring r1" cx="100" cy="100" r="92"/><circle class="ring r2" cx="100" cy="100" r="80"/></svg>
@@ -605,35 +638,31 @@ html.lock .hero { height: 100vh; height: 100svh; overflow-y: auto; }
   ];
   var P = 800, KING9 = 4, PM33 = 21;
 
-  // run fn every frame; if frames stop coming (hidden tab) fall back to a timer
-  function loop(fn) {
-    var stopped = false;
-    function schedule() {
-      var fired = false;
-      function go() { if (fired || stopped) return; fired = true; if (fn() === false) stopped = true; else schedule(); }
-      if (window.requestAnimationFrame) requestAnimationFrame(go);
-      setTimeout(go, 100);
-    }
-    schedule();
-    return function () { stopped = true; };
-  }
-
+  // The walk runs on the compositor: each step sets a CSS transition on the
+  // camera and on every portrait's opacities, so the GPU interpolates at the
+  // screen's frame rate instead of JavaScript restyling every frame.
   function buildHall(hall) {
-    var world = hall.querySelector('.hall-world'), bar = hall.querySelector('.hall-bar i');
+    var world = hall.querySelector('.hall-world'), bobEl = hall.querySelector('.hall-bob'), bar = hall.querySelector('.hall-bar i');
     var titleEl = hall.querySelector('.hall-title'), cheer = hall.querySelector('.hall-cheer');
-    var items = [], segs = [], g;
+    var items = [], segs = [], g, cam = -1.6;
+    var EASE = 'cubic-bezier(0.37, 0, 0.63, 1)';
 
     function addPortrait(slot, side, img, label, name, years) {
       var el = document.createElement('div');
       el.className = side ? 'hf' : 'hf single';
-      el.innerHTML = '<div class="hf-frame"><img alt="" decoding="async"></div><div class="hf-cap"><small>' + label +
-        '</small><b>' + name + '</b><span>' + years + '</span></div>';
+      el.style.display = 'none';
+      el.innerHTML = '<div class="hf-frame"><div class="hf-pic"><img class="soft" alt="" src="hall/' + img + 'b.jpg">' +
+        '<img class="sharp" alt="" src="hall/' + img + '.jpg"></div></div>' +
+        '<div class="hf-cap"><small>' + label + '</small><b>' + name + '</b><span>' + years + '</span></div>';
       world.appendChild(el);
-      items.push({ el: el, img: el.querySelector('img'), src: 'hall/' + img + '.jpg', slot: slot, side: side, fade: slot > KING9 ? 0 : 1, shown: false, loaded: false, b: -1, o: -1 });
+      var sharp = el.querySelector('.sharp');
+      if (sharp.decode) sharp.decode().catch(function () {});   // decode now, not mid-walk
+      items.push({ el: el, sharp: sharp, cap: el.querySelector('.hf-cap'), slot: slot, side: side, off: slot > KING9, shown: false });
     }
     KINGS.forEach(function (k, i) {
       var single = i === 8;
       addPortrait(single ? KING9 : Math.floor(i / 2), single ? 0 : (i % 2 ? 1 : -1), k[0], 'รัชกาลที่ ' + thaiNum(i + 1), k[1], k[2]);
+      if (single) items[items.length - 1].el.classList.add('king9');   // the gilded frame
     });
     PMS.forEach(function (pm, i) {
       var single = i === 32;
@@ -649,6 +678,8 @@ html.lock .hero { height: 100vh; height: 100svh; overflow-y: auto; }
         segs.push({ el: el, slot: slot, kind: c, shown: false });
       });
     }
+
+    function camZ(p) { return ((p + 1) * g.D - g.near).toFixed(1); }
 
     function layout() {
       var vw = hall.clientWidth || window.innerWidth, vh = hall.clientHeight || window.innerHeight;
@@ -679,94 +710,114 @@ html.lock .hero { height: 100vh; height: 100svh; overflow-y: auto; }
       });
     }
 
-    function update(p) {
+    // how a portrait looks with the camera at p: overall opacity, sharpness, caption
+    function look(it, p) {
+      if (it.off) return null;
+      var dist = g.near + (it.slot - p) * g.D;
+      if (dist <= 30 || dist >= g.near + 3.3 * g.D) return null;
+      var far = Math.max(0, dist - g.near) / g.D;
+      var o = Math.min(1, Math.max(0, 1.25 - far / 2.6));
+      if (dist < g.near * 0.6) o *= Math.max(0, (dist - 30) / (g.near * 0.6 - 30));
+      return { o: o, s: Math.max(0, Math.min(1, 1 - far * 1.3)), c: Math.max(0, Math.min(1, 1 - far * 1.8)) };
+    }
+    function segLook(sg, p) {
+      var dist = g.near + (sg.slot - p) * g.D;
+      if (dist <= -g.D || dist >= g.near + 3.6 * g.D) return null;
+      return Math.min(1, Math.max(0, 1.3 - Math.max(0, dist) / (3.6 * g.D)));
+    }
+    var ZERO = { o: 0, s: 0, c: 0 };
+    function paint(it, v, tr) {
+      it.el.style.transition = it.sharp.style.transition = it.cap.style.transition = tr;
+      it.el.style.opacity = v.o.toFixed(3);
+      it.sharp.style.opacity = v.s.toFixed(3);
+      it.cap.style.opacity = v.c.toFixed(3);
+    }
+
+    // start transitions from camera p0 to p1 over dur
+    function move(p0, p1, dur, ease, fromZero) {
+      var tr = 'opacity ' + dur + 'ms ' + ease, fresh = [];
       items.forEach(function (it) {
-        var dist = g.near + (it.slot - p) * g.D;
-        var vis = dist > 30 && dist < g.near + 3.3 * g.D && it.fade > 0.01;
-        if (!vis) { if (it.shown) { it.el.style.display = 'none'; it.shown = false; } return; }
-        if (!it.loaded) { it.img.src = it.src; it.loaded = true; }
-        if (!it.shown) { it.el.style.display = 'block'; it.shown = true; }
-        var far = Math.max(0, dist - g.near) / g.D;
-        var b = Math.round(Math.min(10, far * 7) * 4) / 4;           // blurry far away, sharp when you arrive
-        var o = Math.min(1, Math.max(0, 1.25 - far / 2.6));
-        if (dist < g.near * 0.6) o *= Math.max(0, (dist - 30) / (g.near * 0.6 - 30));
-        o = Math.round(o * it.fade * 100) / 100;
-        if (b !== it.b) { it.el.style.setProperty('--b', b + 'px'); it.b = b; }
-        if (o !== it.o) { it.el.style.opacity = o; it.o = o; }
+        var a = look(it, p0), b = look(it, p1);
+        if (!a && !b) { if (it.shown) { it.el.style.display = 'none'; it.shown = false; } return; }
+        if (!it.shown) { it.el.style.display = 'block'; it.shown = true; paint(it, fromZero ? ZERO : (a || ZERO), 'none'); fresh.push(it); }
       });
       segs.forEach(function (sg) {
-        var dist = g.near + (sg.slot - p) * g.D;
-        var vis = dist > -g.D && dist < g.near + 3.6 * g.D;
-        if (vis !== sg.shown) { sg.el.style.display = vis ? 'block' : 'none'; sg.shown = vis; }
-        if (vis) sg.el.style.opacity = Math.round(Math.min(1, Math.max(0, 1.3 - Math.max(0, dist) / (3.6 * g.D))) * 100) / 100;
+        var a = segLook(sg, p0), b = segLook(sg, p1);
+        if (a === null && b === null) { if (sg.shown) { sg.el.style.display = 'none'; sg.shown = false; } return; }
+        if (!sg.shown) { sg.el.style.display = 'block'; sg.shown = true; sg.el.style.transition = 'none'; sg.el.style.opacity = (a || 0).toFixed(3); fresh.push(sg); }
       });
+      if (fresh.length) void world.offsetWidth;   // commit the start state before transitioning
+      items.forEach(function (it) { if (it.shown) paint(it, look(it, p1) || ZERO, tr); });
+      segs.forEach(function (sg) {
+        if (!sg.shown) return;
+        sg.el.style.transition = tr;
+        sg.el.style.opacity = (segLook(sg, p1) || 0).toFixed(3);
+      });
+      world.style.transition = 'transform ' + dur + 'ms ' + ease;
+      world.style.transform = 'translate3d(0,0,' + camZ(p1) + 'px)';
     }
-    function setFade(slot, v) { items.forEach(function (it) { if (it.slot === slot) it.fade = v; }); }
-    // prime ministers stay hidden while King Rama IX stands alone, and appear with their title
-    function revealPMs(v) { items.forEach(function (it) { if (it.slot > KING9) it.fade = v; }); }
 
     // the walk: title, kings in pairs, King Rama IX alone, title, prime ministers in pairs, PM 33 alone
     var steps = [{ to: -1.2, dur: 3000, title: ['CHAKRI DYNASTY', 'พระมหากษัตริย์แห่งราชวงศ์จักรี', '๙ รัชกาล · พ.ศ. ๒๒๓๒ – ปัจจุบัน'] }];
-    for (var k = 0; k < KING9; k++) steps.push({ to: k, dur: k ? 1000 : 1500 }, { dur: 850 });
-    steps.push({ to: KING9, dur: 1400 }, { dur: 8000, cheer: 'ทรงพระเจริญ' });
-    steps.push({ to: KING9 + 0.3, dur: 3000, fade: KING9, reveal: true, title: ['PRIME MINISTERS', 'นายกรัฐมนตรีแห่งราชอาณาจักรไทย', '๓๓ คน · พ.ศ. ๒๔๒๑ – ปัจจุบัน'] });
-    for (k = 5; k < PM33; k++) steps.push({ to: k, dur: k > 5 ? 1000 : 1300 }, { dur: 850 });
-    steps.push({ to: PM33, dur: 1400 }, { dur: 4000, cheer: 'นายกรัฐมนตรีคนปัจจุบัน', small: true });
-
-    function begin(st) {
-      if (st.title) {
-        titleEl.children[0].textContent = st.title[0];
-        titleEl.children[1].textContent = st.title[1];
-        titleEl.children[2].textContent = st.title[2];
-        titleEl.classList.add('show');
-      }
-      if (st.cheer) { cheer.textContent = st.cheer; cheer.classList.toggle('small', !!st.small); cheer.classList.add('show'); }
-    }
-    function end(st) {
-      if (st.title) titleEl.classList.remove('show');
-      if (st.cheer) cheer.classList.remove('show');
-    }
+    for (var k = 0; k < KING9; k++) steps.push({ to: k, dur: k ? 1100 : 1600 }, { dur: 850, drift: 0.05 });
+    steps.push({ to: KING9, dur: 1500 }, { dur: 8000, drift: 0.12, cheer: 'ทรงพระเจริญ' });
+    steps.push({ to: KING9 + 0.35, dur: 3000, fade: KING9, reveal: true, title: ['PRIME MINISTERS', 'นายกรัฐมนตรีแห่งราชอาณาจักรไทย', '๓๓ คน · พ.ศ. ๒๔๒๑ – ปัจจุบัน'] });
+    for (k = 5; k < PM33; k++) steps.push({ to: k, dur: k > 5 ? 1100 : 1400 }, { dur: 850, drift: 0.05 });
+    steps.push({ to: PM33, dur: 1500 }, { dur: 4000, drift: 0.08, cheer: 'นายกรัฐมนตรีคนปัจจุบัน', small: true });
 
     layout();
-    var p0 = -1.6;
-    update(p0);
-    window.addEventListener('resize', layout);
+    world.style.transition = 'none';
+    world.style.transform = 'translate3d(0,0,' + camZ(cam) + 'px)';
+    move(cam, cam, 0, 'linear');
+    function onResize() {
+      layout();
+      world.style.transition = 'none';
+      world.style.transform = 'translate3d(0,0,' + camZ(cam) + 'px)';
+    }
+    window.addEventListener('resize', onResize);
 
     return {
       run: function (done) {
-        var total = 0;
+        var total = 0, i = -1, tid = null;
         steps.forEach(function (st) { total += st.dur; });
-        var t0 = Date.now(), i = 0, stepStart = 0, from = p0;
-        begin(steps[0]);
-        return loop(function () {
-          var t = Date.now() - t0;
-          while (i < steps.length && t - stepStart >= steps[i].dur) {
-            end(steps[i]);
-            if (steps[i].fade !== undefined) setFade(steps[i].fade, 0);
-            if (steps[i].reveal) revealPMs(1);
-            if (steps[i].to !== undefined) from = steps[i].to;
-            stepStart += steps[i].dur;
-            i++;
-            if (i < steps.length) begin(steps[i]);
+        bar.style.transition = 'width ' + total + 'ms linear';
+        bar.style.width = '100%';
+        function next() {
+          if (i >= 0) {
+            var prev = steps[i];
+            if (prev.title) titleEl.classList.remove('show');
+            if (prev.cheer) cheer.classList.remove('show');
           }
+          i++;
           if (i >= steps.length) {
-            window.removeEventListener('resize', layout);
-            update(from);
+            window.removeEventListener('resize', onResize);
             done();
-            return false;
+            return;
           }
-          var st = steps[i], q = (t - stepStart) / st.dur, p = from, bob = 0;
-          if (st.to !== undefined) {
-            var e = q < 0.5 ? 2 * q * q : 1 - Math.pow(-2 * q + 2, 2) / 2;
-            p = from + (st.to - from) * e;
-            if (!st.title) bob = -Math.abs(Math.sin(q * Math.PI * Math.max(2, Math.round(st.dur / 330)))) * 5; // footsteps
+          var st = steps[i], walking = st.to !== undefined;
+          var p1 = walking ? st.to : cam + (st.drift || 0);
+          if (st.title) {
+            titleEl.children[0].textContent = st.title[0];
+            titleEl.children[1].textContent = st.title[1];
+            titleEl.children[2].textContent = st.title[2];
+            titleEl.classList.add('show');
           }
-          if (st.fade !== undefined) setFade(st.fade, 1 - Math.min(1, q * 2.5));
-          if (st.reveal) revealPMs(Math.max(0, Math.min(1, (q - 0.3) * 1.6)));
-          world.style.transform = 'translate3d(0,' + bob.toFixed(2) + 'px,' + ((p + 1) * g.D - g.near).toFixed(1) + 'px)';
-          update(p);
-          bar.style.width = (t / total * 100).toFixed(2) + '%';
-        });
+          if (st.cheer) { cheer.textContent = st.cheer; cheer.classList.toggle('small', !!st.small); cheer.classList.add('show'); }
+          if (st.fade !== undefined) items.forEach(function (it) { if (it.slot === st.fade) it.off = true; });
+          if (st.reveal) items.forEach(function (it) { if (it.slot > KING9) it.off = false; });
+          // footsteps: a small bob while walking, still while standing
+          bobEl.style.animation = 'none';
+          if (walking && !st.title) {
+            var n = Math.max(2, Math.round(st.dur / 360));
+            void bobEl.offsetWidth;
+            bobEl.style.animation = 'hallBob ' + Math.round(st.dur / n) + 'ms ease-in-out ' + n;
+          }
+          move(cam, p1, st.dur, EASE, !!st.reveal);
+          cam = p1;
+          tid = setTimeout(next, st.dur);
+        }
+        next();
+        return function () { clearTimeout(tid); };
       }
     };
   }
@@ -803,13 +854,21 @@ html.lock .hero { height: 100vh; height: 100svh; overflow-y: auto; }
         }, 3300);
       }, 60);
     }
+    var waiting = 2;
+    function oneReady() { if (--waiting === 0) start(); }
     var img = intro.querySelector('.seal img');
-    if (img.complete && img.naturalWidth) start();
+    if (img.complete && img.naturalWidth) oneReady();
     else {
-      img.addEventListener('load', start);
-      img.addEventListener('error', start);
-      later(start, 2000);
+      var once = false;
+      var imgDone = function () { if (!once) { once = true; oneReady(); } };
+      img.addEventListener('load', imgDone);
+      img.addEventListener('error', imgDone);
     }
+    if (document.fonts && document.fonts.load) {
+      Promise.all([document.fonts.load('400 1em Srisakdi', 'ทรงพระเจริญ ๒๗'), document.fonts.load('700 1em Srisakdi', 'ทรงพระเจริญ ๒๗')])
+        .then(oneReady, oneReady);
+    } else oneReady();
+    later(start, 2500); // never wait longer than this
   }
 
   function replay() {
