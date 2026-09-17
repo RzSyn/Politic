@@ -550,3 +550,12 @@ missing = [f for f in set(re.findall(r'(?:src|href)="([^"]{1,200})"', src))
 - Where it lives now: `index.html` is the entry page (seal intro, then the auto walk; no gallery there). The walk-it-yourself version is `js/portrait-hall.js` (`<portrait-hall>`) on `portrait-hall-tab` in group 1. Both read the roster from `js/hall-data.js`; portraits are `images/hall/<id>.jpg` + `<id>b.jpg`. Only King Rama IX gets the gilded frame (the Claude Design study also gilded PM 33 — don't copy that).
 - A canvas component inside a hidden tab has zero size: guard `layout()` against it and re-check until the tab opens. Never let one `requestAnimationFrame` be the only wake-up: a kick made while the tab is in the background can hang forever, so pair it with a timeout fallback.
 
+## The rebuild (website_new.html) — in progress since 2026-09-17
+
+The user asked for the whole site to be rebuilt with the same content: formal, dark (any colour, just not bright), still one page, done in phases. It is **not** a re-theme — a `?renovate` recolour was tried and rejected.
+
+- `tools/build_site.py` generates `website_new.html` from `website_constitution.html` using `tools/site_template.html`; styles in `css/site.css`, behaviour in `js/site.js`, glossary lifted into `js/glossary-data.js`. Re-run the build after editing charter content in the old file; never hand-edit `website_new.html` while the generator owns it.
+- Phase 1 (done): shell, table of contents, search + origin filters, jump-to-article, 2540 comparisons, cross-ref previews, glossary, mourning mode (reuses the dedication block verbatim and the saved `constTheme = 'bw'`), full charter.
+- Next phases: move the 68 dashboard tabs group by group into the new page's archive section; until then it links to the old page.
+- Check a build with: div/section/article balance, `art_1..art_1160` contiguous, every `.cross-ref` resolves, 11 compare panels, no missing local files — then DevTools screenshots.
+
