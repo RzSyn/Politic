@@ -128,76 +128,12 @@ a { color: inherit; text-decoration: none; }
 #intro, #intro .intro-title, #intro .intro-year, #intro .hall-title small { font-family: 'Srisakdi', 'Sarabun', serif; }
 .hall {
   position: absolute; inset: 0; overflow: hidden; opacity: 0; transition: opacity 1.2s ease;
-  perspective: 800px; perspective-origin: 50% 46%;
   background: radial-gradient(ellipse 80% 60% at 50% 46%, #1a150c 0%, #0b0a08 55%, #050505 100%);
 }
 #intro.hall-on .hall { opacity: 1; }
 #intro.hall-on .intro-content { opacity: 0; transform: scale(0.94); filter: blur(4px); }
 #intro.leave .hall { opacity: 0; transition: opacity 0.5s ease; }
-.hall-bob { position: absolute; inset: 0; transform-style: preserve-3d; }
-@keyframes hallBob { 0%, 100% { transform: translate3d(0, 0, 0); } 50% { transform: translate3d(0, -4px, 0); } }
-.hall-world { position: absolute; left: 50%; top: 46%; width: 0; height: 0; transform-style: preserve-3d; will-change: transform; }
-.hall-world > div { position: absolute; left: 0; top: 0; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
-.hf { width: var(--fw); margin-left: calc(var(--fw) / -2); margin-top: calc(var(--fh) / -2); display: none; }
-.hf::before {
-  content: ''; position: absolute; left: -35%; right: -35%; top: calc(var(--fh) * -0.45); height: calc(var(--fh) * 0.95);
-  background: radial-gradient(ellipse at 50% 0%, rgba(255, 230, 160, 0.2), transparent 70%); pointer-events: none;
-}
-.hf-frame {
-  position: relative; height: var(--fh); padding: calc(var(--fw) * 0.045);
-  background:
-    repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.16) 0 2px, transparent 2px 6px, rgba(255, 200, 140, 0.05) 6px 7px, transparent 7px 11px),
-    repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.12) 0 1px, transparent 1px 9px),
-    linear-gradient(135deg, #6b4526 0%, #3d2513 30%, #7a4f2a 52%, #33200f 78%, #5a3a1f 100%);
-  box-shadow:
-    inset calc(var(--fw) * 0.012) calc(var(--fw) * 0.012) calc(var(--fw) * 0.02) rgba(255, 210, 150, 0.22),
-    inset calc(var(--fw) * -0.014) calc(var(--fw) * -0.014) calc(var(--fw) * 0.024) rgba(0, 0, 0, 0.6),
-    0 0 0 2px #1a0f06, 0 calc(var(--fw) * 0.08) calc(var(--fw) * 0.25) rgba(0, 0, 0, 0.75), 0 0 calc(var(--fw) * 0.3) rgba(255, 190, 110, 0.12);
-}
-.hf-frame .hf-pic { box-shadow: 0 0 0 calc(var(--fw) * 0.01) #c9a24a, 0 0 0 calc(var(--fw) * 0.02) #24160a, inset 0 0 calc(var(--fw) * 0.05) rgba(0, 0, 0, 0.55); }
-.hf.king9 .hf-frame {
-  padding: calc(var(--fw) * 0.09);
-  background: linear-gradient(135deg, #fff1b8 0%, #d4a93c 16%, #8a6414 30%, #f7dc85 46%, #b8871f 60%, #fff0b0 76%, #9c7418 100%);
-  box-shadow:
-    inset 0 0 0 calc(var(--fw) * 0.012) #fff3c4, inset 0 0 0 calc(var(--fw) * 0.026) #8a6414,
-    inset 0 0 calc(var(--fw) * 0.06) rgba(90, 60, 5, 0.75),
-    0 0 0 3px #5c420c, 0 0 calc(var(--fw) * 0.5) rgba(255, 215, 110, 0.45), 0 calc(var(--fw) * 0.1) calc(var(--fw) * 0.3) rgba(0, 0, 0, 0.8);
-}
-.hf.king9 .hf-frame::after {   /* beading around the gilt */
-  content: ''; position: absolute; inset: calc(var(--fw) * 0.038); pointer-events: none;
-  border: calc(var(--fw) * 0.013) dotted rgba(255, 248, 215, 0.9); border-radius: 2px;
-}
-.hf.king9 .hf-frame::before {  /* rosettes on the four corners */
-  --rose: radial-gradient(circle, #fffbe6 0 20%, #e8c25a 22% 40%, #7a5610 42% 50%, #f3d27a 52% 58%, transparent 60%);
-  content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none;
-  background:
-    var(--rose) left top / calc(var(--fw) * 0.09) calc(var(--fw) * 0.09) no-repeat,
-    var(--rose) right top / calc(var(--fw) * 0.09) calc(var(--fw) * 0.09) no-repeat,
-    var(--rose) left bottom / calc(var(--fw) * 0.09) calc(var(--fw) * 0.09) no-repeat,
-    var(--rose) right bottom / calc(var(--fw) * 0.09) calc(var(--fw) * 0.09) no-repeat;
-}
-.hf.king9 .hf-pic { box-shadow: 0 0 0 calc(var(--fw) * 0.012) #fff3c4, 0 0 0 calc(var(--fw) * 0.022) #7a5610, inset 0 0 calc(var(--fw) * 0.05) rgba(0, 0, 0, 0.45); }
-.hf-pic { position: relative; width: 100%; height: 100%; overflow: hidden; background: #15120c; }
-.hf-pic img { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 25%; }
-.hf-cap {
-  width: 122%; margin: calc(var(--fw) * 0.07) 0 0 -11%;
-  text-align: center; line-height: 1.4; color: #e8dcc0; text-wrap: balance;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.95), 0 0 3px rgba(0, 0, 0, 0.9);
-}
-.hf.single .hf-cap { width: 200%; margin-left: -50%; }
-.hf-cap small { display: block; font-size: calc(var(--fw) * 0.062); font-weight: 600; color: var(--gold); }
-.hf-cap b { display: block; font-size: calc(var(--fw) * 0.085); font-weight: 700; color: #fff; }
-.hf-cap span { display: block; font-size: calc(var(--fw) * 0.062); color: #a1a1aa; }
-.hs-floor {
-  background:
-    repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.28) 0 3px, transparent 3px 25%),
-    linear-gradient(90deg, #0c0b09 0 17%, #b08a2e 17% 17.8%, #4a1216 17.8% 82.2%, #b08a2e 82.2% 83%, #0c0b09 83%);
-}
-.hs-wall {
-  background:
-    repeating-linear-gradient(90deg, transparent 0 45%, rgba(212, 175, 55, 0.16) 45% 46%, rgba(0, 0, 0, 0.35) 46% 54%, rgba(212, 175, 55, 0.16) 54% 55%, transparent 55% 100%),
-    linear-gradient(180deg, #0a0908 0%, #1b160d 28%, #1b160d 64%, #b08a2e 64.3%, #3a2c12 64.7%, #0e0c09 65.2%, #090807 100%);
-}
+.hall-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
 .hall-fog {
   position: absolute; inset: 0; pointer-events: none;
   background:
@@ -420,7 +356,7 @@ html.lock .hero { height: 100vh; height: 100svh; overflow-y: auto; }
 <div id="intro" aria-hidden="true">
   <div class="panel top"></div>
   <div class="panel bottom"></div>
-  <div class="hall"><div class="hall-bob"><div class="hall-world"></div></div><div class="hall-fog"></div><div class="hall-title"><small></small><b></b><span></span></div><div class="hall-cheer"></div><div class="hall-bar"><i></i></div></div>
+  <div class="hall"><canvas class="hall-canvas"></canvas><div class="hall-fog"></div><div class="hall-title"><small></small><b></b><span></span></div><div class="hall-cheer"></div><div class="hall-bar"><i></i></div></div>
   <div class="intro-content">
     <div class="seal">
       <svg viewBox="0 0 200 200"><circle class="ring r1" cx="100" cy="100" r="92"/><circle class="ring r2" cx="100" cy="100" r="80"/></svg>
@@ -638,126 +574,308 @@ html.lock .hero { height: 100vh; height: 100svh; overflow-y: auto; }
   ];
   var P = 800, KING9 = 4, PM33 = 21;
 
-  // The walk runs on the compositor: each step sets a CSS transition on the
-  // camera and on every portrait's opacities, so the GPU interpolates at the
-  // screen's frame rate instead of JavaScript restyling every frame.
-  function buildHall(hall) {
-    var world = hall.querySelector('.hall-world'), bobEl = hall.querySelector('.hall-bob'), bar = hall.querySelector('.hall-bar i');
-    var titleEl = hall.querySelector('.hall-title'), cheer = hall.querySelector('.hall-cheer');
-    var items = [], segs = [], g, cam = -1.6;
-    var EASE = 'cubic-bezier(0.37, 0, 0.63, 1)';
+  // The hall is drawn on a canvas. Frames, gilding and captions are painted
+  // once into offscreen textures, so each animation frame is only a few dozen
+  // image copies: smooth at 60 fps even on phones. (CSS 3D re-rasterised the
+  // walls and shadows on every frame and ran at 4-7 fps.)
+  function loop(fn) {
+    var stopped = false;
+    function schedule() {
+      var fired = false;
+      function go() { if (fired || stopped) return; fired = true; if (fn() === false) stopped = true; else schedule(); }
+      if (window.requestAnimationFrame) requestAnimationFrame(go);
+      setTimeout(go, 100);   // hidden tabs pause frames; keep the timeline alive
+    }
+    schedule();
+    return function () { stopped = true; };
+  }
 
-    function addPortrait(slot, side, img, label, name, years) {
-      var el = document.createElement('div');
-      el.className = side ? 'hf' : 'hf single';
-      el.style.display = 'none';
-      el.innerHTML = '<div class="hf-frame"><div class="hf-pic"><img class="soft" alt="" src="hall/' + img + 'b.jpg">' +
-        '<img class="sharp" alt="" src="hall/' + img + '.jpg"></div></div>' +
-        '<div class="hf-cap"><small>' + label + '</small><b>' + name + '</b><span>' + years + '</span></div>';
-      world.appendChild(el);
-      var sharp = el.querySelector('.sharp');
-      if (sharp.decode) sharp.decode().catch(function () {});   // decode now, not mid-walk
-      items.push({ el: el, sharp: sharp, cap: el.querySelector('.hf-cap'), slot: slot, side: side, off: slot > KING9, shown: false });
+  function buildHall(hall) {
+    var canvas = hall.querySelector('.hall-canvas'), ctx = canvas.getContext('2d');
+    var bar = hall.querySelector('.hall-bar i'), titleEl = hall.querySelector('.hall-title'), cheer = hall.querySelector('.hall-cheer');
+    var FONT = "'Srisakdi', 'Sarabun', serif";
+    var seg = window.Intl && Intl.Segmenter ? new Intl.Segmenter('th', { granularity: 'word' }) : null;
+    var items = [], g = {}, vw = 0, vh = 0, dpr = 1, T = 1, woodTex = null, goldTex = null, lastP = -1.6;
+
+    function add(slot, side, img, label, name, years, gold) {
+      var sharp = new Image(), soft = new Image();
+      sharp.src = 'hall/' + img + '.jpg';
+      soft.src = 'hall/' + img + 'b.jpg';
+      if (sharp.decode) sharp.decode().catch(function () {});   // decode up front, not mid-walk
+      items.push({ slot: slot, side: side, sharp: sharp, soft: soft, label: label, name: name, years: years,
+        gold: !!gold, cap: null, fade: slot > KING9 ? 0 : 1 });
     }
     KINGS.forEach(function (k, i) {
       var single = i === 8;
-      addPortrait(single ? KING9 : Math.floor(i / 2), single ? 0 : (i % 2 ? 1 : -1), k[0], 'รัชกาลที่ ' + thaiNum(i + 1), k[1], k[2]);
-      if (single) items[items.length - 1].el.classList.add('king9');   // the gilded frame
+      add(single ? KING9 : Math.floor(i / 2), single ? 0 : (i % 2 ? 1 : -1), k[0], 'รัชกาลที่ ' + thaiNum(i + 1),
+        k[1].replace('<br>', '\n'), k[2], single);
     });
     PMS.forEach(function (pm, i) {
       var single = i === 32;
-      addPortrait(single ? PM33 : 5 + Math.floor(i / 2), single ? 0 : (i % 2 ? 1 : -1), 'p' + (i + 1),
-        'นายกรัฐมนตรีคนที่ ' + thaiNum(i + 1), pm[0], 'พ.ศ. ' + pm[1]);
+      add(single ? PM33 : 5 + Math.floor(i / 2), single ? 0 : (i % 2 ? 1 : -1), 'p' + (i + 1),
+        'นายกรัฐมนตรีคนที่ ' + thaiNum(i + 1), pm[0], 'พ.ศ. ' + pm[1], false);
     });
-    for (var slot = -3; slot <= PM33 + 1; slot++) {
-      ['hs-floor', 'hs-wall l', 'hs-wall r'].forEach(function (c) {
-        var el = document.createElement('div');
-        el.className = c;
-        el.style.display = 'none';
-        world.appendChild(el);
-        segs.push({ el: el, slot: slot, kind: c, shown: false });
+
+    // ── textures ──────────────────────────────────────────────────────────────
+    function frameTexture(gold, scale) {
+      var fw = g.fw * scale, fh = g.fh * scale, m = g.m * scale, pad = fw * (gold ? 0.09 : 0.06);
+      var c = document.createElement('canvas');
+      c.width = Math.ceil((fw + 2 * m) * T);
+      c.height = Math.ceil((fh + 2 * m) * T);
+      var x = c.getContext('2d');
+      x.scale(T, T);
+      x.translate(m, m);
+      function ring() { x.beginPath(); x.rect(0, 0, fw, fh); x.rect(pad, pad, fw - 2 * pad, fh - 2 * pad); }
+      var body = x.createLinearGradient(0, 0, fw, fh);
+      (gold
+        ? [[0, '#fff1b8'], [0.16, '#d4a93c'], [0.3, '#8a6414'], [0.46, '#f7dc85'], [0.6, '#b8871f'], [0.76, '#fff0b0'], [1, '#9c7418']]
+        : [[0, '#6b4526'], [0.3, '#3d2513'], [0.52, '#7a4f2a'], [0.78, '#33200f'], [1, '#5a3a1f']]
+      ).forEach(function (s) { body.addColorStop(s[0], s[1]); });
+
+      x.save();                                   // drop shadow, and a warm glow for the gilt
+      x.shadowColor = 'rgba(0, 0, 0, 0.7)';
+      x.shadowBlur = 0.12 * fw * T;
+      x.shadowOffsetY = 0.04 * fw * T;
+      x.fillStyle = body; ring(); x.fill('evenodd');
+      if (gold) { x.shadowColor = 'rgba(255, 215, 110, 0.6)'; x.shadowBlur = 0.3 * fw * T; x.shadowOffsetY = 0; ring(); x.fill('evenodd'); }
+      x.restore();
+
+      if (!gold) {                                 // wood grain: along the rails, then down the stiles
+        x.save();
+        x.beginPath(); x.rect(0, 0, fw, pad); x.rect(0, fh - pad, fw, pad); x.clip();
+        for (var i = 0; i < 26; i++) {
+          var yy = (i / 26) * pad, off = i % 2 ? fh - pad : 0;
+          x.strokeStyle = i % 3 ? 'rgba(0, 0, 0, 0.2)' : 'rgba(255, 205, 150, 0.08)';
+          x.lineWidth = fw * (0.002 + (i % 4) * 0.001);
+          x.beginPath(); x.moveTo(0, off + yy); x.bezierCurveTo(fw * 0.35, off + yy + fw * 0.005, fw * 0.65, off + yy - fw * 0.005, fw, off + yy); x.stroke();
+        }
+        x.restore();
+        x.save();
+        x.beginPath(); x.rect(0, pad, pad, fh - 2 * pad); x.rect(fw - pad, pad, pad, fh - 2 * pad); x.clip();
+        for (i = 0; i < 26; i++) {
+          var xx = (i / 26) * pad, offx = i % 2 ? fw - pad : 0;
+          x.strokeStyle = i % 3 ? 'rgba(0, 0, 0, 0.2)' : 'rgba(255, 205, 150, 0.08)';
+          x.lineWidth = fw * (0.002 + (i % 4) * 0.001);
+          x.beginPath(); x.moveTo(offx + xx, 0); x.bezierCurveTo(offx + xx + fw * 0.005, fh * 0.35, offx + xx - fw * 0.005, fh * 0.65, offx + xx, fh); x.stroke();
+        }
+        x.restore();
+      }
+
+      var lw = fw * 0.012;                         // bevels: lit top-left, shaded bottom-right
+      x.lineWidth = lw;
+      x.strokeStyle = gold ? '#fff3c4' : 'rgba(255, 215, 160, 0.3)';
+      x.beginPath(); x.moveTo(lw / 2, fh); x.lineTo(lw / 2, lw / 2); x.lineTo(fw, lw / 2); x.stroke();
+      x.beginPath(); x.moveTo(fw - pad, pad); x.lineTo(fw - pad, fh - pad); x.lineTo(pad, fh - pad); x.stroke();
+      x.strokeStyle = gold ? '#7a5610' : 'rgba(0, 0, 0, 0.55)';
+      x.beginPath(); x.moveTo(fw - lw / 2, 0); x.lineTo(fw - lw / 2, fh - lw / 2); x.lineTo(0, fh - lw / 2); x.stroke();
+      x.beginPath(); x.moveTo(pad, fh - pad); x.lineTo(pad, pad); x.lineTo(fw - pad, pad); x.stroke();
+      x.lineWidth = fw * 0.004;                    // mitred corners
+      x.strokeStyle = gold ? 'rgba(122, 86, 16, 0.6)' : 'rgba(0, 0, 0, 0.4)';
+      [[0, 0, pad, pad], [fw, 0, fw - pad, pad], [0, fh, pad, fh - pad], [fw, fh, fw - pad, fh - pad]].forEach(function (l) {
+        x.beginPath(); x.moveTo(l[0], l[1]); x.lineTo(l[2], l[3]); x.stroke();
       });
+      x.lineWidth = fw * 0.012;                    // gold fillet around the picture
+      x.strokeStyle = gold ? '#fff3c4' : '#c9a24a';
+      x.strokeRect(pad - fw * 0.006, pad - fw * 0.006, fw - 2 * pad + fw * 0.012, fh - 2 * pad + fw * 0.012);
+
+      if (gold) {                                  // beading and corner rosettes
+        var inset = fw * 0.045, r = fw * 0.0075, step = fw * 0.03;
+        x.fillStyle = '#fff6d6';
+        [[inset, inset, fw - inset, inset], [fw - inset, inset, fw - inset, fh - inset], [fw - inset, fh - inset, inset, fh - inset], [inset, fh - inset, inset, inset]].forEach(function (e) {
+          var len = Math.hypot(e[2] - e[0], e[3] - e[1]), n = Math.floor(len / step);
+          for (var j = 0; j < n; j++) {
+            x.beginPath();
+            x.arc(e[0] + (e[2] - e[0]) * j / n, e[1] + (e[3] - e[1]) * j / n, r, 0, Math.PI * 2);
+            x.fill();
+          }
+        });
+        [[inset, inset], [fw - inset, inset], [inset, fh - inset], [fw - inset, fh - inset]].forEach(function (p) {
+          [[0.042, '#7a5610'], [0.034, '#e8c25a'], [0.022, '#f3d27a'], [0.013, '#fffbe6']].forEach(function (ring2) {
+            x.fillStyle = ring2[1];
+            x.beginPath(); x.arc(p[0], p[1], fw * ring2[0], 0, Math.PI * 2); x.fill();
+          });
+        });
+      }
+      return c;
     }
 
-    function camZ(p) { return ((p + 1) * g.D - g.near).toFixed(1); }
+    function wrap(x, text, maxW) {
+      var words = seg ? Array.from(seg.segment(text), function (s) { return s.segment; }) : text.split('');
+      var lines = [], cur = '';
+      words.forEach(function (w) {
+        if (cur && x.measureText(cur + w).width > maxW) { lines.push(cur.trim()); cur = w.replace(/^\s+/, ''); }
+        else cur += w;
+      });
+      if (cur.trim()) lines.push(cur.trim());
+      return lines;
+    }
 
+    function caption(it) {
+      var fw = g.fw * (it.side ? 1 : 1.1), w = fw * (it.side ? (vw < 700 ? 1 : 1.22) : 2);
+      var s1 = fw * 0.062, s2 = fw * 0.085, lh = 1.4;
+      var c = document.createElement('canvas'), x = c.getContext('2d');
+      x.font = '700 ' + (s2 * T) + 'px ' + FONT;
+      var names = [];
+      it.name.split('\n').forEach(function (part) {
+        var lines = wrap(x, part, w * T), lo = w * T * 0.4, hi = w * T;
+        while (lines.length > 1 && hi - lo > 2) {           // narrowest width that keeps the line count
+          var mid = (lo + hi) / 2;
+          if (wrap(x, part, mid).length === lines.length) hi = mid; else lo = mid;
+        }
+        wrap(x, part, hi).forEach(function (l) { names.push(l); });
+      });
+      var rows = [[it.label, s1, '600', '#d4af37']];
+      names.forEach(function (l) { rows.push([l, s2, '700', '#ffffff']); });
+      rows.push([it.years, s1, '400', '#a1a1aa']);
+      var h = 0;
+      rows.forEach(function (r) { h += r[1] * lh; });
+      c.width = Math.ceil(w * T);
+      c.height = Math.ceil(h * T + fw * 0.06 * T);
+      x = c.getContext('2d');
+      x.textAlign = 'center';
+      x.textBaseline = 'middle';
+      x.shadowColor = 'rgba(0, 0, 0, 0.95)';
+      x.shadowBlur = fw * 0.03 * T;
+      var y = fw * 0.03 * T;
+      rows.forEach(function (r) {
+        x.font = r[2] + ' ' + (r[1] * T) + 'px ' + FONT;
+        x.fillStyle = r[3];
+        x.fillText(r[0], c.width / 2, y + r[1] * lh * T / 2);
+        y += r[1] * lh * T;
+      });
+      return { c: c, w: w, h: c.height / T };
+    }
+
+    // ── geometry ──────────────────────────────────────────────────────────────
     function layout() {
-      var vw = hall.clientWidth || window.innerWidth, vh = hall.clientHeight || window.innerHeight;
+      vw = hall.clientWidth || window.innerWidth;
+      vh = hall.clientHeight || window.innerHeight;
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = Math.round(vw * dpr);
+      canvas.height = Math.round(vh * dpr);
       var mobile = vw < 700, near = 560, f = P / (P + near);
       var fwProj = Math.min(mobile ? vw * 0.34 : vw * 0.17, vh * 0.26, 240);
       g = { near: near, W: (mobile ? vw * 0.25 : Math.min(vw * 0.2, 300)) / f, fw: fwProj / f / 0.88 };
       g.fh = g.fw * 1.28;
       g.D = Math.max(g.fw * 2.6, 900);
-      hall.style.setProperty('--fw', g.fw + 'px');
-      hall.style.setProperty('--fh', g.fh + 'px');
-      items.forEach(function (it) {
-        var y = it.side ? -g.fh * 0.12 : g.fh * 0.1;
-        it.el.style.transform = 'translate3d(' + (it.side * g.W) + 'px,' + y + 'px,' + (-(it.slot + 1) * g.D) + 'px) rotateY(' + (it.side * -28) + 'deg)' + (it.side ? '' : ' scale(1.1)');
-      });
-      var halfW = g.W + g.fw * 0.75, wallH = g.fh * 3.1;
-      segs.forEach(function (sg) {
-        var z = -(sg.slot + 1) * g.D, st = sg.el.style;
-        if (sg.kind === 'hs-floor') {
-          st.width = (2 * halfW) + 'px'; st.height = (g.D + 2) + 'px';
-          st.marginLeft = -halfW + 'px'; st.marginTop = -(g.D / 2) + 'px';
-          st.transform = 'translate3d(0,' + (g.fh * 1.45) + 'px,' + z + 'px) rotateX(90deg)';
-        } else {
-          var side = sg.kind === 'hs-wall l' ? -1 : 1;
-          st.width = (g.D + 2) + 'px'; st.height = wallH + 'px';
-          st.marginLeft = -(g.D / 2) + 'px'; st.marginTop = -(wallH / 2) + 'px';
-          st.transform = 'translate3d(' + (side * halfW) + 'px,' + (g.fh * 0.05) + 'px,' + z + 'px) rotateY(' + (-side * 90) + 'deg)';
-        }
-      });
+      g.m = g.fw * 0.16;                           // texture margin for shadow and glow
+      g.halfW = g.W + g.fw * 0.75;
+      g.wallH = g.fh * 3.1;
+      T = 0.9 * dpr;                               // texture pixels per world unit
+      woodTex = frameTexture(false, 1);
+      goldTex = frameTexture(true, 1.1);
+      items.forEach(function (it) { it.cap = null; });
     }
 
-    // how a portrait looks with the camera at p: overall opacity, sharpness, caption
     function look(it, p) {
-      if (it.off) return null;
+      if (it.fade <= 0.001) return null;
       var dist = g.near + (it.slot - p) * g.D;
       if (dist <= 30 || dist >= g.near + 3.3 * g.D) return null;
       var far = Math.max(0, dist - g.near) / g.D;
       var o = Math.min(1, Math.max(0, 1.25 - far / 2.6));
       if (dist < g.near * 0.6) o *= Math.max(0, (dist - 30) / (g.near * 0.6 - 30));
-      return { o: o, s: Math.max(0, Math.min(1, 1 - far * 1.3)), c: Math.max(0, Math.min(1, 1 - far * 1.8)) };
-    }
-    function segLook(sg, p) {
-      var dist = g.near + (sg.slot - p) * g.D;
-      if (dist <= -g.D || dist >= g.near + 3.6 * g.D) return null;
-      return Math.min(1, Math.max(0, 1.3 - Math.max(0, dist) / (3.6 * g.D)));
-    }
-    var ZERO = { o: 0, s: 0, c: 0 };
-    function paint(it, v, tr) {
-      it.el.style.transition = it.sharp.style.transition = it.cap.style.transition = tr;
-      it.el.style.opacity = v.o.toFixed(3);
-      it.sharp.style.opacity = v.s.toFixed(3);
-      it.cap.style.opacity = v.c.toFixed(3);
+      return { o: o * it.fade, s: Math.max(0, Math.min(1, 1 - far * 1.3)), c: Math.max(0, Math.min(1, 1 - far * 1.8)) };
     }
 
-    // start transitions from camera p0 to p1 over dur
-    function move(p0, p1, dur, ease, fromZero) {
-      var tr = 'opacity ' + dur + 'ms ' + ease, fresh = [];
-      items.forEach(function (it) {
-        var a = look(it, p0), b = look(it, p1);
-        if (!a && !b) { if (it.shown) { it.el.style.display = 'none'; it.shown = false; } return; }
-        if (!it.shown) { it.el.style.display = 'block'; it.shown = true; paint(it, fromZero ? ZERO : (a || ZERO), 'none'); fresh.push(it); }
-      });
-      segs.forEach(function (sg) {
-        var a = segLook(sg, p0), b = segLook(sg, p1);
-        if (a === null && b === null) { if (sg.shown) { sg.el.style.display = 'none'; sg.shown = false; } return; }
-        if (!sg.shown) { sg.el.style.display = 'block'; sg.shown = true; sg.el.style.transition = 'none'; sg.el.style.opacity = (a || 0).toFixed(3); fresh.push(sg); }
-      });
-      if (fresh.length) void world.offsetWidth;   // commit the start state before transitioning
-      items.forEach(function (it) { if (it.shown) paint(it, look(it, p1) || ZERO, tr); });
-      segs.forEach(function (sg) {
-        if (!sg.shown) return;
-        sg.el.style.transition = tr;
-        sg.el.style.opacity = (segLook(sg, p1) || 0).toFixed(3);
-      });
-      world.style.transition = 'transform ' + dur + 'ms ' + ease;
-      world.style.transform = 'translate3d(0,0,' + camZ(p1) + 'px)';
+    // ── drawing ───────────────────────────────────────────────────────────────
+    function proj(x, y, d) { var k = P / (P + d); return [vw / 2 + x * k, vh * 0.46 + y * k]; }
+    function quad(a, b, c, d, fill) {
+      ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.lineTo(c[0], c[1]); ctx.lineTo(d[0], d[1]); ctx.closePath();
+      ctx.fillStyle = fill; ctx.fill();
+    }
+    function seg2(a, b, color, w) {
+      ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]);
+      ctx.strokeStyle = color; ctx.lineWidth = w; ctx.stroke();
     }
 
-    // the walk: title, kings in pairs, King Rama IX alone, title, prime ministers in pairs, PM 33 alone
+    function env(p, bob) {
+      var dN = -P * 0.55, dF = g.near + 3.8 * g.D, hw = g.halfW;
+      var fy = g.fh * 1.45 + bob, wt = g.fh * 0.05 - g.wallH / 2 + bob, wb = g.fh * 0.05 + g.wallH / 2 + bob;
+      var ww = wt + g.wallH * 0.643, cw = hw * 0.644;
+      ctx.globalAlpha = 1;
+      quad(proj(-hw, fy, dN), proj(hw, fy, dN), proj(hw, fy, dF), proj(-hw, fy, dF), '#0c0b09');
+      var cg = ctx.createLinearGradient(0, proj(0, fy, dN)[1], 0, proj(0, fy, dF)[1]);
+      cg.addColorStop(0, '#5e171c'); cg.addColorStop(1, '#1c0809');
+      quad(proj(-cw, fy, dN), proj(cw, fy, dN), proj(cw, fy, dF), proj(-cw, fy, dF), cg);
+      seg2(proj(-cw, fy, dN), proj(-cw, fy, dF), 'rgba(176, 138, 46, 0.9)', 2);
+      seg2(proj(cw, fy, dN), proj(cw, fy, dF), 'rgba(176, 138, 46, 0.9)', 2);
+      for (var j = Math.ceil((p - 0.9) * 4); j <= Math.floor((p + 3.8) * 4); j++) {
+        var dd = g.near + (j / 4 - p) * g.D;
+        if (dd > dN) seg2(proj(-hw, fy, dd), proj(hw, fy, dd), 'rgba(0, 0, 0, 0.3)', 1.5);
+      }
+      [-1, 1].forEach(function (s) {
+        var x = s * hw;
+        quad(proj(x, wt, dN), proj(x, wt, dF), proj(x, ww, dF), proj(x, ww, dN), '#18130c');
+        quad(proj(x, ww, dN), proj(x, ww, dF), proj(x, wb, dF), proj(x, wb, dN), '#0d0b08');
+        seg2(proj(x, ww, dN), proj(x, ww, dF), '#b08a2e', 2);
+        for (var k = Math.floor(p) - 2; k <= Math.ceil(p + 4); k++) {   // pilasters between portraits
+          var d1 = g.near + (k + 0.45 - p) * g.D, d2 = d1 + 0.1 * g.D;
+          if (d2 <= dN || d1 >= dF) continue;
+          d1 = Math.max(d1, dN);
+          quad(proj(x, wt, d1), proj(x, wt, d2), proj(x, wb, d2), proj(x, wb, d1), 'rgba(0, 0, 0, 0.35)');
+          seg2(proj(x, wt, d1), proj(x, wb, d1), 'rgba(212, 175, 55, 0.2)', 1);
+          seg2(proj(x, wt, d2), proj(x, wb, d2), 'rgba(212, 175, 55, 0.2)', 1);
+        }
+      });
+    }
+
+    function photo(img, u0, u1, dx, dy, dw, dh, ratio) {
+      if (!img.complete || !img.naturalWidth || dw <= 0) return;
+      var iw = img.naturalWidth, ih = img.naturalHeight, sx = 0, sy = 0, sw = iw, sh = ih;
+      if (iw / ih > ratio) { sw = ih * ratio; sx = (iw - sw) / 2; } else { sh = iw / ratio; sy = (ih - sh) * 0.25; }
+      ctx.drawImage(img, sx + u0 * sw, sy, (u1 - u0) * sw, sh, dx, dy, dw, dh);
+    }
+
+    function portrait(it, p, bob) {
+      var v = look(it, p);
+      if (!v || v.o < 0.005) return;
+      var sc = it.side ? 1 : 1.1, fw = g.fw * sc, fh = g.fh * sc, m = g.m * sc;
+      var tex = it.gold ? goldTex : woodTex, pad = fw * (it.gold ? 0.09 : 0.06);
+      var d = g.near + (it.slot - p) * g.D, yc = (it.side ? -g.fh * 0.12 : g.fh * 0.1) + bob, cy = vh * 0.46;
+      var ow = fw + 2 * m, oh = fh + 2 * m, ang = it.side ? 28 * Math.PI / 180 : 0, cos = Math.cos(ang), sin = Math.sin(ang);
+      function at(a) {   // screen x and scale for a point a across the frame
+        var dd = d - it.side * a * sin, k = P / (P + dd);
+        return { x: vw / 2 + (it.side * g.W + a * cos) * k, k: k };
+      }
+      var edgeA = at(-ow / 2), edgeB = at(ow / 2), rise = Math.abs(edgeA.k - edgeB.k) * oh / 2;
+      var N = it.side ? Math.max(2, Math.min(40, Math.ceil(rise / 0.8))) : 1, pa0 = -fw / 2 + pad, pa1 = fw / 2 - pad, ratio = (fw - 2 * pad) / (fh - 2 * pad);
+      for (var i = 0; i < N; i++) {
+        var a0 = -ow / 2 + ow * i / N, a1 = -ow / 2 + ow * (i + 1) / N;
+        var e0 = at(a0), e1 = at(a1), em = at((a0 + a1) / 2);
+        var x0 = Math.floor(e0.x * dpr) / dpr, x1 = Math.ceil(e1.x * dpr) / dpr;
+        if (em.k <= 0 || em.k > 6) continue;
+        var ia0 = Math.max(a0, pa0), ia1 = Math.min(a1, pa1);
+        if (ia1 > ia0) {                           // the picture: soft copy, then the sharp one fading in
+          var q0 = Math.floor(at(ia0).x * dpr) / dpr, q1 = Math.ceil(at(ia1).x * dpr) / dpr;
+          var py = cy + (yc - fh / 2 + pad) * em.k, ph = (fh - 2 * pad) * em.k;
+          var u0 = (ia0 - pa0) / (pa1 - pa0), u1 = (ia1 - pa0) / (pa1 - pa0);
+          ctx.globalAlpha = v.o;
+          photo(it.soft, u0, u1, q0, py, q1 - q0, ph, ratio);
+          if (v.s > 0.01) { ctx.globalAlpha = v.o * v.s; photo(it.sharp, u0, u1, q0, py, q1 - q0, ph, ratio); }
+        }
+        ctx.globalAlpha = v.o;
+        ctx.drawImage(tex, tex.width * i / N, 0, tex.width / N, tex.height, x0, cy + (yc - oh / 2) * em.k, x1 - x0, oh * em.k);
+      }
+      if (v.c > 0.01) {
+        if (!it.cap) it.cap = caption(it);
+        var mid = at(0);
+        ctx.globalAlpha = v.o * v.c;
+        ctx.drawImage(it.cap.c, mid.x - it.cap.w * mid.k / 2, cy + (yc + fh / 2 + fw * 0.05) * mid.k, it.cap.w * mid.k, it.cap.h * mid.k);
+      }
+    }
+
+    function render(p, bob) {
+      lastP = p;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.clearRect(0, 0, vw, vh);
+      env(p, bob);
+      items.filter(function (it) { return it.fade > 0.001 && Math.abs(it.slot - p) < 4; })
+        .sort(function (a, b) { return b.slot - a.slot; })
+        .forEach(function (it) { portrait(it, p, bob); });
+      ctx.globalAlpha = 1;
+    }
+
+    // ── the walk ──────────────────────────────────────────────────────────────
     var steps = [{ to: -1.2, dur: 3000, title: ['CHAKRI DYNASTY', 'พระมหากษัตริย์แห่งราชวงศ์จักรี', '๙ รัชกาล · พ.ศ. ๒๒๓๒ – ปัจจุบัน'] }];
     for (var k = 0; k < KING9; k++) steps.push({ to: k, dur: k ? 1100 : 1600 }, { dur: 850, drift: 0.05 });
     steps.push({ to: KING9, dur: 1500 }, { dur: 8000, drift: 0.12, cheer: 'ทรงพระเจริญ' });
@@ -765,37 +883,23 @@ html.lock .hero { height: 100vh; height: 100svh; overflow-y: auto; }
     for (k = 5; k < PM33; k++) steps.push({ to: k, dur: k > 5 ? 1100 : 1400 }, { dur: 850, drift: 0.05 });
     steps.push({ to: PM33, dur: 1500 }, { dur: 4000, drift: 0.08, cheer: 'นายกรัฐมนตรีคนปัจจุบัน', small: true });
 
+    function setFade(test, v) { items.forEach(function (it) { if (test(it)) it.fade = v; }); }
+    function isKing9(it) { return it.slot === KING9; }
+    function isPM(it) { return it.slot > KING9; }
+
     layout();
-    world.style.transition = 'none';
-    world.style.transform = 'translate3d(0,0,' + camZ(cam) + 'px)';
-    move(cam, cam, 0, 'linear');
-    function onResize() {
-      layout();
-      world.style.transition = 'none';
-      world.style.transform = 'translate3d(0,0,' + camZ(cam) + 'px)';
-    }
+    render(lastP, 0);
+    function onResize() { layout(); render(lastP, 0); }
     window.addEventListener('resize', onResize);
 
     return {
       run: function (done) {
-        var total = 0, i = -1, tid = null;
+        var total = 0, i = 0, stepStart = 0, from = lastP, t0 = performance.now();
         steps.forEach(function (st) { total += st.dur; });
         bar.style.transition = 'width ' + total + 'ms linear';
         bar.style.width = '100%';
-        function next() {
-          if (i >= 0) {
-            var prev = steps[i];
-            if (prev.title) titleEl.classList.remove('show');
-            if (prev.cheer) cheer.classList.remove('show');
-          }
-          i++;
-          if (i >= steps.length) {
-            window.removeEventListener('resize', onResize);
-            done();
-            return;
-          }
-          var st = steps[i], walking = st.to !== undefined;
-          var p1 = walking ? st.to : cam + (st.drift || 0);
+        function target(st, fromP) { return st.to !== undefined ? st.to : fromP + (st.drift || 0); }
+        function begin(st) {
           if (st.title) {
             titleEl.children[0].textContent = st.title[0];
             titleEl.children[1].textContent = st.title[1];
@@ -803,21 +907,44 @@ html.lock .hero { height: 100vh; height: 100svh; overflow-y: auto; }
             titleEl.classList.add('show');
           }
           if (st.cheer) { cheer.textContent = st.cheer; cheer.classList.toggle('small', !!st.small); cheer.classList.add('show'); }
-          if (st.fade !== undefined) items.forEach(function (it) { if (it.slot === st.fade) it.off = true; });
-          if (st.reveal) items.forEach(function (it) { if (it.slot > KING9) it.off = false; });
-          // footsteps: a small bob while walking, still while standing
-          bobEl.style.animation = 'none';
-          if (walking && !st.title) {
-            var n = Math.max(2, Math.round(st.dur / 360));
-            void bobEl.offsetWidth;
-            bobEl.style.animation = 'hallBob ' + Math.round(st.dur / n) + 'ms ease-in-out ' + n;
-          }
-          move(cam, p1, st.dur, EASE, !!st.reveal);
-          cam = p1;
-          tid = setTimeout(next, st.dur);
+          var reach = target(st, from) + 1.2;          // paint captions before they are needed, not mid-stride
+          items.forEach(function (it) {
+            if (it.slot < from - 1.2) it.cap = null;
+            else if (!it.cap && it.slot <= reach && (it.fade > 0 || (st.reveal && isPM(it)))) it.cap = caption(it);
+          });
         }
-        next();
-        return function () { clearTimeout(tid); };
+        function end(st) {
+          if (st.title) titleEl.classList.remove('show');
+          if (st.cheer) cheer.classList.remove('show');
+          if (st.fade !== undefined) setFade(isKing9, 0);
+          if (st.reveal) setFade(isPM, 1);
+        }
+        begin(steps[0]);
+        return loop(function () {
+          var t = performance.now() - t0;
+          while (i < steps.length && t - stepStart >= steps[i].dur) {
+            end(steps[i]);
+            from = target(steps[i], from);
+            stepStart += steps[i].dur;
+            i++;
+            if (i < steps.length) begin(steps[i]);
+          }
+          if (i >= steps.length) {
+            window.removeEventListener('resize', onResize);
+            render(from, 0);
+            done();
+            return false;
+          }
+          var st = steps[i], q = Math.min(1, (t - stepStart) / st.dur), e = (1 - Math.cos(Math.PI * q)) / 2;
+          var p = from + (target(st, from) - from) * e, bob = 0;
+          if (st.to !== undefined && !st.title) {   // footsteps
+            var n = Math.max(2, Math.round(st.dur / 360));
+            bob = -4 * Math.pow(Math.sin(Math.PI * q * n), 2);
+          }
+          if (st.fade !== undefined) setFade(isKing9, 1 - Math.min(1, q * 2.5));
+          if (st.reveal) setFade(isPM, Math.max(0, Math.min(1, (q - 0.3) * 1.6)));
+          render(p, bob);
+        });
       }
     };
   }

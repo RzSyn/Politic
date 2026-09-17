@@ -539,3 +539,9 @@ missing = [f for f in set(re.findall(r'(?:src|href)="([^"]{1,200})"', src))
            if not f.startswith(('http', '#', 'data:', 'mailto:', 'javascript:'))
            and not os.path.exists(f.split('?')[0])]
 ```
+
+## Lesson: animated 3D scenes (test/index.html intro hall)
+
+- A CSS 3D walk (perspective + moving `translate3d`, big gradient walls, box-shadows, animated `filter: blur`) ran at **4-7 fps** in the user's screen recording, even after moving the motion to CSS transitions. The browser re-rasterises 3D layers whenever their projected scale changes, which is every frame of a walk.
+- What works: draw the scene on a `<canvas>`. Paint frames, gilding and captions **once** into offscreen canvases, fake the angle with thin vertical strips (strip count from the edge rise, x snapped to device pixels so seams don't show), crossfade a tiny pre-blurred JPEG to the sharp one instead of blurring. Measured 0.5-0.7 ms per frame.
+- To check smoothness, don't trust a hidden Browser pane (rAF and CSS transitions stall there). Ask for a screen recording and measure per-frame change with OpenCV (`cv2` and ffmpeg are installed). To see a canvas, POST `toDataURL` to a throwaway local receiver and Read the file; don't print base64 into the transcript.
