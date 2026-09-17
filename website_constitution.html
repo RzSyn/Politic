@@ -24,9 +24,6 @@
 
 
 <link rel="stylesheet" href="css/constitution.css?v=20260916">
-<link rel="stylesheet" href="css/renovate.css?v=1">
-<script>/* renovation preview: add ?renovate to the address to see the black-and-gold look */
-if (/[?&]renovate(?:[=&]|$)/.test(location.search)) document.documentElement.classList.add('rn');</script>
 
 
 <style>
@@ -72182,10 +72179,6 @@ function playAudioMobile(btn, src) {
 <script src="js/hall-data.js"></script>
 <script src="js/hall-aura.js"></script>
 <script src="js/portrait-hall.js"></script>
-<script>/* renovation preview drops the light, Night City and Aero themes */
-if (document.documentElement.classList.contains('rn') && ['light', 'nightcity', 'aero'].indexOf(localStorage.getItem('constTheme')) >= 0) {
-  changeTheme('dark'); document.getElementById('themeSelect').value = 'dark';
-}</script>
 
 
 <script>
