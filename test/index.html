@@ -147,10 +147,11 @@ a { color: inherit; text-decoration: none; }
 }
 .hf-frame img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 25%; background: #15120c; }
 .hf-cap {
-  margin-top: calc(var(--fw) * 0.06); padding: calc(var(--fw) * 0.035) calc(var(--fw) * 0.05); filter: blur(var(--b, 0px));
-  text-align: center; line-height: 1.35; color: #e8dcc0;
-  background: linear-gradient(180deg, rgba(24, 19, 10, 0.95), rgba(12, 10, 6, 0.95)); border: 1px solid rgba(212, 175, 55, 0.45);
+  width: 122%; margin: calc(var(--fw) * 0.07) 0 0 -11%; filter: blur(var(--b, 0px));
+  text-align: center; line-height: 1.4; color: #e8dcc0; text-wrap: balance;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.95), 0 0 3px rgba(0, 0, 0, 0.9);
 }
+.hf.single .hf-cap { width: 200%; margin-left: -50%; }
 .hf-cap small { display: block; font-size: calc(var(--fw) * 0.062); font-weight: 600; color: var(--gold); }
 .hf-cap b { display: block; font-size: calc(var(--fw) * 0.085); font-weight: 700; color: #fff; }
 .hf-cap span { display: block; font-size: calc(var(--fw) * 0.062); color: #a1a1aa; }
@@ -565,7 +566,7 @@ html.lock .hero { height: 100vh; height: 100svh; overflow-y: auto; }
     ['k6', 'พระบาทสมเด็จพระมงกุฎเกล้าเจ้าอยู่หัว', 'พ.ศ. ๒๓๖๐ – ๒๓๖๘'],
     ['k7', 'พระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว', 'พ.ศ. ๒๓๖๘ – ๒๓๙๔'],
     ['k8', 'พระบาทสมเด็จพระปรเมนทรมหาอานันทมหิดล', 'พ.ศ. ๒๓๙๔ – ๒๔๐๑'],
-    ['k9', 'พระบาทสมเด็จพระบรมชนกาธิเบศร มหาภูมิพลอดุลยเดชมหาราช บรมนาถบพิตร', 'พ.ศ. ๒๔๐๑ – ปัจจุบัน']
+    ['k9', 'พระบาทสมเด็จพระบรมชนกาธิเบศร<br>มหาภูมิพลอดุลยเดชมหาราช บรมนาถบพิตร', 'พ.ศ. ๒๔๐๑ – ปัจจุบัน']
   ];
   var PMS = [
     ['พระยามโนปกรณ์นิติธาดา (ก้อน หุตะสิงห์)', '๒๔๒๑ – ๒๔๒๙'],
@@ -624,7 +625,7 @@ html.lock .hero { height: 100vh; height: 100svh; overflow-y: auto; }
 
     function addPortrait(slot, side, img, label, name, years) {
       var el = document.createElement('div');
-      el.className = 'hf';
+      el.className = side ? 'hf' : 'hf single';
       el.innerHTML = '<div class="hf-frame"><img alt="" decoding="async"></div><div class="hf-cap"><small>' + label +
         '</small><b>' + name + '</b><span>' + years + '</span></div>';
       world.appendChild(el);
@@ -662,18 +663,18 @@ html.lock .hero { height: 100vh; height: 100svh; overflow-y: auto; }
         var y = it.side ? -g.fh * 0.12 : g.fh * 0.1;
         it.el.style.transform = 'translate3d(' + (it.side * g.W) + 'px,' + y + 'px,' + (-(it.slot + 1) * g.D) + 'px) rotateY(' + (it.side * -28) + 'deg)' + (it.side ? '' : ' scale(1.1)');
       });
-      var halfW = g.W + g.fw * 0.75, wallH = g.fh * 2.6;
+      var halfW = g.W + g.fw * 0.75, wallH = g.fh * 3.1;
       segs.forEach(function (sg) {
         var z = -(sg.slot + 1) * g.D, st = sg.el.style;
         if (sg.kind === 'hs-floor') {
           st.width = (2 * halfW) + 'px'; st.height = (g.D + 2) + 'px';
           st.marginLeft = -halfW + 'px'; st.marginTop = -(g.D / 2) + 'px';
-          st.transform = 'translate3d(0,' + (g.fh * 1.05) + 'px,' + z + 'px) rotateX(90deg)';
+          st.transform = 'translate3d(0,' + (g.fh * 1.45) + 'px,' + z + 'px) rotateX(90deg)';
         } else {
           var side = sg.kind === 'hs-wall l' ? -1 : 1;
           st.width = (g.D + 2) + 'px'; st.height = wallH + 'px';
           st.marginLeft = -(g.D / 2) + 'px'; st.marginTop = -(wallH / 2) + 'px';
-          st.transform = 'translate3d(' + (side * halfW) + 'px,' + (-g.fh * 0.05) + 'px,' + z + 'px) rotateY(' + (-side * 90) + 'deg)';
+          st.transform = 'translate3d(' + (side * halfW) + 'px,' + (g.fh * 0.05) + 'px,' + z + 'px) rotateY(' + (-side * 90) + 'deg)';
         }
       });
     }
