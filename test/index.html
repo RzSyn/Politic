@@ -145,6 +145,7 @@ a { color: inherit; text-decoration: none; }
 @keyframes spin { to { transform: rotate(360deg); } }
 @keyframes float { 0% { transform: translateY(0); opacity: 0; } 15% { opacity: 0.7; } 100% { transform: translateY(-105vh); opacity: 0; } }
 
+.hero-bg { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
 .hero-inner { position: relative; z-index: 1; max-width: 820px; }
 .hero-emblem { width: clamp(96px, 26vw, 132px); margin: 0 auto 22px; filter: drop-shadow(0 0 22px rgba(212, 175, 55, 0.4)); }
 .chip {
@@ -174,7 +175,7 @@ a { color: inherit; text-decoration: none; }
 .btn.ghost:hover { border-color: rgba(212, 175, 55, 0.5); transform: translateY(-3px); }
 .btn:active { transform: scale(0.97); }
 .scroll-cue {
-  position: absolute; left: 50%; bottom: max(20px, env(safe-area-inset-bottom)); transform: translateX(-50%);
+  position: absolute; left: 0; right: 0; margin: 0 auto; bottom: max(20px, env(safe-area-inset-bottom));
   width: 26px; height: 42px; border: 2px solid rgba(255, 255, 255, 0.25); border-radius: 14px; z-index: 1;
 }
 .scroll-cue::after { content: ''; position: absolute; left: 50%; top: 8px; width: 4px; height: 8px; margin-left: -2px; border-radius: 2px; background: var(--gold); animation: wheel 1.8s ease-in-out infinite; }
@@ -253,24 +254,27 @@ footer { padding: 36px 0 calc(36px + env(safe-area-inset-bottom)); border-top: 1
 footer a { color: var(--gold); }
 
 /* ═════════════ PAGE TRANSITIONS (สำรวจเนื้อหา) ═════════════ */
-/* sun: light bursts from behind the Garuda, floods the screen warm gold,
-   then fades onto the explore section */
-.hero-emblem { transition: filter 0.35s ease, transform 0.35s var(--ease); }
-.hero.charging .hero-emblem { filter: drop-shadow(0 0 40px rgba(255, 226, 140, 0.95)) brightness(1.15); transform: scale(1.06); }
-.sunfx { position: fixed; inset: 0; z-index: 90; pointer-events: none; overflow: hidden; transition: opacity 1s ease; }
+/* rays: thin gold rays spread slowly from behind the Garuda (~5 s), a dark
+   veil covers the jump to the explore section, then everything fades */
+html.lock .hero { height: 100vh; height: 100svh; overflow-y: auto; }
+.hero-emblem { transition: filter 1.2s ease, transform 1.2s var(--ease); }
+.hero.charging .hero-emblem { filter: drop-shadow(0 0 30px rgba(243, 220, 138, 0.7)); transform: scale(1.03); }
+.sunfx { position: fixed; inset: 0; z-index: 90; pointer-events: none; overflow: hidden; transition: opacity 1.1s ease; }
 .sunfx.out { opacity: 0; }
-.sunfx .core { position: absolute; left: var(--x); top: var(--y); width: 60px; height: 60px; margin: -30px 0 0 -30px; border-radius: 50%;
-  background: radial-gradient(circle, #fff1c2 0 22%, #e8c56a 48%, rgba(212, 175, 55, 0.55) 62%, rgba(212, 175, 55, 0) 72%);
-  transform: scale(0); animation: sunGrow 0.9s cubic-bezier(0.55, 0, 0.9, 0.3) forwards; }
-.sunfx .sun-rays { position: absolute; left: var(--x); top: var(--y); width: 2400px; height: 2400px; margin: -1200px 0 0 -1200px;
-  background: repeating-conic-gradient(rgba(243, 220, 138, 0.3) 0deg 3deg, transparent 3deg 15deg);
-  -webkit-mask: radial-gradient(circle, #000 0%, transparent 50%); mask: radial-gradient(circle, #000 0%, transparent 50%);
-  opacity: 0; animation: raysOut 0.9s ease-out forwards; }
-.sunfx .glow { position: absolute; inset: 0; opacity: 0; animation: glowIn 0.9s cubic-bezier(0.7, 0, 1, 0.5) forwards;
-  background: radial-gradient(circle at var(--x) var(--y), #f3dc8a 0%, #b8913a 45%, #5c4716 100%); }
-@keyframes sunGrow { 60% { transform: scale(6); } 100% { transform: scale(70); } }
-@keyframes raysOut { 0% { opacity: 0; transform: scale(0.1) rotate(0deg); } 30% { opacity: 1; } 100% { opacity: 1; transform: scale(1.4) rotate(40deg); } }
-@keyframes glowIn { 0%, 50% { opacity: 0; } 100% { opacity: 1; } }
+.sunfx .veil { position: absolute; inset: 0; opacity: 0; animation: fade 0.9s ease-in 3.3s forwards;
+  background: radial-gradient(circle at var(--x) var(--y), #2a2210 0%, #0d0b07 55%, #07070a 100%); }
+.sunfx .haze { position: absolute; inset: 0; opacity: 0; animation: fade 2.4s ease 0.2s forwards;
+  background: radial-gradient(circle at var(--x) var(--y), rgba(212, 175, 55, 0.26) 0%, rgba(212, 175, 55, 0.07) 30%, transparent 60%); }
+.sunfx .rays-a, .sunfx .rays-b {
+  position: absolute; left: var(--x); top: var(--y); width: 240vmax; height: 240vmax; margin: -120vmax 0 0 -120vmax;
+  -webkit-mask: radial-gradient(circle, transparent 0 3%, #000 7%, rgba(0, 0, 0, 0.55) 22%, transparent 48%);
+          mask: radial-gradient(circle, transparent 0 3%, #000 7%, rgba(0, 0, 0, 0.55) 22%, transparent 48%);
+  opacity: 0; transform: scale(0.15);
+}
+.sunfx .rays-a { background: repeating-conic-gradient(rgba(243, 220, 138, 0.4) 0deg 0.35deg, transparent 0.35deg 6deg); animation: raysA 4.2s cubic-bezier(0.22, 1, 0.36, 1) 0.3s forwards; }
+.sunfx .rays-b { background: repeating-conic-gradient(from 3deg, rgba(212, 175, 55, 0.26) 0deg 0.25deg, transparent 0.25deg 9deg); animation: raysB 4.2s cubic-bezier(0.22, 1, 0.36, 1) 0.6s forwards; }
+@keyframes raysA { 0% { opacity: 0; transform: scale(0.15) rotate(0deg); } 25% { opacity: 1; } 100% { opacity: 1; transform: scale(1) rotate(14deg); } }
+@keyframes raysB { 0% { opacity: 0; transform: scale(0.1) rotate(0deg); } 30% { opacity: 0.9; } 100% { opacity: 0.9; transform: scale(1.1) rotate(-10deg); } }
 
 /* ═════════════ RESPONSIVE ═════════════ */
 @media (max-width: 900px) {
@@ -324,8 +328,7 @@ footer a { color: var(--gold); }
 
 <!-- ═════════════ HERO ═════════════ -->
 <header class="hero" id="top">
-  <div class="rays"></div>
-  <div id="dust"></div>
+  <div class="hero-bg"><div class="rays"></div><div id="dust"></div></div>
   <div class="hero-inner">
     <img class="hero-emblem h-item" style="--i:0" src="../images/Thai_Garuda_emblem.png" alt="ตราครุฑพ่าห์">
     <div class="h-item" style="--i:1"><span class="chip"><i></i>ปัจจุบัน พ.ศ. ๒๗๒๓</span></div>
@@ -479,7 +482,6 @@ footer a { color: var(--gold); }
     if (finished) return;
     finished = true;
     intro.classList.add('leave');
-    root.classList.remove('lock');
     document.body.classList.add('ready');
     setTimeout(function () { intro.parentNode && intro.parentNode.removeChild(intro); }, 1500);
   }
@@ -495,6 +497,15 @@ footer a { color: var(--gold); }
     }, 60);
   }
   intro.querySelector('.skip').addEventListener('click', finish);
+
+  // the first page cannot be scrolled away: only the buttons move on
+  function unlock() { root.classList.remove('lock'); }
+  document.addEventListener('touchmove', function (e) {
+    if (!root.classList.contains('lock')) return;
+    var h = e.target.closest ? e.target.closest('.hero') : null;
+    if (h && h.scrollHeight > h.clientHeight + 1) return; // short screens: let the hero itself scroll
+    e.preventDefault();
+  }, { passive: false });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape' || e.key === 'Enter' || e.key === ' ') finish(); });
 
   var img = intro.querySelector('img');
@@ -545,8 +556,8 @@ footer a { color: var(--gold); }
     reveal();
   }
 
-  // "สำรวจเนื้อหา": the sun behind the Garuda flares, floods the screen,
-  // and fades out onto the explore section
+  // "สำรวจเนื้อหา": thin gold rays spread from behind the Garuda for ~5 s,
+  // then the page opens on the explore section
   var exploreBtn = document.querySelector('.btn.ghost[href="#explore"]');
   var busy = false;
   exploreBtn.addEventListener('click', function (e) {
@@ -559,15 +570,16 @@ footer a { color: var(--gold); }
     s.className = 'sunfx';
     s.style.setProperty('--x', (r.left + r.width / 2) + 'px');
     s.style.setProperty('--y', (r.top + r.height / 2) + 'px');
-    s.innerHTML = '<div class="sun-rays"></div><div class="glow"></div><div class="core"></div>';
+    s.innerHTML = '<div class="veil"></div><div class="haze"></div><div class="rays-b"></div><div class="rays-a"></div>';
     hero.classList.add('charging');
-    setTimeout(function () { document.body.appendChild(s); }, 250);
+    document.body.appendChild(s);
     setTimeout(function () {
       hero.classList.remove('charging');
+      unlock();
       jumpTo(document.getElementById('explore'));
       s.classList.add('out');
-    }, 1150);
-    setTimeout(function () { s.parentNode.removeChild(s); busy = false; }, 2200);
+    }, 4200);
+    setTimeout(function () { s.parentNode.removeChild(s); busy = false; }, 5400);
   });
 
   // mouse icon: glide down to the stats with an eased scroll we drive
@@ -585,6 +597,7 @@ footer a { color: var(--gold); }
   }
   document.querySelector('.scroll-cue').addEventListener('click', function (e) {
     e.preventDefault();
+    unlock();
     var t = document.getElementById('stats');
     glideTo(t.getBoundingClientRect().top + window.pageYOffset - 10, 1100);
   });
