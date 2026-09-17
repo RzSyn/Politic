@@ -252,6 +252,34 @@ section.block.alt { background: linear-gradient(180deg, var(--bg), var(--bg-2) 3
 footer { padding: 36px 0 calc(36px + env(safe-area-inset-bottom)); border-top: 1px solid var(--line); text-align: center; color: #71717a; font-size: 13.5px; }
 footer a { color: var(--gold); }
 
+/* ═════════════ PAGE TRANSITIONS (สำรวจเนื้อหา) ═════════════ */
+/* fold: the hero turns away like a book page */
+.turn { position: fixed; inset: 0; z-index: 90; pointer-events: none; perspective: 2200px; }
+.turn .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.2)); animation: shadeOut 1.2s ease forwards; }
+.turn .leaf { position: absolute; inset: 0; transform-origin: left center; transform-style: preserve-3d; animation: leafTurn 1.2s cubic-bezier(0.645, 0.045, 0.355, 1) forwards; }
+.turn .front, .turn .back { position: absolute; inset: 0; overflow: hidden; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
+.turn .front { background: var(--bg); box-shadow: inset -2px 0 0 rgba(212, 175, 55, 0.5); }
+.turn .front::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, transparent 35%, rgba(0, 0, 0, 0.55)); opacity: 0; animation: curl 1.2s ease forwards; }
+.turn .back { transform: rotateY(180deg); background: linear-gradient(270deg, #221c10, #0e0e13 70%); box-shadow: inset 2px 0 0 rgba(212, 175, 55, 0.35); }
+.turn .h-item { animation: none !important; opacity: 1 !important; transform: none !important; }
+@keyframes leafTurn { to { transform: rotateY(-180deg); } }
+@keyframes curl { 50% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes shadeOut { to { opacity: 0; } }
+/* sun: a sunburst floods the screen white, then fades onto the new page */
+.sunfx { position: fixed; inset: 0; z-index: 90; pointer-events: none; overflow: hidden; transition: opacity 0.9s ease; }
+.sunfx.out { opacity: 0; }
+.sunfx .core { position: absolute; left: var(--x); top: var(--y); width: 60px; height: 60px; margin: -30px 0 0 -30px; border-radius: 50%;
+  background: radial-gradient(circle, #fff 0 30%, #fff3c4 50%, rgba(243, 220, 138, 0.6) 65%, rgba(212, 175, 55, 0) 72%);
+  transform: scale(0); animation: sunGrow 0.85s cubic-bezier(0.55, 0, 0.9, 0.3) forwards; }
+.sunfx .sun-rays { position: absolute; left: var(--x); top: var(--y); width: 2400px; height: 2400px; margin: -1200px 0 0 -1200px;
+  background: repeating-conic-gradient(rgba(255, 240, 190, 0.55) 0deg 3deg, transparent 3deg 15deg);
+  -webkit-mask: radial-gradient(circle, #000 0%, transparent 50%); mask: radial-gradient(circle, #000 0%, transparent 50%);
+  opacity: 0; animation: raysOut 0.85s ease-out forwards; }
+.sunfx .white { position: absolute; inset: 0; background: #fffaf0; opacity: 0; animation: whiteIn 0.85s cubic-bezier(0.7, 0, 1, 0.5) forwards; }
+@keyframes sunGrow { 60% { transform: scale(6); } 100% { transform: scale(70); } }
+@keyframes raysOut { 0% { opacity: 0; transform: scale(0.1) rotate(0deg); } 30% { opacity: 1; } 100% { opacity: 1; transform: scale(1.4) rotate(40deg); } }
+@keyframes whiteIn { 0%, 55% { opacity: 0; } 100% { opacity: 1; } }
+
 /* ═════════════ RESPONSIVE ═════════════ */
 @media (max-width: 900px) {
   .stats { grid-template-columns: repeat(3, 1fr); }
@@ -517,6 +545,53 @@ footer a { color: var(--gold); }
       if (p < 1) setTimeout(step, 16);
     })();
   }
+  // "สำรวจเนื้อหา": cover the screen with a page turn (default) or a sunburst
+  // (?fx=sun), jump to the explore section underneath, then uncover it
+  var exploreBtn = document.querySelector('.btn.ghost[href="#explore"]');
+  var fx = /[?&]fx=sun\b/.test(location.search) ? 'sun' : 'fold';
+  var busy = false;
+  function jumpTo(el) {
+    var y = el.getBoundingClientRect().top + window.pageYOffset;
+    root.style.scrollBehavior = 'auto';
+    window.scrollTo(0, y);
+    root.style.scrollBehavior = '';
+    reveal();
+  }
+  function foldFx(target, done) {
+    var hero = document.querySelector('.hero'), r = hero.getBoundingClientRect();
+    var clone = hero.cloneNode(true);
+    clone.removeAttribute('id');
+    Array.prototype.forEach.call(clone.querySelectorAll('[id]'), function (n) { n.removeAttribute('id'); });
+    clone.style.cssText = 'position:absolute;left:0;right:0;margin:0;min-height:0;top:' + r.top + 'px;height:' + r.height + 'px;';
+    var turn = document.createElement('div');
+    turn.className = 'turn';
+    turn.innerHTML = '<div class="shade"></div><div class="leaf"><div class="front"></div><div class="back"></div></div>';
+    turn.querySelector('.front').appendChild(clone);
+    document.body.appendChild(turn);
+    jumpTo(target);
+    setTimeout(function () { turn.parentNode.removeChild(turn); done(); }, 1300);
+  }
+  function sunFx(e, target, done) {
+    var x = e.clientX, y = e.clientY;
+    if (!x && !y) { var b = exploreBtn.getBoundingClientRect(); x = b.left + b.width / 2; y = b.top + b.height / 2; }
+    var s = document.createElement('div');
+    s.className = 'sunfx';
+    s.style.setProperty('--x', x + 'px');
+    s.style.setProperty('--y', y + 'px');
+    s.innerHTML = '<div class="sun-rays"></div><div class="core"></div><div class="white"></div>';
+    document.body.appendChild(s);
+    setTimeout(function () { jumpTo(target); s.classList.add('out'); }, 820);
+    setTimeout(function () { s.parentNode.removeChild(s); done(); }, 1800);
+  }
+  exploreBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (busy) return;
+    busy = true;
+    var target = document.getElementById('explore');
+    var done = function () { busy = false; };
+    if (fx === 'sun') sunFx(e, target, done); else foldFx(target, done);
+  });
+
   // plain scroll check instead of IntersectionObserver: it behaves the same
   // on every phone browser and needs no polyfill
   var items = Array.prototype.slice.call(document.querySelectorAll('.rv'));
