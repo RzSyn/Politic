@@ -3,129 +3,148 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0d1117">
+<meta name="theme-color" content="#0c0e11">
 <title>รัฐธรรมนูญแห่งราชอาณาจักรไทย พุทธศักราช ๒๕๒๕ (ฉบับจำลอง)</title>
-<script>try { if (localStorage.getItem('constTheme') === 'bw') document.documentElement.classList.add('mourning'); } catch (e) {}</script>
+<script>
+/* the rebuilt site keeps only the dark look and the mourning (bw) mode */
+try {
+  var t = localStorage.getItem('constTheme');
+  if (t && t !== 'dark' && t !== 'bw') localStorage.setItem('constTheme', 'dark');
+  if (t === 'bw') document.documentElement.classList.add('mourning');
+} catch (e) {}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&family=Taviraj:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css">
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&family=Taviraj:wght@400;500;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/constitution.css?v=20260916">
+{{HEAD_RES}}
+<link rel="stylesheet" href="css/site.css?v=2">
 </head>
 <body>
 
-<a class="skip" href="#charter">ข้ามไปยังตัวบทรัฐธรรมนูญ</a>
+<a class="nw-skip" href="#hub">ข้ามไปยังหัวข้อทั้งหมด</a>
+<select id="themeSelect" hidden aria-hidden="true"><option value="dark">dark</option><option value="bw">bw</option></select>
 
 <!-- ═══ MASTHEAD ═══ -->
-<header class="mast">
-  <div class="mast-in">
-    <a class="brand" href="#top" aria-label="รัฐธรรมนูญแห่งราชอาณาจักรไทย">
-      <img class="emblem-color" src="images/Thai_Garuda_emblem.png" alt="">
-      <img class="emblem-bw" src="images/Thai_Garuda_emblem_bw.png" alt="">
+<header class="nw-mast">
+  <div class="nw-mast-in">
+    <a class="nw-brand" href="#top">
+      <img class="nw-em-color" src="images/Thai_Garuda_emblem.png" alt="">
+      <img class="nw-em-bw" src="images/Thai_Garuda_emblem_bw.png" alt="">
       <span><b>รัฐธรรมนูญแห่งราชอาณาจักรไทย</b><small>พุทธศักราช ๒๕๒๕ · ฉบับจำลอง</small></span>
     </a>
-    <nav class="mast-nav" aria-label="เมนูหลัก">
+    <nav class="nw-nav" aria-label="เมนูหลัก">
+      <a href="#hub" class="is-on">หัวข้อทั้งหมด</a>
+      <a href="#charter">ตัวบทรัฐธรรมนูญ</a>
+      <a href="#stage" data-open="portrait-hall-tab">หอภาพเหมือน</a>
       <a href="index.html">หน้าแรก</a>
-      <a href="#charter">ตัวบท</a>
-      <a href="#archive">คลังข้อมูล</a>
-      <a href="#archive">หอภาพเหมือน</a>
     </nav>
-    <div class="mast-tools">
-      <label class="search">
-        <span class="sr">ค้นหาในรัฐธรรมนูญ</span>
-        <input id="q" type="search" placeholder="ค้นหาคำหรือข้อความในมาตรา" autocomplete="off">
-      </label>
-      <button type="button" class="icon-btn search-toggle" aria-label="ค้นหา">ค้นหา</button>
-      <button type="button" class="icon-btn toc-toggle" aria-label="สารบัญ" aria-controls="toc">สารบัญ</button>
-    </div>
+    <label class="nw-search"><span class="nw-sr">ค้นหาหัวข้อหรือมาตรา</span>
+      <input id="nwQ" type="search" placeholder="ค้นหาหัวข้อ มาตรา หรือคำสำคัญ…" autocomplete="off"></label>
+    <button type="button" class="nw-btn nw-search-toggle" aria-label="ค้นหา">ค้นหา</button>
+    <button type="button" class="nw-btn" id="nwMourning" aria-pressed="false">โหมดไว้ทุกข์</button>
   </div>
 </header>
 
-<!-- ═══ TOOLBAR ═══ -->
-<div class="bar">
-  <div class="bar-in">
-    <div class="chips" role="group" aria-label="กรองตามที่มาของมาตรา">
-      <button type="button" class="chip is-on" data-filter="all">ทั้งหมด</button>{{FILTERS}}
+<div id="top"></div>
+
+<!-- ═══ HERO ═══ -->
+<section class="nw-hero">
+  {{MOURNING}}
+  <div class="nw-hero-in">
+    <div class="nw-hero-text">
+      <p class="nw-eyebrow">ราชอาณาจักรไทย · ฉบับจำลอง</p>
+      <h1>รัฐธรรมนูญแห่งราชอาณาจักรไทย<br>พุทธศักราช ๒๕๒๕</h1>
+      <p class="nw-lede">ฉบับประชาชนเป็นใหญ่ — ผ่านประชามติ ๕ รอบ (ด้วยมติเอกฉันท์ของปวงชน)</p>
+      <div class="nw-stats">
+        <div><b>๑,๑๖๐</b><span>มาตรา</span></div>
+        <div><b>๓๘</b><span>หมวด</span></div>
+        <div><b>๓,๐๐๐</b><span>ผู้ร่วมร่าง</span></div>
+        <div><b>๕</b><span>รอบประชามติ</span></div>
+      </div>
+      <div class="nw-hero-cta">
+        <a class="nw-btn nw-btn-primary" href="#hub">เลือกหัวข้อ</a>
+        <a class="nw-btn" href="#charter">อ่านตัวบทรัฐธรรมนูญ</a>
+      </div>
     </div>
-    <div class="bar-right">
-      <form class="jump" id="jump"><label><span>ไปที่มาตรา</span><input id="jumpInput" inputmode="numeric" placeholder="เช่น ๘"></label></form>
-      <details class="docs">
-        <summary>เอกสาร</summary>
-        <div class="docs-menu">
-          <a href="./files/รัฐธรรมนูญ_๒๕๒๕_แก้ไขเพิ่มเติม.pdf" target="_blank" rel="noopener">รธน. ๒๕๒๕ (PDF)</a>
-          <a href="./files/รัฐธรรมนูญ_๒๕๒๕_แก้ไขเพิ่มเติม.docx" target="_blank" rel="noopener">รธน. ๒๕๒๕ (Word)</a>
-          <a href="./files/รัฐธรรมนูญ_ฉบับปฐมเวลา_๒๓๗๕.docx" target="_blank" rel="noopener">รธน. ๒๓๗๕ ฉบับปฐมเวลา (Word)</a>
-        </div>
-      </details>
-      <button type="button" class="text-btn" id="mourningBtn" aria-pressed="false">โหมดไว้ทุกข์</button>
+    <img class="nw-hero-emblem nw-em-color" src="images/Thai_Garuda_emblem.png" alt="ตราครุฑ">
+    <img class="nw-hero-emblem nw-em-bw" src="images/Thai_Garuda_emblem_bw.png" alt="ตราครุฑ">
+  </div>
+</section>
+
+<!-- ═══ TOPIC HUB: every topic, right on the front page ═══ -->
+<section class="nw-hub" id="hub">
+  <span id="history_and_pms"></span>
+  <header class="nw-hub-head">
+    <div><p class="nw-eyebrow">หอจดหมายเหตุประชาธิปไตยและรัฐธรรมนูญไทย</p><h2>หัวข้อทั้งหมด <span>{{TOPIC_COUNT}} หัวข้อ</span></h2></div>
+    <p class="nw-hub-result" id="nwHubResult" hidden></p>
+  </header>
+  <div class="nw-groups">{{HUB}}</div>
+</section>
+
+<!-- ═══ STAGE: the chosen topic opens here ═══ -->
+<section class="nw-stage" id="stage">
+  <div class="nw-stage-bar">
+    <div class="nw-crumb"><span id="nwCrumbGroup"></span><b id="nwCrumbTopic"></b></div>
+    <div class="nw-stage-nav">
+      <button type="button" class="nw-btn" id="nwPrev">‹ ก่อนหน้า</button>
+      <button type="button" class="nw-btn" id="nwNext">ถัดไป ›</button>
+      <a class="nw-btn" href="#hub">หัวข้อทั้งหมด ↑</a>
     </div>
   </div>
-  <div class="result" id="result" hidden></div>
-</div>
+  <div class="nw-stage-body">
+{{STAGE}}
+  </div>
+</section>
 
-<div class="layout" id="top">
-  <!-- ═══ TABLE OF CONTENTS ═══ -->
-  <aside class="toc" id="toc" aria-label="สารบัญ">
-    <div class="toc-head">สารบัญ</div>
-    <nav>{{TOC}}</nav>
-  </aside>
-
-  <main class="doc">
-    <!-- ═══ COVER ═══ -->
-    <section class="cover">
-      {{MOURNING}}
-      <img class="cover-emblem emblem-color" src="images/Thai_Garuda_emblem.png" alt="ตราครุฑ">
-      <img class="cover-emblem emblem-bw" src="images/Thai_Garuda_emblem_bw.png" alt="ตราครุฑ">
-      <p class="eyebrow">ราชอาณาจักรไทย</p>
-      <h1>รัฐธรรมนูญแห่งราชอาณาจักรไทย<br>พุทธศักราช ๒๕๒๕</h1>
-      <p class="lede">ฉบับประชาชนเป็นใหญ่ — ผ่านประชามติ ๕ รอบ (ด้วยมติเอกฉันท์ของปวงชน)</p>
-      <dl class="facts">
-        <div><dt>มาตรา</dt><dd>๑,๑๖๐</dd></div>
-        <div><dt>หมวด</dt><dd>๓๘</dd></div>
-        <div><dt>ผู้ร่วมร่าง</dt><dd>๓,๐๐๐</dd></div>
-        <div><dt>รอบประชามติ</dt><dd>๕</dd></div>
-      </dl>
-      <div class="legend" aria-label="ที่มาของมาตรา">{{LEGEND}}</div>
-    </section>
-
-    <div id="charter">
-      <!-- ═══ PREAMBLE ═══ -->
-      <section class="preamble" id="preamble">
+<!-- ═══ CHARTER ═══ -->
+<section class="nw-charter" id="charter">
+  <header class="nw-charter-head">
+    <p class="nw-eyebrow">ตัวบท</p>
+    <h2>รัฐธรรมนูญแห่งราชอาณาจักรไทย พุทธศักราช ๒๕๒๕</h2>
+    <div class="nw-legend">{{LEGEND}}</div>
+  </header>
+  <div class="nw-charter-bar">
+    <div class="nw-chips" role="group" aria-label="กรองตามที่มาของมาตรา">
+      <button type="button" class="nw-chip is-on" data-filter="all">ทั้งหมด</button>{{FILTERS}}
+    </div>
+    <div class="nw-charter-tools">
+      <form id="nwJump"><label><span>ไปที่มาตรา</span><input id="nwJumpInput" inputmode="numeric" placeholder="เช่น ๘"></label></form>
+      <details class="nw-docs"><summary>เอกสาร</summary><div>
+        <a href="./files/รัฐธรรมนูญ_๒๕๒๕_แก้ไขเพิ่มเติม.pdf" target="_blank" rel="noopener">รธน. ๒๕๒๕ (PDF)</a>
+        <a href="./files/รัฐธรรมนูญ_๒๕๒๕_แก้ไขเพิ่มเติม.docx" target="_blank" rel="noopener">รธน. ๒๕๒๕ (Word)</a>
+        <a href="./files/รัฐธรรมนูญ_ฉบับปฐมเวลา_๒๓๗๕.docx" target="_blank" rel="noopener">รธน. ๒๓๗๕ ฉบับปฐมเวลา (Word)</a>
+      </div></details>
+      <button type="button" class="nw-btn nw-toc-toggle">สารบัญ</button>
+    </div>
+    <p class="nw-result" id="nwResult" hidden></p>
+  </div>
+  <div class="nw-charter-layout">
+    <aside class="nw-toc" id="nwToc" aria-label="สารบัญหมวด"><div class="nw-toc-head">สารบัญ</div><nav>{{TOC}}</nav></aside>
+    <div class="nw-doc">
+      <section class="nw-preamble" id="preamble">
         <h2>{{PRE_TITLE}}</h2>
-        <p class="preamble-sub">{{PRE_SUB}}</p>
+        <p class="nw-preamble-sub">{{PRE_SUB}}</p>
         {{PRE_PARAS}}
       </section>
-
-      <!-- ═══ CHAPTERS ═══ -->
       {{CHAPTERS}}
     </div>
+  </div>
+</section>
 
-    <!-- ═══ ARCHIVE ═══ -->
-    <section class="archive" id="archive">
-      <header class="ch-head"><div class="ch-no">คลังข้อมูล</div><h2>ประวัติศาสตร์ สถาบัน การเมือง และบุคคลสำคัญ</h2>
-        <div class="ch-meta">{{TAB_COUNT}} หัวข้อ · กำลังย้ายเข้าสู่เว็บไซต์ใหม่ทีละหมวด</div></header>
-      <p class="arch-note">ระหว่างการปรับปรุง เนื้อหาคลังข้อมูลทั้งหมดยังเปิดอ่านได้ที่เว็บไซต์เดิม</p>
-      <p><a class="btn" href="website_constitution.html#history_and_pms">เปิดคลังข้อมูล (เว็บไซต์เดิม)</a></p>
-      <div class="arch-grid">{{ARCHIVE}}</div>
-    </section>
+<footer class="nw-foot">
+  <p>รัฐธรรมนูญจำลอง · โลกประวัติศาสตร์ทางเลือก ไม่ใช่ข้อมูลจริง</p>
+  <p><a href="https://github.com/RzSyn/Politic" target="_blank" rel="noopener">GitHub: RzSyn/Politic</a></p>
+</footer>
 
-    <footer class="foot">
-      <p>รัฐธรรมนูญจำลอง · โลกประวัติศาสตร์ทางเลือก ไม่ใช่ข้อมูลจริง</p>
-      <p><a href="https://github.com/RzSyn/Politic" target="_blank" rel="noopener">GitHub: RzSyn/Politic</a></p>
-    </footer>
-  </main>
-</div>
+<div class="nw-scrim" id="nwScrim" hidden></div>
+<div class="nw-popup" id="nwPopup" role="dialog" hidden></div>
 
-<button type="button" class="float-btn glossary-open" id="glossaryBtn">คำศัพท์</button>
-<a class="float-btn to-top" href="#top" id="toTop" aria-label="กลับขึ้นด้านบน">↑</a>
-
-<div class="scrim" id="scrim" hidden></div>
-<aside class="glossary" id="glossary" aria-label="พจนานุกรมคำศัพท์" hidden>
-  <header><h2>พจนานุกรมคำศัพท์</h2><button type="button" class="icon-btn" id="glossaryClose" aria-label="ปิด">×</button></header>
-  <input id="glossaryQ" type="search" placeholder="พิมพ์คำศัพท์เพื่อค้นหา">
-  <div id="glossaryList"></div>
-</aside>
-<div class="popup" id="popup" role="dialog" hidden></div>
-
-<script src="js/glossary-data.js"></script>
-<script src="js/site.js"></script>
+{{TAIL}}
+<script src="js/constitution.js"></script>
+<script src="js/hall-data.js"></script>
+<script src="js/hall-aura.js"></script>
+<script src="js/portrait-hall.js"></script>
+{{TAIL_SCRIPT}}
+<script src="js/site.js?v=2"></script>
 </body>
 </html>
