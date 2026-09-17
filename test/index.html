@@ -13,13 +13,13 @@
 :root {
   --bg: #07070a;
   --bg-2: #0e0e13;
-  --card: rgba(255, 255, 255, 0.035);
-  --line: rgba(255, 255, 255, 0.07);
+  --card: rgba(212, 175, 55, 0.035);
+  --line: rgba(212, 175, 55, 0.18);
   --gold: #d4af37;
   --gold-2: #f3dc8a;
   --gold-soft: rgba(212, 175, 55, 0.14);
   --text: #ececf1;
-  --muted: #a1a1aa;
+  --muted: #b3a88f;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -34,6 +34,29 @@ body {
 }
 a { color: inherit; text-decoration: none; }
 .wrap { width: 100%; max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+
+/* classic gold buttons: square corners, black lacquer, gold rule with an inner hairline, glow behind */
+.btn, .replay, .skip {
+  position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  border-radius: 2px; cursor: pointer; text-decoration: none;
+  background: linear-gradient(180deg, #16130c 0%, #0a0907 100%);
+  border: 1px solid rgba(212, 175, 55, 0.8); color: #e2c170;
+  font-family: 'Sarabun', sans-serif; font-weight: 600; letter-spacing: 0.02em;
+  box-shadow: 0 0 22px rgba(212, 175, 55, 0.18), inset 0 0 14px rgba(212, 175, 55, 0.06);
+  transition: box-shadow 0.4s ease, border-color 0.4s ease, color 0.4s ease, transform 0.4s var(--ease);
+}
+.btn::after, .replay::after, .skip::after {
+  content: ''; position: absolute; inset: 4px; border: 1px solid rgba(212, 175, 55, 0.25); pointer-events: none;
+}
+.btn:hover, .btn:focus-visible, .replay:hover, .replay:focus-visible, .skip:hover, .skip:focus-visible {
+  outline: none; color: #f6dd92; border-color: #f3dc8a;
+  box-shadow: 0 0 36px rgba(212, 175, 55, 0.38), inset 0 0 18px rgba(212, 175, 55, 0.12);
+}
+.btn:active, .replay:active, .skip:active { transform: scale(0.97); }
+.btn { min-height: 52px; padding: 0 30px; font-size: 16px; }
+.btn.primary { box-shadow: 0 0 30px rgba(212, 175, 55, 0.28), inset 0 0 16px rgba(212, 175, 55, 0.09); }
+.btn.ghost { border-color: rgba(212, 175, 55, 0.5); color: #cdb277; }
+.btn .chev { font-size: 1.25em; line-height: 1; margin-top: -2px; }
 
 /* ═════════════ INTRO ═════════════ */
 #intro { display: none; }
@@ -94,11 +117,9 @@ a { color: inherit; text-decoration: none; }
 }
 .skip {
   position: absolute; right: max(16px, env(safe-area-inset-right)); bottom: max(18px, env(safe-area-inset-bottom));
-  background: rgba(255, 255, 255, 0.06); border: 1px solid var(--line); color: var(--muted);
-  font: 500 13px 'Sarabun', sans-serif; padding: 8px 16px; border-radius: 999px; cursor: pointer;
-  opacity: 0; transition: opacity 0.4s, color 0.2s, border-color 0.2s;
+  font-size: 13px; padding: 8px 16px;
+  opacity: 0; transition: opacity 0.4s, color 0.4s, border-color 0.4s, box-shadow 0.4s;
 }
-.skip:hover, .skip:focus-visible { color: var(--gold-2); border-color: var(--gold); outline: none; }
 
 #intro.play .ring.r1 { animation: draw 1.6s var(--ease) 0.1s forwards; }
 #intro.play .ring.r2 { animation: draw 1.6s var(--ease) 0.35s forwards; }
@@ -123,6 +144,7 @@ a { color: inherit; text-decoration: none; }
 @keyframes rule { to { transform: scaleX(1); } }
 @keyframes rise { to { transform: translateY(0); } }
 @keyframes fade { to { opacity: 1; } }
+
 
 /* ═════════════ HALL OF PORTRAITS (intro, part 2) ═════════════ */
 #intro, #intro .intro-title, #intro .intro-year, #intro .hall-title small { font-family: 'Srisakdi', 'Sarabun', serif; }
@@ -162,10 +184,8 @@ a { color: inherit; text-decoration: none; }
 .hall-bar i { display: block; width: 0; height: 100%; background: linear-gradient(90deg, var(--gold), var(--gold-2)); }
 .replay {
   position: absolute; z-index: 2; top: max(14px, env(safe-area-inset-top)); right: max(14px, env(safe-area-inset-right));
-  background: rgba(255, 255, 255, 0.05); border: 1px solid var(--line); color: var(--muted);
-  font: 500 13px 'Sarabun', sans-serif; padding: 7px 14px; border-radius: 999px; cursor: pointer; transition: color 0.2s, border-color 0.2s;
+  font-size: 13px; padding: 7px 14px;
 }
-.replay:hover, .replay:focus-visible { color: var(--gold-2); border-color: rgba(212, 175, 55, 0.5); outline: none; }
 
 /* ═════════════ HERO ═════════════ */
 .hero {
@@ -194,7 +214,7 @@ a { color: inherit; text-decoration: none; }
 .chip {
   display: inline-flex; align-items: center; gap: 8px; margin-bottom: 18px;
   font-size: 13px; font-weight: 600; color: var(--gold-2);
-  background: var(--gold-soft); border: 1px solid rgba(212, 175, 55, 0.35); border-radius: 999px; padding: 5px 14px;
+  background: rgba(10, 9, 7, 0.85); border: 1px solid rgba(212, 175, 55, 0.55); border-radius: 2px; padding: 5px 14px; box-shadow: 0 0 16px rgba(212, 175, 55, 0.14);
 }
 .chip i { width: 7px; height: 7px; border-radius: 50%; background: #facc15; box-shadow: 0 0 10px #facc15; animation: pulse 2s ease-in-out infinite; }
 @keyframes pulse { 50% { opacity: 0.35; } }
@@ -207,19 +227,9 @@ a { color: inherit; text-decoration: none; }
 .hero .era { margin-top: 10px; font-size: clamp(17px, 4.2vw, 22px); color: var(--gold-2); font-weight: 600; }
 .hero .lead { margin: 18px auto 0; max-width: 620px; font-size: clamp(15px, 3.8vw, 17.5px); color: var(--muted); font-weight: 300; line-height: 1.85; }
 .cta { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 32px; }
-.btn {
-  display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 50px;
-  padding: 0 26px; border-radius: 14px; font-weight: 700; font-size: 16px;
-  transition: transform 0.35s var(--ease), box-shadow 0.35s, background 0.3s, border-color 0.3s;
-}
-.btn.primary { color: #1a1406; background: linear-gradient(135deg, var(--gold-2), var(--gold)); box-shadow: 0 10px 30px rgba(212, 175, 55, 0.28); }
-.btn.primary:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(212, 175, 55, 0.4); }
-.btn.ghost { color: var(--text); background: rgba(255, 255, 255, 0.04); border: 1px solid var(--line); }
-.btn.ghost:hover { border-color: rgba(212, 175, 55, 0.5); transform: translateY(-3px); }
-.btn:active { transform: scale(0.97); }
 .scroll-cue {
   position: absolute; left: 0; right: 0; margin: 0 auto; bottom: max(20px, env(safe-area-inset-bottom));
-  width: 26px; height: 42px; border: 2px solid rgba(255, 255, 255, 0.25); border-radius: 14px; z-index: 1;
+  width: 26px; height: 42px; border: 1px solid rgba(212, 175, 55, 0.6); border-radius: 14px; z-index: 1; box-shadow: 0 0 14px rgba(212, 175, 55, 0.15);
 }
 .scroll-cue::after { content: ''; position: absolute; left: 50%; top: 8px; width: 4px; height: 8px; margin-left: -2px; border-radius: 2px; background: var(--gold); animation: wheel 1.8s ease-in-out infinite; }
 @keyframes wheel { 0% { opacity: 0; transform: translateY(0); } 30% { opacity: 1; } 100% { opacity: 0; transform: translateY(14px); } }
@@ -240,14 +250,14 @@ section.block.alt { background: linear-gradient(180deg, var(--bg), var(--bg-2) 3
 .js .rv.in { opacity: 1; transform: none; }
 
 /* stats */
-.stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 20px; overflow: hidden; }
+.stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 3px; overflow: hidden; }
 .stat { background: var(--bg); padding: 26px 12px; text-align: center; }
 .stat b { display: block; font-family: 'Outfit', 'Sarabun', sans-serif; font-size: clamp(28px, 4.2vw, 40px); font-weight: 800; color: var(--gold-2); line-height: 1.1; }
 .stat span { display: block; margin-top: 6px; font-size: 14px; color: var(--muted); }
 
 /* now */
 .now { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.now-card { position: relative; overflow: hidden; border-radius: 20px; border: 1px solid var(--line); background: var(--card); padding: 24px; }
+.now-card { position: relative; overflow: hidden; border-radius: 3px; border: 1px solid var(--line); background: var(--card); padding: 24px; }
 .now-card::before { content: ''; position: absolute; inset: 0 0 auto 0; height: 3px; background: linear-gradient(90deg, var(--gold), transparent); }
 .now-card .ic { font-size: 30px; }
 .now-card h3 { margin-top: 12px; font-size: 19px; color: #fff; }
@@ -263,7 +273,7 @@ section.block.alt { background: linear-gradient(180deg, var(--bg), var(--bg-2) 3
 .groups { display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; }
 .group {
   grid-column: span 2; display: flex; flex-direction: column; gap: 10px;
-  border-radius: 20px; border: 1px solid var(--line); background: var(--card); padding: 24px;
+  border-radius: 3px; border: 1px solid var(--line); background: var(--card); padding: 24px;
   transition: transform 0.45s var(--ease), border-color 0.3s, background 0.3s;
 }
 .group:nth-child(4), .group:nth-child(5) { grid-column: span 3; }
@@ -273,7 +283,7 @@ section.block.alt { background: linear-gradient(180deg, var(--bg), var(--bg-2) 3
 .group .ic { font-size: 34px; line-height: 1; }
 .group h3 { font-size: 19px; color: #fff; line-height: 1.4; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 6px; }
-.tags span { font-size: 12.5px; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 2px 10px; }
+.tags span { font-size: 12.5px; color: var(--muted); border: 1px solid var(--line); border-radius: 2px; padding: 2px 10px; }
 .group .go { font-size: 14px; font-weight: 700; color: var(--gold-2); }
 
 /* timeline */
@@ -288,12 +298,12 @@ section.block.alt { background: linear-gradient(180deg, var(--bg), var(--bg-2) 3
 .tl-row p { margin-top: 2px; font-size: 15px; color: var(--muted); }
 
 /* final cta */
-.final { text-align: center; border-radius: 28px; padding: 56px 24px; border: 1px solid rgba(212, 175, 55, 0.3);
+.final { text-align: center; border-radius: 3px; padding: 56px 24px; border: 1px solid rgba(212, 175, 55, 0.3);
   background: radial-gradient(ellipse at 50% 0%, rgba(212, 175, 55, 0.16), transparent 70%), var(--bg-2); }
 .final .h2 { margin-top: 0; }
 .final .desc { margin: 10px auto 0; }
 
-footer { padding: 36px 0 calc(36px + env(safe-area-inset-bottom)); border-top: 1px solid var(--line); text-align: center; color: #71717a; font-size: 13.5px; }
+footer { padding: 36px 0 calc(36px + env(safe-area-inset-bottom)); border-top: 1px solid var(--line); text-align: center; color: #8a8170; font-size: 13.5px; }
 footer a { color: var(--gold); }
 
 /* ═════════════ PAGE TRANSITIONS (สำรวจเนื้อหา) ═════════════ */
@@ -381,8 +391,8 @@ html.lock .hero { height: 100vh; height: 100svh; overflow-y: auto; }
     <div class="era h-item" style="--i:3">พุทธศักราช ๒๕๒๕ · ฉบับจำลอง</div>
     <p class="lead h-item" style="--i:4">ฉบับประชาชนเป็นใหญ่ ผ่านประชามติ ๕ รอบ พร้อมประวัติศาสตร์สยามทางเลือกตั้งแต่การพระราชทานรัฐธรรมนูญ พ.ศ. ๒๓๗๕ จนถึงปัจจุบัน</p>
     <div class="cta h-item" style="--i:5">
-      <a class="btn primary" href="../website_constitution.html">📖 อ่านรัฐธรรมนูญฉบับเต็ม</a>
-      <a class="btn ghost" href="#explore">สำรวจเนื้อหา ↓</a>
+      <a class="btn primary" href="../website_constitution.html">อ่านรัฐธรรมนูญฉบับเต็ม <span class="chev">›</span></a>
+      <a class="btn ghost" href="#explore">สำรวจเนื้อหา <span class="chev">›</span></a>
     </div>
   </div>
   <a class="scroll-cue h-item" style="--i:6" href="#stats" aria-label="เลื่อนลง"></a>
@@ -503,7 +513,7 @@ html.lock .hero { height: 100vh; height: 100svh; overflow-y: auto; }
       <div class="final rv">
         <h2 class="h2">พร้อมอ่านฉบับเต็มแล้วหรือยัง</h2>
         <p class="desc">ค้นหามาตรา เปรียบเทียบกับฉบับ ๒๕๔๐ และสำรวจแผนผังการปกครองแบบมีปฏิสัมพันธ์</p>
-        <div class="cta"><a class="btn primary" href="../website_constitution.html">🏛️ เข้าสู่รัฐธรรมนูญฉบับเต็ม</a></div>
+        <div class="cta"><a class="btn primary" href="../website_constitution.html">เข้าสู่รัฐธรรมนูญฉบับเต็ม <span class="chev">›</span></a></div>
       </div>
     </div>
   </section>
@@ -726,7 +736,7 @@ html.lock .hero { height: 100vh; height: 100svh; overflow-y: auto; }
       });
       var rows = [[it.label, s1, '600', '#d4af37']];
       names.forEach(function (l) { rows.push([l, s2, '700', '#ffffff']); });
-      rows.push([it.years, s1, '400', '#a1a1aa']);
+      rows.push([it.years, s1, '400', '#b3a88f']);
       var h = 0;
       rows.forEach(function (r) { h += r[1] * lh; });
       c.width = Math.ceil(w * T);
