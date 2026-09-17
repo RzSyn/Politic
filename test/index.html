@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="th" class="lock">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#07070a">
+<title>รัฐธรรมนูญแห่งราชอาณาจักรไทย (ฉบับจำลอง)</title>
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="../images/Thai_Garuda_emblem.png">
+<style>
+:root {
+  --bg: #07070a;
+  --bg-2: #0e0e13;
+  --card: rgba(255, 255, 255, 0.035);
+  --line: rgba(255, 255, 255, 0.07);
+  --gold: #d4af37;
+  --gold-2: #f3dc8a;
+  --gold-soft: rgba(212, 175, 55, 0.14);
+  --text: #ececf1;
+  --muted: #a1a1aa;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+html.lock, html.lock body { overflow: hidden; }
+body {
+  font-family: 'Sarabun', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+a { color: inherit; text-decoration: none; }
+.wrap { width: 100%; max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+
+/* ═════════════ INTRO ═════════════ */
+#intro { display: none; }
+.js #intro {
+  display: block; position: fixed; inset: 0; z-index: 100;
+  pointer-events: auto;
+}
+.panel {
+  position: absolute; left: 0; right: 0; height: 50.5%;
+  background: var(--bg);
+  transition: transform 1s var(--ease);
+}
+.panel.top { top: 0; }
+.panel.bottom { bottom: 0; }
+.panel.top::after, .panel.bottom::before {
+  content: ''; position: absolute; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity: 0; transition: opacity 0.3s;
+}
+.panel.top::after { bottom: 0; }
+.panel.bottom::before { top: 0; }
+.intro-content {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 24px; text-align: center;
+  transition: opacity 0.45s ease, transform 0.6s var(--ease), filter 0.45s ease;
+}
+.seal { position: relative; width: clamp(150px, 42vw, 210px); aspect-ratio: 1; margin-bottom: 26px; }
+.seal svg { position: absolute; inset: 0; width: 100%; height: 100%; transform: rotate(-90deg); overflow: visible; }
+.ring { fill: none; stroke: var(--gold); stroke-linecap: round; }
+.ring.r1 { stroke-width: 1.4; stroke-dasharray: 580; stroke-dashoffset: 580; }
+.ring.r2 { stroke-width: 0.8; stroke-dasharray: 504; stroke-dashoffset: 504; opacity: 0.55; }
+.seal img {
+  position: absolute; left: 50%; top: 50%; width: 58%;
+  transform: translate(-50%, -50%) scale(0.6); opacity: 0; filter: blur(10px);
+}
+.seal::before {
+  content: ''; position: absolute; inset: 12%; border-radius: 50%;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.35), transparent 70%);
+  opacity: 0; transform: scale(0.5);
+}
+.intro-rule {
+  width: min(320px, 70vw); height: 1px; margin: 0 auto 18px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  transform: scaleX(0);
+}
+.line { display: block; overflow: hidden; padding: 0.08em 0; }
+.line > span { display: block; transform: translateY(115%); }
+.intro-title {
+  font-family: 'Outfit', 'Sarabun', sans-serif; font-weight: 800;
+  font-size: clamp(22px, 6.2vw, 44px); line-height: 1.25; letter-spacing: 0.5px;
+  color: #fff;
+}
+.intro-sub { margin-top: 6px; font-size: clamp(15px, 4vw, 20px); color: var(--gold-2); font-weight: 500; }
+.intro-year {
+  margin-top: 22px; font-family: 'Outfit', sans-serif; font-size: 12px; letter-spacing: 6px;
+  color: var(--muted); opacity: 0;
+}
+.skip {
+  position: absolute; right: max(16px, env(safe-area-inset-right)); bottom: max(18px, env(safe-area-inset-bottom));
+  background: rgba(255, 255, 255, 0.06); border: 1px solid var(--line); color: var(--muted);
+  font: 500 13px 'Sarabun', sans-serif; padding: 8px 16px; border-radius: 999px; cursor: pointer;
+  opacity: 0; transition: opacity 0.4s, color 0.2s, border-color 0.2s;
+}
+.skip:hover, .skip:focus-visible { color: var(--gold-2); border-color: var(--gold); outline: none; }
+
+#intro.play .ring.r1 { animation: draw 1.6s var(--ease) 0.1s forwards; }
+#intro.play .ring.r2 { animation: draw 1.6s var(--ease) 0.35s forwards; }
+#intro.play .seal img { animation: emblemIn 1.3s var(--ease) 0.45s forwards; }
+#intro.play .seal::before { animation: glow 1.6s ease 0.6s forwards; }
+#intro.play .intro-rule { animation: rule 1s var(--ease) 1.3s forwards; }
+#intro.play .intro-title .line > span { animation: rise 0.9s var(--ease) 1.5s forwards; }
+#intro.play .intro-sub .line > span { animation: rise 0.9s var(--ease) 1.75s forwards; }
+#intro.play .intro-year { animation: fade 0.8s ease 2.2s forwards; }
+#intro.play .skip { opacity: 1; transition-delay: 0.6s; }
+
+#intro.leave { pointer-events: none; }
+#intro.leave .intro-content { opacity: 0; transform: scale(1.06); filter: blur(6px); }
+#intro.leave .skip { opacity: 0; transition-delay: 0s; }
+#intro.leave .panel.top::after, #intro.leave .panel.bottom::before { opacity: 1; }
+#intro.leave .panel.top { transform: translateY(-101%); transition-delay: 0.3s; }
+#intro.leave .panel.bottom { transform: translateY(101%); transition-delay: 0.3s; }
+
+@keyframes draw { to { stroke-dashoffset: 0; } }
+@keyframes emblemIn { to { opacity: 1; transform: translate(-50%, -50%) scale(1); filter: blur(0) drop-shadow(0 0 18px rgba(212, 175, 55, 0.45)); } }
+@keyframes glow { 0% { opacity: 0; transform: scale(0.5); } 60% { opacity: 1; transform: scale(1.15); } 100% { opacity: 0.7; transform: scale(1); } }
+@keyframes rule { to { transform: scaleX(1); } }
+@keyframes rise { to { transform: translateY(0); } }
+@keyframes fade { to { opacity: 1; } }
+
+/* ═════════════ HERO ═════════════ */
+.hero {
+  position: relative; min-height: 100vh; min-height: 100svh;
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  padding: 88px 20px 72px; overflow: hidden;
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 38%, rgba(212, 175, 55, 0.13), transparent 70%),
+    radial-gradient(circle at 12% 88%, rgba(212, 175, 55, 0.06), transparent 40%),
+    var(--bg);
+}
+.rays {
+  position: absolute; left: 50%; top: 38%; width: 1600px; height: 1600px; margin: -800px 0 0 -800px;
+  background: repeating-conic-gradient(from 0deg, rgba(212, 175, 55, 0.07) 0deg 4deg, transparent 4deg 18deg);
+  -webkit-mask: radial-gradient(circle, #000 0%, transparent 55%);
+          mask: radial-gradient(circle, #000 0%, transparent 55%);
+  animation: spin 90s linear infinite; pointer-events: none;
+}
+.dust { position: absolute; bottom: -10px; width: 3px; height: 3px; border-radius: 50%; background: var(--gold-2); opacity: 0; pointer-events: none; animation: float linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes float { 0% { transform: translateY(0); opacity: 0; } 15% { opacity: 0.7; } 100% { transform: translateY(-105vh); opacity: 0; } }
+
+.hero-inner { position: relative; z-index: 1; max-width: 820px; }
+.hero-emblem { width: clamp(96px, 26vw, 132px); margin: 0 auto 22px; filter: drop-shadow(0 0 22px rgba(212, 175, 55, 0.4)); }
+.chip {
+  display: inline-flex; align-items: center; gap: 8px; margin-bottom: 18px;
+  font-size: 13px; font-weight: 600; color: var(--gold-2);
+  background: var(--gold-soft); border: 1px solid rgba(212, 175, 55, 0.35); border-radius: 999px; padding: 5px 14px;
+}
+.chip i { width: 7px; height: 7px; border-radius: 50%; background: #4ade80; box-shadow: 0 0 10px #4ade80; animation: pulse 2s ease-in-out infinite; }
+@keyframes pulse { 50% { opacity: 0.35; } }
+.hero h1 {
+  font-family: 'Outfit', 'Sarabun', sans-serif; font-weight: 800;
+  font-size: clamp(30px, 7.4vw, 60px); line-height: 1.18; letter-spacing: 0.3px;
+  background: linear-gradient(135deg, #fff 35%, var(--gold-2) 70%, var(--gold) 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.hero .era { margin-top: 10px; font-size: clamp(17px, 4.2vw, 22px); color: var(--gold-2); font-weight: 600; }
+.hero .lead { margin: 18px auto 0; max-width: 620px; font-size: clamp(15px, 3.8vw, 17.5px); color: var(--muted); font-weight: 300; line-height: 1.85; }
+.cta { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 32px; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 50px;
+  padding: 0 26px; border-radius: 14px; font-weight: 700; font-size: 16px;
+  transition: transform 0.35s var(--ease), box-shadow 0.35s, background 0.3s, border-color 0.3s;
+}
+.btn.primary { color: #1a1406; background: linear-gradient(135deg, var(--gold-2), var(--gold)); box-shadow: 0 10px 30px rgba(212, 175, 55, 0.28); }
+.btn.primary:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(212, 175, 55, 0.4); }
+.btn.ghost { color: var(--text); background: rgba(255, 255, 255, 0.04); border: 1px solid var(--line); }
+.btn.ghost:hover { border-color: rgba(212, 175, 55, 0.5); transform: translateY(-3px); }
+.btn:active { transform: scale(0.97); }
+.scroll-cue {
+  position: absolute; left: 50%; bottom: max(20px, env(safe-area-inset-bottom)); transform: translateX(-50%);
+  width: 26px; height: 42px; border: 2px solid rgba(255, 255, 255, 0.25); border-radius: 14px; z-index: 1;
+}
+.scroll-cue::after { content: ''; position: absolute; left: 50%; top: 8px; width: 4px; height: 8px; margin-left: -2px; border-radius: 2px; background: var(--gold); animation: wheel 1.8s ease-in-out infinite; }
+@keyframes wheel { 0% { opacity: 0; transform: translateY(0); } 30% { opacity: 1; } 100% { opacity: 0; transform: translateY(14px); } }
+
+.js .h-item { opacity: 0; transform: translateY(26px); }
+body.ready .h-item { animation: up 1s var(--ease) forwards; animation-delay: calc(var(--i) * 110ms + 150ms); }
+@keyframes up { to { opacity: 1; transform: none; } }
+
+/* ═════════════ SECTIONS ═════════════ */
+section.block { padding: 88px 0; position: relative; }
+section.block.alt { background: linear-gradient(180deg, var(--bg), var(--bg-2) 30%, var(--bg-2) 70%, var(--bg)); }
+.eyebrow { font-family: 'Outfit', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; }
+.h2 { margin-top: 8px; font-size: clamp(26px, 6vw, 38px); font-weight: 800; line-height: 1.3; color: #fff; }
+.desc { margin-top: 10px; color: var(--muted); font-size: 16px; font-weight: 300; max-width: 640px; }
+.head { margin-bottom: 40px; }
+
+.js .rv { opacity: 0; transform: translateY(28px); transition: opacity 0.9s var(--ease), transform 0.9s var(--ease); transition-delay: calc(var(--d, 0) * 90ms); }
+.js .rv.in { opacity: 1; transform: none; }
+
+/* stats */
+.stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 20px; overflow: hidden; }
+.stat { background: var(--bg); padding: 26px 12px; text-align: center; }
+.stat b { display: block; font-family: 'Outfit', 'Sarabun', sans-serif; font-size: clamp(28px, 4.2vw, 40px); font-weight: 800; color: var(--gold-2); line-height: 1.1; }
+.stat span { display: block; margin-top: 6px; font-size: 14px; color: var(--muted); }
+
+/* now */
+.now { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.now-card { position: relative; overflow: hidden; border-radius: 20px; border: 1px solid var(--line); background: var(--card); padding: 24px; }
+.now-card::before { content: ''; position: absolute; inset: 0 0 auto 0; height: 3px; background: linear-gradient(90deg, var(--gold), transparent); }
+.now-card .ic { font-size: 30px; }
+.now-card h3 { margin-top: 12px; font-size: 19px; color: #fff; }
+.now-card .big { margin-top: 10px; font-family: 'Outfit', 'Sarabun', sans-serif; font-size: 34px; font-weight: 800; color: var(--gold-2); line-height: 1.1; }
+.now-card .big small { font-size: 16px; font-weight: 600; color: var(--muted); margin-left: 4px; }
+.now-card p { margin-top: 8px; color: var(--muted); font-size: 14.5px; }
+.now-card.photo { padding: 0; }
+.now-card.photo img { display: block; width: 100%; height: 150px; object-fit: cover; }
+.now-card.photo .body { padding: 20px 24px 24px; }
+.credit { margin-top: 8px; font-size: 11px; color: #71717a; }
+
+/* explore */
+.groups { display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; }
+.group {
+  grid-column: span 2; display: flex; flex-direction: column; gap: 10px;
+  border-radius: 20px; border: 1px solid var(--line); background: var(--card); padding: 24px;
+  transition: transform 0.45s var(--ease), border-color 0.3s, background 0.3s;
+}
+.group:nth-child(4), .group:nth-child(5) { grid-column: span 3; }
+.group:hover { transform: translateY(-6px); border-color: rgba(212, 175, 55, 0.45); background: rgba(212, 175, 55, 0.05); }
+.group:active { transform: scale(0.985); }
+.group .num { font-family: 'Outfit', sans-serif; font-size: 13px; color: var(--gold); font-weight: 600; letter-spacing: 1px; }
+.group .ic { font-size: 34px; line-height: 1; }
+.group h3 { font-size: 19px; color: #fff; line-height: 1.4; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 6px; }
+.tags span { font-size: 12.5px; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 2px 10px; }
+.group .go { font-size: 14px; font-weight: 700; color: var(--gold-2); }
+
+/* timeline */
+.tl { position: relative; max-width: 760px; margin: 0 auto; }
+.tl::before { content: ''; position: absolute; left: 120px; top: 6px; bottom: 6px; width: 2px; background: linear-gradient(180deg, transparent, rgba(212, 175, 55, 0.5) 8%, rgba(212, 175, 55, 0.5) 92%, transparent); }
+.tl-row { position: relative; display: grid; grid-template-columns: 120px 1fr; gap: 28px; padding: 14px 0; }
+.tl-row .yr { text-align: right; font-family: 'Outfit', 'Sarabun', sans-serif; font-weight: 800; font-size: 20px; color: var(--gold-2); line-height: 1.4; }
+.tl-row .yr small { display: block; font-size: 12px; font-weight: 500; color: var(--muted); }
+.tl-row::after { content: ''; position: absolute; left: 115px; top: 22px; width: 12px; height: 12px; border-radius: 50%; background: var(--bg); border: 2px solid var(--gold); }
+.tl-row.hot::after { background: var(--gold); box-shadow: 0 0 0 5px rgba(212, 175, 55, 0.2); }
+.tl-row h4 { font-size: 17px; color: #fff; }
+.tl-row p { margin-top: 2px; font-size: 15px; color: var(--muted); }
+
+/* final cta */
+.final { text-align: center; border-radius: 28px; padding: 56px 24px; border: 1px solid rgba(212, 175, 55, 0.3);
+  background: radial-gradient(ellipse at 50% 0%, rgba(212, 175, 55, 0.16), transparent 70%), var(--bg-2); }
+.final .h2 { margin-top: 0; }
+.final .desc { margin: 10px auto 0; }
+
+footer { padding: 36px 0 calc(36px + env(safe-area-inset-bottom)); border-top: 1px solid var(--line); text-align: center; color: #71717a; font-size: 13.5px; }
+footer a { color: var(--gold); }
+
+/* ═════════════ RESPONSIVE ═════════════ */
+@media (max-width: 900px) {
+  .stats { grid-template-columns: repeat(3, 1fr); }
+  .stat:nth-child(4), .stat:nth-child(5) { grid-column: span 1; }
+  .now { grid-template-columns: 1fr; }
+  .groups { grid-template-columns: 1fr 1fr; }
+  .group, .group:nth-child(4), .group:nth-child(5) { grid-column: span 1; }
+  .group:nth-child(5) { grid-column: span 2; }
+}
+@media (max-width: 600px) {
+  section.block { padding: 64px 0; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .stat:nth-child(5) { grid-column: span 2; }
+  .groups { grid-template-columns: 1fr; }
+  .group, .group:nth-child(5) { grid-column: span 1; }
+  .cta .btn { width: 100%; }
+  .tl::before { left: 7px; }
+  .tl-row { grid-template-columns: 1fr; gap: 2px; padding: 12px 0 12px 32px; }
+  .tl-row .yr { text-align: left; font-size: 18px; }
+  .tl-row .yr small { display: inline; margin-left: 6px; }
+  .tl-row::after { left: 2px; top: 19px; }
+}
+@media (hover: none) {
+  .group:hover, .btn.primary:hover, .btn.ghost:hover { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rays, .dust, .chip i, .scroll-cue::after { animation: none !important; }
+  .dust { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═════════════ INTRO (desktop + mobile) ═════════════ -->
+<div id="intro" aria-hidden="true">
+  <div class="panel top"></div>
+  <div class="panel bottom"></div>
+  <div class="intro-content">
+    <div class="seal">
+      <svg viewBox="0 0 200 200"><circle class="ring r1" cx="100" cy="100" r="92"/><circle class="ring r2" cx="100" cy="100" r="80"/></svg>
+      <img src="../images/Thai_Garuda_emblem.png" alt="">
+    </div>
+    <div class="intro-rule"></div>
+    <div class="intro-title"><span class="line"><span>รัฐธรรมนูญแห่งราชอาณาจักรไทย</span></span></div>
+    <div class="intro-sub"><span class="line"><span>ฉบับจำลอง · พุทธศักราช ๒๕๒๕</span></span></div>
+    <div class="intro-year">๒๓๗๕ — ๒๗๒๓</div>
+  </div>
+  <button class="skip" type="button">ข้าม ›</button>
+</div>
+
+<!-- ═════════════ HERO ═════════════ -->
+<header class="hero" id="top">
+  <div class="rays"></div>
+  <div id="dust"></div>
+  <div class="hero-inner">
+    <img class="hero-emblem h-item" style="--i:0" src="../images/Thai_Garuda_emblem.png" alt="ตราครุฑพ่าห์">
+    <div class="h-item" style="--i:1"><span class="chip"><i></i>ปัจจุบัน พ.ศ. ๒๗๒๓</span></div>
+    <h1 class="h-item" style="--i:2">รัฐธรรมนูญแห่ง<wbr>ราชอาณาจักรไทย</h1>
+    <div class="era h-item" style="--i:3">พุทธศักราช ๒๕๒๕ · ฉบับจำลอง</div>
+    <p class="lead h-item" style="--i:4">ฉบับประชาชนเป็นใหญ่ ผ่านประชามติ ๕ รอบ พร้อมประวัติศาสตร์สยามทางเลือกตั้งแต่การพระราชทานรัฐธรรมนูญ พ.ศ. ๒๓๗๕ จนถึงปัจจุบัน</p>
+    <div class="cta h-item" style="--i:5">
+      <a class="btn primary" href="../website_constitution.html">📖 อ่านรัฐธรรมนูญฉบับเต็ม</a>
+      <a class="btn ghost" href="#explore">สำรวจเนื้อหา ↓</a>
+    </div>
+  </div>
+  <a class="scroll-cue h-item" style="--i:6" href="#stats" aria-label="เลื่อนลง"></a>
+</header>
+
+<main>
+  <!-- stats -->
+  <section class="block" id="stats">
+    <div class="wrap">
+      <div class="stats">
+        <div class="stat rv" style="--d:0"><b data-count="1160" data-comma="1">๐</b><span>มาตรา</span></div>
+        <div class="stat rv" style="--d:1"><b data-count="38">๐</b><span>หมวด</span></div>
+        <div class="stat rv" style="--d:2"><b data-count="5">๐</b><span>รอบประชามติ</span></div>
+        <div class="stat rv" style="--d:3"><b data-count="3000" data-comma="1">๐</b><span>ผู้ร่วมร่าง</span></div>
+        <div class="stat rv" style="--d:4"><b data-count="68">๐</b><span>แถบข้อมูล</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- now -->
+  <section class="block alt">
+    <div class="wrap">
+      <div class="head rv">
+        <div class="eyebrow">Present Day</div>
+        <h2 class="h2">สยาม ณ พ.ศ. ๒๗๒๓</h2>
+        <p class="desc">ภาพรวมของแผ่นดินในปีปัจจุบันของโลกจำลอง</p>
+      </div>
+      <div class="now">
+        <div class="now-card rv" style="--d:0">
+          <div class="ic">👑</div>
+          <h3>พระบาทสมเด็จพระเจ้าอยู่หัว รัชกาลที่ ๙</h3>
+          <div class="big">๓๒๒<small>ปีแห่งการครองราชย์</small></div>
+          <p>เสด็จขึ้นครองราชย์ ๙ มิถุนายน ๒๔๐๑ · พระชนมพรรษา ๓๕๒ พรรษา ด้วยวิทยาการแพทย์ไทยอันดับ ๑ ของโลก</p>
+        </div>
+        <div class="now-card rv" style="--d:1">
+          <div class="ic">🏛️</div>
+          <h3>นายกรัฐมนตรีคนที่ ๓๓ · &ldquo;อะตอม&rdquo;</h3>
+          <div class="big">88.96%<small>เสียงในสภา</small></div>
+          <p>ศ.ดร.นพ.วิทยสิทธิ์ ประสิทธิ์ผล · วาระที่ ๒ ปีที่ ๒ · ทำลายสถิติโลก 86.48% ของรัฐบาลทักษิณเมื่อ พ.ศ. ๒๗๒๒</p>
+        </div>
+        <div class="now-card photo rv" style="--d:2">
+          <img src="../images/sappaya_sapasathan.jpg" alt="สัปปายะสภาสถาน" loading="lazy">
+          <div class="body">
+            <h3>สัปปายะสภาสถาน</h3>
+            <div class="big">๓๔๓<small>ปี</small></div>
+            <p>ที่ประชุมรัฐสภาไทยต่อเนื่องตั้งแต่ พ.ศ. ๒๓๘๐</p>
+            <div class="credit">ภาพ: Supanut Arunoprayote · CC BY 4.0 · Wikimedia Commons</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- explore -->
+  <section class="block" id="explore">
+    <div class="wrap">
+      <div class="head rv">
+        <div class="eyebrow">Explore</div>
+        <h2 class="h2">สำรวจ ๕ หมวดความรู้</h2>
+        <p class="desc">ข้อมูลกว่า ๖๘ แถบ แบ่งเป็น ๕ กลุ่ม แตะเพื่อเข้าไปอ่านในหน้ารัฐธรรมนูญฉบับเต็ม</p>
+      </div>
+      <div class="groups">
+        <a class="group rv" style="--d:0" href="../website_constitution.html#history_and_pms">
+          <div class="num">๐๑</div><div class="ic">📜</div>
+          <h3>ประวัติศาสตร์ &amp; รัฐธรรมนูญไทย</h3>
+          <div class="tags"><span>สัปปายะสภาสถาน</span><span>กระบวนการร่าง</span><span>ประชามติ ๕ รอบ</span></div>
+          <div class="go">เข้าไปอ่าน ›</div>
+        </a>
+        <a class="group rv" style="--d:1" href="../website_constitution.html#history_and_pms">
+          <div class="num">๐๒</div><div class="ic">👑</div>
+          <h3>สถาบันพระมหากษัตริย์ &amp; คลังปัญญาชาติ</h3>
+          <div class="tags"><span>มหาราช</span><span>ราชวงศ์จักรี</span><span>มรดกแห่งชาติ</span></div>
+          <div class="go">เข้าไปอ่าน ›</div>
+        </a>
+        <a class="group rv" style="--d:2" href="../website_constitution.html#history_and_pms">
+          <div class="num">๐๓</div><div class="ic">🏛️</div>
+          <h3>การเมือง การปกครอง &amp; สัญลักษณ์ชาติ</h3>
+          <div class="tags"><span>นายกฯ ๓๓ คน</span><span>พรรคการเมือง</span><span>คณะรัฐมนตรี</span></div>
+          <div class="go">เข้าไปอ่าน ›</div>
+        </a>
+        <a class="group rv" style="--d:3" href="../website_constitution.html#history_and_pms">
+          <div class="num">๐๔</div><div class="ic">👤</div>
+          <h3>บุคคลสำคัญ &amp; ภูมิรัฐศาสตร์โลก</h3>
+          <div class="tags"><span>SEATO</span><span>League of Free Nations</span><span>TSL</span></div>
+          <div class="go">เข้าไปอ่าน ›</div>
+        </a>
+        <a class="group rv" style="--d:4" href="../website_constitution.html#history_and_pms">
+          <div class="num">๐๕</div><div class="ic">🤖</div>
+          <h3>นวัตกรรม, สื่อใหม่ &amp; อภิมหาโครงการ</h3>
+          <div class="tags"><span>ParadoxAI</span><span>คลองไทย</span><span>การแพทย์สยาม</span><span>พลังงานสะอาด</span></div>
+          <div class="go">เข้าไปอ่าน ›</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- timeline -->
+  <section class="block alt">
+    <div class="wrap">
+      <div class="head rv" style="text-align:center;">
+        <div class="eyebrow">Timeline</div>
+        <h2 class="h2">เส้นทางประชาธิปไตยสยาม</h2>
+      </div>
+      <div class="tl">
+        <div class="tl-row rv"><div class="yr">๒๓๗๕<small>๓๑ ธ.ค.</small></div><div><h4>พระราชทานรัฐธรรมนูญ</h4><p>รัชกาลที่ ๗ พระราชทานรัฐธรรมนูญฉบับแรก ณ พระที่นั่งอนันตสมาคม โดยปราศจากการนองเลือด</p></div></div>
+        <div class="tl-row rv"><div class="yr">๒๓๘๐</div><div><h4>เปิดใช้สัปปายะสภาสถาน</h4><p>รัฐสภาย้ายจากพระที่นั่งอนันตสมาคมหลังประชุมชั่วคราว ๕ ปี</p></div></div>
+        <div class="tl-row rv"><div class="yr">๒๔๐๑<small>๙ มิ.ย.</small></div><div><h4>รัชกาลที่ ๙ เสด็จขึ้นครองราชย์</h4><p>เริ่มรัชสมัยที่ยาวนานที่สุดเป็นสถิติโลก</p></div></div>
+        <div class="tl-row rv"><div class="yr">๒๕๒๕</div><div><h4>รัฐธรรมนูญฉบับปัจจุบัน</h4><p>ผู้ร่วมร่าง ๓,๐๐๐ คน ผ่านการออกเสียงประชามติ ๕ รอบ</p></div></div>
+        <div class="tl-row rv"><div class="yr">๒๗๒๒</div><div><h4>อะตอมชนะเลือกตั้งวาระที่ ๒</h4><p>เสียงในสภา 88.96% สถิติโลกใหม่</p></div></div>
+        <div class="tl-row hot rv"><div class="yr">๒๗๒๓<small>ปัจจุบัน</small></div><div><h4>วาระที่ ๒ ปีที่ ๒</h4><p>รัฐธรรมนูญ ๑,๑๖๐ มาตรา ๓๘ หมวด ยังคงเป็นกติกาสูงสุดของแผ่นดิน</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- final cta -->
+  <section class="block">
+    <div class="wrap">
+      <div class="final rv">
+        <h2 class="h2">พร้อมอ่านฉบับเต็มแล้วหรือยัง</h2>
+        <p class="desc">ค้นหามาตรา เปรียบเทียบกับฉบับ ๒๕๔๐ และสำรวจแผนผังการปกครองแบบมีปฏิสัมพันธ์</p>
+        <div class="cta"><a class="btn primary" href="../website_constitution.html">🏛️ เข้าสู่รัฐธรรมนูญฉบับเต็ม</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    รัฐธรรมนูญจำลอง · โลกประวัติศาสตร์ทางเลือก ไม่ใช่ข้อมูลจริง<br>
+    <a href="https://github.com/RzSyn/Politic" target="_blank" rel="noopener">GitHub: RzSyn/Politic</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var intro = document.getElementById('intro');
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var started = false, finished = false;
+
+  function finish() {
+    if (finished) return;
+    finished = true;
+    intro.classList.add('leave');
+    root.classList.remove('lock');
+    document.body.classList.add('ready');
+    setTimeout(function () { intro.parentNode && intro.parentNode.removeChild(intro); }, 1500);
+  }
+  function start() {
+    if (started) return;
+    started = true;
+    // flush styles, then start on a timer (not rAF, which a hidden tab pauses)
+    // so a slow phone paints the first frame instead of the middle
+    void intro.offsetWidth;
+    setTimeout(function () {
+      intro.classList.add('play');
+      setTimeout(finish, 3300);
+    }, 60);
+  }
+  intro.querySelector('.skip').addEventListener('click', finish);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' || e.key === 'Enter' || e.key === ' ') finish(); });
+
+  var img = intro.querySelector('img');
+  if (img.complete && img.naturalWidth) start();
+  else {
+    img.addEventListener('load', start);
+    img.addEventListener('error', start);
+    setTimeout(start, 2000);
+  }
+  setTimeout(finish, 7000); // never trap the page behind the intro
+
+  // floating gold dust
+  if (!reduce) {
+    var box = document.getElementById('dust');
+    var n = window.innerWidth < 600 ? 10 : 22;
+    for (var i = 0; i < n; i++) {
+      var d = document.createElement('span');
+      d.className = 'dust';
+      d.style.left = (Math.random() * 100) + '%';
+      d.style.animationDuration = (9 + Math.random() * 10) + 's';
+      d.style.animationDelay = (Math.random() * 12) + 's';
+      var s = 1.5 + Math.random() * 2.5;
+      d.style.width = d.style.height = s + 'px';
+      box.appendChild(d);
+    }
+  }
+
+  // scroll reveal + count-up
+  var TH = '๐๑๒๓๔๕๖๗๘๙';
+  function thai(n, comma) {
+    var s = comma ? n.toLocaleString('en-US') : String(n);
+    return s.replace(/\d/g, function (c) { return TH[c]; });
+  }
+  function count(el) {
+    var to = +el.getAttribute('data-count'), comma = el.hasAttribute('data-comma');
+    var t0 = Date.now(), dur = 1500;
+    (function step() {
+      var p = Math.min(1, (Date.now() - t0) / dur), e = 1 - Math.pow(1 - p, 3);
+      el.textContent = thai(Math.round(to * e), comma);
+      if (p < 1) setTimeout(step, 16);
+    })();
+  }
+  // plain scroll check instead of IntersectionObserver: it behaves the same
+  // on every phone browser and needs no polyfill
+  var items = Array.prototype.slice.call(document.querySelectorAll('.rv'));
+  var queued = false;
+  function reveal() {
+    queued = false;
+    var limit = window.innerHeight * 0.92;
+    items = items.filter(function (el) {
+      if (el.getBoundingClientRect().top > limit) return true;
+      el.classList.add('in');
+      var c = el.querySelector('[data-count]');
+      if (c) count(c);
+      return false;
+    });
+    if (!items.length) {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    }
+  }
+  function onScroll() {
+    if (!queued) { queued = true; setTimeout(reveal, 50); }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  reveal();
+})();
+</script>
+</body>
+</html>
