@@ -201,6 +201,8 @@ Every one of these cost a failed command in real sessions.
 | Downloading from Wikimedia with no User-Agent | HTTP 200 but the body is a ~2 KB HTML error page, saved happily under a `.svg`/`.png` name | Always send `curl -A "<something descriptive>"`; check the first bytes are not `<!DOCTYPE html>` |
 | Counting `<svg` / `</svg>` across the whole file | Reports one unclosed tag; the extra `<svg` is a string inside minified Leaflet at line ~1361 | Only count inside markup, or ignore `<script>` regions |
 | `file://` with Thai path in the browser tool | Cannot open | Validate structurally instead; browser preview is not available for this file |
+| Writing a JS regex like `/renovate/` through a Python string in a Bash heredoc | The file got a literal backspace (``), the regex never matched, and the feature silently did nothing | Write JS through the Write tool or a raw string, avoid `` in spliced JS (use `(?:[=&]|$)`), then `grep` the result for `` |
+| Needing to *see* a tab that only appears after a click | The Browser pane is hidden and `chrome --headless --screenshot` can't click | Drive headless Chrome over the DevTools protocol from Node (global `WebSocket`, `Runtime.evaluate` to click and scroll, `Page.captureScreenshot`); then make a PIL contact sheet and Read that one image |
 | Screenshot of the preview comes back solid dark navy | The Browser pane is hidden (`tabs_context` says so); the page itself is fine | Check `tabs_context` first; while hidden, verify with `javascript_tool` (innerText, computed colour, getBoundingClientRect) instead of retrying screenshots |
 
 **Always read a file's real bytes before assuming.** Reading
