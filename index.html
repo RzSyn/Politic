@@ -526,6 +526,7 @@ html.lock .hero { height: 100vh; height: 100svh; overflow-y: auto; }
 </footer>
 
 <script src="js/hall-data.js"></script>
+<script src="js/hall-aura.js"></script>
 <script>
 (function () {
   var root = document.documentElement;
@@ -871,16 +872,35 @@ html.lock .hero { height: 100vh; height: 100svh; overflow-y: auto; }
       }
     }
 
-    function render(p, bob) {
+    // aura: 0-1 glory around King Rama IX; shock: ms since arriving before him, or -1
+    function render(p, bob, aura, shock) {
       lastP = p;
+      aura = aura || 0;
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       ctx.clearRect(0, 0, vw, vh);
       env(p, bob);
+      if (aura > 0.01) {                                   // the hall dims around him
+        ctx.globalAlpha = 1;
+        ctx.fillStyle = 'rgba(0, 0, 0, ' + (0.42 * aura).toFixed(3) + ')';
+        ctx.fillRect(0, 0, vw, vh);
+      }
       var vis = items.filter(function (it) { return it.fade > 0.001 && Math.abs(it.slot - p) < 4; })
         .sort(function (a, b) { return b.slot - a.slot; });
       vis.forEach(function (it) { glow(it, p, bob); });
-      vis.forEach(function (it) { portrait(it, p, bob); });
+      vis.forEach(function (it) {
+        var glory = it.gold && aura > 0.01 && window.HallAura ? auraState(it, p, bob, aura, shock) : null;
+        if (glory) HallAura.back(ctx, glory);
+        portrait(it, p, bob);
+        if (glory) HallAura.front(ctx, glory);
+      });
       ctx.globalAlpha = 1;
+    }
+    function auraState(it, p, bob, aura, shock) {
+      var d = g.near + (it.slot - p) * g.D, k = P / (P + d);
+      if (k <= 0 || k > 6) return null;
+      var wt = g.fh * 0.05 - g.wallH / 2 + bob;
+      return { cx: vw / 2, cy: vh * 0.46 + (g.fh * 0.1 + bob) * k, fw: g.fw * 1.1, fh: g.fh * 1.1, k: k,
+        ceilY: vh * 0.46 + wt * k, amount: aura * it.fade, now: performance.now(), shock: shock == null ? -1 : shock };
     }
 
     // ── the walk ──────────────────────────────────────────────────────────────
@@ -951,7 +971,10 @@ html.lock .hero { height: 100vh; height: 100svh; overflow-y: auto; }
           }
           if (st.fade !== undefined) setFade(isKing9, 1 - Math.min(1, q * 2.5));
           if (st.reveal) setFade(isPM, Math.max(0, Math.min(1, (q - 0.3) * 1.6)));
-          render(p, bob);
+          var aura = 0, shock = -1;                        // the glory rises while ทรงพระเจริญ shows, then leaves with him
+          if (st.cheer === 'ทรงพระเจริญ') { aura = Math.min(1, (t - stepStart) / 1400); shock = t - stepStart; }
+          else if (st.fade === KING9) aura = 1 - Math.min(1, q * 2.5);
+          render(p, bob, aura, shock);
         });
       }
     };

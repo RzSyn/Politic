@@ -357,7 +357,7 @@
 
     // ── UI: readout, square black-and-gold ‹ › buttons, era rail ─────────────
     var readK = mk('div', 'font-size:11px;letter-spacing:.28em;color:#8b7a52;font-weight:600',
-      mk('div', 'position:absolute;left:22px;top:20px;font-family:' + FS + ';pointer-events:none', el));
+      mk('div', 'position:absolute;left:22px;top:20px;max-width:calc(100% - 190px);font-family:' + FS + ';pointer-events:none', el));
     var readN = mk('div', 'font-family:' + FD + ';font-size:17px;color:#f4ead2;margin-top:6px;font-weight:600', readK.parentNode);
 
     var rail = mk('div', 'position:absolute;left:0;right:0;bottom:0;height:58px;display:flex;align-items:flex-end;padding:0 22px 14px', el);
@@ -385,11 +385,48 @@
       btn.addEventListener('click', function () { goTo(Math.round(p) + b[1]); });
     });
 
+    // ── full screen: the browser's own where it exists, a fixed overlay otherwise (iPhone) ──
+    var fsBtn = mk('button', 'position:absolute;top:14px;right:14px;height:36px;padding:0 14px;border-radius:2px;' +
+      'border:1px solid rgba(212,175,55,.8);background:linear-gradient(180deg,#16130c,#0a0907);color:#e2c170;' +
+      'font:600 13px ' + FS + ';cursor:pointer;box-shadow:0 0 22px rgba(212,175,55,.18);outline:1px solid rgba(212,175,55,.25);outline-offset:-5px', el);
+    fsBtn.type = 'button';
+    var overlay = null;
+    function isFull() { return document.fullscreenElement === el || document.webkitFullscreenElement === el || !!overlay; }
+    function fsLabel() {
+      fsBtn.textContent = isFull() ? '✕ ออกจากเต็มจอ' : '⛶ เต็มจอ';
+      if (isFull()) { engaged = true; hint.style.opacity = '0'; el.focus({ preventScroll: true }); }
+    }
+    function enterOverlay() {
+      overlay = { css: el.style.cssText, over: document.documentElement.style.overflow };
+      el.style.cssText += ';position:fixed;inset:0;width:100vw;height:100vh;height:100dvh;min-height:0;z-index:100000;border:0;border-radius:0';
+      document.documentElement.style.overflow = 'hidden';
+      fsLabel();
+    }
+    function exitOverlay() {
+      el.style.cssText = overlay.css;
+      document.documentElement.style.overflow = overlay.over;
+      overlay = null;
+      fsLabel();
+    }
+    fsBtn.addEventListener('click', function () {
+      if (overlay) return exitOverlay();
+      if (document.fullscreenElement === el) return document.exitFullscreen();
+      if (document.webkitFullscreenElement === el) return document.webkitExitFullscreen();
+      var req = el.requestFullscreen || el.webkitRequestFullscreen;
+      if (!req) return enterOverlay();
+      var r = req.call(el);
+      if (r && r.catch) r.catch(enterOverlay);
+    });
+    document.addEventListener('fullscreenchange', fsLabel);
+    document.addEventListener('webkitfullscreenchange', fsLabel);
+    el.addEventListener('keydown', function (e) { if (e.key === 'Escape' && overlay) exitOverlay(); });
+
     var hint = mk('div', 'position:absolute;left:0;right:0;bottom:68px;text-align:center;font:400 12px ' + FS +
       ';letter-spacing:.08em;color:#8a8170;pointer-events:none;transition:opacity .4s;padding:0 60px', el);
-    hint.textContent = 'ลากหรือปัดเพื่อเดินในหอภาพ · ‹ › เปลี่ยนภาพ · แตะรางด้านล่างเพื่อข้าม';
+    hint.textContent = 'ลากหรือปัดเพื่อเดินในหอภาพ · ‹ › เปลี่ยนภาพ · แตะรางด้านล่างเพื่อข้าม · ⛶ เต็มจอเพื่อใช้ลูกกลิ้งเมาส์';
+    fsLabel();
 
-    var focusIdx = -1;
+    var focusIdx = -1, aura = 0, auraArmed = false, shockT0 = 0;
     function onFocus(i) {
       var era = i > KING9 ? 1 : 0;
       readK.textContent = era ? 'PRIME MINISTERS' : 'CHAKRI DYNASTY';
@@ -399,7 +436,7 @@
 
     // ── render and motion: frames only while something moves ────────────────
     function render() {
-      if (!g && !layout()) return;
+      if (!g && !layout()) { aura = 0; return; }
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       ctx.clearRect(0, 0, vw, vh);
       room();
@@ -410,8 +447,28 @@
         if (v) vis.push({ it: it, v: v });
       });
       vis.sort(function (a, b) { return b.v.d - a.v.d; });
+
+      // standing before King Rama IX: the hall dims and his portrait takes its glory (js/hall-aura.js)
+      aura = window.HallAura ? clamp(1 - Math.abs(p - KING9) * 2.2, 0, 1) : 0;
+      if (aura > 0.85 && !auraArmed) { auraArmed = true; shockT0 = performance.now(); }
+      if (aura < 0.3) auraArmed = false;
+      if (aura > 0.01) {
+        ctx.globalAlpha = 1;
+        ctx.fillStyle = 'rgba(0,0,0,' + (0.42 * aura).toFixed(3) + ')';
+        ctx.fillRect(0, 0, vw, vh);
+        vis.forEach(function (o) { if (!o.it.gold) o.v.o *= 1 - 0.9 * aura; });   // he stands alone; the rays would wash the others out
+      }
       vis.forEach(function (o) { glow(o.it, o.v); });
-      vis.forEach(function (o) { portrait(o.it, o.v); });
+      vis.forEach(function (o) {
+        var glory = o.it.gold && aura > 0.01 ? {
+          cx: vw / 2, cy: vh * 0.455 + g.fh * 0.1 * (P / (P + o.v.d)), fw: g.fw * 1.1, fh: g.fh * 1.1,
+          k: P / (P + o.v.d), ceilY: vh * 0.455 + (g.fh * 0.05 - g.wallH / 2) * (P / (P + o.v.d)),
+          amount: aura * o.v.o, now: performance.now(), shock: auraArmed ? performance.now() - shockT0 : -1
+        } : null;
+        if (glory) HallAura.back(ctx, glory);
+        portrait(o.it, o.v);
+        if (glory) HallAura.front(ctx, glory);
+      });
       captions(vis);
       var f = Math.round(clamp(p, 0, PM33));
       if (f !== focusIdx) { focusIdx = f; onFocus(f); }
@@ -441,14 +498,14 @@
       if (dead) return;
       var moving = step();
       render();
-      if (moving || drag) kick();
+      if (moving || drag || aura > 0.01) kick();   // the glory keeps shimmering while you stand before it
     }
     function kick() {
       if (raf || dead) return;
       var fired = false;
       function go() { if (!fired) { fired = true; frame(); } }
       raf = requestAnimationFrame(go) || 1;
-      setTimeout(go, 120);   // a background tab pauses animation frames; never leave a kick hanging
+      if (!document.hidden) setTimeout(go, 120);   // a hidden tab inside the page must not leave a kick hanging
     }
     function requestRender() { kick(); }
 
@@ -523,6 +580,9 @@
         if (raf) cancelAnimationFrame(raf);
         if (waiting) clearTimeout(waiting);
         if (ro) ro.disconnect(); else window.removeEventListener('resize', resized);
+        document.removeEventListener('fullscreenchange', fsLabel);
+        document.removeEventListener('webkitfullscreenchange', fsLabel);
+        if (overlay) exitOverlay();
         images.forEach(function (im) { im.onload = null; });
       }
     };
