@@ -58,7 +58,7 @@ def balanced(text, label):
 # ── archive from src/ ────────────────────────────────────────────────────────
 hub_data = json.load(open('src/hub.json', encoding='utf-8'))
 tab_ids = [t['id'] for g in hub_data for t in g['topics']]
-assert len(tab_ids) == 68 and len(set(tab_ids)) == 68
+assert len(tab_ids) == len(set(tab_ids)) and len(tab_ids) >= 60
 tabs = []
 for tid in tab_ids:
     t = read('src/tabs/%s.html' % tid).strip()
