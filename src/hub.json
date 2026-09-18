@@ -272,11 +272,6 @@
         "label": "เศรษฐกิจและค่าเงินโลก"
       },
       {
-        "id": "tsl-dashboard-tab",
-        "icon": "💵",
-        "label": "แดชบอร์ดระบบเงิน TSL"
-      },
-      {
         "id": "tsl-league-tab",
         "icon": "🇺🇸",
         "label": "สหพันธรัฐใหม่ (TSL)"
