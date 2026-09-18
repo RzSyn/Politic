@@ -574,3 +574,45 @@ html.mourning .nw-art-act { background: #000; color: #fff; }
   .nwc-time-row > div + div { padding-left: 0; border-left: 0; }
   .nwc-time-row > div + div::before { display: none; }
 }
+
+/* ═══ legacy blocks, re-skinned for the new site ════════════════════════ */
+.nw-stage-body .tri-container, .nw-stage-body .goc-section, .nw-stage-body .chart-container {
+  background: var(--nw-surface) !important; border: 1px solid var(--nw-line) !important;
+  border-radius: 14px !important; backdrop-filter: none !important;
+}
+.nw-stage-body .tri-header, .nw-stage-body .goc-sec-title { border-color: var(--nw-line) !important; }
+.nw-stage-body .tri-profile-card, .nw-stage-body .nobel-card-item, .nw-stage-body .audio-box,
+.nw-stage-body .coc-branch-card, .nw-stage-body .geo-card, .nw-stage-body .pm-row,
+.nw-stage-body .ministry-row, .nw-stage-body .early-art-card {
+  background: var(--nw-surface-2) !important; border: 1px solid var(--nw-line) !important;
+  border-radius: 12px !important; box-shadow: none !important;
+}
+.nw-stage-body .tri-profile-name, .nw-stage-body .coc-title, .nw-stage-body .goc-sec-title {
+  color: var(--nw-text) !important; font-family: var(--nw-serif) !important;
+}
+.nw-stage-body .tri-profile-title, .nw-stage-body .tri-meta, .nw-stage-body .coc-sub,
+.nw-stage-body .tri-bio, .nw-stage-body .early-art-text, .nw-stage-body .tri-stage-text {
+  color: var(--nw-text-2) !important;
+}
+.nw-stage-body .tri-stage {
+  background: var(--nw-surface-2) !important; border: 1px solid var(--nw-line) !important;
+  border-left: 3px solid var(--nw-acc) !important; border-radius: 12px !important;
+}
+.nw-stage-body .tri-stage-title, .nw-stage-body .early-art-title, .nw-stage-body .coc-num {
+  color: var(--nw-acc-2) !important; font-family: var(--nw-serif) !important;
+}
+.nw-stage-body .accordion-header {
+  background: var(--nw-surface-2) !important; color: var(--nw-text) !important;
+  border: 1px solid var(--nw-line) !important; border-radius: 10px !important;
+  font-family: var(--nw-serif) !important;
+}
+.nw-stage-body .accordion-header:hover { border-color: var(--nw-acc) !important; }
+.nw-stage-body .accordion-content { background: transparent !important; border-color: var(--nw-line) !important; }
+.nw-stage-body .filter-btn, .nw-stage-body .timeline-btn, .nw-stage-body .era-badge {
+  border-radius: 8px !important; border: 1px solid var(--nw-line) !important;
+  background: var(--nw-surface) !important; color: var(--nw-text-2) !important; font-family: var(--nw-sans) !important;
+}
+.nw-stage-body .filter-btn.active, .nw-stage-body .timeline-btn.active {
+  background: var(--nw-acc) !important; color: var(--nw-bg) !important; border-color: var(--nw-acc) !important;
+}
+.nw-stage-body .cross-ref { color: var(--nw-acc-2) !important; border-color: var(--nw-line) !important; }

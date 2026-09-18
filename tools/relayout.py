@@ -6,7 +6,7 @@ recognises the recurring shapes (header, stat grid, note box, panel, card,
 table, figure) and re-emits them with the .nwc-* classes, keeping every word
 of the content.  Scripts and styles inside a tab are kept verbatim.
 """
-import html.entities
+from html.entities import html5 as HTML5_ENTITIES
 import json
 import os
 import re
@@ -80,7 +80,7 @@ class Build(HTMLParser):
         self.cur.add(d)
 
     def handle_entityref(self, name):
-        known = (name + ';') in html.entities.html5
+        known = (name + ';') in HTML5_ENTITIES
         self.cur.add('&' + name + (';' if known else ''))
 
     def handle_charref(self, name):
@@ -290,7 +290,8 @@ def relayout(path):
     tab_cls = tab.attrs.get('class')
 
     inner = tab.el()
-    if len(inner) == 1 and inner[0].tag == 'div' and 'text-align:left' in inner[0].style:
+    if len(inner) == 1 and inner[0].tag == 'div' and ('text-align:left' in inner[0].style
+                                                      or inner[0].attrs.get('class') == 'nwc'):
         tab.kids = inner[0].kids
 
     wrap = Node('div', {'class': 'nwc'})
@@ -325,7 +326,7 @@ def balanced(markup):
 
 if __name__ == '__main__':
     for p in sys.argv[1:]:
-        html = relayout(p)
-        assert balanced(html), p
-        open(p, 'w', encoding='utf-8', newline=chr(10)).write(html)
+        markup = relayout(p)
+        assert balanced(markup), p
+        open(p, 'w', encoding='utf-8', newline=chr(10)).write(markup)
         print('relaid ' + p)
