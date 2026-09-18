@@ -523,59 +523,130 @@ function resetOrgDesc() {
   renderOrgDesc(currentSelectedNode);
 }
 
-// Glossary panel logic
-const glossaryData = [
-  { term: "รัฏฐาธิปัตย์", def: "ผู้มีอำนาจสูงสุดในรัฐหรือประเทศชาติ มีหน้าที่หลักในการใช้อำนาจอธิปไตยปกครองแผ่นดิน" },
-  { term: "พระราชกำหนด (พ.ร.ก.)", def: "กฎหมายที่พระมหากษัตริย์ทรงตราขึ้นตามคำแนะนำของคณะรัฐมนตรีในกรณีฉุกเฉินที่มีความจำเป็นรีบด่วน" },
-  { term: "พระราชบัญญัติ (พ.ร.บ.)", def: "กฎหมายที่ออกโดยรัฐสภาเพื่อใช้บังคับแก่ประชาชนทั่วไปตามกระบวนการตรากฎหมายปกติ" },
-  { term: "พระราชกฤษฎีกา (พ.ร.ฎ.)", def: "กฎหมายที่ตราขึ้นโดยฝ่ายบริหาร (คณะรัฐมนตรี) เพื่อกำหนดรายละเอียดในการปฏิบัติการตาม พ.ร.บ. หรือรัฐธรรมนูญ" },
-  { term: "สภาร่างรัฐธรรมนูญ (สสร.)", def: "คณะบุคคลที่มาจากการเลือกตั้งของประชาชนโดยตรงเพื่อทำหน้าที่ร่างหรือแก้ไขเพิ่มเติมรัฐธรรมนูญ" },
-  { term: "ประชามติ", def: "การลงประชามติของประชาชนผู้เป็นเจ้าของอำนาจอธิปไตย เพื่อเป็นข้อยุติสุดท้ายทางกฎหมายและนโยบายระดับชาติ" },
-  { term: "อำนาจอธิปไตย", def: "อำนาจสูงสุดในการปกครองประเทศ ซึ่งเป็นของปวงชนชาวไทย" },
-  { term: "ถอดถอน (Recall)", def: "กระบวนการให้ผู้มีสิทธิเลือกตั้งตั้งแต่ ๕,๐๐๐ คนร่วมกันเข้าชื่อเพื่อยื่นลงประชามติถอดถอนผู้แทนราษฎรหรือผู้ดำรงตำแหน่งทางการเมือง" }
-];
+// Glossary panel logic — data lives in js/glossary-data.js, shared by both sites
+var glossaryCat = 'all';
+
+function glossaryTerms() {
+  return window.GLOSSARY || [];
+}
+
+function glossaryCats() {
+  return window.GLOSSARY_CATS || [];
+}
+
+function glossaryKey(text) {
+  return (text || '').toLowerCase().split('.').join('').split(' ').join('').split('-').join('');
+}
+
+function glossaryMatches(item, query) {
+  if (!query) return true;
+  var hay = glossaryKey([item.t, item.a, item.f, item.d, item.s].join(' '));
+  return hay.indexOf(glossaryKey(query)) !== -1;
+}
 
 function toggleGlossary() {
-  const panel = document.getElementById('glossaryPanel');
-  const overlay = document.getElementById('glossaryOverlay');
+  var panel = document.getElementById('glossaryPanel');
+  var overlay = document.getElementById('glossaryOverlay');
   if (!panel) return;
   panel.classList.toggle('open');
   if (panel.classList.contains('open')) {
     if (overlay) overlay.style.display = 'block';
-    renderGlossary('');
-    const searchInput = document.getElementById('glossarySearch');
+    renderGlossary(document.getElementById('glossarySearch') ? document.getElementById('glossarySearch').value : '');
+    var searchInput = document.getElementById('glossarySearch');
     if (searchInput) searchInput.focus();
   } else {
     if (overlay) overlay.style.display = 'none';
+    panel.classList.remove('full');
   }
 }
 
+function toggleGlossaryFull() {
+  var panel = document.getElementById('glossaryPanel');
+  if (!panel) return;
+  panel.classList.toggle('full');
+  var full = panel.classList.contains('full');
+  var btn = document.getElementById('glossaryFullBtn');
+  if (btn) {
+    btn.textContent = full ? '⤡' : '⛶';
+    btn.title = full ? 'ย่อกลับเป็นแผงด้านข้าง' : 'ดูแบบเต็มจอ';
+  }
+  var overlay = document.getElementById('glossaryOverlay');
+  if (overlay) overlay.style.display = full ? 'none' : 'block';
+  if (!panel.classList.contains('open')) panel.classList.add('open');
+}
+
+function setGlossaryCat(id) {
+  glossaryCat = id;
+  renderGlossary(document.getElementById('glossarySearch') ? document.getElementById('glossarySearch').value : '');
+}
+
+function glossaryEscape(text) {
+  return (text || '').split('&').join('&amp;').split('<').join('&lt;').split('>').join('&gt;');
+}
+
+function renderGlossaryCats(counts, total) {
+  var wrap = document.getElementById('glossaryCats');
+  if (!wrap) return;
+  var html = ['<button type="button" class="glossary-cat' + (glossaryCat === 'all' ? ' on' : '') +
+    '" onclick="setGlossaryCat(\'all\')">ทั้งหมด ' + total + '</button>'];
+  glossaryCats().forEach(function (cat) {
+    var n = counts[cat.id] || 0;
+    if (!n) return;
+    html.push('<button type="button" class="glossary-cat' + (glossaryCat === cat.id ? ' on' : '') +
+      '" onclick="setGlossaryCat(\'' + cat.id + '\')">' + cat.icon + ' ' + cat.name + ' ' + n + '</button>');
+  });
+  wrap.innerHTML = html.join('');
+}
+
 function renderGlossary(filterText) {
-  const listEl = document.getElementById('glossaryList');
+  var listEl = document.getElementById('glossaryList');
   if (!listEl) return;
-  const query = filterText.trim().toLowerCase();
-  
-  const filtered = glossaryData.filter(item => 
-    item.term.toLowerCase().includes(query) || 
-    item.def.toLowerCase().includes(query)
-  );
-  
-  if (filtered.length === 0) {
-    listEl.innerHTML = '<div style="color:var(--text-muted); font-size:13px; text-align:center; padding: 20px 0;">ไม่พบคำศัพท์ที่ค้นหา</div>';
+  var query = (filterText || '').trim();
+  var all = glossaryTerms();
+  var counts = {};
+  all.forEach(function (item) { counts[item.c] = (counts[item.c] || 0) + 1; });
+  renderGlossaryCats(counts, all.length);
+
+  var found = all.filter(function (item) {
+    return (glossaryCat === 'all' || item.c === glossaryCat) && glossaryMatches(item, query);
+  });
+
+  var countEl = document.getElementById('glossaryCount');
+  if (countEl) countEl.textContent = found.length + ' คำ';
+
+  if (!found.length) {
+    listEl.innerHTML = '<div class="glossary-empty">ไม่พบคำศัพท์ที่ค้นหา</div>';
     return;
   }
-  
-  listEl.innerHTML = filtered.map(item => `
-    <div class="glossary-item">
-      <div class="glossary-term">${item.term}</div>
-      <div class="glossary-def">${item.def}</div>
-    </div>
-  `).join('');
+
+  var html = [];
+  glossaryCats().forEach(function (cat) {
+    var group = found.filter(function (item) { return item.c === cat.id; });
+    if (!group.length) return;
+    html.push('<div class="glossary-group">' + cat.icon + ' ' + cat.name + ' <span>' + group.length + '</span></div>');
+    group.forEach(function (item) {
+      var line = ['<div class="glossary-item">'];
+      line.push('<div class="glossary-term">' + glossaryEscape(item.t) +
+        (item.a ? ' <span class="glossary-abbr">' + glossaryEscape(item.a) + '</span>' : '') + '</div>');
+      if (item.f) line.push('<div class="glossary-full">' + glossaryEscape(item.f) + '</div>');
+      line.push('<div class="glossary-def">' + glossaryEscape(item.d) + '</div>');
+      if (item.s) line.push('<div class="glossary-see">อ่านต่อ: แถบ ' + glossaryEscape(item.s) + '</div>');
+      line.push('</div>');
+      html.push(line.join(''));
+    });
+  });
+  listEl.innerHTML = html.join('');
 }
 
 function filterGlossary(val) {
   renderGlossary(val);
 }
+
+document.addEventListener('keydown', function (e) {
+  if (e.key !== 'Escape') return;
+  var panel = document.getElementById('glossaryPanel');
+  if (panel && panel.classList.contains('open')) toggleGlossary();
+});
 
 // Cross-reference hover popup logic
 document.addEventListener('DOMContentLoaded', () => {
