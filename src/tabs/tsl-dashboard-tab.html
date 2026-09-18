@@ -1,9 +1,10 @@
 <div id="tsl-dashboard-tab" class="db-tab-content">
+<div class="nwc"><header class="nwc-head"><div class="nwc-head-ic">💵</div><div><h3>แดชบอร์ดระบบเงิน TSL</h3></div></header>
         <div style="width: 100%; text-align: center; margin-bottom: 20px;"><img src="images/tsl_eu_nato_emblem.jpg" alt="TSL Alliance Emblem" style="max-width: 100%; height: auto; border: 2px solid rgba(96,165,250,0.4); border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.6); display: inline-block;"></div>
       <div style="text-align:left;">
         <!-- LIVE TICKER BANNER -->
-        <div style="background:#0f172a;border:1px solid rgba(74,222,128,0.3);border-radius:12px;padding:10px 18px;margin-bottom:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;box-shadow:0 4px 16px rgba(0,0,0,0.4);">
-          <div style="display:flex;align-items:center;gap:10px;">
+        <div class="nwc-card">
+          <div style="display:flex; align-items:center; gap:10px">
             <span style="display:inline-block;width:10px;height:10px;background:#4ade80;border-radius:50%;box-shadow:0 0 10px #4ade80;animation:tslPulse 1.5s infinite;"></span>
             <span style="font-size:12.5px;font-weight:800;color:#4ade80;letter-spacing:0.5px;">🔴 LIVE STREAMING FINANCIAL DATA</span>
             <span style="font-size:11px;color:#94a3b8;background:rgba(255,255,255,0.05);padding:2px 8px;border-radius:6px;">Latency: 12ms</span>
@@ -14,12 +15,12 @@
         </div>
 
         <!-- HEADER BANNER -->
-        <div style="display:flex;align-items:center;gap:18px;margin-bottom:24px;border-bottom:2px solid rgba(34,197,94,0.4);background:linear-gradient(135deg, rgba(34,197,94,0.18) 0%, rgba(15,23,42,0.95) 100%);padding:24px;border-radius:18px;box-shadow:0 8px 24px rgba(0,0,0,0.4);">
+        <div class="nwc-card">
           <div style="width:76px;height:76px;background:rgba(34,197,94,0.25);border:2px solid #4ade80;border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:42px;box-shadow:0 0 24px rgba(74,222,128,0.4);flex-shrink:0;">
             💵
           </div>
           <div style="flex:1;">
-            <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:4px;">
+            <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap">
               <h3 style="color:#4ade80;font-family:'Outfit',sans-serif;margin:0;font-size:26px;font-weight:800;letter-spacing:0.3px;">แดชบอร์ดดัชนีระบบการเงิน TSL & ทุนสำรองสากล Real-Time</h3>
               <span style="background:rgba(34,197,94,0.25);color:#4ade80;border:1px solid rgba(34,197,94,0.5);padding:4px 14px;border-radius:20px;font-size:12.5px;font-weight:800;">
                 ⚡ Live Index Engine
@@ -33,34 +34,34 @@
         </div>
 
         <!-- LIVE METRICS GRID -->
-        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:18px;margin-bottom:24px;">
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:18px">
           <!-- CARD 1: CURRENT RATE -->
-          <div style="background:linear-gradient(135deg, rgba(30,41,59,0.9) 0%, rgba(15,23,42,0.95) 100%);border:1.5px solid rgba(74,222,128,0.4);border-radius:16px;padding:20px;box-shadow:0 6px 18px rgba(0,0,0,0.35);position:relative;">
-            <div style="font-size:12.5px;color:#4ade80;font-weight:700;">📈 อัตราแลกเปลี่ยน TSL ปัจจุบัน (Post-Crisis Rate)</div>
+          <div class="nwc-card"><h5>อัตราแลกเปลี่ยน TSL ปัจจุบัน (Post-Crisis Rate)</h5>
+            
             <div style="font-size:26px;font-weight:900;color:#ffffff;margin:6px 0 2px 0;">๑ บาท = ๙๒ TSL</div>
             <div style="font-size:13px;color:#4ade80;font-weight:700;margin-top:4px;">(1 TSL ≈ 0.01087 บาท / 1.09 สตางค์)</div>
             <div style="font-size:12px;color:#cbd5e1;margin-top:4px;">🟢 ฟื้นตัวสู่ระดับเสถียรภาพสูงสุดอันดับ ๗ ของโลก</div>
           </div>
 
           <!-- CARD 2: PRE-CRISIS PEAK -->
-          <div style="background:linear-gradient(135deg, rgba(30,41,59,0.9) 0%, rgba(15,23,42,0.95) 100%);border:1.5px solid rgba(250,204,21,0.4);border-radius:16px;padding:20px;box-shadow:0 6px 18px rgba(0,0,0,0.35);">
-            <div style="font-size:12.5px;color:#facc15;font-weight:700;">👑 จุดพีคยุคแรกสถาปนา TSL (Early TSL Era)</div>
+          <div class="nwc-card"><h5>จุดพีคยุคแรกสถาปนา TSL (Early TSL Era)</h5>
+            
             <div style="font-size:26px;font-weight:900;color:#fde047;margin:6px 0 2px 0;">๑ บาท = ๒๘๐ TSL</div>
             <div style="font-size:13px;color:#fde047;font-weight:700;margin-top:4px;">(1 TSL ≈ 0.00357 บาท / 0.36 สตางค์)</div>
             <div style="font-size:12px;color:#cbd5e1;margin-top:4px;">ช่วงสหรัฐฯ ล่มสลายเริ่มตั้ง TSL ใหม่ๆ</div>
           </div>
 
           <!-- CARD 3: CRISIS BOTTOM -->
-          <div style="background:linear-gradient(135deg, rgba(30,41,59,0.9) 0%, rgba(15,23,42,0.95) 100%);border:1.5px solid rgba(239,68,68,0.4);border-radius:16px;padding:20px;box-shadow:0 6px 18px rgba(0,0,0,0.35);">
-            <div style="font-size:12.5px;color:#f87171;font-weight:700;">💀 จุดต่ำสุด TSL ยามวิกฤต (Crisis Bottom)</div>
+          <div class="nwc-card"><h5>จุดต่ำสุด TSL ยามวิกฤต (Crisis Bottom)</h5>
+            
             <div style="font-size:26px;font-weight:900;color:#f87171;margin:6px 0 2px 0;">1 TSL = 0.0031 บาท</div>
             <div style="font-size:13px;color:#f87171;font-weight:700;margin-top:4px;">(0.31 สตางค์ / ๑ บาท = ๓๒๒ TSL)</div>
             <div style="font-size:12px;color:#ef4444;margin-top:4px;">🔴 สถิติดิ่งเหวช่วงต่างประเทศล่มสลาย EP 16</div>
           </div>
 
           <!-- CARD 4: THAI GDP -->
-          <div style="background:linear-gradient(135deg, rgba(30,41,59,0.9) 0%, rgba(15,23,42,0.95) 100%);border:1.5px solid rgba(56,189,248,0.4);border-radius:16px;padding:20px;box-shadow:0 6px 18px rgba(0,0,0,0.35);">
-            <div style="font-size:12.5px;color:#38bdf8;font-weight:700;">📊 เศรษฐกิจไทยเติบโต (Thai GDP Growth)</div>
+          <div class="nwc-card"><h5>เศรษฐกิจไทยเติบโต (Thai GDP Growth)</h5>
+            
             <div style="font-size:26px;font-weight:900;color:#38bdf8;margin:6px 0 2px 0;">+19.72%</div>
             <div style="font-size:13px;color:#38bdf8;font-weight:700;margin-top:4px;">(บาทไทยสถาปนาอันดับ ๑ ของโลก)</div>
             <div style="font-size:12px;color:#cbd5e1;margin-top:4px;">🚀 เติบโตพุ่งทะยานสวนทางโลกที่ดิ่งลง</div>
@@ -68,14 +69,12 @@
         </div>
 
         <!-- REAL-TIME INTERACTIVE CURRENCY CONVERTER WIDGET -->
-        <div style="background:linear-gradient(135deg, rgba(15,23,42,0.95) 0%, rgba(30,41,59,0.9) 100%);border:2px solid rgba(74,222,128,0.5);border-radius:18px;padding:24px;margin-bottom:24px;box-shadow:0 8px 24px rgba(0,0,0,0.4);">
-          <div style="font-size:18px;font-weight:800;color:#4ade80;margin-bottom:16px;display:flex;align-items:center;gap:10px;border-bottom:1.5px solid rgba(74,222,128,0.3);padding-bottom:10px;">
-            <span>🧮</span> เครื่องมือแปลงอัตราแลกเปลี่ยน Real-Time (Live TSL Currency Converter)
-          </div>
+        <div class="nwc-card"><h5>เครื่องมือแปลงอัตราแลกเปลี่ยน Real-Time (Live TSL Currency Converter)</h5>
+          
 
-          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:20px;align-items:center;">
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:20px; align-items:center">
             <!-- INPUT THB -->
-            <div style="background:rgba(15,23,42,0.8);border:1px solid rgba(74,222,128,0.3);border-radius:14px;padding:16px;">
+            <div class="nwc-card">
               <label style="font-size:12px;color:#4ade80;font-weight:700;display:block;margin-bottom:6px;">🇹🇭 จำนวนเงินบาทไทย (THB):</label>
               <input type="number" id="tslInputTHB" value="100" oninput="calcTSLFromTHB()" style="width:100%;background:rgba(30,41,59,0.9);border:1px solid rgba(74,222,128,0.5);border-radius:10px;padding:10px 14px;color:#ffffff;font-size:20px;font-weight:800;outline:none;box-sizing:border-box;">
               <div style="font-size:11.5px;color:#cbd5e1;margin-top:6px;">๑ บาทไทย = ๙๒.๐๐ TSL</div>
@@ -87,7 +86,7 @@
             </div>
 
             <!-- RESULT TSL -->
-            <div style="background:rgba(15,23,42,0.8);border:1px solid rgba(250,204,21,0.3);border-radius:14px;padding:16px;">
+            <div class="nwc-card">
               <label style="font-size:12px;color:#facc15;font-weight:700;display:block;margin-bottom:6px;">🌐 จำนวนเงินดอลลาร์ TSL (TSL USD):</label>
               <input type="number" id="tslInputTSL" value="9200" oninput="calcTHBFromTSL()" style="width:100%;background:rgba(30,41,59,0.9);border:1px solid rgba(250,204,21,0.5);border-radius:10px;padding:10px 14px;color:#fde047;font-size:20px;font-weight:800;outline:none;box-sizing:border-box;">
               <div style="font-size:11.5px;color:#cbd5e1;margin-top:6px;" id="tslSatangDisplay">๑ TSL ≈ ๐.๐๑๐๘๗ บาท (๑.๐๙ สตางค์)</div>
@@ -96,21 +95,21 @@
         </div>
 
         <!-- ANIMATED FINANCIAL CHART WIDGET (Bloomberg Terminal Style) -->
-        <div style="background:linear-gradient(160deg,#0a0f1e 0%,#0d1a2e 100%);border:1.5px solid rgba(74,222,128,0.45);border-radius:18px;padding:22px;margin-bottom:24px;box-shadow:0 12px 40px rgba(0,0,0,0.6);position:relative;overflow:hidden;">
+        <div class="nwc-card">
 
           <!-- CHART HEADER -->
-          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:14px;">
+          <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px">
             <div>
               <div style="font-size:19px;font-weight:800;color:#4ade80;font-family:'Outfit',sans-serif;letter-spacing:0.3px;">📊 กราฟดัชนี THB/TSL · Live Streaming</div>
               <div style="font-size:12px;color:#64748b;margin-top:2px;">Thai Baht vs. TSL Dollar · Historical + Real-Time Feed · <span id="tslLiveLabel" style="color:#4ade80;font-weight:700;">●&nbsp;LIVE</span></div>
             </div>
-            <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
-              <div id="tslCurrentPriceBox" style="background:rgba(74,222,128,0.12);border:1px solid #4ade80;border-radius:10px;padding:7px 16px;text-align:center;">
+            <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center">
+              <div id="tslCurrentPriceBox" class="nwc-card">
                 <div style="font-size:11px;color:#94a3b8;font-weight:600;">1 บาท = _____ TSL</div>
                 <div id="tslLivePrice" style="font-size:24px;font-weight:900;color:#4ade80;letter-spacing:0.5px;">92.00</div>
                 <div id="tslLiveDelta" style="font-size:11px;font-weight:700;color:#4ade80;">▲ +0.00%</div>
               </div>
-              <div style="display:flex;flex-direction:column;gap:6px;">
+              <div style="display:flex; flex-direction:column; gap:6px">
                 <button onclick="tslSetMode('ALL',this)" class="tsl-chart-btn tsl-active-btn" style="background:rgba(74,222,128,0.18);border:1px solid #4ade80;color:#4ade80;padding:4px 12px;border-radius:8px;font-size:12px;font-weight:800;cursor:pointer;width:100%;">▶ ทั้งหมด</button>
                 <button onclick="tslSetMode('CRISIS',this)" class="tsl-chart-btn" style="background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.4);color:#f87171;padding:4px 12px;border-radius:8px;font-size:12px;font-weight:700;cursor:pointer;width:100%;">💀 วิกฤต</button>
                 <button onclick="tslSetMode('RECOVERY',this)" class="tsl-chart-btn" style="background:rgba(56,189,248,0.1);border:1px solid rgba(56,189,248,0.4);color:#38bdf8;padding:4px 12px;border-radius:8px;font-size:12px;font-weight:700;cursor:pointer;width:100%;">🟢 ฟื้นตัว</button>
@@ -122,7 +121,7 @@
           <canvas id="tslChart" style="width:100%;height:280px;border-radius:12px;display:block;" height="280"></canvas>
 
           <!-- BOTTOM LABELS -->
-          <div style="display:flex;justify-content:space-between;font-size:11px;color:#475569;font-weight:700;margin-top:10px;flex-wrap:wrap;gap:6px;">
+          <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:6px">
             <span>พ.ศ. ๒๕๖๕ · ก่อตั้ง TSL</span>
             <span style="color:#4ade80;">๒๕๖๗ · ยุคพิธา (92 TSL)</span>
             <span style="color:#f87171;">๒๖๗๒ · วิกฤต (322 TSL)</span>
@@ -131,8 +130,8 @@
           </div>
 
           <!-- KEY EVENT ANNOTATIONS -->
-          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px;padding:12px;background:rgba(15,23,42,0.7);border-radius:12px;border:1px solid rgba(255,255,255,0.07);">
-            <div style="font-size:11.5px;color:#fde047;font-weight:700;display:flex;align-items:center;gap:5px;"><span style="width:10px;height:3px;background:#facc15;display:inline-block;border-radius:2px;"></span> ยุคก่อตั้ง (1→280 TSL/THB)</div>
+          <div class="nwc-card"><h5>ยุคก่อตั้ง (1→280 TSL/THB)</h5>
+            
             <div style="font-size:11.5px;color:#4ade80;font-weight:700;display:flex;align-items:center;gap:5px;"><span style="width:10px;height:3px;background:#4ade80;display:inline-block;border-radius:2px;"></span> ยุคเสถียรภาพ (92 TSL/THB)</div>
             <div style="font-size:11.5px;color:#f87171;font-weight:700;display:flex;align-items:center;gap:5px;"><span style="width:10px;height:3px;background:#ef4444;display:inline-block;border-radius:2px;"></span> Dexibola Crisis (ต่ำสุด 322 TSL)</div>
             <div style="font-size:11.5px;color:#38bdf8;font-weight:700;display:flex;align-items:center;gap:5px;"><span style="width:10px;height:3px;background:#38bdf8;display:inline-block;border-radius:2px;"></span> ยุคฟื้นตัว (92 TSL/THB)</div>
@@ -429,14 +428,12 @@
         </script>
 
         <!-- SECTION 1: HISTORICAL TIMELINE OF TSL CURRENCY -->
-        <div style="background:linear-gradient(135deg, rgba(30,41,59,0.9) 0%, rgba(15,23,42,0.95) 100%);border:2px solid rgba(34,197,94,0.35);border-radius:18px;padding:24px;margin-bottom:24px;box-shadow:0 8px 24px rgba(0,0,0,0.35);">
-          <div style="font-size:20px;font-weight:800;color:#4ade80;margin-bottom:18px;display:flex;align-items:center;gap:10px;border-bottom:1.5px solid rgba(34,197,94,0.3);padding-bottom:12px;">
-            <span>📉</span> ๑. ลำดับวิวัฒนาการดัชนีค่าเงิน TSL สากล (TSL Index Timeline)
-          </div>
+        <div class="nwc-card"><h5>๑. ลำดับวิวัฒนาการดัชนีค่าเงิน TSL สากล (TSL Index Timeline)</h5>
+          
 
-          <div style="display:flex;flex-direction:column;gap:14px;">
-            <div style="background:rgba(15,23,42,0.75);border-left:4px solid #facc15;border-radius:0 12px 12px 0;padding:16px;text-align:left;">
-              <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">
+          <div style="display:flex; flex-direction:column; gap:14px">
+            <div class="nwc-card">
+              <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px">
                 <strong style="color:#facc15;font-size:16px;">พ.ศ. ๒๕๖๕ — สถาปนาระเบียบดัชนี TSL (Standard 1.00 USD/THB)</strong>
                 <span style="background:rgba(250,204,21,0.2);color:#facc15;padding:2px 10px;border-radius:12px;font-size:12px;font-weight:700;">1.00 USD/THB</span>
               </div>
@@ -445,8 +442,8 @@
               </p>
             </div>
 
-            <div style="background:rgba(15,23,42,0.75);border-left:4px solid #4ade80;border-radius:0 12px 12px 0;padding:16px;text-align:left;">
-              <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">
+            <div class="nwc-card">
+              <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px">
                 <strong style="color:#4ade80;font-size:16px;">พ.ศ. ๒๕๖๗ — ทรงตัวแข็งแกร่งยุคนายกฯ พิธา (1 THB = 92 TSL)</strong>
                 <span style="background:rgba(74,222,128,0.2);color:#4ade80;padding:2px 10px;border-radius:12px;font-size:12px;font-weight:700;">1 TSL ≈ 0.01087 THB</span>
               </div>
@@ -455,8 +452,8 @@
               </p>
             </div>
 
-            <div style="background:rgba(15,23,42,0.75);border-left:4px solid #ef4444;border-radius:0 12px 12px 0;padding:16px;text-align:left;">
-              <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">
+            <div class="nwc-card">
+              <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px">
                 <strong style="color:#f87171;font-size:16px;">พ.ศ. ๒๖๗๒ — วิกฤตการณ์การเงินสากล & TSL ล่มสลาย (EP 16 Reveal)</strong>
                 <span style="background:rgba(239,68,68,0.2);color:#f87171;padding:2px 10px;border-radius:12px;font-size:12px;font-weight:700;">1 TSL ≈ 0.0031 THB</span>
               </div>
@@ -465,8 +462,8 @@
               </p>
             </div>
 
-            <div style="background:rgba(15,23,42,0.75);border-left:4px solid #38bdf8;border-radius:0 12px 12px 0;padding:16px;text-align:left;">
-              <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">
+            <div class="nwc-card">
+              <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px">
                 <strong style="color:#38bdf8;font-size:16px;">พ.ศ. ๒๖๗๒ — Special EP ถ่ายทอดสดวิเคราะห์ค่าเงินสด Real-Time</strong>
                 <span style="background:rgba(56,189,248,0.2);color:#38bdf8;padding:2px 10px;border-radius:12px;font-size:12px;font-weight:700;">Live Special EP</span>
               </div>
@@ -475,8 +472,8 @@
               </p>
             </div>
 
-            <div style="background:rgba(15,23,42,0.75);border-left:4px solid #fde047;border-radius:0 12px 12px 0;padding:16px;text-align:left;">
-              <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">
+            <div class="nwc-card">
+              <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px">
                 <strong style="color:#fde047;font-size:16px;">พ.ศ. ๒๖๗๓ — แถลงการณ์โอบามา & TSL เริ่มฟื้นตัว (1 THB = 92 TSL)</strong>
                 <span style="background:rgba(250,204,21,0.2);color:#facc15;padding:2px 10px;border-radius:12px;font-size:12px;font-weight:700;">1 TSL ≈ 0.01087 THB</span>
               </div>
@@ -488,11 +485,9 @@
         </div>
 
         <!-- SECTION 2: OBAMA STATEMENT -->
-        <div style="background:linear-gradient(135deg, rgba(250,204,21,0.15) 0%, rgba(15,23,42,0.95) 100%);border:2.5px solid #facc15;border-radius:18px;padding:24px;box-shadow:0 8px 24px rgba(0,0,0,0.35);">
-          <div style="font-size:20px;font-weight:800;color:#facc15;margin-bottom:14px;display:flex;align-items:center;gap:10px;border-bottom:1.5px solid rgba(250,204,21,0.3);padding-bottom:12px;">
-            <span>🎙️</span> ๒. แถลงการณ์การเงินสากลโดยอดีต ปธน. Barack Obama
-          </div>
-          <div style="background:rgba(15,23,42,0.85);border:1px solid #facc15;border-radius:14px;padding:20px;text-align:justify;line-height:1.8;color:#ffffff;font-size:14.5px;">
+        <div class="nwc-card"><h5>๒. แถลงการณ์การเงินสากลโดยอดีต ปธน. Barack Obama</h5>
+          
+          <div class="nwc-card">
             <span style="font-size:32px;color:#facc15;line-height:0;vertical-align:-10px;">“</span>
             <em>TSL กำลังฟื้นครับ ช้า แต่มั่นคง เราเรียนรู้จากวิกฤตครั้งนี้ว่าระบบสาธารณสุขไม่ใช่ค่าใช้จ่าย แต่คือการลงทุน ประเทศที่รอดพ้นมาได้เพราะมีระบบคุ้มครองชีวิตราษฎรอย่างแท้จริง</em>
             <span style="font-size:32px;color:#facc15;line-height:0;vertical-align:-10px;">”</span>
@@ -503,3 +498,4 @@
         </div>
       </div>
     </div>
+</div>

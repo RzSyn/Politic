@@ -6,6 +6,7 @@ recognises the recurring shapes (header, stat grid, note box, panel, card,
 table, figure) and re-emits them with the .nwc-* classes, keeping every word
 of the content.  Scripts and styles inside a tab are kept verbatim.
 """
+import html.entities
 import json
 import os
 import re
@@ -13,6 +14,8 @@ import sys
 from html.parser import HTMLParser
 
 VOID = {'img', 'br', 'hr', 'input', 'source', 'meta', 'link', 'col', 'area', 'embed'}
+SELF_OK = {'rect', 'path', 'circle', 'line', 'polygon', 'polyline', 'ellipse', 'use', 'stop',
+           'image', 'animate', 'animatetransform', 'fegaussianblur', 'marker', 'pattern', 'text'}
 SVG_CASE = {'viewbox': 'viewBox', 'preserveaspectratio': 'preserveAspectRatio',
             'gradientunits': 'gradientUnits', 'gradienttransform': 'gradientTransform',
             'patternunits': 'patternUnits', 'clippathunits': 'clipPathUnits',
@@ -77,7 +80,8 @@ class Build(HTMLParser):
         self.cur.add(d)
 
     def handle_entityref(self, name):
-        self.cur.add('&' + name + ';')
+        known = (name + ';') in html.entities.html5
+        self.cur.add('&' + name + (';' if known else ''))
 
     def handle_charref(self, name):
         self.cur.add('&#' + name + ';')
@@ -102,7 +106,7 @@ def render(n):
         return n.attrs['html']
     if n.tag in VOID:
         return '<%s%s>' % (n.tag, attrs_str(n))
-    if n.selfclose and not n.kids:
+    if n.selfclose and not n.kids and n.tag in SELF_OK:
         return '<%s%s />' % (n.tag, attrs_str(n))
     return '<%s%s>%s</%s>' % (n.tag, attrs_str(n), n.inner(), n.tag)
 
@@ -311,9 +315,17 @@ def relayout(path):
     return re.sub(r'<!--KEEP(\d+)-->', lambda m: keep[int(m.group(1))], out)
 
 
+def balanced(markup):
+    """Count divs outside scripts, comments and attributes, where markup hides."""
+    bare = re.sub(r'<(script|style)\b.*?</\1>', ' ', markup, flags=re.S)
+    bare = re.sub(r'<!--.*?-->', ' ', bare, flags=re.S)
+    bare = re.sub(r'=\s*"[^"]*"', chr(61) + chr(34) + chr(34), bare)
+    return len(re.findall(r'<div(?=[\s>])[^>]*>', bare)) == len(re.findall(r'</div>', bare))
+
+
 if __name__ == '__main__':
     for p in sys.argv[1:]:
         html = relayout(p)
-        assert len(re.findall(r'<div(?=[\s>])', html)) == len(re.findall(r'</div>', html)), p
+        assert balanced(html), p
         open(p, 'w', encoding='utf-8', newline=chr(10)).write(html)
         print('relaid ' + p)
