@@ -559,3 +559,35 @@ The user asked for the whole site to be rebuilt with the same content: formal, d
 - Next phases: move the 68 dashboard tabs group by group into the new page's archive section; until then it links to the old page.
 - Check a build with: div/section/article balance, `art_1..art_1160` contiguous, every `.cross-ref` resolves, 11 compare panels, no missing local files — then DevTools screenshots.
 
+## Re-laying out the new site's tabs (tools/relayout.py)
+
+- The 68 topic panels carry their looks in **inline styles**, so a structural
+  transformer can re-shape them: header, stat grid, note box, section, card,
+  table, figure become `.nwc-*`.  Run it per file, then check the visible text
+  is unchanged (ignoring emoji) before writing.
+- **Run it once per file.**  A second pass wraps `.nwc` inside `.nwc` and adds a
+  second header.  The tool now unwraps an existing `.nwc` first, but a check for
+  `class="nwc-head"` appearing twice is the quick way to spot damage.
+- **Never strip a style that draws something**: conic/radial gradients, 50%
+  radii, absolute positioning, transforms, animations.  Those panels keep every
+  declaration.
+- **Self-closing tags matter inside SVG.**  Re-emitting `<rect ... />` as
+  `<rect ...>` nests the following shapes inside it and the chart renders empty.
+  Only SVG shapes may be serialised self-closed; `<div/>` must become a pair.
+- `&D` in "R&D" arrives at HTMLParser as an entity reference; only re-add the
+  semicolon when the name really is an HTML5 entity.
+- Counting `<div` to check balance also counts markup inside scripts, comments,
+  attributes and prose.  Strip those first, and count `<div...>` with its `>`.
+
+## The backslash trap, again
+
+Writing Python through a `Bash` heredoc mangles backslashes: `\b` and `\n`
+reach the file as a real backspace or newline and the script breaks in a way that
+only shows up as a "SyntaxWarning" or a regex that never matches.  Use `chr(10)`,
+`chr(92)` or the `Write` tool instead.
+
+## Headless Chrome reports prefers-reduced-motion: reduce
+
+Both the CDP screenshot runner and the in-app browser pane report reduced motion,
+so anything gated on it never appears in a screenshot.  Degrade to a fade instead
+of removing the element, and the animation stays verifiable.
