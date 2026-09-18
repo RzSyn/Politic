@@ -23,6 +23,25 @@ try {
 </head>
 <body>
 
+<div class="nw-enter" id="nwEnter" aria-hidden="true">
+  <div class="nw-enter-in">
+    <img class="nw-em-color" src="images/Thai_Garuda_emblem.png" alt="">
+    <img class="nw-em-bw" src="images/Thai_Garuda_emblem_bw.png" alt="">
+    <i></i>
+    <b>รัฐธรรมนูญแห่งราชอาณาจักรไทย</b>
+    <small>พุทธศักราช ๒๕๒๕</small>
+  </div>
+</div>
+<script>
+(function () {
+  var e = document.getElementById('nwEnter');
+  if (!e) return;
+  try { if (matchMedia('(prefers-reduced-motion: reduce)').matches) { e.remove(); return; } } catch (err) {}
+  setTimeout(function () { e.className = 'nw-enter is-out'; }, 1150);
+  setTimeout(function () { if (e.parentNode) e.parentNode.removeChild(e); }, 1800);
+})();
+</script>
+
 <a class="nw-skip" href="#hub">ข้ามไปยังหัวข้อทั้งหมด</a>
 <select id="themeSelect" hidden aria-hidden="true"><option value="dark">dark</option><option value="bw">bw</option></select>
 

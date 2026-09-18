@@ -18,3 +18,4 @@ scratch/
 !.git*
 !Genarate/generate_website.py
 !tools/build_site.py
+!tools/relayout.py

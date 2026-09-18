@@ -1573,6 +1573,25 @@ function playAudioMobile(btn, src) {
 </head>
 <body>
 
+<div class="nw-enter" id="nwEnter" aria-hidden="true">
+  <div class="nw-enter-in">
+    <img class="nw-em-color" src="images/Thai_Garuda_emblem.png" alt="">
+    <img class="nw-em-bw" src="images/Thai_Garuda_emblem_bw.png" alt="">
+    <i></i>
+    <b>รัฐธรรมนูญแห่งราชอาณาจักรไทย</b>
+    <small>พุทธศักราช ๒๕๒๕</small>
+  </div>
+</div>
+<script>
+(function () {
+  var e = document.getElementById('nwEnter');
+  if (!e) return;
+  try { if (matchMedia('(prefers-reduced-motion: reduce)').matches) { e.remove(); return; } } catch (err) {}
+  setTimeout(function () { e.className = 'nw-enter is-out'; }, 1150);
+  setTimeout(function () { if (e.parentNode) e.parentNode.removeChild(e); }, 1800);
+})();
+</script>
+
 <a class="nw-skip" href="#hub">ข้ามไปยังหัวข้อทั้งหมด</a>
 <select id="themeSelect" hidden aria-hidden="true"><option value="dark">dark</option><option value="bw">bw</option></select>
 
@@ -1675,7 +1694,7 @@ function playAudioMobile(btn, src) {
   </div>
   <div class="nw-stage-body">
 <div id="history-tab" class="db-tab-content active">
-
+<div class="nwc"><header class="nwc-head"><div class="nwc-head-ic">📜</div><div><h3>ประวัติศาสตร์ประชาธิปไตย</h3></div></header>
 
       <style>
 
@@ -1919,126 +1938,85 @@ function playAudioMobile(btn, src) {
 
       </style>
 
-
       <div class="hist-story" style="margin-bottom: 35px;">
-
 
         <p>ประวัติศาสตร์การเมืองการปกครองของประเทศไทยได้ดำเนินไปบนเส้นทางที่ราบรื่น มั่นคง และเปี่ยมด้วยเสถียรภาพสถาบันอย่างน่าอัศจรรย์ใจ โดยมีจุดแยกครั้งใหญ่ทางประวัติศาสตร์ (Point of Divergence) เริ่มต้นขึ้นอย่างเป็นทางการใน <strong>วันที่ ๓๑ ธันวาคม พ.ศ. ๒๓๗๕</strong> ซึ่งเป็นค่ำคืนส่งท้ายปีเก่าต้อนรับปีใหม่ที่ประชาราษฎร์ได้รับพระมหากรุณาธิคุณล้นพ้น เมื่อ <strong>พระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว (รัชกาลที่ ๗)</strong> ทรงตัดสินพระราชหฤทัยพระราชทานรัฐธรรมนูญถาวรฉบับปฐมเวลาให้แก่ประชาชนชาวไทยด้วยพระองค์เอง ณ พระที่นั่งอนันตสมาคม เพื่อมุ่งหวังเปิดศักราชการปกครองตนเองของประชาชนอย่างแท้จริงโดยปราศจากความขัดแย้งหรือการนองเลือดใด ๆ รัฐธรรมนูญฉบับปฐมเวลานี้ได้ถูกยกร่างขึ้นโดยจัดวางสัดส่วนอำนาจของสถาบันกษัตริย์ไว้ที่ร้อยละ ๖๐ และสัดส่วนผู้แทนราษฎรที่ร้อยละ ๔๐ เพื่อเตรียมการปูพื้นฐานการเรียนรู้ระบอบประชาธิปไตยเป็นระยะเวลาเปลี่ยนผ่านนาน ๔๖ ปี</p>
 
-
         <p>ด้วยการที่พระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัวทรงเตรียมพระราชดำริและวางแผนร่างรัฐธรรมนูญฉบับดังกล่าวมาล่วงหน้าอย่างรอบคอบ ส่งผลให้ในพิกัดเวลาจำลองนี้ คณะทหารแกนนำผู้คุมกำลังพลหลักกลุ่ม <strong>"๔ ทหารเสือ"</strong> (อันประกอบไปด้วย พระยาพหลพลพยุหเสนา, พระยาทรงสุรเดช, พระยาฤทธิอัคเนย์ และพระประศาสน์พิทยายุทธ) ซึ่งเดิมทีมีความตื่นตัวและวางแผนจะยึดอำนาจเปลี่ยนระบอบ ได้รับทราบแนวพระราชดำริและตระหนักถึงความตั้งใจจริงของพระองค์ จึงตัดสินใจยึดมั่นในครรลองกฎสัญญาสถาบันกษัตริย์และยุติการดำเนินการปฏิวัติที่วางแผนไว้ใน พ.ศ. ๒๓๗๕ โดยสิ้นเชิง ส่งผลให้ประเทศไทยก้าวข้ามระบอบสมบูรณาญาสิทธิราชย์เข้าสู่ระบอบรัฐสภาอย่างสงบสันติ ปราศจากการเผชิญหน้าด้วยกำลังทหาร ทำให้ประวัติศาสตร์หน้าการปฏิวัติถูกพับเก็บไปอย่างสิ้นเชิง</p>
-
 
         <p>ขณะเดียวกัน ฝ่ายพลเรือนนำโดย <strong>หลวงประดิษฐ์มนูธรรม (ปรีดี พนมยงค์)</strong> แม้จะยังคงดำเนินกิจกรรมทางการเมืองอย่างจริงจังเพื่อผลักดันแนวคิดสังคมนิยมเศรษฐกิจตามเค้าโครงการเศรษฐกิจ (สมุดปกเหลือง) และพยายามจำกัดพระราชอำนาจเพิ่มเติม แต่ด้วยความสมดุลทางการเมืองในสภาที่สถาบันกษัตริย์และประชาชนเกื้อหนุนซึ่งกันและกันอย่างหนาแน่น ทำให้แผนการที่ล่อแหลมของฝ่ายซ้ายล้มเหลวลงอย่างสงบในสภาผู้แทนฯ อย่างไรก็ดี ความขัดแย้งทางอุดมการณ์ของกลุ่มพลเรือนหัวรุนแรงในเวลาต่อมาได้บานปลายกลายเป็นชนวนเหตุลอบปลงพระชนม์รัชกาลที่ ๘ โดยกลุ่มดังกล่าวทำการยิงลอบสังหารสำเร็จทว่าพระองค์ทรงรอดพ้นความตายมาได้อย่างหวุดหวิด ท้ายที่สุดขบวนการต่อต้านสถาบันล้มเหลวลงอย่างสิ้นเชิงและปรีดีต้องลี้ภัยไปต่างประเทศ ทิ้งไว้เพียงโครงสร้างรัฐสภาที่มั่นคงเด่นชัดเป็นสง่า</p>
 
-
         <div class="highlight-card" style="margin-bottom: 28px; font-size: 15px; line-height: 1.7;">
-
 
           "ด้วยพระบารมีและกุศโลบายการปฏิรูปโครงสร้างนิติบัญญัติโดยสันติ ประเทศไทยจึงมีรากฐานสถาบันทางการเมืองที่สมดุลและปลอดภัยสูงสุด ส่งผลให้ <strong>ไม่มีการรัฐประหารหรือการใช้อาวุธยึดอำนาจเลยแม้แต่ครั้งเดียว</strong> ตลอดประวัติศาสตร์การเมืองไทยยุคใหม่ นายกรัฐมนตรีทุกคนของประเทศล้วนมาจากการเลือกตั้งของประชาชนอย่างเต็มภาคภูมิ ภายใต้ครรลองแห่งกฎหมายที่เป็นธรรม"
 
-
         </div>
 
-
       </div>
-
 
       <!-- Interactive Timeline Component -->
 
-
       <h4 style="color: var(--gold-light); font-size: 17px; font-weight: 600; margin-bottom: 18px; font-family: 'Outfit', sans-serif;">📅 ลำดับเวลาเหตุการณ์สำคัญแบ่งตามทำเนียบนายกรัฐมนตรี</h4>
-
 
       <div class="timeline-container">
 
-
         <div class="timeline-nav">
-
 
           <button class="timeline-btn active" onclick="selectTimelineEra(0, this)">👤 นายกฯ คนที่ ๑ - ๓ (๒๔๒๑ - ๒๔๔๕)</button>
 
-
           <button class="timeline-btn" onclick="selectTimelineEra(1, this)">👤 นายกฯ คนที่ ๔ - ๖ (๒๔๔๕ - ๒๔๖๙)</button>
-
 
           <button class="timeline-btn" onclick="selectTimelineEra(2, this)">👤 นายกฯ คนที่ ๗ - ๙ (๒๔๖๙ - ๒๔๙๓)</button>
 
-
           <button class="timeline-btn" onclick="selectTimelineEra(3, this)">👤 นายกฯ คนที่ ๑๐ - ๑๒ (๒๔๙๓ - ๒๕๑๗)</button>
-
 
           <button class="timeline-btn" onclick="selectTimelineEra(4, this)">👤 นายกฯ คนที่ ๑๓ - ๑๕ (๒๕๑๗ - ๒๕๕๗)</button>
 
-
           <button class="timeline-btn" onclick="selectTimelineEra(5, this)">👤 นายกฯ คนที่ ๑๖ - ๑๗ (๒๕๕๗ - ๒๕๗๖)</button>
-
 
           <button class="timeline-btn" onclick="selectTimelineEra(6, this)">👤 นายกฯ คนที่ ๑๘ - ๒๐ (๒๕๗๖ - ๒๖๑๒)</button>
 
-
           <button class="timeline-btn" onclick="selectTimelineEra(7, this)">👤 นายกฯ คนที่ ๒๑ - ๒๒ (๒๖๑๒ - ๒๖๓๐)</button>
-
 
           <button class="timeline-btn" onclick="selectTimelineEra(8, this)">👤 นายกฯ คนที่ ๒๓ - ๒๔ (๒๖๓๐ - ๒๖๓๗)</button>
 
-
           <button class="timeline-btn" onclick="selectTimelineEra(9, this)">👤 นายกฯ คนที่ ๒๕ - ๒๙ (๒๖๓๗ - ๒๖๘๐)</button>
-
 
           <button class="timeline-btn" onclick="selectTimelineEra(10, this)">👤 นายกฯ คนที่ ๓๐ - ปัจจุบัน (๒๖๘๐ - ปัจจุบัน)</button>
 
-
         </div>
-
 
         <div class="timeline-body-panel" id="timeline-detail-panel">
 
-
           <div class="timeline-title-era">🏛️ ยุคก่อตั้งสภาสยามและการวางรากฐานประชาธิปไตย (พ.ศ. ๒๔๒๑ - ๒๔๔๕)</div>
 
-
           <div class="timeline-desc-era">
-
 
             ภายหลังกติกาของรัฐธรรมนูญปฐมเวลา ๒๓๗๕ มีผลบังคับใช้เป็นกฎหมายสูงสุด ประเทศสยามได้เปิดหน้าประวัติศาสตร์ใหม่โดยก้าวเดินไปบนแนวทางการเมืองระบบรัฐสภาอย่างราบรื่น ยุคเริ่มแรกนี้มีจุดเด่นคือการสถาปนากลไกนิติบัญญัติและการเลือกตั้งทั่วไปครั้งแรกในแผ่นดินเพื่อคัดเลือกผู้แทนราษฎรเข้ามาบริหารประเทศ สรรค์สร้างหลักเกณฑ์การทำงานร่วมกันระหว่างคณะบริหารและสมาชิกสภาผู้แทนราษฎรอย่างสันติ ปราศจากการใช้ความรุนแรงหรือกลไกนอกกฎธรรมนูญ
 
-
           </div>
 
-
           <div class="timeline-desc-era">
-
 
             ควบคู่ไปกับการเติบโตของระเบียบการเมือง การพัฒนาทรัพยากรมนุษย์ได้รับการยกระดับอย่างเป็นประวัติการณ์ผ่านการตราพระราชบัญญัติการศึกษาภาคบังคับเป็นครั้งแรกของประเทศ มีการจัดตั้งโรงเรียนราษฎรและโรงเรียนหลวงในทุกระดับอำเภอและตำบลอย่างกว้างขวาง โดยมีกระทรวงธรรมการเป็นแกนกลางหลักในการผลักดันโครงสร้างพื้นฐานด้านการเรียนรู้ เพื่อเตรียมความพร้อมให้พลเมืองรุ่นใหม่มีทักษะความสามารถก้าวทันสากลและระบบระเบียบการปกครองใหม่
 
-
           </div>
-
 
           <div class="timeline-desc-era">
 
-
             ในมิติการบริหารราชการแผ่นดิน ได้เกิดการจัดระบบและปฏิรูปการบริหารปกครองส่วนภูมิภาคและท้องถิ่นให้มีความทันสมัยและเป็นเอกภาพขึ้น กระจายความเจริญและโครงสร้างรัฐออกจากศูนย์กลางมณฑล พร้อมทั้งเกิดข้อเรียกร้องและความเคลื่อนไหวอย่างสันติในการเสนอขอทบทวนปรับปรุงเนื้อหาของรัฐธรรมนูญฉบับปฐมเวลา เพื่อขยายอำนาจของประชาชนและปรับโครงสร้างรัฐให้พร้อมรับการเปลี่ยนผ่านสู่ยุคอุตสาหกรรมในทศวรรษถัดไป
-
 
           </div>
 
-
-          <div style="background: rgba(212, 168, 67, 0.05); border-left: 3px solid var(--gold); padding: 12px; border-radius: 4px; font-size: 13.5px; color: var(--gold-light);">
-
+          <div class="nwc-card">
 
             ⚡ <strong>เหตุการณ์หลัก:</strong> ร.๗ พระราชทาน รธน. ถาวร, สถาปนาการเลือกตั้งและสภาผู้แทนราษฎรแห่งแรก, ประกาศ พ.ร.บ. การศึกษาภาคบังคับโดยกระทรวงธรรมการ
 
-
           </div>
-
 
         </div>
 
-
       </div>
-
 
       <script>
 
@@ -2351,448 +2329,376 @@ function playAudioMobile(btn, src) {
 
       </script>
 
-
     </div>
+</div>
 <div id="sappaya-tab" class="db-tab-content">
+<div class="nwc">
 
-      <div style="text-align:left;">
-
-        <div style="display:flex; align-items:center; gap:18px; margin-bottom:22px; border-bottom:2px solid rgba(250,204,21,0.4); background:linear-gradient(135deg, rgba(250,204,21,0.15) 0%, rgba(15,23,42,0.95) 100%); padding:24px; border-radius:18px; box-shadow:0 8px 24px rgba(0,0,0,0.4);">
-          <div style="width:76px; height:76px; background:rgba(250,204,21,0.2); border:2px solid #facc15; border-radius:20px; display:flex; align-items:center; justify-content:center; font-size:40px; box-shadow:0 0 24px rgba(250,204,21,0.35); flex-shrink:0;">🏛️</div>
-          <div style="flex:1;">
-            <h3 style="color:#facc15; font-family:'Outfit',sans-serif; margin:0 0 6px 0; font-size:25px; font-weight:800;">สัปปายะสภาสถาน</h3>
-            <p style="color:var(--text-muted); font-size:14px; margin:0; line-height:1.6;">อาคารรัฐสภาแห่งราชอาณาจักรไทย &mdash; ที่ประชุมของผู้แทนปวงชนมาตั้งแต่ พ.ศ. ๒๓๘๐ ในรัชสมัยพระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว</p>
-          </div>
-        </div><figure style="margin:0 0 18px 0;">
-          <img src="images/sappaya_sapasathan.jpg" alt="สัปปายะสภาสถาน" style="width:100%; height:auto; display:block; border-radius:14px; border:1px solid rgba(250,204,21,0.35); box-shadow:0 8px 24px rgba(0,0,0,0.45);">
-          <figcaption style="font-size:11px; color:var(--text-muted); margin-top:7px; line-height:1.6;">สัปปายะสภาสถาน &mdash; ภาพโดย Supanut Arunoprayote, สัญญาอนุญาต CC BY 4.0 (Wikimedia Commons)</figcaption>
-        </figure><div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:12px; margin-bottom:20px;"><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(250,204,21,0.3); border-radius:12px; padding:15px 17px; text-align:center;">
-            <div style="font-family:'Outfit',sans-serif; font-size:24px; font-weight:800; color:#facc15;">๒๓๘๐</div>
-            <div style="font-size:11.5px; color:var(--text-muted); margin-top:5px; line-height:1.6;">ปีที่เริ่มใช้เป็นที่ประชุมรัฐสภา</div>
-          </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.3); border-radius:12px; padding:15px 17px; text-align:center;">
-            <div style="font-family:'Outfit',sans-serif; font-size:24px; font-weight:800; color:#60a5fa;">๓๔๓ ปี</div>
-            <div style="font-size:11.5px; color:var(--text-muted); margin-top:5px; line-height:1.6;">ใช้งานต่อเนื่องถึงปัจจุบัน (พ.ศ. ๒๓๘๐&ndash;๒๗๒๓)</div>
-          </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(250,204,21,0.3); border-radius:12px; padding:15px 17px; text-align:center;">
-            <div style="font-family:'Outfit',sans-serif; font-size:24px; font-weight:800; color:#facc15;">๕ ปี</div>
-            <div style="font-size:11.5px; color:var(--text-muted); margin-top:5px; line-height:1.6;">ช่วงประชุมชั่วคราว ณ พระที่นั่งอนันตสมาคม</div>
-          </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(52,211,153,0.3); border-radius:12px; padding:15px 17px; text-align:center;">
-            <div style="font-family:'Outfit',sans-serif; font-size:24px; font-weight:800; color:#34d399;">๓ ครั้ง</div>
-            <div style="font-size:11.5px; color:var(--text-muted); margin-top:5px; line-height:1.6;">การปรับปรุงครั้งใหญ่ของอาคาร</div>
-          </div></div><div style="background:linear-gradient(135deg, rgba(250,204,21,0.06) 0%, rgba(15,18,25,0.78) 100%); border:1px solid rgba(250,204,21,0.28); border-radius:14px; padding:18px 20px; margin-top:0px;">
-          <div style="font-size:15px; color:#facc15; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:10px;">🕰️ เส้นทางของสภาไทย</div>
-          <div style="display:flex; flex-direction:column;"><div style="display:flex; gap:14px; align-items:stretch;">
-            <div style="flex:0 0 118px; text-align:right; padding-top:12px;">
-              <span style="font-family:'Outfit',sans-serif; font-size:12px; font-weight:800; color:#facc15; background:rgba(250,204,21,0.12); border:1px solid rgba(250,204,21,0.38); border-radius:999px; padding:3px 10px; white-space:nowrap;">๓๑ ธ.ค. ๒๓๗๕</span>
-            </div>
-            <div style="flex:0 0 3px; background:rgba(250,204,21,0.45); border-radius:2px;"></div>
-            <div style="flex:1; min-width:0; background:rgba(15,18,25,0.6); border:1px solid rgba(250,204,21,0.22); border-radius:10px; padding:11px 15px; margin:5px 0;">
-              <div style="font-size:14px; color:var(--text); font-weight:800; line-height:1.45;">พระราชทานรัฐธรรมนูญ ณ พระที่นั่งอนันตสมาคม</div>
-              <div style="font-size:12.6px; color:var(--text-muted); line-height:1.8; margin-top:4px;">รัชกาลที่ ๗ พระราชทานรัฐธรรมนูญฉบับปฐมเวลาด้วยพระองค์เอง โดยปราศจากการนองเลือด เปลี่ยนแปลงการปกครองสู่ระบอบรัฐธรรมนูญ และเปิดศักราชของรัฐสภาไทย</div>
-            </div>
-          </div><div style="display:flex; gap:14px; align-items:stretch;">
-            <div style="flex:0 0 118px; text-align:right; padding-top:12px;">
-              <span style="font-family:'Outfit',sans-serif; font-size:12px; font-weight:800; color:#facc15; background:rgba(250,204,21,0.12); border:1px solid rgba(250,204,21,0.38); border-radius:999px; padding:3px 10px; white-space:nowrap;">๒๓๗๕&ndash;๒๓๘๐</span>
-            </div>
-            <div style="flex:0 0 3px; background:rgba(250,204,21,0.45); border-radius:2px;"></div>
-            <div style="flex:1; min-width:0; background:rgba(15,18,25,0.6); border:1px solid rgba(250,204,21,0.22); border-radius:10px; padding:11px 15px; margin:5px 0;">
-              <div style="font-size:14px; color:var(--text); font-weight:800; line-height:1.45;">ประชุม ณ พระที่นั่งอนันตสมาคม ๕ ปี</div>
-              <div style="font-size:12.6px; color:var(--text-muted); line-height:1.8; margin-top:4px;">รัฐสภาใช้พระที่นั่งอนันตสมาคมเป็นที่ประชุมชั่วคราวเป็นเวลา ๕ ปี ระหว่างรอการก่อสร้างอาคารรัฐสภาแห่งใหม่</div>
-            </div>
-          </div><div style="display:flex; gap:14px; align-items:stretch;">
-            <div style="flex:0 0 118px; text-align:right; padding-top:12px;">
-              <span style="font-family:'Outfit',sans-serif; font-size:12px; font-weight:800; color:#60a5fa; background:rgba(96,165,250,0.12); border:1px solid rgba(96,165,250,0.38); border-radius:999px; padding:3px 10px; white-space:nowrap;">๒๓๘๐</span>
-            </div>
-            <div style="flex:0 0 3px; background:rgba(96,165,250,0.45); border-radius:2px;"></div>
-            <div style="flex:1; min-width:0; background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.22); border-radius:10px; padding:11px 15px; margin:5px 0;">
-              <div style="font-size:14px; color:var(--text); font-weight:800; line-height:1.45;">เปิดใช้สัปปายะสภาสถาน</div>
-              <div style="font-size:12.6px; color:var(--text-muted); line-height:1.8; margin-top:4px;">รัฐสภาย้ายเข้าสู่สัปปายะสภาสถานในรัชสมัยรัชกาลที่ ๗ และใช้เป็นที่ประชุมของผู้แทนปวงชนต่อเนื่องมานับแต่นั้น</div>
-            </div>
-          </div><div style="display:flex; gap:14px; align-items:stretch;">
-            <div style="flex:0 0 118px; text-align:right; padding-top:12px;">
-              <span style="font-family:'Outfit',sans-serif; font-size:12px; font-weight:800; color:#34d399; background:rgba(52,211,153,0.12); border:1px solid rgba(52,211,153,0.38); border-radius:999px; padding:3px 10px; white-space:nowrap;">๒๔๐๑</span>
-            </div>
-            <div style="flex:0 0 3px; background:rgba(52,211,153,0.45); border-radius:2px;"></div>
-            <div style="flex:1; min-width:0; background:rgba(15,18,25,0.6); border:1px solid rgba(52,211,153,0.22); border-radius:10px; padding:11px 15px; margin:5px 0;">
-              <div style="font-size:14px; color:var(--text); font-weight:800; line-height:1.45;">ปรับปรุงครั้งที่ ๑ &mdash; ต้นรัชสมัยรัชกาลที่ ๙</div>
-              <div style="font-size:12.6px; color:var(--text-muted); line-height:1.8; margin-top:4px;">การปรับปรุงอาคารครั้งใหญ่ครั้งแรก เมื่อพระบาทสมเด็จพระเจ้าอยู่หัวรัชกาลที่ ๙ เสด็จขึ้นครองราชย์</div>
-            </div>
-          </div><div style="display:flex; gap:14px; align-items:stretch;">
-            <div style="flex:0 0 118px; text-align:right; padding-top:12px;">
-              <span style="font-family:'Outfit',sans-serif; font-size:12px; font-weight:800; color:#60a5fa; background:rgba(96,165,250,0.12); border:1px solid rgba(96,165,250,0.38); border-radius:999px; padding:3px 10px; white-space:nowrap;">๒๕๗๓</span>
-            </div>
-            <div style="flex:0 0 3px; background:rgba(96,165,250,0.45); border-radius:2px;"></div>
-            <div style="flex:1; min-width:0; background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.22); border-radius:10px; padding:11px 15px; margin:5px 0;">
-              <div style="font-size:14px; color:var(--text); font-weight:800; line-height:1.45;">ปักหมุดประชาราษฎรที่ ๓ หน้ารัฐสภา</div>
-              <div style="font-size:12.6px; color:var(--text-muted); line-height:1.8; margin-top:4px;">ขบวนการคนรุ่นใหม่ &ldquo;คณะประชาราษฎรที่ ๓&rdquo; ปักหมุดหน้าอาคารรัฐสภา เพื่อแสดงเจตนารมณ์ประสานความร่วมมือระหว่างภาคประชาชนและภาครัฐ</div>
-            </div>
-          </div><div style="display:flex; gap:14px; align-items:stretch;">
-            <div style="flex:0 0 118px; text-align:right; padding-top:12px;">
-              <span style="font-family:'Outfit',sans-serif; font-size:12px; font-weight:800; color:#34d399; background:rgba(52,211,153,0.12); border:1px solid rgba(52,211,153,0.38); border-radius:999px; padding:3px 10px; white-space:nowrap;">๒๖๓๗&ndash;๒๖๕๓</span>
-            </div>
-            <div style="flex:0 0 3px; background:rgba(52,211,153,0.45); border-radius:2px;"></div>
-            <div style="flex:1; min-width:0; background:rgba(15,18,25,0.6); border:1px solid rgba(52,211,153,0.22); border-radius:10px; padding:11px 15px; margin:5px 0;">
-              <div style="font-size:14px; color:var(--text); font-weight:800; line-height:1.45;">ปรับปรุงครั้งที่ ๒ &mdash; สมัยวิโรจน์ ลักขณาดิศร</div>
-              <div style="font-size:12.6px; color:var(--text-muted); line-height:1.8; margin-top:4px;">นายกรัฐมนตรีคนที่ ๒๕ แก้ปัญหาน้ำท่วมซ้ำซากในสัปปายะสภาสถานอย่างถาวรด้วยระบบท่อระบายน้ำใต้ดิน ควบคู่กับการสร้างศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช (BANCC) ที่เดินทางเชื่อมต่อกับอาคารรัฐสภาได้อย่างไร้รอยต่อ</div>
-            </div>
-          </div><div style="display:flex; gap:14px; align-items:stretch;">
-            <div style="flex:0 0 118px; text-align:right; padding-top:12px;">
-              <span style="font-family:'Outfit',sans-serif; font-size:12px; font-weight:800; color:#34d399; background:rgba(52,211,153,0.12); border:1px solid rgba(52,211,153,0.38); border-radius:999px; padding:3px 10px; white-space:nowrap;">๒๖๘๐&ndash;๒๖๙๖</span>
-            </div>
-            <div style="flex:0 0 3px; background:rgba(52,211,153,0.45); border-radius:2px;"></div>
-            <div style="flex:1; min-width:0; background:rgba(15,18,25,0.6); border:1px solid rgba(52,211,153,0.22); border-radius:10px; padding:11px 15px; margin:5px 0;">
-              <div style="font-size:14px; color:var(--text); font-weight:800; line-height:1.45;">ปรับปรุงครั้งที่ ๓ (ล่าสุด) &mdash; สมัยทักษิณ ชินวัตร</div>
-              <div style="font-size:12.6px; color:var(--text-muted); line-height:1.8; margin-top:4px;">การปรับปรุงครั้งล่าสุดของอาคาร ในสมัยนายกรัฐมนตรีคนที่ ๓๐</div>
-            </div>
-          </div><div style="display:flex; gap:14px; align-items:stretch;">
-            <div style="flex:0 0 118px; text-align:right; padding-top:12px;">
-              <span style="font-family:'Outfit',sans-serif; font-size:12px; font-weight:800; color:#60a5fa; background:rgba(96,165,250,0.12); border:1px solid rgba(96,165,250,0.38); border-radius:999px; padding:3px 10px; white-space:nowrap;">๒๗๒๓</span>
-            </div>
-            <div style="flex:0 0 3px; background:rgba(96,165,250,0.45); border-radius:2px;"></div>
-            <div style="flex:1; min-width:0; background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.22); border-radius:10px; padding:11px 15px; margin:5px 0;">
-              <div style="font-size:14px; color:var(--text); font-weight:800; line-height:1.45;">ปัจจุบัน</div>
-              <div style="font-size:12.6px; color:var(--text-muted); line-height:1.8; margin-top:4px;">สัปปายะสภาสถานยังคงเป็นที่ประชุมของรัฐสภาไทย รวมระยะเวลาใช้งานต่อเนื่อง ๓๔๓ ปี</div>
-            </div>
-          </div></div>
-        </div><div style="background:linear-gradient(135deg, rgba(250,204,21,0.06) 0%, rgba(15,18,25,0.78) 100%); border:1px solid rgba(250,204,21,0.28); border-radius:14px; padding:18px 20px; margin-top:20px;">
-          <div style="font-size:15px; color:#facc15; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:10px;">👑 พระที่นั่งอนันตสมาคม &mdash; รัฐสภาชั่วคราว</div>
-          <figure style="margin:0 0 18px 0;">
-          <img src="images/ananta_samakhom.jpg" alt="พระที่นั่งอนันตสมาคม" style="width:100%; height:auto; display:block; border-radius:14px; border:1px solid rgba(250,204,21,0.35); box-shadow:0 8px 24px rgba(0,0,0,0.45);">
-          <figcaption style="font-size:11px; color:var(--text-muted); margin-top:7px; line-height:1.6;">พระที่นั่งอนันตสมาคม &mdash; ภาพโดย Paul_012, สัญญาอนุญาต CC BY-SA 3.0 (Wikimedia Commons)</figcaption>
-        </figure><div style="font-size:13px; color:var(--text-muted); line-height:1.9;">สถานที่ที่รัชกาลที่ ๗ พระราชทานรัฐธรรมนูญฉบับปฐมเวลาให้แก่ประชาชน และใช้เป็นที่ประชุมรัฐสภาชั่วคราวในช่วง ๕ ปีแรก (พ.ศ. ๒๓๗๕&ndash;๒๓๘๐) ก่อนย้ายไปยังสัปปายะสภาสถาน</div>
-        </div><div style="background:rgba(250,204,21,0.05); border:1px solid rgba(250,204,21,0.26); border-left:4px solid #facc15; border-radius:10px; padding:16px 20px; margin-top:20px;">
-          <div style="font-size:13.5px; color:#fde047; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:8px;">🔗 อ่านต่อ</div>
-          <div style="font-size:12.8px; color:var(--text-muted); line-height:1.85;">แถบ <strong style="color:var(--text);">⚖️ ฝ่ายนิติบัญญัติ (รัฐสภา)</strong> &middot; <strong style="color:var(--text);">🏛️ ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช (BANCC)</strong> &middot; <strong style="color:var(--text);">🏛️ มรดกและสถาบันแห่งชาติ</strong> &middot; <strong style="color:var(--text);">👑 พระประชาธิปมหาราช (ร.๗)</strong></div>
-        </div>
-
-      </div>
-
+  <header class="nwc-head">
+    <div class="nwc-head-ic">🏛️</div>
+    <div>
+      <h3>สัปปายะสภาสถาน</h3>
+      <p>อาคารรัฐสภาแห่งราชอาณาจักรไทย &mdash; ที่ประชุมของผู้แทนปวงชนมาตั้งแต่ พ.ศ. ๒๓๘๐ ในรัชสมัยพระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว</p>
     </div>
+  </header>
+
+  <div class="nwc-stats">
+    <div class="nwc-stat"><b>๒๓๘๐</b><span>ปีที่เริ่มใช้เป็นที่ประชุมรัฐสภา</span></div>
+    <div class="nwc-stat"><b>๓๔๓ ปี</b><span>ใช้งานต่อเนื่องถึงปัจจุบัน (พ.ศ. ๒๓๘๐&ndash;๒๗๒๓)</span></div>
+    <div class="nwc-stat"><b>๕ ปี</b><span>ช่วงประชุมชั่วคราว ณ พระที่นั่งอนันตสมาคม</span></div>
+    <div class="nwc-stat"><b>๓ ครั้ง</b><span>การปรับปรุงครั้งใหญ่ของอาคาร</span></div>
+  </div>
+
+  <figure class="nwc-figure">
+    <img src="images/sappaya_sapasathan.jpg" alt="สัปปายะสภาสถาน" loading="lazy">
+    <figcaption>สัปปายะสภาสถาน &mdash; ภาพโดย Supanut Arunoprayote, สัญญาอนุญาต CC BY 4.0 (Wikimedia Commons)</figcaption>
+  </figure>
+
+  <section class="nwc-sec">
+    <h4>เส้นทางของสภาไทย</h4>
+    <div class="nwc-time">
+      <div class="nwc-time-row">
+        <div class="nwc-when">๓๑ ธ.ค.<small>๒๓๗๕</small></div>
+        <div>
+          <h5>พระราชทานรัฐธรรมนูญ ณ พระที่นั่งอนันตสมาคม</h5>
+          <p>รัชกาลที่ ๗ พระราชทานรัฐธรรมนูญฉบับปฐมเวลาด้วยพระองค์เอง โดยปราศจากการนองเลือด เปลี่ยนแปลงการปกครองสู่ระบอบรัฐธรรมนูญ และเปิดศักราชของรัฐสภาไทย</p>
+        </div>
+      </div>
+      <div class="nwc-time-row">
+        <div class="nwc-when">๒๓๗๕&ndash;๒๓๘๐</div>
+        <div>
+          <h5>ประชุม ณ พระที่นั่งอนันตสมาคม ๕ ปี</h5>
+          <p>รัฐสภาใช้พระที่นั่งอนันตสมาคมเป็นที่ประชุมชั่วคราวเป็นเวลา ๕ ปี ระหว่างรอการก่อสร้างอาคารรัฐสภาแห่งใหม่</p>
+        </div>
+      </div>
+      <div class="nwc-time-row">
+        <div class="nwc-when">๒๓๘๐</div>
+        <div>
+          <h5>เปิดใช้สัปปายะสภาสถาน</h5>
+          <p>รัฐสภาย้ายเข้าสู่สัปปายะสภาสถานในรัชสมัยรัชกาลที่ ๗ และใช้เป็นที่ประชุมของผู้แทนปวงชนต่อเนื่องมานับแต่นั้น</p>
+        </div>
+      </div>
+      <div class="nwc-time-row">
+        <div class="nwc-when">๒๔๐๑</div>
+        <div>
+          <h5>ปรับปรุงครั้งที่ ๑ &mdash; ต้นรัชสมัยรัชกาลที่ ๙</h5>
+          <p>การปรับปรุงอาคารครั้งใหญ่ครั้งแรก เมื่อพระบาทสมเด็จพระเจ้าอยู่หัวรัชกาลที่ ๙ เสด็จขึ้นครองราชย์</p>
+        </div>
+      </div>
+      <div class="nwc-time-row">
+        <div class="nwc-when">๒๕๗๓</div>
+        <div>
+          <h5>ปักหมุดประชาราษฎรที่ ๓ หน้ารัฐสภา</h5>
+          <p>ขบวนการคนรุ่นใหม่ &ldquo;คณะประชาราษฎรที่ ๓&rdquo; ปักหมุดหน้าอาคารรัฐสภา เพื่อแสดงเจตนารมณ์ประสานความร่วมมือระหว่างภาคประชาชนและภาครัฐ</p>
+        </div>
+      </div>
+      <div class="nwc-time-row">
+        <div class="nwc-when">๒๖๓๗&ndash;๒๖๕๓</div>
+        <div>
+          <h5>ปรับปรุงครั้งที่ ๒ &mdash; สมัยวิโรจน์ ลักขณาดิศร</h5>
+          <p>นายกรัฐมนตรีคนที่ ๒๕ แก้ปัญหาน้ำท่วมซ้ำซากในสัปปายะสภาสถานอย่างถาวรด้วยระบบท่อระบายน้ำใต้ดิน ควบคู่กับการสร้างศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช (BANCC) ที่เดินทางเชื่อมต่อกับอาคารรัฐสภาได้อย่างไร้รอยต่อ</p>
+        </div>
+      </div>
+      <div class="nwc-time-row">
+        <div class="nwc-when">๒๖๘๐&ndash;๒๖๙๖</div>
+        <div>
+          <h5>ปรับปรุงครั้งที่ ๓ (ล่าสุด) &mdash; สมัยทักษิณ ชินวัตร</h5>
+          <p>การปรับปรุงครั้งล่าสุดของอาคาร ในสมัยนายกรัฐมนตรีคนที่ ๓๐</p>
+        </div>
+      </div>
+      <div class="nwc-time-row is-now">
+        <div class="nwc-when">๒๗๒๓</div>
+        <div>
+          <h5>ปัจจุบัน</h5>
+          <p>สัปปายะสภาสถานยังคงเป็นที่ประชุมของรัฐสภาไทย รวมระยะเวลาใช้งานต่อเนื่อง ๓๔๓ ปี</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nwc-sec">
+    <h4>พระที่นั่งอนันตสมาคม &mdash; รัฐสภาชั่วคราว</h4>
+    <div class="nwc-split">
+      <figure class="nwc-figure">
+        <img src="images/ananta_samakhom.jpg" alt="พระที่นั่งอนันตสมาคม" loading="lazy">
+        <figcaption>พระที่นั่งอนันตสมาคม &mdash; ภาพโดย Paul_012, สัญญาอนุญาต CC BY-SA 3.0 (Wikimedia Commons)</figcaption>
+      </figure>
+      <div class="nwc-body">
+        <p>สถานที่ที่รัชกาลที่ ๗ พระราชทานรัฐธรรมนูญฉบับปฐมเวลาให้แก่ประชาชน และใช้เป็นที่ประชุมรัฐสภาชั่วคราวในช่วง ๕ ปีแรก (พ.ศ. ๒๓๗๕&ndash;๒๓๘๐) ก่อนย้ายไปยังสัปปายะสภาสถาน</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="nwc-note">
+    <div class="nwc-note-ic">🔗</div>
+    <div>
+      <h5>อ่านต่อ</h5>
+      <p>แถบ <strong>⚖️ ฝ่ายนิติบัญญัติ (รัฐสภา)</strong> &middot; <strong>🏛️ ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช (BANCC)</strong> &middot; <strong>🏛️ มรดกและสถาบันแห่งชาติ</strong> &middot; <strong>👑 พระประชาธิปมหาราช (ร.๗)</strong></p>
+    </div>
+  </div>
+
+</div>
+</div>
 <div id="portrait-hall-tab" class="db-tab-content">
+<div class="nwc">
 
-      <div style="text-align:left;">
-
-        <div style="display:flex; align-items:center; gap:18px; margin-bottom:22px; border-bottom:2px solid rgba(212,175,55,0.4); background:linear-gradient(135deg, rgba(212,175,55,0.15) 0%, rgba(15,23,42,0.95) 100%); padding:24px; border-radius:18px; box-shadow:0 8px 24px rgba(0,0,0,0.4);">
-          <div style="width:76px; height:76px; background:rgba(212,175,55,0.2); border:2px solid #d4af37; border-radius:20px; display:flex; align-items:center; justify-content:center; font-size:40px; box-shadow:0 0 24px rgba(212,175,55,0.35); flex-shrink:0;">🖼️</div>
-          <div style="flex:1;">
-            <h3 style="color:#d4af37; font-family:'Outfit',sans-serif; margin:0 0 6px 0; font-size:25px; font-weight:800;">หอภาพเหมือน</h3>
-            <p style="color:var(--text-muted); font-size:14px; margin:0; line-height:1.6;">ทางเดินภาพเหมือนพระมหากษัตริย์ ๙ รัชกาลแห่งราชวงศ์จักรี และนายกรัฐมนตรีแห่งราชอาณาจักรไทยทั้ง ๓๓ คน &mdash; เดินชมได้ด้วยตนเอง</p>
-          </div>
-        </div><portrait-hall base="images/hall/" style="height:min(78vh,720px); min-height:460px; border:1px solid rgba(212,175,55,0.35); border-radius:4px; box-shadow:0 12px 40px rgba(0,0,0,0.55);"></portrait-hall><div style="background:rgba(212,175,55,0.05); border:1px solid rgba(212,175,55,0.26); border-left:4px solid #d4af37; border-radius:10px; padding:16px 20px; margin-top:20px;">
-          <div style="font-size:13.5px; color:#d4af37; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:8px;">🧭 วิธีเดินชม</div>
-          <div style="font-size:12.8px; color:var(--text-muted); line-height:1.85;">ลากเมาส์หรือปัดนิ้วไปทางซ้าย-ขวาเพื่อเดินไปตามทางเดิน &middot; กดปุ่ม ‹ › หรือลูกศรบนแป้นพิมพ์เพื่อเลื่อนทีละภาพ &middot; แตะรางด้านล่างเพื่อข้ามไปยังช่วงรัชกาลหรือนายกรัฐมนตรีที่ต้องการ &mdash; ภาพไกลจะพร่ามัวและค่อย ๆ ชัดเมื่อเดินเข้าใกล้ พระบรมฉายาลักษณ์รัชกาลที่ ๙ ประดิษฐานในกรอบทองเพียงองค์เดียว</div>
-        </div>
-
-      </div>
-
+  <header class="nwc-head">
+    <div class="nwc-head-ic">🖼️</div>
+    <div>
+      <h3>หอภาพเหมือน</h3>
+      <p>ทางเดินภาพเหมือนพระมหากษัตริย์ ๙ รัชกาลแห่งราชวงศ์จักรี และนายกรัฐมนตรีแห่งราชอาณาจักรไทยทั้ง ๓๓ คน &mdash; เดินชมได้ด้วยตนเอง</p>
     </div>
+  </header>
+
+  <portrait-hall class="nwc-hall" base="images/hall/"></portrait-hall>
+
+  <div class="nwc-note">
+    <div class="nwc-note-ic">🧭</div>
+    <div>
+      <h5>วิธีเดินชม</h5>
+      <p>ลากเมาส์หรือปัดนิ้วไปทางซ้าย-ขวาเพื่อเดินไปตามทางเดิน &middot; กดปุ่ม ‹ › หรือลูกศรบนแป้นพิมพ์เพื่อเลื่อนทีละภาพ &middot; แตะรางด้านล่างเพื่อข้ามไปยังช่วงรัชกาลหรือนายกรัฐมนตรีที่ต้องการ &mdash; ภาพไกลจะพร่ามัวและค่อย ๆ ชัดเมื่อเดินเข้าใกล้ พระบรมฉายาลักษณ์รัชกาลที่ ๙ ประดิษฐานในกรอบทองเพียงองค์เดียว</p>
+    </div>
+  </div>
+
+</div>
+</div>
 <div id="drafting-process-tab" class="db-tab-content">
+<div class="nwc">
 
-      <div style="text-align:left;">
-
-        <div style="display:flex; align-items:center; gap:18px; margin-bottom:22px; border-bottom:2px solid rgba(52,211,153,0.4); background:linear-gradient(135deg, rgba(52,211,153,0.15) 0%, rgba(15,23,42,0.95) 100%); padding:24px; border-radius:18px; box-shadow:0 8px 24px rgba(0,0,0,0.4);">
-          <div style="width:76px; height:76px; background:rgba(52,211,153,0.2); border:2px solid #34d399; border-radius:20px; display:flex; align-items:center; justify-content:center; font-size:40px; box-shadow:0 0 24px rgba(52,211,153,0.35); flex-shrink:0;">📝</div>
-          <div style="flex:1;">
-            <h3 style="color:#34d399; font-family:'Outfit',sans-serif; margin:0 0 6px 0; font-size:25px; font-weight:800;">กระบวนการร่างรัฐธรรมนูญ</h3>
-            <p style="color:var(--text-muted); font-size:14px; margin:0; line-height:1.6;">ขั้นตอนขั้นต่ำที่การจัดทำรัฐธรรมนูญทุกครั้งต้องผ่าน ซึ่งบัญญัติเพิ่มเป็นมาตรา ๒๙๖ ในหมวด ๑๒ ของรัฐธรรมนูญฉบับปัจจุบันในภายหลัง &mdash; ตั้งแต่การเสนอต่อรัฐสภา การเลือกตั้งสภาร่างรัฐธรรมนูญ จนถึงประชามติเพื่อประกาศใช้</p>
-          </div>
-        </div><div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:12px; margin-bottom:20px;"><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(52,211,153,0.3); border-radius:12px; padding:15px 17px; text-align:center;">
-            <div style="font-family:'Outfit',sans-serif; font-size:24px; font-weight:800; color:#34d399;">๙ ขั้นตอน</div>
-            <div style="font-size:11.5px; color:var(--text-muted); margin-top:5px; line-height:1.6;">จากการเสนอต่อรัฐสภาถึงประชามติประกาศใช้</div>
-          </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(250,204,21,0.3); border-radius:12px; padding:15px 17px; text-align:center;">
-            <div style="font-family:'Outfit',sans-serif; font-size:24px; font-weight:800; color:#facc15;">≥ ๔๐%</div>
-            <div style="font-size:11.5px; color:var(--text-muted); margin-top:5px; line-height:1.6;">สมาชิก สสร. จากการเลือกตั้งโดยประชาชน &mdash; ใช้ตั้งแต่การร่างฉบับถัดไป</div>
-          </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(129,140,248,0.3); border-radius:12px; padding:15px 17px; text-align:center;">
-            <div style="font-family:'Outfit',sans-serif; font-size:24px; font-weight:800; color:#818cf8;">อย่างน้อย ๒</div>
-            <div style="font-size:11.5px; color:var(--text-muted); margin-top:5px; line-height:1.6;">ครั้งของประชามติ &mdash; ฉบับ ๒๕๒๕ เพิ่มขั้นตอนจนมีถึง ๕ รอบ</div>
-          </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(248,113,113,0.3); border-radius:12px; padding:15px 17px; text-align:center;">
-            <div style="font-family:'Outfit',sans-serif; font-size:24px; font-weight:800; color:#f87171;">๑ เดือน</div>
-            <div style="font-size:11.5px; color:var(--text-muted); margin-top:5px; line-height:1.6;">ระยะเวลาเปิดเผยร่างทั้งฉบับให้ประชาชนตรวจดู</div>
-          </div></div><div style="background:rgba(250,204,21,0.05); border:1px solid rgba(250,204,21,0.26); border-left:4px solid #facc15; border-radius:10px; padding:16px 20px; margin-top:20px;">
-          <div style="font-size:13.5px; color:#facc15; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:8px;">📌 นี่คือขั้นตอน &ldquo;อย่างน้อย&rdquo; ไม่ใช่ขั้นตอนทั้งหมด</div>
+        <header class="nwc-head"><div class="nwc-head-ic">📝</div><div><h3>กระบวนการร่างรัฐธรรมนูญ</h3><p>ขั้นตอนขั้นต่ำที่การจัดทำรัฐธรรมนูญทุกครั้งต้องผ่าน ซึ่งบัญญัติเพิ่มเป็นมาตรา ๒๙๖ ในหมวด ๑๒ ของรัฐธรรมนูญฉบับปัจจุบันในภายหลัง &mdash; ตั้งแต่การเสนอต่อรัฐสภา การเลือกตั้งสภาร่างรัฐธรรมนูญ จนถึงประชามติเพื่อประกาศใช้</p></div></header><div class="nwc-stats"><div class="nwc-stat"><b>๙ ขั้นตอน</b><span>จากการเสนอต่อรัฐสภาถึงประชามติประกาศใช้</span></div><div class="nwc-stat"><b>≥ ๔๐%</b><span>สมาชิก สสร. จากการเลือกตั้งโดยประชาชน &mdash; ใช้ตั้งแต่การร่างฉบับถัดไป</span></div><div class="nwc-stat"><b>อย่างน้อย ๒</b><span>ครั้งของประชามติ &mdash; ฉบับ ๒๕๒๕ เพิ่มขั้นตอนจนมีถึง ๕ รอบ</span></div><div class="nwc-stat"><b>๑ เดือน</b><span>ระยะเวลาเปิดเผยร่างทั้งฉบับให้ประชาชนตรวจดู</span></div></div><div class="nwc-note"><div class="nwc-note-ic">📌</div><div><h5>นี่คือขั้นตอน &ldquo;อย่างน้อย&rdquo; ไม่ใช่ขั้นตอนทั้งหมด</h5>
+          
           <div style="font-size:12.8px; color:var(--text-muted); line-height:1.85;">ทั้ง ๙ ขั้นตอนบัญญัติไว้ใน <strong style="color:var(--text);">มาตรา ๒๙๖</strong> ของรัฐธรรมนูญฉบับปัจจุบัน ในฐานะขั้นตอนขั้นต่ำที่การจัดทำรัฐธรรมนูญ<strong style="color:var(--text);">ทุกครั้ง</strong>ต้องผ่าน จะเพิ่มขั้นตอนหรือเพิ่มการออกเสียงประชามติได้ แต่จะตัดทอนหรือข้ามขั้นตอนใดมิได้ &mdash; เมื่อเทียบกับขั้นต่ำนี้ จึงเห็นได้ว่ารัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕ มีการออกเสียงประชามติถึง <strong style="color:var(--text);">๕ รอบ</strong> แทนที่จะเป็น ๒ รอบตามขั้นต่ำ เพราะมีการเพิ่มขั้นตอนให้ประชาชนรับรองร่างทีละส่วน ดูรายละเอียดที่แถบ &ldquo;🗳️ มหากาพย์ประชามติ ๕ รอบ&rdquo;</div>
-        </div><div style="background:rgba(52,211,153,0.05); border:1px solid rgba(52,211,153,0.26); border-left:4px solid #34d399; border-radius:10px; padding:16px 20px; margin-top:20px;">
-          <div style="font-size:13.5px; color:#34d399; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:8px;">🕰️ ที่มาของบทบัญญัตินี้</div>
+        </div></div><div class="nwc-note"><div class="nwc-note-ic">🕰️</div><div><h5>ที่มาของบทบัญญัตินี้</h5>
+          
           <div style="font-size:12.8px; color:var(--text-muted); line-height:1.85;">ขั้นตอนขั้นต่ำทั้ง ๙ ขั้น<strong style="color:var(--text);">เพิ่มเข้ามาในภายหลัง</strong> หลังจากรัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕ ประกาศใช้แล้ว เดิมเกือบจะถูกตราเป็น<strong style="color:var(--text);">พระราชบัญญัติประกอบรัฐธรรมนูญ (พ.ร.ป.)</strong> แต่ท้ายที่สุดได้บัญญัติเพิ่มเป็นมาตรา ๒๙๖ ในหมวด ๑๒ ของรัฐธรรมนูญแทน ทำให้มีสถานะเป็นกฎหมายสูงสุดที่แก้ไขได้ยากกว่า &mdash; และเพราะบัญญัติขึ้นภายหลัง เกณฑ์สมาชิก สสร. จากการเลือกตั้ง<strong style="color:var(--text);">ไม่น้อยกว่าร้อยละ ๔๐</strong> จึงใช้บังคับตั้งแต่การร่างรัฐธรรมนูญฉบับถัดไป ไม่ย้อนไปถึง สสร. ปี ๒๕๒๕ ซึ่งมีผู้แทนภาคประชาชน ๗๙๐ จาก ๓,๐๐๐ คน</div>
-        </div><div style="background:linear-gradient(135deg, rgba(52,211,153,0.06) 0%, rgba(15,18,25,0.78) 100%); border:1px solid rgba(52,211,153,0.28); border-radius:14px; padding:18px 20px; margin-top:20px;">
-          <div style="font-size:15px; color:#34d399; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:10px;">🧭 ๙ ขั้นตอนขั้นต่ำในการร่างรัฐธรรมนูญ</div>
-          <div style="display:flex; gap:14px; align-items:flex-start; background:rgba(15,18,25,0.6); border:1px solid rgba(52,211,153,0.25); border-left:4px solid #34d399; border-radius:11px; padding:13px 16px;">
-            <div style="flex:0 0 42px; height:42px; border-radius:50%; background:rgba(52,211,153,0.15); border:2px solid #34d399; display:flex; align-items:center; justify-content:center; font-family:'Outfit',sans-serif; font-weight:800; color:#34d399; font-size:15px;">๑</div>
+        </div></div><section class="nwc-sec"><h4>๙ ขั้นตอนขั้นต่ำในการร่างรัฐธรรมนูญ</h4>
+          
+          <div class="nwc-note"><div class="nwc-note-ic">📌</div><div><h5>๑</h5>
+            
             <div style="flex:1; min-width:0;">
               <div style="font-size:10.5px; color:#34d399; font-weight:800; letter-spacing:0.4px;">ขั้นริเริ่ม</div>
               <div style="font-size:14.3px; color:var(--text); font-weight:800; margin:2px 0 5px 0;">เสนอร่างรัฐธรรมนูญต่อรัฐสภา</div>
               <div style="font-size:12.6px; color:var(--text-muted); line-height:1.8;">ยื่นญัตติเสนอให้มีการจัดทำรัฐธรรมนูญฉบับใหม่ต่อรัฐสภา เพื่อให้รัฐสภาพิจารณาและให้ความเห็นชอบในการเริ่มกระบวนการ</div>
             </div>
-          </div><div style="text-align:center; color:#34d399; font-size:16px; line-height:1; margin:3px 0;">▼</div><div style="display:flex; gap:14px; align-items:flex-start; background:rgba(15,18,25,0.6); border:1px solid rgba(52,211,153,0.25); border-left:4px solid #34d399; border-radius:11px; padding:13px 16px;">
-            <div style="flex:0 0 42px; height:42px; border-radius:50%; background:rgba(52,211,153,0.15); border:2px solid #34d399; display:flex; align-items:center; justify-content:center; font-family:'Outfit',sans-serif; font-weight:800; color:#34d399; font-size:15px;">๒</div>
+          </div></div><div style="text-align:center; color:#34d399; font-size:16px; line-height:1; margin:3px 0;">▼</div><div class="nwc-note"><div class="nwc-note-ic">📌</div><div><h5>๒</h5>
+            
             <div style="flex:1; min-width:0;">
               <div style="font-size:10.5px; color:#34d399; font-weight:800; letter-spacing:0.4px;">ขั้นพระราชอำนาจ</div>
               <div style="font-size:14.3px; color:var(--text); font-weight:800; margin:2px 0 5px 0;">ทูลเกล้าฯ ถวายให้ทรงลงพระปรมาภิไธย</div>
               <div style="font-size:12.6px; color:var(--text-muted); line-height:1.8;">เมื่อรัฐสภาให้ความเห็นชอบแล้ว ต้องนำขึ้นทูลเกล้าทูลกระหม่อมถวาย เพื่อให้พระมหากษัตริย์ทรงลงพระปรมาภิไธยก่อนเข้าสู่การออกเสียงประชามติ<span style="display:inline-block; font-size:11px; font-weight:700; color:#facc15; background:rgba(250,204,21,0.13); border:1px solid rgba(250,204,21,0.38); border-radius:999px; padding:2px 10px; margin:6px 6px 0 0;">👑 ทรงลงพระปรมาภิไธย</span></div>
             </div>
-          </div><div style="text-align:center; color:#34d399; font-size:16px; line-height:1; margin:3px 0;">▼</div><div style="display:flex; gap:14px; align-items:flex-start; background:rgba(15,18,25,0.6); border:1px solid rgba(52,211,153,0.25); border-left:4px solid #34d399; border-radius:11px; padding:13px 16px;">
-            <div style="flex:0 0 42px; height:42px; border-radius:50%; background:rgba(52,211,153,0.15); border:2px solid #34d399; display:flex; align-items:center; justify-content:center; font-family:'Outfit',sans-serif; font-weight:800; color:#34d399; font-size:15px;">๓</div>
+          </div></div><div style="text-align:center; color:#34d399; font-size:16px; line-height:1; margin:3px 0;">▼</div><div class="nwc-note"><div class="nwc-note-ic">📌</div><div><h5>๓</h5>
+            
             <div style="flex:1; min-width:0;">
               <div style="font-size:10.5px; color:#34d399; font-weight:800; letter-spacing:0.4px;">ประชามติครั้งที่ ๑</div>
               <div style="font-size:14.3px; color:var(--text); font-weight:800; margin:2px 0 5px 0;">ประชาชนลงมติอนุญาตให้จัดทำรัฐธรรมนูญ</div>
               <div style="font-size:12.6px; color:var(--text-muted); line-height:1.8;">การออกเสียงประชามติต้องกำหนด <strong style="color:var(--text);">โครงสร้างของสภาร่างรัฐธรรมนูญ (สสร.) อย่างละเอียด</strong> ให้ประชาชนรู้ก่อนลงมติ โดยสมาชิก สสร. ต้องมาจาก <strong style="color:var(--text);">การเลือกตั้งโดยประชาชนไม่น้อยกว่าร้อยละ ๔๐</strong> ของสมาชิกทั้งหมด (เกณฑ์นี้ใช้บังคับตั้งแต่การจัดทำรัฐธรรมนูญครั้งถัดไป)<span style="display:inline-block; font-size:11px; font-weight:700; color:#34d399; background:rgba(52,211,153,0.13); border:1px solid rgba(52,211,153,0.38); border-radius:999px; padding:2px 10px; margin:6px 6px 0 0;">🗳️ ประชาชนลงมติ</span></div>
             </div>
-          </div><div style="text-align:center; color:#34d399; font-size:16px; line-height:1; margin:3px 0;">▼</div><div style="display:flex; gap:14px; align-items:flex-start; background:rgba(15,18,25,0.6); border:1px solid rgba(52,211,153,0.25); border-left:4px solid #34d399; border-radius:11px; padding:13px 16px;">
-            <div style="flex:0 0 42px; height:42px; border-radius:50%; background:rgba(52,211,153,0.15); border:2px solid #34d399; display:flex; align-items:center; justify-content:center; font-family:'Outfit',sans-serif; font-weight:800; color:#34d399; font-size:15px;">๔</div>
+          </div></div><div style="text-align:center; color:#34d399; font-size:16px; line-height:1; margin:3px 0;">▼</div><div class="nwc-note"><div class="nwc-note-ic">📌</div><div><h5>๔</h5>
+            
             <div style="flex:1; min-width:0;">
               <div style="font-size:10.5px; color:#34d399; font-weight:800; letter-spacing:0.4px;">ขั้นกำหนดการ</div>
               <div style="font-size:14.3px; color:var(--text); font-weight:800; margin:2px 0 5px 0;">ประกาศและลงมติกำหนดวันเลือกตั้ง สสร.</div>
               <div style="font-size:12.6px; color:var(--text-muted); line-height:1.8;">เมื่อประชาชนอนุญาตแล้ว ให้ลงมติกำหนดวันเลือกตั้งสมาชิกสภาร่างรัฐธรรมนูญ และประกาศให้ประชาชนทราบอย่างเป็นทางการ</div>
             </div>
-          </div><div style="text-align:center; color:#34d399; font-size:16px; line-height:1; margin:3px 0;">▼</div><div style="display:flex; gap:14px; align-items:flex-start; background:rgba(15,18,25,0.6); border:1px solid rgba(52,211,153,0.25); border-left:4px solid #34d399; border-radius:11px; padding:13px 16px;">
-            <div style="flex:0 0 42px; height:42px; border-radius:50%; background:rgba(52,211,153,0.15); border:2px solid #34d399; display:flex; align-items:center; justify-content:center; font-family:'Outfit',sans-serif; font-weight:800; color:#34d399; font-size:15px;">๕</div>
+          </div></div><div style="text-align:center; color:#34d399; font-size:16px; line-height:1; margin:3px 0;">▼</div><div class="nwc-note"><div class="nwc-note-ic">📌</div><div><h5>๕</h5>
+            
             <div style="flex:1; min-width:0;">
               <div style="font-size:10.5px; color:#34d399; font-weight:800; letter-spacing:0.4px;">ขั้นคัดกรอง</div>
               <div style="font-size:14.3px; color:var(--text); font-weight:800; margin:2px 0 5px 0;">ตรวจสอบคุณสมบัติผู้สมัคร สสร. ทุกคน</div>
               <div style="font-size:12.6px; color:var(--text-muted); line-height:1.8;">ผู้สมัครเป็นสมาชิกสภาร่างรัฐธรรมนูญ <strong style="color:var(--text);">ทุกคน</strong> ต้องผ่านการตรวจสอบคุณสมบัติก่อน จึงจะมีสิทธิ์ได้รับเลือกเข้าไปร่างกฎหมายสูงสุดของแผ่นดิน</div>
             </div>
-          </div><div style="text-align:center; color:#34d399; font-size:16px; line-height:1; margin:3px 0;">▼</div><div style="display:flex; gap:14px; align-items:flex-start; background:rgba(15,18,25,0.6); border:1px solid rgba(52,211,153,0.25); border-left:4px solid #34d399; border-radius:11px; padding:13px 16px;">
-            <div style="flex:0 0 42px; height:42px; border-radius:50%; background:rgba(52,211,153,0.15); border:2px solid #34d399; display:flex; align-items:center; justify-content:center; font-family:'Outfit',sans-serif; font-weight:800; color:#34d399; font-size:15px;">๖</div>
+          </div></div><div style="text-align:center; color:#34d399; font-size:16px; line-height:1; margin:3px 0;">▼</div><div class="nwc-note"><div class="nwc-note-ic">📌</div><div><h5>๖</h5>
+            
             <div style="flex:1; min-width:0;">
               <div style="font-size:10.5px; color:#34d399; font-weight:800; letter-spacing:0.4px;">ขั้นยกร่าง</div>
               <div style="font-size:14.3px; color:var(--text); font-weight:800; margin:2px 0 5px 0;">ร่างรัฐธรรมนูญทีละหมวด</div>
               <div style="font-size:12.6px; color:var(--text-muted); line-height:1.8;">สภาร่างรัฐธรรมนูญยกร่างเป็นรายหมวด ไม่ร่างรวดเดียวทั้งฉบับ เพื่อให้แต่ละหมวดถูกพิจารณาอย่างรอบคอบตามลำดับ</div>
             </div>
-          </div><div style="text-align:center; color:#34d399; font-size:16px; line-height:1; margin:3px 0;">▼</div><div style="display:flex; gap:14px; align-items:flex-start; background:rgba(15,18,25,0.6); border:1px solid rgba(52,211,153,0.25); border-left:4px solid #34d399; border-radius:11px; padding:13px 16px;">
-            <div style="flex:0 0 42px; height:42px; border-radius:50%; background:rgba(52,211,153,0.15); border:2px solid #34d399; display:flex; align-items:center; justify-content:center; font-family:'Outfit',sans-serif; font-weight:800; color:#34d399; font-size:15px;">๗</div>
+          </div></div><div style="text-align:center; color:#34d399; font-size:16px; line-height:1; margin:3px 0;">▼</div><div class="nwc-note"><div class="nwc-note-ic">📌</div><div><h5>๗</h5>
+            
             <div style="flex:1; min-width:0;">
               <div style="font-size:10.5px; color:#34d399; font-weight:800; letter-spacing:0.4px;">ขั้นกลั่นกรอง</div>
               <div style="font-size:14.3px; color:var(--text); font-weight:800; margin:2px 0 5px 0;">ส.ส. และ ส.ว. พิจารณาทีละหมวด</div>
               <div style="font-size:12.6px; color:var(--text-muted); line-height:1.8;">สมาชิกสภาผู้แทนราษฎรและสมาชิกวุฒิสภาพิจารณาร่างทีละหมวด และมีมติได้ ๓ ทาง &mdash; <span style="display:inline-block; font-size:11px; font-weight:700; color:#34d399; background:rgba(52,211,153,0.13); border:1px solid rgba(52,211,153,0.38); border-radius:999px; padding:2px 10px; margin:6px 6px 0 0;">✅ คงไว้</span><span style="display:inline-block; font-size:11px; font-weight:700; color:#818cf8; background:rgba(129,140,248,0.13); border:1px solid rgba(129,140,248,0.38); border-radius:999px; padding:2px 10px; margin:6px 6px 0 0;">✏️ แก้ไข</span><span style="display:inline-block; font-size:11px; font-weight:700; color:#f87171; background:rgba(248,113,113,0.13); border:1px solid rgba(248,113,113,0.38); border-radius:999px; padding:2px 10px; margin:6px 6px 0 0;">❌ ปัดตก</span><br>และ<strong style="color:var(--text);">ทุกครั้ง</strong>ที่มีมติ ต้องให้พระมหากษัตริย์ทรงลงพระปรมาภิไธย<span style="display:inline-block; font-size:11px; font-weight:700; color:#facc15; background:rgba(250,204,21,0.13); border:1px solid rgba(250,204,21,0.38); border-radius:999px; padding:2px 10px; margin:6px 6px 0 0;">👑 ทรงลงพระปรมาภิไธย</span></div>
             </div>
-          </div><div style="text-align:center; color:#34d399; font-size:16px; line-height:1; margin:3px 0;">▼</div><div style="display:flex; gap:14px; align-items:flex-start; background:rgba(15,18,25,0.6); border:1px solid rgba(52,211,153,0.25); border-left:4px solid #34d399; border-radius:11px; padding:13px 16px;">
-            <div style="flex:0 0 42px; height:42px; border-radius:50%; background:rgba(52,211,153,0.15); border:2px solid #34d399; display:flex; align-items:center; justify-content:center; font-family:'Outfit',sans-serif; font-weight:800; color:#34d399; font-size:15px;">๘</div>
+          </div></div><div style="text-align:center; color:#34d399; font-size:16px; line-height:1; margin:3px 0;">▼</div><div class="nwc-note"><div class="nwc-note-ic">📌</div><div><h5>๘</h5>
+            
             <div style="flex:1; min-width:0;">
               <div style="font-size:10.5px; color:#34d399; font-weight:800; letter-spacing:0.4px;">ขั้นเปิดเผยต่อสาธารณะ</div>
               <div style="font-size:14.3px; color:var(--text); font-weight:800; margin:2px 0 5px 0;">เผยแพร่ร่างทั้งฉบับให้ประชาชนดู ๑ เดือน</div>
               <div style="font-size:12.6px; color:var(--text-muted); line-height:1.8;">เมื่อร่างเสร็จครบทั้งฉบับ ต้องเปิดเผยร่างเป็นสาธารณะ และประกาศให้ประชาชนไปอ่านกันอย่างชัดเจน เป็นระยะเวลา <strong style="color:var(--text);">๑ เดือน</strong> เพื่อรับฟังผลตอบรับจากประชาชนก่อนการลงมติ</div>
             </div>
-          </div><div style="text-align:center; color:#34d399; font-size:16px; line-height:1; margin:3px 0;">▼</div><div style="display:flex; gap:14px; align-items:flex-start; background:rgba(15,18,25,0.6); border:1px solid rgba(52,211,153,0.25); border-left:4px solid #34d399; border-radius:11px; padding:13px 16px;">
-            <div style="flex:0 0 42px; height:42px; border-radius:50%; background:rgba(52,211,153,0.15); border:2px solid #34d399; display:flex; align-items:center; justify-content:center; font-family:'Outfit',sans-serif; font-weight:800; color:#34d399; font-size:15px;">๙</div>
+          </div></div><div style="text-align:center; color:#34d399; font-size:16px; line-height:1; margin:3px 0;">▼</div><div class="nwc-note"><div class="nwc-note-ic">📌</div><div><h5>๙</h5>
+            
             <div style="flex:1; min-width:0;">
               <div style="font-size:10.5px; color:#34d399; font-weight:800; letter-spacing:0.4px;">ประชามติครั้งที่ ๒</div>
               <div style="font-size:14.3px; color:var(--text); font-weight:800; margin:2px 0 5px 0;">ลงมติและประกาศกำหนดการประชามติเพื่อประกาศใช้</div>
               <div style="font-size:12.6px; color:var(--text-muted); line-height:1.8;">ลงมติและประกาศกำหนดการออกเสียงประชามติ เพื่อให้ประชาชนผู้เป็นเจ้าของอำนาจอธิปไตยตัดสินขั้นสุดท้ายว่าจะประกาศใช้รัฐธรรมนูญฉบับนี้หรือไม่<span style="display:inline-block; font-size:11px; font-weight:700; color:#34d399; background:rgba(52,211,153,0.13); border:1px solid rgba(52,211,153,0.38); border-radius:999px; padding:2px 10px; margin:6px 6px 0 0;">🗳️ ประชาชนลงมติ</span></div>
             </div>
-          </div>
-        </div><div style="background:linear-gradient(135deg, rgba(250,204,21,0.06) 0%, rgba(15,18,25,0.78) 100%); border:1px solid rgba(250,204,21,0.28); border-radius:14px; padding:18px 20px; margin-top:20px;">
-          <div style="font-size:15px; color:#facc15; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:10px;">⚖️ ใครคุมกระบวนการในแต่ละด่าน</div>
-          <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:12px;"><div style="background:rgba(15,18,25,0.62); border:1px solid rgba(250,204,21,0.25); border-top:3px solid #facc15; border-radius:11px; padding:14px 15px;">
+          </div></div>
+        </section><section class="nwc-sec"><h4>ใครคุมกระบวนการในแต่ละด่าน</h4>
+          
+          <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:12px"><div class="nwc-card">
           <div style="font-size:22px; line-height:1;">👑</div>
           <div style="font-size:13.8px; color:var(--text); font-weight:800; margin:6px 0 5px 0;">พระมหากษัตริย์</div>
           <div style="font-size:12.3px; color:var(--text-muted); line-height:1.75;">ทรงลงพระปรมาภิไธยตั้งแต่ขั้นเริ่ม และทุกครั้งที่รัฐสภามีมติรายหมวด</div>
-        </div><div style="background:rgba(15,18,25,0.62); border:1px solid rgba(52,211,153,0.25); border-top:3px solid #34d399; border-radius:11px; padding:14px 15px;">
+        </div><div class="nwc-card">
           <div style="font-size:22px; line-height:1;">🗳️</div>
           <div style="font-size:13.8px; color:var(--text); font-weight:800; margin:6px 0 5px 0;">ประชาชน</div>
           <div style="font-size:12.3px; color:var(--text-muted); line-height:1.75;">ลงประชามติอย่างน้อย ๒ ครั้ง &mdash; ก่อนเริ่มร่าง และก่อนประกาศใช้ พร้อมเลือกตั้ง สสร. ด้วยตนเอง</div>
-        </div><div style="background:rgba(15,18,25,0.62); border:1px solid rgba(129,140,248,0.25); border-top:3px solid #818cf8; border-radius:11px; padding:14px 15px;">
+        </div><div class="nwc-card">
           <div style="font-size:22px; line-height:1;">🏛️</div>
           <div style="font-size:13.8px; color:var(--text); font-weight:800; margin:6px 0 5px 0;">รัฐสภา</div>
           <div style="font-size:12.3px; color:var(--text-muted); line-height:1.75;">ส.ส. และ ส.ว. กลั่นกรองทุกหมวด เลือกคงไว้ แก้ไข หรือปัดตก</div>
-        </div><div style="background:rgba(15,18,25,0.62); border:1px solid rgba(248,113,113,0.25); border-top:3px solid #f87171; border-radius:11px; padding:14px 15px;">
+        </div><div class="nwc-card">
           <div style="font-size:22px; line-height:1;">🔍</div>
           <div style="font-size:13.8px; color:var(--text); font-weight:800; margin:6px 0 5px 0;">ความโปร่งใส</div>
           <div style="font-size:12.3px; color:var(--text-muted); line-height:1.75;">ตรวจคุณสมบัติผู้สมัครทุกคน และเปิดร่างทั้งฉบับให้ประชาชนตรวจดู ๑ เดือน</div>
         </div></div>
-        </div><div style="background:rgba(250,204,21,0.05); border:1px solid rgba(250,204,21,0.26); border-left:4px solid #facc15; border-radius:10px; padding:16px 20px; margin-top:20px;">
-          <div style="font-size:13.5px; color:#fde047; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:8px;">📌 กรณีศึกษา: เมื่อ ส.ส.ร. ปฏิเสธที่จะร่างใหม่</div>
+        </section><div class="nwc-note"><div class="nwc-note-ic">📌</div><div><h5>กรณีศึกษา: เมื่อ ส.ส.ร. ปฏิเสธที่จะร่างใหม่</h5>
+          
           <div style="font-size:12.8px; color:var(--text-muted); line-height:1.85;">ในสมัยนายกรัฐมนตรีคนที่ ๒๙ ศ.ดร.ปิยบุตร แสงกนกกุล (พ.ศ. ๒๖๗๒&ndash;๒๖๘๐) มีความพยายามยกร่างรัฐธรรมนูญฉบับใหม่ แต่ ส.ส.ร. ปัดตกด้วยเหตุผลว่าฉบับเดิมสมบูรณ์อยู่แล้ว และแนะนำให้ตราพระราชบัญญัติประกอบรัฐธรรมนูญแทน อันเป็นเครื่องยืนยันเสถียรภาพของรัฐธรรมนูญฉบับ พ.ศ. ๒๕๒๕</div>
-        </div><div style="background:rgba(52,211,153,0.05); border:1px solid rgba(52,211,153,0.26); border-left:4px solid #34d399; border-radius:10px; padding:16px 20px; margin-top:20px;">
-          <div style="font-size:13.5px; color:#34d399; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:8px;">🔗 อ่านต่อ</div>
+        </div></div><div class="nwc-note"><div class="nwc-note-ic">🔗</div><div><h5>อ่านต่อ</h5>
+          
           <div style="font-size:12.8px; color:var(--text-muted); line-height:1.85;">แถบ <strong style="color:var(--text);">🗳️ มหากาพย์ประชามติ ๕ รอบ</strong> (การร่างฉบับ ๒๕๒๕ ในประวัติศาสตร์) &middot; <strong style="color:var(--text);">📜 ลำดับศักดิ์กฎหมาย</strong> &middot; <strong style="color:var(--text);">🏛️ สัปปายะสภาสถาน</strong></div>
-        </div>
+        </div></div>
 
       </div>
-
-    </div>
+</div>
 <div id="referendum-tab" class="db-tab-content">
-
+<div class="nwc"><header class="nwc-head"><div class="nwc-head-ic">🗳️</div><div><h3>มหากาพย์ประชามติ ๕ รอบ</h3></div></header>
 
       <p style="margin-bottom: 16px; font-size: 15px; color: var(--text-muted);">
 
-
         รัฐธรรมนูญฉบับพุทธศักราช ๒๕๒๕ นี้ ถือเป็นรัฐธรรมนูญฉบับที่ประชาชนมีส่วนร่วมสูงสุด ผ่านการทำประชามติที่โปร่งใสและตรวจสอบได้ถึง ๕ รอบ โดยมีรายละเอียดและประเด็นสำคัญดังนี้:
-
 
       </p>
 
-      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:12px; margin-bottom:22px;">
-        <div style="background:linear-gradient(135deg, rgba(251,146,60,0.09) 0%, rgba(15,18,25,0.7) 100%); border:1px solid rgba(251,146,60,0.3); border-radius:12px; padding:15px 17px;">
-          <div style="font-size:11px; letter-spacing:0.5px; color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:7px;">ผู้ริเริ่มจัดทำ</div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:12px">
+        <div class="nwc-card"><h5>ผู้ริเริ่มจัดทำ</h5>
+          
           <div style="font-size:14.5px; color:var(--text); font-weight:700; line-height:1.45;">อภิสิทธิ์ เวชชาชีวะ</div>
           <div style="font-size:12px; color:var(--text-muted); margin-top:4px; line-height:1.6;">นายกรัฐมนตรีคนที่ ๑๓ ร่วมกับพระบาทสมเด็จพระเจ้าอยู่หัว ร.๙ เริ่มกระบวนการใน พ.ศ. ๒๕๒๕</div>
         </div>
-        <div style="background:linear-gradient(135deg, rgba(96,165,250,0.09) 0%, rgba(15,18,25,0.7) 100%); border:1px solid rgba(96,165,250,0.3); border-radius:12px; padding:15px 17px;">
-          <div style="font-size:11px; letter-spacing:0.5px; color:#93c5fd; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:7px;">สภาร่างรัฐธรรมนูญ (สสร.)</div>
+        <div class="nwc-card"><h5>สภาร่างรัฐธรรมนูญ (สสร.)</h5>
+          
           <div style="font-size:14.5px; color:var(--text); font-weight:700; line-height:1.45;">๓,๐๐๐ คน</div>
           <div style="font-size:12px; color:var(--text-muted); margin-top:4px; line-height:1.6;">นักวิชาการ ๒,๒๑๐ คน และชาวบ้าน ๗๙๐ คน &mdash; สัดส่วนภาคประชาชนกว่า ๑ ใน ๔</div>
         </div>
-        <div style="background:linear-gradient(135deg, rgba(74,222,128,0.09) 0%, rgba(15,18,25,0.7) 100%); border:1px solid rgba(74,222,128,0.3); border-radius:12px; padding:15px 17px;">
-          <div style="font-size:11px; letter-spacing:0.5px; color:#86efac; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:7px;">ผู้ประกาศใช้</div>
+        <div class="nwc-card"><h5>ผู้ประกาศใช้</h5>
+          
           <div style="font-size:14.5px; color:var(--text); font-weight:700; line-height:1.45;">สุวัจน์ ลิปตพัลลภ</div>
           <div style="font-size:12px; color:var(--text-muted); margin-top:4px; line-height:1.6;">นายกรัฐมนตรีคนที่ ๑๔ ประกาศใช้ใน พ.ศ. ๒๕๒๖ หนึ่งปีหลังเริ่มกระบวนการ</div>
         </div>
-        <div style="background:linear-gradient(135deg, rgba(192,132,252,0.09) 0%, rgba(15,18,25,0.7) 100%); border:1px solid rgba(192,132,252,0.3); border-radius:12px; padding:15px 17px;">
-          <div style="font-size:11px; letter-spacing:0.5px; color:#c084fc; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:7px;">ขนาดของฉบับที่ผ่านมติ</div>
+        <div class="nwc-card"><h5>ขนาดของฉบับที่ผ่านมติ</h5>
+          
           <div style="font-size:14.5px; color:var(--text); font-weight:700; line-height:1.45;">๓๘ หมวด ๑,๑๕๙ มาตรา (ปัจจุบัน ๑,๑๖๐)</div>
           <div style="font-size:12px; color:var(--text-muted); margin-top:4px; line-height:1.6;">ใหญ่กว่าฉบับ พ.ศ. ๒๔๔๕ ราวสองเท่าครึ่ง (๑๖ หมวด ๔๕๘ มาตรา)</div>
         </div>
       </div>
 
-      <div style="background:rgba(250,204,21,0.05); border:1px solid rgba(250,204,21,0.26); border-left:4px solid #facc15; border-radius:10px; padding:15px 19px; margin-bottom:24px;">
-        <div style="font-size:13px; color:#fde047; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:7px;">🧭 แต่ละรอบลงมติเรื่องอะไร</div>
+      <div class="nwc-note"><div class="nwc-note-ic">🧭</div><div><h5>แต่ละรอบลงมติเรื่องอะไร</h5>
+        
         <p style="font-size:12.5px; color:var(--text-muted); line-height:1.85; margin:0;">การลงประชามติแบ่งตามกลุ่มหมวดของร่าง มิใช่ลงมติรวดเดียวทั้งฉบับ &mdash; <strong style="color:#fef08a;">รอบที่ ๑</strong> รับหลักการและตั้ง สสร. &middot; <strong style="color:#fef08a;">รอบที่ ๒</strong> หมวด ๑-๑๖ โครงสร้างอำนาจรัฐ &middot; <strong style="color:#fef08a;">รอบที่ ๓</strong> หมวด ๑๗-๒๖ สิทธิเสรีภาพขั้นก้าวหน้า &middot; <strong style="color:#fef08a;">รอบที่ ๔</strong> หมวด ๒๗-๓๖ กลไกตรวจสอบ &middot; <strong style="color:#fef08a;">รอบที่ ๕</strong> หมวดพิเศษ อำนาจสูงสุดพิทักษ์ประชาชน ๘ มาตรา ประชาชนจึงเห็นชอบหรือคัดค้านได้เป็นส่วน ๆ โดยไม่ต้องคว่ำทั้งฉบับ</p>
-      </div>
-
-
+      </div></div>
 
       <!-- Referendum Stats Overview Card -->
 
-
       <div class="chart-container" style="margin-bottom: 24px;">
-
 
         <!-- Turnout chart -->
 
-
         <div class="square-chart-wrapper">
-
 
           <svg class="square-chart" viewBox="0 0 36 36">
 
-
             <rect class="square-chart-bg" x="5.5" y="5.5" width="25" height="25" rx="2" />
-
 
             <rect class="square-chart-fill" stroke-dasharray="82, 100" x="5.5" y="5.5" width="25" height="25" rx="2" />
 
-
             <text class="square-chart-text" x="18" y="20.35">๘๒%</text>
 
-
           </svg>
-
 
           <span style="font-size: 12px; font-weight:700; color:var(--text);">ผู้ใช้สิทธิเฉลี่ย</span>
 
-
         </div>
-
 
         <!-- Approval chart -->
 
-
         <div class="square-chart-wrapper">
-
 
           <svg class="square-chart" viewBox="0 0 36 36">
 
-
             <rect class="square-chart-bg" x="5.5" y="5.5" width="25" height="25" rx="2" />
-
 
             <rect class="square-chart-fill" stroke-dasharray="94, 100" x="5.5" y="5.5" width="25" height="25" rx="2" />
 
-
             <text class="square-chart-text" x="18" y="20.35">๙๔%</text>
-
 
           </svg>
 
-
           <span style="font-size: 12px; font-weight:700; color:var(--text);">เห็นชอบเฉลี่ย</span>
 
-
         </div>
-
 
         <!-- Approval vs Disapproval comparison bars -->
 
-
         <div class="bar-chart-wrapper">
-
 
           <div class="bar-chart-title">สถิติคะแนนเสียงเฉลี่ยของทั้ง ๕ รอบ</div>
 
-
           <div class="bar-row">
-
 
             <div class="bar-label">เห็นชอบ</div>
 
-
             <div class="bar-track">
-
 
               <div class="bar-fill" style="width: 94.2%; background: var(--accent-green);"></div>
 
-
             </div>
-
 
             <div class="bar-val" style="color: var(--accent-green);">๙๔.๒%</div>
 
-
           </div>
-
 
           <div class="bar-row">
 
-
             <div class="bar-label">ไม่เห็นชอบ</div>
-
 
             <div class="bar-track">
 
-
               <div class="bar-fill" style="width: 5.8%; background: var(--accent-red);"></div>
 
-
             </div>
-
 
             <div class="bar-val" style="color: var(--accent-red);">๕.๘%</div>
 
-
           </div>
-
 
         </div>
 
-
       </div>
-
 
       <div class="ref-timeline">
 
-
         <div class="ref-timeline-item success">
-
 
           <div class="ref-dot">๑</div>
 
-
           <div class="ref-info">
-
 
             <div class="ref-title-row">
 
-
               <span class="ref-round-name">ประชามติรอบที่ ๑: รับหลักการร่างรัฐธรรมนูญฉบับใหม่</span>
-
 
               <span class="ref-status-badge pass">ผ่านมติ 🟢</span>
 
-
             </div>
 
-
             <p class="ref-desc">ประชาชนเห็นชอบให้จัดทำร่างรัฐธรรมนูญฉบับใหม่เพื่อแทนที่ฉบับ พ.ศ. ๒๔๔๕ และเห็นชอบการจัดตั้ง <strong>สภาร่างรัฐธรรมนูญ (สสร.)</strong> ที่มีสมาชิก ๓,๐๐๐ คน</p>
-            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; align-items:center;">
+            <div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center">
               <span style="font-size:10.5px; font-weight:800; letter-spacing:0.4px; font-family:'Outfit',sans-serif; color:#94a3b8; background:rgba(148,163,184,0.12); border:1px solid rgba(148,163,184,0.3); border-radius:20px; padding:3px 10px;">ครั้งแรก</span>
               <span style="font-size:12px; color:var(--text-muted); background:rgba(15,18,25,0.6); border:1px solid rgba(255,255,255,0.09); border-radius:8px; padding:4px 11px;">ผู้ใช้สิทธิ <strong style="color:var(--text);">๘๐.๔%</strong></span>
               <span style="font-size:12px; color:var(--text-muted); background:rgba(74,222,128,0.08); border:1px solid rgba(74,222,128,0.3); border-radius:8px; padding:4px 11px;">เห็นชอบ <strong style="color:#4ade80;">๙๑.๗%</strong></span>
@@ -2800,36 +2706,26 @@ function playAudioMobile(btn, src) {
               <span style="font-size:11.5px; color:#94a3b8; padding:4px 2px;">รับหลักการ + จัดตั้ง สสร.</span>
             </div>
 
-
           </div>
-
 
         </div>
 
-
         <div class="ref-timeline-item success">
-
 
           <div class="ref-dot">๒</div>
 
-
           <div class="ref-info">
-
 
             <div class="ref-title-row">
 
-
               <span class="ref-round-name">ประชามติรอบที่ ๒: รับรองโครงสร้างพื้นฐาน (หมวด ๑ - ๑๖)</span>
-
 
               <span class="ref-status-badge pass">ผ่านมติ 🟢</span>
 
-
             </div>
 
-
             <p class="ref-desc">พิจารณารับรองบททั่วไป สิทธิเสรีภาพ รัฐสภา คณะรัฐมนตรี และศาล โดยเน้นการจัดระเบียบบริหารราชการแผ่นดินและระบบรัฐสภา</p>
-            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; align-items:center;">
+            <div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center">
               <span style="font-size:10.5px; font-weight:800; letter-spacing:0.4px; font-family:'Outfit',sans-serif; color:#94a3b8; background:rgba(148,163,184,0.12); border:1px solid rgba(148,163,184,0.3); border-radius:20px; padding:3px 10px;">ครั้งแรก</span>
               <span style="font-size:12px; color:var(--text-muted); background:rgba(15,18,25,0.6); border:1px solid rgba(255,255,255,0.09); border-radius:8px; padding:4px 11px;">ผู้ใช้สิทธิ <strong style="color:var(--text);">๗๙.๑%</strong></span>
               <span style="font-size:12px; color:var(--text-muted); background:rgba(74,222,128,0.08); border:1px solid rgba(74,222,128,0.3); border-radius:8px; padding:4px 11px;">เห็นชอบ <strong style="color:#4ade80;">๘๙.๓%</strong></span>
@@ -2837,36 +2733,26 @@ function playAudioMobile(btn, src) {
               <span style="font-size:11.5px; color:#94a3b8; padding:4px 2px;">หมวด ๑-๑๖ &mdash; ผ่านด้วยคะแนนต่ำสุดของครั้งแรก</span>
             </div>
 
-
           </div>
-
 
         </div>
 
-
         <div class="ref-timeline-item success">
-
 
           <div class="ref-dot">๓</div>
 
-
           <div class="ref-info">
-
 
             <div class="ref-title-row">
 
-
               <span class="ref-round-name">ประชามติรอบที่ ๓: รับรองการขยายสิทธิเสรีภาพ (หมวด ๑๗ - ๒๖)</span>
-
 
               <span class="ref-status-badge pass">ผ่านมติ 🟢</span>
 
-
             </div>
 
-
             <p class="ref-desc">พิจารณารับรองการเพิ่มหมวดว่าด้วยสิทธิพลเมืองขั้นก้าวหน้า การคุ้มครองแรงงาน สิทธิชุมชน และสวัสดิการแห่งรัฐ</p>
-            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; align-items:center;">
+            <div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center">
               <span style="font-size:10.5px; font-weight:800; letter-spacing:0.4px; font-family:'Outfit',sans-serif; color:#94a3b8; background:rgba(148,163,184,0.12); border:1px solid rgba(148,163,184,0.3); border-radius:20px; padding:3px 10px;">ครั้งแรก</span>
               <span style="font-size:12px; color:var(--text-muted); background:rgba(15,18,25,0.6); border:1px solid rgba(255,255,255,0.09); border-radius:8px; padding:4px 11px;">ผู้ใช้สิทธิ <strong style="color:var(--text);">๘๑.๖%</strong></span>
               <span style="font-size:12px; color:var(--text-muted); background:rgba(74,222,128,0.08); border:1px solid rgba(74,222,128,0.3); border-radius:8px; padding:4px 11px;">เห็นชอบ <strong style="color:#4ade80;">๙๒.๕%</strong></span>
@@ -2874,42 +2760,30 @@ function playAudioMobile(btn, src) {
               <span style="font-size:11.5px; color:#94a3b8; padding:4px 2px;">หมวด ๑๗-๒๖</span>
             </div>
 
-
           </div>
-
 
         </div>
 
-
         <div class="ref-timeline-item failed">
-
 
           <div class="ref-dot">๔</div>
 
-
           <div class="ref-info">
-
 
             <div class="ref-title-row">
 
-
               <span class="ref-round-name">ประชามติรอบที่ ๔ (ครั้งแรก): กลไกการตรวจสอบ (หมวด ๒๗ - ๓๖)</span>
-
 
               <span class="ref-status-badge fail">ไม่เห็นชอบ ❌ (ไม่ผ่าน)</span>
 
-
             </div>
-
 
             <p class="ref-desc" style="color: #f87171;">
 
-
               <strong>เกิดจุดเปลี่ยนสำคัญ:</strong> ร่างแรกในรอบนี้<strong>ไม่มีการบัญญัติเรื่องมาตรา ๘ (บทคุ้มครองและเคารพสักการะองค์พระมหากษัตริย์) อยู่เลย</strong> แม้ว่าจะไม่มีความขัดแย้งใดๆ ระหว่างพระมหากษัตริย์ รัฐสภา และประชาชนเลยก็ตาม แต่เนื่องจากประชาชนมีความรักและความจงรักภักดีต่อ <strong>พระบาทสมเด็จพระเจ้าอยู่หัว รัชกาลที่ ๙</strong> เป็นอย่างยิ่ง จึงร่วมใจกันคว่ำร่างประชามติรอบที่ ๔ นี้ลงด้วยมติเสียงข้างมาก
 
-
             </p>
-            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; align-items:center;">
+            <div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center">
               <span style="font-size:10.5px; font-weight:800; letter-spacing:0.4px; font-family:'Outfit',sans-serif; color:#94a3b8; background:rgba(148,163,184,0.12); border:1px solid rgba(148,163,184,0.3); border-radius:20px; padding:3px 10px;">ครั้งแรก</span>
               <span style="font-size:12px; color:var(--text-muted); background:rgba(15,18,25,0.6); border:1px solid rgba(255,255,255,0.09); border-radius:8px; padding:4px 11px;">ผู้ใช้สิทธิ <strong style="color:var(--text);">๘๘.๒%</strong></span>
               <span style="font-size:12px; color:var(--text-muted); background:rgba(74,222,128,0.08); border:1px solid rgba(74,222,128,0.3); border-radius:8px; padding:4px 11px;">เห็นชอบ <strong style="color:#4ade80;">๑๙.๔%</strong></span>
@@ -2917,304 +2791,230 @@ function playAudioMobile(btn, src) {
               <span style="font-size:11.5px; color:#94a3b8; padding:4px 2px;">หมวด ๒๗-๓๖ &mdash; ผู้ใช้สิทธิสูงสุดของทั้งกระบวนการ</span>
             </div>
 
-
           </div>
 
-
         </div>
-
 
         <div class="ref-timeline-item rerun">
 
-
           <div class="ref-dot">🔧</div>
-
 
           <div class="ref-info">
 
-
             <div class="ref-title-row">
-
 
               <span class="ref-round-name">การปรับปรุงแก้ไขร่างและลงมติใหม่</span>
 
-
               <span class="ref-status-badge info">ดำเนินการปรับแก้ไข 🔵</span>
-
 
             </div>
 
-
             <p class="ref-desc">
-
 
               คณะกรรมการร่างรัฐธรรมนูญดำเนินการ <strong>เพิ่ม "มาตรา ๘"</strong> เข้ามาในร่างอย่างสมบูรณ์ เพื่อสะท้อนความเคารพรักของปวงชน และเพื่อให้กระบวนการโปร่งใสและได้รับการยอมรับสูงสุด จึงมีการจัดให้มีการ <strong>ออกเสียงลงประชามติใหม่ทั้งหมด ตั้งแต่รอบที่ ๑ ถึงรอบที่ ๕</strong> อีกครั้งหนึ่ง
 
-
             </p>
-
 
           </div>
 
-
         </div>
-
 
         <div class="ref-timeline-item success">
 
-
           <div class="ref-dot">๕</div>
-
 
           <div class="ref-info">
 
-
             <div class="ref-title-row">
-
 
               <span class="ref-round-name">การประชามติใหม่ รอบที่ ๑ - ๕ (ครั้งที่สอง)</span>
 
-
               <span class="ref-status-badge pass">ผ่านมติสมบูรณ์ 🟢</span>
-
 
             </div>
 
-
             <p class="ref-desc">
-
 
               ภายหลังการเพิ่มมาตรา ๘ ประชาชนได้ลงประชามติเห็นชอบผ่านมติทั้ง ๕ รอบอย่างเป็นเอกฉันท์ รวมถึง <strong>รอบที่ ๕ (หมวดพิเศษอำนาจสูงสุดพิทักษ์ประชาชน)</strong> ทำให้รัฐธรรมนูญฉบับปี ๒๕๒๕ ประกาศใช้อย่างสมบูรณ์และสง่างามที่สุด
 
-
             </p>
-            <div style="margin-top:14px; background:rgba(15,18,25,0.5); border:1px solid rgba(74,222,128,0.25); border-radius:12px; padding:14px 16px;">
-              <div style="font-size:12.5px; color:#86efac; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:10px;">📊 ผลการลงมติครั้งที่สอง ทั้ง ๕ รอบ</div>
+            <div class="nwc-card"><h5>ผลการลงมติครั้งที่สอง ทั้ง ๕ รอบ</h5>
+              
               <div style="overflow-x:auto;">
-              <table style="width:100%; border-collapse:collapse; min-width:480px;">
+              <div class="nwc-scroll"><table class="nwc-table">
                 <tr>
-                  <th style="padding:7px 10px; border-bottom:1.5px solid rgba(74,222,128,0.35); color:#86efac; font-size:11px; letter-spacing:0.4px; font-family:'Outfit',sans-serif; text-align:center;">รอบ</th>
-                  <th style="padding:7px 10px; border-bottom:1.5px solid rgba(74,222,128,0.35); color:#86efac; font-size:11px; letter-spacing:0.4px; font-family:'Outfit',sans-serif; text-align:left;">เนื้อหาที่ลงมติ</th>
-                  <th style="padding:7px 10px; border-bottom:1.5px solid rgba(74,222,128,0.35); color:#86efac; font-size:11px; letter-spacing:0.4px; font-family:'Outfit',sans-serif; text-align:right;">ผู้ใช้สิทธิ</th>
-                  <th style="padding:7px 10px; border-bottom:1.5px solid rgba(74,222,128,0.35); color:#86efac; font-size:11px; letter-spacing:0.4px; font-family:'Outfit',sans-serif; text-align:right;">เห็นชอบ</th>
-                  <th style="padding:7px 10px; border-bottom:1.5px solid rgba(74,222,128,0.35); color:#86efac; font-size:11px; letter-spacing:0.4px; font-family:'Outfit',sans-serif; text-align:right;">ไม่เห็นชอบ</th>
-                </tr>
-                <tr>
-                  <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#86efac; font-weight:800; font-family:'Outfit',sans-serif; text-align:center;">๑</td>
-                  <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.5px;">รับหลักการ + สสร.</td>
-                  <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text); text-align:right; font-size:12.5px;">๘๑.๒%</td>
-                  <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#4ade80; text-align:right; font-weight:700; font-size:12.5px;">๙๓.๘%</td>
-                  <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#f87171; text-align:right; font-size:12.5px;">๖.๒%</td>
+                  <th>รอบ</th>
+                  <th>เนื้อหาที่ลงมติ</th>
+                  <th>ผู้ใช้สิทธิ</th>
+                  <th>เห็นชอบ</th>
+                  <th>ไม่เห็นชอบ</th>
                 </tr>
                 <tr>
-                  <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#86efac; font-weight:800; font-family:'Outfit',sans-serif; text-align:center;">๒</td>
-                  <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.5px;">หมวด ๑-๑๖ โครงสร้างอำนาจรัฐ</td>
-                  <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text); text-align:right; font-size:12.5px;">๘๐.๙%</td>
-                  <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#4ade80; text-align:right; font-weight:700; font-size:12.5px;">๙๒.๖%</td>
-                  <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#f87171; text-align:right; font-size:12.5px;">๗.๔%</td>
+                  <td>๑</td>
+                  <td>รับหลักการ + สสร.</td>
+                  <td>๘๑.๒%</td>
+                  <td>๙๓.๘%</td>
+                  <td>๖.๒%</td>
                 </tr>
                 <tr>
-                  <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#86efac; font-weight:800; font-family:'Outfit',sans-serif; text-align:center;">๓</td>
-                  <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.5px;">หมวด ๑๗-๒๖ สิทธิเสรีภาพ</td>
-                  <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text); text-align:right; font-size:12.5px;">๘๑.๗%</td>
-                  <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#4ade80; text-align:right; font-weight:700; font-size:12.5px;">๙๔.๑%</td>
-                  <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#f87171; text-align:right; font-size:12.5px;">๕.๙%</td>
+                  <td>๒</td>
+                  <td>หมวด ๑-๑๖ โครงสร้างอำนาจรัฐ</td>
+                  <td>๘๐.๙%</td>
+                  <td>๙๒.๖%</td>
+                  <td>๗.๔%</td>
                 </tr>
                 <tr>
-                  <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#86efac; font-weight:800; font-family:'Outfit',sans-serif; text-align:center;">๔</td>
-                  <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.5px;">หมวด ๒๗-๓๖ กลไกตรวจสอบ <strong style="color:#fde047;">(ฉบับมีมาตรา ๘)</strong></td>
-                  <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text); text-align:right; font-size:12.5px;">๘๔.๖%</td>
-                  <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#4ade80; text-align:right; font-weight:700; font-size:12.5px;">๙๗.๒%</td>
-                  <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#f87171; text-align:right; font-size:12.5px;">๒.๘%</td>
+                  <td>๓</td>
+                  <td>หมวด ๑๗-๒๖ สิทธิเสรีภาพ</td>
+                  <td>๘๑.๗%</td>
+                  <td>๙๔.๑%</td>
+                  <td>๕.๙%</td>
                 </tr>
                 <tr>
-                  <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#86efac; font-weight:800; font-family:'Outfit',sans-serif; text-align:center;">๕</td>
-                  <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.5px;">หมวดพิเศษ อำนาจสูงสุดพิทักษ์ประชาชน</td>
-                  <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text); text-align:right; font-size:12.5px;">๘๑.๖%</td>
-                  <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#4ade80; text-align:right; font-weight:700; font-size:12.5px;">๙๓.๓%</td>
-                  <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#f87171; text-align:right; font-size:12.5px;">๖.๗%</td>
+                  <td>๔</td>
+                  <td>หมวด ๒๗-๓๖ กลไกตรวจสอบ <strong style="color:#fde047;">(ฉบับมีมาตรา ๘)</strong></td>
+                  <td>๘๔.๖%</td>
+                  <td>๙๗.๒%</td>
+                  <td>๒.๘%</td>
                 </tr>
-                <tr style="background:rgba(74,222,128,0.07);">
-                  <td colspan="2" style="padding:10px; color:var(--text); font-weight:800; font-family:'Outfit',sans-serif; font-size:12.5px;">ค่าเฉลี่ยทั้ง ๕ รอบ</td>
-                  <td style="padding:10px; text-align:right; color:var(--text); font-weight:800; font-size:13px;">๘๒%</td>
-                  <td style="padding:10px; text-align:right; color:#4ade80; font-weight:800; font-size:13px;">๙๔.๒%</td>
-                  <td style="padding:10px; text-align:right; color:#f87171; font-weight:800; font-size:13px;">๕.๘%</td>
+                <tr>
+                  <td>๕</td>
+                  <td>หมวดพิเศษ อำนาจสูงสุดพิทักษ์ประชาชน</td>
+                  <td>๘๑.๖%</td>
+                  <td>๙๓.๓%</td>
+                  <td>๖.๗%</td>
                 </tr>
-              </table>
+                <tr>
+                  <td colspan="2">ค่าเฉลี่ยทั้ง ๕ รอบ</td>
+                  <td>๘๒%</td>
+                  <td>๙๔.๒%</td>
+                  <td>๕.๘%</td>
+                </tr>
+              </table></div>
               </div>
               <div style="font-size:11.5px; color:#64748b; margin-top:9px; line-height:1.7;">ค่าเฉลี่ยแถวล่างสุดคือตัวเลขเดียวกับแผนภูมิด้านบนของแถบนี้ &mdash; รอบที่ ๔ ซึ่งเคยเป็นรอบที่ถูกคว่ำ กลับมาเป็นรอบที่ได้คะแนนเห็นชอบสูงสุดหลังเพิ่มมาตรา ๘</div>
             </div>
 
-
           </div>
-
 
         </div>
 
-
       </div>
 
-
     
-      <div style="background:linear-gradient(135deg, rgba(251,146,60,0.08) 0%, rgba(15,18,25,0.7) 100%); border:1px solid rgba(251,146,60,0.28); border-radius:14px; padding:20px 22px; margin-top:24px;">
-        <div style="font-size:15px; color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:12px;">⚖️ เหตุใดจึงเรียกว่า &ldquo;มหากาพย์&rdquo;</div>
+      <section class="nwc-sec"><h4>เหตุใดจึงเรียกว่า &ldquo;มหากาพย์&rdquo;</h4>
+        
         <div style="font-size:13.5px; color:var(--text-muted); line-height:1.95;">
           &bull; <strong style="color:#fdba74;">ลงมติทั้งสิ้น ๙ ครั้ง:</strong> รอบที่ ๑-๔ ในครั้งแรก แล้วลงใหม่ทั้ง ๕ รอบในครั้งที่สอง ไม่ใช่การลงประชามติ ๕ ครั้งอย่างที่ชื่อแถบชวนให้เข้าใจ<br>
           &bull; <strong style="color:#fdba74;">คว่ำร่างโดยไม่มีความขัดแย้ง:</strong> รอบที่ ๔ ถูกคว่ำทั้งที่ไม่มีข้อพิพาทใดระหว่างพระมหากษัตริย์ รัฐสภา และประชาชน ประชาชนใช้สิทธิคัดค้านเพื่อ<strong>เพิ่ม</strong>บทคุ้มครองเข้าไป มิใช่เพื่อตัดออก<br>
           &bull; <strong style="color:#fdba74;">ลงใหม่ทั้งหมดแทนที่จะลงเฉพาะรอบที่ตก:</strong> คณะกรรมการร่างเลือกจัดลงมติใหม่ตั้งแต่รอบที่ ๑ ทั้งที่รอบ ๑-๓ ผ่านไปแล้ว เพื่อให้ทุกหมวดของฉบับที่ประกาศใช้ผ่านมติชุดเดียวกัน<br>
           &bull; <strong style="color:#fdba74;">ผู้ใช้สิทธิสูงสุดอยู่ที่รอบที่ถูกคว่ำ:</strong> ๘๘.๒% ในรอบที่ ๔ ครั้งแรก สูงกว่าทุกรอบทั้งสองครั้ง แสดงว่าประชาชนออกมาใช้สิทธิมากที่สุดในรอบที่ตั้งใจจะปฏิเสธ
         </div>
-      </div>
+      </section>
 
     </div>
+</div>
 <div id="constitutions-tab" class="db-tab-content">
-
+<div class="nwc"><header class="nwc-head"><div class="nwc-head-ic">📜</div><div><h3>รัฐธรรมนูญ ๓ ฉบับหลัก</h3></div></header>
 
       <p style="margin-bottom: 16px; font-size: 15px; color: var(--text-muted);">
 
-
         เปรียบเทียบรัฐธรรมนูญหลักทั้ง ๓ ฉบับในประวัติศาสตร์การเมืองไทยยุคประชาธิปไตยไร้รัฐประหาร:
-
 
       </p>
 
-
       <div class="table-container">
 
-
-        <table class="styled-table">
-
+        <div class="nwc-scroll"><table class="styled-table nwc-table">
 
           <thead>
 
+            <tr>
 
-            <tr style="background: rgba(15, 23, 42, 0.95); color: #ffffff;">
+              <th>ฉบับ</th>
 
+              <th>จัดทำในปี</th>
 
-              <th style="width: 140px; padding: 14px 10px; text-align: left; color: #ffffff;">ฉบับ</th>
+              <th>ประกาศใช้ในปี</th>
 
+              <th>จัดทำในนายก</th>
 
-              <th style="width: 95px; text-align: center; padding: 14px 6px; color: #facc15;">จัดทำในปี</th>
+              <th>ประกาศใช้ในนายก</th>
 
+              <th>ขนาด / มาตรา</th>
 
-              <th style="width: 95px; text-align: center; padding: 14px 6px; color: #fb923c;">ประกาศใช้ในปี</th>
-
-
-              <th style="width: 160px; text-align: center; padding: 14px 8px; color: #3b82f6;">จัดทำในนายก</th>
-
-
-              <th style="width: 160px; text-align: center; padding: 14px 8px; color: #38bdf8;">ประกาศใช้ในนายก</th>
-
-
-              <th style="width: 120px; text-align: center; padding: 14px 8px; color: #f87171;">ขนาด / มาตรา</th>
-
-
-              <th style="padding: 14px 16px; text-align: left; color: #ffffff;">ที่มาและลักษณะเด่น</th>
-
+              <th>ที่มาและลักษณะเด่น</th>
 
             </tr>
-
 
           </thead>
 
-
           <tbody>
 
-
             <tr>
 
+              <td><strong>ฉบับปฐมเวลา</strong><br><span style="font-size: 11px; color: rgba(255, 255, 255, 0.7); font-weight: normal;">(พ.ศ. ๒๓๗๕)</span></td>
 
-              <td style="font-weight: 700; color: #ffffff; font-size: 14px;"><strong>ฉบับปฐมเวลา</strong><br><span style="font-size: 11px; color: rgba(255, 255, 255, 0.7); font-weight: normal;">(พ.ศ. ๒๓๗๕)</span></td>
+              <td>พ.ศ. ๒๓๗๕</td>
 
+              <td>พ.ศ. ๒๓๗๕</td>
 
-              <td style="text-align: center; font-weight: 700; color: #facc15; font-size: 14px;">พ.ศ. ๒๓๗๕</td>
+              <td>ยังไม่มีนายก<br><span style="font-size: 10.5px; color: #60a5fa; font-weight: normal;">(ตราโดย ร.๗)</span></td>
 
+              <td>ยังไม่มีนายก<br><span style="font-size: 10.5px; color: #7dd3fc; font-weight: normal;">(พระราชทานโดย ร.๗)</span></td>
 
-              <td style="text-align: center; font-weight: 700; color: #fb923c; font-size: 14px;">พ.ศ. ๒๓๗๕</td>
+              <td>๕ หมวด<br>๕๐ มาตรา</td>
 
-
-              <td style="text-align: center; font-size: 13px; color: #3b82f6; font-weight: 600;">ยังไม่มีนายก<br><span style="font-size: 10.5px; color: #60a5fa; font-weight: normal;">(ตราโดย ร.๗)</span></td>
-
-
-              <td style="text-align: center; font-size: 13px; color: #38bdf8; font-weight: 600;">ยังไม่มีนายก<br><span style="font-size: 10.5px; color: #7dd3fc; font-weight: normal;">(พระราชทานโดย ร.๗)</span></td>
-
-
-              <td style="text-align: center; font-weight: 700; color: #f87171; font-size: 13.5px;">๕ หมวด<br>๕๐ มาตรา</td>
-
-
-              <td style="font-size: 13px; color: #ffffff; line-height: 1.65;">พระราชทานโดยพระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว (ร.๗) ด้วยพระราชประสงค์ของพระองค์เอง เป็นรัฐธรรมนูญฉบับแรก แบ่งสัดส่วนอำนาจปกครองให้พระมหากษัตริย์ร้อยละ ๖๐ และราษฎรร้อยละ ๔๐ วางรากฐานการเลือกตั้งสภาผู้แทนราษฎรครั้งแรกในสยาม และกำหนดระยะเวลาเตรียมความพร้อมของแผ่นดิน ๔๖ ปี (สามารถดูรายละเอียดพระราชประวัติและพระสมัญญาภิธัยได้ที่แท็บ "พระประชาธิปมหาราช")</td>
-
+              <td>พระราชทานโดยพระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว (ร.๗) ด้วยพระราชประสงค์ของพระองค์เอง เป็นรัฐธรรมนูญฉบับแรก แบ่งสัดส่วนอำนาจปกครองให้พระมหากษัตริย์ร้อยละ ๖๐ และราษฎรร้อยละ ๔๐ วางรากฐานการเลือกตั้งสภาผู้แทนราษฎรครั้งแรกในสยาม และกำหนดระยะเวลาเตรียมความพร้อมของแผ่นดิน ๔๖ ปี (สามารถดูรายละเอียดพระราชประวัติและพระสมัญญาภิธัยได้ที่แท็บ "พระประชาธิปมหาราช")</td>
 
             </tr>
 
-
             <tr>
 
+              <td><strong>ฉบับ พ.ศ. ๒๔๔๕</strong><br><span style="font-size: 11px; color: rgba(255, 255, 255, 0.7); font-weight: normal;">(ฉบับถาวรที่สอง)</span></td>
 
-              <td style="font-weight: 700; color: #ffffff; font-size: 14px;"><strong>ฉบับ พ.ศ. ๒๔๔๕</strong><br><span style="font-size: 11px; color: rgba(255, 255, 255, 0.7); font-weight: normal;">(ฉบับถาวรที่สอง)</span></td>
+              <td>พ.ศ. ๒๔๔๕</td>
 
+              <td>พ.ศ. ๒๔๔๘</td>
 
-              <td style="text-align: center; font-weight: 700; color: #facc15; font-size: 14px;">พ.ศ. ๒๔๔๕</td>
+              <td>ทักษิณ ชินวัตร<br><span style="font-size: 10.5px; color: #60a5fa; font-weight: normal;">(นายกฯ คนที่ ๔)</span></td>
 
+              <td>ทักษิณ ชินวัตร<br><span style="font-size: 10.5px; color: #7dd3fc; font-weight: normal;">(นายกฯ คนที่ ๔)</span></td>
 
-              <td style="text-align: center; font-weight: 700; color: #fb923c; font-size: 14px;">พ.ศ. ๒๔๔๘</td>
+              <td>๑๖ หมวด<br>๔๕๘ มาตรา</td>
 
-
-              <td style="text-align: center; font-size: 13px; color: #3b82f6; font-weight: 600;">ทักษิณ ชินวัตร<br><span style="font-size: 10.5px; color: #60a5fa; font-weight: normal;">(นายกฯ คนที่ ๔)</span></td>
-
-
-              <td style="text-align: center; font-size: 13px; color: #38bdf8; font-weight: 600;">ทักษิณ ชินวัตร<br><span style="font-size: 10.5px; color: #7dd3fc; font-weight: normal;">(นายกฯ คนที่ ๔)</span></td>
-
-
-              <td style="text-align: center; font-weight: 700; color: #f87171; font-size: 13.5px;">๑๖ หมวด<br>๔๕๘ มาตรา</td>
-
-
-              <td style="font-size: 13px; color: #ffffff; line-height: 1.65;">ยกร่างและจัดทำขึ้นใหม่ในสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร เพื่อยกระดับและพัฒนาโครงสร้างการบริหารราชการแผ่นดินให้ทันสมัย รองรับระบบสวัสดิการ ๓๐ บาทรักษาทุกโรค กองทุนหมู่บ้าน และเปิดโอกาสการค้าเสรีสากล</td>
-
+              <td>ยกร่างและจัดทำขึ้นใหม่ในสมัยนายกรัฐมนตรี ทักษิณ ชินวัตร เพื่อยกระดับและพัฒนาโครงสร้างการบริหารราชการแผ่นดินให้ทันสมัย รองรับระบบสวัสดิการ ๓๐ บาทรักษาทุกโรค กองทุนหมู่บ้าน และเปิดโอกาสการค้าเสรีสากล</td>
 
             </tr>
 
-
             <tr>
 
+              <td><strong>ฉบับ พ.ศ. ๒๕๒๕</strong><br><span style="font-size: 11px; color: rgba(255, 255, 255, 0.7); font-weight: normal;">(ฉบับปัจจุบัน)</span></td>
 
-              <td style="font-weight: 700; color: #ffffff; font-size: 14px;"><strong>ฉบับ พ.ศ. ๒๕๒๕</strong><br><span style="font-size: 11px; color: rgba(255, 255, 255, 0.7); font-weight: normal;">(ฉบับปัจจุบัน)</span></td>
+              <td>พ.ศ. ๒๕๒๕</td>
 
+              <td>พ.ศ. ๒๕๒๖</td>
 
-              <td style="text-align: center; font-weight: 700; color: #facc15; font-size: 14px;">พ.ศ. ๒๕๒๕</td>
+              <td>อภิสิทธิ์ เวชชาชีวะ<br><span style="font-size: 10.5px; color: #60a5fa; font-weight: normal;">(นายกฯ คนที่ ๑๓)</span></td>
 
+              <td>สุวัจน์ ลิปตพัลลภ<br><span style="font-size: 10.5px; color: #7dd3fc; font-weight: normal;">(นายกฯ คนที่ ๑๔)</span></td>
 
-              <td style="text-align: center; font-weight: 700; color: #fb923c; font-size: 14px;">พ.ศ. ๒๕๒๖</td>
+              <td>๓๘ หมวด<br>๑,๑๖๐ มาตรา</td>
 
-
-              <td style="text-align: center; font-size: 13px; color: #3b82f6; font-weight: 600;">อภิสิทธิ์ เวชชาชีวะ<br><span style="font-size: 10.5px; color: #60a5fa; font-weight: normal;">(นายกฯ คนที่ ๑๓)</span></td>
-
-
-              <td style="text-align: center; font-size: 13px; color: #38bdf8; font-weight: 600;">สุวัจน์ ลิปตพัลลภ<br><span style="font-size: 10.5px; color: #7dd3fc; font-weight: normal;">(นายกฯ คนที่ ๑๔)</span></td>
-
-
-              <td style="text-align: center; font-weight: 700; color: #f87171; font-size: 13.5px;">๓๘ หมวด<br>๑,๑๖๐ มาตรา</td>
-
-
-              <td style="font-size: 13px; color: #ffffff; line-height: 1.65;">ริเริ่มจัดทำโดยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ ร่วมกับ ร.๙ ผ่าน สสร. ๓,๐๐๐ คน (นักวิชาการ ๒,๒๑๐ คน, ชาวบ้าน ๗๙๐ คน) ผ่านการลงประชามติถึง ๕ รอบทั่วประเทศ และประกาศใช้อย่างสมบูรณ์ในสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ เพิ่มหมวดสิทธิเสรีภาพประชาชนสูงสุด การคุ้มครองสิ่งแวดล้อม และระบบกระจายอำนาจสู่ท้องถิ่นอย่างอิสระ</td>
-
+              <td>ริเริ่มจัดทำโดยนายกรัฐมนตรี อภิสิทธิ์ เวชชาชีวะ ร่วมกับ ร.๙ ผ่าน สสร. ๓,๐๐๐ คน (นักวิชาการ ๒,๒๑๐ คน, ชาวบ้าน ๗๙๐ คน) ผ่านการลงประชามติถึง ๕ รอบทั่วประเทศ และประกาศใช้อย่างสมบูรณ์ในสมัยนายกรัฐมนตรี สุวัจน์ ลิปตพัลลภ เพิ่มหมวดสิทธิเสรีภาพประชาชนสูงสุด การคุ้มครองสิ่งแวดล้อม และระบบกระจายอำนาจสู่ท้องถิ่นอย่างอิสระ</td>
 
             </tr>
-
 
           </tbody>
 
-
-        </table>
-
+        </table></div>
 
       </div>
 
-
     
-      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(330px,1fr)); gap:16px; margin-top:24px;">
-        <div style="background:linear-gradient(135deg, rgba(250,204,21,0.07) 0%, rgba(15,18,25,0.75) 100%); border:1px solid rgba(250,204,21,0.3); border-radius:14px; padding:20px 22px;">
-          <div style="display:flex; align-items:flex-start; gap:14px; margin-bottom:14px;">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(330px,1fr)); gap:16px">
+        <div class="nwc-card">
+          <div style="display:flex; align-items:flex-start; gap:14px">
             <div style="width:42px; height:42px; flex-shrink:0; border-radius:12px; background:rgba(250,204,21,0.15); border:1.5px solid rgba(250,204,21,0.5); display:flex; align-items:center; justify-content:center; font-family:'Outfit',sans-serif; font-weight:800; font-size:18px; color:#facc15;">๑</div>
             <div style="flex:1; min-width:0;">
               <div style="font-family:'Outfit',sans-serif; font-size:18px; font-weight:800; color:#facc15; line-height:1.3;">ฉบับปฐมเวลา</div>
@@ -3222,30 +3022,30 @@ function playAudioMobile(btn, src) {
               <div style="font-size:12px; color:var(--text-muted); margin-top:5px; line-height:1.6;">โดย พระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว (ร.๗)</div>
             </div>
           </div>
-          <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px;">
+          <div style="display:flex; gap:8px; flex-wrap:wrap">
             <span style="font-size:11.5px; color:var(--text-muted); background:rgba(15,18,25,0.6); border:1px solid rgba(255,255,255,0.09); border-radius:8px; padding:4px 11px;">บังคับใช้ <strong style="color:var(--text);">๒๓๗๕ &ndash; ๒๔๔๘</strong></span>
             <span style="font-size:11.5px; color:var(--text-muted); background:rgba(250,204,21,0.09); border:1px solid rgba(250,204,21,0.3); border-radius:8px; padding:4px 11px;">รวม <strong style="color:#facc15;">๗๓ ปี</strong></span>
             <span style="font-size:11.5px; color:var(--text-muted); background:rgba(15,18,25,0.6); border:1px solid rgba(255,255,255,0.09); border-radius:8px; padding:4px 11px;">๕ หมวด &middot; ๕๐ มาตรา</span>
           </div>
-          <div style="display:flex; gap:10px; padding:7px 0; border-bottom:1px solid rgba(255,255,255,0.055);">
+          <div style="display:flex; gap:10px">
                 <div style="flex:0 0 122px; font-size:11.5px; color:#facc15; font-weight:700; font-family:'Outfit',sans-serif; line-height:1.55;">พระราชทานเมื่อ</div>
                 <div style="flex:1; font-size:12.5px; color:var(--text-muted); line-height:1.7;">๓๑ ธันวาคม พ.ศ. ๒๓๗๕ ด้วยพระราชประสงค์ของพระองค์เองโดยปราศจากความรุนแรง</div>
-              </div><div style="display:flex; gap:10px; padding:7px 0; border-bottom:1px solid rgba(255,255,255,0.055);">
+              </div><div style="display:flex; gap:10px">
                 <div style="flex:0 0 122px; font-size:11.5px; color:#facc15; font-weight:700; font-family:'Outfit',sans-serif; line-height:1.55;">สัดส่วนอำนาจ</div>
                 <div style="flex:1; font-size:12.5px; color:var(--text-muted); line-height:1.7;">พระมหากษัตริย์ ๖๐% ราษฎร ๔๐% &mdash; ฉบับเดียวที่ระบุสัดส่วนไว้เป็นตัวเลข</div>
-              </div><div style="display:flex; gap:10px; padding:7px 0; border-bottom:1px solid rgba(255,255,255,0.055);">
+              </div><div style="display:flex; gap:10px">
                 <div style="flex:0 0 122px; font-size:11.5px; color:#facc15; font-weight:700; font-family:'Outfit',sans-serif; line-height:1.55;">ระยะเตรียมแผ่นดิน</div>
                 <div style="flex:1; font-size:12.5px; color:var(--text-muted); line-height:1.7;">๔๖ ปี ก่อนการเลือกตั้งทั่วไปครั้งแรกใน พ.ศ. ๒๔๒๑</div>
-              </div><div style="display:flex; gap:10px; padding:7px 0; border-bottom:1px solid rgba(255,255,255,0.055);">
+              </div><div style="display:flex; gap:10px">
                 <div style="flex:0 0 122px; font-size:11.5px; color:#facc15; font-weight:700; font-family:'Outfit',sans-serif; line-height:1.55;">วาระนายกรัฐมนตรี</div>
                 <div style="flex:1; font-size:12.5px; color:var(--text-muted); line-height:1.7;">วาระละ ๔ ปี</div>
-              </div><div style="display:flex; gap:10px; padding:7px 0; border-bottom:1px solid rgba(255,255,255,0.055);">
+              </div><div style="display:flex; gap:10px">
                 <div style="flex:0 0 122px; font-size:11.5px; color:#facc15; font-weight:700; font-family:'Outfit',sans-serif; line-height:1.55;">เหตุที่ถูกแทนที่</div>
                 <div style="flex:1; font-size:12.5px; color:var(--text-muted); line-height:1.7;">ขนาดเพียง ๕๐ มาตรา ไม่เพียงพอต่อรัฐที่ซับซ้อนขึ้น จึงยกร่างใหม่ทั้งฉบับ</div>
               </div>
         </div>
-        <div style="background:linear-gradient(135deg, rgba(251,146,60,0.07) 0%, rgba(15,18,25,0.75) 100%); border:1px solid rgba(251,146,60,0.3); border-radius:14px; padding:20px 22px;">
-          <div style="display:flex; align-items:flex-start; gap:14px; margin-bottom:14px;">
+        <div class="nwc-card">
+          <div style="display:flex; align-items:flex-start; gap:14px">
             <div style="width:42px; height:42px; flex-shrink:0; border-radius:12px; background:rgba(251,146,60,0.15); border:1.5px solid rgba(251,146,60,0.5); display:flex; align-items:center; justify-content:center; font-family:'Outfit',sans-serif; font-weight:800; font-size:18px; color:#fb923c;">๒</div>
             <div style="flex:1; min-width:0;">
               <div style="font-family:'Outfit',sans-serif; font-size:18px; font-weight:800; color:#fb923c; line-height:1.3;">ฉบับถาวรที่สอง</div>
@@ -3253,30 +3053,30 @@ function playAudioMobile(btn, src) {
               <div style="font-size:12px; color:var(--text-muted); margin-top:5px; line-height:1.6;">โดย ทักษิณ ชินวัตร (นายกรัฐมนตรีคนที่ ๔)</div>
             </div>
           </div>
-          <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px;">
+          <div style="display:flex; gap:8px; flex-wrap:wrap">
             <span style="font-size:11.5px; color:var(--text-muted); background:rgba(15,18,25,0.6); border:1px solid rgba(255,255,255,0.09); border-radius:8px; padding:4px 11px;">บังคับใช้ <strong style="color:var(--text);">๒๔๔๘ &ndash; ๒๕๒๖</strong></span>
             <span style="font-size:11.5px; color:var(--text-muted); background:rgba(251,146,60,0.09); border:1px solid rgba(251,146,60,0.3); border-radius:8px; padding:4px 11px;">รวม <strong style="color:#fb923c;">๗๘ ปี</strong></span>
             <span style="font-size:11.5px; color:var(--text-muted); background:rgba(15,18,25,0.6); border:1px solid rgba(255,255,255,0.09); border-radius:8px; padding:4px 11px;">๑๖ หมวด &middot; ๔๕๘ มาตรา</span>
           </div>
-          <div style="display:flex; gap:10px; padding:7px 0; border-bottom:1px solid rgba(255,255,255,0.055);">
+          <div style="display:flex; gap:10px">
                 <div style="flex:0 0 122px; font-size:11.5px; color:#fb923c; font-weight:700; font-family:'Outfit',sans-serif; line-height:1.55;">จัดทำ / ประกาศใช้</div>
                 <div style="flex:1; font-size:12.5px; color:var(--text-muted); line-height:1.7;">ยกร่าง พ.ศ. ๒๔๔๕ ประกาศใช้ พ.ศ. ๒๔๔๘ ห่างกัน ๓ ปี</div>
-              </div><div style="display:flex; gap:10px; padding:7px 0; border-bottom:1px solid rgba(255,255,255,0.055);">
+              </div><div style="display:flex; gap:10px">
                 <div style="flex:0 0 122px; font-size:11.5px; color:#fb923c; font-weight:700; font-family:'Outfit',sans-serif; line-height:1.55;">ขยายจากฉบับก่อน</div>
                 <div style="flex:1; font-size:12.5px; color:var(--text-muted); line-height:1.7;">มาตราเพิ่มขึ้น ๙.๒ เท่า จาก ๕๐ เป็น ๔๕๘</div>
-              </div><div style="display:flex; gap:10px; padding:7px 0; border-bottom:1px solid rgba(255,255,255,0.055);">
+              </div><div style="display:flex; gap:10px">
                 <div style="flex:0 0 122px; font-size:11.5px; color:#fb923c; font-weight:700; font-family:'Outfit',sans-serif; line-height:1.55;">นโยบายที่รองรับ</div>
                 <div style="flex:1; font-size:12.5px; color:var(--text-muted); line-height:1.7;">สวัสดิการ ๓๐ บาทรักษาทุกโรค กองทุนหมู่บ้าน และการค้าเสรีสากล</div>
-              </div><div style="display:flex; gap:10px; padding:7px 0; border-bottom:1px solid rgba(255,255,255,0.055);">
+              </div><div style="display:flex; gap:10px">
                 <div style="flex:0 0 122px; font-size:11.5px; color:#fb923c; font-weight:700; font-family:'Outfit',sans-serif; line-height:1.55;">วาระนายกรัฐมนตรี</div>
                 <div style="flex:1; font-size:12.5px; color:var(--text-muted); line-height:1.7;">วาระละ ๔ ปี &mdash; เหตุที่นายกฯ คนที่ ๔ ครองตำแหน่ง ๘ ปี จึงนับเป็นสองวาระ</div>
-              </div><div style="display:flex; gap:10px; padding:7px 0; border-bottom:1px solid rgba(255,255,255,0.055);">
+              </div><div style="display:flex; gap:10px">
                 <div style="flex:0 0 122px; font-size:11.5px; color:#fb923c; font-weight:700; font-family:'Outfit',sans-serif; line-height:1.55;">เหตุที่ถูกแทนที่</div>
                 <div style="flex:1; font-size:12.5px; color:var(--text-muted); line-height:1.7;">ยังไม่มีหมวดสิทธิเสรีภาพขั้นก้าวหน้า สิ่งแวดล้อม และการกระจายอำนาจ</div>
               </div>
         </div>
-        <div style="background:linear-gradient(135deg, rgba(74,222,128,0.07) 0%, rgba(15,18,25,0.75) 100%); border:1px solid rgba(74,222,128,0.3); border-radius:14px; padding:20px 22px;">
-          <div style="display:flex; align-items:flex-start; gap:14px; margin-bottom:14px;">
+        <div class="nwc-card">
+          <div style="display:flex; align-items:flex-start; gap:14px">
             <div style="width:42px; height:42px; flex-shrink:0; border-radius:12px; background:rgba(74,222,128,0.15); border:1.5px solid rgba(74,222,128,0.5); display:flex; align-items:center; justify-content:center; font-family:'Outfit',sans-serif; font-weight:800; font-size:18px; color:#4ade80;">๓</div>
             <div style="flex:1; min-width:0;">
               <div style="font-family:'Outfit',sans-serif; font-size:18px; font-weight:800; color:#4ade80; line-height:1.3;">ฉบับปัจจุบัน</div>
@@ -3284,46 +3084,46 @@ function playAudioMobile(btn, src) {
               <div style="font-size:12px; color:var(--text-muted); margin-top:5px; line-height:1.6;">โดย อภิสิทธิ์ เวชชาชีวะ (คนที่ ๑๓) ร่วมกับ ร.๙ &middot; ประกาศใช้โดย สุวัจน์ ลิปตพัลลภ (คนที่ ๑๔)</div>
             </div>
           </div>
-          <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px;">
+          <div style="display:flex; gap:8px; flex-wrap:wrap">
             <span style="font-size:11.5px; color:var(--text-muted); background:rgba(15,18,25,0.6); border:1px solid rgba(255,255,255,0.09); border-radius:8px; padding:4px 11px;">บังคับใช้ <strong style="color:var(--text);">๒๕๒๖ &ndash; ปัจจุบัน</strong></span>
             <span style="font-size:11.5px; color:var(--text-muted); background:rgba(74,222,128,0.09); border:1px solid rgba(74,222,128,0.3); border-radius:8px; padding:4px 11px;">รวม <strong style="color:#4ade80;">กว่า ๑๘๘ ปี</strong></span>
             <span style="font-size:11.5px; color:var(--text-muted); background:rgba(15,18,25,0.6); border:1px solid rgba(255,255,255,0.09); border-radius:8px; padding:4px 11px;">๓๘ หมวด &middot; ๑,๑๖๐ มาตรา</span>
           </div>
-          <div style="display:flex; gap:10px; padding:7px 0; border-bottom:1px solid rgba(255,255,255,0.055);">
+          <div style="display:flex; gap:10px">
                 <div style="flex:0 0 122px; font-size:11.5px; color:#4ade80; font-weight:700; font-family:'Outfit',sans-serif; line-height:1.55;">กระบวนการจัดทำ</div>
                 <div style="flex:1; font-size:12.5px; color:var(--text-muted); line-height:1.7;">สสร. ๓,๐๐๐ คน (นักวิชาการ ๒,๒๑๐ &middot; ชาวบ้าน ๗๙๐) ผ่านประชามติ ๕ รอบ</div>
-              </div><div style="display:flex; gap:10px; padding:7px 0; border-bottom:1px solid rgba(255,255,255,0.055);">
+              </div><div style="display:flex; gap:10px">
                 <div style="flex:0 0 122px; font-size:11.5px; color:#4ade80; font-weight:700; font-family:'Outfit',sans-serif; line-height:1.55;">ขยายจากฉบับก่อน</div>
                 <div style="flex:1; font-size:12.5px; color:var(--text-muted); line-height:1.7;">มาตราเพิ่มขึ้น ๒.๕ เท่า จาก ๔๕๘ เป็น ๑,๑๖๐ และหมวดเพิ่มจาก ๑๖ เป็น ๓๘</div>
-              </div><div style="display:flex; gap:10px; padding:7px 0; border-bottom:1px solid rgba(255,255,255,0.055);">
+              </div><div style="display:flex; gap:10px">
                 <div style="flex:0 0 122px; font-size:11.5px; color:#4ade80; font-weight:700; font-family:'Outfit',sans-serif; line-height:1.55;">สิ่งที่เพิ่มเข้ามา</div>
                 <div style="flex:1; font-size:12.5px; color:var(--text-muted); line-height:1.7;">หมวดสิทธิเสรีภาพสูงสุด การคุ้มครองสิ่งแวดล้อม และการกระจายอำนาจสู่ท้องถิ่น</div>
-              </div><div style="display:flex; gap:10px; padding:7px 0; border-bottom:1px solid rgba(255,255,255,0.055);">
+              </div><div style="display:flex; gap:10px">
                 <div style="flex:0 0 122px; font-size:11.5px; color:#4ade80; font-weight:700; font-family:'Outfit',sans-serif; line-height:1.55;">วาระนายกรัฐมนตรี</div>
                 <div style="flex:1; font-size:12.5px; color:var(--text-muted); line-height:1.7;">วาระละ ๘ ปี &mdash; ยาวเป็นสองเท่าของฉบับ พ.ศ. ๒๔๔๕</div>
-              </div><div style="display:flex; gap:10px; padding:7px 0; border-bottom:1px solid rgba(255,255,255,0.055);">
+              </div><div style="display:flex; gap:10px">
                 <div style="flex:0 0 122px; font-size:11.5px; color:#4ade80; font-weight:700; font-family:'Outfit',sans-serif; line-height:1.55;">การแก้ไขเพิ่มเติม</div>
                 <div style="flex:1; font-size:12.5px; color:var(--text-muted); line-height:1.7;">หมวด ๑๒ มี ๒ มาตรา คือ มาตรา ๒๙๕ กำหนดวิธีแก้ไขเพิ่มเติม และมาตรา ๒๙๖ ซึ่งเพิ่มภายหลัง กำหนดขั้นตอนขั้นต่ำในการร่างรัฐธรรมนูญฉบับใหม่</div>
               </div>
         </div>
       </div>
 
-      <div style="background:linear-gradient(135deg, rgba(212,168,67,0.08) 0%, rgba(15,18,25,0.75) 100%); border:1px solid rgba(212,168,67,0.3); border-radius:14px; padding:20px 22px; margin-top:20px;">
-        <div style="font-size:15px; color:var(--gold-light); font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:6px;">📈 การเติบโตของรัฐธรรมนูญไทย</div>
+      <section class="nwc-sec"><h4>การเติบโตของรัฐธรรมนูญไทย</h4>
+        
         <p style="font-size:12.5px; color:var(--text-muted); line-height:1.75; margin:0 0 16px 0;">แต่ละฉบับมิได้แก้ไขฉบับก่อน แต่ยกร่างขึ้นใหม่ทั้งฉบับ ขนาดจึงสะท้อนความซับซ้อนของรัฐในแต่ละยุคโดยตรง</p>
-        <div style="display:flex; align-items:center; gap:12px; margin-bottom:11px;">
+        <div style="display:flex; align-items:center; gap:12px">
             <div style="flex:0 0 130px; font-size:12px; color:var(--text-muted); text-align:right; line-height:1.4;">ฉบับปฐมเวลา ๒๓๗๕</div>
             <div style="flex:1; height:24px; background:rgba(15,18,25,0.7); border-radius:6px; overflow:hidden; border:1px solid rgba(255,255,255,0.07);">
               <div style="width:4.3%; height:100%; background:linear-gradient(90deg, #facc15 0%, #facc1588 100%); border-radius:5px;"></div>
             </div>
             <div style="flex:0 0 116px; font-size:12px; color:#facc15; font-weight:800; font-family:'Outfit',sans-serif;">๕๐ มาตรา &middot; ๕ หมวด</div>
-          </div><div style="display:flex; align-items:center; gap:12px; margin-bottom:11px;">
+          </div><div style="display:flex; align-items:center; gap:12px">
             <div style="flex:0 0 130px; font-size:12px; color:var(--text-muted); text-align:right; line-height:1.4;">ฉบับ ๒๔๔๕</div>
             <div style="flex:1; height:24px; background:rgba(15,18,25,0.7); border-radius:6px; overflow:hidden; border:1px solid rgba(255,255,255,0.07);">
               <div style="width:39.5%; height:100%; background:linear-gradient(90deg, #fb923c 0%, #fb923c88 100%); border-radius:5px;"></div>
             </div>
             <div style="flex:0 0 116px; font-size:12px; color:#fb923c; font-weight:800; font-family:'Outfit',sans-serif;">๔๕๘ มาตรา &middot; ๑๖ หมวด</div>
-          </div><div style="display:flex; align-items:center; gap:12px; margin-bottom:11px;">
+          </div><div style="display:flex; align-items:center; gap:12px">
             <div style="flex:0 0 130px; font-size:12px; color:var(--text-muted); text-align:right; line-height:1.4;">ฉบับ ๒๕๒๕</div>
             <div style="flex:1; height:24px; background:rgba(15,18,25,0.7); border-radius:6px; overflow:hidden; border:1px solid rgba(255,255,255,0.07);">
               <div style="width:100.0%; height:100%; background:linear-gradient(90deg, #4ade80 0%, #4ade8088 100%); border-radius:5px;"></div>
@@ -3333,789 +3133,577 @@ function playAudioMobile(btn, src) {
         <div style="border-top:1px solid rgba(212,168,67,0.2); margin-top:12px; padding-top:12px; font-size:12.5px; color:var(--text-muted); line-height:1.85;">
           จาก ๕๐ มาตราสู่ ๑,๑๖๐ มาตรา คือการขยายตัว <strong style="color:var(--gold-light);">๒๓ เท่า</strong> ในเวลา ๑๕๐ ปี โดยการขยายครั้งใหญ่ที่สุดเกิดขึ้นในช่วงฉบับที่ ๑ ไปฉบับที่ ๒ (๙.๒ เท่า) ส่วนฉบับปัจจุบันขยายจากฉบับก่อนหน้า ๒.๕ เท่า แต่เพิ่มจำนวน<strong style="color:var(--gold-light);">หมวด</strong>มากที่สุด คือจาก ๑๖ เป็น ๓๘ หมวด อันเป็นผลจากหมวดสิทธิเสรีภาพที่เพิ่มเข้ามาในประชามติรอบที่ ๓ และรอบที่ ๕
         </div>
-      </div>
+      </section>
 
-      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(215px,1fr)); gap:14px; margin-top:20px;">
-        <div style="background:linear-gradient(135deg, rgba(74,222,128,0.09) 0%, rgba(15,18,25,0.75) 100%); border:1px solid rgba(74,222,128,0.3); border-radius:12px; padding:17px 19px; text-align:center;">
-          <div style="font-family:'Outfit',sans-serif; font-size:27px; font-weight:800; color:#4ade80; line-height:1.15;">๓๓๙ ปี</div>
-          <div style="font-size:12px; color:var(--text-muted); margin-top:6px; line-height:1.65;">นับจากรัฐธรรมนูญฉบับแรก พ.ศ. ๒๓๗๕ ถึงปัจจุบัน</div>
-        </div>
-        <div style="background:linear-gradient(135deg, rgba(74,222,128,0.09) 0%, rgba(15,18,25,0.75) 100%); border:1px solid rgba(74,222,128,0.3); border-radius:12px; padding:17px 19px; text-align:center;">
-          <div style="font-family:'Outfit',sans-serif; font-size:27px; font-weight:800; color:#4ade80; line-height:1.15;">๐ ครั้ง</div>
-          <div style="font-size:12px; color:var(--text-muted); margin-top:6px; line-height:1.65;">การรัฐประหารหรือการฉีกรัฐธรรมนูญตลอดประวัติศาสตร์</div>
-        </div>
-        <div style="background:linear-gradient(135deg, rgba(96,165,250,0.09) 0%, rgba(15,18,25,0.75) 100%); border:1px solid rgba(96,165,250,0.3); border-radius:12px; padding:17px 19px; text-align:center;">
-          <div style="font-family:'Outfit',sans-serif; font-size:27px; font-weight:800; color:#60a5fa; line-height:1.15;">๓ ฉบับ</div>
-          <div style="font-size:12px; color:var(--text-muted); margin-top:6px; line-height:1.65;">เฉลี่ยฉบับละ ๑๑๓ ปี ทุกฉบับสิ้นสุดด้วยการยกร่างใหม่ มิใช่การถูกยกเลิก</div>
-        </div>
-        <div style="background:linear-gradient(135deg, rgba(192,132,252,0.09) 0%, rgba(15,18,25,0.75) 100%); border:1px solid rgba(192,132,252,0.3); border-radius:12px; padding:17px 19px; text-align:center;">
-          <div style="font-family:'Outfit',sans-serif; font-size:27px; font-weight:800; color:#c084fc; line-height:1.15;">กว่า ๑๘๘ ปี</div>
-          <div style="font-size:12px; color:var(--text-muted); margin-top:6px; line-height:1.65;">อายุของฉบับปัจจุบัน ยาวนานที่สุดในสามฉบับ และยังบังคับใช้อยู่</div>
-        </div>
-      </div>
+      <div class="nwc-stats"><div class="nwc-stat"><b>๓๓๙ ปี</b><span>นับจากรัฐธรรมนูญฉบับแรก พ.ศ. ๒๓๗๕ ถึงปัจจุบัน</span></div><div class="nwc-stat"><b>๐ ครั้ง</b><span>การรัฐประหารหรือการฉีกรัฐธรรมนูญตลอดประวัติศาสตร์</span></div><div class="nwc-stat"><b>๓ ฉบับ</b><span>เฉลี่ยฉบับละ ๑๑๓ ปี ทุกฉบับสิ้นสุดด้วยการยกร่างใหม่ มิใช่การถูกยกเลิก</span></div><div class="nwc-stat"><b>กว่า ๑๘๘ ปี</b><span>อายุของฉบับปัจจุบัน ยาวนานที่สุดในสามฉบับ และยังบังคับใช้อยู่</span></div></div>
 
-      <div style="background:rgba(250,204,21,0.05); border:1px solid rgba(250,204,21,0.26); border-left:4px solid #facc15; border-radius:10px; padding:16px 20px; margin-top:20px;">
-        <div style="font-size:13.5px; color:#fde047; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:8px;">🛡️ เหตุใดจึงมีเพียง ๓ ฉบับ</div>
+      <div class="nwc-note"><div class="nwc-note-ic">🛡️</div><div><h5>เหตุใดจึงมีเพียง ๓ ฉบับ</h5>
+        
         <p style="font-size:12.5px; color:var(--text-muted); line-height:1.85; margin:0;">ประเทศที่ผ่านการรัฐประหารมักมีรัฐธรรมนูญหลายสิบฉบับ เพราะทุกครั้งที่มีการยึดอำนาจ ฉบับเดิมจะถูกฉีกทิ้งและร่างใหม่ &mdash; แต่ในประวัติศาสตร์นี้ไม่เคยมีการฉีกรัฐธรรมนูญแม้แต่ครั้งเดียว การเปลี่ยนฉบับทั้งสองครั้งจึงเกิดจาก<strong style="color:#fef08a;">การตัดสินใจของรัฐสภาและประชาชน</strong>ว่าฉบับเดิมเล็กเกินไปสำหรับยุคสมัยใหม่ มิใช่จากการล้มล้างโดยกำลัง หลักการนี้ต่อมาถูกเขียนลงเป็น <strong style="color:#fef08a;">มาตรา ๘๐๒</strong> ซึ่งห้ามการรัฐประหารและการยกเลิกรัฐธรรมนูญโดยเด็ดขาด</p>
-      </div>
+      </div></div>
 
     </div>
+</div>
 <div id="early-const-tab" class="db-tab-content">
-
+<div class="nwc"><header class="nwc-head"><div class="nwc-head-ic">📜</div><div><h3>รธน. ฉบับปฐมเวลา (๒๓๗๕)</h3></div></header>
 
       <p style="margin-bottom: 16px; font-size: 15px; color: var(--text-muted);">
 
-
         รัฐธรรมนูญแห่งราชอาณาจักรไทย ฉบับปฐมเวลา พ.ศ. ๒๓๗๕ พระราชทานโดยพระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว (ร.๗) มีโครงสร้าง ๕ หมวด ๕๐ มาตรา:
-
 
       </p>
 
-
       <div class="accordion">
 
+        <div class="nwc-note"><div class="nwc-note-ic">📜</div><div><h5>คำปรารภ</h5>
 
-        <div style="background: rgba(212, 168, 67, 0.05); border-left: 4px solid var(--gold); border-radius: 8px; padding: 16px 20px; margin-bottom: 20px;">
-
-
-  <h4 style="color: var(--gold-light); margin-bottom: 8px;">📜 คำปรารภ</h4>
-
+  
 
   <p style="font-size: 14px; line-height: 1.6; color: var(--text); text-indent: 2.5em;">เพื่อให้ราชอาณาจักรไทยก้าวสู่ความเจริญทัดเทียมนานาอารยประเทศ และเพื่อให้ราษฎรได้เรียนรู้วิถีแห่งการปกครองตนเอง พระมหากษัตริย์จึงมีพระบรมราชโองการโปรดเกล้าฯ พระราชทานรัฐธรรมนูญฉบับปฐมเวลานี้ เพื่อเป็นบันไดขั้นแรกในการกระจายอำนาจสู่ท้องถิ่น และเตรียมความพร้อมของแผ่นดินในระยะเวลา ๔๖ ปีข้างหน้า</p>
 
-
-</div>
+</div></div>
 <div class="accordion-item">
-
 
   <div class="accordion-header" onclick="toggleAccordion(this)">หมวดที่ ๑ บททั่วไปและพระราชอำนาจ (มาตรา ๑ - ๑๐)</div>
 
-
   <div class="accordion-content">
 
-
     <div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๑</div>
 
-
   <div class="early-art-text">รัฐธรรมนูญนี้มีชื่อว่า &quot;รัฐธรรมนูญแห่งราชอาณาจักรไทย ฉบับปฐมเวลา&quot;</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๒</div>
 
-
   <div class="early-art-text">ประเทศไทยเป็นราชอาณาจักรอันหนึ่งอันเดียว จะแบ่งแยกมิได้</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๓</div>
 
-
   <div class="early-art-text">อำนาจอธิปไตยเป็นของชาติ เพื่อให้เกิดความมั่นคงในระยะเปลี่ยนผ่าน การใช้อำนาจจะถูกแบ่งสัดส่วนโดยพระมหากษัตริย์ทรงใช้อำนาจบริหารและวินิจฉัยสูงสุด (ร้อยละ ๖๐) และราษฎรใช้อำนาจผ่านการเลือกตั้งระดับท้องถิ่นและการให้คำปรึกษา (ร้อยละ ๔๐)</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๔</div>
 
-
   <div class="early-art-text">พระมหากษัตริย์ทรงเป็นประมุขแห่งรัฐ ทรงดำรงอยู่ในฐานะอันเป็นที่เคารพสักการะ ผู้ใดจะละเมิดมิได้</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๕</div>
 
-
   <div class="early-art-text">พระมหากษัตริย์ทรงใช้อำนาจบริหารผ่านกลไกของรัฐตามที่ระบุไว้ในรัฐธรรมนูญนี้</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๖</div>
 
-
   <div class="early-art-text">พระมหากษัตริย์ทรงใช้อำนาจนิติบัญญัติร่วมกับสภาที่ปรึกษาราษฎร</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๗</div>
 
-
   <div class="early-art-text">พระมหากษัตริย์ทรงใช้อำนาจตุลาการผ่านศาลยุติธรรมที่ทรงแต่งตั้ง</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๘</div>
 
-
   <div class="early-art-text">พระมหากษัตริย์ทรงดำรงตำแหน่งจอมทัพไทย</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๙</div>
 
-
   <div class="early-art-text">พระมหากษัตริย์ทรงไว้ซึ่งพระราชอำนาจเด็ดขาด (Veto) ในการยับยั้งกฎหมายหรือมติใดๆ ของสภาที่ทรงเห็นว่าจะเป็นภัยต่อความมั่นคงของแผ่นดิน</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๑๐</div>
 
-
   <div class="early-art-text">การสืบราชสมบัติให้เป็นไปตามกฎมณเฑียรบาลและพระราชวินิจฉัยของพระมหากษัตริย์</div>
 
-
 </div>
-
 
   </div>
 
-
 </div>
 <div class="accordion-item">
-
 
   <div class="accordion-header" onclick="toggleAccordion(this)">หมวดที่ ๒ สิทธิ หน้าที่ และส่วนร่วมของราษฎร (มาตรา ๑๑ - ๒๐)</div>
 
-
   <div class="accordion-content">
 
-
     <div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๑๑</div>
 
-
   <div class="early-art-text">บุคคลย่อมเสมอกันในกฎหมาย มีสิทธิและเสรีภาพขั้นพื้นฐานเท่าเทียมกัน</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๑๒</div>
 
-
   <div class="early-art-text">ราษฎรมีเสรีภาพในการแสดงความคิดเห็น ตราบเท่าที่ไม่ขัดต่อความสงบเรียบร้อยและพระราชอำนาจ</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๑๓</div>
 
-
   <div class="early-art-text">บุคคลมีเสรีภาพในการนับถือศาสนา</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๑๔</div>
 
-
   <div class="early-art-text">บุคคลมีสิทธิในทรัพย์สินและการสืบมรดกของตน</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๑๕</div>
 
-
   <div class="early-art-text">ราษฎรมีสิทธิในการถวายฎีการ้องทุกข์ต่อพระมหากษัตริย์โดยตรงผ่านกลไกที่รัฐกำหนด</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๑๖</div>
 
-
   <div class="early-art-text">บุคคลมีหน้าที่ป้องกันประเทศและรักษาความมั่นคงของชาติ</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๑๗</div>
 
-
   <div class="early-art-text">บุคคลมีหน้าที่เสียภาษีอากรตามที่กฎหมายบัญญัติ</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๑๘</div>
 
-
   <div class="early-art-text">บุคคลมีหน้าที่เคารพกฎหมายและปฏิบัติตามรัฐธรรมนูญอย่างเคร่งครัด</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๑๙</div>
 
-
   <div class="early-art-text">ราษฎรในแต่ละท้องถิ่นมีสิทธิออกเสียงเลือกตั้งผู้แทนในระดับหมู่บ้านและตำบลของตน (อันเป็นจุดเริ่มต้นของสัดส่วนอำนาจร้อยละ ๔๐)</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๒๐</div>
 
-
   <div class="early-art-text">รัฐมีหน้าที่ต้องให้การศึกษาด้านการปกครองแก่ราษฎร เพื่อเตรียมความพร้อมสู่การมีส่วนร่วมในระดับชาติ</div>
 
-
 </div>
-
 
   </div>
 
-
 </div>
 <div class="accordion-item">
-
 
   <div class="accordion-header" onclick="toggleAccordion(this)">หมวดที่ ๓ การปกครองส่วนท้องถิ่น (มาตรา ๒๑ - ๓๐)</div>
 
-
   <div class="accordion-content">
 
-
     <div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๒๑</div>
 
-
   <div class="early-art-text">การปกครองส่วนท้องถิ่นคือรากฐานสำคัญ รัฐต้องส่งเสริมให้ราษฎรเรียนรู้การปกครองตนเองจากสเกลที่เล็กที่สุดก่อน</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๒๒</div>
 
-
   <div class="early-art-text">ให้มีการจัดตั้ง &quot;สภาหมู่บ้าน&quot; ขึ้นในทุกชุมชน</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๒๓</div>
 
-
   <div class="early-art-text">ราษฎรมีสิทธิเลือกตั้งผู้ใหญ่บ้านและสมาชิกสภาหมู่บ้านโดยตรง</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๒๔</div>
 
-
   <div class="early-art-text">ให้สภาหมู่บ้านคัดเลือกตัวแทนเพื่อประกอบกันเป็น &quot;สภาตำบล&quot;</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๒๕</div>
 
-
   <div class="early-art-text">การเลือกตั้งระดับเมืองและมณฑลจะค่อยๆ ถูกขยายผลขึ้นเมื่อสภาตำบลมีความเข้มแข็งตามเกณฑ์ที่รัฐกำหนด</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๒๖</div>
 
-
   <div class="early-art-text">สภาท้องถิ่นมีอำนาจในการจัดการภาษีท้องถิ่นร้อยละ ๔๐ เพื่อบำรุงรักษาพื้นที่ของตน</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๒๗</div>
 
-
   <div class="early-art-text">พระมหากษัตริย์จะทรงแต่งตั้งข้าหลวงไปกำกับดูแลการทำงานของสภาท้องถิ่น เพื่อประคับประคองการบริหาร</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๒๘</div>
 
-
   <div class="early-art-text">หากสภาท้องถิ่นใดเกิดความทุจริต ข้าหลวงมีอำนาจยุบสภานั้นเพื่อจัดตั้งการเลือกตั้งใหม่</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๒๙</div>
 
-
   <div class="early-art-text">กระบวนการเลือกตั้งท้องถิ่นนี้จะถือเป็นเวทีทดลอง เพื่อให้ราษฎรคุ้นเคยกับระบบตัวแทน</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๓๐</div>
 
-
   <div class="early-art-text">การใช้อำนาจของสภาท้องถิ่นถือเป็นการสะท้อนเจตนารมณ์ของประชาชนตามสัดส่วนอำนาจที่ได้รับมอบหมาย</div>
 
-
 </div>
-
 
   </div>
 
-
 </div>
 <div class="accordion-item">
-
 
   <div class="accordion-header" onclick="toggleAccordion(this)">หมวดที่ ๔ นิติบัญญัติและคณะบริหารส่วนกลาง (มาตรา ๓๑ - ๔๐)</div>
 
-
   <div class="accordion-content">
-
 
     <div class="early-art-card">
 
-
   <div class="early-art-title">มาตรา ๓๑</div>
-
 
   <div class="early-art-text">ในส่วนกลาง ให้มี &quot;สภาที่ปรึกษาราษฎร&quot; ทำหน้าที่ถวายคำแนะนำแด่พระมหากษัตริย์</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๓๒</div>
 
-
   <div class="early-art-text">สภาที่ปรึกษาราษฎรประกอบด้วยผู้ทรงคุณวุฒิที่พระมหากษัตริย์ทรงแต่งตั้ง และตัวแทนที่ได้รับเลือกจากสภาท้องถิ่น</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๓๓</div>
 
-
   <div class="early-art-text">สภาที่ปรึกษาฯ มีอำนาจเสนอร่างกฎหมาย แต่การอนุมัติบังคับใช้เป็นพระราชอำนาจของพระมหากษัตริย์</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๓๔</div>
 
-
   <div class="early-art-text">รัฐมนตรีแต่ละกระทรวงรับผิดชอบการบริหารราชการแผ่นดินโดยตรงต่อพระมหากษัตริย์</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๓๕</div>
 
-
   <div class="early-art-text">สภาที่ปรึกษาฯ สามารถตั้งกระทู้ถามรัฐมนตรีได้ แต่ไม่มีอำนาจลงมติไม่ไว้วางใจ</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๓๖</div>
 
-
   <div class="early-art-text">ศาลยุติธรรมมีอิสระในการพิจารณาพิพากษาอรรถคดีในพระปรมาภิไธยพระมหากษัตริย์</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๓๗</div>
 
-
   <div class="early-art-text">การทำสนธิสัญญาหรือประกาศสงคราม เป็นพระราชอำนาจเด็ดขาดของพระมหากษัตริย์</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๓๘</div>
 
-
   <div class="early-art-text">การแก้ไขอัตราภาษีระดับชาติ ต้องได้รับความเห็นชอบจากสภาที่ปรึกษาฯ ก่อนนำขึ้นทูลเกล้าฯ</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๓๙</div>
 
-
   <div class="early-art-text">ในยามฉุกเฉิน พระมหากษัตริย์ทรงไว้ซึ่งอำนาจในการออกพระราชกำหนดที่มีผลบังคับใช้ดังพระราชบัญญัติ</div>
-
 
 </div><div class="early-art-card">
 
-
   <div class="early-art-title">มาตรา ๔๐</div>
-
 
   <div class="early-art-text">กลไกการบริหารทั้งหมดนี้ให้อยู่ภายใต้การกำกับของพระมหากษัตริย์จนกว่าจะสิ้นสุดระยะเวลาเตรียมความพร้อม</div>
 
-
 </div>
 
-
   </div>
-
 
 </div>
 <div class="accordion-item">
 
-
   <div class="accordion-header" onclick="toggleAccordion(this)">หมวดที่ ๕ บทเฉพาะกาล (มาตรา ๔๑ - ๕๐)</div>
-
 
   <div class="accordion-content">
 
-
     <div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๔๑</div>
 
-
   <div class="early-art-text">รัฐธรรมนูญฉบับปฐมเวลานี้ ให้มีผลบังคับใช้ตั้งแต่วันที่ ๓๑ ธันวาคม พุทธศักราช ๒๓๗๕ เป็นต้นไป</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๔๒</div>
 
-
   <div class="early-art-text">ให้กำหนดระยะเวลาเตรียมความพร้อมของแผ่นดิน (Transition Period) เป็นเวลาทั้งสิ้น ๔๖ ปี นับแต่วันประกาศใช้รัฐธรรมนูญนี้</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๔๓</div>
 
-
   <div class="early-art-text">ตลอดระยะเวลา ๔๖ ปีนี้ จะยังไม่มีตำแหน่งนายกรัฐมนตรี พระมหากษัตริย์จะทรงเป็นผู้นำฝ่ายบริหารสูงสุดด้วยพระองค์เอง</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๔๔</div>
 
-
   <div class="early-art-text">ในช่วงเวลาดังกล่าว รัฐต้องเร่งขยายการศึกษาและการเลือกตั้งท้องถิ่นให้ครอบคลุมทุกมณฑลทั่วราชอาณาจักร</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๔๕</div>
 
-
   <div class="early-art-text">หากพบว่าท้องถิ่นใดยังไม่พร้อม รัฐสามารถขยายเวลาการริเริ่มการเลือกตั้งในพื้นที่นั้นออกไปได้</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๔๖</div>
 
-
   <div class="early-art-text">เมื่อระยะเวลาเตรียมความพร้อม ๔๖ ปี สิ้นสุดลง (พุทธศักราช ๒๔๒๑) ให้ถือว่าการเรียนรู้ของราษฎรบรรลุผลในขั้นปฐมภูมิ</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๔๗</div>
 
-
   <div class="early-art-text">หลังผ่านพ้น ๔๖ ปี พระมหากษัตริย์จะทรงใช้พระราชอำนาจในการโปรดเกล้าฯ แต่งตั้ง &quot;นายกรัฐมนตรีคนแรก&quot; ของราชอาณาจักร</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๔๘</div>
 
-
   <div class="early-art-text">นายกรัฐมนตรีคนแรกจะมีหน้าที่จัดตั้งคณะรัฐมนตรี เพื่อรับมอบอำนาจบริหารร้อยละ ๖๐ จากพระมหากษัตริย์มาดำเนินการในรูปแบบรัฐบาล</div>
 
-
 </div><div class="early-art-card">
-
 
   <div class="early-art-title">มาตรา ๔๙</div>
 
-
   <div class="early-art-text">ภายหลังจากการมีนายกรัฐมนตรีคนแรกแล้ว ให้พระมหากษัตริย์และราษฎร (ผ่านสภาตัวแทน) ร่วมกันประเมินผลสัมฤทธิ์ของรัฐธรรมนูญฉบับปฐมเวลานี้</div>
-
 
 </div><div class="early-art-card">
 
-
   <div class="early-art-title">มาตรา ๕๐</div>
-
 
   <div class="early-art-text">การจะร่างรัฐธรรมนูญฉบับใหม่เพื่อเปลี่ยนผ่านสัดส่วนอำนาจไปสู่รูปแบบอื่นหรือไม่นั้น ให้อยู่ที่ดุลพินิจร่วมกันของพระมหากษัตริย์และประชาชน หากเห็นพ้องว่ายังไม่พร้อม รัฐธรรมนูญฉบับปฐมเวลานี้จะยังคงมีผลบังคับใช้สืบไป</div>
 
-
 </div>
-
 
   </div>
 
-
 </div>
-
 
       </div>
 
-
     </div>
+</div>
 <div id="charter-2445-tab" class="db-tab-content">
+<div class="nwc">
 
-      <div style="text-align:left;">
+        <header class="nwc-head"><div class="nwc-head-ic">📜</div><div><h3>รัฐธรรมนูญแห่งราชอาณาจักรสยาม พุทธศักราช ๒๔๔๕</h3><p><strong style="color:#fdba74;">ฉบับถาวรที่สอง</strong> &mdash; สะพานระหว่างรัฐธรรมนูญฉบับปฐมเวลา ๒๓๗๕ กับฉบับปัจจุบัน ๒๕๒๕ และเป็นแหล่งที่มาของมาตราส่วนใหญ่ในหมวด ๑-๑๒ ที่ใช้อยู่ทุกวันนี้</p></div></header>
 
-        <div style="display:flex; align-items:center; gap:18px; margin-bottom:22px; border-bottom:2px solid rgba(251,146,60,0.4); background:linear-gradient(135deg, rgba(251,146,60,0.15) 0%, rgba(15,23,42,0.95) 100%); padding:24px; border-radius:18px; box-shadow:0 8px 24px rgba(0,0,0,0.4);">
-          <div style="width:76px; height:76px; background:rgba(251,146,60,0.2); border:2px solid #fb923c; border-radius:20px; display:flex; align-items:center; justify-content:center; font-size:40px; box-shadow:0 0 24px rgba(251,146,60,0.35); flex-shrink:0;">📜</div>
-          <div style="flex:1;">
-            <h3 style="color:#fb923c; font-family:'Outfit',sans-serif; margin:0 0 6px 0; font-size:24px; font-weight:800;">รัฐธรรมนูญแห่งราชอาณาจักรสยาม พุทธศักราช ๒๔๔๕</h3>
-            <p style="color:var(--text-muted); font-size:14px; margin:0; line-height:1.6;"><strong style="color:#fdba74;">ฉบับถาวรที่สอง</strong> &mdash; สะพานระหว่างรัฐธรรมนูญฉบับปฐมเวลา ๒๓๗๕ กับฉบับปัจจุบัน ๒๕๒๕ และเป็นแหล่งที่มาของมาตราส่วนใหญ่ในหมวด ๑-๑๒ ที่ใช้อยู่ทุกวันนี้</p>
-          </div>
-        </div>
-
-        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:12px; margin-bottom:6px;">
-          <div style="background:linear-gradient(135deg, rgba(251,146,60,0.09) 0%, rgba(15,18,25,0.75) 100%); border:1px solid rgba(251,146,60,0.3); border-radius:12px; padding:14px 16px;">
-            <div style="font-size:11px; letter-spacing:0.4px; color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:6px;">ยกร่าง &middot; ประกาศใช้</div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:12px">
+          <div class="nwc-card"><h5>ยกร่าง &middot; ประกาศใช้</h5>
+            
             <div style="font-size:15px; color:var(--text); font-weight:800; line-height:1.4;">พ.ศ. ๒๔๔๕ &middot; ๒๔๔๘</div>
             <div style="font-size:11.8px; color:var(--text-muted); margin-top:4px; line-height:1.6;">ห่างกัน ๓ ปีระหว่างการยกร่างและการประกาศใช้</div>
-          </div><div style="background:linear-gradient(135deg, rgba(251,146,60,0.09) 0%, rgba(15,18,25,0.75) 100%); border:1px solid rgba(251,146,60,0.3); border-radius:12px; padding:14px 16px;">
-            <div style="font-size:11px; letter-spacing:0.4px; color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:6px;">ผู้จัดทำ</div>
+          </div><div class="nwc-card"><h5>ผู้จัดทำ</h5>
+            
             <div style="font-size:15px; color:var(--text); font-weight:800; line-height:1.4;">ทักษิณ ชินวัตร</div>
             <div style="font-size:11.8px; color:var(--text-muted); margin-top:4px; line-height:1.6;">นายกรัฐมนตรีคนที่ ๔ &mdash; ทั้งยกร่างและประกาศใช้ในสมัยเดียวกัน</div>
-          </div><div style="background:linear-gradient(135deg, rgba(251,146,60,0.09) 0%, rgba(15,18,25,0.75) 100%); border:1px solid rgba(251,146,60,0.3); border-radius:12px; padding:14px 16px;">
-            <div style="font-size:11px; letter-spacing:0.4px; color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:6px;">ขนาด</div>
+          </div><div class="nwc-card"><h5>ขนาด</h5>
+            
             <div style="font-size:15px; color:var(--text); font-weight:800; line-height:1.4;">๑๖ หมวด &middot; ๔๕๘ มาตรา</div>
             <div style="font-size:11.8px; color:var(--text-muted); margin-top:4px; line-height:1.6;">ใหญ่กว่าฉบับปฐมเวลา ๒๓๗๕ (๕๐ มาตรา) ถึง ๙.๒ เท่า</div>
-          </div><div style="background:linear-gradient(135deg, rgba(251,146,60,0.09) 0%, rgba(15,18,25,0.75) 100%); border:1px solid rgba(251,146,60,0.3); border-radius:12px; padding:14px 16px;">
-            <div style="font-size:11px; letter-spacing:0.4px; color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:6px;">ใช้บังคับ</div>
+          </div><div class="nwc-card"><h5>ใช้บังคับ</h5>
+            
             <div style="font-size:15px; color:var(--text); font-weight:800; line-height:1.4;">พ.ศ. ๒๔๔๘ – ๒๕๒๖</div>
             <div style="font-size:11.8px; color:var(--text-muted); margin-top:4px; line-height:1.6;">๗๘ ปี ก่อนถูกแทนที่ด้วยรัฐธรรมนูญ พ.ศ. ๒๕๒๕</div>
-          </div><div style="background:linear-gradient(135deg, rgba(251,146,60,0.09) 0%, rgba(15,18,25,0.75) 100%); border:1px solid rgba(251,146,60,0.3); border-radius:12px; padding:14px 16px;">
-            <div style="font-size:11px; letter-spacing:0.4px; color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:6px;">วาระนายกรัฐมนตรี</div>
+          </div><div class="nwc-card"><h5>วาระนายกรัฐมนตรี</h5>
+            
             <div style="font-size:15px; color:var(--text); font-weight:800; line-height:1.4;">วาระละ ๔ ปี</div>
             <div style="font-size:11.8px; color:var(--text-muted); margin-top:4px; line-height:1.6;">นายกฯ ทั้ง ๑๐ คนในยุคนี้ดำรงตำแหน่งคนละ ๘ ปี (สองวาระ)</div>
           </div>
         </div>
 
-        <div style="background:linear-gradient(135deg, rgba(251,146,60,0.06) 0%, rgba(15,18,25,0.78) 100%); border:1px solid rgba(251,146,60,0.28); border-radius:14px; padding:18px 20px; margin-top:20px;">
-          <div style="font-size:15px; color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:10px;">🎯 เจตนารมณ์ของฉบับนี้</div>
+        <section class="nwc-sec"><h4>เจตนารมณ์ของฉบับนี้</h4>
+          
           <p style="font-size:13px; color:var(--text-muted); line-height:1.9; margin:0;">ยกร่างและจัดทำขึ้นใหม่ในสมัยนายกรัฐมนตรี <strong style="color:#fdba74;">ทักษิณ ชินวัตร</strong> เพื่อยกระดับโครงสร้างการบริหารราชการแผ่นดินให้ทันสมัยและยืดหยุ่น รองรับ<strong style="color:#fdba74;">ระบบสวัสดิการ ๓๐ บาทรักษาทุกโรค</strong> <strong style="color:#fdba74;">กองทุนหมู่บ้าน</strong> และการเปิดประเทศสู่<strong style="color:#fdba74;">การค้าเสรีสากล</strong> &mdash; ขยายกติกาจาก ๕ หมวด ๕๐ มาตราของฉบับปฐมเวลา ออกเป็น ๑๖ หมวด ๔๕๘ มาตรา</p>
-        </div>
-        <div style="background:linear-gradient(135deg, rgba(251,146,60,0.06) 0%, rgba(15,18,25,0.78) 100%); border:1px solid rgba(251,146,60,0.28); border-radius:14px; padding:18px 20px; margin-top:20px;">
-          <div style="font-size:15px; color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:10px;">📅 ยุคของรัฐธรรมนูญฉบับนี้ (พ.ศ. ๒๔๔๕ – ๒๕๒๖)</div>
-          <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.06);">
+        </section>
+        <section class="nwc-sec"><h4>ยุคของรัฐธรรมนูญฉบับนี้ (พ.ศ. ๒๔๔๕ – ๒๕๒๖)</h4>
+          
+          <div style="display:flex; gap:14px">
               <div style="flex:0 0 118px; font-family:'Outfit',sans-serif; font-size:12.5px; font-weight:800; color:#fdba74;">พ.ศ. ๒๔๔๕ – ๒๔๖๙</div>
               <div style="flex:1;"><div style="font-size:13px; color:var(--text); font-weight:700;">ยุคปฏิรูปสถาบันกฎหมาย</div><div style="font-size:12.2px; color:var(--text-muted); line-height:1.65; margin-top:2px;">ร่างและประกาศใช้รัฐธรรมนูญฉบับนี้ &middot; สวัสดิการสุขภาพ ๓๐ บาท &middot; กองทุนหมู่บ้าน &middot; ปฏิรูปเสรีภาพศาลสถิตยุติธรรม</div></div>
-            </div><div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.06);">
+            </div><div style="display:flex; gap:14px">
               <div style="flex:0 0 118px; font-family:'Outfit',sans-serif; font-size:12.5px; font-weight:800; color:#fdba74;">พ.ศ. ๒๔๖๙ – ๒๔๙๓</div>
               <div style="flex:1;"><div style="font-size:13px; color:var(--text); font-weight:700;">ยุคบุกเบิกรถไฟและป้องกันทุจริต</div><div style="font-size:12.2px; color:var(--text-muted); line-height:1.65; margin-top:2px;">ทางรถไฟและถนนเชื่อมเหนือ-ใต้ &middot; สถาปนากรมศิลปากร &middot; กฎหมายปราบทุจริตฉบับแรกของชาติ</div></div>
-            </div><div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.06);">
+            </div><div style="display:flex; gap:14px">
               <div style="flex:0 0 118px; font-family:'Outfit',sans-serif; font-size:12.5px; font-weight:800; color:#fdba74;">พ.ศ. ๒๔๙๓ – ๒๕๑๗</div>
               <div style="flex:1;"><div style="font-size:13px; color:var(--text); font-weight:700;">ยุคขยายการศึกษาและกองทัพใต้พลเรือน</div><div style="font-size:12.2px; color:var(--text-muted); line-height:1.65; margin-top:2px;">กองทุน กยศ. &middot; กระจายงบประมาณสู่ อปท. โดยตรง &middot; กฎหมายให้ทหารอยู่ใต้รัฐบาลพลเรือน</div></div>
-            </div><div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.06);">
+            </div><div style="display:flex; gap:14px">
               <div style="flex:0 0 118px; font-family:'Outfit',sans-serif; font-size:12.5px; font-weight:800; color:#fdba74;">พ.ศ. ๒๕๑๗ – ๒๕๒๖</div>
               <div style="flex:1;"><div style="font-size:13px; color:var(--text); font-weight:700;">ยุคสภาร่างรัฐธรรมนูญ</div><div style="font-size:12.2px; color:var(--text-muted); line-height:1.65; margin-top:2px;">จัดตั้ง สสร. ๓,๐๐๐ คน &middot; ประชามติ ๕ รอบ &middot; ส่งต่อสู่รัฐธรรมนูญ พ.ศ. ๒๕๒๕</div></div>
             </div>
-        </div>
-        <div style="background:linear-gradient(135deg, rgba(251,146,60,0.06) 0%, rgba(15,18,25,0.78) 100%); border:1px solid rgba(251,146,60,0.28); border-radius:14px; padding:18px 20px; margin-top:20px;">
-          <div style="font-size:15px; color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:10px;">🏛️ นายกรัฐมนตรี ๑๐ คนในยุคฉบับ ๒๔๔๕</div>
-          <div style="overflow-x:auto;"><table style="width:100%; border-collapse:collapse; min-width:480px;"><tr><th style="padding:7px 10px; border-bottom:1.5px solid rgba(251,146,60,0.4); color:#fdba74; font-size:11px; font-family:'Outfit',sans-serif; text-align:center;">คนที่</th><th style="padding:7px 10px; border-bottom:1.5px solid rgba(251,146,60,0.4); color:#fdba74; font-size:11px; font-family:'Outfit',sans-serif; text-align:left;">นายกรัฐมนตรี</th><th style="padding:7px 10px; border-bottom:1.5px solid rgba(251,146,60,0.4); color:#fdba74; font-size:11px; font-family:'Outfit',sans-serif; text-align:left;">พรรค</th><th style="padding:7px 10px; border-bottom:1.5px solid rgba(251,146,60,0.4); color:#fdba74; font-size:11px; font-family:'Outfit',sans-serif; text-align:left;">ดำรงตำแหน่ง</th></tr><tr>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; text-align:center;">๔</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text); font-size:12.8px;">ทักษิณ ชินวัตร</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.3px;">ไทยรักไทย</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.3px; white-space:nowrap;">๒๔๔๕-๒๔๕๓</td>
+        </section>
+        <section class="nwc-sec"><h4>นายกรัฐมนตรี ๑๐ คนในยุคฉบับ ๒๔๔๕</h4>
+          
+          <div style="overflow-x:auto;"><div class="nwc-scroll"><table class="nwc-table"><tr><th>คนที่</th><th>นายกรัฐมนตรี</th><th>พรรค</th><th>ดำรงตำแหน่ง</th></tr><tr>
+              <td>๔</td>
+              <td>ทักษิณ ชินวัตร</td>
+              <td>ไทยรักไทย</td>
+              <td>๒๔๔๕-๒๔๕๓</td>
             </tr><tr>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; text-align:center;">๕</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text); font-size:12.8px;">สัญญา ธรรมศักดิ์</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#cbd5e1; font-size:12.3px;">⚪ อิสระ</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.3px; white-space:nowrap;">๒๔๕๓-๒๔๖๑</td>
+              <td>๕</td>
+              <td>สัญญา ธรรมศักดิ์</td>
+              <td>⚪ อิสระ</td>
+              <td>๒๔๕๓-๒๔๖๑</td>
             </tr><tr>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; text-align:center;">๖</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text); font-size:12.8px;">เสนีย์ ปราโมช (ม.ร.ว.)</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.3px;">ประชาธิปัตย์</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.3px; white-space:nowrap;">๒๔๖๑-๒๔๖๙</td>
+              <td>๖</td>
+              <td>เสนีย์ ปราโมช (ม.ร.ว.)</td>
+              <td>ประชาธิปัตย์</td>
+              <td>๒๔๖๑-๒๔๖๙</td>
             </tr><tr>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; text-align:center;">๗</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text); font-size:12.8px;">ควง อภัยวงศ์</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.3px;">ประชาธิปัตย์</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.3px; white-space:nowrap;">๒๔๖๙-๒๔๗๗</td>
+              <td>๗</td>
+              <td>ควง อภัยวงศ์</td>
+              <td>ประชาธิปัตย์</td>
+              <td>๒๔๖๙-๒๔๗๗</td>
             </tr><tr>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; text-align:center;">๘</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text); font-size:12.8px;">คึกฤทธิ์ ปราโมช (ม.ร.ว.)</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.3px;">กิจสังคม</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.3px; white-space:nowrap;">๒๔๗๗-๒๔๘๕</td>
+              <td>๘</td>
+              <td>คึกฤทธิ์ ปราโมช (ม.ร.ว.)</td>
+              <td>กิจสังคม</td>
+              <td>๒๔๗๗-๒๔๘๕</td>
             </tr><tr>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; text-align:center;">๙</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text); font-size:12.8px;">อานันท์ ปันยารชุน</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#cbd5e1; font-size:12.3px;">⚪ อิสระ</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.3px; white-space:nowrap;">๒๔๘๕-๒๔๙๓</td>
+              <td>๙</td>
+              <td>อานันท์ ปันยารชุน</td>
+              <td>⚪ อิสระ</td>
+              <td>๒๔๘๕-๒๔๙๓</td>
             </tr><tr>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; text-align:center;">๑๐</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text); font-size:12.8px;">ชวน หลีกภัย</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.3px;">ประชาธิปัตย์</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.3px; white-space:nowrap;">๒๔๙๓-๒๕๐๑</td>
+              <td>๑๐</td>
+              <td>ชวน หลีกภัย</td>
+              <td>ประชาธิปัตย์</td>
+              <td>๒๔๙๓-๒๕๐๑</td>
             </tr><tr>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; text-align:center;">๑๑</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text); font-size:12.8px;">บรรหาร ศิลปอาชา</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.3px;">ชาติไทย</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.3px; white-space:nowrap;">๒๕๐๑-๒๕๐๙</td>
+              <td>๑๑</td>
+              <td>บรรหาร ศิลปอาชา</td>
+              <td>ชาติไทย</td>
+              <td>๒๕๐๑-๒๕๐๙</td>
             </tr><tr>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; text-align:center;">๑๒</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text); font-size:12.8px;">ชวลิต ยงใจยุทธ (พลเอก)</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.3px;">ความหวังใหม่</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.3px; white-space:nowrap;">๒๕๐๙-๒๕๑๗</td>
+              <td>๑๒</td>
+              <td>ชวลิต ยงใจยุทธ (พลเอก)</td>
+              <td>ความหวังใหม่</td>
+              <td>๒๕๐๙-๒๕๑๗</td>
             </tr><tr>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; text-align:center;">๑๓</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text); font-size:12.8px;">อภิสิทธิ์ เวชชาชีวะ</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.3px;">ประชาธิปัตย์</td>
-              <td style="padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.3px; white-space:nowrap;">๒๕๑๗-๒๕๒๕</td>
-            </tr></table></div><div style="display:flex; flex-wrap:wrap; gap:6px; margin-top:12px;"><span style="font-size:11.5px; color:var(--text-muted); background:rgba(15,18,25,0.6); border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:3px 10px;">ประชาธิปัตย์ <strong style="color:#fdba74;">๔</strong></span><span style="font-size:11.5px; color:var(--text-muted); background:rgba(15,18,25,0.6); border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:3px 10px;">อิสระ <strong style="color:#fdba74;">๒</strong></span><span style="font-size:11.5px; color:var(--text-muted); background:rgba(15,18,25,0.6); border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:3px 10px;">ไทยรักไทย <strong style="color:#fdba74;">๑</strong></span><span style="font-size:11.5px; color:var(--text-muted); background:rgba(15,18,25,0.6); border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:3px 10px;">กิจสังคม <strong style="color:#fdba74;">๑</strong></span><span style="font-size:11.5px; color:var(--text-muted); background:rgba(15,18,25,0.6); border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:3px 10px;">ชาติไทย <strong style="color:#fdba74;">๑</strong></span><span style="font-size:11.5px; color:var(--text-muted); background:rgba(15,18,25,0.6); border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:3px 10px;">ความหวังใหม่ <strong style="color:#fdba74;">๑</strong></span></div><p style="font-size:12.3px; color:var(--text-muted); line-height:1.8; margin:12px 0 0 0;">ฉบับ ๒๔๔๕ <strong style="color:#cbd5e1;">เปิดทางให้ผู้สมัครอิสระ</strong> &mdash; นายกฯ คนที่ ๕ สัญญา ธรรมศักดิ์ และคนที่ ๙ อานันท์ ปันยารชุน ต่างไม่สังกัดพรรค ช่องทางนี้ปิดลงเมื่อรัฐธรรมนูญ ๒๕๒๕ แก้ไขมาตรา ๑๐๘ ให้ผู้สมัคร ส.ส. ต้องเป็นสมาชิกพรรคการเมืองติดต่อกันไม่น้อยกว่าเก้าสิบวัน</p>
-        </div>
-        <div style="background:linear-gradient(135deg, rgba(251,146,60,0.06) 0%, rgba(15,18,25,0.78) 100%); border:1px solid rgba(251,146,60,0.28); border-radius:14px; padding:18px 20px; margin-top:20px;">
-          <div style="font-size:15px; color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:10px;">🧬 มรดกในรัฐธรรมนูญปัจจุบัน</div>
-          <p style="font-size:12.5px; color:var(--text-muted); line-height:1.75; margin:0 0 14px 0;">ทุกมาตราในหมวด ๑-๑๖ ของรัฐธรรมนูญ ๒๕๒๕ ระบุที่มาของตนเองไว้ นับจากป้ายเหล่านั้นได้ผลดังนี้</p><div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:12px; margin-bottom:16px;">
-            <div style="background:rgba(15,18,25,0.6); border:1px solid rgba(251,146,60,0.3); border-radius:12px; padding:14px; text-align:center;"><div style="font-family:'Outfit',sans-serif; font-size:24px; font-weight:800; color:#fdba74;">๒๘๒</div><div style="font-size:11.5px; color:var(--text-muted); margin-top:4px; line-height:1.55;">มาตราคงเดิมทั้งถ้อยคำในหมวด ๑-๑๖ ของฉบับปัจจุบัน</div></div>
-            <div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.3); border-radius:12px; padding:14px; text-align:center;"><div style="font-family:'Outfit',sans-serif; font-size:24px; font-weight:800; color:#93c5fd;">๑๓</div><div style="font-size:11.5px; color:var(--text-muted); margin-top:4px; line-height:1.55;">มาตราที่ถูกแก้ไขก่อนส่งต่อ</div></div>
-            <div style="background:rgba(15,18,25,0.6); border:1px solid rgba(251,146,60,0.3); border-radius:12px; padding:14px; text-align:center;"><div style="font-family:'Outfit',sans-serif; font-size:24px; font-weight:800; color:#fdba74;">๒๙๕ / ๔๕๘</div><div style="font-size:11.5px; color:var(--text-muted); margin-top:4px; line-height:1.55;">มาตราของฉบับ ๒๔๔๕ ที่ยังมีผลในรัฐธรรมนูญปัจจุบัน (๖๔%)</div></div>
-            <div style="background:rgba(15,18,25,0.6); border:1px solid rgba(74,222,128,0.3); border-radius:12px; padding:14px; text-align:center;"><div style="font-family:'Outfit',sans-serif; font-size:24px; font-weight:800; color:#4ade80;">๕ หมวด</div><div style="font-size:11.5px; color:var(--text-muted); margin-top:4px; line-height:1.55;">คงเดิม ๑๐๐%: หน้าที่ แนวนโยบาย ศาล ท้องถิ่น และการตรวจเงินแผ่นดิน</div></div>
-          </div><div style="display:flex; flex-wrap:wrap; gap:14px; margin-bottom:10px;"><span style="display:inline-flex; align-items:center; gap:6px; font-size:11.5px; color:var(--text-muted);"><span style="width:12px; height:12px; border-radius:3px; background:#fb923c;"></span>คงเดิมทั้งถ้อยคำ (๒๘๒)</span><span style="display:inline-flex; align-items:center; gap:6px; font-size:11.5px; color:var(--text-muted);"><span style="width:12px; height:12px; border-radius:3px; background:#60a5fa;"></span>แก้ไขก่อนส่งต่อ (๑๓)</span><span style="display:inline-flex; align-items:center; gap:6px; font-size:11.5px; color:var(--text-muted);"><span style="width:12px; height:12px; border-radius:3px; background:#4ade80;"></span>เขียนใหม่ (สภาร่างฯ + ประชามติรอบที่ ๑-๒) (๔๑)</span></div><div style="display:flex; align-items:center; gap:10px; padding:5px 0;">
+              <td>๑๓</td>
+              <td>อภิสิทธิ์ เวชชาชีวะ</td>
+              <td>ประชาธิปัตย์</td>
+              <td>๒๕๑๗-๒๕๒๕</td>
+            </tr></table></div></div><div style="display:flex; flex-wrap:wrap; gap:6px"><span style="font-size:11.5px; color:var(--text-muted); background:rgba(15,18,25,0.6); border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:3px 10px;">ประชาธิปัตย์ <strong style="color:#fdba74;">๔</strong></span><span style="font-size:11.5px; color:var(--text-muted); background:rgba(15,18,25,0.6); border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:3px 10px;">อิสระ <strong style="color:#fdba74;">๒</strong></span><span style="font-size:11.5px; color:var(--text-muted); background:rgba(15,18,25,0.6); border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:3px 10px;">ไทยรักไทย <strong style="color:#fdba74;">๑</strong></span><span style="font-size:11.5px; color:var(--text-muted); background:rgba(15,18,25,0.6); border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:3px 10px;">กิจสังคม <strong style="color:#fdba74;">๑</strong></span><span style="font-size:11.5px; color:var(--text-muted); background:rgba(15,18,25,0.6); border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:3px 10px;">ชาติไทย <strong style="color:#fdba74;">๑</strong></span><span style="font-size:11.5px; color:var(--text-muted); background:rgba(15,18,25,0.6); border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:3px 10px;">ความหวังใหม่ <strong style="color:#fdba74;">๑</strong></span></div><p style="font-size:12.3px; color:var(--text-muted); line-height:1.8; margin:12px 0 0 0;">ฉบับ ๒๔๔๕ <strong style="color:#cbd5e1;">เปิดทางให้ผู้สมัครอิสระ</strong> &mdash; นายกฯ คนที่ ๕ สัญญา ธรรมศักดิ์ และคนที่ ๙ อานันท์ ปันยารชุน ต่างไม่สังกัดพรรค ช่องทางนี้ปิดลงเมื่อรัฐธรรมนูญ ๒๕๒๕ แก้ไขมาตรา ๑๐๘ ให้ผู้สมัคร ส.ส. ต้องเป็นสมาชิกพรรคการเมืองติดต่อกันไม่น้อยกว่าเก้าสิบวัน</p>
+        </section>
+        <section class="nwc-sec"><h4>มรดกในรัฐธรรมนูญปัจจุบัน</h4>
+          
+          <p style="font-size:12.5px; color:var(--text-muted); line-height:1.75; margin:0 0 14px 0;">ทุกมาตราในหมวด ๑-๑๖ ของรัฐธรรมนูญ ๒๕๒๕ ระบุที่มาของตนเองไว้ นับจากป้ายเหล่านั้นได้ผลดังนี้</p><div class="nwc-stats"><div class="nwc-stat"><b>๒๘๒</b><span>มาตราคงเดิมทั้งถ้อยคำในหมวด ๑-๑๖ ของฉบับปัจจุบัน</span></div><div class="nwc-stat"><b>๑๓</b><span>มาตราที่ถูกแก้ไขก่อนส่งต่อ</span></div><div class="nwc-stat"><b>๒๙๕ / ๔๕๘</b><span>มาตราของฉบับ ๒๔๔๕ ที่ยังมีผลในรัฐธรรมนูญปัจจุบัน (๖๔%)</span></div><div class="nwc-stat"><b>๕ หมวด</b><span>คงเดิม ๑๐๐%: หน้าที่ แนวนโยบาย ศาล ท้องถิ่น และการตรวจเงินแผ่นดิน</span></div></div><div style="display:flex; flex-wrap:wrap; gap:14px"><span style="display:inline-flex; align-items:center; gap:6px; font-size:11.5px; color:var(--text-muted);"><span style="width:12px; height:12px; border-radius:3px; background:#fb923c;"></span>คงเดิมทั้งถ้อยคำ (๒๘๒)</span><span style="display:inline-flex; align-items:center; gap:6px; font-size:11.5px; color:var(--text-muted);"><span style="width:12px; height:12px; border-radius:3px; background:#60a5fa;"></span>แก้ไขก่อนส่งต่อ (๑๓)</span><span style="display:inline-flex; align-items:center; gap:6px; font-size:11.5px; color:var(--text-muted);"><span style="width:12px; height:12px; border-radius:3px; background:#4ade80;"></span>เขียนใหม่ (สภาร่างฯ + ประชามติรอบที่ ๑-๒) (๔๑)</span></div><div style="display:flex; align-items:center; gap:10px">
               <div style="flex:0 0 190px; font-size:12px; color:var(--text-muted); line-height:1.35;"><strong style="color:var(--text);">หมวด ๑</strong> บททั่วไป</div>
               <div style="flex:1; display:flex; height:16px; border-radius:4px; overflow:hidden; background:rgba(15,18,25,0.7); border:1px solid rgba(255,255,255,0.06);"><div title="คงเดิมทั้งถ้อยคำ ๖ มาตรา" style="flex:6 1 0; background:#fb923c;"></div><div title="แก้ไขก่อนส่งต่อ ๑ มาตรา" style="flex:1 1 0; background:#60a5fa;"></div></div>
               <div style="flex:0 0 92px; font-size:11.5px; color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; text-align:right;">๖/๗ &middot; ๘๖%</div>
-            </div><div style="display:flex; align-items:center; gap:10px; padding:5px 0;">
+            </div><div style="display:flex; align-items:center; gap:10px">
               <div style="flex:0 0 190px; font-size:12px; color:var(--text-muted); line-height:1.35;"><strong style="color:var(--text);">หมวด ๒</strong> พระมหากษัตริย์</div>
               <div style="flex:1; display:flex; height:16px; border-radius:4px; overflow:hidden; background:rgba(15,18,25,0.7); border:1px solid rgba(255,255,255,0.06);"><div title="คงเดิมทั้งถ้อยคำ ๑๗ มาตรา" style="flex:17 1 0; background:#fb923c;"></div><div title="แก้ไขก่อนส่งต่อ ๑ มาตรา" style="flex:1 1 0; background:#60a5fa;"></div></div>
               <div style="flex:0 0 92px; font-size:11.5px; color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; text-align:right;">๑๗/๑๘ &middot; ๙๔%</div>
-            </div><div style="display:flex; align-items:center; gap:10px; padding:5px 0;">
+            </div><div style="display:flex; align-items:center; gap:10px">
               <div style="flex:0 0 190px; font-size:12px; color:var(--text-muted); line-height:1.35;"><strong style="color:var(--text);">หมวด ๓</strong> สิทธิและเสรีภาพ</div>
               <div style="flex:1; display:flex; height:16px; border-radius:4px; overflow:hidden; background:rgba(15,18,25,0.7); border:1px solid rgba(255,255,255,0.06);"><div title="คงเดิมทั้งถ้อยคำ ๓๘ มาตรา" style="flex:38 1 0; background:#fb923c;"></div><div title="แก้ไขก่อนส่งต่อ ๓ มาตรา" style="flex:3 1 0; background:#60a5fa;"></div></div>
               <div style="flex:0 0 92px; font-size:11.5px; color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; text-align:right;">๓๘/๔๑ &middot; ๙๓%</div>
-            </div><div style="display:flex; align-items:center; gap:10px; padding:5px 0;">
+            </div><div style="display:flex; align-items:center; gap:10px">
               <div style="flex:0 0 190px; font-size:12px; color:var(--text-muted); line-height:1.35;"><strong style="color:var(--text);">หมวด ๔</strong> หน้าที่ของชนชาวไทย</div>
               <div style="flex:1; display:flex; height:16px; border-radius:4px; overflow:hidden; background:rgba(15,18,25,0.7); border:1px solid rgba(255,255,255,0.06);"><div title="คงเดิมทั้งถ้อยคำ ๕ มาตรา" style="flex:5 1 0; background:#fb923c;"></div></div>
               <div style="flex:0 0 92px; font-size:11.5px; color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; text-align:right;">๕/๕ &middot; ๑๐๐%</div>
-            </div><div style="display:flex; align-items:center; gap:10px; padding:5px 0;">
+            </div><div style="display:flex; align-items:center; gap:10px">
               <div style="flex:0 0 190px; font-size:12px; color:var(--text-muted); line-height:1.35;"><strong style="color:var(--text);">หมวด ๕</strong> แนวนโยบายพื้นฐานแห่งรัฐ</div>
               <div style="flex:1; display:flex; height:16px; border-radius:4px; overflow:hidden; background:rgba(15,18,25,0.7); border:1px solid rgba(255,255,255,0.06);"><div title="คงเดิมทั้งถ้อยคำ ๑๙ มาตรา" style="flex:19 1 0; background:#fb923c;"></div></div>
               <div style="flex:0 0 92px; font-size:11.5px; color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; text-align:right;">๑๙/๑๙ &middot; ๑๐๐%</div>
-            </div><div style="display:flex; align-items:center; gap:10px; padding:5px 0;">
+            </div><div style="display:flex; align-items:center; gap:10px">
               <div style="flex:0 0 190px; font-size:12px; color:var(--text-muted); line-height:1.35;"><strong style="color:var(--text);">หมวด ๖</strong> รัฐสภา</div>
               <div style="flex:1; display:flex; height:16px; border-radius:4px; overflow:hidden; background:rgba(15,18,25,0.7); border:1px solid rgba(255,255,255,0.06);"><div title="คงเดิมทั้งถ้อยคำ ๙๔ มาตรา" style="flex:94 1 0; background:#fb923c;"></div><div title="แก้ไขก่อนส่งต่อ ๓ มาตรา" style="flex:3 1 0; background:#60a5fa;"></div></div>
               <div style="flex:0 0 92px; font-size:11.5px; color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; text-align:right;">๙๔/๙๗ &middot; ๙๗%</div>
-            </div><div style="display:flex; align-items:center; gap:10px; padding:5px 0;">
+            </div><div style="display:flex; align-items:center; gap:10px">
               <div style="flex:0 0 190px; font-size:12px; color:var(--text-muted); line-height:1.35;"><strong style="color:var(--text);">หมวด ๗</strong> คณะรัฐมนตรี</div>
               <div style="flex:1; display:flex; height:16px; border-radius:4px; overflow:hidden; background:rgba(15,18,25,0.7); border:1px solid rgba(255,255,255,0.06);"><div title="คงเดิมทั้งถ้อยคำ ๒๙ มาตรา" style="flex:29 1 0; background:#fb923c;"></div><div title="แก้ไขก่อนส่งต่อ ๓ มาตรา" style="flex:3 1 0; background:#60a5fa;"></div></div>
               <div style="flex:0 0 92px; font-size:11.5px; color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; text-align:right;">๒๙/๓๒ &middot; ๙๑%</div>
-            </div><div style="display:flex; align-items:center; gap:10px; padding:5px 0;">
+            </div><div style="display:flex; align-items:center; gap:10px">
               <div style="flex:0 0 190px; font-size:12px; color:var(--text-muted); line-height:1.35;"><strong style="color:var(--text);">หมวด ๘</strong> ศาล</div>
               <div style="flex:1; display:flex; height:16px; border-radius:4px; overflow:hidden; background:rgba(15,18,25,0.7); border:1px solid rgba(255,255,255,0.06);"><div title="คงเดิมทั้งถ้อยคำ ๔๙ มาตรา" style="flex:49 1 0; background:#fb923c;"></div></div>
               <div style="flex:0 0 92px; font-size:11.5px; color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; text-align:right;">๔๙/๔๙ &middot; ๑๐๐%</div>
-            </div><div style="display:flex; align-items:center; gap:10px; padding:5px 0;">
+            </div><div style="display:flex; align-items:center; gap:10px">
               <div style="flex:0 0 190px; font-size:12px; color:var(--text-muted); line-height:1.35;"><strong style="color:var(--text);">หมวด ๙</strong> การปกครองส่วนท้องถิ่น</div>
               <div style="flex:1; display:flex; height:16px; border-radius:4px; overflow:hidden; background:rgba(15,18,25,0.7); border:1px solid rgba(255,255,255,0.06);"><div title="คงเดิมทั้งถ้อยคำ ๙ มาตรา" style="flex:9 1 0; background:#fb923c;"></div></div>
               <div style="flex:0 0 92px; font-size:11.5px; color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; text-align:right;">๙/๙ &middot; ๑๐๐%</div>
-            </div><div style="display:flex; align-items:center; gap:10px; padding:5px 0;">
+            </div><div style="display:flex; align-items:center; gap:10px">
               <div style="flex:0 0 190px; font-size:12px; color:var(--text-muted); line-height:1.35;"><strong style="color:var(--text);">หมวด ๑๐</strong> การตรวจสอบการใช้อำนาจรัฐ</div>
               <div style="flex:1; display:flex; height:16px; border-radius:4px; overflow:hidden; background:rgba(15,18,25,0.7); border:1px solid rgba(255,255,255,0.06);"><div title="คงเดิมทั้งถ้อยคำ ๑๕ มาตรา" style="flex:15 1 0; background:#fb923c;"></div><div title="แก้ไขก่อนส่งต่อ ๑ มาตรา" style="flex:1 1 0; background:#60a5fa;"></div></div>
               <div style="flex:0 0 92px; font-size:11.5px; color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; text-align:right;">๑๕/๑๖ &middot; ๙๔%</div>
-            </div><div style="display:flex; align-items:center; gap:10px; padding:5px 0;">
+            </div><div style="display:flex; align-items:center; gap:10px">
               <div style="flex:0 0 190px; font-size:12px; color:var(--text-muted); line-height:1.35;"><strong style="color:var(--text);">หมวด ๑๑</strong> การตรวจเงินแผ่นดิน</div>
               <div style="flex:1; display:flex; height:16px; border-radius:4px; overflow:hidden; background:rgba(15,18,25,0.7); border:1px solid rgba(255,255,255,0.06);"><div title="คงเดิมทั้งถ้อยคำ ๑ มาตรา" style="flex:1 1 0; background:#fb923c;"></div></div>
               <div style="flex:0 0 92px; font-size:11.5px; color:#fdba74; font-weight:800; font-family:'Outfit',sans-serif; text-align:right;">๑/๑ &middot; ๑๐๐%</div>
-            </div><div style="display:flex; align-items:center; gap:10px; padding:5px 0;">
+            </div><div style="display:flex; align-items:center; gap:10px">
               <div style="flex:0 0 190px; font-size:12px; color:var(--text-muted); line-height:1.35;"><strong style="color:var(--text);">หมวด ๑๒</strong> การแก้ไขเพิ่มเติมรัฐธรรมนูญและการร่างรัฐธรรมนูญ</div>
               <div style="flex:1; display:flex; height:16px; border-radius:4px; overflow:hidden; background:rgba(15,18,25,0.7); border:1px solid rgba(255,255,255,0.06);"><div title="แก้ไขก่อนส่งต่อ ๑ มาตรา" style="flex:1 1 0; background:#60a5fa;"></div><div title="เพิ่มเติมภายหลังการประกาศใช้ ๑ มาตรา" style="flex:1 1 0; background:#22d3ee;"></div></div>
               <div style="flex:0 0 92px; font-size:11.5px; color:#64748b; font-weight:800; font-family:'Outfit',sans-serif; text-align:right;">๐/๒ &middot; ๐%</div>
-            </div><div style="display:flex; align-items:center; gap:10px; padding:5px 0;">
+            </div><div style="display:flex; align-items:center; gap:10px">
               <div style="flex:0 0 190px; font-size:12px; color:var(--text-muted); line-height:1.35;"><strong style="color:var(--text);">หมวด ๑๓</strong> การขัดกันแห่งผลประโยชน์</div>
               <div style="flex:1; display:flex; height:16px; border-radius:4px; overflow:hidden; background:rgba(15,18,25,0.7); border:1px solid rgba(255,255,255,0.06);"><div title="เขียนใหม่ (สภาร่างฯ + ประชามติรอบที่ ๑-๒) ๓ มาตรา" style="flex:3 1 0; background:#4ade80;"></div></div>
               <div style="flex:0 0 92px; font-size:11.5px; color:#64748b; font-weight:800; font-family:'Outfit',sans-serif; text-align:right;">๐/๓ &middot; ๐%</div>
-            </div><div style="display:flex; align-items:center; gap:10px; padding:5px 0;">
+            </div><div style="display:flex; align-items:center; gap:10px">
               <div style="flex:0 0 190px; font-size:12px; color:var(--text-muted); line-height:1.35;"><strong style="color:var(--text);">หมวด ๑๔</strong> การปฏิรูปประเทศ</div>
               <div style="flex:1; display:flex; height:16px; border-radius:4px; overflow:hidden; background:rgba(15,18,25,0.7); border:1px solid rgba(255,255,255,0.06);"><div title="เขียนใหม่ (สภาร่างฯ + ประชามติรอบที่ ๑-๒) ๗ มาตรา" style="flex:7 1 0; background:#4ade80;"></div></div>
               <div style="flex:0 0 92px; font-size:11.5px; color:#64748b; font-weight:800; font-family:'Outfit',sans-serif; text-align:right;">๐/๗ &middot; ๐%</div>
-            </div><div style="display:flex; align-items:center; gap:10px; padding:5px 0;">
+            </div><div style="display:flex; align-items:center; gap:10px">
               <div style="flex:0 0 190px; font-size:12px; color:var(--text-muted); line-height:1.35;"><strong style="color:var(--text);">หมวด ๑๕</strong> องค์กรอัยการ</div>
               <div style="flex:1; display:flex; height:16px; border-radius:4px; overflow:hidden; background:rgba(15,18,25,0.7); border:1px solid rgba(255,255,255,0.06);"><div title="เขียนใหม่ (สภาร่างฯ + ประชามติรอบที่ ๑-๒) ๔ มาตรา" style="flex:4 1 0; background:#4ade80;"></div></div>
               <div style="flex:0 0 92px; font-size:11.5px; color:#64748b; font-weight:800; font-family:'Outfit',sans-serif; text-align:right;">๐/๔ &middot; ๐%</div>
-            </div><div style="display:flex; align-items:center; gap:10px; padding:5px 0;">
+            </div><div style="display:flex; align-items:center; gap:10px">
               <div style="flex:0 0 190px; font-size:12px; color:var(--text-muted); line-height:1.35;"><strong style="color:var(--text);">หมวด ๑๖</strong> องค์กรอิสระ</div>
               <div style="flex:1; display:flex; height:16px; border-radius:4px; overflow:hidden; background:rgba(15,18,25,0.7); border:1px solid rgba(255,255,255,0.06);"><div title="เขียนใหม่ (สภาร่างฯ + ประชามติรอบที่ ๑-๒) ๒๗ มาตรา" style="flex:27 1 0; background:#4ade80;"></div></div>
               <div style="flex:0 0 92px; font-size:11.5px; color:#64748b; font-weight:800; font-family:'Outfit',sans-serif; text-align:right;">๐/๒๗ &middot; ๐%</div>
             </div><p style="font-size:11.8px; color:#64748b; line-height:1.7; margin:12px 0 0 0;">หมวด ๑-๑๒ คือโครงสร้างที่รับมาจากฉบับ ๒๔๔๕ ส่วนหมวด ๑๓-๑๖ ทั้ง ๔๑ มาตราเขียนขึ้นใหม่ในชั้น สสร. และผ่านประชามติรอบที่ ๑-๒ &mdash; ห้าหมวดที่รัฐธรรมนูญประทับตรา &ldquo;คงเดิมทั้งหมด&rdquo; ไว้ในตัวบทตรงกับการนับข้างต้นทุกหมวด</p>
-        </div>
-        <div style="background:linear-gradient(135deg, rgba(96,165,250,0.06) 0%, rgba(15,18,25,0.78) 100%); border:1px solid rgba(96,165,250,0.28); border-radius:14px; padding:18px 20px; margin-top:20px;">
-          <div style="font-size:15px; color:#93c5fd; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:10px;">✏️ ๑๓ มาตราที่ถูกแก้ไขก่อนส่งต่อ</div>
-          <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:8px;"><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.25); border-left:3px solid #60a5fa; border-radius:8px; padding:8px 11px;"><div style="font-family:'Outfit',sans-serif; font-size:12.5px; font-weight:800; color:#93c5fd;">มาตรา ๓</div><div style="font-size:11.8px; color:var(--text-muted); line-height:1.5; margin-top:2px;">อำนาจอธิปไตยเป็นของปวงชน ใช้ได้โดยตรง</div></div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.25); border-left:3px solid #fb923c; border-radius:8px; padding:8px 11px;"><div style="font-family:'Outfit',sans-serif; font-size:12.5px; font-weight:800; color:#fdba74;">มาตรา ๘</div><div style="font-size:11.8px; color:var(--text-muted); line-height:1.5; margin-top:2px;">องค์พระมหากษัตริย์ทรงอยู่ในฐานะอันเป็นที่เคารพสักการะ</div></div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.25); border-left:3px solid #60a5fa; border-radius:8px; padding:8px 11px;"><div style="font-family:'Outfit',sans-serif; font-size:12.5px; font-weight:800; color:#93c5fd;">มาตรา ๕๘</div><div style="font-size:11.8px; color:var(--text-muted); line-height:1.5; margin-top:2px;">ความเป็นส่วนตัวทางดิจิทัลและข้อมูลส่วนบุคคล</div></div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.25); border-left:3px solid #60a5fa; border-radius:8px; padding:8px 11px;"><div style="font-family:'Outfit',sans-serif; font-size:12.5px; font-weight:800; color:#93c5fd;">มาตรา ๕๙</div><div style="font-size:11.8px; color:var(--text-muted); line-height:1.5; margin-top:2px;">คุ้มครองผู้แจ้งเบาะแสการทุจริต</div></div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.25); border-left:3px solid #60a5fa; border-radius:8px; padding:8px 11px;"><div style="font-family:'Outfit',sans-serif; font-size:12.5px; font-weight:800; color:#93c5fd;">มาตรา ๖๔</div><div style="font-size:11.8px; color:var(--text-muted); line-height:1.5; margin-top:2px;">ห้ามใช้สิทธิเสรีภาพล้มล้างการปกครอง</div></div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.25); border-left:3px solid #fb923c; border-radius:8px; padding:8px 11px;"><div style="font-family:'Outfit',sans-serif; font-size:12.5px; font-weight:800; color:#fdba74;">มาตรา ๑๐๘</div><div style="font-size:11.8px; color:var(--text-muted); line-height:1.5; margin-top:2px;">คุณสมบัติผู้สมัคร ส.ส. &mdash; ต้องสังกัดพรรค ๙๐ วัน</div></div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.25); border-left:3px solid #60a5fa; border-radius:8px; padding:8px 11px;"><div style="font-family:'Outfit',sans-serif; font-size:12.5px; font-weight:800; color:#93c5fd;">มาตรา ๑๕๙</div><div style="font-size:11.8px; color:var(--text-muted); line-height:1.5; margin-top:2px;">ประชาชน ๕,๐๐๐ คนเข้าชื่อเสนอกฎหมาย</div></div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.25); border-left:3px solid #60a5fa; border-radius:8px; padding:8px 11px;"><div style="font-family:'Outfit',sans-serif; font-size:12.5px; font-weight:800; color:#93c5fd;">มาตรา ๑๖๐</div><div style="font-size:11.8px; color:var(--text-muted); line-height:1.5; margin-top:2px;">ถอดถอน ส.ส. โดยประชาชน ๑ ใน ๕ ของเขต</div></div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.25); border-left:3px solid #60a5fa; border-radius:8px; padding:8px 11px;"><div style="font-family:'Outfit',sans-serif; font-size:12.5px; font-weight:800; color:#93c5fd;">มาตรา ๑๘๘</div><div style="font-size:11.8px; color:var(--text-muted); line-height:1.5; margin-top:2px;">คณะรัฐมนตรี และวาระนายกฯ ๘ ปี</div></div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.25); border-left:3px solid #60a5fa; border-radius:8px; padding:8px 11px;"><div style="font-family:'Outfit',sans-serif; font-size:12.5px; font-weight:800; color:#93c5fd;">มาตรา ๒๐๑</div><div style="font-size:11.8px; color:var(--text-muted); line-height:1.5; margin-top:2px;">ปรึกษาประธานสองสภาในกิจการที่กระทบประโยชน์ชาติ</div></div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.25); border-left:3px solid #60a5fa; border-radius:8px; padding:8px 11px;"><div style="font-family:'Outfit',sans-serif; font-size:12.5px; font-weight:800; color:#93c5fd;">มาตรา ๒๐๓</div><div style="font-size:11.8px; color:var(--text-muted); line-height:1.5; margin-top:2px;">การสิ้นสุดความเป็นรัฐมนตรีเฉพาะตัว</div></div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.25); border-left:3px solid #60a5fa; border-radius:8px; padding:8px 11px;"><div style="font-family:'Outfit',sans-serif; font-size:12.5px; font-weight:800; color:#93c5fd;">มาตรา ๒๘๖</div><div style="font-size:11.8px; color:var(--text-muted); line-height:1.5; margin-top:2px;">ส.ส. ๑ ใน ๔ หรือประชาชน ๕,๐๐๐ คนเข้าชื่อยื่นวุฒิสภา</div></div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.25); border-left:3px solid #60a5fa; border-radius:8px; padding:8px 11px;"><div style="font-family:'Outfit',sans-serif; font-size:12.5px; font-weight:800; color:#93c5fd;">มาตรา ๒๙๕</div><div style="font-size:11.8px; color:var(--text-muted); line-height:1.5; margin-top:2px;">หลักเกณฑ์การแก้ไขเพิ่มเติมรัฐธรรมนูญ</div></div></div><p style="font-size:11.8px; color:#64748b; line-height:1.7; margin:10px 0 0 0;">๑๒ มาตราแก้ไขโดยสภาร่างรัฐธรรมนูญ &mdash; รวมถึง<strong style="color:#fdba74;">มาตรา ๘</strong> ซึ่งร่างแรกไม่มี และถูกเพิ่มเข้ามาหลังประชามติรอบที่ ๔ ครั้งแรกไม่ผ่าน ส่วน<strong style="color:#fdba74;">มาตรา ๑๐๘</strong> เป็นมาตราเดียวที่ระบุว่า &ldquo;แก้ไขจาก รธน. ๒๔๔๕&rdquo; โดยตรง</p>
-        </div>
-        <div style="background:linear-gradient(135deg, rgba(74,222,128,0.06) 0%, rgba(15,18,25,0.78) 100%); border:1px solid rgba(74,222,128,0.28); border-radius:14px; padding:18px 20px; margin-top:20px;">
-          <div style="font-size:15px; color:#86efac; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:10px;">🔚 เหตุที่ถูกแทนที่</div>
+        </section>
+        <section class="nwc-sec"><h4>๑๓ มาตราที่ถูกแก้ไขก่อนส่งต่อ</h4>
+          
+          <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:8px"><div class="nwc-card"><h5>มาตรา ๓</h5><div style="font-size:11.8px; color:var(--text-muted); line-height:1.5; margin-top:2px;">อำนาจอธิปไตยเป็นของปวงชน ใช้ได้โดยตรง</div></div><div class="nwc-card"><h5>มาตรา ๘</h5><div style="font-size:11.8px; color:var(--text-muted); line-height:1.5; margin-top:2px;">องค์พระมหากษัตริย์ทรงอยู่ในฐานะอันเป็นที่เคารพสักการะ</div></div><div class="nwc-card"><h5>มาตรา ๕๘</h5><div style="font-size:11.8px; color:var(--text-muted); line-height:1.5; margin-top:2px;">ความเป็นส่วนตัวทางดิจิทัลและข้อมูลส่วนบุคคล</div></div><div class="nwc-card"><h5>มาตรา ๕๙</h5><div style="font-size:11.8px; color:var(--text-muted); line-height:1.5; margin-top:2px;">คุ้มครองผู้แจ้งเบาะแสการทุจริต</div></div><div class="nwc-card"><h5>มาตรา ๖๔</h5><div style="font-size:11.8px; color:var(--text-muted); line-height:1.5; margin-top:2px;">ห้ามใช้สิทธิเสรีภาพล้มล้างการปกครอง</div></div><div class="nwc-card"><h5>มาตรา ๑๐๘</h5><div style="font-size:11.8px; color:var(--text-muted); line-height:1.5; margin-top:2px;">คุณสมบัติผู้สมัคร ส.ส. &mdash; ต้องสังกัดพรรค ๙๐ วัน</div></div><div class="nwc-card"><h5>มาตรา ๑๕๙</h5><div style="font-size:11.8px; color:var(--text-muted); line-height:1.5; margin-top:2px;">ประชาชน ๕,๐๐๐ คนเข้าชื่อเสนอกฎหมาย</div></div><div class="nwc-card"><h5>มาตรา ๑๖๐</h5><div style="font-size:11.8px; color:var(--text-muted); line-height:1.5; margin-top:2px;">ถอดถอน ส.ส. โดยประชาชน ๑ ใน ๕ ของเขต</div></div><div class="nwc-card"><h5>มาตรา ๑๘๘</h5><div style="font-size:11.8px; color:var(--text-muted); line-height:1.5; margin-top:2px;">คณะรัฐมนตรี และวาระนายกฯ ๘ ปี</div></div><div class="nwc-card"><h5>มาตรา ๒๐๑</h5><div style="font-size:11.8px; color:var(--text-muted); line-height:1.5; margin-top:2px;">ปรึกษาประธานสองสภาในกิจการที่กระทบประโยชน์ชาติ</div></div><div class="nwc-card"><h5>มาตรา ๒๐๓</h5><div style="font-size:11.8px; color:var(--text-muted); line-height:1.5; margin-top:2px;">การสิ้นสุดความเป็นรัฐมนตรีเฉพาะตัว</div></div><div class="nwc-card"><h5>มาตรา ๒๘๖</h5><div style="font-size:11.8px; color:var(--text-muted); line-height:1.5; margin-top:2px;">ส.ส. ๑ ใน ๔ หรือประชาชน ๕,๐๐๐ คนเข้าชื่อยื่นวุฒิสภา</div></div><div class="nwc-card"><h5>มาตรา ๒๙๕</h5><div style="font-size:11.8px; color:var(--text-muted); line-height:1.5; margin-top:2px;">หลักเกณฑ์การแก้ไขเพิ่มเติมรัฐธรรมนูญ</div></div></div><p style="font-size:11.8px; color:#64748b; line-height:1.7; margin:10px 0 0 0;">๑๒ มาตราแก้ไขโดยสภาร่างรัฐธรรมนูญ &mdash; รวมถึง<strong style="color:#fdba74;">มาตรา ๘</strong> ซึ่งร่างแรกไม่มี และถูกเพิ่มเข้ามาหลังประชามติรอบที่ ๔ ครั้งแรกไม่ผ่าน ส่วน<strong style="color:#fdba74;">มาตรา ๑๐๘</strong> เป็นมาตราเดียวที่ระบุว่า &ldquo;แก้ไขจาก รธน. ๒๔๔๕&rdquo; โดยตรง</p>
+        </section>
+        <section class="nwc-sec"><h4>เหตุที่ถูกแทนที่</h4>
+          
           <p style="font-size:13px; color:var(--text-muted); line-height:1.9; margin:0;">โครงสร้าง ๑๖ หมวดยังไม่มีหมวดว่าด้วย<strong style="color:#86efac;">สิทธิเสรีภาพขั้นก้าวหน้า การคุ้มครองสิ่งแวดล้อม และการกระจายอำนาจสู่ท้องถิ่นอย่างอิสระ</strong> นายกรัฐมนตรีคนที่ ๑๓ อภิสิทธิ์ เวชชาชีวะ จึงริเริ่มจัดทำฉบับใหม่ร่วมกับรัชกาลที่ ๙ ผ่าน สสร. ๓,๐๐๐ คน &mdash; ฉบับ ๒๕๒๕ รับเนื้อหาของฉบับนี้ไว้เป็นแกนของหมวด ๑-๑๒ เขียนหมวด ๑๓-๑๖ ขึ้นใหม่ แล้วเพิ่มหมวดใหม่อีก ๒๐ หมวด บทเฉพาะกาล และหมวดพิเศษ รวมเป็น ๓๘ หมวด ๑,๑๖๐ มาตรา</p>
-        </div>
+        </section>
 
       </div>
-
-    </div>
+</div>
 <div id="maharaj-tab" class="db-tab-content">
 
       <div style="text-align:left;">
