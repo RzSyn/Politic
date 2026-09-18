@@ -35,8 +35,7 @@
 
   function build(el) {
     var DATA = window.HALL_DATA, base = el.getAttribute('base') || 'images/hall/';
-    el.style.cssText += ';position:relative;display:block;overflow:hidden;outline:none;cursor:grab;touch-action:pan-y;' +
-      'background:radial-gradient(ellipse 80% 62% at 50% 44%,#17150f 0%,#0a0908 58%,#040404 100%)';
+    el.style.cssText += ';position:relative;display:block;overflow:hidden;outline:none;cursor:grab;touch-action:pan-y';
     el.tabIndex = 0;
     el.innerHTML = '';
 
@@ -73,6 +72,19 @@
     });
 
     var g = null, vw = 0, vh = 0, dpr = 1, T = 1, woodTex = null, goldTex = null;
+    var PH = {};
+    function palette() {
+      var cs = getComputedStyle(el);
+      function v(name, fallback) { return (cs.getPropertyValue(name) || '').trim() || fallback; }
+      PH = {
+        carpetA: v('--ph-carpet-a', '#5e171c'), carpetB: v('--ph-carpet-b', '#1c0809'),
+        trim: v('--ph-trim', 'rgba(184,147,63,.85)'), dado: v('--ph-dado', '#b8933f'),
+        wallTop: v('--ph-wall-top', '#1a150d'), wallBottom: v('--ph-wall-bottom', '#0d0b08'),
+        floor: v('--ph-floor', '#100e0b'), ceil: v('--ph-ceil', '#0b0a08'), rail: v('--ph-rail', '#141109'),
+        lamp: v('--ph-lamp', '255, 232, 170'), room: v('--ph-room', '#17150f')
+      };
+      el.style.background = 'radial-gradient(ellipse 80% 62% at 50% 44%,' + PH.room + ' 0%, ' + PH.wallBottom + ' 58%, #040404 100%)';
+    }
     var p = -0.35, vel = 0, drag = null, jump = null, engaged = false;
 
     // ── frame textures, painted once per size ────────────────────────────────
@@ -180,6 +192,7 @@
       g.halfW = g.W + g.fw * 0.75;
       g.wallH = g.fh * 3.25;
       T = 0.92 * dpr;
+      palette();
       woodTex = frameTexture(false, 1);
       goldTex = frameTexture(true, 1.1);
       return true;
@@ -212,20 +225,20 @@
       var fy = g.fh * 1.45, wt = g.fh * 0.05 - g.wallH / 2, wb = g.fh * 0.05 + g.wallH / 2;
       var dado = wt + g.wallH * 0.645, cw = hw * 0.62;
       ctx.globalAlpha = 1;
-      quad(proj(-hw, fy, dN), proj(hw, fy, dN), proj(hw, fy, dF), proj(-hw, fy, dF), '#100e0b');
+      quad(proj(-hw, fy, dN), proj(hw, fy, dN), proj(hw, fy, dF), proj(-hw, fy, dF), PH.floor);
       var cg = ctx.createLinearGradient(0, proj(0, fy, dN)[1], 0, proj(0, fy, dF)[1]);
-      cg.addColorStop(0, '#5e171c'); cg.addColorStop(1, '#1c0809');
+      cg.addColorStop(0, PH.carpetA); cg.addColorStop(1, PH.carpetB);
       quad(proj(-cw, fy, dN), proj(cw, fy, dN), proj(cw, fy, dF), proj(-cw, fy, dF), cg);
-      line(proj(-cw, fy, dN), proj(-cw, fy, dF), 'rgba(184,147,63,.85)', 2);
-      line(proj(cw, fy, dN), proj(cw, fy, dF), 'rgba(184,147,63,.85)', 2);
+      line(proj(-cw, fy, dN), proj(-cw, fy, dF), PH.trim, 2);
+      line(proj(cw, fy, dN), proj(cw, fy, dF), PH.trim, 2);
       for (var j = Math.ceil((p - 0.9) * 4); j <= Math.floor((p + 3.9) * 4); j++) {
         var dd = g.near + (j / 4 - p) * g.D;
         if (dd > dN) line(proj(-hw, fy, dd), proj(hw, fy, dd), 'rgba(0,0,0,.28)', 1.5);
       }
-      quad(proj(-hw, wt, dN), proj(hw, wt, dN), proj(hw, wt, dF), proj(-hw, wt, dF), '#0b0a08');
-      quad(proj(-hw * 0.3, wt, dN), proj(hw * 0.3, wt, dN), proj(hw * 0.3, wt, dF), proj(-hw * 0.3, wt, dF), '#141109');
-      line(proj(-hw * 0.3, wt, dN), proj(-hw * 0.3, wt, dF), 'rgba(184,147,63,.3)', 1);
-      line(proj(hw * 0.3, wt, dN), proj(hw * 0.3, wt, dF), 'rgba(184,147,63,.3)', 1);
+      quad(proj(-hw, wt, dN), proj(hw, wt, dN), proj(hw, wt, dF), proj(-hw, wt, dF), PH.ceil);
+      quad(proj(-hw * 0.3, wt, dN), proj(hw * 0.3, wt, dN), proj(hw * 0.3, wt, dF), proj(-hw * 0.3, wt, dF), PH.rail);
+      line(proj(-hw * 0.3, wt, dN), proj(-hw * 0.3, wt, dF), PH.trim, 1);
+      line(proj(hw * 0.3, wt, dN), proj(hw * 0.3, wt, dF), PH.trim, 1);
       ctx.globalCompositeOperation = 'lighter';
       for (var c = Math.floor(p) - 1; c <= Math.ceil(p + 3.4); c++) {
         var dl = g.near + (c + 0.5 - p) * g.D;
@@ -233,24 +246,24 @@
         var lp = proj(0, wt, dl), rad = g.fw * 0.5 * P / (P + dl);
         if (rad < 1.5) continue;
         var lg = ctx.createRadialGradient(lp[0], lp[1], 0, lp[0], lp[1], rad);
-        lg.addColorStop(0, 'rgba(255,232,170,.40)');
-        lg.addColorStop(1, 'rgba(255,232,170,0)');
+        lg.addColorStop(0, 'rgba(' + PH.lamp + ',.40)');
+        lg.addColorStop(1, 'rgba(' + PH.lamp + ',0)');
         ctx.fillStyle = lg;
         ctx.fillRect(lp[0] - rad, lp[1] - rad, rad * 2, rad * 2);
       }
       ctx.globalCompositeOperation = 'source-over';
       [-1, 1].forEach(function (s) {
         var x = s * hw;
-        quad(proj(x, wt, dN), proj(x, wt, dF), proj(x, dado, dF), proj(x, dado, dN), '#1a150d');
-        quad(proj(x, dado, dN), proj(x, dado, dF), proj(x, wb, dF), proj(x, wb, dN), '#0d0b08');
-        line(proj(x, dado, dN), proj(x, dado, dF), '#b8933f', 2);
+        quad(proj(x, wt, dN), proj(x, wt, dF), proj(x, dado, dF), proj(x, dado, dN), PH.wallTop);
+        quad(proj(x, dado, dN), proj(x, dado, dF), proj(x, wb, dF), proj(x, wb, dN), PH.wallBottom);
+        line(proj(x, dado, dN), proj(x, dado, dF), PH.dado, 2);
         for (var k = Math.floor(p) - 2; k <= Math.ceil(p + 4); k++) {
           var d1 = g.near + (k + 0.45 - p) * g.D, d2 = d1 + 0.1 * g.D;
           if (d2 <= dN || d1 >= dF) continue;
           d1 = Math.max(d1, dN);
           quad(proj(x, wt, d1), proj(x, wt, d2), proj(x, wb, d2), proj(x, wb, d1), 'rgba(0,0,0,.38)');
-          line(proj(x, wt, d1), proj(x, wb, d1), 'rgba(184,147,63,.18)', 1);
-          line(proj(x, wt, d2), proj(x, wb, d2), 'rgba(184,147,63,.18)', 1);
+          line(proj(x, wt, d1), proj(x, wb, d1), PH.trim, 1);
+          line(proj(x, wt, d2), proj(x, wb, d2), PH.trim, 1);
         }
       });
     }
@@ -270,8 +283,8 @@
       ctx.globalCompositeOperation = 'lighter';
       var r1 = fw * 1.45 * k, wy = cy + (yc - fh * 0.15) * k;
       var wash = ctx.createRadialGradient(cx, wy, 0, cx, wy, r1);
-      wash.addColorStop(0, 'rgba(255,226,152,' + (0.13 * v.o).toFixed(3) + ')');
-      wash.addColorStop(1, 'rgba(255,226,152,0)');
+      wash.addColorStop(0, 'rgba(' + PH.lamp + ',' + (0.13 * v.o).toFixed(3) + ')');
+      wash.addColorStop(1, 'rgba(' + PH.lamp + ',0)');
       ctx.fillStyle = wash;
       ctx.fillRect(cx - r1, wy - r1, r1 * 2, r1 * 2);
       var rx = fw * 0.95 * k, ry = fw * 0.2 * k;
@@ -280,8 +293,8 @@
         ctx.translate(vw / 2 + it.side * g.W * 0.84 * k, cy + g.fh * 1.45 * k);
         ctx.scale(1, ry / rx);
         var pool = ctx.createRadialGradient(0, 0, 0, 0, 0, rx);
-        pool.addColorStop(0, 'rgba(255,220,150,' + (0.16 * v.o).toFixed(3) + ')');
-        pool.addColorStop(1, 'rgba(255,220,150,0)');
+        pool.addColorStop(0, 'rgba(' + PH.lamp + ',' + (0.16 * v.o).toFixed(3) + ')');
+        pool.addColorStop(1, 'rgba(' + PH.lamp + ',0)');
         ctx.fillStyle = pool;
         ctx.beginPath(); ctx.arc(0, 0, rx, 0, Math.PI * 2); ctx.fill();
         ctx.restore();
@@ -326,8 +339,8 @@
     for (var ci = 0; ci < 9; ci++) {
       var n = mk('div', 'position:absolute;left:0;top:0;transform:translate(-9999px,0);text-align:center;' +
         'will-change:transform,opacity;line-height:1.35;text-wrap:balance', capLayer);
-      n._l = mk('div', 'font-family:' + FS + ';font-weight:600;letter-spacing:.06em;color:' + GOLD + ';font-size:.62em;text-shadow:0 2px 10px rgba(0,0,0,.95)', n);
-      n._n = mk('div', 'font-family:' + FD + ';font-weight:600;color:#f4ead2;font-size:1em;white-space:pre-line;margin-top:.18em;text-shadow:0 2px 14px rgba(0,0,0,.98)', n);
+      n._l = mk('div', 'font-family:' + FS + ';font-weight:600;letter-spacing:.06em;color:var(--ph-label, ' + GOLD + ');font-size:.62em;text-shadow:0 2px 10px rgba(0,0,0,.95)', n);
+      n._n = mk('div', 'font-family:' + FD + ';font-weight:600;color:var(--ph-name, #f4ead2);font-size:1em;white-space:pre-line;margin-top:.18em;text-shadow:0 2px 14px rgba(0,0,0,.98)', n);
       n._y = mk('div', 'font-family:' + FS + ';font-weight:400;color:#b3a88f;font-size:.6em;margin-top:.2em;text-shadow:0 2px 10px rgba(0,0,0,.95)', n);
       capPool.push(n);
     }
@@ -569,6 +582,8 @@
       // still hidden: check again shortly, in case no resize notification arrives when the tab opens
       if (!waiting) waiting = setTimeout(function () { waiting = 0; if (!g) resized(); }, 500);
     }
+    var themeWatch = new MutationObserver(function () { palette(); kick(); });
+    themeWatch.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme', 'class'] });
     var ro = window.ResizeObserver ? new ResizeObserver(resized) : null;
     if (ro) ro.observe(el); else window.addEventListener('resize', resized);
     resized();
@@ -579,6 +594,7 @@
         dead = true;
         if (raf) cancelAnimationFrame(raf);
         if (waiting) clearTimeout(waiting);
+        themeWatch.disconnect();
         if (ro) ro.disconnect(); else window.removeEventListener('resize', resized);
         document.removeEventListener('fullscreenchange', fsLabel);
         document.removeEventListener('webkitfullscreenchange', fsLabel);

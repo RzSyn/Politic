@@ -1,0 +1,179 @@
+<style>
+          @keyframes gocPulse {
+            0% { box-shadow: 0 0 15px rgba(239,68,68,0.5), 0 0 30px rgba(220,38,38,0.3); transform: scale(1); }
+            50% { box-shadow: 0 0 25px rgba(239,68,68,0.95), 0 0 50px rgba(220,38,38,0.7); transform: scale(1.03); }
+            100% { box-shadow: 0 0 15px rgba(239,68,68,0.5), 0 0 30px rgba(220,38,38,0.3); transform: scale(1); }
+          }
+          @keyframes gocShake {
+            0%, 100% { transform: translateX(0); }
+            20%, 60% { transform: translateX(-8px); }
+            40%, 80% { transform: translateX(8px); }
+          }
+        </style>
+        <div id="goc-secret-modal" style="
+          display: none;
+          position: fixed;
+          top: 0; left: 0; width: 100vw; height: 100vh;
+          background: rgba(5, 7, 12, 0.92);
+          backdrop-filter: blur(12px);
+          z-index: 99999;
+          align-items: center;
+          justify-content: center;
+          padding: 20px;
+          box-sizing: border-box;
+        ">
+          <div style="
+            background: #0f172a;
+            border: 2px solid #ef4444;
+            border-radius: 20px;
+            padding: 32px;
+            width: 100%;
+            max-width: 650px;
+            box-shadow: 0 0 40px rgba(239, 68, 68, 0.4);
+            position: relative;
+            color: #e2e8f0;
+            text-align: center;
+          ">
+            <button onclick="closeGocSecretModal()" style="
+              position: absolute; top: 16px; right: 20px;
+              background: none; border: none; color: #94a3b8; font-size: 24px; cursor: pointer;
+            ">✖</button>
+            <div style="display:inline-block; background:rgba(239,68,68,0.2); border:1px solid #ef4444; color:#f87171; padding:4px 14px; border-radius:20px; font-size:12.5px; font-weight:800; letter-spacing:1px; margin-bottom:12px;">
+              🛡️ GLOBAL OUTLANDISH CENTRE — LEVEL 5 CLEARANCE REQUIRED
+            </div>
+            <h2 style="color:#ef4444; margin:0 0 8px 0; font-family:'Outfit',sans-serif; font-size:24px;">🔒 ระบบยืนยันรหัสผ่านความมั่นคงพิเศษ</h2>
+            <p style="font-size:14.5px; color:#94a3b8; margin-bottom:20px;">กรุณากรอก Passcode อนุมัติการเข้าถึงข้อมูลลับเฉพาะเจ้าหน้าที่ฝ่ายข่าวกรองระดับชั้น ๕</p>
+            <div id="goc-passcode-form" style="margin-bottom:20px;">
+              <input type="password" id="goc-passcode-input" placeholder="ป้อนรหัสผ่าน (Passcode)..." style="
+                background: #1e293b;
+                border: 2px solid #475569;
+                border-radius: 12px;
+                padding: 12px 18px;
+                color: #ffffff;
+                font-size: 16px;
+                width: 80%;
+                max-width: 320px;
+                text-align: center;
+                outline: none;
+                box-shadow: inset 0 2px 4px rgba(0,0,0,0.5);
+                font-family: monospace, sans-serif;
+                letter-spacing: 2px;
+              " onkeyup="if(event.key==='Enter') submitGocPasscode()">
+              <div style="margin-top:16px; display:flex; justify-content:center; gap:12px;">
+                <button onclick="submitGocPasscode()" style="
+                  background: #ef4444; color: #ffffff; border: none; padding: 10px 24px; border-radius: 10px; font-weight: 700; cursor: pointer; font-size: 14.5px;
+                  box-shadow: 0 4px 14px rgba(239,68,68,0.4);
+                ">🔓 ยืนยันรหัสผ่าน</button>
+                <button onclick="closeGocSecretModal()" style="
+                  background: #334155; color: #cbd5e1; border: none; padding: 10px 20px; border-radius: 10px; font-weight: 600; cursor: pointer; font-size: 14.5px;
+                ">ยกเลิก</button>
+              </div>
+            </div>
+            <div id="goc-error-box" style="display:none; background:rgba(239,68,68,0.15); border:2px solid #ef4444; border-radius:12px; padding:16px; margin-top:16px; text-align:center;">
+              <div style="font-size:17.5px; font-weight:900; color:#f87171; letter-spacing:1px; margin-bottom:6px;">⚠️ [ACCESS DENIED] สิทธิ์การเข้าถึงถูกปฏิเสธ!</div>
+              <div style="font-size:13.5px; color:#fca5a5; line-height:1.6;">
+                รหัสผ่านไม่ถูกต้อง! ระบบความมั่นคง GOC กำลังบันทึกหมายเลข IP, พิกัดตำแหน่ง และข้อมูลอุปกรณ์ของท่าน ส่งตรงไปยังศูนย์บัญชาการข่าวกรองสยาม (GOC Intelligence Unit) ทันที!
+              </div>
+            </div>
+            <div id="goc-success-box" style="display:none; text-align:left; background:#141c2e; border:2px solid #22c55e; border-radius:14px; padding:24px; margin-top:16px; box-shadow:0 0 20px rgba(34,197,94,0.3);">
+              <div style="display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid rgba(34,197,94,0.3); padding-bottom:12px; margin-bottom:16px;">
+                <div style="font-size:18px; font-weight:800; color:#4ade80;">🔓 [ACCESS GRANTED] ปลดล็อกข้อมูลลับสำเร็จ!</div>
+                <span style="font-size:12px; background:rgba(34,197,94,0.2); color:#4ade80; padding:3px 10px; border-radius:10px; font-weight:700;">TOP SECRET LEVEL 5</span>
+              </div>
+              <div style="font-size:17px; font-weight:800; color:#facc15; margin-bottom:8px;">📁 แฟ้มคดีสอบสวนลับ: ปฏิบัติการกบฏ ๒๒٠ (Operation Dawn 220 Secret Investigation File)</div>
+              <div style="font-size:14px; color:#e2e8f0; line-height:1.8; margin-bottom:14px;">
+                • <strong>รหัสบันทึกแฟ้มคดี:</strong> GOC-SEC-220-DAWN-ALPHA<br>
+                • <strong>ผู้บังคับการปฏิบัติการ:</strong> ดร.ธนานนท์ (9arm) ร่วมกับ นายกรัฐมนตรี พริษฐ์ (ไอติม) วัชรสินธุ<br>
+                • <strong>สรุปเนื้อหาแฟ้มลับ:</strong> บันทึกหลักฐานผังเครือข่ายและพิมพ์เขียวการยับยั้งแผนการนิติประหารสภาแผ่นดิน ๒๒٠ พร้อมโครงสร้างระบบกระจายสัญญาณฉุกเฉิน ParadoxForward บนวงโคจรดาวเทียมไทยไมตรี ๒.0
+              </div>
+              <div style="background:#0b1120; border:1px dashed #4ade80; border-radius:10px; padding:16px; font-family:monospace; font-size:12.5px; color:#4ade80; line-height:1.6;">
+                =================== GOC SYSTEM BLUEPRINT ===================<br>
+                [NODE 01: SATHORN CENTRAL BUILD BLDG (FL. 50)] ==> OK<br>
+                [NODE 02: PARADOX AI INFRASTRUCTURE (ANTHROPIC)] ==> ONLINE<br>
+                [NODE 03: THAI CANAL MAITRI 2.0 RADAR] ==> ACTIVE 100%<br>
+                [CLEARANCE LOG]: PASSCODE AUTHENTICATED VIA SECRET PROTOCOL<br>
+                ============================================================
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          function openGocSecretModal() {
+            const modal = document.getElementById('goc-secret-modal');
+            const errBox = document.getElementById('goc-error-box');
+            const succBox = document.getElementById('goc-success-box');
+            const input = document.getElementById('goc-passcode-input');
+            if (modal) modal.style.display = 'flex';
+            if (errBox) errBox.style.display = 'none';
+            if (succBox) succBox.style.display = 'none';
+            if (input) { input.value = ''; input.focus(); }
+          }
+          function closeGocSecretModal() {
+            const modal = document.getElementById('goc-secret-modal');
+            if (modal) modal.style.display = 'none';
+          }
+          function submitGocPasscode() {
+            const input = document.getElementById('goc-passcode-input');
+            const errBox = document.getElementById('goc-error-box');
+            const succBox = document.getElementById('goc-success-box');
+            if (!input) return;
+            const val = input.value.trim().toLowerCase();
+            // Valid passcodes: 9arm, goc, 2525
+            if (val === '9arm' || val === 'goc' || val === '2525') {
+              if (errBox) errBox.style.display = 'none';
+              if (succBox) succBox.style.display = 'block';
+            } else {
+              if (succBox) succBox.style.display = 'none';
+              if (errBox) {
+                errBox.style.display = 'block';
+                errBox.style.animation = 'none';
+                setTimeout(() => { errBox.style.animation = 'gocShake 0.3s ease'; }, 10);
+              }
+            }
+          }
+        </script>
+    <script>
+      function updateTSLClock() {
+        var now = new Date();
+        var str = now.toLocaleTimeString('th-TH') + ' UTC+7';
+        var el = document.getElementById('tslClock');
+        if (el) el.innerText = str;
+      }
+      setInterval(updateTSLClock, 1000);
+      updateTSLClock();
+      function calcTSLFromTHB() {
+        var thb = parseFloat(document.getElementById('tslInputTHB').value) || 0;
+        var tsl = (thb * 92).toFixed(2);
+        document.getElementById('tslInputTSL').value = tsl;
+      }
+      function setTslChartRange(mode, btn) {
+        var btns = document.querySelectorAll('.tsl-range-btn');
+        btns.forEach(function(b) {
+          b.style.background = 'rgba(255,255,255,0.05)';
+          b.style.borderColor = 'rgba(255,255,255,0.2)';
+          b.style.color = '#cbd5e1';
+        });
+        if (btn) {
+          btn.style.background = 'rgba(74,222,128,0.2)';
+          btn.style.borderColor = '#4ade80';
+          btn.style.color = '#4ade80';
+        }
+        var line = document.getElementById('tslChartLine');
+        var area = document.getElementById('tslChartArea');
+        if (mode === 'CRISIS') {
+          line.setAttribute('points', '150,80 280,240 380,180');
+          area.setAttribute('points', '150,80 280,240 380,180 380,240 150,240');
+        } else if (mode === 'RECOVERY') {
+          line.setAttribute('points', '280,240 380,180 500,80');
+          area.setAttribute('points', '280,240 380,180 500,80 500,240 280,240');
+        } else {
+          line.setAttribute('points', '0,220 50,80 150,80 280,240 380,180 500,80');
+          area.setAttribute('points', '0,220 50,80 150,80 280,240 380,180 500,80 500,240 0,240');
+        }
+      }
+      function calcTHBFromTSL() {
+        var tsl = parseFloat(document.getElementById('tslInputTSL').value) || 0;
+        var thb = (tsl / 92).toFixed(2);
+        document.getElementById('tslInputTHB').value = thb;
+      }
+    </script>

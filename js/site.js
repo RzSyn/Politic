@@ -227,3 +227,73 @@
   if (/^art_\d+$/.test(h)) setTimeout(function () { goTo(h.slice(4)); }, 60);
   else if (topicButton(h)) setTimeout(function () { openTopic(h); }, 60);
 })();
+
+/* ── theme, motion and progress ───────────────────────────────────────── */
+(function () {
+  'use strict';
+  var TH = '๐๑๒๓๔๕๖๗๘๙';
+  function toThai(s) { return String(s).replace(/[0-9]/g, function (c) { return TH[+c]; }); }
+  var root = document.documentElement;
+  var $$ = function (sel) { return Array.prototype.slice.call(document.querySelectorAll(sel)); };
+
+  // theme switch: gold (default) or jade, with a soft cross-fade where supported
+  var buttons = $$('.nw-theme button');
+  function paint(name) {
+    root.dataset.theme = name;
+    buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.setTheme === name)); });
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', name === 'jade' ? '#0c0e11' : '#0b0a08');
+    try { localStorage.setItem('nwTheme', name); } catch (e) {}
+  }
+  paint(root.dataset.theme === 'jade' ? 'jade' : 'gold');
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var name = b.dataset.setTheme;
+      if (name === root.dataset.theme) return;
+      if (document.startViewTransition) document.startViewTransition(function () { paint(name); });
+      else paint(name);
+    });
+  });
+
+  // the hero numbers count up once, in Thai numerals
+  function count(el) {
+    var to = +el.getAttribute('data-count'), comma = el.hasAttribute('data-comma'), t0 = Date.now(), dur = 1400;
+    (function step() {
+      var p = Math.min(1, (Date.now() - t0) / dur), e = 1 - Math.pow(1 - p, 3);
+      var n = Math.round(to * e);
+      el.textContent = toThai(comma ? n.toLocaleString('en-US') : n);
+      if (p < 1) setTimeout(step, 16);
+    })();
+  }
+
+  // reveal on scroll: group cards, chapter headings and articles
+  var reveal = $$('.nw-reveal').concat($$('.nw-art'));
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        en.target.classList.add('is-in');
+        Array.prototype.forEach.call(en.target.querySelectorAll('[data-count]'), count);
+        io.unobserve(en.target);
+      });
+    }, { rootMargin: '0px 0px -12% 0px', threshold: 0.05 });
+    reveal.forEach(function (el) { io.observe(el); });
+    $$('[data-count]').forEach(function (c) { io.observe(c.closest('.nw-stats') || c); });
+  } else {
+    root.classList.add('no-anim');
+    $$('.nw-reveal').forEach(function (el) { el.classList.add('is-in'); });
+    $$('[data-count]').forEach(count);
+  }
+
+  // reading progress across the whole page
+  var bar = document.getElementById('nwProgress'), ticking = false;
+  window.addEventListener('scroll', function () {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function () {
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = (h > 0 ? Math.min(100, window.pageYOffset / h * 100) : 0) + '%';
+      ticking = false;
+    });
+  }, { passive: true });
+})();

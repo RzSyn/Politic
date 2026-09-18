@@ -1,0 +1,220 @@
+<script>
+
+
+function toggleNACCAnomaly() {
+
+
+  var box = document.getElementById('nacc-anomaly-box');
+
+
+  if (box) {
+
+
+    box.style.display = (box.style.display === 'none' || box.style.display === '') ? 'block' : 'none';
+
+
+  }
+
+
+}
+
+
+var currentVoteCount = 3845200;
+
+
+function simulateECTVote() {
+
+
+  currentVoteCount++;
+
+
+  var el = document.getElementById('live-vote-count');
+
+
+  if (el) {
+
+
+    el.innerText = currentVoteCount.toLocaleString('th-TH') + ' เสียง';
+
+
+  }
+
+
+}
+
+
+var currentPetitionCount = 5000;
+
+
+function signPetition() {
+
+
+  currentPetitionCount++;
+
+
+  var el = document.getElementById('petition-count');
+
+
+  if (el) {
+
+
+    el.innerText = currentPetitionCount.toLocaleString('th-TH') + ' คน';
+
+
+  }
+
+
+}
+
+
+    function filterJudiciary(category, btn) {
+
+
+      var container = btn.closest('.db-tab-content');
+
+
+      if (!container) return;
+
+
+      var buttons = container.querySelectorAll('.judiciary-filter-btn');
+
+
+      buttons.forEach(function(b) {
+
+
+        b.classList.remove('active');
+
+
+        b.style.background = 'rgba(255,255,255,0.05)';
+
+
+        b.style.color = '#e2e8f0';
+
+
+        b.style.borderColor = 'rgba(255,255,255,0.15)';
+
+
+        b.style.fontWeight = 'normal';
+
+
+      });
+
+
+      btn.classList.add('active');
+
+
+      btn.style.background = 'var(--gold)';
+
+
+      btn.style.color = '#000';
+
+
+      btn.style.borderColor = 'var(--gold)';
+
+
+      btn.style.fontWeight = '700';
+
+
+      var rows = container.querySelectorAll('.judiciary-row');
+
+
+      rows.forEach(function(row) {
+
+
+        if (category === 'all' || row.getAttribute('data-category') === category) {
+
+
+          row.style.display = '';
+
+
+        } else {
+
+
+          row.style.display = 'none';
+
+
+        }
+
+
+      });
+
+
+    }
+
+
+    function filterLocalGovt(category, btn) {
+
+
+      var container = btn.closest('.db-tab-content');
+
+
+      if (!container) return;
+
+
+      var buttons = container.querySelectorAll('.local-filter-btn');
+
+
+      buttons.forEach(function(b) {
+
+
+        b.classList.remove('active');
+
+
+        b.style.background = 'rgba(255,255,255,0.05)';
+
+
+        b.style.color = '#e2e8f0';
+
+
+        b.style.borderColor = 'rgba(255,255,255,0.15)';
+
+
+        b.style.fontWeight = 'normal';
+
+
+      });
+
+
+      btn.classList.add('active');
+
+
+      btn.style.background = '#4ade80';
+
+
+      btn.style.color = '#000';
+
+
+      btn.style.borderColor = '#4ade80';
+
+
+      btn.style.fontWeight = '700';
+
+
+      var rows = container.querySelectorAll('.local-row');
+
+
+      rows.forEach(function(row) {
+
+
+        if (category === 'all' || row.getAttribute('data-category') === category || (category === 'reform' && row.getAttribute('data-category') === 'special')) {
+
+
+          row.style.display = '';
+
+
+        } else {
+
+
+          row.style.display = 'none';
+
+
+        }
+
+
+      });
+
+
+    }
+
+
+</script>

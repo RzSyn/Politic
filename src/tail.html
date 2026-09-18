@@ -1,0 +1,61 @@
+<!-- GLOSSARY PANEL -->
+
+
+
+
+
+<!-- GLOSSARY PANEL -->
+
+
+<button class="glossary-btn" onclick="toggleGlossary()">📖 คำศัพท์</button>
+
+
+<div class="glossary-overlay" id="glossaryOverlay" onclick="toggleGlossary()"></div>
+
+
+<div class="glossary-panel" id="glossaryPanel">
+
+
+  <div class="glossary-header">
+
+
+    <h3>📖 พจนานุกรมคำศัพท์</h3>
+
+
+    <button class="glossary-close" onclick="toggleGlossary()">×</button>
+
+
+  </div>
+
+
+  <div class="glossary-search-wrapper">
+
+
+    <input type="text" class="glossary-search" id="glossarySearch" placeholder="พิมพ์คำศัพท์เพื่อค้นหา..." oninput="filterGlossary(this.value)">
+
+
+  </div>
+
+
+  <div class="glossary-list" id="glossaryList">
+
+
+    <!-- Will be populated by JS -->
+
+
+  </div>
+
+
+</div>
+
+
+
+
+
+</main>
+
+
+<!-- BACK TO TOP -->
+
+
+<button class="back-top" id="backTop" onclick="window.scrollTo(0,0)">▲</button>

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="th" data-theme="gold">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0c0e11">
+<meta name="theme-color" content="#0b0a08">
 <title>รัฐธรรมนูญแห่งราชอาณาจักรไทย พุทธศักราช ๒๕๒๕ (ฉบับจำลอง)</title>
 <script>
-/* the rebuilt site keeps only the dark look and the mourning (bw) mode */
+/* theme: gold (default) or jade, plus the mourning mode shared with the old site */
 try {
+  var th = localStorage.getItem('nwTheme');
+  document.documentElement.dataset.theme = th === 'jade' ? 'jade' : 'gold';
   var t = localStorage.getItem('constTheme');
   if (t && t !== 'dark' && t !== 'bw') localStorage.setItem('constTheme', 'dark');
   if (t === 'bw') document.documentElement.classList.add('mourning');
@@ -17,7 +19,7 @@ try {
 <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&family=Taviraj:wght@400;500;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/constitution.css?v=20260916">
 {{HEAD_RES}}
-<link rel="stylesheet" href="css/site.css?v=2">
+<link rel="stylesheet" href="css/site.css?v=3">
 </head>
 <body>
 
@@ -41,8 +43,13 @@ try {
     <label class="nw-search"><span class="nw-sr">ค้นหาหัวข้อหรือมาตรา</span>
       <input id="nwQ" type="search" placeholder="ค้นหาหัวข้อ มาตรา หรือคำสำคัญ…" autocomplete="off"></label>
     <button type="button" class="nw-btn nw-search-toggle" aria-label="ค้นหา">ค้นหา</button>
-    <button type="button" class="nw-btn" id="nwMourning" aria-pressed="false">โหมดไว้ทุกข์</button>
+    <div class="nw-theme" role="group" aria-label="ธีมสี">
+      <button type="button" data-set-theme="gold" aria-pressed="true">ทอง</button>
+      <button type="button" data-set-theme="jade" aria-pressed="false">หยก</button>
+    </div>
+    <button type="button" class="nw-btn" id="nwMourning" aria-pressed="false">ไว้ทุกข์</button>
   </div>
+  <div class="nw-progress"><i id="nwProgress"></i></div>
 </header>
 
 <div id="top"></div>
@@ -51,17 +58,18 @@ try {
 <section class="nw-hero">
   {{MOURNING}}
   <div class="nw-hero-in">
+    <div class="nw-hero-glow" aria-hidden="true"></div>
     <div class="nw-hero-text">
-      <p class="nw-eyebrow">ราชอาณาจักรไทย · ฉบับจำลอง</p>
-      <h1>รัฐธรรมนูญแห่งราชอาณาจักรไทย<br>พุทธศักราช ๒๕๒๕</h1>
-      <p class="nw-lede">ฉบับประชาชนเป็นใหญ่ — ผ่านประชามติ ๕ รอบ (ด้วยมติเอกฉันท์ของปวงชน)</p>
-      <div class="nw-stats">
-        <div><b>๑,๑๖๐</b><span>มาตรา</span></div>
-        <div><b>๓๘</b><span>หมวด</span></div>
-        <div><b>๓,๐๐๐</b><span>ผู้ร่วมร่าง</span></div>
-        <div><b>๕</b><span>รอบประชามติ</span></div>
+      <p class="nw-eyebrow nw-rise" style="--i:0">ราชอาณาจักรไทย · ฉบับจำลอง</p>
+      <h1 class="nw-rise" style="--i:1">รัฐธรรมนูญแห่งราชอาณาจักรไทย<br>พุทธศักราช ๒๕๒๕</h1>
+      <p class="nw-lede nw-rise" style="--i:2">ฉบับประชาชนเป็นใหญ่ — ผ่านประชามติ ๕ รอบ (ด้วยมติเอกฉันท์ของปวงชน)</p>
+      <div class="nw-stats nw-rise" style="--i:3">
+        <div><b data-count="1160" data-comma="1">๐</b><span>มาตรา</span></div>
+        <div><b data-count="38">๐</b><span>หมวด</span></div>
+        <div><b data-count="3000" data-comma="1">๐</b><span>ผู้ร่วมร่าง</span></div>
+        <div><b data-count="5">๐</b><span>รอบประชามติ</span></div>
       </div>
-      <div class="nw-hero-cta">
+      <div class="nw-hero-cta nw-rise" style="--i:4">
         <a class="nw-btn nw-btn-primary" href="#hub">เลือกหัวข้อ</a>
         <a class="nw-btn" href="#charter">อ่านตัวบทรัฐธรรมนูญ</a>
       </div>
@@ -98,7 +106,7 @@ try {
 
 <!-- ═══ CHARTER ═══ -->
 <section class="nw-charter" id="charter">
-  <header class="nw-charter-head">
+  <header class="nw-charter-head nw-reveal">
     <p class="nw-eyebrow">ตัวบท</p>
     <h2>รัฐธรรมนูญแห่งราชอาณาจักรไทย พุทธศักราช ๒๕๒๕</h2>
     <div class="nw-legend">{{LEGEND}}</div>
@@ -133,7 +141,7 @@ try {
 
 <footer class="nw-foot">
   <p>รัฐธรรมนูญจำลอง · โลกประวัติศาสตร์ทางเลือก ไม่ใช่ข้อมูลจริง</p>
-  <p><a href="https://github.com/RzSyn/Politic" target="_blank" rel="noopener">GitHub: RzSyn/Politic</a></p>
+  <p><a href="website_constitution.html">เปิดเว็บไซต์แบบเดิม</a> · <a href="https://github.com/RzSyn/Politic" target="_blank" rel="noopener">GitHub: RzSyn/Politic</a></p>
 </footer>
 
 <div class="nw-scrim" id="nwScrim" hidden></div>
@@ -143,8 +151,8 @@ try {
 <script src="js/constitution.js"></script>
 <script src="js/hall-data.js"></script>
 <script src="js/hall-aura.js"></script>
-<script src="js/portrait-hall.js"></script>
+<script src="js/portrait-hall.js?v=2"></script>
 {{TAIL_SCRIPT}}
-<script src="js/site.js?v=2"></script>
+<script src="js/site.js?v=3"></script>
 </body>
 </html>

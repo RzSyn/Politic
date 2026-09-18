@@ -1,0 +1,372 @@
+[
+ {
+  "icon": "📜",
+  "name": "ประวัติศาสตร์ & รัฐธรรมนูญไทย",
+  "topics": [
+   {
+    "id": "history-tab",
+    "icon": "📜",
+    "label": "ประวัติศาสตร์ประชาธิปไตย"
+   },
+   {
+    "id": "sappaya-tab",
+    "icon": "🏛️",
+    "label": "สัปปายะสภาสถาน"
+   },
+   {
+    "id": "portrait-hall-tab",
+    "icon": "🖼️",
+    "label": "หอภาพเหมือน"
+   },
+   {
+    "id": "drafting-process-tab",
+    "icon": "📝",
+    "label": "กระบวนการร่างรัฐธรรมนูญ"
+   },
+   {
+    "id": "referendum-tab",
+    "icon": "🗳️",
+    "label": "มหากาพย์ประชามติ ๕ รอบ"
+   },
+   {
+    "id": "constitutions-tab",
+    "icon": "📜",
+    "label": "รัฐธรรมนูญ ๓ ฉบับหลัก"
+   },
+   {
+    "id": "early-const-tab",
+    "icon": "📜",
+    "label": "รธน. ฉบับปฐมเวลา (๒๓๗๕)"
+   },
+   {
+    "id": "charter-2445-tab",
+    "icon": "📜",
+    "label": "รธน. ฉบับถาวรที่สอง (๒๔๔๕)"
+   }
+  ]
+ },
+ {
+  "icon": "👑",
+  "name": "สถาบันพระมหากษัตริย์ & คลังปัญญาชาติ",
+  "topics": [
+   {
+    "id": "maharaj-tab",
+    "icon": "👑",
+    "label": "มหาราช ๕ พระองค์"
+   },
+   {
+    "id": "rama1-tab",
+    "icon": "👑",
+    "label": "พระพุทธยอดฟ้าจุฬาโลกมหาราช (ร.๑)"
+   },
+   {
+    "id": "rama4-tab",
+    "icon": "👑",
+    "label": "พระสยามเทวมหามกุฏวิทยมหาราช (ร.๔)"
+   },
+   {
+    "id": "rama5-tab",
+    "icon": "👑",
+    "label": "พระปิยมหาราช (ร.๕)"
+   },
+   {
+    "id": "rama6-tab",
+    "icon": "👑",
+    "label": "พระมหาธีรราชเจ้า (ร.๖)"
+   },
+   {
+    "id": "rama7-tab",
+    "icon": "👑",
+    "label": "พระประชาธิปมหาราช (ร.๗)"
+   },
+   {
+    "id": "rama8-tab",
+    "icon": "👑",
+    "label": "พระปรเมนทรมหาอานันทมหิดล (ร.๘)"
+   },
+   {
+    "id": "rama9-tab",
+    "icon": "👑",
+    "label": "พระมหาภูมิพลมหาราช (ร.๙)"
+   },
+   {
+    "id": "chakri-tab",
+    "icon": "🏰",
+    "label": "ราชวงศ์จักรี & รัตนโกสินทร์"
+   },
+   {
+    "id": "privy-council-tab",
+    "icon": "📜",
+    "label": "คณะองคมนตรี"
+   },
+   {
+    "id": "siripanya-tab",
+    "icon": "📚",
+    "label": "ห้องสมุดศิริปัญญาวิมารสัจ"
+   },
+   {
+    "id": "heritage-tab",
+    "icon": "🏛️",
+    "label": "มรดกและสถาบันแห่งชาติ"
+   }
+  ]
+ },
+ {
+  "icon": "🏛️",
+  "name": "การเมือง การปกครอง & สัญลักษณ์ชาติ",
+  "topics": [
+   {
+    "id": "legislative-tab",
+    "icon": "⚖️",
+    "label": "ฝ่ายนิติบัญญัติ (รัฐสภา)"
+   },
+   {
+    "id": "supreme-assembly-tab",
+    "icon": "👥",
+    "label": "สภาประชาชนสูงสุด"
+   },
+   {
+    "id": "pms-tab",
+    "icon": "🏛️",
+    "label": "ทำเนียบนายกรัฐมนตรี (๓๓ ท่าน)"
+   },
+   {
+    "id": "cabinet-tab",
+    "icon": "🏛️",
+    "label": "คณะรัฐมนตรีชุดปัจจุบัน"
+   },
+   {
+    "id": "ministries-tab",
+    "icon": "🏛️",
+    "label": "กระทรวงแผ่นดิน (โครงสร้างปฏิรูป)"
+   },
+   {
+    "id": "public-finance-tab",
+    "icon": "💰",
+    "label": "การคลังและงบประมาณ"
+   },
+   {
+    "id": "judiciary-tab",
+    "icon": "⚖️",
+    "label": "ฝ่ายตุลาการ (ศาลไทย)"
+   },
+   {
+    "id": "const-court-tab",
+    "icon": "⚖️",
+    "label": "ศาลรัฐธรรมนูญ"
+   },
+   {
+    "id": "independent-organs-tab",
+    "icon": "⚖️",
+    "label": "องค์กรอิสระตามรัฐธรรมนูญ"
+   },
+   {
+    "id": "hierarchy-laws-tab",
+    "icon": "📜",
+    "label": "ลำดับศักดิ์กฎหมาย"
+   },
+   {
+    "id": "local-govt-tab",
+    "icon": "🏙️",
+    "label": "องค์กรปกครองส่วนท้องถิ่น (การกระจายอำนาจ)"
+   },
+   {
+    "id": "kpptp-tab",
+    "icon": "✊",
+    "label": "คปพทป. (ม็อบใหญ่ครั้งแรกของไทย)"
+   },
+   {
+    "id": "election-system-tab",
+    "icon": "🗳️",
+    "label": "ระบบเลือกตั้ง & กกต."
+   },
+   {
+    "id": "direct-democracy-tab",
+    "icon": "✋",
+    "label": "ประชาธิปไตยทางตรง"
+   },
+   {
+    "id": "parties-tab",
+    "icon": "🗳️",
+    "label": "พรรคการเมือง"
+   },
+   {
+    "id": "orange-party-tab",
+    "icon": "🟠",
+    "label": "พรรคสีส้ม"
+   },
+   {
+    "id": "red-party-tab",
+    "icon": "🔴",
+    "label": "พรรคสีแดง"
+   },
+   {
+    "id": "independent-party-tab",
+    "icon": "⚪",
+    "label": "ผู้สมัครอิสระ"
+   },
+   {
+    "id": "military-chain-tab",
+    "icon": "⭐",
+    "label": "ลำดับบังคับบัญชาทหาร"
+   },
+   {
+    "id": "police-chain-tab",
+    "icon": "👮",
+    "label": "ลำดับบังคับบัญชาตำรวจ"
+   },
+   {
+    "id": "flag-tab",
+    "icon": "🇹🇭",
+    "label": "ธงชาติไทย"
+   },
+   {
+    "id": "national-songs-tab",
+    "icon": "🎵",
+    "label": "เพลงสำคัญของชาติ"
+   },
+   {
+    "id": "national-days-tab",
+    "icon": "📅",
+    "label": "วันสำคัญของชาติ"
+   },
+   {
+    "id": "thai-nobel-tab",
+    "icon": "🏆",
+    "label": "รางวัลโนเบลไทย"
+   }
+  ]
+ },
+ {
+  "icon": "👤",
+  "name": "บุคคลสำคัญ & ภูมิรัฐศาสตร์โลก",
+  "topics": [
+   {
+    "id": "figures-tab",
+    "icon": "👤",
+    "label": "บุคคลสำคัญ วีรชน"
+   },
+   {
+    "id": "villains-tab",
+    "icon": "👤",
+    "label": "บุคคลสำคัญ ทรชน"
+   },
+   {
+    "id": "goc-tab",
+    "icon": "🌐",
+    "label": "Global Outlandish Centre (GOC)"
+   },
+   {
+    "id": "geopolitics-tab",
+    "icon": "🌍",
+    "label": "ภูมิรัฐศาสตร์โลก"
+   },
+   {
+    "id": "world-economy-tab",
+    "icon": "📈",
+    "label": "เศรษฐกิจและค่าเงินโลก"
+   },
+   {
+    "id": "tsl-dashboard-tab",
+    "icon": "💵",
+    "label": "แดชบอร์ดระบบเงิน TSL"
+   },
+   {
+    "id": "tsl-league-tab",
+    "icon": "🇺🇸",
+    "label": "สหพันธรัฐใหม่ (TSL)"
+   },
+   {
+    "id": "laos-kingdom-tab",
+    "icon": "🇱🇦",
+    "label": "ราชอาณาประชาชนลาว"
+   },
+   {
+    "id": "russia-tab",
+    "icon": "🇷🇺",
+    "label": "สหพันธราชจักรวรรดิรัสเซีย"
+   },
+   {
+    "id": "alliances-disputes-tab",
+    "icon": "🤝",
+    "label": "องค์การพันธมิตร & ศาลสากล"
+   },
+   {
+    "id": "seato-tab",
+    "icon": "🕊️",
+    "label": "องค์การ SEATO"
+   },
+   {
+    "id": "lfn-tab",
+    "icon": "🌐",
+    "label": "สันนิบาตประชาชาติเสรี (LFN)"
+   },
+   {
+    "id": "un-thailand-tab",
+    "icon": "🕊️",
+    "label": "ไทยในเวทีสหประชาชาติ (UN)"
+   },
+   {
+    "id": "international-missions-tab",
+    "icon": "🛡️",
+    "label": "ภารกิจ & วิกฤตการณ์สากล"
+   },
+   {
+    "id": "dexibola-virus-tab",
+    "icon": "🦠",
+    "label": "ไวรัส Dexibola"
+   },
+   {
+    "id": "myteos-virus-tab",
+    "icon": "🦠",
+    "label": "ไวรัสมายทีโอส (Myteos)"
+   }
+  ]
+ },
+ {
+  "icon": "🤖",
+  "name": "นวัตกรรม, สื่อใหม่ & อภิมหาโครงการ (Innovation & Mega Projects)",
+  "topics": [
+   {
+    "id": "paradox-ai-tab",
+    "icon": "🤖",
+    "label": "โครงการ ParadoxAI / ParadoxForward"
+   },
+   {
+    "id": "thaijavis-tab",
+    "icon": "🤖",
+    "label": "ThaiJavis 2.0 (เอไอแผ่นดิน)"
+   },
+   {
+    "id": "khonlalike-tab",
+    "icon": "🎨",
+    "label": "โครงการคนละไลค์ (SIN ARCHIVE & Creators)"
+   },
+   {
+    "id": "the-plague-series-tab",
+    "icon": "🎬",
+    "label": "ซีรีส์ The Plague (Netflix)"
+   },
+   {
+    "id": "bancc-tab",
+    "icon": "🏛️",
+    "label": "ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช (BANCC)"
+   },
+   {
+    "id": "thai-canal-tab",
+    "icon": "🌊",
+    "label": "โครงการคลองไทยไมตรี (Thai Canal 1.0-2.0)"
+   },
+   {
+    "id": "siam-medicine-tab",
+    "icon": "🏥",
+    "label": "การแพทย์สยาม อันดับ ๑ ของโลก"
+   },
+   {
+    "id": "clean-energy-tab",
+    "icon": "⚡",
+    "label": "พลังงานสะอาด ๑๐๐%"
+   }
+  ]
+ }
+]
