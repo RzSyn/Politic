@@ -618,3 +618,20 @@ html.mourning .nw-art-act { background: #000; color: #fff; }
   background: var(--nw-acc) !important; color: var(--nw-bg) !important; border-color: var(--nw-acc) !important;
 }
 .nw-stage-body .cross-ref { color: var(--nw-acc-2) !important; border-color: var(--nw-line) !important; }
+
+/* the glossary panel: categories, full-screen mode, theme colours */
+.glossary-count, .glossary-full, .glossary-see { color: var(--nw-text-3) !important; }
+.glossary-group { color: var(--nw-acc) !important; border-color: var(--nw-line) !important; }
+.glossary-abbr {
+  background: var(--nw-acc-soft) !important; border-color: var(--nw-line) !important; color: var(--nw-acc-2) !important;
+}
+.glossary-cat {
+  background: var(--nw-surface) !important; border-color: var(--nw-line) !important; color: var(--nw-text-2) !important;
+  font-family: var(--nw-sans) !important;
+}
+.glossary-cat:hover { border-color: var(--nw-acc) !important; color: var(--nw-acc-2) !important; }
+.glossary-cat.on { background: var(--nw-acc) !important; border-color: var(--nw-acc) !important; color: var(--nw-bg) !important; }
+.glossary-full-btn { border-color: var(--nw-line) !important; color: var(--nw-text-2) !important; }
+.glossary-full-btn:hover { color: var(--nw-acc) !important; border-color: var(--nw-acc) !important; }
+.glossary-panel.full { background: var(--nw-bg) !important; }
+.glossary-empty { color: var(--nw-text-3) !important; }

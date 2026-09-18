@@ -23,7 +23,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700;800&family=Taviraj:wght@500;600&display=swap" rel="stylesheet">
 
 
-<link rel="stylesheet" href="css/constitution.css?v=20260916">
+<link rel="stylesheet" href="css/constitution.css?v=20260918">
 
 
 <style>
@@ -72130,25 +72130,21 @@ function playAudioMobile(btn, src) {
 <div class="glossary-panel" id="glossaryPanel">
 
 
-  <div class="glossary-header">
-
-
-    <h3>📖 พจนานุกรมคำศัพท์</h3>
-
-
-    <button class="glossary-close" onclick="toggleGlossary()">×</button>
-
-
+    <div class="glossary-header">
+    <h3>📖 พจนานุกรมคำศัพท์ <span class="glossary-count" id="glossaryCount"></span></h3>
+    <div class="glossary-head-btns">
+      <button class="glossary-full-btn" id="glossaryFullBtn" title="ดูแบบเต็มจอ" onclick="toggleGlossaryFull()">⛶</button>
+      <button class="glossary-close" onclick="toggleGlossary()">×</button>
+    </div>
   </div>
 
 
   <div class="glossary-search-wrapper">
 
 
-    <input type="text" class="glossary-search" id="glossarySearch" placeholder="พิมพ์คำศัพท์เพื่อค้นหา..." oninput="filterGlossary(this.value)">
-
-
+    <input type="text" class="glossary-search" id="glossarySearch" placeholder="ค้นหาคำศัพท์ ตัวย่อ หรือความหมาย..." oninput="filterGlossary(this.value)">
   </div>
+  <div class="glossary-cats" id="glossaryCats"></div>
 
 
   <div class="glossary-list" id="glossaryList">
@@ -72175,7 +72171,8 @@ function playAudioMobile(btn, src) {
 <button class="back-top" id="backTop" onclick="window.scrollTo(0,0)">▲</button>
 
 
-<script src="js/constitution.js"></script>
+<script src="js/glossary-data.js?v=20260918"></script>
+<script src="js/constitution.js?v=20260918"></script>
 <script src="js/hall-data.js"></script>
 <script src="js/hall-aura.js"></script>
 <script src="js/portrait-hall.js"></script>

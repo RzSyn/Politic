@@ -16,25 +16,21 @@
 <div class="glossary-panel" id="glossaryPanel">
 
 
-  <div class="glossary-header">
-
-
-    <h3>📖 พจนานุกรมคำศัพท์</h3>
-
-
-    <button class="glossary-close" onclick="toggleGlossary()">×</button>
-
-
+    <div class="glossary-header">
+    <h3>📖 พจนานุกรมคำศัพท์ <span class="glossary-count" id="glossaryCount"></span></h3>
+    <div class="glossary-head-btns">
+      <button class="glossary-full-btn" id="glossaryFullBtn" title="ดูแบบเต็มจอ" onclick="toggleGlossaryFull()">⛶</button>
+      <button class="glossary-close" onclick="toggleGlossary()">×</button>
+    </div>
   </div>
 
 
   <div class="glossary-search-wrapper">
 
 
-    <input type="text" class="glossary-search" id="glossarySearch" placeholder="พิมพ์คำศัพท์เพื่อค้นหา..." oninput="filterGlossary(this.value)">
-
-
+    <input type="text" class="glossary-search" id="glossarySearch" placeholder="ค้นหาคำศัพท์ ตัวย่อ หรือความหมาย..." oninput="filterGlossary(this.value)">
   </div>
+  <div class="glossary-cats" id="glossaryCats"></div>
 
 
   <div class="glossary-list" id="glossaryList">
