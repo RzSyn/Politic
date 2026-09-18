@@ -7,6 +7,8 @@ table, figure) and re-emits them with the .nwc-* classes, keeping every word
 of the content.  Scripts and styles inside a tab are kept verbatim.
 """
 from html.entities import html5 as HTML5_ENTITIES
+
+import detone
 import json
 import os
 import re
@@ -111,9 +113,29 @@ def render(n):
     return '<%s%s>%s</%s>' % (n.tag, attrs_str(n), n.inner(), n.tag)
 
 
+LAYOUT_PROPS = ('display', 'flex', 'flex-basis', 'flex-grow', 'flex-shrink', 'flex-direction',
+                'flex-wrap', 'align-items', 'align-self', 'justify-content', 'justify-self', 'order',
+                'grid-template-columns', 'grid-template-rows', 'grid-column', 'grid-row', 'gap',
+                'width', 'height', 'min-width', 'min-height', 'max-width', 'max-height',
+                'aspect-ratio', 'object-fit', 'box-sizing', 'text-align', 'white-space', 'overflow-x')
+
+
+def layout_style(style):
+    """Keep only the declarations that decide where a box sits and how big it is."""
+    keep = []
+    for part in (style or '').split(';'):
+        if part.strip() and part.split(':')[0].strip().lower() in LAYOUT_PROPS:
+            keep.append(part.strip())
+    return '; '.join(keep)
+
+
 def plain(n, cls=None):
-    """Drop the inline look, keep the element."""
-    n.attrs.pop('style', None)
+    """Drop the inline look, keep the element and the space it takes."""
+    kept = layout_style(n.attrs.get('style'))
+    if kept:
+        n.attrs['style'] = kept
+    else:
+        n.attrs.pop('style', None)
     if cls:
         have = n.attrs.get('class', '')
         n.attrs['class'] = (have + ' ' + cls).strip()
@@ -141,16 +163,17 @@ def is_titleish(n):
 
 def keep_layout_only(n):
     """Keep a grid or flex row's shape, drop its colours."""
-    fields = ('display', 'grid-template-columns', 'grid-template-rows', 'gap',
-              'flex-wrap', 'align-items', 'justify-content', 'flex-direction', 'flex')
-    keep = []
-    for part in (n.attrs.get('style') or '').split(';'):
-        if part.strip() and part.split(':')[0].strip() in fields:
-            keep.append(part.strip())
-    if keep:
-        n.attrs['style'] = '; '.join(keep)
-    else:
-        n.attrs.pop('style', None)
+    return plain(n)
+
+
+def retone(n):
+    """Give whatever style is left the new site's tokens."""
+    st = n.attrs.get('style')
+    if st and n.tag not in ('svg', 'script', 'style'):
+        pill = 'border-radius:999px' in st.replace(' ', '') or 'border-radius:50%' in st.replace(' ', '')
+        n.attrs['style'] = detone.style_attr(st, keep_colours=pill)
+        if not n.attrs['style']:
+            n.attrs.pop('style')
     return n
 
 
@@ -160,6 +183,7 @@ def transform(n, top=False):
     if n.tag in ('script', 'style', 'svg', '#raw'):
         return n
     n.kids = [transform(k) for k in n.kids]
+    retone(n)
 
     if n.tag == 'table':
         plain(n, 'nwc-table')
@@ -255,6 +279,8 @@ def transform(n, top=False):
 
     # ── plain card ────────────────────────────────────────────────────────
     if re.search(r'background:(rgba\(|linear-gradient|#)', st) and 'border-radius' in st and 'padding' in st:
+        if n.el('img') and not n.flat_text():
+            return n
         return plain(n, 'nwc-card')
 
     # ── grids and flex rows keep their shape, lose the colours ────────────
@@ -279,7 +305,10 @@ def relayout(path):
     keep = []
 
     def stash(m):
-        keep.append(m.group(0))
+        block = m.group(0)
+        if m.group(1) == 'style':
+            block = detone.css_block(block)
+        keep.append(block)
         return '<!--KEEP%d-->' % (len(keep) - 1)
 
     src = re.sub(r'<(script|style)\b.*?</\1>', stash, src, flags=re.S)

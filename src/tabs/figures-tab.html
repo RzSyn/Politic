@@ -16,10 +16,10 @@
         .tri-container {
 
 
-          background: rgba(20, 24, 33, 0.4);
+          background: var(--nw-surface-2);
 
 
-          border: 1px solid rgba(255, 255, 255, 0.08);
+          border: 1px solid var(--nw-line);
 
 
           border-radius: 12px;
@@ -28,7 +28,7 @@
           padding: 24px;
 
 
-          backdrop-filter: blur(10px);
+          
 
 
         }
@@ -37,7 +37,7 @@
         .tri-header {
 
 
-          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+          border-bottom: 1px solid var(--nw-line);
 
 
           padding-bottom: 16px;
@@ -85,10 +85,10 @@
           flex-shrink: 0;
 
 
-          background: rgba(15, 18, 25, 0.6);
+          background: var(--nw-surface-2);
 
 
-          border: 1px solid rgba(255, 255, 255, 0.08);
+          border: 1px solid var(--nw-line);
 
 
           border-radius: 8px;
@@ -145,7 +145,7 @@
         .tri-profile-name {
 
 
-          font-family: 'Outfit', sans-serif;
+          font-family: var(--nw-serif);
 
 
           font-size: 19px;
@@ -169,7 +169,7 @@
           font-size: 13px;
 
 
-          color: var(--text-muted);
+          color: var(--nw-text-2);
 
 
           margin-bottom: 12px;
@@ -181,7 +181,7 @@
         .tri-meta {
 
 
-          border-top: 1px solid rgba(255, 255, 255, 0.06);
+          border-top: 1px solid var(--nw-line);
 
 
           padding-top: 12px;
@@ -193,7 +193,7 @@
           font-size: 11.5px;
 
 
-          color: var(--text-muted);
+          color: var(--nw-text-2);
 
 
           line-height: 1.5;
@@ -205,7 +205,7 @@
         .tri-meta strong {
 
 
-          color: var(--text);
+          color: var(--nw-text);
 
 
         }
@@ -226,7 +226,7 @@
           background: rgba(255, 255, 255, 0.01);
 
 
-          border: 1px solid rgba(255, 255, 255, 0.04);
+          border: 1px solid var(--nw-line);
 
 
           border-radius: 6px;
@@ -247,7 +247,7 @@
           color: var(--gold-light);
 
 
-          font-family: 'Outfit', sans-serif;
+          font-family: var(--nw-serif);
 
 
           font-size: 14.5px;
@@ -268,7 +268,7 @@
           font-size: 13.5px;
 
 
-          color: var(--text-muted);
+          color: var(--nw-text-2);
 
 
           line-height: 1.6;
@@ -307,15 +307,15 @@
 
         <div class="tri-header">
 
-          <h3 style="color: var(--gold); font-family: 'Outfit', sans-serif; font-size: 24px; margin-bottom: 8px;">👤 บุคคลสำคัญ วีรชน (Heroic Figures of the Nation)</h3>
+          <h3 style="color: var(--gold); font-family: var(--nw-serif); font-size: 24px; margin-bottom: 8px">👤 บุคคลสำคัญ วีรชน (Heroic Figures of the Nation)</h3>
 
-          <p style="color: var(--text-muted); font-size: 14.5px; margin-bottom: 0;">ชีวประวัติและบทบาทของบุคคลผู้มีคุณูปการอย่างยิ่งต่อการสถาปนากติกาสูงสุดและประชาธิปไตยแห่งราชอาณาจักรไทย</p>
+          <p style="color: var(--nw-text-2); font-size: 14.5px; margin-bottom: 0">ชีวประวัติและบทบาทของบุคคลผู้มีคุณูปการอย่างยิ่งต่อการสถาปนากติกาสูงสุดและประชาธิปไตยแห่งราชอาณาจักรไทย</p>
 
         </div>
 
         <!-- พระยามโนปกรณ์นิติธาดา -->
 
-        <div class="tri-layout" style="margin-bottom: 32px;">
+        <div class="tri-layout" style="margin-bottom: 32px">
 
           <div class="tri-profile-card">
 
@@ -327,11 +327,11 @@
 
             <div class="tri-meta">
 
-              <div style="margin-bottom: 6px;"><strong>ชื่อเดิม:</strong> ก้อน หุตะสิงห์</div>
+              <div style="margin-bottom: 6px"><strong>ชื่อเดิม:</strong> ก้อน หุตะสิงห์</div>
 
-              <div style="margin-bottom: 6px;"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนแรก (พ.ศ. ๒๔๒๑-๒๔๒๙)</div>
+              <div style="margin-bottom: 6px"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนแรก (พ.ศ. ๒๔๒๑-๒๔๒๙)</div>
 
-              <div style="margin-bottom: 6px;"><strong>การศึกษา:</strong> เนติบัณฑิต มหาวิทยาลัยธรรมศาสตร์ และหอสมุดศิริปัญญาวิมารสัจ</div>
+              <div style="margin-bottom: 6px"><strong>การศึกษา:</strong> เนติบัณฑิต มหาวิทยาลัยธรรมศาสตร์ และหอสมุดศิริปัญญาวิมารสัจ</div>
 
               <div><strong>ความสำคัญ:</strong> วางรากฐานสถาบันนายกรัฐมนตรีคนแรก</div>
 
@@ -393,11 +393,11 @@
 
         </div>
 
-        <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 32px 0;">
+        <hr style="border: 0; border-top: 1px solid var(--nw-line); margin: 32px 0">
 
         <!-- ทักษิณ ชินวัตร -->
 
-        <div class="tri-layout" style="margin-bottom: 32px;">
+        <div class="tri-layout" style="margin-bottom: 32px">
 
           <div class="tri-profile-card">
 
@@ -409,11 +409,11 @@
 
             <div class="tri-meta">
 
-              <div style="margin-bottom: 6px;"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๔ (ผู้ร่างรัฐธรรมนูญฉบับ ๒๔๔๕)</div>
+              <div style="margin-bottom: 6px"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๔ (ผู้ร่างรัฐธรรมนูญฉบับ ๒๔๔๕)</div>
 
-              <div style="margin-bottom: 6px;"><strong>พรรคการเมือง:</strong> พรรคไทยรักไทย (ผู้ก่อตั้ง)</div>
+              <div style="margin-bottom: 6px"><strong>พรรคการเมือง:</strong> พรรคไทยรักไทย (ผู้ก่อตั้ง)</div>
 
-              <div style="margin-bottom: 6px;"><strong>มรดกนโยบาย:</strong> นโยบายประชานิยมและหลักประกันสุขภาพถ้วนหน้า ๓๐ บาท</div>
+              <div style="margin-bottom: 6px"><strong>มรดกนโยบาย:</strong> นโยบายประชานิยมและหลักประกันสุขภาพถ้วนหน้า ๓๐ บาท</div>
 
               <div><strong>ความสัมพันธ์:</strong> ลุงและผู้แนะแนวทางการเมืองแด่ไตรทิศา</div>
 
@@ -475,11 +475,11 @@
 
         </div>
 
-        <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 32px 0;">
+        <hr style="border: 0; border-top: 1px solid var(--nw-line); margin: 32px 0">
 
         <!-- อภิสิทธิ์ เวชชาชีวะ -->
 
-        <div class="tri-layout" style="margin-bottom: 32px;">
+        <div class="tri-layout" style="margin-bottom: 32px">
 
           <div class="tri-profile-card">
 
@@ -491,11 +491,11 @@
 
             <div class="tri-meta">
 
-              <div style="margin-bottom: 6px;"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๑๓ (พ.ศ. ๒๕๑๗-๒๕๒๕)</div>
+              <div style="margin-bottom: 6px"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๑๓ (พ.ศ. ๒๕๑๗-๒๕๒๕)</div>
 
-              <div style="margin-bottom: 6px;"><strong>พรรคการเมือง:</strong> พรรคประชาธิปัตย์ (อดีตหัวหน้าพรรค)</div>
+              <div style="margin-bottom: 6px"><strong>พรรคการเมือง:</strong> พรรคประชาธิปัตย์ (อดีตหัวหน้าพรรค)</div>
 
-              <div style="margin-bottom: 6px;"><strong>ผลงานเด่น:</strong> ผู้นำจัดตั้งสภาร่างรัฐธรรมนูญ ๓,๐๐๐ คน ผ่านประชามติ ๕ รอบ และผู้ลงนามประกาศใช้รัฐธรรมนูญ พ.ศ. ๒๕๒๕ ฉบับที่ยังมีผลบังคับใช้จนถึงปัจจุบัน</div>
+              <div style="margin-bottom: 6px"><strong>ผลงานเด่น:</strong> ผู้นำจัดตั้งสภาร่างรัฐธรรมนูญ ๓,๐๐๐ คน ผ่านประชามติ ๕ รอบ และผู้ลงนามประกาศใช้รัฐธรรมนูญ พ.ศ. ๒๕๒๕ ฉบับที่ยังมีผลบังคับใช้จนถึงปัจจุบัน</div>
 
               <div><strong>หลักการหลัก:</strong> ประชาธิปไตยแบบมีส่วนร่วมสูงสุดและรัฐสภาบริสุทธิ์</div>
 
@@ -557,11 +557,11 @@
 
         </div>
 
-        <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 32px 0;">
+        <hr style="border: 0; border-top: 1px solid var(--nw-line); margin: 32px 0">
 
         <!-- พิธา ลิ้มเจริญรัตน์ -->
 
-        <div class="tri-layout" style="margin-bottom: 32px;">
+        <div class="tri-layout" style="margin-bottom: 32px">
 
           <div class="tri-profile-card">
 
@@ -573,11 +573,11 @@
 
             <div class="tri-meta">
 
-              <div style="margin-bottom: 6px;"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๑๗ (ผู้ไขคดีลอบปลงพระชนม์ ร.๘)</div>
+              <div style="margin-bottom: 6px"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๑๗ (ผู้ไขคดีลอบปลงพระชนม์ ร.๘)</div>
 
-              <div style="margin-bottom: 6px;"><strong>พรรคการเมือง:</strong> พรรคก้าวไกล (อดีตหัวหน้าพรรค)</div>
+              <div style="margin-bottom: 6px"><strong>พรรคการเมือง:</strong> พรรคก้าวไกล (อดีตหัวหน้าพรรค)</div>
 
-              <div style="margin-bottom: 6px;"><strong>มรดกนโยบาย:</strong> ผู้วางรากฐาน ParadoxAI โดยการจับมือกับ Anthropic</div>
+              <div style="margin-bottom: 6px"><strong>มรดกนโยบาย:</strong> ผู้วางรากฐาน ParadoxAI โดยการจับมือกับ Anthropic</div>
 
               <div><strong>สิทธิ์พิเศษ:</strong> ทุนหลวงศึกษาค้นคว้าหอสมุดศิริปัญญาฯ และปฏิรูปกระจายอำนาจ</div>
 
@@ -639,11 +639,11 @@
 
         </div>
 
-        <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 32px 0;">
+        <hr style="border: 0; border-top: 1px solid var(--nw-line); margin: 32px 0">
 
         <!-- ธงไชย แมคอินไตย์ -->
 
-        <div class="tri-layout" style="margin-bottom: 32px;">
+        <div class="tri-layout" style="margin-bottom: 32px">
 
           <div class="tri-profile-card">
 
@@ -655,11 +655,11 @@
 
             <div class="tri-meta">
 
-              <div style="margin-bottom: 6px;"><strong>ชื่อเรียกขาน:</strong> เบิร์ด ธงไชย (ซูเปอร์สตาร์ตลอดกาลแห่งสยาม)</div>
+              <div style="margin-bottom: 6px"><strong>ชื่อเรียกขาน:</strong> เบิร์ด ธงไชย (ซูเปอร์สตาร์ตลอดกาลแห่งสยาม)</div>
 
-              <div style="margin-bottom: 6px;"><strong>ผลงานเด่น:</strong> ผู้เสนอโครงการ "เพลงชาติไทย ๖ เวอร์ชัน" และทูตดนตรีปรองดอง</div>
+              <div style="margin-bottom: 6px"><strong>ผลงานเด่น:</strong> ผู้เสนอโครงการ "เพลงชาติไทย ๖ เวอร์ชัน" และทูตดนตรีปรองดอง</div>
 
-              <div style="margin-bottom: 6px;"><strong>พรรคการเมือง:</strong> - (ไม่มีสังกัดพรรคการเมือง)</div>
+              <div style="margin-bottom: 6px"><strong>พรรคการเมือง:</strong> - (ไม่มีสังกัดพรรคการเมือง)</div>
 
               <div><strong>บทบาทพิเศษ:</strong> ขจัดอำนาจนิยมในสถานศึกษาและรวบรวมใจไทยสู่ประชาธิปไตยสมานฉันท์</div>
 
@@ -721,11 +721,11 @@
 
         </div>
 
-        <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 32px 0;">
+        <hr style="border: 0; border-top: 1px solid var(--nw-line); margin: 32px 0">
 
         <!-- ศิริกัญญา ตันสกุล -->
 
-        <div class="tri-layout" style="margin-bottom: 32px;">
+        <div class="tri-layout" style="margin-bottom: 32px">
 
           <div class="tri-profile-card">
 
@@ -737,11 +737,11 @@
 
             <div class="tri-meta">
 
-              <div style="margin-bottom: 6px;"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๑๘ (๒ วาระ ๑๖ ปีเต็ม / วาระละ ๘ ปี)</div>
+              <div style="margin-bottom: 6px"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๑๘ (๒ วาระ ๑๖ ปีเต็ม / วาระละ ๘ ปี)</div>
 
-              <div style="margin-bottom: 6px;"><strong>พรรคการเมือง:</strong> พรรคก้าวไกล (อดีตรองหัวหน้าพรรค / อนาคตใหม่เดิม)</div>
+              <div style="margin-bottom: 6px"><strong>พรรคการเมือง:</strong> พรรคก้าวไกล (อดีตรองหัวหน้าพรรค / อนาคตใหม่เดิม)</div>
 
-              <div style="margin-bottom: 6px;"><strong>ผลงานเด่น:</strong> ผู้ริเริ่มระบบ ParadoxAI เพื่อเสถียรภาพการคลังแผ่นดิน</div>
+              <div style="margin-bottom: 6px"><strong>ผลงานเด่น:</strong> ผู้ริเริ่มระบบ ParadoxAI เพื่อเสถียรภาพการคลังแผ่นดิน</div>
 
               <div><strong>บทบาทปัจจุบัน:</strong> รองนายกรัฐมนตรีและรัฐมนตรีว่าการกระทรวงการคลัง</div>
 
@@ -765,7 +765,7 @@
 
               <p class="tri-stage-text">หลังชนะการเลือกตั้งทั่วไป เธอได้รับเลือกให้ดำรงตำแหน่งนายกรัฐมนตรีคนที่ ๑๘ ของประเทศไทย และสร้างประวัติศาสตร์ปกครองบริหารแผ่นดินติดต่อกันถึง ๒ วาระ (วาระละ ๘ ปี) รวมระยะเวลากว่า ๑๖ ปี (พ.ศ. ๒๕๗๖-๒๕๙๒) ด้วยความเชื่อมั่นจากประชาชนในผลงานการบริหารเศรษฐกิจที่โดดเด่น เธอได้ดำเนินการวางโครงสร้างปฏิรูประบบภาษีและกระจายโอกาสทางการเงินลงสู่ท้องถิ่นอย่างทั่วถึง ทำลายขบวนการผูกขาดนโยบายของกลุ่มทุนใหญ่จนทำให้สยามมีรายได้แผ่นดินพุ่งสูงเป็นประวัติการณ์</p>
 
-              <p class="tri-stage-text" style="margin-top: 10px;">หนึ่งในผลงานเชิงนวัตกรรมระดับโลกในยุคของเธอก็คือการริเริ่มพัฒนาแพลตฟอร์ม <strong>"ParadoxAI" (หรือ ParadoxForward)</strong> ระบบปัญญาประดิษฐ์ที่ใช้ในการประมวลผล บริหารจัดการงบประมาณ และจัดสรรสวัสดิการถ้วนหน้าแก่ประชาชนแบบเรียลไทม์ ซึ่งช่วยขจัดปัญหาคอร์รัปชัน ตรวจสอบการทุจริตเชิงนโยบายอย่างโปร่งใสจนส่งผลให้ประเทศไทยได้รับการจัดอันดับความโปร่งใสอยู่ในอันดับที่ ๕ ของโลกอย่างไม่เคยมีมาก่อน</p>
+              <p class="tri-stage-text" style="margin-top: 10px">หนึ่งในผลงานเชิงนวัตกรรมระดับโลกในยุคของเธอก็คือการริเริ่มพัฒนาแพลตฟอร์ม <strong>"ParadoxAI" (หรือ ParadoxForward)</strong> ระบบปัญญาประดิษฐ์ที่ใช้ในการประมวลผล บริหารจัดการงบประมาณ และจัดสรรสวัสดิการถ้วนหน้าแก่ประชาชนแบบเรียลไทม์ ซึ่งช่วยขจัดปัญหาคอร์รัปชัน ตรวจสอบการทุจริตเชิงนโยบายอย่างโปร่งใสจนส่งผลให้ประเทศไทยได้รับการจัดอันดับความโปร่งใสอยู่ในอันดับที่ ๕ ของโลกอย่างไม่เคยมีมาก่อน</p>
 
             </div>
 
@@ -775,7 +775,7 @@
 
               <p class="tri-stage-text">อย่างไรก็ตาม ในช่วงปลายวาระการดำรงตำแหน่งของเธอ เมื่อภัยคุกคามทางไซเบอร์และการจารกรรมข้อมูลเพื่อแทรกแซงตลาดเงินทุนของประเทศไทยโดยกลุ่มทุนและขั้วอิทธิพลต่างชาติทวีความรุนแรงขึ้น ระบบ ParadoxAI ซึ่งเป็นคลังข้อมูลการคลังและการสวัสดิการของประชาชนทั้งหมดตกเป็นเป้าหมายหลักของการโจมตีเพื่อทำลายนิติรัฐ เพื่อรักษาเสถียรภาพและความมั่นคงปลอดภัยขั้นสูงสุดของประเทศ รัฐบาลภายใต้การหารือร่วมกับฝ่ายเสนาธิการความมั่นคง จึงได้ตัดสินใจสั่งการให้ระงับการเปิดเผยสู่สาธารณะและปิดระบบ ParadoxAI ทั่วไปลงอย่างถาวร โดยถ่ายโอนชุดข้อมูลและอัลกอริทึมหลักเข้าสู่ระบบเครือข่ายจำกัดความปลอดภัยสูงของกระทรวงการคลังและฝ่ายความมั่นคงเพื่อป้องกันการโจรกรรมข้ามชาติ ทำให้โปรเจกต์ ParadoxAI ในพื้นที่พลเรือนดูเหมือนหายสาบสูญไป</p>
 
-              <p class="tri-stage-text" style="margin-top: 10px;">หลังบริหารแผ่นดินครบ ๑๖ ปีเต็ม ศิริกัญญาได้แสดงสปิริตประชาธิปไตยด้วยการไม่ลงสมัครชิงเก้าอี้นายกฯ ในวาระที่ ๓ และส่งต่อตำแหน่งผู้นำให้แก่ ณัฐพงษ์ เรืองปัญญาวุฒิ (PM 19) อย่างราบรื่น โดยตัวเธอขยับไปดำรงตำแหน่งรองนายกรัฐมนตรีควบรัฐมนตรีว่าการกระทรวงการคลัง เพื่อคอยกำกับดูแลเสถียรภาพเศรษฐกิจมหภาคและการคลังของประเทศไทยในระยะเปลี่ยนผ่านต่อไป</p>
+              <p class="tri-stage-text" style="margin-top: 10px">หลังบริหารแผ่นดินครบ ๑๖ ปีเต็ม ศิริกัญญาได้แสดงสปิริตประชาธิปไตยด้วยการไม่ลงสมัครชิงเก้าอี้นายกฯ ในวาระที่ ๓ และส่งต่อตำแหน่งผู้นำให้แก่ ณัฐพงษ์ เรืองปัญญาวุฒิ (PM 19) อย่างราบรื่น โดยตัวเธอขยับไปดำรงตำแหน่งรองนายกรัฐมนตรีควบรัฐมนตรีว่าการกระทรวงการคลัง เพื่อคอยกำกับดูแลเสถียรภาพเศรษฐกิจมหภาคและการคลังของประเทศไทยในระยะเปลี่ยนผ่านต่อไป</p>
 
             </div>
 
@@ -807,11 +807,11 @@
 
         </div>
 
-        <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 32px 0;">
+        <hr style="border: 0; border-top: 1px solid var(--nw-line); margin: 32px 0">
 
         <!-- ดร.ธนานนท์ ปฏิญญาศักดิกุล (9arm) -->
 
-        <div class="tri-layout" style="margin-bottom: 32px;">
+        <div class="tri-layout" style="margin-bottom: 32px">
 
           <div class="tri-profile-card">
 
@@ -823,11 +823,11 @@
 
             <div class="tri-meta">
 
-              <div style="margin-bottom: 6px;"><strong>ชื่อเรียกขาน:</strong> 9arm (นายกฯ ของชาวเน็ต)</div>
+              <div style="margin-bottom: 6px"><strong>ชื่อเรียกขาน:</strong> 9arm (นายกฯ ของชาวเน็ต)</div>
 
-              <div style="margin-bottom: 6px;"><strong>ผลงานเด่น:</strong> ผู้คิดค้นและออกแบบโครงสร้างภาษา Paradox Binary 40-bit</div>
+              <div style="margin-bottom: 6px"><strong>ผลงานเด่น:</strong> ผู้คิดค้นและออกแบบโครงสร้างภาษา Paradox Binary 40-bit</div>
 
-              <div style="margin-bottom: 6px;"><strong>พรรคการเมือง:</strong> พรรคก้าวไกล (สมาชิกพรรค / ผู้ร่วมพัฒนานวัตกรรมรัฐดิจิทัล)</div>
+              <div style="margin-bottom: 6px"><strong>พรรคการเมือง:</strong> พรรคก้าวไกล (สมาชิกพรรค / ผู้ร่วมพัฒนานวัตกรรมรัฐดิจิทัล)</div>
 
               <div><strong>บทบาทพิเศษ:</strong> ออกแบบและฟื้นฟูระบบ ParadoxAI 2.0 ในสมัยนายกฯ รักชนก</div>
 
@@ -889,11 +889,11 @@
 
         </div>
 
-        <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 32px 0;">
+        <hr style="border: 0; border-top: 1px solid var(--nw-line); margin: 32px 0">
 
         <!-- ดร.ธนรัชต์ ปฏิญญาศักดิกุล (aimmuno) -->
 
-        <div class="tri-layout" style="margin-bottom: 32px;">
+        <div class="tri-layout" style="margin-bottom: 32px">
 
           <div class="tri-profile-card">
 
@@ -905,13 +905,13 @@
 
             <div class="tri-meta">
 
-              <div style="margin-bottom: 6px;"><strong>ฉายา:</strong> aimmuno (หมอเอม)</div>
+              <div style="margin-bottom: 6px"><strong>ฉายา:</strong> aimmuno (หมอเอม)</div>
 
-              <div style="margin-bottom: 6px;"><strong>ความสัมพันธ์:</strong> น้องชายแท้ ๆ ของ ดร.ธนานนท์ ปฏิญญาศักดิกุล (9arm)</div>
+              <div style="margin-bottom: 6px"><strong>ความสัมพันธ์:</strong> น้องชายแท้ ๆ ของ ดร.ธนานนท์ ปฏิญญาศักดิกุล (9arm)</div>
 
-              <div style="margin-bottom: 6px;"><strong>ความเชี่ยวชาญ:</strong> วิทยาภูมิคุ้มกัน (Immunology) นวัตกรรมดิจิทัลการแพทย์ และระบบ AI ทางสาธารณสุข</div>
+              <div style="margin-bottom: 6px"><strong>ความเชี่ยวชาญ:</strong> วิทยาภูมิคุ้มกัน (Immunology) นวัตกรรมดิจิทัลการแพทย์ และระบบ AI ทางสาธารณสุข</div>
 
-              <div style="margin-bottom: 6px;"><strong>สถาบันการศึกษา:</strong> แพทยศาสตรบัณฑิต (เกียรตินิยมอันดับ ๑) คณะแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</div>
+              <div style="margin-bottom: 6px"><strong>สถาบันการศึกษา:</strong> แพทยศาสตรบัณฑิต (เกียรตินิยมอันดับ ๑) คณะแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</div>
 
               <div><strong>บทบาทพิเศษ:</strong> สถาปนิกโมดูลสาธารณสุขถ้วนหน้าและระบบคิว AI ใน ParadoxAI 2.0</div>
 
@@ -957,7 +957,7 @@
 
         </div>
 
-        <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 32px 0;">
+        <hr style="border: 0; border-top: 1px solid var(--nw-line); margin: 32px 0">
 
         <!-- ไตรทิศา รณปวัตน์ -->
 
@@ -973,11 +973,11 @@
 
             <div class="tri-meta">
 
-              <div style="margin-bottom: 6px;"><strong>นามเดิม:</strong> ไตรทิศา ชินวัตร (หลานชายอดีตนายกฯ ทักษิณ)</div>
+              <div style="margin-bottom: 6px"><strong>นามเดิม:</strong> ไตรทิศา ชินวัตร (หลานชายอดีตนายกฯ ทักษิณ)</div>
 
-              <div style="margin-bottom: 6px;"><strong>พรรคการเมือง:</strong> พรรคธรรมปัญญา (เดิมชื่อรณขจัด)</div>
+              <div style="margin-bottom: 6px"><strong>พรรคการเมือง:</strong> พรรคธรรมปัญญา (เดิมชื่อรณขจัด)</div>
 
-              <div style="margin-bottom: 6px;"><strong>หลักอุดมการณ์:</strong> นิกายสนธิปัญญา / ความเป็นเอกภาพทางสมานฉันท์</div>
+              <div style="margin-bottom: 6px"><strong>หลักอุดมการณ์:</strong> นิกายสนธิปัญญา / ความเป็นเอกภาพทางสมานฉันท์</div>
 
               <div><strong>บทบาทอื่น:</strong> คณะที่ปรึกษาตรวจสอบ GOC (Oversight Board)</div>
 
@@ -1037,9 +1037,9 @@
 
             <div class="tri-quote-box">
 
-              <div style="font-weight: 700; color: var(--accent-orange); margin-bottom: 6px; font-size: 14px;">💡 ถ้อยแถลงจิตวิญญาณแห่งรัฐธรรมนูญ ๒๕๒๕</div>
+              <div style="font-weight: 700; color: var(--accent-orange); margin-bottom: 6px; font-size: 14px">💡 ถ้อยแถลงจิตวิญญาณแห่งรัฐธรรมนูญ ๒๕๒๕</div>
 
-              <p style="font-size: 13px; color: var(--text-muted); line-height: 1.5; margin-bottom: 0; font-style: italic;">"เส้นทางของไตรทิศา รณปวัตน์ เป็นเครื่องพิสูจน์และสะท้อนแนวคิดสำคัญที่เป็นเสาหลักของรัฐธรรมนูญฉบับ ๒๕๒๕ นี้อย่างแท้จริง นั่นคือ ระบบการปกครองและกฎหมายที่ดี ต้องจัดให้มีโอกาสและช่องทางแก่ผู้ที่เคยพ่ายแพ้หรือเคยผิดพลาดล้มเหลวในอดีต ได้สามารถลุกขึ้นมาแก้ไข ปรับปรุงตนเอง และกลับมาทำหน้าที่รับใช้แผ่นดินและประชาชนได้อีกครั้ง การกีดกันปิดกั้นพลเมืองเพียงจากความผิดพลาดคราวเดียว ย่อมขัดแย้งต่อครรลองการให้โอกาสและการสร้างความสมานฉันท์ของสังคม"</p>
+              <p style="font-size: 13px; color: var(--nw-text-2); line-height: 1.5; margin-bottom: 0; font-style: italic">"เส้นทางของไตรทิศา รณปวัตน์ เป็นเครื่องพิสูจน์และสะท้อนแนวคิดสำคัญที่เป็นเสาหลักของรัฐธรรมนูญฉบับ ๒๕๒๕ นี้อย่างแท้จริง นั่นคือ ระบบการปกครองและกฎหมายที่ดี ต้องจัดให้มีโอกาสและช่องทางแก่ผู้ที่เคยพ่ายแพ้หรือเคยผิดพลาดล้มเหลวในอดีต ได้สามารถลุกขึ้นมาแก้ไข ปรับปรุงตนเอง และกลับมาทำหน้าที่รับใช้แผ่นดินและประชาชนได้อีกครั้ง การกีดกันปิดกั้นพลเมืองเพียงจากความผิดพลาดคราวเดียว ย่อมขัดแย้งต่อครรลองการให้โอกาสและการสร้างความสมานฉันท์ของสังคม"</p>
 
             </div>
 
@@ -1047,11 +1047,11 @@
 
         </div>
 
-        <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 32px 0;">
+        <hr style="border: 0; border-top: 1px solid var(--nw-line); margin: 32px 0">
 
         <!-- พริษฐ์ "ไอติม" วัชรสินธุ -->
 
-        <div class="tri-layout" style="margin-bottom: 32px;">
+        <div class="tri-layout" style="margin-bottom: 32px">
 
           <div class="tri-profile-card">
 
@@ -1063,11 +1063,11 @@
 
             <div class="tri-meta">
 
-              <div style="margin-bottom: 6px;"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๒๐ (๒ วาระ ๑๖ ปี)</div>
+              <div style="margin-bottom: 6px"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๒๐ (๒ วาระ ๑๖ ปี)</div>
 
-              <div style="margin-bottom: 6px;"><strong>นโยบายเด่น:</strong> คลองไทยไมตรี ๒.๐ และสถาปนิกผู้ก่อตั้งระบบ GOC</div>
+              <div style="margin-bottom: 6px"><strong>นโยบายเด่น:</strong> คลองไทยไมตรี ๒.๐ และสถาปนิกผู้ก่อตั้งระบบ GOC</div>
 
-              <div style="margin-bottom: 6px;"><strong>หลักอุดมการณ์:</strong> เสรีภาพก้าวหน้าและเสถียรภาพทางไซเบอร์การเมือง</div>
+              <div style="margin-bottom: 6px"><strong>หลักอุดมการณ์:</strong> เสรีภาพก้าวหน้าและเสถียรภาพทางไซเบอร์การเมือง</div>
 
               <div><strong>บทบาทพิเศษ:</strong> ผู้นำปฏิบัติการรุ่งอรุณ ๒๒๐ ยุติการนิติประหารสภาแผ่นดิน</div>
 
@@ -1097,17 +1097,17 @@
 
               <div class="tri-stage-title">🛡️ ปฏิบัติการรุ่งอรุณ ๒๒๐ และยุทธวิธีปิดประตูขบวนการปฏิวัติเงียบสภา</div>
 
-              <p class="tri-stage-text" style="margin-bottom: 10px;">ภายหลังจากวางมือจากตำแหน่งผู้นำ และแผ่นดินเผชิญหน้ากับวิกฤตนิติประหารสภา ซึ่งเป็นการใช้อำนาจดิบในการโยกย้ายและปลดคนในสภาผู้แทนราษฎรเพื่อรวบรวมอำนาจฝ่ายนิติบัญญัติให้แก่ฝั่งรัฐบาลของวิสุทธิ์ คมณรัตน์ อย่างมหาศาล พริษฐ์ได้รับความไว้วางใจให้ทำหน้าที่ผู้บัญชาการฝ่ายพลเรือนของ **"ปฏิบัติการรุ่งอรุณ ๒๒๐" (Operation Dawn 220)** เขาใช้ปฏิภาณไหวพริบและระบบวิเคราะห์ข้อมูลของ GOC ในการจับมือประสานงานกับไตรทิศาเพื่อรันแผนประสมอภิปรายยืดเยื้อในสภาสลับกับการซุ่มรวบรวมเบาะแสเส้นเงินการเมืองต่างประเทศที่เชื่อมโยงกับการทุจริตและการใช้อำนาจมิชอบ จนมีหลักฐานแน่นหนาที่เปิดโปงพฤติการณ์รวบอำนาจทั้งหมด บีบให้นายกฯ วิสุทธิ์ต้องยอมจำนน ลาออก และลงนามยุบสภาอย่างราบรื่น ปราศจากความสูญเสียทางเลือดเนื้อใด ๆ</p>
+              <p class="tri-stage-text" style="margin-bottom: 10px">ภายหลังจากวางมือจากตำแหน่งผู้นำ และแผ่นดินเผชิญหน้ากับวิกฤตนิติประหารสภา ซึ่งเป็นการใช้อำนาจดิบในการโยกย้ายและปลดคนในสภาผู้แทนราษฎรเพื่อรวบรวมอำนาจฝ่ายนิติบัญญัติให้แก่ฝั่งรัฐบาลของวิสุทธิ์ คมณรัตน์ อย่างมหาศาล พริษฐ์ได้รับความไว้วางใจให้ทำหน้าที่ผู้บัญชาการฝ่ายพลเรือนของ **"ปฏิบัติการรุ่งอรุณ ๒๒๐" (Operation Dawn 220)** เขาใช้ปฏิภาณไหวพริบและระบบวิเคราะห์ข้อมูลของ GOC ในการจับมือประสานงานกับไตรทิศาเพื่อรันแผนประสมอภิปรายยืดเยื้อในสภาสลับกับการซุ่มรวบรวมเบาะแสเส้นเงินการเมืองต่างประเทศที่เชื่อมโยงกับการทุจริตและการใช้อำนาจมิชอบ จนมีหลักฐานแน่นหนาที่เปิดโปงพฤติการณ์รวบอำนาจทั้งหมด บีบให้นายกฯ วิสุทธิ์ต้องยอมจำนน ลาออก และลงนามยุบสภาอย่างราบรื่น ปราศจากความสูญเสียทางเลือดเนื้อใด ๆ</p>
 
-              <ul style="padding-left: 20px; font-size: 13px; color: var(--text-muted); line-height: 1.5; margin-bottom: 0; list-style-type: decimal;">
+              <ul style="padding-left: 20px; font-size: 13px; color: var(--nw-text-2); line-height: 1.5; margin-bottom: 0; list-style-type: decimal">
 
-                <li style="margin-bottom: 6px;"><strong>อภิสิทธิ์อภิปรายดึงเวลา ๑๐ วัน:</strong> จัดคิว สส. ฝ่ายค้านอภิปรายอย่างต่อเนื่องเพื่อดึงเวลาและตรึงฝ่ายรัฐบาลไว้ในสภา</li>
+                <li style="margin-bottom: 6px"><strong>อภิสิทธิ์อภิปรายดึงเวลา ๑๐ วัน:</strong> จัดคิว สส. ฝ่ายค้านอภิปรายอย่างต่อเนื่องเพื่อดึงเวลาและตรึงฝ่ายรัฐบาลไว้ในสภา</li>
 
-                <li style="margin-bottom: 6px;"><strong>ซุ่มทำหลักฐานขนานสภา:</strong> ไตรทิศาอภิปรายสลับไปพร้อมกับการแอบทำแฟ้มรวบรวมหลักฐานเรื่องทุนต่างชาติซื้อตัว สส.</li>
+                <li style="margin-bottom: 6px"><strong>ซุ่มทำหลักฐานขนานสภา:</strong> ไตรทิศาอภิปรายสลับไปพร้อมกับการแอบทำแฟ้มรวบรวมหลักฐานเรื่องทุนต่างชาติซื้อตัว สส.</li>
 
-                <li style="margin-bottom: 6px;"><strong>ยื่นศาลรัฐธรรมนูญใน ๓ วัน:</strong> เมื่อหลักฐานพร้อมในวันที่ ๓ ไตรทิศาดำเนินการยื่นคำร้องต่อศาลรัฐธรรมนูญเงียบๆ ก่อนเผยแพร่</li>
+                <li style="margin-bottom: 6px"><strong>ยื่นศาลรัฐธรรมนูญใน ๓ วัน:</strong> เมื่อหลักฐานพร้อมในวันที่ ๓ ไตรทิศาดำเนินการยื่นคำร้องต่อศาลรัฐธรรมนูญเงียบๆ ก่อนเผยแพร่</li>
 
-                <li style="margin-bottom: 6px;"><strong>อภิปรายเลี้ยงไข้รอศาลตัดสิน:</strong> ทีมฝ่ายค้านเดินหน้าอภิปรายต่อเนื่องเพื่อตรึงและรอเวลาการพิจารณาคำร้องของศาล</li>
+                <li style="margin-bottom: 6px"><strong>อภิปรายเลี้ยงไข้รอศาลตัดสิน:</strong> ทีมฝ่ายค้านเดินหน้าอภิปรายต่อเนื่องเพื่อตรึงและรอเวลาการพิจารณาคำร้องของศาล</li>
 
                 <li><strong>จนมุมหลักฐานปฏิบัติการรุ่งอรุณ:</strong> หลักฐานเส้นทางเงินทุจริตและพฤติกรรมรวบอำนาจล้นพ้นถูกเปิดโปงต่อสาธารณชนหลังศาลรัฐธรรมนูญสั่งระงับหน้าที่ ส่งผลให้วิสุทธิ์ต้องยอมลาออกและยุบสภา</li>
 
@@ -1143,18 +1143,18 @@
 
         </div>
 
-        <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 32px 0;">
+        <hr style="border: 0; border-top: 1px solid var(--nw-line); margin: 32px 0">
 
                 <!-- วิโรจน์ ลักขณาดิศร (PM 25) -->
-        <div class="tri-layout" style="margin-bottom: 32px;">
+        <div class="tri-layout" style="margin-bottom: 32px">
           <div class="tri-profile-card">
             <img src="images/pm25.jpg" alt="วิโรจน์ ลักขณาดิศร" class="tri-profile-img">
             <div class="tri-profile-name">วิโรจน์ ลักขณาดิศร</div>
             <div class="tri-profile-title">นายกรัฐมนตรีคนที่ ๒๕ แห่งราชอาณาจักรไทย</div>
             <div class="tri-meta">
-              <div style="margin-bottom: 6px;"><strong>ตำแหน่งสำคัญ:</strong> อดีตนายกรัฐมนตรีคนที่ ๒๕ (พ.ศ. ๒๖๓๗ - ๒๖๕๓)</div>
-              <div style="margin-bottom: 6px;"><strong>พรรคการเมือง:</strong> พรรคก้าวไกล</div>
-              <div style="margin-bottom: 6px;"><strong>โพลคะแนนนิยมวันสุดท้าย:</strong> <span style="color: #4ade80; font-weight: 700;">๗๙.๒%</span></div>
+              <div style="margin-bottom: 6px"><strong>ตำแหน่งสำคัญ:</strong> อดีตนายกรัฐมนตรีคนที่ ๒๕ (พ.ศ. ๒๖๓๗ - ๒๖๕๓)</div>
+              <div style="margin-bottom: 6px"><strong>พรรคการเมือง:</strong> พรรคก้าวไกล</div>
+              <div style="margin-bottom: 6px"><strong>โพลคะแนนนิยมวันสุดท้าย:</strong> <span style="color: #4ade80; font-weight: 700">๗๙.๒%</span></div>
               <div><strong>ผลงานเด่น:</strong> สถาปนา BANCC, ThaiJavis 2.0, ปรับโครงสร้าง GOC, PCW Model</div>
             </div>
           </div>
@@ -1162,150 +1162,150 @@
           <div class="tri-bio">
             
             <div class="tri-stage">
-              <div class="tri-stage-title" style="color: #fb923c;">🔥 การก้าวขึ้นสู่ตำแหน่งนายกรัฐมนตรีคนที่ ๒๕ สไตล์ลุยชนตรงไปตรงมา</div>
+              <div class="tri-stage-title" style="color: #fb923c">🔥 การก้าวขึ้นสู่ตำแหน่งนายกรัฐมนตรีคนที่ ๒๕ สไตล์ลุยชนตรงไปตรงมา</div>
               <p class="tri-stage-text">หลังพรรคก้าวไกลชนะเลือกตั้งทั่วไป พ.ศ. ๒๖๓๗ นายกรัฐมนตรีวิโรจน์ ลักขณาดิศร ได้บริหารแผ่นดินด้วยสไตล์ดุดัน ตรงไปตรงมา ไร้พิธีการ PR ลุยงานสนามด้วยตนเองเพื่อแก้ปัญหาโครงสร้างให้ราษฎร</p>
             </div>
 
             <div class="tri-stage">
-              <div class="tri-stage-title" style="color: #fb923c;">💥 การชนทุกคอร์รัปชันและกวาดล้างมาเฟียส่วยโครงสร้าง (Zero-Corruption)</div>
+              <div class="tri-stage-title" style="color: #fb923c">💥 การชนทุกคอร์รัปชันและกวาดล้างมาเฟียส่วยโครงสร้าง (Zero-Corruption)</div>
               <p class="tri-stage-text">ผลักดันนโยบาย Viroj Zero-Corruption เดินหน้าทลายเครือข่ายส่วย ตั๋วตำรวจ ขบวนการคอร์รัปชันงบประมาณแผ่นดิน และอิทธิพลมืดทั่วประเทศอย่างเด็ดขาดโดยไร้การขู่กวด</p>
             </div>
 
             <div class="tri-stage">
-              <div class="tri-stage-title" style="color: #fb923c;">💡 โครงการ "คนละไลค์" จุดกำเนิดสื่อประวัติศาสตร์ SIN ARCHIVE</div>
+              <div class="tri-stage-title" style="color: #fb923c">💡 โครงการ "คนละไลค์" จุดกำเนิดสื่อประวัติศาสตร์ SIN ARCHIVE</div>
               <p class="tri-stage-text">อนุมัติและสนับสนุนนโยบาย "คนละไลค์" เปิดพื้นที่ให้ครีเอเตอร์รุ่นใหม่ถ่ายทอดเหตุการณ์การเมืองเป็นภาพ Visual Icons จนเกิดช่อง SIN ARCHIVE (ยอดวิวสะสม ๑๔๒ ล้านวิว) และสารคดี Remaster สื่อประวัติศาสตร์สยาม</p>
             </div>
 
             <div class="tri-stage">
-              <div class="tri-stage-title" style="color: #fb923c;">🏢 สถาปนาศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช (BANCC) และปรับปรุงสัปปายะสภาสถาน</div>
+              <div class="tri-stage-title" style="color: #fb923c">🏢 สถาปนาศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช (BANCC) และปรับปรุงสัปปายะสภาสถาน</div>
               <p class="tri-stage-text">ริเริ่มสร้างศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช (BANCC) ใน พ.ศ. ๒๖๓๗ เสร็จเร็วกว่ากำหนด งบไม่บานปลาย พร้อมแก้ปัญหาน้ำท่วมซ้ำซากในสัปปายะสภาสถานอย่างถาวรด้วยระบบท่อระบายน้ำใต้ดิน</p>
             </div>
 
             <div class="tri-stage">
-              <div class="tri-stage-title" style="color: #fb923c;">🔄 PCW Model ปฏิรูปโครงสร้างกระทรวงเชิงรุกและสวัสดิการ ReSkill</div>
+              <div class="tri-stage-title" style="color: #fb923c">🔄 PCW Model ปฏิรูปโครงสร้างกระทรวงเชิงรุกและสวัสดิการ ReSkill</div>
               <p class="tri-stage-text">นำเสนอแผนปฏิรูป PCW Model ควบรวมกระทรวงแรงงานและสวัสดิการสังคม จัดตั้งกระทรวงทรัพย์สินทางปัญญาฯ และกระทรวงหลักประกันสังคม ยกระดับสวัสดิการ ReSkill พัฒนาคุณภาพชีวิตแรงงานและราษฎรถ้วนหน้า</p>
             </div>
 
             <div class="tri-stage">
-              <div class="tri-stage-title" style="color: #fb923c;">🏁 สิ้นสุดวาระ ๑๖ ปีด้วยโพลคะแนนนิยม ๗๙.๒% และการก้าวลงอย่างสง่างาม</div>
+              <div class="tri-stage-title" style="color: #fb923c">🏁 สิ้นสุดวาระ ๑๖ ปีด้วยโพลคะแนนนิยม ๗๙.๒% และการก้าวลงอย่างสง่างาม</div>
               <p class="tri-stage-text">ดำรงตำแหน่งนายกรัฐมนตรีครบ ๒ วาระ (๑๖ ปี) ส่งมอบภารกิจด้วยโพลคะแนนนิยมสูงถึง ๗๙.๒% ท่ามกลางคำขอบคุณจาก ดร.ธนานนท์ (9arm) และสื่อมวลชน ก้าวลงจากเวทีทางการเมืองอย่างสง่างาม</p>
             </div>
 
           </div>
         </div>
 
-        <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 32px 0;">
+        <hr style="border: 0; border-top: 1px solid var(--nw-line); margin: 32px 0">
 
         
-        <div class="tri-layout" style="margin-bottom: 32px;">
+        <div class="tri-layout" style="margin-bottom: 32px">
           <div class="tri-profile-card">
             <img src="images/abhisit.jpg" alt="อภิสิทธิ์ เวชชาชีวะ (วาระสอง)" class="tri-profile-img">
-            <div class="tri-profile-name">อภิสิทธิ์ เวชชาชีวะ <span style="font-size:13px;color:#818cf8;">(วาระสอง)</span></div>
+            <div class="tri-profile-name">อภิสิทธิ์ เวชชาชีวะ <span style="font-size: 13px; color: #818cf8">(วาระสอง)</span></div>
             <div class="tri-profile-title">นายกรัฐมนตรีคนที่ ๒๘ แห่งราชอาณาจักรไทย</div>
             <div class="tri-meta">
-              <div style="margin-bottom: 6px;"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๒๘ (พ.ศ. ๒๖๖๕ - ๒๖๗๒)</div>
-              <div style="margin-bottom: 6px;"><strong>พรรคการเมือง:</strong> <span style="color: #60a5fa; font-weight: 700;">พรรคประชาธิปัตย์</span></div>
-              <div style="margin-bottom: 6px;"><strong>นโยบาย & ผลงานหลัก:</strong> ชัยชนะวิกฤตไวรัส Dexibola (ไร้ผู้เสียชีวิต/ผลิตวัคซีนใน ๓ สัปดาห์) + หมู่บ้าน HL + สุขภาพถ้วนหน้า</div>
-              <div><strong>สไตล์:</strong> <span style="color: #a5b4fc; font-weight: 600;">เงียบ แต่ทำจริง — ไม่ยาว ไม่หรู</span></div>
+              <div style="margin-bottom: 6px"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๒๘ (พ.ศ. ๒๖๖๕ - ๒๖๗๒)</div>
+              <div style="margin-bottom: 6px"><strong>พรรคการเมือง:</strong> <span style="color: #60a5fa; font-weight: 700">พรรคประชาธิปัตย์</span></div>
+              <div style="margin-bottom: 6px"><strong>นโยบาย & ผลงานหลัก:</strong> ชัยชนะวิกฤตไวรัส Dexibola (ไร้ผู้เสียชีวิต/ผลิตวัคซีนใน ๓ สัปดาห์) + หมู่บ้าน HL + สุขภาพถ้วนหน้า</div>
+              <div><strong>สไตล์:</strong> <span style="color: #a5b4fc; font-weight: 600">เงียบ แต่ทำจริง — ไม่ยาว ไม่หรู</span></div>
             </div>
           </div>
 
           <div class="tri-bio">
             
             <div class="tri-stage">
-              <div class="tri-stage-title" style="color: #60a5fa;">🏛️ การคัมแบ็กบริหารแผ่นดินวาระสองและการสร้างเสถียรภาพสยาม</div>
+              <div class="tri-stage-title" style="color: #60a5fa">🏛️ การคัมแบ็กบริหารแผ่นดินวาระสองและการสร้างเสถียรภาพสยาม</div>
               <p class="tri-stage-text">อภิสิทธิ์ เวชชาชีวะ กลับมาดำรงตำแหน่งนายกรัฐมนตรีวาระที่สองใน พ.ศ. ๒๖๖๕ บริหารราชการแผ่นดินด้วยสไตล์ "เงียบแต่ทำจริง" เน้นความสงบเรียบร้อย วินัยการเงินการคลัง และการสร้างเสถียรภาพทางการเมืองสยามในระยะยาว</p>
             </div>
 
             <div class="tri-stage">
-              <div class="tri-stage-title" style="color: #60a5fa;">🦠 วิกฤตการณ์ไวรัส Dexibola และการไร้ผู้เสียชีวิต ๑๐๐%</div>
+              <div class="tri-stage-title" style="color: #60a5fa">🦠 วิกฤตการณ์ไวรัส Dexibola และการไร้ผู้เสียชีวิต ๑๐๐%</div>
               <p class="tri-stage-text">นำประเทศผ่านพ้นวิกฤตร้ายแรงระดับโลกจากการระบาดของไวรัส Dexibola โดยสยามเป็นประเทศเดียวที่ไม่ได้รับผลกระทบระบาดในวงกว้าง ไม่มีผู้เสียชีวิตแม้แต่รายเดียว และสามารถรักษาผู้ติดเชื้อทั้ง ๓ รายจนหายป่วยขาด 100%</p>
             </div>
 
             <div class="tri-stage">
-              <div class="tri-stage-title" style="color: #60a5fa;">💉 นวัตกรรมวัคซีนยีนส์สังเคราะห์สยามใน ๓ สัปดาห์</div>
+              <div class="tri-stage-title" style="color: #60a5fa">💉 นวัตกรรมวัคซีนยีนส์สังเคราะห์สยามใน ๓ สัปดาห์</div>
               <p class="tri-stage-text">บัญชาการสถาบันวิจัยการแพทย์ศิริปัญญาวิมารสัจในการคิดค้นและผลิตวัคซีนสังเคราะห์ป้องกันไวรัส Dexibola สำเร็จภายใน ๒๑ วัน (๓ สัปดาห์) แจกจ่ายให้ประชาชนไทยถ้วนหน้าและส่งมอบช่วยเหลือสากล</p>
             </div>
 
             <div class="tri-stage">
-              <div class="tri-stage-title" style="color: #60a5fa;">🏡 โครงการหมู่บ้าน HL คืนศักดิ์ศรีราษฎรไร้บ้าน ๘๗,๐๐๐ คน</div>
+              <div class="tri-stage-title" style="color: #60a5fa">🏡 โครงการหมู่บ้าน HL คืนศักดิ์ศรีราษฎรไร้บ้าน ๘๗,๐๐๐ คน</div>
               <p class="tri-stage-text">จัดตั้งโครงการหมู่บ้าน HL (Homeless Liberation) ช่วยเหลือราษฎรไร้บ้านกว่า ๘๗,๐๐๐ คนทั่วประเทศ ให้มีที่อยู่อาศัย ฝึกทักษะอาชีพใหม่ และสามารถพึ่งพาตนเองได้อย่างยั่งยืนสำเร็จถึง ๖๑%</p>
             </div>
 
             <div class="tri-stage">
-              <div class="tri-stage-title" style="color: #60a5fa;">🏥 การปฏิรูประบบสุขภาพถ้วนหน้ามาตรฐานเดียวทั่วประเทศ</div>
+              <div class="tri-stage-title" style="color: #60a5fa">🏥 การปฏิรูประบบสุขภาพถ้วนหน้ามาตรฐานเดียวทั่วประเทศ</div>
               <p class="tri-stage-text">เชื่อมโยงและรวมสิทธิประโยชน์ระบบสาธารณสุขทุกกองทุนเข้าสู่ระบบสุขภาพถ้วนหน้ามาตรฐานเดียว เพื่อให้ราษฎรไทยทุกคนได้รับบริการทางการแพทย์ที่เท่าเทียม ปราศจากความเหลื่อมล้ำ</p>
             </div>
 
             <div class="tri-stage">
-              <div class="tri-stage-title" style="color: #60a5fa;">🕊️ การรักษามหาเสถียรภาพสภาสยามและการส่งไม้ต่อ พ.ศ. ๒๖๗๒</div>
+              <div class="tri-stage-title" style="color: #60a5fa">🕊️ การรักษามหาเสถียรภาพสภาสยามและการส่งไม้ต่อ พ.ศ. ๒๖๗๒</div>
               <p class="tri-stage-text">รักษาสมดุลความสัมพันธ์ระหว่างสภาสยามและภาคประชาสังคมอย่างมั่นคง นำพาประเทศผ่านพ้นสภาวะวิกฤตเศรษฐกิจโลก ก่อนส่งมอบภารกิจบริหารแผ่นดินให้นายกรัฐมนตรีคนที่ ๒๙ อย่างเรียบร้อย</p>
             </div>
 
           </div>
         </div>
 
-        <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 32px 0;">
+        <hr style="border: 0; border-top: 1px solid var(--nw-line); margin: 32px 0">
 
         
-        <div class="tri-layout" style="margin-bottom: 32px;">
-          <div class="tri-profile-card" style="border: 2px solid #facc15; background: rgba(15, 23, 42, 0.9);">
-            <img src="images/pm30.jpg" alt="ทักษิณ ชินวัตร (วาระ ๒ และ ๓)" class="tri-profile-img" style="border: 3px solid #facc15;">
-            <div class="tri-profile-name" style="color: #facc15;">ทักษิณ ชินวัตร (วาระ ๒ และ ๓)</div>
+        <div class="tri-layout" style="margin-bottom: 32px">
+          <div class="tri-profile-card" style="border: 2px solid var(--nw-line); background: var(--nw-surface-2)">
+            <img src="images/pm30.jpg" alt="ทักษิณ ชินวัตร (วาระ ๒ และ ๓)" class="tri-profile-img" style="border: 3px solid var(--nw-line)">
+            <div class="tri-profile-name" style="color: var(--nw-acc)">ทักษิณ ชินวัตร (วาระ ๒ และ ๓)</div>
             <div class="tri-profile-title">นายกรัฐมนตรีคนที่ ๓๐ แห่งราชอาณาจักรไทย (รัฐบุรุษแห่งไทยคนที่ ๒)</div>
             <div class="tri-meta">
-              <div style="margin-bottom: 6px;"><strong>พรรคการเมือง:</strong> <span style="color: #facc15; font-weight: 700;">พรรคทักษิประชา</span></div>
-              <div style="margin-bottom: 6px;"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๓๐ (พ.ศ. ๒๖๘๐ – ๒๖๙๖ / รวม ๑๖ ปี วาระที่ ๓ และ ๔)</div>
-              <div style="margin-bottom: 6px;"><strong>บริบทเกียรติยศ:</strong> <span style="color: #4ade80; font-weight: 600;">"ฯพณฯ รัฐบุรุษแห่งไทยคนที่ ๒ — อดีตเจ้าของสถิติโลกเสียงสนับสนุนในสภา 86.48%"</span></div>
-              <div><strong>สไตล์บริหาร:</strong> <span style="color: #fef08a; font-weight: 600;">ยุทธศาสตร์ความมั่นคงลับ TH-09, ปราบรัฐประหาร & โครงการมรดกแผ่นดิน ๒๙๓ ปี</span></div>
+              <div style="margin-bottom: 6px"><strong>พรรคการเมือง:</strong> <span style="color: var(--nw-acc); font-weight: 700">พรรคทักษิประชา</span></div>
+              <div style="margin-bottom: 6px"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๓๐ (พ.ศ. ๒๖๘๐ – ๒๖๙๖ / รวม ๑๖ ปี วาระที่ ๓ และ ๔)</div>
+              <div style="margin-bottom: 6px"><strong>บริบทเกียรติยศ:</strong> <span style="color: #4ade80; font-weight: 600">"ฯพณฯ รัฐบุรุษแห่งไทยคนที่ ๒ — อดีตเจ้าของสถิติโลกเสียงสนับสนุนในสภา 86.48%"</span></div>
+              <div><strong>สไตล์บริหาร:</strong> <span style="color: var(--nw-acc-2); font-weight: 600">ยุทธศาสตร์ความมั่นคงลับ TH-09, ปราบรัฐประหาร & โครงการมรดกแผ่นดิน ๒๙๓ ปี</span></div>
             </div>
           </div>
 
           <div class="tri-bio">
             
             <div class="tri-stage">
-              <div class="tri-stage-title" style="color: #facc15;">🗳️ คืนประกาศผลความนิยมและมหาแลนด์สไลด์ พ.ศ. ๒๖๘๐ (กวาด กทม. ๑๐๐%)</div>
+              <div class="tri-stage-title" style="color: var(--nw-acc)">🗳️ คืนประกาศผลความนิยมและมหาแลนด์สไลด์ พ.ศ. ๒๖๘๐ (กวาด กทม. ๑๐๐%)</div>
               <p class="tri-stage-text">ในการเลือกตั้งทั่วไป พ.ศ. ๒๖๘๐ ผลสำรวจโพลความนิยมคืนประกาศผลตัวเลขขึ้นจอช่วงแรก เมื่อพรรคทักษิประชาประกาศเปิดตัวแคนดิเดตนายกฯ ปริศนา โพลขึ้นจออยู่ที่ ๔๑% จนกระทั่ง ๑ สัปดาห์ก่อนวันเลือกตั้ง มีการเปิดเผยอย่างเป็นทางการว่าแคนดิเดตนายกฯ คือ "ทักษิณ ชินวัตร" ส่งผลให้โพลความนิยมพุ่งกระฉูดขึ้นเป็น ๖๘.๗% ในทันที และเมื่อประกาศผลจริง พรรคทักษิประชาชนะเลือกตั้งมหาแลนด์สไลด์ด้วย Popular Vote ๗๒.๙% กวาด ส.ส. ๓๖๔ จาก ๕๐๐ ที่นั่ง โดยกวาดชัยชนะในกรุงเทพมหานครเกลี้ยงทุกเขต 100%</p>
             </div>
 
             <div class="tri-stage">
-              <div class="tri-stage-title" style="color: #facc15;">📚 ซีรีส์หนังสือประวัติศาสตร์ทางเลือก ๒๑ ล้านเล่ม & BANCC Festival</div>
+              <div class="tri-stage-title" style="color: var(--nw-acc)">📚 ซีรีส์หนังสือประวัติศาสตร์ทางเลือก ๒๑ ล้านเล่ม & BANCC Festival</div>
               <p class="tri-stage-text">ทักษิณ ชินวัตร ได้ประพันธ์ชุดหนังสือประวัติศาสตร์ทางเลือก ๔ เล่มจบในชื่อ "Thailand Alternate Timeline : The Stagnant Decades ทศวรรษที่หายไป" มียอดจำหน่ายถล่มทลายรวมกว่า ๒๑,๐๐๐,๐๐๐ เล่ม (๒๑ ล้านเล่ม) และเป็นประธานร่วมจัดงาน Thailand Alternate History Festival ณ ศูนย์ประชุมแห่งชาติภูมิพลอดุลยเดช (BANCC) ร่วมกับครีเอเตอร์มหาชน สิน / SIN ARCHIVE (31.2M Subs) และ พี่วิว / Point of View (24.8M Subs) โดยมีราษฎรเข้าร่วมงานนับล้านคน</p>
             </div>
 
             <div class="tri-stage">
-              <div class="tri-stage-title" style="color: #facc15;">⚔️ ปีที่ ๔.๕ - ๖ : สงคราม BrokenOrder (ปฏิบัติการลับ TH-09) & มหาวิกฤตแผ่นดินไหว ๙.๑</div>
+              <div class="tri-stage-title" style="color: var(--nw-acc)">⚔️ ปีที่ ๔.๕ - ๖ : สงคราม BrokenOrder (ปฏิบัติการลับ TH-09) & มหาวิกฤตแผ่นดินไหว ๙.๑</div>
               <p class="tri-stage-text">นำพาประเทศก้าวข้ามสงครามกับเครือข่าย BrokenOrder โดยสั่งการใช้ปฏิบัติการอากาศยาน/ระบบอาวุธลับ TH-09 เข้าโจมตีทางยุทธศาสตร์อย่างเฉียบขาดควบคู่กับการรักษาภาพลักษณ์และเสถียรภาพทางการทูตอย่างสมบูรณ์แบบ จัดการเหตุการณ์ The Collapsing / The Protector และการยุบพรรคการเมืองครั้งใหญ่ได้อย่างเด็ดขาด พร้อมทั้งบัญชาการรับมือภัยพิบัติแผ่นดินไหวขนาด ๙.๑ ร่วมกับ กอท. จนลดความสูญเสียได้อย่างน่าอัศจรรย์ มีผู้เสียชีวิตทั่วประเทศเพียง ๑ ราย</p>
             </div>
 
             <div class="tri-stage">
-              <div class="tri-stage-title" style="color: #facc15;">🛡️ ปีที่ ๖ - ๗ : วิกฤตรัฐประหาร, ปลอมตาย ๓ สัปดาห์ทวงคืนประเทศ & สันติภาพ UN</div>
+              <div class="tri-stage-title" style="color: var(--nw-acc)">🛡️ ปีที่ ๖ - ๗ : วิกฤตรัฐประหาร, ปลอมตาย ๓ สัปดาห์ทวงคืนประเทศ & สันติภาพ UN</div>
               <p class="tri-stage-text">เผชิญหน้ากลุ่ม ทยท. ที่ใช้เพลงกราวเสรีมนังคศิลาปลุกระดมมวลชน โดยสามารถปราบปรามสำเร็จด้วยความร่วมมือจาก กอท. เข้าสู่ปีที่ ๗ "ปีแห่งความขัดแย้ง" รัฐบาลต้องต่อสู้กับความพยายามยึดอำนาจถึง ๔ ครั้ง และการก่อรัฐประหารเต็มรูปแบบจาก คปป. ทักษิณตัดสินใจวางแผนซ้อนกลแกล้งปลอมตายเป็นเวลา ๓ สัปดาห์เพื่อพลิกสถานการณ์และนำกำลังกลับมาทวงคืนประเทศสำเร็จอย่างราบรื่น ก่อนเดินทางไปเป็นตัวแทนเจรจาสันติภาพระดับโลก ณ องค์การสหประชาชาติ (UN) ยุติคำขู่ทางทหารจากแนวร่วมอธิปไตยเสรีอย่างถาวร</p>
             </div>
 
             <div class="tri-stage">
-              <div class="tri-stage-title" style="color: #facc15;">🎖️ ปีที่ ๘ : ปีแห่งการเยียวยา, "รัฐบุรุษแห่งไทยคนที่ ๒" & เกียรติยศ ฯพณฯ มติสภา</div>
+              <div class="tri-stage-title" style="color: var(--nw-acc)">🎖️ ปีที่ ๘ : ปีแห่งการเยียวยา, "รัฐบุรุษแห่งไทยคนที่ ๒" & เกียรติยศ ฯพณฯ มติสภา</div>
               <p class="tri-stage-text">ได้รับการยกย่องเป็น "รัฐบุรุษแห่งไทยคนที่ ๒" ในประวัติศาสตร์ประชาธิปไตยสยาม (ต่อจากท่านพิธา ลิ้มเจริญรัตน์) ได้รับเกียรติยศคำนำหน้านาม "ฯพณฯ" อย่างเป็นทางการผ่านมติเอกฉันท์ของรัฐสภา ซึ่งเป็นบุคคลเดียวที่ได้รับในฐานะเกียรติยศเฉพาะบุคคล พร้อมทั้งได้ประพันธ์เพลง "มหารัฐบุรุษ" เพื่อเป็นเกียรติยศคู่แผ่นดิน</p>
             </div>
 
             <div class="tri-stage">
-              <div class="tri-stage-title" style="color: #facc15;">👑 บทบาทหลังหมดวาระนายกฯ & อภิมหาโครงการมรดกแผ่นดิน ๒๙๓ ปี</div>
+              <div class="tri-stage-title" style="color: var(--nw-acc)">👑 บทบาทหลังหมดวาระนายกฯ & อภิมหาโครงการมรดกแผ่นดิน ๒๙๓ ปี</div>
               <p class="tri-stage-text">ภายหลังบริหารครบ ๒ วาระ ๑๖ ปีเต็ม (พ.ศ. ๒๖๘๐ - ๒๖๙๖) ทักษิณยังคงดำรงตำแหน่งหัวหน้าพรรคทักษิประชาอย่างต่อเนื่อง และได้กลับเข้าสู่คณะรัฐมนตรีในตำแหน่งรองนายกรัฐมนตรีควบรัฐมนตรีว่าการกระทรวงการต่างประเทศ ในรัฐบาลของท่านปุระชัยและท่านสมคิด โดยได้ริเริ่ม "โครงการมรดกแผ่นดิน" เพื่อฟื้นฟู บูรณาการ และสานต่อโครงการสำคัญของนายกรัฐมนตรีทุกคนตลอดประวัติศาสตร์ ๒๙๓ ปี รวมถึงยุคพรรคก้าวไกล</p>
             </div>
 
             <div class="tri-stage">
-              <div class="tri-stage-title" style="color: #facc15;">🌟 สถิติประวัติศาสตร์โลก (นายกฯ คนที่ ๔ และคนที่ ๓๐)</div>
+              <div class="tri-stage-title" style="color: var(--nw-acc)">🌟 สถิติประวัติศาสตร์โลก (นายกฯ คนที่ ๔ และคนที่ ๓๐)</div>
               <p class="tri-stage-text">สร้างสถิติประวัติศาสตร์โลกด้วยคะแนนเสียงสนับสนุนในสภาสูงถึง ๘๖.๔๘% (ครองสถิติโลกมาหลายทศวรรษ จนอะตอม นายกฯ คนที่ ๓๓ ทำลายด้วย ๘๘.๙๖% ในปี ๒๗๒๒) เป็นบุคคลเพียงคนเดียวที่ได้ดำรงตำแหน่งนายกรัฐมนตรีทั้งคนที่ ๔ และคนที่ ๓๐ ครอบคลุมเส้นเวลากว่า ๓๐๐ ปีของประวัติศาสตร์การเมืองสยาม และเป็นบุคคลเดียวที่อุทิศตนรับใช้ชาติอย่างต่อเนื่องยาวนานที่สุดในประวัติศาสตร์</p>
             </div>
 
           </div>
         </div>
 
-        <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 32px 0;">
+        <hr style="border: 0; border-top: 1px solid var(--nw-line); margin: 32px 0">
 
         <!-- สายสิญจน์ พณิชไพโรจน์ -->
 
-        <div class="tri-layout" style="margin-bottom: 32px;">
+        <div class="tri-layout" style="margin-bottom: 32px">
 
           <div class="tri-profile-card">
 
@@ -1317,11 +1317,11 @@
 
             <div class="tri-meta">
 
-              <div style="margin-bottom: 6px;"><strong>ตำแหน่งสำคัญ:</strong> พนักงานฝ่ายกราฟฟิกเด็กใหม่ไฟแรงแห่ง 1HD / ผู้ก่อตั้งช่อง SIN ARCHIVE / สมาชิกพรรคก้าวไกล (ไม่ได้เป็น สส.)</div>
+              <div style="margin-bottom: 6px"><strong>ตำแหน่งสำคัญ:</strong> พนักงานฝ่ายกราฟฟิกเด็กใหม่ไฟแรงแห่ง 1HD / ผู้ก่อตั้งช่อง SIN ARCHIVE / สมาชิกพรรคก้าวไกล (ไม่ได้เป็น สส.)</div>
 
-              <div style="margin-bottom: 6px;"><strong>ความเป็นแฟนคลับ:</strong> แฟนคลับตัวยงผู้ติดตามผลงานของ 9arm (ดร.ธนานนท์), เอมโมโน, และพี่วิว (Point of View)</div>
+              <div style="margin-bottom: 6px"><strong>ความเป็นแฟนคลับ:</strong> แฟนคลับตัวยงผู้ติดตามผลงานของ 9arm (ดร.ธนานนท์), เอมโมโน, และพี่วิว (Point of View)</div>
 
-              <div style="margin-bottom: 6px;"><strong>ผลงานเด่น:</strong> สร้างเกือบทั้งเว็บไซต์นี้, ออกแบบสื่อพรรคก้าวไกล, นวัตกรรมกราฟิกคนละไลค์ SIN ARCHIVE ทะลุ 142M วิว</div>
+              <div style="margin-bottom: 6px"><strong>ผลงานเด่น:</strong> สร้างเกือบทั้งเว็บไซต์นี้, ออกแบบสื่อพรรคก้าวไกล, นวัตกรรมกราฟิกคนละไลค์ SIN ARCHIVE ทะลุ 142M วิว</div>
 
               <div><strong>สถานะผู้ติดตาม:</strong> ๓๑,๒๐๐,๐๐๐ คน (SIN ARCHIVE) & ๒๔,๘๐๐,๐๐๐ คน (Point of View)</div>
 
@@ -1405,47 +1405,47 @@
 
         </div>
 
-        <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 32px 0;">
+        <hr style="border: 0; border-top: 1px solid var(--nw-line); margin: 32px 0">
 
         <!-- รักชนก ศรีนอก (อยู่ระหว่างการพิจารณา - ผลงานไม่เพียงพอ ถูกขีดฆ่า) -->
 
         <div class="tri-layout nwc-card">
 
-          <div style="position: absolute; top: 16px; right: 20px; font-size: 24px; filter: grayscale(100%); opacity: 0.6;" title="ปฏิเสธการบรรจุ - ผลงานยังไม่เพียงพอ">❌</div>
+          <div style="position: absolute; top: 16px; right: 20px; font-size: 24px; filter: grayscale(100%); opacity: 0.6" title="ปฏิเสธการบรรจุ - ผลงานยังไม่เพียงพอ">❌</div>
 
-          <div class="tri-profile-card" style="background: rgba(15, 18, 25, 0.9); border: 1px solid rgba(255,255,255,0.05); filter: grayscale(100%);">
+          <div class="tri-profile-card" style="background: var(--nw-surface-2); border: 1px solid var(--nw-line); filter: grayscale(100%)">
 
-            <img src="images/rukchanok.png" alt="รักชนก ศรีนอก" class="tri-profile-img" style="filter: brightness(0); opacity: 0.8; border-color: rgba(255,255,255,0.05);">
+            <img src="images/rukchanok.png" alt="รักชนก ศรีนอก" class="tri-profile-img" style="filter: brightness(0); opacity: 0.8; border-color: var(--nw-line)">
 
-            <div class="tri-profile-name" style="color: #4a5568; text-decoration: line-through;">รักชนก ศรีนอก</div>
+            <div class="tri-profile-name" style="color: #4a5568; text-decoration: line-through">รักชนก ศรีนอก</div>
 
-            <div class="tri-profile-title" style="color: #4a5568; text-decoration: line-through;">ปฏิเสธการบรรจุ (ผลงานยังไม่เพียงพอ)</div>
+            <div class="tri-profile-title" style="color: #4a5568; text-decoration: line-through">ปฏิเสธการบรรจุ (ผลงานยังไม่เพียงพอ)</div>
 
-            <div class="tri-meta" style="border-top: 1px solid rgba(255, 255, 255, 0.05); color: #4a5568; text-decoration: line-through;">
+            <div class="tri-meta" style="border-top: 1px solid var(--nw-line); color: #4a5568; text-decoration: line-through">
 
-              <div style="margin-bottom: 6px; text-decoration: line-through;"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๒๒ (คนปัจจุบัน)</div>
+              <div style="margin-bottom: 6px; text-decoration: line-through"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๒๒ (คนปัจจุบัน)</div>
 
-              <div style="margin-bottom: 6px; text-decoration: line-through;"><strong>พรรคการเมือง:</strong> พรรคก้าวไกล</div>
+              <div style="margin-bottom: 6px; text-decoration: line-through"><strong>พรรคการเมือง:</strong> พรรคก้าวไกล</div>
 
-              <div style="text-decoration: line-through;"><strong>สถานะคดีการเมือง:</strong> กู้คืนความบริสุทธิ์ของสภาสำเร็จ</div>
+              <div style="text-decoration: line-through"><strong>สถานะคดีการเมือง:</strong> กู้คืนความบริสุทธิ์ของสภาสำเร็จ</div>
 
             </div>
 
           </div>
 
-          <div class="tri-bio" style="filter: grayscale(100%); opacity: 0.5;">
+          <div class="tri-bio" style="filter: grayscale(100%); opacity: 0.5">
 
-            <div class="tri-stage" style="text-decoration: line-through;">
+            <div class="tri-stage" style="text-decoration: line-through">
 
-              <div class="tri-stage-title" style="color: #4a5568; display: flex; align-items: center; gap: 8px; text-decoration: line-through;">
+              <div class="tri-stage-title" style="color: #4a5568; display: flex; align-items: center; gap: 8px; text-decoration: line-through">
 
-                <span style="text-decoration: line-through;">⚖️ บันทึกพฤติการณ์และการสืบค้นประวัติศาสตร์เฉพาะกิจ</span>
+                <span style="text-decoration: line-through">⚖️ บันทึกพฤติการณ์และการสืบค้นประวัติศาสตร์เฉพาะกิจ</span>
 
-                <span class="badge" style="background: rgba(255,255,255,0.03); color: #4a5568; border: 1px solid rgba(255,255,255,0.08); font-size: 10px; text-decoration: line-through;">REJECTED_INSUFFICIENT</span>
+                <span class="badge" style="background: rgba(255,255,255,0.03); color: #4a5568; border: 1px solid var(--nw-line); font-size: 10px; text-decoration: line-through">REJECTED_INSUFFICIENT</span>
 
               </div>
 
-              <p class="tri-stage-text" id="rukchanok-pending-desc" data-mode="normal" style="font-size: 15px; color: #4a5568; min-height: 120px; transition: all 0.3s; line-height: 1.8; text-decoration: line-through;">อยู่ระหว่างการพิจารณาบรรจุเข้าทำเนียบบุคคลสำคัญกติการัฐธรรมนูญอย่างเป็นทางการ จากวีรกรรมปฏิรูปสภาผู้แทนราษฎรในการกวาดล้างอิทธิพลเครือข่ายนอกรัฐธรรมนูญและอำนาจนิติประหารของวิสุทธิ์ คมณรัตน์จนหมดสิ้น พร้อมทั้งจับมือกับภาคเทคโนโลยีระดับสากลเพื่อกู้คืนสถาปัตยกรรม ParadoxAI 2.0 และสวัสดิการถ้วนหน้าให้กลับมาเป็นสิทธิประโยชน์พื้นฐานของพลเมืองไทยอีกครั้ง</p>
+              <p class="tri-stage-text" id="rukchanok-pending-desc" data-mode="normal" style="font-size: 15px; color: #4a5568; min-height: 120px; transition: all 0.3s; line-height: 1.8; text-decoration: line-through">อยู่ระหว่างการพิจารณาบรรจุเข้าทำเนียบบุคคลสำคัญกติการัฐธรรมนูญอย่างเป็นทางการ จากวีรกรรมปฏิรูปสภาผู้แทนราษฎรในการกวาดล้างอิทธิพลเครือข่ายนอกรัฐธรรมนูญและอำนาจนิติประหารของวิสุทธิ์ คมณรัตน์จนหมดสิ้น พร้อมทั้งจับมือกับภาคเทคโนโลยีระดับสากลเพื่อกู้คืนสถาปัตยกรรม ParadoxAI 2.0 และสวัสดิการถ้วนหน้าให้กลับมาเป็นสิทธิประโยชน์พื้นฐานของพลเมืองไทยอีกครั้ง</p>
 
             </div>
 
@@ -1455,7 +1455,7 @@
 
         <!-- จอมพลคงฤทธิ์ มหาเสนา -->
 
-        <div class="tri-layout" style="margin-bottom: 32px;">
+        <div class="tri-layout" style="margin-bottom: 32px">
 
           <div class="tri-profile-card">
 
@@ -1467,11 +1467,11 @@
 
             <div class="tri-meta">
 
-              <div style="margin-bottom: 6px;"><strong>ยศ/ตำแหน่ง:</strong> จอมพล / จอมพลเรือ / จอมพลอากาศ (ครบทั้ง ๓ เหล่าทัพ) / ผู้บัญชาการทหารสูงสุด (คนปัจจุบัน)</div>
+              <div style="margin-bottom: 6px"><strong>ยศ/ตำแหน่ง:</strong> จอมพล / จอมพลเรือ / จอมพลอากาศ (ครบทั้ง ๓ เหล่าทัพ) / ผู้บัญชาการทหารสูงสุด (คนปัจจุบัน)</div>
 
-              <div style="margin-bottom: 6px;"><strong>บทบาทปัจจุบัน:</strong> ผู้พิทักษ์เสถียรภาพรัฐบาลพลเรือน / แกนนำส่งเสริมการทหาร GOC</div>
+              <div style="margin-bottom: 6px"><strong>บทบาทปัจจุบัน:</strong> ผู้พิทักษ์เสถียรภาพรัฐบาลพลเรือน / แกนนำส่งเสริมการทหาร GOC</div>
 
-              <div style="margin-bottom: 6px;"><strong>ผลงานเด่น:</strong> ผลักดันการฝึกทหาร GOC / สกัดกั้นกำลังทหารยุครัฐบาลวิสุทธิ์ คมณรัตน์</div>
+              <div style="margin-bottom: 6px"><strong>ผลงานเด่น:</strong> ผลักดันการฝึกทหาร GOC / สกัดกั้นกำลังทหารยุครัฐบาลวิสุทธิ์ คมณรัตน์</div>
 
               <div><strong>เกียรวัติประวัติ:</strong> ได้รับการล้างมลทินและคืนยศสูงสุด พ.ศ. ๒๖๐๙ ในสมัยนายกฯ พริษฐ์</div>
 
@@ -1527,7 +1527,7 @@
 
               </p>
 
-              <p class="tri-stage-text" style="margin-top: 10px;">
+              <p class="tri-stage-text" style="margin-top: 10px">
 
                 การอารยะขัดขืนไม่ยอมร่วมมือของจอมพลคงฤทธิ์ทำให้ฝ่ายรัฐบาลวิสุทธิ์ไม่สามารถนำทหารออกมาทำรัฐประหารหรือใช้ความรุนแรงปราบปรามประชาชนได้ แม้รัฐบาลวิสุทธิ์จะพยายามทำ **"นิติประหารสภา"** โดยการรวบอำนาจ โยกย้าย และปลดกำลังพลสมาชิกรัฐสภาเพื่อให้ฝ่ายตนมีอำนาจล้นพ้นทางนิติบัญญัติก็ตาม ทว่าในท้ายที่สุด รัฐบาลของวิสุทธิ์ คมณรัตน์ ก็ต้องยอมลาออกและยุบสภาลงเนื่องจากจำนนต่อหลักฐานสำคัญจาก **"ปฏิบัติการรุ่งอรุณ ๒๒๐"** (Operation Dawn 220) ที่กลุ่มของอดีตนายกฯ พริษฐ์ วัชรสินธุ และไตรทิศา รณปวัตน์ ยื่นหลักฐานทุจริตเชิงลึกต่อศาลรัฐธรรมนูญและเปิดเผยต่อสาธารณชน บีบให้นายกรัฐมนตรีวิสุทธิ์ คมณรัตน์ จำนนต่อหลักฐาน ไม่มีทางเลือกอื่นนอกจากต้องแถลงลาออกและยอมยุบสภาไปในที่สุดด้วยคำสั่งศาลรัฐธรรมนูญ ซึ่งการขัดคำสั่งหลีกเลี่ยงการใช้กำลังทหารปะทะประชาชนของจอมพลคงฤทธิ์ได้ช่วยป้องกันเหตุรุนแรงและป้องกันนองเลือดลดความสูญเสียทางกายภาพไปได้อย่างมหาศาล ความกล้าหาญในการคุ้มครองกฎหมายรัฐธรรมนูญครั้งนี้ ส่งผลให้ในอีก ๓ ปีถัดมา หรือในปี **พ.ศ. ๒๖๑๗** (๘ ปีหลังได้รับคืนยศจอมพล) เขาได้รับโปรดเกล้าฯ แต่งตั้งขึ้นเป็น **ผู้บัญชาการทหารสูงสุด (ผบ.สส.) ควบคุมกองกำลัง ๓ เหล่าทัพ**
 
@@ -1559,25 +1559,25 @@
 
         </div>
 
-        <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 32px 0;">
+        <hr style="border: 0; border-top: 1px solid var(--nw-line); margin: 32px 0">
 
-        <div class="tri-layout" style="margin-bottom: 32px;">
+        <div class="tri-layout" style="margin-bottom: 32px">
           <div class="tri-profile-card">
             <img src="images/pm33.jpg" alt="ศ.ดร.นพ.วิทยสิทธิ์ ประสิทธิ์ผล (อะตอม)" class="tri-profile-img">
             <div class="tri-profile-name">ศ.ดร.นพ.วิทยสิทธิ์ ประสิทธิ์ผล</div>
             <div class="tri-profile-title">นายกรัฐมนตรีคนที่ ๓๓ แห่งราชอาณาจักรไทย</div>
             <div class="tri-meta">
-              <div style="margin-bottom: 6px;"><strong>ชื่อเล่น:</strong> อะตอม</div>
-              <div style="margin-bottom: 6px;"><strong>ภูมิลำเนา:</strong> จังหวัดนครปฐม</div>
-              <div style="margin-bottom: 6px;"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๓๓ (พ.ศ. ๒๗๑๔-ปัจจุบัน), ศาสตราจารย์ตลอดชีพ คณะแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</div>
-              <div style="margin-bottom: 6px;"><strong>การศึกษา:</strong> แพทยศาสตรบัณฑิต จุฬาลงกรณ์มหาวิทยาลัย (เกียรตินิยมอันดับ ๑) และปริญญาเอกควบ ๕ สาขาพร้อมกัน เกียรตินิยมอันดับ ๑ ทุกสาขา</div>
+              <div style="margin-bottom: 6px"><strong>ชื่อเล่น:</strong> อะตอม</div>
+              <div style="margin-bottom: 6px"><strong>ภูมิลำเนา:</strong> จังหวัดนครปฐม</div>
+              <div style="margin-bottom: 6px"><strong>ตำแหน่งสำคัญ:</strong> นายกรัฐมนตรีคนที่ ๓๓ (พ.ศ. ๒๗๑๔-ปัจจุบัน), ศาสตราจารย์ตลอดชีพ คณะแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</div>
+              <div style="margin-bottom: 6px"><strong>การศึกษา:</strong> แพทยศาสตรบัณฑิต จุฬาลงกรณ์มหาวิทยาลัย (เกียรตินิยมอันดับ ๑) และปริญญาเอกควบ ๕ สาขาพร้อมกัน เกียรตินิยมอันดับ ๑ ทุกสาขา</div>
               <div><strong>ความสำคัญ:</strong> ผู้พัฒนายา ParadiseMed (NFTA-4869) ยุติการระบาดไข้ผีห่า (NKONV) และแจกฟรีแก่คนไทยตลอดไป</div>
             </div>
           </div>
           <div class="tri-bio">
             <div class="tri-stage">
               <div class="tri-stage-title">🧒 วัยเด็ก (๐-๑๒ ปี) — ความอยากรู้ที่ไม่มีใครห้าม</div>
-              <p class="tri-stage-text">เกิดที่จังหวัดนครปฐม ในครอบครัวชนชั้นกลาง บิดาเป็นครูสอนวิทยาศาสตร์ระดับมัธยม มารดาเป็นเภสัชกรประจำโรงพยาบาลชุมชน ตั้งแต่เด็กแสดงความอยากรู้อยากเห็นผิดปกติ ชอบแกะเครื่องใช้ไฟฟ้าในบ้านออกดูข้างใน อายุ ๕ ขวบอ่านหนังสือวิทยาศาสตร์ระดับมัธยมได้คล่อง อายุ ๗ ขวบเริ่มถามบิดาเรื่องทฤษฎีสัมพัทธภาพ ในช่วงเวลาเดียวกันนี้ <strong style="color: var(--gold-light);">ลุงวิทยา</strong> ซึ่งขณะนั้นยังไม่มีใครรู้ว่าเป็นอดีตสมาชิก กอท. แวะเยี่ยมบ้านเป็นประจำ ซื้อไอติมกับขนมมาฝากทุกครั้ง และเป็นคนเดียวที่ไม่เคยห้ามคำถามแปลก ๆ ของเด็กชายวิทยสิทธิ์ กลายเป็นความผูกพันพิเศษที่ฝังลึกมาตลอดชีวิต</p>
+              <p class="tri-stage-text">เกิดที่จังหวัดนครปฐม ในครอบครัวชนชั้นกลาง บิดาเป็นครูสอนวิทยาศาสตร์ระดับมัธยม มารดาเป็นเภสัชกรประจำโรงพยาบาลชุมชน ตั้งแต่เด็กแสดงความอยากรู้อยากเห็นผิดปกติ ชอบแกะเครื่องใช้ไฟฟ้าในบ้านออกดูข้างใน อายุ ๕ ขวบอ่านหนังสือวิทยาศาสตร์ระดับมัธยมได้คล่อง อายุ ๗ ขวบเริ่มถามบิดาเรื่องทฤษฎีสัมพัทธภาพ ในช่วงเวลาเดียวกันนี้ <strong style="color: var(--gold-light)">ลุงวิทยา</strong> ซึ่งขณะนั้นยังไม่มีใครรู้ว่าเป็นอดีตสมาชิก กอท. แวะเยี่ยมบ้านเป็นประจำ ซื้อไอติมกับขนมมาฝากทุกครั้ง และเป็นคนเดียวที่ไม่เคยห้ามคำถามแปลก ๆ ของเด็กชายวิทยสิทธิ์ กลายเป็นความผูกพันพิเศษที่ฝังลึกมาตลอดชีวิต</p>
             </div>
             <div class="tri-stage">
               <div class="tri-stage-title">📚 วัยประถม-มัธยม (๗-๑๕ ปี) — ค่าย สอวน. และทางแยกสำคัญ</div>
@@ -1589,7 +1589,7 @@
             </div>
             <div class="tri-stage">
               <div class="tri-stage-title">🔬 วัยทำงานวิชาการ (๒๕-๒๙ ปี) — ParadiseMed และการทดลองกับตัวเอง</div>
-              <p class="tri-stage-text">ดำรงตำแหน่งศาสตราจารย์ตลอดชีพ คณะแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย เริ่มทดลองสารและยาต่าง ๆ นับไม่ถ้วนจนร่างกายทนสารเคมีได้สูงมาก และเริ่มใช้ CPH4 คู่กับ NFTA-4869X กับตัวเองอย่างลับ ๆ นับร้อยครั้ง รวม ๓๐ โดส ดัน IQ/EQ ขึ้นไปราว ๓๒๐++ ได้ความสามารถควบคุมเซลล์ในร่างกาย เร่งการซ่อมแซม หยุดเลือด และงอกอวัยวะใหม่ได้ โดยไม่ได้เกิดขึ้นทันทีแต่ใช้เวลา ๓-๖ สัปดาห์ ทว่าตัดสินใจไม่เผยแพร่เพราะเสี่ยงมะเร็ง สิ่งสำคัญคือการที่ทั้ง IQ และ EQ เพิ่มขึ้นพร้อมกัน ทำให้เขายังคงความเป็นคนไว้ได้ เพราะฉลาดขึ้นแต่ก็เข้าใจผู้อื่นมากขึ้นเช่นกัน มีบุตร ๒ คน (ชาย ๑ หญิง ๑) ในช่วงนี้ ผลงานสำคัญคือการพัฒนายา <strong style="color: var(--gold-light);">ParadiseMed (NFTA-4869)</strong> สำเร็จระหว่างไข้ผีห่า (NKONV) ระบาดหนัก รักษาหายทั้งประเทศ ๑๐๐% และแจกฟรีแก่คนไทยตลอดไป โดยแบ่งกำไร ๙๐% เป็นของตนเอง และ ๑๐% เข้ารัฐ ในช่วงนี้เขาถูกโจมตีที่ห้องแล็บเป็นครั้งแรก และเริ่มสืบจนพบความเชื่อมโยงกับ ดร.วีรพงษ์ และกิตติพงษ์ ภายหลังเมื่อโรคระบาดเบาบางลงพร้อมกับการเข้าสู่การเมือง เขาจึงดำเนินการทุกอย่างด้วยตนเอง ๑๐๐% เพื่อไม่ให้ขัดรัฐธรรมนูญ</p>
+              <p class="tri-stage-text">ดำรงตำแหน่งศาสตราจารย์ตลอดชีพ คณะแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย เริ่มทดลองสารและยาต่าง ๆ นับไม่ถ้วนจนร่างกายทนสารเคมีได้สูงมาก และเริ่มใช้ CPH4 คู่กับ NFTA-4869X กับตัวเองอย่างลับ ๆ นับร้อยครั้ง รวม ๓๐ โดส ดัน IQ/EQ ขึ้นไปราว ๓๒๐++ ได้ความสามารถควบคุมเซลล์ในร่างกาย เร่งการซ่อมแซม หยุดเลือด และงอกอวัยวะใหม่ได้ โดยไม่ได้เกิดขึ้นทันทีแต่ใช้เวลา ๓-๖ สัปดาห์ ทว่าตัดสินใจไม่เผยแพร่เพราะเสี่ยงมะเร็ง สิ่งสำคัญคือการที่ทั้ง IQ และ EQ เพิ่มขึ้นพร้อมกัน ทำให้เขายังคงความเป็นคนไว้ได้ เพราะฉลาดขึ้นแต่ก็เข้าใจผู้อื่นมากขึ้นเช่นกัน มีบุตร ๒ คน (ชาย ๑ หญิง ๑) ในช่วงนี้ ผลงานสำคัญคือการพัฒนายา <strong style="color: var(--gold-light)">ParadiseMed (NFTA-4869)</strong> สำเร็จระหว่างไข้ผีห่า (NKONV) ระบาดหนัก รักษาหายทั้งประเทศ ๑๐๐% และแจกฟรีแก่คนไทยตลอดไป โดยแบ่งกำไร ๙๐% เป็นของตนเอง และ ๑๐% เข้ารัฐ ในช่วงนี้เขาถูกโจมตีที่ห้องแล็บเป็นครั้งแรก และเริ่มสืบจนพบความเชื่อมโยงกับ ดร.วีรพงษ์ และกิตติพงษ์ ภายหลังเมื่อโรคระบาดเบาบางลงพร้อมกับการเข้าสู่การเมือง เขาจึงดำเนินการทุกอย่างด้วยตนเอง ๑๐๐% เพื่อไม่ให้ขัดรัฐธรรมนูญ</p>
             </div>
             <div class="tri-stage">
               <div class="tri-stage-title">🗳️ เข้าสู่การเมือง (๒๙ ปี) — สถิติ ๙๗.๑๙% และปริญญาเอก ๕ สาขา</div>

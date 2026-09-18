@@ -5,14 +5,14 @@
           padding: 10px 0;
         }
         .geo-container {
-          background: rgba(20, 24, 33, 0.4);
-          border: 1px solid rgba(255, 255, 255, 0.08);
+          background: var(--nw-surface-2);
+          border: 1px solid var(--nw-line);
           border-radius: 12px;
           padding: 24px;
-          backdrop-filter: blur(10px);
+          
         }
         .geo-header {
-          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+          border-bottom: 1px solid var(--nw-line);
           padding-bottom: 16px;
           margin-bottom: 24px;
           text-align: center;
@@ -25,7 +25,7 @@
         }
         .geo-card {
           background: rgba(255, 255, 255, 0.015);
-          border: 1px solid rgba(255, 255, 255, 0.05);
+          border: 1px solid var(--nw-line);
           border-radius: 8px;
           padding: 20px;
           transition: transform 0.2s ease, border-color 0.2s ease;
@@ -39,31 +39,31 @@
           font-size: 15px;
           font-weight: 700;
           margin-bottom: 10px;
-          font-family: 'Outfit', sans-serif;
+          font-family: var(--nw-serif);
           display: flex;
           align-items: center;
           gap: 8px;
         }
         .geo-card-desc {
           font-size: 13px;
-          color: var(--text-muted);
+          color: var(--nw-text-2);
           line-height: 1.5;
         }
       </style>
 
       <div class="geo-container">
         <!-- 100% Direct Embedded World Map from แผนที่โลก.html -->
-        <div style="width:100%; margin-bottom:32px;">
-          <iframe src="world_map.html" style="width:100%; height:680px; border:2px solid rgba(250,204,21,0.35); border-radius:16px; box-shadow:0 8px 32px rgba(0,0,0,0.6); background:#070a12; display:block;" frameborder="0" title="แผนที่ภูมิรัฐศาสตร์โลก (ระเบียบใหม่)"></iframe>
+        <div style="width: 100%; margin-bottom: 32px">
+          <iframe src="world_map.html" style="width: 100%; height: 680px; border: 2px solid var(--nw-line); border-radius: 14px; background: #070a12; display: block" frameborder="0" title="แผนที่ภูมิรัฐศาสตร์โลก (ระเบียบใหม่)"></iframe>
         </div>
 
-        <div style="width: 100%; text-align: center; margin-bottom: 20px;"><img src="images/seato_brics_emblem.jpg" alt="SEATO-BRICS Emblem" style="max-width: 100%; height: auto; border: 2px solid rgba(250,204,21,0.4); border-radius: 14px; box-shadow: 0 8px 32px rgba(0,0,0,0.6); display: inline-block;"></div>
+        <div style="width: 100%; text-align: center; margin-bottom: 20px"><img src="images/seato_brics_emblem.jpg" alt="SEATO-BRICS Emblem" style="max-width: 100%; height: auto; border: 2px solid var(--nw-line); border-radius: 14px; display: inline-block"></div>
 <div class="geo-header">
-          <h3 style="color: var(--accent-orange); font-family: 'Outfit', sans-serif; font-size: 24px; margin-bottom: 8px;">🌍 ระเบียบภูมิรัฐศาสตร์โลกใหม่ (New Geopolitical Order)</h3>
-          <p style="color: var(--text-muted); font-size: 14.5px; margin-bottom: 0;">ระเบียบโลกใหม่ในลักษณะ "ราชจักรวรรดิ" (Royal Empire) เช่น สหพันธราชจักรวรรดิรัสเซีย ที่บริหารโดย "อัครอธิบดี" (Consul) เป็นผู้มีอำนาจสูงสุดของแผ่นดิน และ "จักรพรรดิ" (Emperor) ทรงอยู่ภายใต้รัฐธรรมนูญจำลองสูงสุดอย่างเคร่งครัด</p>
+          <h3 style="color: var(--accent-orange); font-family: var(--nw-serif); font-size: 24px; margin-bottom: 8px">🌍 ระเบียบภูมิรัฐศาสตร์โลกใหม่ (New Geopolitical Order)</h3>
+          <p style="color: var(--nw-text-2); font-size: 14.5px; margin-bottom: 0">ระเบียบโลกใหม่ในลักษณะ "ราชจักรวรรดิ" (Royal Empire) เช่น สหพันธราชจักรวรรดิรัสเซีย ที่บริหารโดย "อัครอธิบดี" (Consul) เป็นผู้มีอำนาจสูงสุดของแผ่นดิน และ "จักรพรรดิ" (Emperor) ทรงอยู่ภายใต้รัฐธรรมนูญจำลองสูงสุดอย่างเคร่งครัด</p>
         </div>
 
-        <div class="goc-section" style="border-bottom: none; padding-bottom: 0; margin-bottom: 16px;">
+        <div class="goc-section" style="border-bottom: none; padding-bottom: 0; margin-bottom: 16px">
           <h4 class="goc-sec-title">🗺️ การจัดแบ่งขั้วอำนาจโลกหลัก</h4>
           <div class="geo-grid">
             <div class="geo-card">
@@ -99,43 +99,43 @@
       
         <div class="nwc-card"><h5>สามขั้วของระเบียบโลกใหม่</h5>
           
-          <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:12px">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap: 12px">
             <div class="nwc-card"><h5>SEATO&ndash;BRICS &middot; นำโดยไทย</h5>
               
-              <div style="font-size:12.3px; color:var(--text-muted); line-height:1.75; margin-top:7px;">ไทย (สำนักงานใหญ่ SEATO กรุงเทพฯ) &middot; สหพันธราชจักรวรรดิรัสเซีย รวมอะแลสกา &middot; สาธารณรัฐจีน (ROC) &middot; อินเดีย &middot; บราซิล &middot; แอฟริกาใต้ &middot; ชาติภาคี SEATO</div>
-              <div style="font-size:12px; color:#fdba74; font-weight:700; margin-top:8px;">ประชากรกว่า ๗๐% &middot; GDP กว่า ๖๕% ของโลก</div>
+              <div style="font-size: 12.3px; color: var(--nw-text-2); line-height: 1.75; margin-top: 7px">ไทย (สำนักงานใหญ่ SEATO กรุงเทพฯ) &middot; สหพันธราชจักรวรรดิรัสเซีย รวมอะแลสกา &middot; สาธารณรัฐจีน (ROC) &middot; อินเดีย &middot; บราซิล &middot; แอฟริกาใต้ &middot; ชาติภาคี SEATO</div>
+              <div style="font-size: 12px; color: #fdba74; font-weight: 700; margin-top: 8px">ประชากรกว่า ๗๐% &middot; GDP กว่า ๖๕% ของโลก</div>
             </div>
             <div class="nwc-card"><h5>ขั้วตะวันตก EU + NATO</h5>
               
-              <div style="font-size:12.3px; color:var(--text-muted); line-height:1.75; margin-top:7px;">สหพันธรัฐใหม่ (TSL) &middot; เยอรมนี &middot; แคนาดา &middot; กรีนแลนด์ &middot; ยุโรปตะวันตก &middot; สแกนดิเนเวีย</div>
-              <div style="font-size:12px; color:#93c5fd; font-weight:700; margin-top:8px;">ควบคุมเขตยุทธศาสตร์แอตแลนติก &middot; มีสนธิสัญญา Siam&ndash;TSL กับไทย</div>
+              <div style="font-size: 12.3px; color: var(--nw-text-2); line-height: 1.75; margin-top: 7px">สหพันธรัฐใหม่ (TSL) &middot; เยอรมนี &middot; แคนาดา &middot; กรีนแลนด์ &middot; ยุโรปตะวันตก &middot; สแกนดิเนเวีย</div>
+              <div style="font-size: 12px; color: #93c5fd; font-weight: 700; margin-top: 8px">ควบคุมเขตยุทธศาสตร์แอตแลนติก &middot; มีสนธิสัญญา Siam&ndash;TSL กับไทย</div>
             </div>
             <div class="nwc-card"><h5>เขตไร้ฝักฝ่าย</h5>
               
-              <div style="font-size:12.3px; color:var(--text-muted); line-height:1.75; margin-top:7px;">เม็กซิโก &middot; อเมริกากลาง &middot; ซาฮารา/ซาเฮลในแอฟริกาตะวันตก &middot; บางส่วนของอเมริกาใต้</div>
-              <div style="font-size:12px; color:#cbd5e1; font-weight:700; margin-top:8px;">เขตกันชนและพื้นที่เฝ้าระวังความมั่นคงสากล</div>
+              <div style="font-size: 12.3px; color: var(--nw-text-2); line-height: 1.75; margin-top: 7px">เม็กซิโก &middot; อเมริกากลาง &middot; ซาฮารา/ซาเฮลในแอฟริกาตะวันตก &middot; บางส่วนของอเมริกาใต้</div>
+              <div style="font-size: 12px; color: var(--nw-text-2); font-weight: 700; margin-top: 8px">เขตกันชนและพื้นที่เฝ้าระวังความมั่นคงสากล</div>
             </div>
           </div>
         </div>
         <div class="nwc-card"><h5>ลำดับเหตุการณ์ที่ก่อรูประเบียบโลกใหม่</h5>
           
-          <div style="display:flex; gap:14px">
-              <div style="flex:0 0 150px; font-family:'Outfit',sans-serif; font-size:12.5px; font-weight:800; color:#a5b4fc; line-height:1.5;">พ.ศ. ๒๕๖๐ &ndash; ๒๕๗๖<div style="font-size:11px; color:#64748b; font-weight:600; margin-top:3px;">นายกฯ คนที่ ๑๗ พิธา ลิ้มเจริญรัตน์</div></div>
-              <div style="flex:1; font-size:12.8px; color:var(--text-muted); line-height:1.75;">สหรัฐอเมริกาล่มสลายและเปลี่ยนผ่านเป็น <strong>สหพันธรัฐใหม่ (TSL)</strong> ด้วยความช่วยเหลือของพิธาและอดีตประธานาธิบดีโอบามา &middot; BRICS ที่ก่อตั้งโดยวลาดีมีร์ ปูติน <strong>รวมเข้ากับ SEATO</strong></div>
-            </div><div style="display:flex; gap:14px">
-              <div style="flex:0 0 150px; font-family:'Outfit',sans-serif; font-size:12.5px; font-weight:800; color:#a5b4fc; line-height:1.5;">พ.ศ. ๒๕๘๘<div style="font-size:11px; color:#64748b; font-weight:600; margin-top:3px;">โครงการคลองไทยไมตรี</div></div>
-              <div style="flex:1; font-size:12.8px; color:var(--text-muted); line-height:1.75;">ขุดคลองเชื่อมอันดามัน&ndash;อ่าวไทยแล้วเสร็จ มูลค่า ๓.๙ ล้านล้านบาท มาเลเซียยื่นคัดค้านแต่แพ้ในเวที SEATO&ndash;UN</div>
-            </div><div style="display:flex; gap:14px">
-              <div style="flex:0 0 150px; font-family:'Outfit',sans-serif; font-size:12.5px; font-weight:800; color:#a5b4fc; line-height:1.5;">พ.ศ. ๒๖๖๕ เป็นต้นไป<div style="font-size:11px; color:#64748b; font-weight:600; margin-top:3px;">นายกฯ คนที่ ๒๘ อภิสิทธิ์ เวชชาชีวะ (วาระที่ ๒)</div></div>
-              <div style="flex:1; font-size:12.8px; color:var(--text-muted); line-height:1.75;">วิกฤตไวรัส Dexibola &mdash; สยามเป็นประเทศเดียวที่ไม่ได้รับผลกระทบ ขณะที่ค่าเงินดอลลาร์ TSL ดิ่งลงอย่างรุนแรง</div>
-            </div><div style="display:flex; gap:14px">
-              <div style="flex:0 0 150px; font-family:'Outfit',sans-serif; font-size:12.5px; font-weight:800; color:#a5b4fc; line-height:1.5;">พ.ศ. ๒๗๑๔ &ndash; ปัจจุบัน<div style="font-size:11px; color:#64748b; font-weight:600; margin-top:3px;">นายกฯ คนที่ ๓๓ ศ.ดร.นพ.วิทยสิทธิ์ ประสิทธิ์ผล</div></div>
-              <div style="flex:1; font-size:12.8px; color:var(--text-muted); line-height:1.75;">ความตกลงไทย&ndash;รัสเซีย ๔ ฉบับ ด้านพลังงาน วิจัยการแพทย์ อวกาศ และการค้าเสรี ผ่านสภาด้วยคะแนน ๘๙%</div>
+          <div style="display: flex; gap: 14px">
+              <div style="flex: 0 0 150px; font-family: var(--nw-serif); font-size: 12.5px; font-weight: 800; color: #a5b4fc; line-height: 1.5">พ.ศ. ๒๕๖๐ &ndash; ๒๕๗๖<div style="font-size: 11px; color: var(--nw-text-2); font-weight: 600; margin-top: 3px">นายกฯ คนที่ ๑๗ พิธา ลิ้มเจริญรัตน์</div></div>
+              <div style="flex: 1; font-size: 12.8px; color: var(--nw-text-2); line-height: 1.75">สหรัฐอเมริกาล่มสลายและเปลี่ยนผ่านเป็น <strong>สหพันธรัฐใหม่ (TSL)</strong> ด้วยความช่วยเหลือของพิธาและอดีตประธานาธิบดีโอบามา &middot; BRICS ที่ก่อตั้งโดยวลาดีมีร์ ปูติน <strong>รวมเข้ากับ SEATO</strong></div>
+            </div><div style="display: flex; gap: 14px">
+              <div style="flex: 0 0 150px; font-family: var(--nw-serif); font-size: 12.5px; font-weight: 800; color: #a5b4fc; line-height: 1.5">พ.ศ. ๒๕๘๘<div style="font-size: 11px; color: var(--nw-text-2); font-weight: 600; margin-top: 3px">โครงการคลองไทยไมตรี</div></div>
+              <div style="flex: 1; font-size: 12.8px; color: var(--nw-text-2); line-height: 1.75">ขุดคลองเชื่อมอันดามัน&ndash;อ่าวไทยแล้วเสร็จ มูลค่า ๓.๙ ล้านล้านบาท มาเลเซียยื่นคัดค้านแต่แพ้ในเวที SEATO&ndash;UN</div>
+            </div><div style="display: flex; gap: 14px">
+              <div style="flex: 0 0 150px; font-family: var(--nw-serif); font-size: 12.5px; font-weight: 800; color: #a5b4fc; line-height: 1.5">พ.ศ. ๒๖๖๕ เป็นต้นไป<div style="font-size: 11px; color: var(--nw-text-2); font-weight: 600; margin-top: 3px">นายกฯ คนที่ ๒๘ อภิสิทธิ์ เวชชาชีวะ (วาระที่ ๒)</div></div>
+              <div style="flex: 1; font-size: 12.8px; color: var(--nw-text-2); line-height: 1.75">วิกฤตไวรัส Dexibola &mdash; สยามเป็นประเทศเดียวที่ไม่ได้รับผลกระทบ ขณะที่ค่าเงินดอลลาร์ TSL ดิ่งลงอย่างรุนแรง</div>
+            </div><div style="display: flex; gap: 14px">
+              <div style="flex: 0 0 150px; font-family: var(--nw-serif); font-size: 12.5px; font-weight: 800; color: #a5b4fc; line-height: 1.5">พ.ศ. ๒๗๑๔ &ndash; ปัจจุบัน<div style="font-size: 11px; color: var(--nw-text-2); font-weight: 600; margin-top: 3px">นายกฯ คนที่ ๓๓ ศ.ดร.นพ.วิทยสิทธิ์ ประสิทธิ์ผล</div></div>
+              <div style="flex: 1; font-size: 12.8px; color: var(--nw-text-2); line-height: 1.75">ความตกลงไทย&ndash;รัสเซีย ๔ ฉบับ ด้านพลังงาน วิจัยการแพทย์ อวกาศ และการค้าเสรี ผ่านสภาด้วยคะแนน ๘๙%</div>
             </div>
         </div>
         <div class="nwc-card"><h5>ที่ยืนของประเทศไทย</h5>
           
-          <div style="font-size:13px; color:var(--text-muted); line-height:1.95;">&bull; <strong style="color:#fde047;">ศูนย์กลางพันธมิตร</strong> &mdash; ที่ตั้งสำนักงานใหญ่ SEATO ณ กรุงเทพมหานคร และผู้นำกลุ่ม SEATO&ndash;BRICS<br>&bull; <strong style="color:#fde047;">อธิปไตยทางทะเล</strong> &mdash; ถือสิทธิเหนือคลองไทยไมตรีและอำนาจจัดเก็บค่าสัญจรทางเรือ ๑๐๐%<br>&bull; <strong style="color:#fde047;">สะพานสองขั้ว</strong> &mdash; เป็นผู้นำ SEATO&ndash;BRICS ขณะเดียวกันก็ทำความตกลงการค้าเสรีกับ EU และสนธิสัญญาเชิงยุทธศาสตร์ Siam&ndash;TSL กับขั้วตะวันตก<br>&bull; <strong style="color:#fde047;">หลักการทูตตามรัฐธรรมนูญ</strong> &mdash; มาตรา ๘๔๒ รับรองนโยบายการทูตที่ยึดสันติภาพ ความมั่นคงสากล และความเป็นกลาง</div>
+          <div style="font-size: 13px; color: var(--nw-text-2); line-height: 1.95">&bull; <strong style="color: var(--nw-acc-2)">ศูนย์กลางพันธมิตร</strong> &mdash; ที่ตั้งสำนักงานใหญ่ SEATO ณ กรุงเทพมหานคร และผู้นำกลุ่ม SEATO&ndash;BRICS<br>&bull; <strong style="color: var(--nw-acc-2)">อธิปไตยทางทะเล</strong> &mdash; ถือสิทธิเหนือคลองไทยไมตรีและอำนาจจัดเก็บค่าสัญจรทางเรือ ๑๐๐%<br>&bull; <strong style="color: var(--nw-acc-2)">สะพานสองขั้ว</strong> &mdash; เป็นผู้นำ SEATO&ndash;BRICS ขณะเดียวกันก็ทำความตกลงการค้าเสรีกับ EU และสนธิสัญญาเชิงยุทธศาสตร์ Siam&ndash;TSL กับขั้วตะวันตก<br>&bull; <strong style="color: var(--nw-acc-2)">หลักการทูตตามรัฐธรรมนูญ</strong> &mdash; มาตรา ๘๔๒ รับรองนโยบายการทูตที่ยึดสันติภาพ ความมั่นคงสากล และความเป็นกลาง</div>
         </div>
       </div>
     

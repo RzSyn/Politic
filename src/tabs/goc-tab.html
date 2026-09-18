@@ -16,10 +16,10 @@
         .goc-container {
 
 
-          background: rgba(20, 24, 33, 0.4);
+          background: var(--nw-surface-2);
 
 
-          border: 1px solid rgba(255, 255, 255, 0.08);
+          border: 1px solid var(--nw-line);
 
 
           border-radius: 12px;
@@ -28,7 +28,7 @@
           padding: 24px;
 
 
-          backdrop-filter: blur(10px);
+          
 
 
         }
@@ -37,7 +37,7 @@
         .goc-header-sec {
 
 
-          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+          border-bottom: 1px solid var(--nw-line);
 
 
           padding-bottom: 16px;
@@ -91,7 +91,7 @@
         .goc-section {
 
 
-          border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+          border-bottom: 1px solid var(--nw-line);
 
 
           padding-bottom: 24px;
@@ -118,7 +118,7 @@
           margin-bottom: 14px;
 
 
-          font-family: 'Outfit', sans-serif;
+          font-family: var(--nw-serif);
 
 
           display: flex;
@@ -205,7 +205,7 @@
           background: rgba(255, 255, 255, 0.02);
 
 
-          border: 1px solid rgba(255, 255, 255, 0.08);
+          border: 1px solid var(--nw-line);
 
 
           border-radius: 6px;
@@ -241,7 +241,7 @@
           transform: translateY(-2px);
 
 
-          box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+          
 
 
         }
@@ -259,7 +259,7 @@
         .goc-node.node-joint:hover, .goc-node.node-joint.active {
 
 
-          box-shadow: 0 0 15px rgba(212, 168, 67, 0.25);
+          
 
 
           border-color: var(--gold-light);
@@ -280,7 +280,7 @@
         .goc-node.node-advisor:hover, .goc-node.node-advisor.active {
 
 
-          box-shadow: 0 0 15px rgba(167, 139, 250, 0.25);
+          
 
 
           border-color: #c084fc;
@@ -301,7 +301,7 @@
         .goc-node.node-diplomacy:hover, .goc-node.node-diplomacy.active {
 
 
-          box-shadow: 0 0 15px rgba(96, 165, 250, 0.25);
+          
 
 
           border-color: #93c5fd;
@@ -322,7 +322,7 @@
         .goc-node.node-warfare:hover, .goc-node.node-warfare.active {
 
 
-          box-shadow: 0 0 15px rgba(248, 113, 113, 0.25);
+          
 
 
           border-color: #fca5a5;
@@ -334,7 +334,7 @@
         .goc-node-title {
 
 
-          font-family: 'Outfit', sans-serif;
+          font-family: var(--nw-serif);
 
 
           font-weight: 700;
@@ -355,7 +355,7 @@
           font-size: 11px;
 
 
-          color: var(--text-muted);
+          color: var(--nw-text-2);
 
 
         }
@@ -397,7 +397,7 @@
           margin-bottom: 8px;
 
 
-          font-family: 'Outfit', sans-serif;
+          font-family: var(--nw-serif);
 
 
         }
@@ -430,7 +430,7 @@
           line-height: 1.6;
 
 
-          color: var(--text-muted);
+          color: var(--nw-text-2);
 
 
           margin-bottom: 12px;
@@ -445,7 +445,7 @@
           background: rgba(255, 255, 255, 0.02);
 
 
-          border: 1px solid rgba(255, 255, 255, 0.05);
+          border: 1px solid var(--nw-line);
 
 
           border-radius: 8px;
@@ -490,7 +490,7 @@
           border-radius: 12px;
 
 
-          border: 3px solid rgba(255, 255, 255, 0.15);
+          border: 3px solid var(--nw-line);
 
 
           margin-bottom: 14px;
@@ -520,7 +520,7 @@
           margin-bottom: 8px;
 
 
-          font-family: 'Outfit', sans-serif;
+          font-family: var(--nw-serif);
 
 
         }
@@ -532,7 +532,7 @@
           font-size: 12.5px;
 
 
-          color: var(--text-muted);
+          color: var(--nw-text-2);
 
 
           line-height: 1.4;
@@ -643,7 +643,7 @@
           justify-content: center;
 
 
-          box-shadow: 0 0 8px var(--accent-orange);
+          
 
 
         }
@@ -655,7 +655,7 @@
           background: rgba(255,255,255,0.01);
 
 
-          border: 1px solid rgba(255,255,255,0.03);
+          border: 1px solid var(--nw-line);
 
 
           padding: 14px;
@@ -675,27 +675,13 @@
 
           <div class="goc-badge">CLASSIFIED // TOP SECRET</div>
 
-          <h3 style="color: var(--accent-orange); font-family: 'Outfit', sans-serif; font-size: 24px; margin-bottom: 8px;">GLOBAL OUTLANDISH CENTRE (GOC)</h3>
+          <h3 style="color: var(--accent-orange); font-family: var(--nw-serif); font-size: 24px; margin-bottom: 8px">GLOBAL OUTLANDISH CENTRE (GOC)</h3>
 
-          <p style="color: var(--text-muted); font-size: 14.5px; margin-bottom: 0;">สถาบันความมั่นคงและการทูตลับพิเศษเพื่อเฝ้าระวังภัยคุกคามผสมผสานระดับภูมิภาค (SEATO)</p>
+          <p style="color: var(--nw-text-2); font-size: 14.5px; margin-bottom: 0">สถาบันความมั่นคงและการทูตลับพิเศษเพื่อเฝ้าระวังภัยคุกคามผสมผสานระดับภูมิภาค (SEATO)</p>
 
           <!-- 🔐 Easter Egg Button -->
-          <div style="text-align: center; margin-top: 18px;">
-            <button id="goc-secret-btn" onclick="openGocSecretModal()" style="
-              background: linear-gradient(135deg, #dc2626, #991b1b);
-              color: #ffffff;
-              border: 2px solid #ef4444;
-              padding: 12px 28px;
-              border-radius: 30px;
-              font-size: 15px;
-              font-weight: 800;
-              font-family: 'Outfit', 'Sarabun', sans-serif;
-              cursor: pointer;
-              box-shadow: 0 0 20px rgba(239, 68, 68, 0.6), 0 0 40px rgba(220, 38, 38, 0.4);
-              animation: gocPulse 2s infinite ease-in-out;
-              letter-spacing: 0.5px;
-              transition: transform 0.2s ease, box-shadow 0.2s ease;
-            ">
+          <div style="text-align: center; margin-top: 18px">
+            <button id="goc-secret-btn" onclick="openGocSecretModal()" style="background: var(--nw-surface); color: var(--nw-text); border: 2px solid #ef4444; padding: 12px 28px; border-radius: 14px; font-size: 15px; font-weight: 800; font-family: var(--nw-serif); cursor: pointer; animation: gocPulse 2s infinite ease-in-out; letter-spacing: 0.5px; transition: transform 0.2s ease, box-shadow 0.2s ease">
               🔒 [CLASSIFIED] เข้าถึงข้อมูลลับขั้นสูงสุด (Top Secret Level 5)
             </button>
           </div>
@@ -705,8 +691,8 @@
         
 
         <!-- 🇱🇦 👑 Dossier: ราชอาณาประชาชนลาว (People's Royal Kingdom of Laos) -->
-        <div class="geo-block" style="border-color: rgba(250, 204, 21, 0.4); background: rgba(15, 23, 42, 0.85); margin-top: 32px;">
-          <div class="geo-block-title" style="color: #facc15; border-bottom-color: rgba(250, 204, 21, 0.3);">
+        <div class="geo-block" style="border-color: var(--nw-line); background: var(--nw-surface-2); margin-top: 32px">
+          <div class="geo-block-title" style="color: var(--nw-acc); border-bottom-color: var(--nw-line)">
             <span>🇱🇦</span> 👑 แฟ้มประวัติศาสตร์อธิปไตย: ราชอาณาประชาชนลาว (People's Royal Kingdom of Laos)
           </div>
 
@@ -714,33 +700,33 @@
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px">
             <div class="nwc-card"><h5>กำเนิดรัฐใหม่ & อาวุธชีวภาพ</h5>
               
-              <div style="font-size: 14.5px; color: #f87171; font-weight: 800; margin-top: 4px;">Myteos Virus Outbreak</div>
-              <div style="font-size: 12.5px; color: #cbd5e1; margin-top: 4px;">กลุ่ม "กองกำลังปลดปล่อยประชาชนลาว" ใช้อาวุธชีวภาพข่มขู่ จนเกิดการรวม ๓ ดินแดน (ลาว, กัมพูชา, เวียดนาม)</div>
+              <div style="font-size: 14.5px; color: #f87171; font-weight: 800; margin-top: 4px">Myteos Virus Outbreak</div>
+              <div style="font-size: 12.5px; color: var(--nw-text-2); margin-top: 4px">กลุ่ม "กองกำลังปลดปล่อยประชาชนลาว" ใช้อาวุธชีวภาพข่มขู่ จนเกิดการรวม ๓ ดินแดน (ลาว, กัมพูชา, เวียดนาม)</div>
             </div>
 
             <div class="nwc-card"><h5>ประชากรรวม</h5>
               
-              <div style="font-size: 22px; color: #facc15; font-weight: 900; font-family: 'Outfit', sans-serif; margin-top: 2px;">48.08 ล้านคน</div>
-              <div style="font-size: 12.5px; color: #cbd5e1; margin-top: 2px;">ครอบคลุมพื้นที่ประชากรสามดินแดนแห่งอินโดจีน</div>
+              <div style="font-size: 22px; color: var(--nw-acc); font-weight: 900; font-family: var(--nw-serif); margin-top: 2px">48.08 ล้านคน</div>
+              <div style="font-size: 12.5px; color: var(--nw-text-2); margin-top: 2px">ครอบคลุมพื้นที่ประชากรสามดินแดนแห่งอินโดจีน</div>
             </div>
 
             <div class="nwc-card"><h5>แม่แบบรัฐธรรมนูญ</h5>
               
-              <div style="font-size: 14.5px; color: #4ade80; font-weight: 800; margin-top: 4px;">ถอดแบบรัฐธรรมนูญไทย ๒๕๒๕</div>
-              <div style="font-size: 12.5px; color: #cbd5e1; margin-top: 4px;">ลอกกลไกตรวจสอบ ศาลรัฐธรรมนูญ และสภาจากไทยเป๊ะ 100%</div>
+              <div style="font-size: 14.5px; color: #4ade80; font-weight: 800; margin-top: 4px">ถอดแบบรัฐธรรมนูญไทย ๒๕๒๕</div>
+              <div style="font-size: 12.5px; color: var(--nw-text-2); margin-top: 4px">ลอกกลไกตรวจสอบ ศาลรัฐธรรมนูญ และสภาจากไทยเป๊ะ 100%</div>
             </div>
 
             <div class="nwc-card"><h5>ตราแผ่นดิน & ธงชาติ</h5>
               
-              <div style="font-size: 14.5px; color: #60a5fa; font-weight: 800; margin-top: 4px;">ช้างคู่ใต้มงกุฎ / สีน้ำเงิน-ทอง</div>
-              <div style="font-size: 12.5px; color: #cbd5e1; margin-top: 4px;">ออกแบบโดย สิน สองช้างใต้มงกุฎ (ธงสีน้ำเงิน-ขาว ช้างทองใต้ฉัตร)</div>
+              <div style="font-size: 14.5px; color: #60a5fa; font-weight: 800; margin-top: 4px">ช้างคู่ใต้มงกุฎ / สีน้ำเงิน-ทอง</div>
+              <div style="font-size: 12.5px; color: var(--nw-text-2); margin-top: 4px">ออกแบบโดย สิน สองช้างใต้มงกุฎ (ธงสีน้ำเงิน-ขาว ช้างทองใต้ฉัตร)</div>
             </div>
           </div>
 
           <!-- Section: องค์พระประมุข (สมเด็จพระลาววิชัยที่ ๑) -->
           <div class="nwc-card"><h5>สมเด็จพระประมุข: สมเด็จพระลาววิชัยที่ ๑ (สมเด็จพระเจ้าประธานขัติยวงศา)</h5>
             
-            <div style="font-size: 14px; color: #e2e8f0; line-height: 1.8; text-align: justify;">
+            <div style="font-size: 14px; color: var(--nw-text); line-height: 1.8; text-align: justify">
               • <strong>พระนามเต็ม:</strong> <em>สมเด็จพระเจ้าประธานขัติยวงศา พระมหาอนิรุทธ์สว่างวัฒนา มหานครหลวงพระบางศรีสัตนาคนหุต</em><br>
               • <strong>พระนามเดิม & ราชสกุล:</strong> เจ้าอนิรุทธ์ สว่าง (ราชสกุลขัติยะ — สายต้านคอมมิวนิสต์ปี ๒๕๑๘) โดยพระนามหลังครองราชย์ "สมเด็จพระลาววิชัยที่ ๑" ได้รับการถวายพระนามจากพระบาทสมเด็จพระเจ้าอยู่หัว ร.9 แห่งประเทศไทย<br>
               • <strong>พระอุปนิสัย & พระมหากรุณาธิคุณ:</strong> ไม่ทรงเต็มใจขึ้นครองราชย์เลยแม้แต่น้อย แต่ทรงยอมรับพระราชภาระด้วยความห่วงใยในสวัสดิภาพของประชาชน ทรงมีพระเมตตาสูง ทรงใช้พระราชอำนาจครั้งแรกในการพระราชทานอภัยลดโทษนายแสงเพชรจากการถูกตัดสินประหารชีวิต เหลือจำคุก ๑๐ ปี<br>
@@ -749,23 +735,23 @@
           </div>
 
           <!-- Section: ๒ นายกรัฐมนตรีแห่งชาติ -->
-          <div style="font-size: 18px; font-weight: 800; color: #60a5fa; margin-bottom: 16px; display: flex; align-items: center; gap: 10px;">
+          <div style="font-size: 18px; font-weight: 800; color: #60a5fa; margin-bottom: 16px; display: flex; align-items: center; gap: 10px">
             <span>🏛️</span> ทำเนียบนายกรัฐมนตรีแห่งราชอาณาประชาชนลาว
           </div>
 
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 24px" <div>
           <!-- PM 1: นายแสงเพชร ไชยวงศา -->
-          <div class="nwc-card">
+          <div style="background: var(--nw-surface-2); border: 2px solid rgba(239, 68, 68, 0.5); border-radius: 14px; padding: 24px">
             <!-- Big 3X Party Logo Centered -->
-            <div style="text-align:center; margin-bottom:18px; padding-bottom:14px; border-bottom:1px solid rgba(239,68,68,0.25);">
+            <div style="text-align: center; margin-bottom: 18px; padding-bottom: 14px; border-bottom: 1px solid rgba(239,68,68,0.25)">
               <img src="images/party_lao_newpower.png" style="width:200px; height:200px; border-radius:50%; border:4px solid #f87171; box-shadow:0 0 28px rgba(248,113,113,0.55); object-fit:cover; display:inline-block;" alt="โลโก้พรรคลาวพลังใหม่">
-              <div style="font-size:13px; color:#f87171; font-weight:800; margin-top:8px;">🚩 ตราประจำพรรคลาวพลังใหม่ (Lao New Power Party)</div>
+              <div style="font-size: 13px; color: #f87171; font-weight: 800; margin-top: 8px">🚩 ตราประจำพรรคลาวพลังใหม่ (Lao New Power Party)</div>
             </div>
 
-            <div style="font-size: 18px; font-weight: 800; color: #f87171; margin-bottom: 3px;">นายกรัฐมนตรีคนที่ ๑: นายแสงเพชร ไชยวงศา</div>
-            <div style="font-size: 13.5px; color: #cbd5e1; font-weight: 700; margin-bottom: 14px;">สังกัด: พรรคลาวพลังใหม่ (ชนะเลือกตั้ง ๕๙%)</div>
+            <div style="font-size: 18px; font-weight: 800; color: #f87171; margin-bottom: 3px">นายกรัฐมนตรีคนที่ ๑: นายแสงเพชร ไชยวงศา</div>
+            <div style="font-size: 13.5px; color: var(--nw-text-2); font-weight: 700; margin-bottom: 14px">สังกัด: พรรคลาวพลังใหม่ (ชนะเลือกตั้ง ๕๙%)</div>
 
-            <div style="font-size: 13.5px; color: #94a3b8; line-height: 1.75; text-align: justify;">
+            <div style="font-size: 13.5px; color: var(--nw-text-2); line-height: 1.75; text-align: justify">
               • <strong>บุคลิก:</strong> ฉลาด กล้าหาญ แต่หุนหันพลันแล่น ไม่แยแสเสียงประท้วงของประชาชน<br>
               • <strong>คดีสมุดปกเหลือง:</strong> เสนอนโยบายสมุดปกเหลืองของปรีดี พนมยงค์ ประชาชนประท้วงใหญ่หน้าอนุสาวรีย์ราชาธิราช แต่นายแสงเพชรไม่สน จึงแอบเปลี่ยนชื่อนโยบายแทนการยกเลิก ถูกศาลรัฐธรรมนูญลาวตัดสินขัดรัฐธรรมนูญ (คดีแรกของศาล)<br>
               • <strong>คดีปาเอกสาร ๓๑ แผ่นใส่กษัตริย์:</strong> เกิดโทสะปาเอกสาร ๓๑ แผ่นใส่พระพักตร์สมเด็จพระเจ้าประธานฯ จนเกิดรอยแผล กล้องวงจรปิดบันทึกไว้ได้ทั้งหมด ศาลรัฐธรรมนูญลงมติ ๖-๓ ส่งเรื่องถอดถอน สภาครั้งแรก ๒๐๓-๑๘๗ ช่วยอุ้ม แต่เมื่อวิดีโอหลุดสู่สาธารณะ สภากลับมติถอดถอนด้วยคะแนน ๒๖๗-๑๓๓<br>
@@ -774,17 +760,17 @@
           </div>
 
           <!-- PM 2: ราชพิทักษ์ ลาวีวงศ์ -->
-          <div class="nwc-card">
+          <div style="background: var(--nw-surface-2); border: 2px solid rgba(74, 222, 128, 0.5); border-radius: 14px; padding: 24px">
             <!-- Big 3X Party Logo Centered -->
-            <div style="text-align:center; margin-bottom:18px; padding-bottom:14px; border-bottom:1px solid rgba(74,222,128,0.25);">
+            <div style="text-align: center; margin-bottom: 18px; padding-bottom: 14px; border-bottom: 1px solid rgba(74,222,128,0.25)">
               <img src="images/party_lao_royalist.png" style="width:200px; height:200px; border-radius:50%; border:4px solid #4ade80; box-shadow:0 0 28px rgba(74,222,128,0.55); object-fit:cover; display:inline-block;" alt="โลโก้พรรคพิทักษ์ราชาธิปไตยลาว">
-              <div style="font-size:13px; color:#4ade80; font-weight:800; margin-top:8px;">🚩 ตราประจำพรรคพิทักษ์ราชาธิปไตยลาว</div>
+              <div style="font-size: 13px; color: #4ade80; font-weight: 800; margin-top: 8px">🚩 ตราประจำพรรคพิทักษ์ราชาธิปไตยลาว</div>
             </div>
 
-            <div style="font-size: 18px; font-weight: 800; color: #4ade80; margin-bottom: 3px;">นายกรัฐมนตรีคนที่ ๒ (คนปัจจุบัน): ราชพิทักษ์ ลาวีวงศ์ <span style="font-size: 11.5px; background: rgba(74, 222, 128, 0.2); color: #4ade80; border: 1px solid #4ade80; padding: 2px 8px; border-radius: 10px; margin-left: 4px;">🟢 ดำรงตำแหน่งปัจจุบัน</span></div>
-            <div style="font-size: 13.5px; color: #cbd5e1; font-weight: 700; margin-bottom: 14px;">สังกัด: พรรคพิทักษ์ราชาธิปไตยลาว (ชื่อเดิม: เจ้าฟ้ามหาวาทะดิลก — ชนะเด็ดขาด)</div>
+            <div style="font-size: 18px; font-weight: 800; color: #4ade80; margin-bottom: 3px">นายกรัฐมนตรีคนที่ ๒ (คนปัจจุบัน): ราชพิทักษ์ ลาวีวงศ์ <span style="font-size: 11.5px; background: rgba(74, 222, 128, 0.2); color: #4ade80; border: 1px solid #4ade80; padding: 2px 8px; border-radius: 10px; margin-left: 4px">🟢 ดำรงตำแหน่งปัจจุบัน</span></div>
+            <div style="font-size: 13.5px; color: var(--nw-text-2); font-weight: 700; margin-bottom: 14px">สังกัด: พรรคพิทักษ์ราชาธิปไตยลาว (ชื่อเดิม: เจ้าฟ้ามหาวาทะดิลก — ชนะเด็ดขาด)</div>
 
-            <div style="font-size: 13.5px; color: #94a3b8; line-height: 1.75; text-align: justify;">
+            <div style="font-size: 13.5px; color: var(--nw-text-2); line-height: 1.75; text-align: justify">
               • <strong>บุคลิก & สโลแกน:</strong> อดีตมงกุฎราชกุมารสละบรรดาศักดิ์ลงเล่นการเมือง พูดเก่ง ปลุกใจดี สโลแกน <em>"FOR KING, NATION, AND RELIGION"</em> (สัญลักษณ์: ช้างสามเศียรใต้ฉัตร) วลีดัง: <em>"เร็วไม่ได้แปลว่าดีเสมอไปครับ"</em><br>
               • <strong>๔ นโยบายหลักพลิกชาติ:</strong><br>
               &nbsp;&nbsp;๑. <em>ท่องเที่ยวจำกัดโควตา (โมเดลภูฏาน)</em>: ระบบ QR Code จำกัดคนเข้าหลวงพระบาง<br>
@@ -800,7 +786,7 @@
         <!-- Section: ความสัมพันธ์ไทย-ลาว & มรดกยุทธศาสตร์ -->
           <div class="nwc-card"><h5>ความสัมพันธ์ทางการทูตและมรดกยุทธศาสตร์ ไทย - ลาว</h5>
             
-            <div style="font-size: 13.5px; color: #cbd5e1; line-height: 1.8;">
+            <div style="font-size: 13.5px; color: var(--nw-text-2); line-height: 1.8">
               • <strong>หลักการทางการทูต:</strong> <em>"ไทยไม่ครอบงำ ลาวไม่ปฏิเสธ เท่าเทียมกัน 100%"</em> จับมือบริหารภูมิภาคกับ **นายกฯ พริษฐ์ วัชรสินธุ** อย่างเท่าเทียม<br>
               • <strong>รถไฟฟ้าลาว-ไทย (High-Speed Rail):** หลวงพระบาง ถึง กรุงเทพมหานคร ใช้เวลาเพียง ๔.๕ ชั่วโมง ถึงคลองไทยไมตรี ๖ ชั่วโมง (มรดกทางรางจาก **นายกฯ ศิริกัญญา ตันสกุล**)<br>
               • <strong>กองทุนสีเขียวล้านช้าง:</strong> ลาวนำเงินร่วมลงทุนในอภิมหาโครงการคลองไทยไมตรี ได้รับผลประโยชน์ทางเศรษฐกิจร่วมกันโดยตรง<br>
@@ -813,9 +799,9 @@
 
           <h4 class="goc-sec-title">⏳ ประวัติการก่อตั้ง</h4>
 
-          <p style="margin-bottom: 12px; line-height: 1.6;"><strong>ปี พ.ศ. ๒๕๖๙</strong> — ภายหลังวิกฤตการแพร่ระบาดของไวรัสมายทีโอส (Myteos Virus) และความผันผวนของเสถียรภาพภูมิภาคจนนำไปสู่การเกิด <em>"ราชอาณาประชาชนลาว"</em> คณะผู้นำความมั่นคงสยามนำโดย <strong>พริษฐ์ วัชรสินธุ</strong> ร่วมกับพันธมิตรความมั่นคง <strong>SEATO</strong> ได้เล็งเห็นพ้องต้องกันว่าโลกยุคใหม่เผชิญหน้ากับภัยคุกคามที่ไม่ใช่รูปแบบดั้งเดิม ซึ่งไม่สามารถสกัดกั้นได้ด้วยเครื่องมือทางทหารหรือการทูตเพียงส่วนเดียว แต่ต้องการหน่วยงานการประสมประสานงานลับที่มีความยืดหยุ่นสูง ปฏิบัติการทหารและทูตไปพร้อมกันในเวลาเดียวกัน</p>
+          <p style="margin-bottom: 12px; line-height: 1.6"><strong>ปี พ.ศ. ๒๕๖๙</strong> — ภายหลังวิกฤตการแพร่ระบาดของไวรัสมายทีโอส (Myteos Virus) และความผันผวนของเสถียรภาพภูมิภาคจนนำไปสู่การเกิด <em>"ราชอาณาประชาชนลาว"</em> คณะผู้นำความมั่นคงสยามนำโดย <strong>พริษฐ์ วัชรสินธุ</strong> ร่วมกับพันธมิตรความมั่นคง <strong>SEATO</strong> ได้เล็งเห็นพ้องต้องกันว่าโลกยุคใหม่เผชิญหน้ากับภัยคุกคามที่ไม่ใช่รูปแบบดั้งเดิม ซึ่งไม่สามารถสกัดกั้นได้ด้วยเครื่องมือทางทหารหรือการทูตเพียงส่วนเดียว แต่ต้องการหน่วยงานการประสมประสานงานลับที่มีความยืดหยุ่นสูง ปฏิบัติการทหารและทูตไปพร้อมกันในเวลาเดียวกัน</p>
 
-          <p style="line-height: 1.6; margin-bottom: 0;">GOC จึงถูกสถาปนาขึ้นในฐานะ <strong>องค์กรลับสุดยอด</strong> ที่ไม่ปรากฏโครงสร้างหรือข้อมูลใด ๆ ในเอกสารสาธารณะของรัฐ ได้รับการหนุนหลังและจัดสรรทรัพยากรหลักโดย SEATO ภายใต้การนำหลักและแกนนำยุทธศาสตร์จากราชอาณาจักรไทย</p>
+          <p style="line-height: 1.6; margin-bottom: 0">GOC จึงถูกสถาปนาขึ้นในฐานะ <strong>องค์กรลับสุดยอด</strong> ที่ไม่ปรากฏโครงสร้างหรือข้อมูลใด ๆ ในเอกสารสาธารณะของรัฐ ได้รับการหนุนหลังและจัดสรรทรัพยากรหลักโดย SEATO ภายใต้การนำหลักและแกนนำยุทธศาสตร์จากราชอาณาจักรไทย</p>
 
         </div>
 
@@ -823,7 +809,7 @@
 
           <h4 class="goc-sec-title">🏛️ ผังโครงสร้างการจัดองค์กรแบบโต้ตอบ (Interactive GOC Org Chart)</h4>
 
-          <p style="font-size: 13.5px; margin-bottom: 20px;">คลิกเลือกส่วนงานของ GOC ในแผนผังด้านล่างเพื่อแสดงประวัติการจัดโครงสร้าง บทบาท หน้าที่ควบคุม และกฎเหล็กรับผิดชอบในเชิงลึก:</p>
+          <p style="font-size: 13.5px; margin-bottom: 20px">คลิกเลือกส่วนงานของ GOC ในแผนผังด้านล่างเพื่อแสดงประวัติการจัดโครงสร้าง บทบาท หน้าที่ควบคุม และกฎเหล็กรับผิดชอบในเชิงลึก:</p>
 
           <div class="goc-chart-wrapper">
 
@@ -831,7 +817,7 @@
 
               <div class="goc-node node-joint active" onclick="selectGocNode(0, this)">
 
-                <div class="goc-node-title" style="color: var(--gold-light);">Joint Command (กองบัญชาการร่วม)</div>
+                <div class="goc-node-title" style="color: var(--gold-light)">Joint Command (กองบัญชาการร่วม)</div>
 
                 <div class="goc-node-subtitle">ผู้บัญชาการสูงสุด & คณะกรรมการกำกับร่วม</div>
 
@@ -843,7 +829,7 @@
 
               <div class="goc-node node-advisor" onclick="selectGocNode(1, this)">
 
-                <div class="goc-node-title" style="color: #c084fc;">Independent Advisor</div>
+                <div class="goc-node-title" style="color: #c084fc">Independent Advisor</div>
 
                 <div class="goc-node-subtitle">คุณไตรทิศา รณปวัตน์ (ผู้ตรวจการสากล)</div>
 
@@ -855,7 +841,7 @@
 
               <div class="goc-node node-diplomacy" onclick="selectGocNode(2, this)">
 
-                <div class="goc-node-title" style="color: #60a5fa;">🤝 Diplomacy Division</div>
+                <div class="goc-node-title" style="color: #60a5fa">🤝 Diplomacy Division</div>
 
                 <div class="goc-node-subtitle">แผนกที่ ๑ | ข่าวกรอง & การทูตลับ</div>
 
@@ -863,7 +849,7 @@
 
               <div class="goc-node node-warfare" onclick="selectGocNode(3, this)">
 
-                <div class="goc-node-title" style="color: #f87171;">⚔️ Warfare Division</div>
+                <div class="goc-node-title" style="color: #f87171">⚔️ Warfare Division</div>
 
                 <div class="goc-node-subtitle">แผนกที่ ๒ | ยุทธวิธีพิเศษ & กองกำลังสนาม</div>
 
@@ -875,7 +861,7 @@
 
           <div class="goc-detail-panel" id="goc-detail-panel">
 
-            <div class="goc-detail-title" style="color: var(--gold-light);">👑 Joint Command (กองบัญชาการร่วมสูงสุด)</div>
+            <div class="goc-detail-title" style="color: var(--gold-light)">👑 Joint Command (กองบัญชาการร่วมสูงสุด)</div>
 
             <div class="goc-detail-role">COMMAND LEVEL // TOP SECRET OVERSIGHT</div>
 
@@ -905,7 +891,7 @@
 
           <h4 class="goc-sec-title">🛡️ ตราสัญลักษณ์หน่วยงานปฏิบัติการ</h4>
 
-          <p style="margin-bottom: 16px;">ตราสัญลักษณ์ทั้งสองของแผนกแสดงความเป็นเอกภาพและความเป็นอันหนึ่งอันเดียวกันภายใต้ศูนย์บัญชาการร่วม (Joint Command) ผ่านสลักสัญลักษณ์ <strong>"สี่ดาวอาร์คด้านบน"</strong> เหนือเครื่องหมายปฏิบัติการหลัก:</p>
+          <p style="margin-bottom: 16px">ตราสัญลักษณ์ทั้งสองของแผนกแสดงความเป็นเอกภาพและความเป็นอันหนึ่งอันเดียวกันภายใต้ศูนย์บัญชาการร่วม (Joint Command) ผ่านสลักสัญลักษณ์ <strong>"สี่ดาวอาร์คด้านบน"</strong> เหนือเครื่องหมายปฏิบัติการหลัก:</p>
 
           <div style="display: flex; gap: 24px; justify-content: center; flex-wrap: wrap">
 
@@ -939,13 +925,13 @@
 
           <div class="nwc-card">
 
-            <p style="margin-bottom: 8px; font-weight: 600;">วิกฤตการณ์ ณ นครหลวงเวียงจันทน์:</p>
+            <p style="margin-bottom: 8px; font-weight: 600">วิกฤตการณ์ ณ นครหลวงเวียงจันทน์:</p>
 
-            <p style="font-size: 13.5px; margin-bottom: 10px; line-height: 1.5;">ในระหว่างภารกิจค้นหาความจริง หัวหน้า Warfare Division ในขณะนั้นสั่งนำกำลังพลพร้อมอาวุธจำนวน ๑๒ นาย เข้าล้อมบ้านพักของสมบูน แสงอาทิตย์ โดยจงใจละเว้นไม่แจ้งรายงานต่อศูนย์หลักการสั่งการ และไม่แจ้งให้เจ้าหน้าที่ฝ่าย Diplomacy ซึ่งกำลังปฏิบัติภารกิจเจรจาลับอยู่ภายในอาคารได้รับทราบล่วงหน้า ส่งผลให้ภารกิจการเจรจาเกือบเสียหายรุนแรง</p>
+            <p style="font-size: 13.5px; margin-bottom: 10px; line-height: 1.5">ในระหว่างภารกิจค้นหาความจริง หัวหน้า Warfare Division ในขณะนั้นสั่งนำกำลังพลพร้อมอาวุธจำนวน ๑๒ นาย เข้าล้อมบ้านพักของสมบูน แสงอาทิตย์ โดยจงใจละเว้นไม่แจ้งรายงานต่อศูนย์หลักการสั่งการ และไม่แจ้งให้เจ้าหน้าที่ฝ่าย Diplomacy ซึ่งกำลังปฏิบัติภารกิจเจรจาลับอยู่ภายในอาคารได้รับทราบล่วงหน้า ส่งผลให้ภารกิจการเจรจาเกือบเสียหายรุนแรง</p>
 
-            <p style="font-size: 13.5px; margin-bottom: 10px; line-height: 1.5;"><strong>ผลการดำเนินการสืบสวน:</strong> หัวหน้าฝ่าย Warfare Division ดังกล่าวถูกสั่งปลดพ้นจากหน้าที่การควบคุมทันที และสั่งพักงานระหว่างการดำเนินกระบวนการไต่สวนทางวินัยอย่างเคร่งครัด</p>
+            <p style="font-size: 13.5px; margin-bottom: 10px; line-height: 1.5"><strong>ผลการดำเนินการสืบสวน:</strong> หัวหน้าฝ่าย Warfare Division ดังกล่าวถูกสั่งปลดพ้นจากหน้าที่การควบคุมทันที และสั่งพักงานระหว่างการดำเนินกระบวนการไต่สวนทางวินัยอย่างเคร่งครัด</p>
 
-            <p style="font-size: 13.5px; margin-bottom: 0; font-weight: 600; color: var(--gold-light);">💡 บทเรียนเชิงอำนาจ: อำนาจการสั่งการกำลังพลติดอาวุธที่ปราศจากการควบคุม ตรวจสอบ และไร้ซึ่งการรับรู้ของส่วนกลาง ย่อมก่อให้เกิดภัยอันตรายที่ล่อแหลมยิ่งกว่าสงคราม</p>
+            <p style="font-size: 13.5px; margin-bottom: 0; font-weight: 600; color: var(--gold-light)">💡 บทเรียนเชิงอำนาจ: อำนาจการสั่งการกำลังพลติดอาวุธที่ปราศจากการควบคุม ตรวจสอบ และไร้ซึ่งการรับรู้ของส่วนกลาง ย่อมก่อให้เกิดภัยอันตรายที่ล่อแหลมยิ่งกว่าสงคราม</p>
 
           </div>
 
@@ -963,9 +949,9 @@
 
               <div class="goc-timeline-content">
 
-                <h5 style="color: var(--gold-light); font-size: 14px; margin-bottom: 4px;">ปฏิบัติการ สมบูน แสงอาทิตย์ (กู้สูตรยามายทีโอส)</h5>
+                <h5 style="color: var(--gold-light); font-size: 14px; margin-bottom: 4px">ปฏิบัติการ สมบูน แสงอาทิตย์ (กู้สูตรยามายทีโอส)</h5>
 
-                <p style="font-size: 13px; margin-bottom: 0; line-height: 1.5;">ฝ่าย Diplomacy ร่วมมือกับไตรทิศาและกองกำลังราชพิทักษ์ ออกเจาะข่าวกรองและค้นพบเป้าหมายสมบูน แสงอาทิตย์ ผู้สร้าง Myteos Virus ณ นครหลวงเวียงจันทน์ และประสบความสำเร็จในการเจรจากดดันให้นำสูตรรักษาฉบับสมบูรณ์ร้อยเปอร์เซ็นต์ส่งมอบให้แก่ WHO และ GOC เพื่อผลิตแจกจ่าย อย่างไรก็ดี ได้เกิดความผิดพลาดจากการนำกำลังทหารพิเศษแอบแฝงจู่โจมของฝ่าย Warfare ซึ่งต่อมานำไปสู่การเปลี่ยนผ่านโครงสร้างการปฏิรูปควบคุม</p>
+                <p style="font-size: 13px; margin-bottom: 0; line-height: 1.5">ฝ่าย Diplomacy ร่วมมือกับไตรทิศาและกองกำลังราชพิทักษ์ ออกเจาะข่าวกรองและค้นพบเป้าหมายสมบูน แสงอาทิตย์ ผู้สร้าง Myteos Virus ณ นครหลวงเวียงจันทน์ และประสบความสำเร็จในการเจรจากดดันให้นำสูตรรักษาฉบับสมบูรณ์ร้อยเปอร์เซ็นต์ส่งมอบให้แก่ WHO และ GOC เพื่อผลิตแจกจ่าย อย่างไรก็ดี ได้เกิดความผิดพลาดจากการนำกำลังทหารพิเศษแอบแฝงจู่โจมของฝ่าย Warfare ซึ่งต่อมานำไปสู่การเปลี่ยนผ่านโครงสร้างการปฏิรูปควบคุม</p>
 
               </div>
 
@@ -977,9 +963,9 @@
 
               <div class="goc-timeline-content">
 
-                <h5 style="color: var(--gold-light); font-size: 14px; margin-bottom: 4px;">ปฏิบัติการ นิติประหารสภา (แกะรอยสายเงินทรานแซกชั่น)</h5>
+                <h5 style="color: var(--gold-light); font-size: 14px; margin-bottom: 4px">ปฏิบัติการ นิติประหารสภา (แกะรอยสายเงินทรานแซกชั่น)</h5>
 
-                <p style="font-size: 13px; margin-bottom: 0; line-height: 1.5;">ฝ่าย Diplomacy ได้รับสัญญาณขอรับความช่วยเหลือเป็นการลับความมั่นคงจากแกนนำพรรคก้าวไกล ในการตรวจสอบความโปร่งใสและแกะรอยเส้นทางการเงินแปลกปลอมข้ามชาติที่ไหลเข้าสู่ระบบการเมืองเพื่อหวังผลยุบพรรคและชักนำ ส.ส. ฝ่ายตรวจสอบพบการโยกย้ายเงินอำพรางในพิกัดธนาคารสามประเทศ จึงนำพยานหลักฐานและข้อเท็จจริงส่งต่อให้แก่ DSI และ กกต. ดำเนินการคดีตามสิทธิ์ปกติ โดยไม่มีการใช้ชื่อขององค์กร GOC เผยแพร่แต่อย่างใด</p>
+                <p style="font-size: 13px; margin-bottom: 0; line-height: 1.5">ฝ่าย Diplomacy ได้รับสัญญาณขอรับความช่วยเหลือเป็นการลับความมั่นคงจากแกนนำพรรคก้าวไกล ในการตรวจสอบความโปร่งใสและแกะรอยเส้นทางการเงินแปลกปลอมข้ามชาติที่ไหลเข้าสู่ระบบการเมืองเพื่อหวังผลยุบพรรคและชักนำ ส.ส. ฝ่ายตรวจสอบพบการโยกย้ายเงินอำพรางในพิกัดธนาคารสามประเทศ จึงนำพยานหลักฐานและข้อเท็จจริงส่งต่อให้แก่ DSI และ กกต. ดำเนินการคดีตามสิทธิ์ปกติ โดยไม่มีการใช้ชื่อขององค์กร GOC เผยแพร่แต่อย่างใด</p>
 
               </div>
 
@@ -991,9 +977,9 @@
 
               <div class="goc-timeline-content">
 
-                <h5 style="color: var(--gold-light); font-size: 14px; margin-bottom: 4px;">ปฏิบัติการติดตามสถานการณ์ลาว</h5>
+                <h5 style="color: var(--gold-light); font-size: 14px; margin-bottom: 4px">ปฏิบัติการติดตามสถานการณ์ลาว</h5>
 
-                <p style="font-size: 13px; margin-bottom: 0; line-height: 1.5;">เป็นปฏิบัติการข่าวกรองระยะยาวในการเกาะติดและวิเคราะห์สถานการณ์ความคลี่คลายในดินแดนราชอาณาประชาชนลาวอย่างสมบูรณ์ นับตั้งแต่วาระการจัดตั้งการเลือกตั้งประชาธิปไตยรอบแรก ปัญหาสถาปนาอำนาจของนายแสงเพชร ไปจนถึงภารกิจความมั่นคงในการจัดกำลังพลคุ้มกันร่วมกับทีมราชพิทักษ์</p>
+                <p style="font-size: 13px; margin-bottom: 0; line-height: 1.5">เป็นปฏิบัติการข่าวกรองระยะยาวในการเกาะติดและวิเคราะห์สถานการณ์ความคลี่คลายในดินแดนราชอาณาประชาชนลาวอย่างสมบูรณ์ นับตั้งแต่วาระการจัดตั้งการเลือกตั้งประชาธิปไตยรอบแรก ปัญหาสถาปนาอำนาจของนายแสงเพชร ไปจนถึงภารกิจความมั่นคงในการจัดกำลังพลคุ้มกันร่วมกับทีมราชพิทักษ์</p>
 
               </div>
 
@@ -1011,7 +997,7 @@
 
           
 
-          <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px; line-height: 1.6;">
+          <p style="font-size: 13px; color: var(--nw-text-2); margin-bottom: 16px; line-height: 1.6">
 
             เพื่อเพิ่มประสิทธิภาพและป้องกันความผิดพลาดซ้ำรอยอดีต นายกรัฐมนตรีวิโรจน์ ลักขณาดิศร ได้อนุมัติการปฏิรูปโครงสร้างการปฏิบัติการของ GOC โดยมีเปรียบเทียบความเปลี่ยนแปลงก่อน-หลัง ดังนี้:
 
@@ -1027,7 +1013,7 @@
 
               <div class="nwc-card">
 
-                <strong style="color: #f87171;">⬅️ ยุคเดิม (ก่อนปรับโครงสร้าง):</strong><br>
+                <strong style="color: #f87171">⬅️ ยุคเดิม (ก่อนปรับโครงสร้าง):</strong><br>
 
                 เน้นการติดตามข่าวกรองทั่วไป เจรจาลับข้ามพรมแดน และคอยจัดทำรายงานเสนอบอร์ดกำกับแบบรายสัปดาห์
 
@@ -1035,7 +1021,7 @@
 
               <div class="nwc-card">
 
-                <strong style="color: #4ade80;">➡️ ยุคใหม่ สมัยนายกฯ วิโรจน์ (หลังปรับโครงสร้าง):</strong><br>
+                <strong style="color: #4ade80">➡️ ยุคใหม่ สมัยนายกฯ วิโรจน์ (หลังปรับโครงสร้าง):</strong><br>
 
                 ยกระดับเป็นระบบทำงาน <strong>Real-Time</strong> ตรวจจับความผิดปกติต่างๆ โดยมุ่งโฟกัสเป้าหมายเฉพาะเจาะจงเมื่อได้รับการสั่งการ ยับยั้งภัยคุกคามล่วงหน้าได้สำเร็จหลายครั้งโดยไม่มีข่าวรั่วสู่สาธารณะ
 
@@ -1051,7 +1037,7 @@
 
               <div class="nwc-card">
 
-                <strong style="color: #f87171;">⬅️ ยุคเดิม (ก่อนปรับโครงสร้าง):</strong><br>
+                <strong style="color: #f87171">⬅️ ยุคเดิม (ก่อนปรับโครงสร้าง):</strong><br>
 
                 วางแผนยุทธวิธี กองกำลังสนาม ปฏิบัติการคุ้มกันและจู่โจมฉุกเฉิน แยกส่วนทำงานตามคำสั่งของ Joint Command
 
@@ -1059,7 +1045,7 @@
 
               <div class="nwc-card">
 
-                <strong style="color: #4ade80;">➡️ ยุคใหม่ สมัยนายกฯ วิโรจน์ (หลังปรับโครงสร้าง):</strong><br>
+                <strong style="color: #4ade80">➡️ ยุคใหม่ สมัยนายกฯ วิโรจน์ (หลังปรับโครงสร้าง):</strong><br>
 
                 โครงสร้างแสนยานุภาพเข้มข้นเหมือนเดิมทุกประการ <strong>แต่เพิ่มข้อกำหนดเด็ดขาดคือ ต้องทำตามคำสั่งและขึ้นตรงต่อ Diplomacy Division เท่านั้น</strong> เพื่อป้องกันการจู่โจมโดยลำพัง
 
@@ -1073,9 +1059,9 @@
 
         <h4 class="goc-sec-title">📈 สถานะการดำเนินงานปัจจุบัน (ภายใต้การกำกับดูแลของ รักชนก ศรีนอก)</h4>
 
-          <p style="margin-bottom: 12px; line-height: 1.5;"><strong>คุณรักชนก ศรีนอก</strong> ในฐานะคณะบริหารฝ่ายยุทธศาสตร์ความมั่นคง ได้ลงนามกำชับให้ <strong>ไตรทิศา</strong> ร่วมออกแบบระบบและวางรากฐานกลไกควบคุมและตรวจสอบ GOC ให้มีความเป็นนิติธรรมและเป็นลายลักษณ์อักษรที่ชัดเจน โดยมาตรการควบคุมที่อยู่ระหว่างขั้นตอนการพัฒนามีดังนี้:</p>
+          <p style="margin-bottom: 12px; line-height: 1.5"><strong>คุณรักชนก ศรีนอก</strong> ในฐานะคณะบริหารฝ่ายยุทธศาสตร์ความมั่นคง ได้ลงนามกำชับให้ <strong>ไตรทิศา</strong> ร่วมออกแบบระบบและวางรากฐานกลไกควบคุมและตรวจสอบ GOC ให้มีความเป็นนิติธรรมและเป็นลายลักษณ์อักษรที่ชัดเจน โดยมาตรการควบคุมที่อยู่ระหว่างขั้นตอนการพัฒนามีดังนี้:</p>
 
-          <ul style="font-size: 13.5px;">
+          <ul style="font-size: 13.5px">
 
             <li><strong>ระบบจัดทำรายงานตรวจสอบ (Clear Reporting Chain):</strong> ปรับปรุงระบบบันทึกยุทธการและการจัดทำรายงานปฏิบัติงานที่เป็นความลับเพื่อเสนอรายงานต่อบอร์ดกำกับและนายกรัฐมนตรีทุกสัปดาห์</li>
 
@@ -1087,9 +1073,9 @@
 
         </div>
 
-        <div class="goc-section" style="border-bottom: none; padding-bottom: 0; margin-bottom: 0;">
+        <div class="goc-section" style="border-bottom: none; padding-bottom: 0; margin-bottom: 0">
 
-          <h4 class="goc-sec-title" style="color: var(--gold-light);">❌ ขอบเขตสิ่งที่ GOC ละเว้นและไม่กระทำ (Red Lines)</h4>
+          <h4 class="goc-sec-title" style="color: var(--gold-light)">❌ ขอบเขตสิ่งที่ GOC ละเว้นและไม่กระทำ (Red Lines)</h4>
 
           <div class="nwc-stats"><div class="nwc-stat"><b>ไม่แทรกแซงการเมืองภายใน</b><span>ละเว้นจากการเข้าร่วม หรือสอดแนมการทำกิจกรรมทางการเมืองโดยปกติของพรรคการเมืองในสยาม</span></div><div class="nwc-stat"><b>ไม่เปิดตัวตนต่อสาธารณะ</b><span>รักษาความลับขั้นสูงสุดของชื่อองค์กร โลโก้ และบันทึกประวัติยุทธการทั้งหมด</span></div><div class="nwc-stat"><b>ไม่เคลื่อนกำลังทหารเอง</b><span>ห้ามฝ่าย Warfare Division สั่งประเมินยุทธการแล้วส่งทหารติดอาวุธปฏิบัติการโดยพลการ</span></div><div class="nwc-stat"><b>ไม่ออกปฏิบัติการโดยลำพัง</b><span>ทุกขั้นตอนการเคลื่อนย้ายเชิงยุทธการต้องรายงานและได้รับสัญญาณไฟเขียวจากนายกรัฐมนตรี</span></div></div>
 
