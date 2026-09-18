@@ -1550,6 +1550,25 @@ function playAudioMobile(btn, src) {
 }
 .oi-skip:hover { background: rgba(212, 168, 67, 0.24); }
 @keyframes oiFade { to { opacity: 1; } }
+/* เครื่องที่ปิดเอฟเฟกต์ภาพเคลื่อนไหวไว้: จังหวะเท่าเดิมครบ ๑๐ วินาที แต่เป็นการจางเข้าแทนการขยับ */
+#oldIntro.oi-still .oi-bg { animation: oiFade 2.2s ease-out 0.15s forwards; }
+#oldIntro.oi-still .oi-grain { animation: none; opacity: 0.12; }
+#oldIntro.oi-still .oi-scratch { display: none; }
+#oldIntro.oi-still .oi-vignette { animation: none; opacity: 1; }
+#oldIntro.oi-still .oi-lamp { animation: oiFade 2.6s ease-out 0.5s forwards; transform: none; }
+#oldIntro.oi-still .oi-seal { animation: oiFade 1.1s ease-out 1.25s forwards; }
+#oldIntro.oi-still .oi-ring { display: none; }
+#oldIntro.oi-still .oi-rule { width: min(430px, 76vw); opacity: 0; }
+#oldIntro.oi-still .oi-rule-top { animation: oiFade 1.2s ease-out 2.8s forwards; }
+#oldIntro.oi-still .oi-rule-bottom { animation: oiFade 1.2s ease-out 4.9s forwards; }
+#oldIntro.oi-still .oi-line1 { filter: none; letter-spacing: 0.06em; animation: oiFade 1.6s ease-out 3.2s forwards; }
+#oldIntro.oi-still .oi-line2 { filter: none; animation: oiFade 1.6s ease-out 5.4s forwards; }
+#oldIntro.oi-still .oi-sub { animation: oiFade 1.2s ease-out 7s forwards; }
+#oldIntro.oi-still .oi-date { animation: oiFade 1.2s ease-out 8.2s forwards; }
+#oldIntro.oi-still .oi-stampmark { transform: rotate(-13deg); animation: oiFade 0.9s ease-out 7.6s forwards; }
+#oldIntro.oi-still .oi-gleam { animation: oiFade 1.2s ease-in-out 8.8s forwards; background-position: 20% 0; }
+#oldIntro.oi-still.oi-out { transform: none; }
+
 @keyframes oiDrift { from { transform: scale(1.05) rotate(0.15deg); } to { transform: scale(1) rotate(0deg); } }
 @keyframes oiLamp { 0% { opacity: 0; transform: scale(0.6); } 100% { opacity: 1; transform: scale(1); } }
 @keyframes oiGrain {
@@ -1600,19 +1619,21 @@ function playAudioMobile(btn, src) {
   window.closeOldIntro = function () {
     if (!intro || intro.classList.contains('oi-out')) return;
     timers.forEach(clearTimeout);
-    intro.classList.add('oi-out');
+    intro.className = intro.className + ' oi-out';
     document.documentElement.style.overflow = '';
     setTimeout(function () { if (intro.parentNode) intro.parentNode.removeChild(intro); }, 1250);
   };
   var still = false;
   try { still = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
   if (mode === 'replay') still = false;
+  if (still) intro.className = 'oi-still';
   document.documentElement.style.overflow = 'hidden';
   intro.addEventListener('click', function (e) { if (e.target === intro) window.closeOldIntro(); });
-  if (mode !== 'hold') timers.push(setTimeout(window.closeOldIntro, still ? 3200 : 10000));
+  if (mode !== 'hold') timers.push(setTimeout(window.closeOldIntro, 10000));
 })();
 </script>
 <!-- ═══ /INTRO ═══ -->
+
 
 
 

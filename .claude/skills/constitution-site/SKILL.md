@@ -591,3 +591,10 @@ only shows up as a "SyntaxWarning" or a regex that never matches.  Use `chr(10)`
 Both the CDP screenshot runner and the in-app browser pane report reduced motion,
 so anything gated on it never appears in a screenshot.  Degrade to a fade instead
 of removing the element, and the animation stays verifiable.
+
+**The user's own machine has reduced motion on too.**  Their recording of the
+ten-second intro showed the Garuda vanishing at ~3.2 s, before the title ever
+appeared — the short "reduce" branch, not a bug in the timeline.  So a reduced
+branch must keep the **same duration and the same beats**; only the movement
+changes: no push-in, no grain jitter, no bounce, no sweep — fades on the same
+delays.  Cutting the sequence short is what reads as "โดนตัด".
