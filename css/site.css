@@ -652,3 +652,10 @@ html.mourning .nw-art-act { background: #000; color: #fff; }
   .nwc-dl { grid-template-columns: minmax(0, 1fr); gap: 2px; }
   .nwc-dl dt { text-align: left; padding-top: 8px; }
 }
+
+/* การ์ดบุคคลในแถบ: รูปเต็มใบ ชื่อและบทบาทใต้ภาพ */
+.nwc-person { display: flex; flex-direction: column; }
+.nwc-person img { max-height: 340px; object-fit: cover; object-position: center top; }
+.nwc-person figcaption { padding: 12px 14px; color: var(--nw-text-2); font-size: 13px; line-height: 1.75; }
+.nwc-person figcaption b { display: block; font: 600 14.5px var(--nw-serif); color: var(--nw-text); }
+.nwc-person figcaption span { display: block; margin: 2px 0 4px; color: var(--nw-acc-2); font-size: 12.5px; }
