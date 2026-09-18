@@ -36,9 +36,11 @@ try {
 (function () {
   var e = document.getElementById('nwEnter');
   if (!e) return;
-  try { if (matchMedia('(prefers-reduced-motion: reduce)').matches) { e.remove(); return; } } catch (err) {}
-  setTimeout(function () { e.className = 'nw-enter is-out'; }, 1150);
-  setTimeout(function () { if (e.parentNode) e.parentNode.removeChild(e); }, 1800);
+  var still = false;
+  try { still = matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (err) {}
+  if (still) e.className = 'nw-enter is-still';
+  setTimeout(function () { e.className = e.className + ' is-out'; }, still ? 650 : 1150);
+  setTimeout(function () { if (e.parentNode) e.parentNode.removeChild(e); }, still ? 1150 : 1800);
 })();
 </script>
 
