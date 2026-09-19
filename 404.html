@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0b0a08">
+<meta name="theme-color" content="#07060a">
 <title>Dimension-2375 : 404 · รัฐธรรมนูญแห่งราชอาณาจักรไทย (ฉบับจำลอง)</title>
 <meta name="robots" content="noindex">
 <link rel="icon" href="/Politic/images/favicon-32.png" sizes="32x32">
@@ -12,12 +12,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #0b0a08;
-    --gold: #d4a843;
-    --gold-light: #f0d68a;
-    --text: #ded2ba;
-    --muted: #968e7e;
-    --line: rgba(212, 168, 67, 0.28);
+    --bg: #07060a;
+    --gold: #b8903a;
+    --gold-light: #d8bd79;
+    --text: #b6aa94;
+    --muted: #6e6659;
+    --line: rgba(184, 144, 58, 0.2);
   }
   * { box-sizing: border-box; }
   html, body { height: 100%; }
@@ -29,62 +29,292 @@
     display: grid;
     place-items: center;
     padding: 32px 16px;
-    background-image: radial-gradient(60% 45% at 50% 0%, rgba(212, 168, 67, 0.10), transparent 70%);
+    overflow-x: hidden;
+    /* a cold glow above, then dark that closes in from every edge */
+    background-image:
+      radial-gradient(54% 40% at 50% 2%, rgba(184, 144, 58, 0.085), transparent 72%),
+      radial-gradient(120% 90% at 50% 50%, transparent 38%, rgba(0, 0, 0, 0.72) 100%);
   }
-  .wrap { width: 100%; max-width: 620px; text-align: center; }
-  .garuda { width: 132px; height: auto; opacity: 0.95; }
+
+  /* ── the fractures ───────────────────────────────────────────────── */
+  .cracks, .grain {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  .cracks { z-index: 1; opacity: 0.55; }
+  .cracks path { fill: none; stroke: rgba(216, 189, 121, 0.3); stroke-width: 1; vector-effect: non-scaling-stroke; }
+  .cracks .hair { stroke: rgba(216, 189, 121, 0.16); }
+  .cracks .deep { stroke: rgba(0, 0, 0, 0.75); stroke-width: 2.4; }
+  .grain { z-index: 2; opacity: 0.055; mix-blend-mode: screen; }
+
+  .wrap { position: relative; z-index: 3; width: 100%; max-width: 620px; text-align: center; }
+
+  /* ── the emblem, faded like a mural nobody repainted ──────────────── */
+  .seal { position: relative; display: inline-block; }
+  .garuda {
+    display: block;
+    width: 132px;
+    height: auto;
+    opacity: 0.6;
+    filter: grayscale(0.34) brightness(0.82) contrast(1.05);
+  }
+  .seal svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .seal path { fill: none; stroke: rgba(0, 0, 0, 0.78); stroke-width: 2; stroke-linecap: round; }
+  .seal path.lit { stroke: rgba(216, 189, 121, 0.5); stroke-width: 0.9; }
+
+  /* ── the headline, slipped along its own crack ───────────────────── */
   .code {
+    position: relative;
     font-family: 'Outfit', sans-serif;
     font-size: clamp(25px, 7.1vw, 56px);
     font-weight: 800;
     line-height: 1.2;
-    color: var(--gold-light);
     letter-spacing: 0.03em;
-    margin: 22px 0 16px;
+    color: var(--gold-light);
+    margin: 24px 0 18px;
     white-space: nowrap;
+    isolation: isolate;
   }
-  .code .sep { color: rgba(212, 168, 67, 0.55); font-weight: 400; margin: 0 0.26em; }
+  .code .sep { color: rgba(184, 144, 58, 0.5); font-weight: 400; margin: 0 0.26em; }
   .code .n { color: var(--gold); }
+  .code .frag { display: block; }
+  /* the upper shard stays put; the lower one has dropped a few pixels */
+  .code .top { clip-path: polygon(0 0, 100% 0, 100% 44%, 62% 54%, 0 47%); }
+  .code .bot {
+    position: absolute;
+    inset: 0;
+    clip-path: polygon(0 47%, 62% 54%, 100% 44%, 100% 100%, 0 100%);
+    transform: translate(0.18em, 0.11em);
+    opacity: 0.86;
+  }
+  /* the split itself, drawn as a hairline of light */
+  .code .seam {
+    position: absolute;
+    left: -8%;
+    right: -8%;
+    top: 47%;
+    height: 3px;
+    transform: rotate(-0.9deg);
+    background:
+      linear-gradient(90deg, transparent, rgba(216, 189, 121, 0.55) 20%, rgba(216, 189, 121, 0.2) 64%, transparent) 0 0 / 100% 1px no-repeat,
+      linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.8) 18%, rgba(0, 0, 0, 0.45) 70%, transparent) 0 1px / 100% 2px no-repeat;
+  }
+  .sr {
+    position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
+  }
+
   p { font-size: 15.5px; line-height: 1.95; color: var(--text); margin: 0 auto 26px; max-width: 470px; }
   p .dim { color: var(--muted); }
-  .rule { width: 86px; height: 2px; background: var(--gold); opacity: 0.6; margin: 20px auto; }
+
+  /* ── a rule that has given way in the middle ─────────────────────── */
+  .rule { display: flex; align-items: center; justify-content: center; gap: 13px; margin: 22px auto 24px; }
+  .rule i { display: block; height: 1px; background: var(--gold); opacity: 0.45; }
+  .rule i:first-child { width: 54px; }
+  .rule i:last-child { width: 32px; opacity: 0.22; transform: translateY(2px); }
+  .rule b { width: 3px; height: 3px; border-radius: 50%; background: var(--gold); opacity: 0.35; }
+
   .links { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
   .links a {
     display: inline-block;
     padding: 11px 20px;
     border: 1px solid var(--line);
     border-radius: 10px;
-    background: rgba(212, 168, 67, 0.07);
+    background: rgba(184, 144, 58, 0.05);
     color: var(--gold-light);
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
-    transition: background 0.2s ease, border-color 0.2s ease;
+    transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease;
   }
-  .links a:hover { background: rgba(212, 168, 67, 0.16); border-color: var(--gold); }
-  .links a.primary { background: var(--gold); border-color: var(--gold); color: #17130a; }
-  .links a.primary:hover { background: var(--gold-light); }
-  .note { margin-top: 30px; font-size: 12.5px; color: rgba(150, 142, 126, 0.75); }
+  .links a:hover { background: rgba(184, 144, 58, 0.14); border-color: var(--gold); color: #f0d68a; }
+  .links a.primary {
+    background: rgba(184, 144, 58, 0.82);
+    border-color: rgba(184, 144, 58, 0.82);
+    color: #151009;
+  }
+  .links a.primary:hover { background: #d8bd79; border-color: #d8bd79; color: #151009; }
+
+  .readout {
+    margin-top: 30px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 11.5px;
+    letter-spacing: 0.16em;
+    color: rgba(110, 102, 89, 0.85);
+  }
+  .readout .lost { color: rgba(184, 144, 58, 0.62); }
+  .note { margin-top: 12px; font-size: 12.5px; color: rgba(110, 102, 89, 0.7); }
+
+  /* ── dust, and a floor that will not hold still ──────────────────── */
+  .mote {
+    position: fixed;
+    z-index: 2;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: rgba(216, 189, 121, 0.4);
+    pointer-events: none;
+    animation: drift 26s linear infinite;
+  }
+  @keyframes drift {
+    from { transform: translate3d(0, 14vh, 0); opacity: 0; }
+    12%  { opacity: 0.75; }
+    80%  { opacity: 0.4; }
+    to   { transform: translate3d(22px, -96vh, 0); opacity: 0; }
+  }
+
+  /* the whole plate loses power now and then */
+  .wrap { animation: fail 13s ease-in-out infinite; }
+  @keyframes fail {
+    0%, 41%, 100% { opacity: 1; }
+    42% { opacity: 0.55; }
+    43% { opacity: 0.96; }
+    44.5% { opacity: 0.42; }
+    46% { opacity: 1; }
+    72% { opacity: 1; }
+    72.6% { opacity: 0.62; }
+    73.4% { opacity: 1; }
+  }
+  /* and the lower shard shifts again whenever it does */
+  .code .bot { animation: slip 13s ease-in-out infinite; }
+  @keyframes slip {
+    0%, 41%, 100% { transform: translate(0.18em, 0.11em); }
+    42% { transform: translate(-0.07em, 0.11em); }
+    44.5% { transform: translate(0.3em, 0.13em); }
+    46% { transform: translate(0.18em, 0.11em); }
+    72.6% { transform: translate(0.09em, 0.11em); }
+    73.4% { transform: translate(0.18em, 0.11em); }
+  }
+  .cracks { animation: breathe 9s ease-in-out infinite; }
+  @keyframes breathe {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 0.68; }
+  }
+
+  /* Reduced motion keeps every beat — the place still fails and recovers,
+     it just does not jump. Nothing is removed, only the displacement. */
+  @media (prefers-reduced-motion: reduce) {
+    .code .bot { animation: slip-still 13s ease-in-out infinite; }
+    @keyframes slip-still {
+      0%, 41%, 100% { transform: translate(0.18em, 0.11em); opacity: 0.88; }
+      42% { opacity: 0.45; }
+      44.5% { opacity: 0.95; }
+      46% { opacity: 0.88; }
+      72.6% { opacity: 0.6; }
+      73.4% { opacity: 0.88; }
+    }
+    .mote { animation-duration: 54s; }
+  }
+
   @media (max-width: 420px) {
     .garuda { width: 108px; }
     p { font-size: 15px; }
+    .readout { font-size: 10.5px; letter-spacing: 0.12em; }
   }
 </style>
 </head>
 <body>
+
+<svg class="cracks" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <!-- fractures grown segment by segment from one fault line; see scratchpad/gen_cracks.py -->
+  <path class="deep" d="M516 -30 L521 0 L528 44 L545 92 L554 124 L570 166 L600 220 L621 249 L647 275 L671 293 L714 319 L735 339 L760 354 L806 367 L858 397 L899 413 L923 426 L956 453 L986 475 L1037 495 L1090 507"/>
+  <path d="M516 -30 L521 0 L528 44 L545 92 L554 124 L570 166 L600 220 L621 249 L647 275 L671 293 L714 319 L735 339 L760 354 L806 367 L858 397 L899 413 L923 426 L956 453 L986 475 L1037 495 L1090 507"/>
+  <path d="M570 166 L609 186 L640 218 L656 241 L664 258 L670 292 L681 319 L701 345 L713 374 L720 413 L728 432 L748 469 L756 491 L762 525"/>
+  <path d="M647 275 L677 265 L713 244 L743 222 L759 210 L786 202 L806 202 L840 199 L873 207 L914 217 L937 222 L972 226 L1013 242 L1030 254"/>
+  <path d="M735 339 L734 360 L743 387 L754 408 L762 436 L766 476 L777 516 L790 542 L798 569 L809 599 L837 632 L871 660 L890 671 L917 704"/>
+  <path d="M806 367 L820 354 L843 330 L866 311 L905 290 L937 270 L978 253 L1003 246 L1035 244 L1072 241"/>
+  <path d="M986 475 L1004 469 L1043 466 L1084 468"/>
+  <path d="M1090 507 L1099 533"/>
+  <path d="M-30 250 L24 258 L51 269 L89 302 L116 337 L136 359 L173 399 L221 448 L243 482 L265 535 L269 591 L274 629 L268 669 L253 714 L232 747 L211 772 L186 807 L162 825 L110 857"/>
+  <path d="M1030 700 L1001 685 L947 667 L887 658 L822 669 L778 676 L748 691 L696 717 L641 748 L621 769 L594 819 L571 879 L543 915 L514 944 L465 972 L414 990 L348 998 L315 1010"/>
+  <path class="hair" d="M656 241 L650 256 L649 278 L650 294 L654 310 L662 337"/>
+  <path class="hair" d="M670 292 L690 303 L708 318 L714 334 L714 356 L709 387"/>
+  <path class="hair" d="M664 535 L642 536 L621 541"/>
+  <path class="hair" d="M728 432 L717 451 L700 475 L684 501 L672 513 L664 535"/>
+  <path class="hair" d="M748 469 L761 478 L783 489 L800 500 L815 507 L833 509"/>
+  <path class="hair" d="M786 202 L802 219 L825 236 L835 250 L843 264 L862 281"/>
+  <path class="hair" d="M806 202 L823 184 L839 159 L863 144 L886 129 L901 109"/>
+  <path class="hair" d="M754 408 L767 412 L792 431 L805 446 L814 470 L816 494"/>
+  <path class="hair" d="M777 516 L775 549 L769 578 L759 604 L761 633 L761 649"/>
+  <path class="hair" d="M790 542 L775 562 L769 575 L763 587 L755 606 L756 623"/>
+  <path class="hair" d="M994 262 L1003 251 L1014 243"/>
+  <path class="hair" d="M937 270 L950 273 L974 269 L994 262 L1010 249 L1027 244"/>
+  <path class="hair" d="M303 676 L306 704 L318 738"/>
+  <path class="hair" d="M288 700 L294 730 L305 748"/>
+  <path class="hair" d="M221 448 L233 496 L253 527 L272 554 L293 589 L297 616 L307 655 L303 676 L288 700"/>
+  <path class="hair" d="M268 669 L257 692 L241 724 L226 763 L226 786 L235 816 L250 836 L275 872 L309 892"/>
+  <path class="hair" d="M135 786 L134 816 L138 832"/>
+  <path class="hair" d="M72 779 L56 794 L31 814"/>
+  <path class="hair" d="M253 714 L233 736 L206 756 L173 774 L135 786 L99 783 L72 779 L36 757 L20 733"/>
+  <path class="hair" d="M25 612 L51 591 L71 578"/>
+  <path class="hair" d="M162 825 L124 813 L103 800 L79 781 L67 759 L49 732 L41 701 L37 657 L25 612"/>
+  <path class="hair" d="M543 915 L523 923 L495 950 L467 971 L424 985 L399 1001 L359 1022 L337 1027"/>
+  <path class="hair" d="M332 919 L311 903 L288 880"/>
+  <path class="hair" d="M514 944 L486 948 L444 945 L403 942 L378 934 L357 926 L332 919 L307 914"/>
+  <path class="hair" d="M348 998 L326 961 L304 935 L289 894 L288 861 L288 826 L273 787 L244 752"/>
+  <path class="hair" d="M76 873 L52 863 L29 864 L-6 855"/>
+  <path class="hair" d="M60 980 L67 952 L80 904 L76 873 L70 819 L59 793 L35 753 L28 702 L39 664 L48 622 L43 594"/>
+  <path class="hair" d="M1052 317 L1055 341 L1048 367 L1041 403"/>
+  <path class="hair" d="M1087 340 L1082 364"/>
+  <path class="hair" d="M940 40 L935 93 L938 131 L943 162 L958 207 L961 229 L977 256 L1011 283 L1027 301 L1052 317 L1087 340"/>
+  <path class="hair" d="M150 60 L172 99 L177 131 L193 166 L226 201 L243 220 L263 254 L281 281 L300 325 L311 355"/>
+</svg>
+
+<svg class="grain" aria-hidden="true">
+  <filter id="dust">
+    <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="3" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+  </filter>
+  <rect width="100%" height="100%" filter="url(#dust)"/>
+</svg>
+
+<span class="mote" style="left:14%; animation-delay:-2s"></span>
+<span class="mote" style="left:31%; animation-delay:-11s"></span>
+<span class="mote" style="left:47%; animation-delay:-19s"></span>
+<span class="mote" style="left:63%; animation-delay:-6s"></span>
+<span class="mote" style="left:78%; animation-delay:-23s"></span>
+<span class="mote" style="left:89%; animation-delay:-15s"></span>
+
   <main class="wrap">
-    <img class="garuda" id="garuda" src="/Politic/images/Thai_Garuda_emblem.png" alt="">
-    <div class="code">Dimension-2375<span class="sep">:</span><span class="n">404</span></div>
+    <span class="seal">
+      <img class="garuda" id="garuda" src="/Politic/images/Thai_Garuda_emblem.png" alt="">
+      <svg viewBox="0 0 132 130" aria-hidden="true">
+        <path d="M58 2 L63 22 L55 36 L66 49 L57 64 L64 79 L54 97 L67 128"/>
+        <path d="M63 22 L83 16 L97 27 L112 24"/>
+        <path d="M55 36 L36 43 L23 34 L9 38"/>
+        <path d="M57 64 L78 71 L92 64"/>
+        <path d="M54 97 L36 104 L25 121"/>
+        <path class="lit" d="M58 2 L63 22 L55 36 L66 49 L57 64 L64 79 L54 97 L67 128"/>
+        <path class="lit" d="M63 22 L83 16 L97 27 L112 24"/>
+        <path class="lit" d="M55 36 L36 43 L23 34 L9 38"/>
+      </svg>
+    </span>
+
+    <div class="code">
+      <span class="sr">Dimension-2375 : 404</span>
+      <span class="frag top" aria-hidden="true">Dimension-2375<span class="sep">:</span><span class="n">404</span></span>
+      <span class="frag bot" aria-hidden="true">Dimension-2375<span class="sep">:</span><span class="n">404</span></span>
+      <span class="seam" aria-hidden="true"></span>
+    </div>
+
     <p>จากพิกัดในตอนนี้ ท่านอาจหลุดมาในช่องว่างระหว่างเรื่องราวนี้<br>
        <span class="dim">ท่านทำได้ยังไงหนะ</span> — เอาเป็นว่ากดปุ่มด้านล่างเพื่อกลับเข้าสู่จักรวาลของเรา</p>
-    <div class="rule"></div>
+
+    <div class="rule" aria-hidden="true"><i></i><b></b><i></i></div>
+
     <nav class="links">
       <a class="primary" href="/Politic/">กลับเข้าสู่จักรวาลของเรา</a>
       <a href="/Politic/website_new.html">ฉบับเว็บใหม่</a>
       <a href="/Politic/website_constitution.html">ฉบับเว็บเดิม</a>
     </nav>
+
+    <div class="readout">พิกัดสุดท้ายที่บันทึกได้ · พ.ศ. ๒๗๒๓ · <span class="lost">สัญญาณขาดหาย</span></div>
     <div class="note">โลกประวัติศาสตร์ทางเลือก · ไม่ใช่ข้อมูลจริง</div>
   </main>
+
 <script>
 /* The links above are written for GitHub Pages (/Politic/...). When the site is
    served from a different root — a local server, or a fork under another name —
