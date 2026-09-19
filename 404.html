@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#0b0a08">
-<title>ไม่พบหน้าที่ค้นหา · รัฐธรรมนูญแห่งราชอาณาจักรไทย (ฉบับจำลอง)</title>
+<title>Dimension-2375 : 404 · รัฐธรรมนูญแห่งราชอาณาจักรไทย (ฉบับจำลอง)</title>
 <meta name="robots" content="noindex">
 <link rel="icon" href="/Politic/images/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="/Politic/images/favicon-180.png">
@@ -35,15 +35,18 @@
   .garuda { width: 132px; height: auto; opacity: 0.95; }
   .code {
     font-family: 'Outfit', sans-serif;
-    font-size: 72px;
+    font-size: clamp(25px, 7.1vw, 56px);
     font-weight: 800;
-    line-height: 1.15;
-    color: var(--gold);
-    letter-spacing: 0.04em;
-    margin: 20px 0 14px;
+    line-height: 1.2;
+    color: var(--gold-light);
+    letter-spacing: 0.03em;
+    margin: 22px 0 16px;
+    white-space: nowrap;
   }
-  h1 { font-size: 23px; font-weight: 700; color: var(--gold-light); margin: 0 0 14px; }
-  p { font-size: 15px; line-height: 1.85; color: var(--muted); margin: 0 auto 26px; max-width: 460px; }
+  .code .sep { color: rgba(212, 168, 67, 0.55); font-weight: 400; margin: 0 0.26em; }
+  .code .n { color: var(--gold); }
+  p { font-size: 15.5px; line-height: 1.95; color: var(--text); margin: 0 auto 26px; max-width: 470px; }
+  p .dim { color: var(--muted); }
   .rule { width: 86px; height: 2px; background: var(--gold); opacity: 0.6; margin: 20px auto; }
   .links { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
   .links a {
@@ -63,20 +66,20 @@
   .links a.primary:hover { background: var(--gold-light); }
   .note { margin-top: 30px; font-size: 12.5px; color: rgba(150, 142, 126, 0.75); }
   @media (max-width: 420px) {
-    .code { font-size: 58px; }
-    h1 { font-size: 19px; }
+    .garuda { width: 108px; }
+    p { font-size: 15px; }
   }
 </style>
 </head>
 <body>
   <main class="wrap">
     <img class="garuda" id="garuda" src="/Politic/images/Thai_Garuda_emblem.png" alt="">
-    <div class="code">๔๐๔</div>
-    <h1>ไม่พบหน้าที่ค้นหา</h1>
-    <p>ที่อยู่นี้ไม่มีอยู่ในสารบบ อาจพิมพ์ผิด หรือหน้านั้นถูกย้ายไปแล้ว<br>กลับไปตั้งต้นที่หน้าแรกได้เลย</p>
+    <div class="code">Dimension-2375<span class="sep">:</span><span class="n">404</span></div>
+    <p>จากพิกัดในตอนนี้ ท่านอาจหลุดมาในช่องว่างระหว่างเรื่องราวนี้<br>
+       <span class="dim">ท่านทำได้ยังไงหนะ</span> — เอาเป็นว่ากดปุ่มด้านล่างเพื่อกลับเข้าสู่จักรวาลของเรา</p>
     <div class="rule"></div>
     <nav class="links">
-      <a class="primary" href="/Politic/">หน้าแรก</a>
+      <a class="primary" href="/Politic/">กลับเข้าสู่จักรวาลของเรา</a>
       <a href="/Politic/website_new.html">ฉบับเว็บใหม่</a>
       <a href="/Politic/website_constitution.html">ฉบับเว็บเดิม</a>
     </nav>
