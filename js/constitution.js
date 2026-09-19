@@ -767,3 +767,115 @@ document.addEventListener('DOMContentLoaded', () => {
     selectOrgDesc('people');
   }
 });
+
+// ── ดูรูปเต็มจอ: ปุ่ม ⛶ ลอยบนรูป กดแล้วเปิดเต็มหน้าจอ ───────────────────
+(function () {
+  var SKIP_PARENTS = '.leaflet-container, #oldIntro, .glossary-panel, .lb-overlay, portrait-hall';
+  var SKIP_CLASS = ['nw-em-color', 'nw-em-bw', 'lb-img'];
+  var overlay, stage, caption, hint, zoomBtn, current;
+
+  function eligible(img) {
+    if (!img || img.tagName !== 'IMG') return false;
+    for (var i = 0; i < SKIP_CLASS.length; i++) {
+      if (img.classList.contains(SKIP_CLASS[i])) return false;
+    }
+    if (img.closest && img.closest(SKIP_PARENTS)) return false;
+    var w = img.getBoundingClientRect().width;
+    return w >= 90;
+  }
+
+  function build() {
+    if (overlay) return;
+    overlay = document.createElement('div');
+    overlay.className = 'lb-overlay';
+    overlay.innerHTML =
+      '<div class="lb-bar">' +
+      '  <button type="button" class="lb-btn" data-lb="full" title="ขยายเต็มหน้าจอ">⛶ เต็มจอ</button>' +
+      '  <button type="button" class="lb-btn" data-lb="open" title="เปิดภาพขนาดจริงในแท็บใหม่">↗ ขนาดจริง</button>' +
+      '  <button type="button" class="lb-btn lb-close" data-lb="close" title="ปิด (Esc)">✕</button>' +
+      '</div>' +
+      '<img class="lb-img" alt="">' +
+      '<div class="lb-cap"></div>';
+    document.body.appendChild(overlay);
+    stage = overlay.querySelector('.lb-img');
+    caption = overlay.querySelector('.lb-cap');
+
+    overlay.addEventListener('click', function (e) {
+      var act = e.target.getAttribute && e.target.getAttribute('data-lb');
+      if (act === 'close' || e.target === overlay) { close(); return; }
+      if (act === 'full') {
+        if (document.fullscreenElement) { document.exitFullscreen(); }
+        else if (overlay.requestFullscreen) { overlay.requestFullscreen(); }
+        return;
+      }
+      if (act === 'open' && current) { window.open(current, '_blank', 'noopener'); }
+    });
+  }
+
+  function open(img) {
+    build();
+    current = img.currentSrc || img.src;
+    stage.src = current;
+    stage.alt = img.alt || '';
+    var fig = img.closest && img.closest('figure');
+    var cap = fig && fig.querySelector('figcaption');
+    caption.textContent = (cap && cap.textContent.trim()) || img.alt || '';
+    caption.style.display = caption.textContent ? 'block' : 'none';
+    overlay.classList.add('is-open');
+    document.documentElement.style.overflow = 'hidden';
+  }
+
+  function close() {
+    if (!overlay) return;
+    if (document.fullscreenElement) { try { document.exitFullscreen(); } catch (e) {} }
+    overlay.classList.remove('is-open');
+    document.documentElement.style.overflow = '';
+    current = null;
+  }
+
+  function placeButton(img) {
+    if (!zoomBtn) {
+      zoomBtn = document.createElement('button');
+      zoomBtn.type = 'button';
+      zoomBtn.className = 'lb-zoom';
+      zoomBtn.title = 'ดูรูปเต็มจอ';
+      zoomBtn.textContent = '⛶';
+      zoomBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        if (zoomBtn.target) open(zoomBtn.target);
+      });
+      document.body.appendChild(zoomBtn);
+    }
+    var r = img.getBoundingClientRect();
+    zoomBtn.target = img;
+    zoomBtn.style.top = (r.top + window.scrollY + 10) + 'px';
+    zoomBtn.style.left = (r.right + window.scrollX - 46) + 'px';
+    zoomBtn.classList.add('is-on');
+  }
+
+  function hideButton(e) {
+    if (!zoomBtn) return;
+    if (e && e.relatedTarget === zoomBtn) return;
+    zoomBtn.classList.remove('is-on');
+  }
+
+  document.addEventListener('mouseover', function (e) {
+    var img = e.target;
+    if (img === zoomBtn) return;
+    if (eligible(img)) placeButton(img);
+    else if (!img.closest || !img.closest('.lb-zoom')) hideButton(e);
+  });
+
+  document.addEventListener('click', function (e) {
+    var img = e.target;
+    if (!eligible(img)) return;
+    if (img.closest && img.closest('a')) return;   // รูปที่เป็นลิงก์ ปล่อยให้ทำงานตามเดิม
+    e.preventDefault();
+    open(img);
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && overlay && overlay.classList.contains('is-open')) close();
+  });
+})();

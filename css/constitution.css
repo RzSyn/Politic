@@ -1798,3 +1798,36 @@ body.theme-bw .mourning-container {
   .glossary-panel { width: 100%; right: -100%; padding: 18px; }
   .glossary-panel.full { padding: 18px; }
 }
+
+/* ── ดูรูปเต็มจอ (lightbox) ───────────────────────────────────────────── */
+.lb-zoom {
+  position: absolute; z-index: 1400; display: none; width: 36px; height: 36px; padding: 0;
+  border-radius: 9px; border: 1px solid rgba(255, 255, 255, 0.35); cursor: pointer;
+  background: rgba(10, 14, 26, 0.72); color: #fff; font-size: 16px; line-height: 1;
+  backdrop-filter: blur(6px); transition: background 0.2s, transform 0.15s;
+}
+.lb-zoom.is-on { display: block; }
+.lb-zoom:hover { background: rgba(10, 14, 26, 0.92); transform: scale(1.06); }
+.lb-overlay {
+  position: fixed; inset: 0; z-index: 3000; display: none; align-items: center; justify-content: center;
+  flex-direction: column; gap: 14px; padding: 58px 20px 28px; background: rgba(4, 6, 12, 0.94);
+}
+.lb-overlay.is-open { display: flex; }
+.lb-overlay .lb-img {
+  max-width: 96vw; max-height: calc(100vh - 140px); width: auto; height: auto;
+  border-radius: 10px; box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6); background: #0b0e16;
+}
+.lb-bar { position: absolute; top: 14px; right: 16px; display: flex; gap: 8px; }
+.lb-btn {
+  padding: 8px 14px; border-radius: 8px; cursor: pointer; font: 600 13px 'Sarabun', sans-serif;
+  color: #f0e2c0; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.28);
+}
+.lb-btn:hover { background: rgba(255, 255, 255, 0.16); }
+.lb-close { font-size: 15px; padding: 8px 12px; }
+.lb-cap { max-width: 90vw; text-align: center; font-size: 13px; line-height: 1.7; color: #c8cede; }
+.lb-overlay:fullscreen { padding: 58px 20px 28px; }
+@media (max-width: 620px) {
+  .lb-overlay { padding: 54px 10px 20px; }
+  .lb-btn { padding: 7px 10px; font-size: 12px; }
+  .lb-zoom { width: 40px; height: 40px; font-size: 18px; }
+}
