@@ -609,3 +609,14 @@ fix looked like it had not worked at all (the glossary's new buttons, then an
 image that kept its old crop) because the CDP profile and the user's browser
 both served the cached file.  Bump the stamp in **both** files, rebuild, then
 screenshot.
+
+## Never animate the whole `<body>` on these pages
+
+Handing the new site's intro over to the page with
+`html.nw-page-in body { animation: ... transform/opacity }` blanked the screen
+for about **0.7 s** before anything appeared — the user's recording shows solid
+black from 4.0 s to 4.7 s.  A 5.9 MB document promoted to its own composited
+layer cannot be rasterised in one frame.  Animate a small overlay instead: a
+fixed veil div that fades out, or the iris circle, both of which are cheap.
+The same trap explains an earlier "the iris never opens" reading of a headless
+capture: the black frames were the stall, not a slow animation.

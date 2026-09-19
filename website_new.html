@@ -17,7 +17,7 @@ try {
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&family=Taviraj:wght@400;500;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/constitution.css?v=20260919h">
+<link rel="stylesheet" href="css/constitution.css?v=20260919i">
 <script src="js/world_geojson.js"></script>
 <style>
 /* Inline Leaflet CSS */
@@ -1569,7 +1569,7 @@ function playAudioMobile(btn, src) {
 
 </script>
 
-<link rel="stylesheet" href="css/site.css?v=20260919h">
+<link rel="stylesheet" href="css/site.css?v=20260919i">
 </head>
 <body>
 
@@ -1609,10 +1609,11 @@ function playAudioMobile(btn, src) {
     if (e.className.indexOf("is-out") !== -1) return;
     timers.forEach(clearTimeout);
     e.className = e.className + " is-out";
-    var root = document.documentElement;
-    root.classList.add("nw-page-in");
-    setTimeout(function () { root.classList.remove("nw-page-in"); }, 1200);
-    setTimeout(function () { if (e.parentNode) e.parentNode.removeChild(e); }, 1100);
+    var veil = document.createElement("div");
+    veil.className = "nw-enter-veil";
+    document.body.appendChild(veil);
+    setTimeout(function () { if (veil.parentNode) veil.parentNode.removeChild(veil); }, 750);
+    setTimeout(function () { if (e.parentNode) e.parentNode.removeChild(e); }, 1000);
   }
   var skip = document.getElementById("nwEnterSkip");
   if (skip) skip.addEventListener("click", leave);
@@ -40895,8 +40896,8 @@ function playAudioMobile(btn, src) {
 
 <button class="back-top" id="backTop" onclick="window.scrollTo(0,0)">▲</button>
 
-<script src="js/glossary-data.js?v=20260919h"></script>
-<script src="js/constitution.js?v=20260919h"></script>
+<script src="js/glossary-data.js?v=20260919i"></script>
+<script src="js/constitution.js?v=20260919i"></script>
 <script src="js/hall-data.js"></script>
 <script src="js/hall-aura.js"></script>
 <script src="js/portrait-hall.js?v=2"></script>
