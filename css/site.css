@@ -534,30 +534,90 @@ html.mourning .nw-art-act { background: #000; color: #fff; }
   .nwc-when small { display: inline; margin-left: 6px; }
 }
 
-/* ═══ short entry animation (the long one lives on index.html) ══════════ */
+/* ═══ entry animation for the new site (the long one lives on index.html) ══ */
 .nw-enter {
-  position: fixed; inset: 0; z-index: 300; display: grid; place-items: center;
-  background: var(--nw-bg); animation: nwFade 0.25s ease both;
+  position: fixed; inset: 0; z-index: 1600; display: grid; place-items: center; overflow: hidden;
+  background: var(--nw-bg); animation: nwFade 0.3s ease both;
 }
-.nw-enter.is-out { opacity: 0; transform: scale(1.02); transition: opacity 0.55s ease, transform 0.55s ease; pointer-events: none; }
-.nw-enter-in { display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center; padding: 0 16px; }
-.nw-enter-in img { width: 82px; height: auto; animation: nwEnterEm 0.9s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.nw-enter.is-out {
+  opacity: 0; transform: scale(1.03); transition: opacity 0.8s ease, transform 0.8s ease; pointer-events: none;
+}
+.nw-enter-glow {
+  position: absolute; width: 120vmax; height: 120vmax; border-radius: 50%; pointer-events: none;
+  background: radial-gradient(circle, var(--nw-acc-soft), transparent 62%);
+  animation: nwEnterGlow 2.6s ease-out both, nwEnterBreathe 4s ease-in-out 2.4s infinite;
+}
+.nw-enter-sweep {
+  position: absolute; inset: 0; pointer-events: none; opacity: 0;
+  background: linear-gradient(104deg, transparent 40%, rgba(255, 255, 255, 0.07) 48%,
+              rgba(255, 255, 255, 0.14) 52%, transparent 62%);
+  background-size: 260% 100%; background-position: 130% 0;
+  animation: nwEnterSweep 1.5s ease-in-out 2.4s both;
+}
+.nw-enter-in {
+  position: relative; display: flex; flex-direction: column; align-items: center; gap: 13px;
+  text-align: center; padding: 0 16px;
+}
+.nw-enter-seal { position: relative; display: block; }
+.nw-enter-in img {
+  width: 92px; height: auto; display: block;
+  animation: nwEnterEm 1s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.nw-enter-ring {
+  position: absolute; left: 50%; top: 50%; width: 12px; height: 12px; margin: -6px 0 0 -6px;
+  border: 2px solid var(--nw-acc); border-radius: 50%; opacity: 0;
+  animation: nwEnterRing 1.6s ease-out 0.45s both;
+}
 .nw-enter i {
   display: block; height: 1px; background: linear-gradient(90deg, transparent, var(--nw-acc), transparent);
-  animation: nwEnterLine 0.85s cubic-bezier(0.22, 1, 0.36, 1) 0.12s both;
+  animation: nwEnterLine 1s cubic-bezier(0.22, 1, 0.36, 1) 0.55s both;
 }
 .nw-enter b {
-  font: 600 clamp(17px, 2.4vw, 23px) var(--nw-serif); letter-spacing: 0.04em; color: var(--nw-text);
-  animation: nwRise 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
+  font: 600 clamp(18px, 2.6vw, 26px) var(--nw-serif); letter-spacing: 0.04em; color: var(--nw-text);
+  animation: nwEnterTitle 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.75s both;
 }
 .nw-enter small {
-  font-size: 12.5px; letter-spacing: 0.22em; color: var(--nw-text-3);
-  animation: nwFade 0.9s ease 0.45s both;
+  font-size: 12.5px; letter-spacing: 0.24em; color: var(--nw-text-3);
+  animation: nwEnterWipe 1s ease-out 1.35s both;
 }
-.nw-enter.is-still, .nw-enter.is-still * { animation: none !important; }
-.nw-enter.is-still i { width: min(320px, 56vw); }
-@keyframes nwEnterEm { from { opacity: 0; transform: translateY(10px) scale(0.86); } to { opacity: 0.95; transform: none; } }
-@keyframes nwEnterLine { from { width: 0; opacity: 0; } to { width: min(320px, 56vw); opacity: 1; } }
+.nw-enter-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 6px; }
+.nw-enter-chips em {
+  font-style: normal; font-size: 12px; letter-spacing: 0.04em; padding: 5px 13px; border-radius: 999px;
+  color: var(--nw-acc-2); background: var(--nw-acc-soft); border: 1px solid var(--nw-line);
+  animation: nwEnterChip 0.7s cubic-bezier(0.2, 1.3, 0.4, 1) both;
+  animation-delay: calc(1.9s + var(--i, 0) * 0.13s);
+}
+.nw-enter-skip {
+  position: absolute; right: 18px; bottom: 18px; padding: 8px 16px; border-radius: 8px; cursor: pointer;
+  font: 600 13px var(--nw-sans); color: var(--nw-text-2);
+  background: var(--nw-surface); border: 1px solid var(--nw-line);
+  animation: nwFade 0.6s ease 0.9s both;
+}
+.nw-enter-skip:hover { color: var(--nw-acc-2); border-color: var(--nw-acc); }
+@keyframes nwEnterEm { from { opacity: 0; transform: translateY(12px) scale(0.84); } to { opacity: 0.95; transform: none; } }
+@keyframes nwEnterRing {
+  0% { opacity: 0.85; width: 12px; height: 12px; margin: -6px 0 0 -6px; }
+  100% { opacity: 0; width: 260px; height: 260px; margin: -130px 0 0 -130px; }
+}
+@keyframes nwEnterLine { from { width: 0; opacity: 0; } to { width: min(340px, 58vw); opacity: 1; } }
+@keyframes nwEnterTitle {
+  0% { opacity: 0; transform: translateY(14px); letter-spacing: 0.24em; filter: blur(5px); }
+  100% { opacity: 1; transform: none; letter-spacing: 0.04em; filter: blur(0); }
+}
+@keyframes nwEnterWipe { from { opacity: 0; clip-path: inset(0 100% 0 0); } to { opacity: 1; clip-path: inset(0 0 0 0); } }
+@keyframes nwEnterChip { from { opacity: 0; transform: translateY(10px) scale(0.92); } to { opacity: 1; transform: none; } }
+@keyframes nwEnterGlow { from { opacity: 0; transform: scale(0.65); } to { opacity: 1; transform: scale(1); } }
+@keyframes nwEnterBreathe { 0%, 100% { opacity: 1; } 50% { opacity: 0.72; } }
+@keyframes nwEnterSweep { 0% { opacity: 0; background-position: 130% 0; } 30% { opacity: 1; } 100% { opacity: 0; background-position: -40% 0; } }
+/* เครื่องที่ปิดเอฟเฟกต์: จังหวะเดิม แต่เป็นการจางเข้าแทนการขยับ */
+.nw-enter.is-still .nw-enter-glow, .nw-enter.is-still .nw-enter-sweep { animation: nwFade 1s ease both; }
+.nw-enter.is-still .nw-enter-ring { display: none; }
+.nw-enter.is-still img { animation: nwFade 0.9s ease both; }
+.nw-enter.is-still i { width: min(340px, 58vw); animation: nwFade 0.9s ease 0.55s both; }
+.nw-enter.is-still b { letter-spacing: 0.04em; filter: none; animation: nwFade 1s ease 0.75s both; }
+.nw-enter.is-still small { animation: nwFade 0.9s ease 1.35s both; }
+.nw-enter.is-still .nw-enter-chips em { animation: nwFade 0.6s ease both; animation-delay: calc(1.9s + var(--i, 0) * 0.13s); }
+.nw-enter.is-still.is-out { transform: none; }
 
 /* topic prose and the shapes the re-layout keeps */
 .nwc > p, .nwc > div > p { margin: 0 0 0.85em; max-width: 94ch; color: var(--nw-text-2); font-size: 15.2px; line-height: 1.95; }
