@@ -660,3 +660,5 @@ html.mourning .nw-art-act { background: #000; color: #fff; }
 .nwc-person figcaption b { display: block; font: 600 14.5px var(--nw-serif); color: var(--nw-text); }
 .nwc-person figcaption span { display: block; margin: 2px 0 4px; color: var(--nw-acc-2); font-size: 12.5px; }
 .nwc-person figcaption em { display: block; margin-top: 6px; font-style: normal; font-size: 12.3px; color: var(--nw-acc-2); }
+/* ภาพเอกสารหรือภาพหน้าจอ: แสดงเต็มใบ ไม่ครอป */
+.nwc-figure.is-doc img { max-height: none; object-fit: contain; background: var(--nw-surface-2); }
