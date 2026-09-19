@@ -598,3 +598,14 @@ appeared — the short "reduce" branch, not a bug in the timeline.  So a reduced
 branch must keep the **same duration and the same beats**; only the movement
 changes: no push-in, no grain jitter, no bounce, no sweep — fades on the same
 delays.  Cutting the sequence short is what reads as "โดนตัด".
+
+## Shared css/js carry a ?v= stamp — bump it on every change
+
+`website_constitution.html` and `tools/site_template.html` load
+`css/constitution.css`, `css/site.css`, `js/constitution.js` and
+`js/glossary-data.js` with `?v=YYYYMMDD`.  Editing one of those files without
+bumping the stamp means the browser keeps the old copy: twice in one session a
+fix looked like it had not worked at all (the glossary's new buttons, then an
+image that kept its old crop) because the CDP profile and the user's browser
+both served the cached file.  Bump the stamp in **both** files, rebuild, then
+screenshot.
