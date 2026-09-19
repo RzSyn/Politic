@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b0a08">
+<title>ไม่พบหน้าที่ค้นหา · รัฐธรรมนูญแห่งราชอาณาจักรไทย (ฉบับจำลอง)</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/Politic/images/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/Politic/images/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0b0a08;
+    --gold: #d4a843;
+    --gold-light: #f0d68a;
+    --text: #ded2ba;
+    --muted: #968e7e;
+    --line: rgba(212, 168, 67, 0.28);
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Sarabun', system-ui, sans-serif;
+    display: grid;
+    place-items: center;
+    padding: 32px 16px;
+    background-image: radial-gradient(60% 45% at 50% 0%, rgba(212, 168, 67, 0.10), transparent 70%);
+  }
+  .wrap { width: 100%; max-width: 620px; text-align: center; }
+  .garuda { width: 132px; height: auto; opacity: 0.95; }
+  .code {
+    font-family: 'Outfit', sans-serif;
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--gold);
+    letter-spacing: 0.04em;
+    margin: 20px 0 14px;
+  }
+  h1 { font-size: 23px; font-weight: 700; color: var(--gold-light); margin: 0 0 14px; }
+  p { font-size: 15px; line-height: 1.85; color: var(--muted); margin: 0 auto 26px; max-width: 460px; }
+  .rule { width: 86px; height: 2px; background: var(--gold); opacity: 0.6; margin: 20px auto; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+  .links a {
+    display: inline-block;
+    padding: 11px 20px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: rgba(212, 168, 67, 0.07);
+    color: var(--gold-light);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+  .links a:hover { background: rgba(212, 168, 67, 0.16); border-color: var(--gold); }
+  .links a.primary { background: var(--gold); border-color: var(--gold); color: #17130a; }
+  .links a.primary:hover { background: var(--gold-light); }
+  .note { margin-top: 30px; font-size: 12.5px; color: rgba(150, 142, 126, 0.75); }
+  @media (max-width: 420px) {
+    .code { font-size: 58px; }
+    h1 { font-size: 19px; }
+  }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <img class="garuda" id="garuda" src="/Politic/images/Thai_Garuda_emblem.png" alt="">
+    <div class="code">๔๐๔</div>
+    <h1>ไม่พบหน้าที่ค้นหา</h1>
+    <p>ที่อยู่นี้ไม่มีอยู่ในสารบบ อาจพิมพ์ผิด หรือหน้านั้นถูกย้ายไปแล้ว<br>กลับไปตั้งต้นที่หน้าแรกได้เลย</p>
+    <div class="rule"></div>
+    <nav class="links">
+      <a class="primary" href="/Politic/">หน้าแรก</a>
+      <a href="/Politic/website_new.html">ฉบับเว็บใหม่</a>
+      <a href="/Politic/website_constitution.html">ฉบับเว็บเดิม</a>
+    </nav>
+    <div class="note">โลกประวัติศาสตร์ทางเลือก · ไม่ใช่ข้อมูลจริง</div>
+  </main>
+<script>
+/* The links above are written for GitHub Pages (/Politic/...). When the site is
+   served from a different root — a local server, or a fork under another name —
+   rewrite them against that root instead. */
+(function () {
+  var parts = location.pathname.split('/');
+  var base = parts[1] === 'Politic' ? '/Politic/' : '/';
+  if (base === '/Politic/') return;
+  var fix = function (el, attr) {
+    var v = el.getAttribute(attr);
+    if (v && v.indexOf('/Politic/') === 0) el.setAttribute(attr, base + v.slice(9));
+  };
+  [].forEach.call(document.querySelectorAll('a[href], img[src], link[href]'), function (el) {
+    fix(el, el.tagName === 'IMG' ? 'src' : 'href');
+  });
+})();
+</script>
+</body>
+</html>

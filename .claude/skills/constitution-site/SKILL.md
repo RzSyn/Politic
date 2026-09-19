@@ -620,3 +620,32 @@ layer cannot be rasterised in one frame.  Animate a small overlay instead: a
 fixed veil div that fades out, or the iris circle, both of which are cheap.
 The same trap explains an earlier "the iris never opens" reading of a headless
 capture: the black frames were the stall, not a slow animation.
+
+## A link audit that only greps `href=` misses half the site's navigation
+
+Reported to the user that `website_constitution.html` was a dead end with no way
+back to `index.html`.  It has one: a `<button class="db-tab-btn"
+onclick="window.location.href='index.html'">หน้าแรก 🏠</button>` at line ~1673.
+The sweep had been `grep -oE 'href="(index|website_new)\.html[^"]*"'`, which
+cannot see navigation done through `onclick`, `location.href`, `location.assign`
+or `window.open`.  The user answered with a screenshot of the button.
+
+→ When auditing navigation on these pages, search for the **destination**, not
+the attribute:
+
+```bash
+grep -oE "[^\"']*index\.html[^\"']*" website_constitution.html | sort -u
+```
+
+and remember this file drives most of its UI from `onclick`, not from `<a>`.
+The same blind spot applies to counting tabs (`switchTab('x-tab', this)`) and to
+audio (`playAudioMobile(this, 'audio/…')`).
+
+## Headless Chrome for layout checks — the Browser pane cannot do it
+
+`document.documentElement.clientWidth` is **0** while the Browser pane is hidden,
+so every element's `getBoundingClientRect()` collapses and an overflow check
+reports all 68 tabs as broken.  Run layout audits through the CDP harness with
+`Emulation.setDeviceMetricsOverride` instead (`scratchpad/layout_check.mjs`),
+which gives a real viewport.  Measured that way: at 1440 px both sites are clean;
+at 390 px the new site overflows on 19 of 68 tabs and the old site on 43.
