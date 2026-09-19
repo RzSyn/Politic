@@ -539,9 +539,30 @@ html.mourning .nw-art-act { background: #000; color: #fff; }
   position: fixed; inset: 0; z-index: 1600; display: grid; place-items: center; overflow: hidden;
   background: var(--nw-bg); animation: nwFade 0.3s ease both;
 }
-.nw-enter.is-out {
-  opacity: 0; transform: scale(1.03); transition: opacity 0.8s ease, transform 0.8s ease; pointer-events: none;
+.nw-enter.is-out { background: transparent; pointer-events: none; }
+.nw-enter.is-out .nw-enter-glow, .nw-enter.is-out .nw-enter-sweep { opacity: 0; transition: opacity 0.35s ease; }
+.nw-enter.is-out .nw-enter-in {
+  animation: nwEnterLift 0.55s cubic-bezier(0.55, 0, 0.35, 1) forwards;
 }
+.nw-enter-iris {
+  position: absolute; left: 50%; top: 44%; width: 90px; height: 90px; margin: -45px 0 0 -45px;
+  border-radius: 50%; transform: scale(0); pointer-events: none;
+  box-shadow: 0 0 0 100vmax var(--nw-bg);
+}
+.nw-enter.is-out .nw-enter-iris { animation: nwEnterIris 0.9s cubic-bezier(0.3, 0.9, 0.4, 1) forwards; }
+@keyframes nwEnterIris { from { transform: scale(0); } to { transform: scale(70); } }
+@keyframes nwEnterLift {
+  from { opacity: 1; transform: none; filter: blur(0); }
+  to { opacity: 0; transform: translateY(-16px) scale(1.06); filter: blur(4px); }
+}
+/* หน้าเว็บด้านหลังขยับรับตอนม่านเปิด */
+html.nw-page-in body { animation: nwPageIn 0.9s cubic-bezier(0.22, 1, 0.36, 1) both; }
+@keyframes nwPageIn { from { opacity: 0.55; transform: scale(1.015); } to { opacity: 1; transform: none; } }
+/* เครื่องที่ปิดเอฟเฟกต์: ปิดแบบจางเฉย ๆ */
+.nw-enter.is-still.is-out { background: var(--nw-bg); opacity: 0; transition: opacity 0.6s ease; }
+.nw-enter.is-still .nw-enter-iris { display: none; }
+.nw-enter.is-still.is-out .nw-enter-in { animation: none; }
+html.nw-page-in.nw-still body { animation: none; }
 .nw-enter-glow {
   position: absolute; width: 120vmax; height: 120vmax; border-radius: 50%; pointer-events: none;
   background: radial-gradient(circle, var(--nw-acc-soft), transparent 62%);

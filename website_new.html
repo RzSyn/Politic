@@ -17,7 +17,7 @@ try {
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&family=Taviraj:wght@400;500;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/constitution.css?v=20260919f">
+<link rel="stylesheet" href="css/constitution.css?v=20260919h">
 <script src="js/world_geojson.js"></script>
 <style>
 /* Inline Leaflet CSS */
@@ -1569,12 +1569,13 @@ function playAudioMobile(btn, src) {
 
 </script>
 
-<link rel="stylesheet" href="css/site.css?v=20260919f">
+<link rel="stylesheet" href="css/site.css?v=20260919h">
 </head>
 <body>
 
 <div class="nw-enter" id="nwEnter" aria-hidden="true">
   <span class="nw-enter-glow"></span>
+  <span class="nw-enter-iris"></span>
   <span class="nw-enter-sweep"></span>
   <div class="nw-enter-in">
     <span class="nw-enter-seal">
@@ -1598,20 +1599,25 @@ function playAudioMobile(btn, src) {
 (function () {
   var e = document.getElementById("nwEnter");
   if (!e) return;
+  var mode = (location.search.match(/[?&]intro=([a-z]+)/) || [])[1] || "";
   var still = false;
   try { still = matchMedia("(prefers-reduced-motion: reduce)").matches; } catch (err) {}
+  if (mode === "replay") still = false;
   if (still) e.className = "nw-enter is-still";
   var timers = [];
   function leave() {
     if (e.className.indexOf("is-out") !== -1) return;
     timers.forEach(clearTimeout);
     e.className = e.className + " is-out";
-    setTimeout(function () { if (e.parentNode) e.parentNode.removeChild(e); }, 900);
+    var root = document.documentElement;
+    root.classList.add("nw-page-in");
+    setTimeout(function () { root.classList.remove("nw-page-in"); }, 1200);
+    setTimeout(function () { if (e.parentNode) e.parentNode.removeChild(e); }, 1100);
   }
   var skip = document.getElementById("nwEnterSkip");
   if (skip) skip.addEventListener("click", leave);
   e.addEventListener("click", function (ev) { if (ev.target === e) leave(); });
-  timers.push(setTimeout(leave, 3800));
+  if (mode !== "hold") timers.push(setTimeout(leave, 3800));
 })();
 </script>
 
@@ -40889,8 +40895,8 @@ function playAudioMobile(btn, src) {
 
 <button class="back-top" id="backTop" onclick="window.scrollTo(0,0)">▲</button>
 
-<script src="js/glossary-data.js?v=20260919f"></script>
-<script src="js/constitution.js?v=20260919f"></script>
+<script src="js/glossary-data.js?v=20260919h"></script>
+<script src="js/constitution.js?v=20260919h"></script>
 <script src="js/hall-data.js"></script>
 <script src="js/hall-aura.js"></script>
 <script src="js/portrait-hall.js?v=2"></script>
