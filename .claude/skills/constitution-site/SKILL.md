@@ -649,3 +649,41 @@ reports all 68 tabs as broken.  Run layout audits through the CDP harness with
 `Emulation.setDeviceMetricsOverride` instead (`scratchpad/layout_check.mjs`),
 which gives a real viewport.  Measured that way: at 1440 px both sites are clean;
 at 390 px the new site overflows on 19 of 68 tabs and the old site on 43.
+
+## The backslash trap bit again — and a `%` one beside it
+
+Patching a Python file through a `Bash` heredoc turned `r'<div\b[^>]*>'` into
+`r'<div<BS>[^>]*>'` — a literal 0x08.  The file *ran*, the regex silently matched
+slightly the wrong thing, and the damage was invisible in every editor view;
+`sed -n '130p' file | cat -A` is what showed the `^H`.  Two lessons:
+
+- never write a regex through a heredoc — use the `Write`/`Edit` tool, or build
+  the string with `chr(92) + 'b'`;
+- when a `Edit` says "String to replace not found" on a line you can see, the
+  line contains a character you cannot.  Check with `cat -A` before assuming the
+  tool is wrong.
+
+In the same script, `'…๘๙.๔% ให้…' % (a, b, c)` raised
+`TypeError: not enough arguments for format string`.  Thai percentages are
+common in this site's copy — double every literal `%` in a `%`-formatted
+template, or use `.format`/f-strings.
+
+## Nav on the old site is `onclick`, not `href`
+
+Auditing "can you get back to the home page from here" with
+`grep 'href="index.html"'` reported the old site as a dead end.  It is not:
+line ~1673 carries `<button class="db-tab-btn"
+onclick="window.location.href='index.html'">หน้าแรก 🏠</button>`.  Most of this
+file's navigation, audio and tab switching is driven from `onclick`
+(`switchTab`, `playAudioMobile`, `window.location.href`), so search for the
+**destination string**, never for the attribute.
+
+## Insert beside a sibling card by walking out from a marker
+
+To add a card next to an existing one (the new song beside เพลงมหารัฐบุรุษ),
+do not chain `s.index('</div>', …)` three times to "walk out" of it — that is
+the RULE 3 trap in another costume.  Walk outward instead: from the marker's
+position, step back through `<div` openings and, for each, walk its depth to
+find the matching close; take the first span that reaches past the marker *and*
+contains every other string the real card must contain (its heading and its
+`<audio src>`).  That lands on the card, not on an inner wrapper.
