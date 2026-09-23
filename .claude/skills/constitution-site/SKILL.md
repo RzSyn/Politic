@@ -687,3 +687,13 @@ position, step back through `<div` openings and, for each, walk its depth to
 find the matching close; take the first span that reaches past the marker *and*
 contains every other string the real card must contain (its heading and its
 `<audio src>`).  That lands on the card, not on an inner wrapper.
+
+## Check `git status` before `git add -A`
+
+The user drops their own material into the project folder (e.g. a
+`ครอบครัวนิวตรอน/` folder and its `.zip`, added 2026-09-22). A blind
+`git add -A` committed and pushed them with an unrelated change. This time
+the user wanted them in the repo anyway, but that is luck, not process.
+Look at `git status --short` first, and when something appears that this
+session did not create, name it and ask — or stage explicit paths.
+`test.zip` is the one file the user wants kept out.
