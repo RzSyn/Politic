@@ -697,3 +697,13 @@ the user wanted them in the repo anyway, but that is luck, not process.
 Look at `git status --short` first, and when something appears that this
 session did not create, name it and ask — or stage explicit paths.
 `test.zip` is the one file the user wants kept out.
+
+## "Lock" a date means label it, not move it
+
+When the user asks to lock or fix the date a section's data comes from
+(e.g. the family section "ข้อมูล ณ วันที่ ๑ มกราคม ๒๗๓๑"), that is a
+statement of when the snapshot was taken. It is not a request to move the
+site's present year or any event date. Compute what the snapshot implies
+(ages from real birthdays on that day) and leave the timeline alone. A
+round of offering to shift the present to ๒๗๓๒ cost several turns before
+the user spelled this out.
