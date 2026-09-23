@@ -128,12 +128,17 @@
       {
         "id": "pms-tab",
         "icon": "🏛️",
-        "label": "ทำเนียบนายกรัฐมนตรี (๓๓ ท่าน)"
+        "label": "ทำเนียบนายกรัฐมนตรี (๓๔ ท่าน)"
       },
       {
         "id": "atom-tab",
         "icon": "🧪",
         "label": "นายกรัฐมนตรีอะตอม (คนที่ ๓๓)"
+      },
+      {
+        "id": "atom-group-tab",
+        "icon": "⚛️",
+        "label": "THE ATOM GROUP"
       },
       {
         "id": "cabinet-tab",
