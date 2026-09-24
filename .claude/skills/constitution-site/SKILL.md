@@ -5,6 +5,12 @@ description: Working rules for the รัฐธรรมนุญจำลอง
 
 # รัฐธรรมนุญจำลอง — working rules
 
+> General lessons that apply to any website now live in the user-level skills
+> **safe-web-editing** (structure checks, splicing, shell traps, headless-Chrome
+> verification, git hygiene — with reusable scripts) and **antigravity-agy**
+> (image generation and other delegation through the `agy` CLI). This file keeps
+> what is specific to this site; where both say the same thing, this one wins.
+
 Fictional worldbuilding site: a simulated Thai constitution, 38 chapters plus a
 53-tab dashboard. Invented history, PMs, parties and institutions are
 **intentional**. Never "correct" them toward real-world facts.
