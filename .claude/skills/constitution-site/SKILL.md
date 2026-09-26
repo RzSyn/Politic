@@ -789,3 +789,11 @@ marked only Thaksin, Somkid and Piyabutr as อดีตนายกฯ; Thanath
 Nattaphong (19) and Parit (20) are former PMs too and got no badge. → Before
 tagging anyone "อดีตนายกฯ", run every minister's name against
 `js/hall-data.js` (`node -e` over `HALL_DATA.pms`) and take the numbers from it.
+
+Rome's cabinet cards carry a 96×120 face (same as the PM box). Faces are
+192×240 thumbnails in `images/cab/<key>.jpg` (don't point at the 3000 px
+originals; `images/pm17.jpg` is a 1×1 stub — Pita's photo is `pita.jpg`).
+People without a photo have `<div data-photo-pending="NAME" …>👤 รอรูป</div>`:
+when the user sends one, crop 4:5, save to `images/cab/`, and replace that
+div (every occurrence of the name) with
+`<img src="images/cab/KEY.jpg" alt="NAME" loading="lazy" style="width: 96px; height: 120px; border-radius: 10px; border: 2px solid PARTYCOLOUR; flex-shrink: 0; object-fit: cover">`.
