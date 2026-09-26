@@ -771,8 +771,15 @@ cabinet panel. → Scope every search to the target panel's span first
 ## Cabinet tab holds several governments
 
 `cabinet-tab` now has a switcher (`div[data-cabs]`, buttons `.cab-btn`, sets
-`div[data-cab="rome|banyat|atom2"]`, default `atom2`) driven by inline
+`div[data-cab="rome|banyat|atom2"]`, default `rome` — the current government) driven by inline
 `onclick`, with its own small `<style>`. Rome's set is a
 placeholder with `id="cab-rome-list"`; Banyat's set is deliberately an all-black "ไม่มีข้อมูล" box (user: his cabinet changed every week, so there is no stable line-up) — do not fill it — when the user supplies a line-up,
 replace that placeholder box with the minister grid (copy the atom2 markup).
 Never delete an older cabinet; add a new set and button instead.
+
+Rome's cabinet was filled 2026-09-26 from the user's table (21 ministries,
+15 people): cards are generated with the ministry number as
+`images/ministry_N.png`, a "ควบ …" badge for anyone holding several posts
+(let that badge wrap — a nowrap one overflowed the card) and an "อดีตนายกฯ"
+badge for former PMs. The headless-Chrome profile caches HTML: when a check
+shows the pre-edit page, add `?nc=N` to the URL before suspecting the edit.
