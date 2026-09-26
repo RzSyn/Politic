@@ -11,7 +11,8 @@
   'use strict';
   if (!window.customElements || customElements.get('portrait-hall')) return;
 
-  var P = 800, KING9 = 4, PM33 = 21, MINP = -1.3, MAXP = PM33 + 0.5;
+  var NPM = (window.HALL_DATA && window.HALL_DATA.pms.length) || 35;
+  var P = 800, KING9 = 4, PM33 = 5 + Math.ceil((NPM - 1) / 2), MINP = -1.3, MAXP = PM33 + 0.5;
   var FD = "'Taviraj','Sarabun',serif", FS = "'Sarabun',system-ui,sans-serif";
   var GOLD = '#d4af37';
 
@@ -56,7 +57,7 @@
       return im;
     }
 
-    // ── items: kings in pairs, King Rama IX alone, PMs in pairs, PM 33 alone ──
+    // ── items: kings in pairs, King Rama IX alone, PMs in pairs, the latest PM alone ──
     var items = [];
     DATA.kings.forEach(function (k, i) {
       var solo = i === 8;
@@ -65,7 +66,7 @@
         label: k.label, name: k.name, years: k.years, gold: solo, era: 0 });
     });
     DATA.pms.forEach(function (pm, i) {
-      var solo = i === 32;
+      var solo = i === NPM - 1;
       items.push({ slot: solo ? PM33 : 5 + Math.floor(i / 2), side: solo ? 0 : (i % 2 ? 1 : -1),
         sharp: img(base + pm.img + '.jpg'), soft: img(base + pm.img + 'b.jpg'),
         label: pm.label, name: pm.name, years: pm.years, gold: false, era: 1 });

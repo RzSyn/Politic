@@ -544,7 +544,7 @@ html.lock .hero { height: 100vh; height: 100svh; overflow-y: auto; }
   </div>
 </footer>
 
-<script src="js/hall-data.js"></script>
+<script src="js/hall-data.js?v=2731"></script>
 <script src="js/hall-aura.js"></script>
 <script>
 (function () {
@@ -555,7 +555,7 @@ html.lock .hero { height: 100vh; height: 100svh; overflow-y: auto; }
   function later(fn, ms) { timers.push(setTimeout(fn, ms)); }
 
   var KINGS = window.HALL_DATA.kings, PMS = window.HALL_DATA.pms;   // js/hall-data.js
-  var P = 800, KING9 = 4, PM33 = 21;
+  var P = 800, KING9 = 4, NPM = PMS.length, PM33 = 5 + Math.ceil((NPM - 1) / 2);   // PM33 = the latest PM's slot, alone at the end
 
   // The hall is drawn on a canvas. Frames, gilding and captions are painted
   // once into offscreen textures, so each animation frame is only a few dozen
@@ -593,7 +593,7 @@ html.lock .hero { height: 100vh; height: 100svh; overflow-y: auto; }
       add(single ? KING9 : Math.floor(i / 2), single ? 0 : (i % 2 ? 1 : -1), k.img, k.label, k.name, k.years, single);
     });
     PMS.forEach(function (pm, i) {
-      var single = i === 32;
+      var single = i === NPM - 1;
       add(single ? PM33 : 5 + Math.floor(i / 2), single ? 0 : (i % 2 ? 1 : -1), pm.img, pm.label, pm.name, pm.years, false);
     });
 

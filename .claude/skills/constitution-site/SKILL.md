@@ -713,3 +713,24 @@ site's present year or any event date. Compute what the snapshot implies
 (ages from real birthdays on that day) and leave the timeline alone. A
 round of offering to shift the present to ๒๗๓๒ cost several turns before
 the user spelled this out.
+
+## `%%` leaked into CSS from %-formatted templates
+
+Three old-site panels (มหาราช, SEATO, THE ATOM GROUP) went live with
+`width:100%%`, `max-width:100%%` and `0%%, … 100%%` gradients: the markup was
+built as a `'…' % (…)` template, where `%%` is right, then the template text was
+reused somewhere that never ran the `%` operator. Browsers drop the invalid
+declaration, so images lost their width and gradients vanished — silently.
+Found 2026-09-26 by accident while reading another panel; 11 in the old file,
+3 in `src/tabs`. → Build markup with f-strings, and before writing any panel
+`assert '%%' not in fragment`; grep the whole file for `%%` after a session.
+
+## Adding a PM also moves the portrait halls
+
+`index.html` and `js/portrait-hall.js` placed PMs in pairs and "PM 33 alone"
+with a hard-coded `i === 32` and slot `21`. When PM 34 was added it landed in
+slot 21 as well — on top of PM 33's solo frame — and nobody noticed. Both now
+compute the last slot from `HALL_DATA.pms.length` (the latest PM stands alone
+at the end). When adding a PM: add the row to `js/hall-data.js`, the two hall
+images `images/hall/pN.jpg` + `pNb.jpg` (360×460, `b` = blurred), and bump the
+`?v=` on `hall-data.js` / `portrait-hall.js` in index, old site and template.
