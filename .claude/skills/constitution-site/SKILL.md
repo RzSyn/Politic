@@ -815,5 +815,6 @@ world's "ทางรัฐ") is called **PB Public Welfare (สวัสดิ�
 universe — user, 2026-09-27. Never write "ทางรัฐ" for the app. The economy
 model (population 89.31 million, wage 38,000 baht/day, UBI 399,000,
 pension 400,000, poverty line 379,050, GDP per head 30,418,500/yr) lives in
-`#living-standards` on public-finance-tab; the wage is repeated on
-ministries-tab — change both together.
+`welfare-economy-tab` (its own tab since 2026-09-27 — the user found a small box
+inside public-finance "ดูไม่ค่อยเข้า"; `#living-standards` there is now only a
+pointer). The wage is repeated on ministries-tab — change both together.
