@@ -772,7 +772,7 @@ cabinet panel. → Scope every search to the target panel's span first
 
 `cabinet-tab` now has a switcher (`div[data-cabs]`, buttons `.cab-btn`, sets
 `div[data-cab="rome|banyat|atom2"]`, default `atom2`) driven by inline
-`onclick`, with its own small `<style>`. Rome's and Banyat's sets are
-placeholders with `id="cab-<key>-list"` — when the user supplies a line-up,
+`onclick`, with its own small `<style>`. Rome's set is a
+placeholder with `id="cab-rome-list"`; Banyat's set is deliberately an all-black "ไม่มีข้อมูล" box (user: his cabinet changed every week, so there is no stable line-up) — do not fill it — when the user supplies a line-up,
 replace that placeholder box with the minister grid (copy the atom2 markup).
 Never delete an older cabinet; add a new set and button instead.
