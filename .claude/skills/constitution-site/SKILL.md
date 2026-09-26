@@ -742,3 +742,16 @@ sub-label. Every other ก้าวไกล PM already carries
 "เสรีนิยมก้าวหน้า (โดยอนุรักษ์สถาบันกษัตริย์ไว้)"; the user corrected it. →
 When adding a PM, copy the whole `pm-ideology` span from an earlier PM of the
 same party (text and colours), don't compose a new one.
+
+## `rindex('<div', 0, a + 1)` does not find the tag that starts at `a`
+
+Replacing the whole `election-2731-tab` panel, the span helper did
+`s.rindex('<div', 0, a + 1)` with `a` already on `<div id="…"`. The search
+window `s[0:a+1]` cannot contain a 4-character match that starts at `a`, so it
+returned the *previous* `<div` — the end of the preceding panel — and the new
+panel overwrote that block while the old panel survived. The validator still
+said OK (balanced, 70 panels); only `grep -c 'id="election-2731-tab"'` = 2 and
+leftover old figures showed it. Recovered with `git checkout` of the files this
+script alone had changed. → Use
+`st = a if s.startswith('<div', a) else s.rindex('<div', 0, a)`, and after
+replacing a panel assert its id occurs exactly once and grep for the old text.
