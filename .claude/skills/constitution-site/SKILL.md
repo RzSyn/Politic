@@ -734,3 +734,11 @@ compute the last slot from `HALL_DATA.pms.length` (the latest PM stands alone
 at the end). When adding a PM: add the row to `js/hall-data.js`, the two hall
 images `images/hall/pN.jpg` + `pNb.jpg` (360×460, `b` = blurred), and bump the
 `?v=` on `hall-data.js` / `portrait-hall.js` in index, old site and template.
+
+## A new PM's ideology badge copies the party's existing badge
+
+Gave PM 35 (ก้าวไกล) the badge "เสรีนิยมก้าวหน้า (ขั้วส้มแดง)" — invented a
+sub-label. Every other ก้าวไกล PM already carries
+"เสรีนิยมก้าวหน้า (โดยอนุรักษ์สถาบันกษัตริย์ไว้)"; the user corrected it. →
+When adding a PM, copy the whole `pm-ideology` span from an earlier PM of the
+same party (text and colours), don't compose a new one.
