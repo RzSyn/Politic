@@ -797,3 +797,13 @@ People without a photo have `<div data-photo-pending="NAME" …>👤 รอร�
 when the user sends one, crop 4:5, save to `images/cab/`, and replace that
 div (every occurrence of the name) with
 `<img src="images/cab/KEY.jpg" alt="NAME" loading="lazy" style="width: 96px; height: 120px; border-radius: 10px; border: 2px solid PARTYCOLOUR; flex-shrink: 0; object-fit: cover">`.
+
+**Finding photos of real politicians (user: any source is fine, the site is private).**
+What worked 2026-09-26: (1) th.wikipedia `prop=pageimages&piprop=original`;
+(2) party sites are WordPress — `https://<site>/wp-json/wp/v2/media?search=<name>`
+lists every upload with size (peoplesparty.or.th had official portraits;
+ptp.or.th only news graphics); (3) for the rest, Bing Images in the in-app
+browser, then read `a.iusc[m]` → `murl` with `javascript_tool`. Scripted
+requests to Bing/DuckDuckGo get empty pages or 403, and WebSearch/WebFetch
+were erroring. Always contact-sheet the candidates and reject graphics with
+text, mid-shout shots and blurry crowd photos.
