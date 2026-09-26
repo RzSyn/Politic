@@ -755,3 +755,24 @@ leftover old figures showed it. Recovered with `git checkout` of the files this
 script alone had changed. → Use
 `st = a if s.startswith('<div', a) else s.rindex('<div', 0, a)`, and after
 replacing a panel assert its id occurs exactly once and grep for the old text.
+
+## A note anchored on a *reference* to a tab lands in the wrong tab
+
+The "รัฐบาลชุดปัจจุบัน" note meant for the old site's `cabinet-tab` was spliced
+next to the phrase `คณะรัฐมนตรีชุดล่าสุดที่บันทึกไว้` — but the first match
+of that phrase outside the heading was a cross-reference inside
+`public-finance-tab` ("ดูแถบ … คณะรัฐมนตรีชุดล่าสุดที่บันทึกไว้"). The note sat
+in the finance tab for two sessions; the validator cannot see this (structure
+was fine). Found only when a later edit asserted the note was inside the
+cabinet panel. → Scope every search to the target panel's span first
+(`s.index(x, panel_start, panel_end)`), and after inserting, check which
+`db-tab-content` panel the new text actually sits in.
+
+## Cabinet tab holds several governments
+
+`cabinet-tab` now has a switcher (`div[data-cabs]`, buttons `.cab-btn`, sets
+`div[data-cab="rome|banyat|atom2"]`, default `atom2`) driven by inline
+`onclick`, with its own small `<style>`. Rome's and Banyat's sets are
+placeholders with `id="cab-<key>-list"` — when the user supplies a line-up,
+replace that placeholder box with the minister grid (copy the atom2 markup).
+Never delete an older cabinet; add a new set and button instead.

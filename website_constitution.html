@@ -2243,7 +2243,7 @@ function playAudioMobile(btn, src) {
           <button class="db-tab-btn" onclick="switchTab('pms-tab', this)" style="border-color:rgba(250,204,21,0.6);color:#facc15;">🏛️ ทำเนียบนายกรัฐมนตรี (๓๕ ท่าน)</button>
 <button class="db-tab-btn" onclick="switchTab('atom-tab', this)" style="border-color:rgba(239,68,68,0.6);color:#fca5a5;">🧪 นายกฯ อะตอม (คนที่ ๓๓)</button>
 <button class="db-tab-btn" onclick="switchTab('atom-group-tab', this)" style="border-color:rgba(249,115,22,0.6);color:#fdba74;">⚛️ THE ATOM GROUP</button>
-          <button class="db-tab-btn" onclick="switchTab('cabinet-tab', this)" style="border-color:rgba(239,68,68,0.6);color:#f87171;">🏛️ คณะรัฐมนตรีชุดล่าสุดที่บันทึกไว้</button>
+          <button class="db-tab-btn" onclick="switchTab('cabinet-tab', this)" style="border-color:rgba(239,68,68,0.6);color:#f87171;">🏛️ คณะรัฐมนตรี</button>
           <button class="db-tab-btn" onclick="switchTab('ministries-tab', this)" style="border-color:rgba(59,130,246,0.6);color:#60a5fa;">🏛️ กระทรวงแผ่นดิน (โครงสร้างปฏิรูป)</button>
           <button class="db-tab-btn" onclick="switchTab('public-finance-tab', this)" style="border-color:rgba(234,179,8,0.6);color:#eab308;">💰 การคลังและงบประมาณ</button>
         </div>
@@ -4110,10 +4110,18 @@ function playAudioMobile(btn, src) {
         <div style="display:flex; align-items:center; gap:18px; margin-bottom:22px; border-bottom:2px solid rgba(239,68,68,0.4); background:linear-gradient(135deg, rgba(239,68,68,0.15) 0%, rgba(15,23,42,0.95) 100%); padding:24px; border-radius:18px; box-shadow:0 8px 24px rgba(0,0,0,0.4);">
           <div style="width:76px; height:76px; background:rgba(239,68,68,0.2); border:2px solid #f87171; border-radius:20px; display:flex; align-items:center; justify-content:center; font-size:40px; box-shadow:0 0 24px rgba(239,68,68,0.35); flex-shrink:0;">🏛️</div>
           <div style="flex:1;">
-            <h3 style="color:#f87171; font-family:'Outfit',sans-serif; margin:0 0 6px 0; font-size:25px; font-weight:800;">คณะรัฐมนตรีชุดล่าสุดที่บันทึกไว้</h3>
-            <p style="color:var(--text-muted); font-size:14px; margin:0; line-height:1.6;">รัฐบาล <strong style="color:#fca5a5;">ศ.ดร.นพ.วิทยสิทธิ์ ประสิทธิ์ผล (ฯพณฯ)</strong> นายกรัฐมนตรีคนที่ ๓๓ &middot; พรรคทักษิประชา &middot; พ.ศ. ๒๗๑๔ &ndash; ๒๗๓๐ (ครบ ๒ วาระ)</p>
+            <h3 style="color:#f87171; font-family:'Outfit',sans-serif; margin:0 0 6px 0; font-size:25px; font-weight:800;">คณะรัฐมนตรี</h3>
+            <p style="color:var(--text-muted); font-size:14px; margin:0; line-height:1.6;">ชุดที่บันทึกรายชื่อไว้ครบ: รัฐบาล <strong style="color:#fca5a5;">ศ.ดร.นพ.วิทยสิทธิ์ ประสิทธิ์ผล (ฯพณฯ)</strong> นายกรัฐมนตรีคนที่ ๓๓ &middot; พรรคทักษิประชา &middot; พ.ศ. ๒๗๑๔ &ndash; ๒๗๓๐ (ครบ ๒ วาระ)</p>
           </div>
         </div>
+
+        <div style="background:rgba(134,239,172,0.08); border:1px solid rgba(134,239,172,0.3); border-radius:10px; padding:13px 16px; margin:14px 0; font-size:13px; line-height:1.85; color:var(--text-muted);">🆕 <strong style="color:#86efac;">รัฐบาลชุดปัจจุบัน</strong> คือรัฐบาลผสมขั้วส้มแดง ๔ พรรค ๔๑๒ เสียง นำโดย <strong>รังสิมันต์ โรม</strong> นายกรัฐมนตรีคนที่ ๓๕ (พรรคก้าวไกล) เข้ารับตำแหน่งหลังการเลือกตั้ง พ.ศ. ๒๗๓๑ ยังไม่มีผลงานให้บันทึก ส่วนรัฐบาลก่อนหน้าของบัญญัติ บรรทัดฐาน (๒๗๓๐&ndash;๒๗๓๑) อยู่ได้ราว ๘ เดือนก่อนยุบสภา &mdash; เลือกดูคณะรัฐมนตรีแต่ละรัฐบาลได้จากปุ่มด้านล่าง ชุดที่บันทึกรายชื่อไว้ครบคือรัฐบาลอะตอม วาระที่ ๒</div>
+<style>.cab-switch{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 16px}.cab-btn{font:inherit;font-size:13.5px;font-weight:700;padding:8px 14px;border-radius:999px;cursor:pointer;background:rgba(255,255,255,0.04);color:#cbd5e1;border:1px solid rgba(212,175,55,0.35)}.cab-btn[aria-pressed="true"]{background:rgba(212,175,55,0.18);color:#f5d67a;border-color:#d4af37}.cab-empty{border:1px dashed rgba(212,175,55,0.45);border-radius:12px;padding:16px 18px;margin-top:12px;font-size:13.5px;line-height:1.85;color:#aab2bf}.cab-empty strong{color:#f5d67a}</style>
+<div data-cabs>
+<div class="cab-switch" role="group" aria-label="เลือกคณะรัฐมนตรี"><button type="button" class="cab-btn" aria-pressed="false" onclick="var w=this.closest('[data-cabs]');w.querySelectorAll('[data-cab]').forEach(function(e){e.hidden=e.getAttribute('data-cab')!=='rome'});w.querySelectorAll('.cab-btn').forEach(function(b){b.setAttribute('aria-pressed',b===this?'true':'false')},this)">🟠 รัฐบาลรังสิมันต์ · ๒๗๓๑&ndash;ปัจจุบัน</button><button type="button" class="cab-btn" aria-pressed="false" onclick="var w=this.closest('[data-cabs]');w.querySelectorAll('[data-cab]').forEach(function(e){e.hidden=e.getAttribute('data-cab')!=='banyat'});w.querySelectorAll('.cab-btn').forEach(function(b){b.setAttribute('aria-pressed',b===this?'true':'false')},this)">🔵 รัฐบาลบัญญัติ · ๒๗๓๐&ndash;๒๗๓๑</button><button type="button" class="cab-btn" aria-pressed="true" onclick="var w=this.closest('[data-cabs]');w.querySelectorAll('[data-cab]').forEach(function(e){e.hidden=e.getAttribute('data-cab')!=='atom2'});w.querySelectorAll('.cab-btn').forEach(function(b){b.setAttribute('aria-pressed',b===this?'true':'false')},this)">🔴 รัฐบาลอะตอม วาระที่ ๒ · ๒๗๒๒&ndash;๒๗๓๐</button></div>
+<div data-cab="rome" hidden><div style="display:flex;gap:12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.06);flex-wrap:wrap"><div style="flex:0 0 130px;font-size:12.5px;font-weight:700;color:#f5d67a">นายกรัฐมนตรี</div><div style="flex:1 1 240px;font-size:13.5px;color:#cbd5e1;line-height:1.8">รังสิมันต์ โรม &middot; นายกรัฐมนตรีคนที่ ๓๕ &middot; พรรคก้าวไกล</div></div><div style="display:flex;gap:12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.06);flex-wrap:wrap"><div style="flex:0 0 130px;font-size:12.5px;font-weight:700;color:#f5d67a">ช่วงเวลา</div><div style="flex:1 1 240px;font-size:13.5px;color:#cbd5e1;line-height:1.8">พ.ศ. ๒๗๓๑ &ndash; ปัจจุบัน</div></div><div style="display:flex;gap:12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.06);flex-wrap:wrap"><div style="flex:0 0 130px;font-size:12.5px;font-weight:700;color:#f5d67a">รัฐบาล</div><div style="flex:1 1 240px;font-size:13.5px;color:#cbd5e1;line-height:1.8">รัฐบาลผสมขั้วส้มแดง ๔ พรรค (ก้าวไกล &middot; ทักษิประชา &middot; ไทยรักไทย &middot; ธรรมปัญญา) ๔๑๒ / ๕๐๐ เสียง</div></div><div class="cab-empty" id="cab-rome-list">📋 <strong>รอบันทึกรายชื่อคณะรัฐมนตรี</strong> &mdash; รัฐบาลเพิ่งเข้ารับตำแหน่ง รายชื่อรัฐมนตรีจะเพิ่มลงในส่วนนี้</div></div>
+<div data-cab="banyat" hidden><div style="display:flex;gap:12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.06);flex-wrap:wrap"><div style="flex:0 0 130px;font-size:12.5px;font-weight:700;color:#f5d67a">นายกรัฐมนตรี</div><div style="flex:1 1 240px;font-size:13.5px;color:#cbd5e1;line-height:1.8">บัญญัติ บรรทัดฐาน &middot; นายกรัฐมนตรีคนที่ ๓๔ &middot; พรรคเสรีรวมไทย</div></div><div style="display:flex;gap:12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.06);flex-wrap:wrap"><div style="flex:0 0 130px;font-size:12.5px;font-weight:700;color:#f5d67a">ช่วงเวลา</div><div style="flex:1 1 240px;font-size:13.5px;color:#cbd5e1;line-height:1.8">พ.ศ. ๒๗๓๐ &ndash; ๒๗๓๑ (ราว ๘ เดือน ก่อนยุบสภา)</div></div><div style="display:flex;gap:12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.06);flex-wrap:wrap"><div style="flex:0 0 130px;font-size:12.5px;font-weight:700;color:#f5d67a">รัฐบาล</div><div style="flex:1 1 240px;font-size:13.5px;color:#cbd5e1;line-height:1.8">รัฐบาลผสม ๓ พรรค (เสรีรวมไทย &middot; ทักษิประชา &middot; ก้าวไกล) ๔๔๐ / ๕๐๐ เสียง</div></div><div class="cab-empty" id="cab-banyat-list">📋 <strong>รอบันทึกรายชื่อคณะรัฐมนตรี</strong> &mdash; ยังไม่มีรายชื่อรัฐมนตรีของรัฐบาลชุดนี้ เพิ่มลงในส่วนนี้ได้</div></div>
+<div data-cab="atom2">
 
         <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:12px; margin-bottom:20px;">
           <div style="background:rgba(15,18,25,0.6); border:1px solid rgba(239,68,68,0.3); border-radius:12px; padding:15px 17px; text-align:center;">
@@ -4322,8 +4330,9 @@ function playAudioMobile(btn, src) {
             </div>
           </div>
         </div>
-
-      </div>
+</div>
+</div>
+</div>
 
     </div>
 
@@ -5614,9 +5623,8 @@ function playAudioMobile(btn, src) {
             </div>
         </div><div style="background:rgba(250,204,21,0.05); border:1px solid rgba(250,204,21,0.26); border-left:4px solid #facc15; border-radius:10px; padding:16px 20px; margin-top:20px;">
           <div style="font-size:13.5px; color:#fde047; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:8px;">🔗 ความเชื่อมโยง</div>
-          <div style="font-size:12.8px; color:var(--text-muted); line-height:1.85;">รัฐมนตรีว่าการกระทรวงการคลังคนปัจจุบันคือ ดร.สมคิด จาตุศรีพิทักษ์ อดีตนายกรัฐมนตรีคนที่ ๓๒ &mdash; ดูแถบ &ldquo;🏛️ คณะรัฐมนตรีชุดล่าสุดที่บันทึกไว้&rdquo; ส่วนระบบค่าเงินบาทสยามและดุลอำนาจทางเศรษฐกิจโลกอยู่ในแถบ &ldquo;📈 เศรษฐกิจและค่าเงินโลก&rdquo;</div>
+          <div style="font-size:12.8px; color:var(--text-muted); line-height:1.85;">รัฐมนตรีว่าการกระทรวงการคลังคนปัจจุบันคือ ดร.สมคิด จาตุศรีพิทักษ์ อดีตนายกรัฐมนตรีคนที่ ๓๒ &mdash; ดูแถบ &ldquo;🏛️ คณะรัฐมนตรี&rdquo; ส่วนระบบค่าเงินบาทสยามและดุลอำนาจทางเศรษฐกิจโลกอยู่ในแถบ &ldquo;📈 เศรษฐกิจและค่าเงินโลก&rdquo;</div>
         </div>
-<div style="background:rgba(134,239,172,0.08); border:1px solid rgba(134,239,172,0.3); border-radius:10px; padding:13px 16px; margin:14px 0; font-size:13px; line-height:1.85; color:var(--text-muted);">🆕 <strong style="color:#86efac;">รัฐบาลชุดปัจจุบัน</strong> คือรัฐบาลผสมขั้วส้มแดง ๔ พรรค ๔๑๒ เสียง นำโดย <strong>รังสิมันต์ โรม</strong> นายกรัฐมนตรีคนที่ ๓๕ (พรรคก้าวไกล) เข้ารับตำแหน่งหลังการเลือกตั้ง พ.ศ. ๒๗๓๑ ยังไม่มีผลงานให้บันทึก ส่วนรัฐบาลก่อนหน้าของบัญญัติ บรรทัดฐาน (๒๗๓๐&ndash;๒๗๓๑) อยู่ได้ราว ๘ เดือนก่อนยุบสภา &mdash; รายชื่อคณะรัฐมนตรีด้านล่างจึงเป็นชุดล่าสุดที่บันทึกไว้ครบ คือรัฐบาลอะตอม วาระที่ ๒</div>
 
       </div>
 
@@ -18930,7 +18938,7 @@ function playAudioMobile(btn, src) {
           <div style="font-size:13.4px; color:var(--text-muted); line-height:1.95;"><p style="margin:0 0 11px 0;"><strong style="color:var(--text);">การยกระดับเป็นรุ่น ๒.๐:</strong> นายกรัฐมนตรีคนที่ ๒๕ <strong>วิโรจน์ ลักขณาดิศร</strong> (พ.ศ. ๒๖๓๗&ndash;๒๖๕๓) ยกระดับระบบเอไอแผ่นดินเป็น ThaiJavis 2.0 ให้ครอบคลุมงานบริการรัฐทั้งหมด พร้อมกับการปรับโครงสร้างกระทรวงครั้งใหญ่และการแก้ปัญหาน้ำท่วมถาวร</p><p style="margin:0 0 11px 0;"><strong style="color:var(--text);">เอไอที่ปรึกษาประจำกระทรวง:</strong> แผนกระจายอำนาจการตัดสินใจแห่งชาติในสมัยนายกรัฐมนตรีคนที่ ๓๓ กำหนดให้มีเอไอที่ปรึกษาประจำทุกกระทรวง ทำงานบนฐานข้อมูลเดียวกันนี้</p><p style="margin:0 0 11px 0;"><strong style="color:var(--text);">ความต่างจาก ParadoxAI:</strong> ThaiJavis เป็นระบบของ <strong>ภาครัฐ</strong> สำหรับงานราชการและบริการประชาชน ขณะที่ ParadoxAI เป็นโครงการปัญญาประดิษฐ์อีกสายหนึ่ง ที่มีข้อพิพาทด้านทรัพย์สินทางปัญญาอยู่ในเขตอำนาจศาลอนุญาโตตุลาการ SEATO &mdash; ดูแถบ &ldquo;🤖 โครงการ ParadoxAI&rdquo;</p></div>
         </div><div style="background:rgba(56,189,248,0.05); border:1px solid rgba(56,189,248,0.26); border-left:4px solid #38bdf8; border-radius:10px; padding:16px 20px; margin-top:20px;">
           <div style="font-size:13.5px; color:#38bdf8; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:8px;">🔗 อ่านต่อ</div>
-          <div style="font-size:12.8px; color:var(--text-muted); line-height:1.85;">แถบ <strong style="color:var(--text);">🤖 โครงการ ParadoxAI / ParadoxForward</strong> &middot; <strong style="color:var(--text);">🏛️ กระทรวงแผ่นดิน</strong> (กระทรวงดิจิทัลฯ ผู้ดูแลระบบ) &middot; <strong style="color:var(--text);">🏛️ คณะรัฐมนตรีชุดล่าสุดที่บันทึกไว้</strong></div>
+          <div style="font-size:12.8px; color:var(--text-muted); line-height:1.85;">แถบ <strong style="color:var(--text);">🤖 โครงการ ParadoxAI / ParadoxForward</strong> &middot; <strong style="color:var(--text);">🏛️ กระทรวงแผ่นดิน</strong> (กระทรวงดิจิทัลฯ ผู้ดูแลระบบ) &middot; <strong style="color:var(--text);">🏛️ คณะรัฐมนตรี</strong></div>
         </div>
 
       </div>
@@ -22583,7 +22591,7 @@ function playAudioMobile(btn, src) {
       
         <div class="comb-card">
           <div style="font-size:20px;font-weight:800;color:#f87171;margin-bottom:12px;display:flex;align-items:center;gap:10px;">🇷🇺 ๗. ความตกลงไทย&ndash;รัสเซีย ๔ ฉบับ (Thai&ndash;Russian Agreements)</div>
-          <div style="font-size:15px;color:var(--text-muted);line-height:1.9;text-align:justify;">ความตกลงทวิภาคีชุดใหญ่ที่สุดระหว่างไทยกับ <strong>สหพันธราชจักรวรรดิรัสเซีย</strong> จัดทำในสมัยนายกรัฐมนตรีคนที่ ๓๓ <strong>ศ.ดร.นพ.วิทยสิทธิ์ ประสิทธิ์ผล (ฯพณฯ)</strong> ร่วมกับอัครอธิบดี <strong>วลาดีมีร์ ปูติน</strong> ครอบคลุม ๔ ด้าน ได้แก่ <strong>พลังงาน การแลกเปลี่ยนวิจัยการแพทย์ ความร่วมมืออวกาศ และการค้าเสรี</strong> ผ่านมติรัฐสภาไทยด้วยคะแนน <strong>๘๙%</strong> ตามที่มาตรา ๘๔๑ กำหนดให้สนธิสัญญาระหว่างประเทศต้องผ่านรัฐสภา &mdash; ดูผู้รับผิดชอบรายกระทรวงได้ที่แท็บ &ldquo;🏛️ คณะรัฐมนตรีชุดล่าสุดที่บันทึกไว้&rdquo;</div>
+          <div style="font-size:15px;color:var(--text-muted);line-height:1.9;text-align:justify;">ความตกลงทวิภาคีชุดใหญ่ที่สุดระหว่างไทยกับ <strong>สหพันธราชจักรวรรดิรัสเซีย</strong> จัดทำในสมัยนายกรัฐมนตรีคนที่ ๓๓ <strong>ศ.ดร.นพ.วิทยสิทธิ์ ประสิทธิ์ผล (ฯพณฯ)</strong> ร่วมกับอัครอธิบดี <strong>วลาดีมีร์ ปูติน</strong> ครอบคลุม ๔ ด้าน ได้แก่ <strong>พลังงาน การแลกเปลี่ยนวิจัยการแพทย์ ความร่วมมืออวกาศ และการค้าเสรี</strong> ผ่านมติรัฐสภาไทยด้วยคะแนน <strong>๘๙%</strong> ตามที่มาตรา ๘๔๑ กำหนดให้สนธิสัญญาระหว่างประเทศต้องผ่านรัฐสภา &mdash; ดูผู้รับผิดชอบรายกระทรวงได้ที่แท็บ &ldquo;🏛️ คณะรัฐมนตรี&rdquo;</div>
         </div>
         <div style="background:linear-gradient(135deg, rgba(192,132,252,0.07) 0%, rgba(15,18,25,0.75) 100%); border:1px solid rgba(192,132,252,0.3); border-radius:14px; padding:18px 20px; margin-top:4px;">
           <div style="font-size:15px; color:#c084fc; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:12px;">📋 สรุปพันธกรณีระหว่างประเทศทั้ง ๗ รายการ</div>
@@ -30281,7 +30289,7 @@ function playAudioMobile(btn, src) {
 </div>
     <div style="background:rgba(239,68,68,0.05); border:1px solid rgba(239,68,68,0.26); border-left:4px solid #ef4444; border-radius:10px; padding:16px 20px; margin-top:20px;">
       <div style="font-size:13.5px; color:#fca5a5; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:8px;">🔗 อ่านต่อ</div>
-      <div style="font-size:12.8px; color:var(--text-muted); line-height:1.85;">แถบ <strong>🔴 พรรคสีแดง</strong> &middot; <strong>🏛️ ทำเนียบนายกรัฐมนตรี</strong> &middot; <strong>🏢 คณะรัฐมนตรีชุดล่าสุดที่บันทึกไว้</strong> &middot; <strong>🌐 Global Outlandish Centre (GOC)</strong> &middot; <strong>🕊️ สันนิบาตประชาชาติเสรี (LFN)</strong> &middot; <strong>🛡️ องค์การ SEATO</strong></div>
+      <div style="font-size:12.8px; color:var(--text-muted); line-height:1.85;">แถบ <strong>🔴 พรรคสีแดง</strong> &middot; <strong>🏛️ ทำเนียบนายกรัฐมนตรี</strong> &middot; <strong>🏢 คณะรัฐมนตรี</strong> &middot; <strong>🌐 Global Outlandish Centre (GOC)</strong> &middot; <strong>🕊️ สันนิบาตประชาชาติเสรี (LFN)</strong> &middot; <strong>🛡️ องค์การ SEATO</strong></div>
     </div>
   </div>
 
