@@ -783,3 +783,9 @@ Rome's cabinet was filled 2026-09-26 from the user's table (21 ministries,
 (let that badge wrap — a nowrap one overflowed the card) and an "อดีตนายกฯ"
 badge for former PMs. The headless-Chrome profile caches HTML: when a check
 shows the pre-edit page, add `?nc=N` to the URL before suspecting the edit.
+
+**Former-PM badges from memory missed three people.** The first Rome cabinet
+marked only Thaksin, Somkid and Piyabutr as อดีตนายกฯ; Thanathorn (16),
+Nattaphong (19) and Parit (20) are former PMs too and got no badge. → Before
+tagging anyone "อดีตนายกฯ", run every minister's name against
+`js/hall-data.js` (`node -e` over `HALL_DATA.pms`) and take the numbers from it.
