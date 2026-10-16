@@ -8,6 +8,7 @@ Blocks:
   ('p', html)                          ('note', html)                ('quote', html)
   ('list', [html, ...])                ('table', headers, rows)      ('time', [(when, title, html), ...])
   ('split', img, alt, caption, [(label, value), ...])               ('figure', img, alt, caption[, max_width_px])
+  ('raw', new_site_html, old_site_html)
 
 old_render(..., accent=('#fdba74', '251,146,60')) picks the old site's colour.
 """
@@ -47,6 +48,8 @@ def new_render(icon, title, lead, blocks):
             _, img, alt, cap, rows = b
             o.append(f'  <div class="nwc-split"><figure class="nwc-figure"><img src="{img}" alt="{alt}" loading="lazy"><figcaption>{cap}</figcaption></figure>'
                      '<div><dl class="nwc-dl">' + ''.join(f'<dt>{x}</dt><dd>{y}</dd>' for x, y in rows) + '</dl></div></div>')
+        elif k == 'raw':
+            o.append(b[1])
         elif k == 'figure':
             mw = b[4] if len(b) > 4 else 560
             o.append(f'  <figure class="nwc-figure" style="max-width: {mw}px; margin: 0 auto 14px"><img src="{b[1]}" alt="{b[2]}" loading="lazy" style="width: 100%; height: auto; object-fit: contain"><figcaption>{b[3]}</figcaption></figure>')
@@ -97,6 +100,8 @@ def old_render(icon, title, lead, blocks, accent=('#fdba74', '251,146,60')):
                      '<div style="flex:1 1 320px;">' + ''.join(
                          f'<div style="display:flex; gap:12px; padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.06); flex-wrap:wrap;"><div style="flex:0 0 120px; font-size:12.5px; font-weight:700; color:{C};">{x}</div>'
                          f'<div style="flex:1 1 200px; font-size:13.5px; color:var(--text-muted); line-height:1.8;">{y}</div></div>' for x, y in rows) + '</div></div>')
+        elif k == 'raw':
+            o.append(b[2])
         elif k == 'figure':
             mw = b[4] if len(b) > 4 else 560
             o.append(f'  <div style="max-width:{mw}px; margin:10px auto 16px;"><img src="{b[1]}" alt="{b[2]}" loading="lazy" style="width:100%; height:auto; border-radius:12px; display:block;"><div style="font-size:11.5px; color:var(--text-muted); margin-top:7px; text-align:center;">{b[3]}</div></div>')

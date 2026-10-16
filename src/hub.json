@@ -226,6 +226,11 @@
         "label": "การประท้วง & ทิศทางใหม่ ๒๗๓๗"
       },
       {
+        "id": "nsct-tab",
+        "icon": "📚",
+        "label": "ศนท."
+      },
+      {
         "id": "orange-party-tab",
         "icon": "🟠",
         "label": "พรรคสีส้ม"
