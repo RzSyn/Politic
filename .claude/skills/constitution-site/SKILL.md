@@ -837,3 +837,12 @@ Canon timeline at 2026-10-16: story has moved past the 31 Dec ๒๗๓๒ by-el
 the ศนท. protest / อุดมการณ์ใหม่ period (๒๗๓๖–๒๗๓๗, tab `protest-2737-tab`); user
 says the present is now ๒๗๓๘. Spellings to keep: ธีรภัทร วัฒนากร (phat-tab),
 ไตรทิศา รณปวัตน์ (parties tab) — the user's poll text spelled both differently.
+
+## `.nwc-figure` crops tall images — use `is-doc` for posters and graphics
+
+`css/site.css` caps `.nwc-figure img` at `max-height: 520px; object-fit: cover`.
+Portrait posters and poll graphics placed with a plain `nwc-figure` lost their
+top and bottom (the NIP poster lost its logo) — nothing in the structure checks
+notices. `.nwc-figure.is-doc` (`max-height: none; object-fit: contain`) shows the
+whole image; `tools/tab_blocks.py` now emits `is-doc` for both `figure` and
+`split`. Look at a screenshot of any new tall image before reporting it done.

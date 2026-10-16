@@ -241,6 +241,11 @@
         "label": "พรรคสีแดง"
       },
       {
+        "id": "new-red-party-tab",
+        "icon": "🔥",
+        "label": "พรรคสีแดงใหม่"
+      },
+      {
         "id": "independent-party-tab",
         "icon": "⚪",
         "label": "ผู้สมัครอิสระ"

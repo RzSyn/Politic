@@ -46,13 +46,13 @@ def new_render(icon, title, lead, blocks):
                 f'<div class="nwc-time-row"><div class="nwc-when">{w}</div><div><h5>{t}</h5><p>{p}</p></div></div>' for w, t, p in b[1]) + '</div>')
         elif k == 'split':
             _, img, alt, cap, rows = b
-            o.append(f'  <div class="nwc-split"><figure class="nwc-figure"><img src="{img}" alt="{alt}" loading="lazy"><figcaption>{cap}</figcaption></figure>'
+            o.append(f'  <div class="nwc-split"><figure class="nwc-figure is-doc"><img src="{img}" alt="{alt}" loading="lazy"><figcaption>{cap}</figcaption></figure>'
                      '<div><dl class="nwc-dl">' + ''.join(f'<dt>{x}</dt><dd>{y}</dd>' for x, y in rows) + '</dl></div></div>')
         elif k == 'raw':
             o.append(b[1])
         elif k == 'figure':
             mw = b[4] if len(b) > 4 else 560
-            o.append(f'  <figure class="nwc-figure" style="max-width: {mw}px; margin: 0 auto 14px"><img src="{b[1]}" alt="{b[2]}" loading="lazy" style="width: 100%; height: auto; object-fit: contain"><figcaption>{b[3]}</figcaption></figure>')
+            o.append(f'  <figure class="nwc-figure is-doc" style="max-width: {mw}px; margin: 0 auto 14px"><img src="{b[1]}" alt="{b[2]}" loading="lazy" style="width: 100%; height: auto; object-fit: contain"><figcaption>{b[3]}</figcaption></figure>')
         else:
             raise ValueError(k)
     if sec:
