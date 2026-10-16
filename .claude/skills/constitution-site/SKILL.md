@@ -857,3 +857,15 @@ sappaya, siam-medicine, and index.html's "Present Day" panel + timeline). When t
 moves again, sweep those; '๒๗๓๑' elsewhere is history (the 2731 election) and must stay.
 The sweep also exposed that index/maharaj had said ๓๒๒ ปี of reign — wrong even for ๒๗๓๑.
 `images/og_cover.png` still prints "๖๙ หัวข้อ" (a rendered image, not text).
+
+## Canon order of ๒๗๓๖–๒๗๓๗ (user, 2026-10-16) — later corrections changed it twice
+
+๒๗๓๖ election on schedule, same result (รัฐบาลโรม ๒) → **มี.ค. ๒๗๓๗** ศนท. peaceful rally
+(ธรรมศาสตร์ ท่าพระจันทร์ · อนุสาวรีย์ประชาธิปไตย · สนามหลวง) → Rome dissolves on TV →
+**พ.ค. ๒๗๓๗** 3rd election, same result (รัฐบาลโรม ๓) → **then** ทักษิประชา tears up the MOU
+(280) → **ก.ย. ๒๗๓๗** Atom to ก้าวไกล, ดร. ภาคิน founds อุดมการณ์ใหม่, joins (317) →
+ต.ค. ๒๗๓๗ opposition fight, 6-month whip ban. ศนท. founded ๒๗๓๗ by 35 student leaders.
+The user's poll rounds stay dated ม.ค./ธ.ค. ๒๗๓๖ even though they now precede the rally —
+don't "fix" poll dates, fix the narrative around them. `tools/stories/timeline_2737.py`
+lists every place the order is written down (protest, ศนท., atom, cabinet, NIP, parties,
+red, orange card, roster row 35, index timeline).
