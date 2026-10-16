@@ -818,3 +818,22 @@ pension 400,000, poverty line 379,050, GDP per head 30,418,500/yr) lives in
 `welfare-economy-tab` (its own tab since 2026-09-27 — the user found a small box
 inside public-finance "ดูไม่ค่อยเข้า"; `#living-standards` there is now only a
 pointer). The wage is repeated on ministries-tab — change both together.
+
+## Session scratchpads get wiped — keep reusable tools in `tools/`
+
+Between sessions (2026-09-27 → 2026-10-16) the session scratchpad was emptied:
+the block renderer every story tab used and the structure validator were gone,
+and the first run of a new script died on `FileNotFoundError`. Both now live in
+the repo: `tools/tab_blocks.py` (`new_render` / `old_render` / `div_span` /
+`balanced`, block list documented at the top) and `tools/validate_old.py`
+(prints the RULE 2 line; healthy = `unclosed 2 | stray 0 | ... => OK`).
+Anything a later session will need goes in `tools/`, never only in scratchpad.
+
+Same day, `python` on PATH started resolving to the Windows Store stub
+("Python was not found"). Use the real interpreter:
+`/c/Users/ASUA/AppData/Local/Python/pythoncore-3.14-64/python.exe` (or `py -3`).
+
+Canon timeline at 2026-10-16: story has moved past the 31 Dec ๒๗๓๒ by-election to
+the ศนท. protest / อุดมการณ์ใหม่ period (๒๗๓๖–๒๗๓๗, tab `protest-2737-tab`); user
+says the present is now ๒๗๓๘. Spellings to keep: ธีรภัทร วัฒนากร (phat-tab),
+ไตรทิศา รณปวัตน์ (parties tab) — the user's poll text spelled both differently.
