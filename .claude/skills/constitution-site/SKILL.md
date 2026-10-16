@@ -856,7 +856,11 @@ present-tense numbers (chakri, maharaj incl. its reign bar chart, national-days,
 sappaya, siam-medicine, and index.html's "Present Day" panel + timeline). When the year
 moves again, sweep those; '๒๗๓๑' elsewhere is history (the 2731 election) and must stay.
 The sweep also exposed that index/maharaj had said ๓๒๒ ปี of reign — wrong even for ๒๗๓๑.
-`images/og_cover.png` still prints "๖๙ หัวข้อ" (a rendered image, not text).
+`images/og_cover.png` was repainted to "๗๖ หัวข้อ" (it had said ๖๘). To change one line of a
+rendered image: print a per-row brightness profile first and take the band between the
+empty rows — a first attempt guessed a 470–539 band, caught the lines above and below and
+smeared them. Tahoma 23 px gold (212,168,67) matches that line; the original was untouched
+because the bad result was written to scratchpad, never over the file.
 
 ## Canon order of ๒๗๓๖–๒๗๓๗ (user, 2026-10-16) — later corrections changed it twice
 
