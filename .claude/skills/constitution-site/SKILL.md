@@ -846,3 +846,14 @@ top and bottom (the NIP poster lost its logo) — nothing in the structure check
 notices. `.nwc-figure.is-doc` (`max-height: none; object-fit: contain`) shows the
 whole image; `tools/tab_blocks.py` now emits `is-doc` for both `figure` and
 `split`. Look at a screenshot of any new tall image before reporting it done.
+
+## Present year is ๒๗๓๘ (set 2026-10-16)
+
+Numbers that follow from it: ราชวงศ์จักรี ๕๐๖ ปี (๒๒๓๒–๒๗๓๘; ครบ ๕๐๐ ปีเมื่อ ๒๗๓๒) ·
+ร.๙ ๓๖๗ พรรษา, ๓๖๘ on 5 Dec ๒๗๓๘ · ครองราชย์ ๓๓๗ ปี (since ๒๔๐๑) · สัปปายะ ๓๕๘ ปี (since ๒๓๘๐).
+Family ages stay locked at ๙ มิ.ย. ๒๗๓๑. `tools/stories/year_2738.py` shows which tabs carry
+present-tense numbers (chakri, maharaj incl. its reign bar chart, national-days, rama9,
+sappaya, siam-medicine, and index.html's "Present Day" panel + timeline). When the year
+moves again, sweep those; '๒๗๓๑' elsewhere is history (the 2731 election) and must stay.
+The sweep also exposed that index/maharaj had said ๓๒๒ ปี of reign — wrong even for ๒๗๓๑.
+`images/og_cover.png` still prints "๖๙ หัวข้อ" (a rendered image, not text).
