@@ -564,6 +564,14 @@ The user asked for the whole site to be rebuilt with the same content: formal, d
 - Phase 1 (done): shell, table of contents, search + origin filters, jump-to-article, 2540 comparisons, cross-ref previews, glossary, mourning mode (reuses the dedication block verbatim and the saved `constTheme = 'bw'`), full charter.
 - Next phases: move the 68 dashboard tabs group by group into the new page's archive section; until then it links to the old page.
 - Check a build with: div/section/article balance, `art_1..art_1160` contiguous, every `.cross-ref` resolves, 11 compare panels, no missing local files — then DevTools screenshots.
+- **Word / PDF / สารบัญ files** come from `tools/build_charter_files.py`, which reads the charter out of
+  `website_new.html` (run `build_site.py` first) and writes `files/รัฐธรรมนูญ_๒๕๒๕_แก้ไขเพิ่มเติม.docx/.pdf`,
+  `files/สารบัญรัฐธรรมนูญ.docx` and the print page `constitution_2525.html`, then reads all of them back
+  and fails unless every character matches the site. `Genarate/generate_pdf.py` / `generate_word.py` are the
+  old pipeline (2540 text + patches → `processed_constitution.txt`) and are out of date; do not use them.
+  Chromium prints stray Thai marks ("ตั้", "นี้") at the foot of a page when a line moves to the next one;
+  `overflow: hidden` on each text block clips them, so list numbers must sit in padding, not a negative margin.
+  `*.py` is git-ignored, so add new scripts with `git add -f`.
 
 ## Re-laying out the new site's tabs (tools/relayout.py)
 
