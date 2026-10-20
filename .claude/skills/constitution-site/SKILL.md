@@ -349,7 +349,18 @@ chapter-map cards, ~160 refs across 17 dashboard tabs, and totals
 quote 2540 numbering even in their "ฉบับแก้ไขใหม่" half. Check afterwards that
 ids run 1..N with no gaps, every `data-target` resolves, and the nav ranges are
 contiguous. Historical statements keep historical counts: the referendum tab's
-"ฉบับที่ผ่านมติ" stays ๑,๑๕๙ because ม.๒๙๖ was added after promulgation.
+"ฉบับที่ผ่านมติ" stays ๑,๑๕๙. Canon since 2026-10-20 (user): ม.๒๙๖ was in the
+charter from the start; the article added after promulgation (สมัยนายกฯ คนที่ ๓๓)
+is the coup ban, data-origin `later`, now ม.๑๑๓๗.
+
+**บทเฉพาะกาล moved to the end (2026-10-20).** `tools/charter/move_transitional.py`
+renumbered: ม.๑-๓๓๗ unchanged; หมวด ๑๗-๓๖ = ม.๓๓๘-๑,๑๒๙ (old n-23); หมวดพิเศษ =
+ม.๑,๑๓๐-๑,๑๓๗ (coup ban ม.๑๑๓๗); บทเฉพาะกาล = ม.๑,๑๓๘-๑,๑๖๐ (old n+800) and is
+the last section (`ch_37`), with the countersignature after it. Section ids follow
+page order (ch_16..ch_36 = หมวด ๑๗..หมวดพิเศษ). Anything written before that date
+— commit messages, audit_conflicts.md, story_conflicts.md, fix_xrefs.py — uses the
+old numbers. js/constitution.js had been on an even older special-chapter numbering
+(๑๑๒๙-๑๑๓๖) and was corrected in the same pass.
 Clauses (๒)–(๗) of ม.๒๙๕ sit as loose text in a `div.normal-text` *after* the
 card closes, not inside it.
 
@@ -474,8 +485,8 @@ real files with error pages. Read the bytes, not the subject line.
 
 **Derived a structure from a count instead of reading it.** Wrote that
 referendum round 5 ratified "หมวด ๓๗-๓๘" because the site says ๓๘ หมวด. No
-such chapters exist: the charter is หมวด ๑-๓๖ + บทเฉพาะกาล + หมวดพิเศษ
-(ม.๑๑๕๒-๑๑๕๙). Then labelled the chapter map's rounds from the referendum tab's
+such chapters exist: the charter is หมวด ๑-๓๖ + หมวดพิเศษ + บทเฉพาะกาล
+(today ม.๑๑๓๐-๑๑๓๗ and ม.๑๑๓๘-๑๑๖๐). Then labelled the chapter map's rounds from the referendum tab's
 prose ("รอบที่ ๔") when every article carries its own tag
 ("ประชามติรอบที่ ๔-๕"). → RULE 5: the per-article tags and the `<h>` headings
 are the source of truth; extract them, don't infer them.
@@ -523,6 +534,47 @@ Word, which has no Thai word breaking, lines broke only at spaces and were stret
 "ก า ร ติ ช ม", and "ม า ต ร า ๑ ๑" spread across a whole line. The user sent screenshots ("T-T").
 → Body text in the Word file is left-aligned. A LibreOffice render is not proof of how Word lays out
 Thai; when a choice depends on Word's own behaviour, pick the safe one or ask for a screenshot.
+
+**Called canon a typo while reviewing the charter.** Asked for an opinion on the
+2525 text, I listed "replaces รธน. ๒๔๔๕" in the preamble as a find-and-replace
+error, because 2445 is before 2475 in real history. In this site's canon รธน. ๒๔๔๕
+is the previous constitution (this file says so twice above). → Before calling
+anything in the charter an error, grep the site for it; a date that looks wrong
+by real-world history is usually canon.
+
+**Pointed a new article at the wrong body twice.** Writing หมวด ๓๐ and ๓๕, I
+cited "คณะกรรมการตามมาตรา ๘๘๙" (which is กรมศิลปากร) and "มาตรา ๑๐๘๖" (a
+powers clause, not the commission). Both were caught by reading the generated
+article back before applying. → After writing articles that cite each other,
+list every "มาตรา N" with the first words of article N and read the list.
+
+**Cross-references in ม.๑-๓๖๐ carried 2540 numbering (fixed 2026-10-20).** 327
+"มาตรา N" references pointed at the wrong article (e.g. "วุฒิสภามีมติตามมาตรา ๓๐๘ ให้
+ถอดถอน" where ม.๓๐๘ is the prosecutor commission). `tools/charter/fix_xrefs.py`
+matches each article to its source in `constitution_2540.html` and re-points
+references by **position** in that source; a first version that went by number
+alone skipped ม.๑๘๓ (๑๒) because the stale "๒๑๑" happened to equal the new number
+of another cited article. Dashboard tabs copied some of the stale numbers
+(e.g. "แบ่งเขต ๔๐๐ — มาตรา ๑๐๒") — see `tools/charter/story_conflicts.md`.
+Article text is extracted from `article-text`, `list-item` **and `sub-para`**
+paragraphs; missing `sub-para` hid half the references in the first audit.
+
+## Chapters 17-36 (ม.๓๖๑-๑,๑๕๐) — rewritten 2026-10-20
+
+These chapters used to be 792 sentences built from 16 templates ("เพื่อประโยชน์ของ
+ประชาชนและผู้ใช้บริการ", tax deductions for the coup ban, yearly funding for the
+death penalty). The user asked for them to be rewritten, with the important
+articles left alone ("อย่าไปแก้ ... เช่นมาตราสุดท้าย"). Rules kept:
+
+- Every article keeps its **number and topic**. Topic t of a chapter sits at
+  start+t, +8, +16, +24, +32; dashboard tabs cite these (today ม.๓๗๘/๓๘๖,
+  ๕๔๒-๕๗๔, ๗๓๘-๗๗๗ by topic, ๗๗๘-๗๘๕, ๘๑๘-๘๒๒), so a reshuffle would break them.
+- ม.๑,๑๒๘-๑,๑๒๙ and หมวดพิเศษ (๑,๑๓๐-๑,๑๓๗) are never touched. ม.๑๐๙๒ defers to
+  ม.๑๑๓๗ for the penalty on coup leaders instead of restating it.
+- Text lives in `tools/charter/chNN.txt` (`t.k|text`) and is applied by
+  `tools/charter/apply_ch17_36.py`; edit the txt and re-run rather than editing
+  the HTML. Then `build_site.py` and `build_charter_files.py` (needs `pip install
+  pymupdf` for its read-back check).
 
 ## Known-good baseline
 

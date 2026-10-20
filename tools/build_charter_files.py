@@ -299,7 +299,7 @@ def new_document(gazette_header=True):
 
 
 GAZETTE_ISSUE = 'เล่ม ๙๙ ตอนที่ ๑๔๕ ก'
-GAZETTE_DATE = '๑๑ ตุลาคม ๒๕๒๕'
+GAZETTE_DATE = '๕ ธันวาคม ๒๕๒๕'
 # Left-aligned on purpose: Thai distributed (and justify) letter-spaced whole lines in the user's Word,
 # which has no Thai word breaking and can only break at spaces ("ก า ร ติ ช ม", "ม า ต ร า ๑ ๑").
 DIST = WD_ALIGN_PARAGRAPH.LEFT
@@ -429,7 +429,7 @@ body = ['''<div class="first-page-header">
   <table class="gazette-meta"><tr>
     <td style="text-align:left;width:35%">เล่ม ๙๙ ตอนที่ ๑๔๕ ก</td>
     <td style="text-align:center;width:30%;font-weight:bold">ราชกิจจานุเบกษา</td>
-    <td style="text-align:right;width:35%">๑๑ ตุลาคม ๒๕๒๕</td>
+    <td style="text-align:right;width:35%">''' + GAZETTE_DATE + '''</td>
   </tr></table>
   <hr class="double-line">
   <div class="garuda-container"><img src="''' + GARUDA_SVG + '''" class="garuda-img" alt=""></div>
@@ -538,7 +538,7 @@ expected = squash(''.join([title] + king_lines + preamble + [
 
 got_word = squash(''.join(p.text for p in Document(WORD_OUT).paragraphs))
 assert got_word == expected, 'Word text differs from website_new.html'
-gazette_head = lambda s: re.sub(r'เล่ม๙๙ตอนที่๑๔๕กราชกิจจานุเบกษา(หน้า[๐-๙]+|๑๑ตุลาคม๒๕๒๕)', '', s)
+gazette_head = lambda s: re.sub(r'เล่ม๙๙ตอนที่๑๔๕กราชกิจจานุเบกษา(หน้า[๐-๙]+|' + squash(GAZETTE_DATE) + ')', '', s)
 got_html = gazette_head(squash(text_of(page[page.index('<body>'):])))
 assert got_html == expected, 'print page text differs from website_new.html'
 import fitz  # PyMuPDF
