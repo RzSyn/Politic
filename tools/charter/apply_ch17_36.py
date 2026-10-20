@@ -1,4 +1,4 @@
-"""Rewrite the article text of หมวด ๑๗-๓๖ (ม.๓๖๑-๑,๑๕๐) in website_constitution.html.
+"""Rewrite the article text of หมวด ๑๗-๓๖ (ม.๓๓๘-๑,๑๒๗) in website_constitution.html.
 
 Each chapter keeps its 8 topics and every article keeps its number and topic, so the
 dashboard tabs that cite these articles stay correct.  Topic t of a chapter sits at
@@ -6,7 +6,7 @@ articles start+t, start+8+t, start+16+t, start+24+t, start+32+t.
 
 Source files: tools/charter/chNN.txt, one line per article:  t.k|text
 (t = topic 0-7, k = 1-5 = which of the topic's five articles).
-ม.๑,๑๕๑-๑,๑๕๒ and หมวดพิเศษ are never touched.
+ม.๑,๑๒๘-๑,๑๒๙ and หมวดพิเศษ are never touched.
 
     python tools/charter/apply_ch17_36.py            # all chapter files present
     python tools/charter/apply_ch17_36.py 17 18      # only these chapters
@@ -19,9 +19,10 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 HTML = os.path.join(ROOT, 'website_constitution.html')
 HERE = os.path.dirname(os.path.abspath(__file__))
 
-STARTS = [361, 401, 441, 481, 521, 561, 601, 641, 681, 721,
-          761, 801, 841, 880, 919, 958, 997, 1036, 1075, 1114, 1153]
-PROTECTED = {1151, 1152}
+# numbering after move_transitional.py put บทเฉพาะกาล at the end (หมวด ๑๗ starts at ม.๓๓๘)
+STARTS = [338, 378, 418, 458, 498, 538, 578, 618, 658, 698,
+          738, 778, 818, 857, 896, 935, 974, 1013, 1052, 1091, 1130]
+PROTECTED = {1128, 1129}
 TH = '๐๑๒๓๔๕๖๗๘๙'
 
 

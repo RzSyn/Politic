@@ -10,6 +10,8 @@ same position and that 2540 article now lives under a different 2525 number.
 
 Only the article bodies are touched; .compare-container panes quote 2540 and are
 left alone.  Run tools/validate_old.py afterwards.
+
+Ran before move_transitional.py, so it uses the old numbering (บทเฉพาะกาล = ม.๓๓๘-๓๖๐).
 """
 import html
 import os
