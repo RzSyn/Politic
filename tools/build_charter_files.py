@@ -18,7 +18,9 @@ import subprocess
 import sys
 
 from docx import Document
-from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.enum.style import WD_STYLE_TYPE
+from docx.enum.table import WD_CELL_VERTICAL_ALIGNMENT, WD_TABLE_ALIGNMENT
+from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_TAB_ALIGNMENT
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Cm, Pt, RGBColor
@@ -127,242 +129,280 @@ def chapter_range(ch):
     return (min(n), max(n)) if n else None
 
 
-# ==================== Word helpers (same look as Genarate/generate_word.py) ====================
+# ==================== Word ====================
+#
+# Every paragraph uses a named style and runs carry no formatting except bold on "มาตรา N", so the
+# file stays clean when edited in Word. Thai text is a complex script: Word reads its font, size and
+# bold from w:cs / w:szCs / w:bCs, so each of those is set next to its Latin twin, in schema order.
 
-def set_thai_language(run):
-    rPr = run._element.get_or_add_rPr()
-    lang = OxmlElement('w:lang')
-    lang.set(qn('w:val'), 'th-TH')
-    lang.set(qn('w:bidi'), 'th-TH')
-    lang.set(qn('w:eastAsia'), 'th-TH')
-    rPr.append(lang)
+def _el(tag, **attrs):
+    el = OxmlElement(tag)
+    for k, v in attrs.items():
+        el.set(qn('w:' + k), v)
+    return el
 
 
-def set_document_thai_language(doc):
-    styles_element = doc.styles.element
-    docDefaults = styles_element.find(qn('w:docDefaults'))
-    if docDefaults is None:
-        docDefaults = OxmlElement('w:docDefaults')
-        styles_element.insert(0, docDefaults)
-    rPrDefault = docDefaults.find(qn('w:rPrDefault'))
-    if rPrDefault is None:
-        rPrDefault = OxmlElement('w:rPrDefault')
-        docDefaults.append(rPrDefault)
-    rPr = rPrDefault.find(qn('w:rPr'))
-    if rPr is None:
-        rPr = OxmlElement('w:rPr')
-        rPrDefault.append(rPr)
-    rFonts = OxmlElement('w:rFonts')
-    for k in ('ascii', 'hAnsi', 'cs', 'eastAsia'):
+def cs_twins(rPr, bold=None):
+    """Add w:bCs after w:b and w:szCs after w:sz (Word ignores them when they sit out of order)."""
+    sz = rPr.find(qn('w:sz'))
+    if sz is not None and rPr.find(qn('w:szCs')) is None:
+        sz.addnext(_el('w:szCs', val=sz.get(qn('w:val'))))
+    b = rPr.find(qn('w:b'))
+    if b is not None and rPr.find(qn('w:bCs')) is None:
+        b.addnext(_el('w:bCs', **({'val': b.get(qn('w:val'))} if b.get(qn('w:val')) else {})))
+
+
+def thai_fonts(rPr):
+    """Explicit TH Sarabun New for every script, with the theme-font attributes removed."""
+    rFonts = rPr.find(qn('w:rFonts'))
+    if rFonts is None:
+        rFonts = _el('w:rFonts')
+        rPr.insert(0, rFonts)
+    for k in list(rFonts.attrib):
+        del rFonts.attrib[k]
+    for k in ('ascii', 'hAnsi', 'eastAsia', 'cs'):
         rFonts.set(qn('w:' + k), THAI_FONT)
-    rPr.append(rFonts)
-    for tag in ('w:sz', 'w:szCs'):
-        el = OxmlElement(tag)
-        el.set(qn('w:val'), '32')
-        rPr.append(el)
-    lang = OxmlElement('w:lang')
-    lang.set(qn('w:val'), 'th-TH')
-    lang.set(qn('w:bidi'), 'th-TH')
-    lang.set(qn('w:eastAsia'), 'th-TH')
-    rPr.append(lang)
-
-    style = doc.styles['Normal']
-    style.font.name = THAI_FONT
-    style.font.size = Pt(16)
-    style.element.rPr.rFonts.set(qn('w:cs'), THAI_FONT)
-    pf = style.paragraph_format
-    pf.space_before = Pt(0)
-    pf.space_after = Pt(3)
-    pf.line_spacing = 1.15
 
 
-def add_thai_run(paragraph, text, bold=False, size=Pt(16)):
-    run = paragraph.add_run(text)
-    run.font.name = THAI_FONT
-    run._element.rPr.rFonts.set(qn('w:cs'), THAI_FONT)
-    run.font.bold = bold
-    run.font.size = size
-    rPr = run._element.get_or_add_rPr()
-    szCs = OxmlElement('w:szCs')
-    szCs.set(qn('w:val'), str(int(size.pt * 2)))
-    rPr.append(szCs)
+def set_defaults(doc):
+    styles = doc.styles.element
+    defaults = styles.find(qn('w:docDefaults'))
+    for child in list(defaults):
+        defaults.remove(child)
+    rPr = _el('w:rPr')
+    rPr.append(_el('w:rFonts', ascii=THAI_FONT, hAnsi=THAI_FONT, eastAsia=THAI_FONT, cs=THAI_FONT))
+    rPr.append(_el('w:noProof'))                         # no red underlines on Thai
+    rPr.append(_el('w:sz', val='32'))
+    rPr.append(_el('w:szCs', val='32'))
+    rPr.append(_el('w:lang', val='th-TH', eastAsia='th-TH', bidi='th-TH'))
+    rd = _el('w:rPrDefault')
+    rd.append(rPr)
+    pPr = _el('w:pPr')
+    pPr.append(_el('w:spacing', after='0', line='240', lineRule='auto'))
+    pd = _el('w:pPrDefault')
+    pd.append(pPr)
+    defaults.append(rd)
+    defaults.append(pd)
+    normal = doc.styles['Normal']
+    thai_fonts(normal.element.get_or_add_rPr())
+    normal.font.size = Pt(16)
+    cs_twins(normal.element.rPr)
+    pf = normal.paragraph_format
+    pf.space_before, pf.space_after, pf.line_spacing = Pt(0), Pt(0), 1.0
+    pf.widow_control = True
+
+
+def add_style(doc, name, size=16, bold=False, align=None, before=0, after=0, first=None, left=None,
+              keep_next=False, page_break=False, outline=None):
+    st = doc.styles.add_style(name, WD_STYLE_TYPE.PARAGRAPH)
+    st.base_style = doc.styles['Normal']
+    st.quick_style = True
+    st.font.size = Pt(size)
+    st.font.color.rgb = RGBColor(0, 0, 0)
     if bold:
-        rPr.append(OxmlElement('w:bCs'))
-    set_thai_language(run)
-    return run
-
-
-def add_lines(paragraph, lines, bold=False, size=Pt(16)):
-    for i, line in enumerate(lines):
-        run = add_thai_run(paragraph, line, bold=bold, size=size)
-        if i < len(lines) - 1:
-            run.add_break()
-
-
-def new_paragraph(doc, align=None, before=None, after=None, first=None, left=None):
-    p = doc.add_paragraph()
+        st.font.bold = True
+    thai_fonts(st.element.get_or_add_rPr())
+    cs_twins(st.element.rPr)
+    pf = st.paragraph_format
     if align is not None:
-        p.alignment = align
-    pf = p.paragraph_format
-    if before is not None:
-        pf.space_before = Pt(before)
-    if after is not None:
-        pf.space_after = Pt(after)
+        pf.alignment = align
+    pf.space_before, pf.space_after = Pt(before), Pt(after)
     if first is not None:
         pf.first_line_indent = Cm(first)
     if left is not None:
         pf.left_indent = Cm(left)
-    pPr = p._element.get_or_add_pPr()
-    rPr = OxmlElement('w:rPr')
-    rPr.append(OxmlElement('w:noProof'))
-    pPr.append(rPr)
-    return p
+    pf.keep_with_next = keep_next
+    pf.page_break_before = page_break
+    if outline is not None:                              # shows in Word's navigation pane
+        st.element.get_or_add_pPr().append(_el('w:outlineLvl', val=str(outline)))
+    return st
 
 
-def page_number_field(paragraph):
-    for kind, text in (('begin', None), (None, ' PAGE '), ('end', None)):
+def bold_run(paragraph, text):
+    run = paragraph.add_run(text)
+    run.font.bold = True
+    cs_twins(run._element.get_or_add_rPr())
+    return run
+
+
+def add_lines(paragraph, lines):
+    for i, line in enumerate(lines):
+        run = paragraph.add_run(line)
+        if i < len(lines) - 1:
+            run.add_break()
+
+
+def field(paragraph, code):
+    for kind in ('begin', None, 'end'):
         run = paragraph.add_run()
         if kind:
-            el = OxmlElement('w:fldChar')
-            el.set(qn('w:fldCharType'), kind)
+            run._element.append(_el('w:fldChar', fldCharType=kind))
         else:
-            el = OxmlElement('w:instrText')
-            el.set(qn('xml:space'), 'preserve')
-            el.text = text
-        run._element.append(el)
+            instr = _el('w:instrText')
+            instr.set(qn('xml:space'), 'preserve')
+            instr.text = ' %s ' % code
+            run._element.append(instr)
 
 
-def setup_page(doc):
+def header_line(paragraph, left, center, right_text=None, page=False, bold_center=False):
+    """left <tab> centre <tab> right, on one line with a rule under it (the gazette header)."""
+    paragraph.style = 'หัวกระดาษ'
+    paragraph.add_run(left + '\t')
+    if bold_center:
+        bold_run(paragraph, center)
+    else:
+        paragraph.add_run(center)
+    paragraph.add_run('\t' + (right_text or ''))
+    if page:
+        field(paragraph, 'PAGE')                        # Thai digits come from the section's pgNumType
+
+
+TEXT_W = 16.0          # A4 21 cm − left 3 cm − right 2 cm
+
+
+def setup_page(doc, gazette_header=True):
     section = doc.sections[0]
     section.page_width, section.page_height = Cm(21), Cm(29.7)
-    section.top_margin = section.bottom_margin = section.right_margin = Cm(2.54)
-    section.left_margin = Cm(3.17)
-    hp = section.header.paragraphs[0]
-    hp.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    add_thai_run(hp, 'ราชกิจจานุเบกษา  ฉบับพิเศษ', size=Pt(12))
-    fp = section.footer.paragraphs[0]
-    fp.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    page_number_field(fp)
+    section.top_margin, section.bottom_margin = Cm(2.5), Cm(2)
+    section.left_margin, section.right_margin = Cm(3), Cm(2)
+    section.header_distance, section.footer_distance = Cm(1.25), Cm(1)
+    hs = add_style(doc, 'หัวกระดาษ', size=12, after=0)
+    hs.paragraph_format.tab_stops.add_tab_stop(Cm(TEXT_W / 2), WD_TAB_ALIGNMENT.CENTER)
+    hs.paragraph_format.tab_stops.add_tab_stop(Cm(TEXT_W), WD_TAB_ALIGNMENT.RIGHT)
+    border = _el('w:pBdr')
+    border.append(_el('w:bottom', val='single', sz='6', space='4', color='000000'))
+    hs.element.get_or_add_pPr().append(border)
+    section._sectPr.append(_el('w:pgNumType', fmt='thaiNumbers'))
+    if gazette_header:
+        section.different_first_page_header_footer = True
+        header_line(section.first_page_header.paragraphs[0], GAZETTE_ISSUE, 'ราชกิจจานุเบกษา', GAZETTE_DATE,
+                    bold_center=True)
+        header_line(section.header.paragraphs[0], GAZETTE_ISSUE, 'ราชกิจจานุเบกษา', 'หน้า ', page=True)
+    else:
+        p = section.header.paragraphs[0]
+        p.style = 'หัวกระดาษ'
+        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p.add_run(FULL_TITLE)
 
 
-def finalize_document(doc):
-    settings = doc.settings.element
-    proof = OxmlElement('w:proofState')
-    proof.set(qn('w:spelling'), 'clean')
-    proof.set(qn('w:grammar'), 'clean')
-    settings.append(proof)
-    lang = settings.find(qn('w:themeFontLang'))
-    if lang is None:
-        lang = OxmlElement('w:themeFontLang')
-        settings.append(lang)
-    lang.set(qn('w:val'), 'th-TH')
-    lang.set(qn('w:bidi'), 'th-TH')
-
-
-def new_document():
+def new_document(gazette_header=True):
     doc = Document()
-    setup_page(doc)
-    set_document_thai_language(doc)
+    set_defaults(doc)
+    setup_page(doc, gazette_header)
     doc.core_properties.title = FULL_TITLE
     doc.core_properties.author = 'รัฐธรรมนุญจำลอง'
+    lang = doc.settings.element.find(qn('w:themeFontLang'))
+    if lang is not None:
+        lang.set(qn('w:val'), 'th-TH')
+        lang.set(qn('w:bidi'), 'th-TH')
     return doc
 
 
-# ==================== Main Word document ====================
-
-def add_items(doc, items, art_no=None):
-    for k, item in enumerate(items):
-        if item[0] == 'list':
-            p = new_paragraph(doc, align=WD_ALIGN_PARAGRAPH.JUSTIFY, after=1, left=2.2, first=-0.7)
-            add_thai_run(p, item[1] + ' ')
-            add_thai_run(p, item[2])
-        else:
-            p = new_paragraph(doc, align=WD_ALIGN_PARAGRAPH.JUSTIFY, after=3, first=1.5)
-            if k == 0 and art_no is not None:
-                add_thai_run(p, 'มาตรา %s  ' % thai(art_no), bold=True)
-            add_thai_run(p, item[1])
-
+GAZETTE_ISSUE = 'เล่ม ๙๙ ตอนที่ ๑๔๕ ก'
+GAZETTE_DATE = '๑๑ ตุลาคม ๒๕๒๕'
+DIST = WD_ALIGN_PARAGRAPH.THAI_JUSTIFY      # Thai distributed: spreads letters, not just the spaces
 
 doc = new_document()
-p = new_paragraph(doc, align=WD_ALIGN_PARAGRAPH.CENTER, before=24, after=6)
-p.add_run().add_picture(GARUDA_PNG, width=Cm(3.2))
-p = new_paragraph(doc, align=WD_ALIGN_PARAGRAPH.CENTER, after=18)
-add_thai_run(p, title, bold=True, size=Pt(22))
-p = new_paragraph(doc, align=WD_ALIGN_PARAGRAPH.CENTER, after=18)
-add_lines(p, king_lines)
-for para in preamble:
-    p = new_paragraph(doc, align=WD_ALIGN_PARAGRAPH.JUSTIFY, after=6, first=2)
-    add_thai_run(p, para)
+add_style(doc, 'ตราครุฑ', align=WD_ALIGN_PARAGRAPH.CENTER, before=6, after=6, keep_next=True)
+add_style(doc, 'ชื่อรัฐธรรมนูญ', size=22, bold=True, align=WD_ALIGN_PARAGRAPH.CENTER, after=6, keep_next=True)
+add_style(doc, 'พระปรมาภิไธย', size=18, bold=True, align=WD_ALIGN_PARAGRAPH.CENTER, after=12)
+add_style(doc, 'ย่อหน้า', align=DIST, first=2.5, after=3)
+add_style(doc, 'หมวด', size=18, bold=True, align=WD_ALIGN_PARAGRAPH.CENTER, after=12,
+          keep_next=True, page_break=True, outline=0)
+add_style(doc, 'ส่วน', bold=True, align=WD_ALIGN_PARAGRAPH.CENTER, before=12, after=6, keep_next=True, outline=1)
+add_style(doc, 'มาตรา', align=DIST, first=2.5, before=6, after=0)
+add_style(doc, 'วรรค', align=DIST, first=2.5, after=0)
+add_style(doc, 'อนุมาตรา', align=DIST, left=3.5, first=-1)
+add_style(doc, 'ผู้รับสนอง', align=WD_ALIGN_PARAGRAPH.CENTER, left=8, keep_next=True)
 
-for ci, ch in enumerate(chapters):
-    p = new_paragraph(doc, align=WD_ALIGN_PARAGRAPH.CENTER, before=24, after=12)
-    p.paragraph_format.keep_with_next = True
-    if ci:
-        p.paragraph_format.page_break_before = True      # every chapter starts a new page, as before
-    add_lines(p, chapter_lines(ch), bold=True, size=Pt(18))
+
+def para(style, text=None):
+    p = doc.add_paragraph(style=style)
+    if text is not None:
+        p.add_run(text)
+    return p
+
+
+para('ตราครุฑ').add_run().add_picture(GARUDA_PNG, width=Cm(3))
+para('ชื่อรัฐธรรมนูญ', title)
+add_lines(para('พระปรมาภิไธย'), king_lines)
+for text in preamble:
+    para('ย่อหน้า', text)
+
+for ch in chapters:
+    add_lines(para('หมวด'), chapter_lines(ch))           # every chapter opens a new page
     for b in ch['blocks']:
         if b[0] == 'part':
-            p = new_paragraph(doc, align=WD_ALIGN_PARAGRAPH.CENTER, before=12, after=6)
-            p.paragraph_format.keep_with_next = True
-            add_lines(p, b[1], bold=True)
+            add_lines(para('ส่วน'), b[1])
         elif b[0] == 'art':
-            add_items(doc, b[2], art_no=b[1])
+            for k, item in enumerate(b[2]):
+                if item[0] == 'list':
+                    para('อนุมาตรา', '%s\t%s' % (item[1], item[2]))
+                elif k == 0:
+                    p = para('มาตรา')
+                    bold_run(p, 'มาตรา %s' % thai(b[1]))
+                    p.add_run('  ' + item[1])
+                else:
+                    para('วรรค', item[1])
         else:
-            p = new_paragraph(doc, align=WD_ALIGN_PARAGRAPH.RIGHT, before=24)
-            add_thai_run(p, b[1][0])
+            first = para('ผู้รับสนอง', b[1][0])
+            first.paragraph_format.space_before = Pt(36)
             for line in b[1][1:]:
-                p = new_paragraph(doc, align=WD_ALIGN_PARAGRAPH.RIGHT)
-                add_thai_run(p, line, bold=True)
+                bold_run(para('ผู้รับสนอง'), line)
 
-finalize_document(doc)
 doc.save(WORD_OUT)
 print('Word: %s (%s bytes)' % (os.path.relpath(WORD_OUT, ROOT), format(os.path.getsize(WORD_OUT), ',')))
 
 # ==================== Table of contents ====================
 
-toc = new_document()
-p = new_paragraph(toc, align=WD_ALIGN_PARAGRAPH.CENTER, before=36, after=6)
-add_thai_run(p, 'สารบัญ', bold=True, size=Pt(24))
-p = new_paragraph(toc, align=WD_ALIGN_PARAGRAPH.CENTER, after=24)
-add_thai_run(p, FULL_TITLE, bold=True, size=Pt(18))
+toc = new_document(gazette_header=False)
+add_style(toc, 'สารบัญ', size=26, bold=True, align=WD_ALIGN_PARAGRAPH.CENTER, before=12, after=0)
+add_style(toc, 'สารบัญ-ชื่อ', size=18, bold=True, align=WD_ALIGN_PARAGRAPH.CENTER, after=18)
+add_style(toc, 'ตาราง', size=15)
+add_style(toc, 'ตาราง-กลาง', size=15, align=WD_ALIGN_PARAGRAPH.CENTER)
+add_style(toc, 'สรุป', bold=True, align=WD_ALIGN_PARAGRAPH.RIGHT, before=12)
+toc.add_paragraph('สารบัญ', style='สารบัญ')
+toc.add_paragraph(FULL_TITLE, style='สารบัญ-ชื่อ')
 table = toc.add_table(rows=1, cols=3)
 table.style = 'Table Grid'
 table.autofit = False
-widths = (Cm(10), Cm(3), Cm(3))
+table.alignment = WD_TABLE_ALIGNMENT.CENTER
+widths = (Cm(9.6), Cm(3.2), Cm(3.2))
 for col, w in zip(table.columns, widths):
     col.width = w      # the grid widths; LibreOffice ignores per-cell widths alone
 
 
 def shade(cell, fill):
-    el = OxmlElement('w:shd')
-    el.set(qn('w:fill'), fill)
-    el.set(qn('w:val'), 'clear')
-    cell._element.get_or_add_tcPr().append(el)
+    cell._element.get_or_add_tcPr().append(_el('w:shd', val='clear', color='auto', fill=fill))
 
 
-for cell, w, label, size in zip(table.rows[0].cells, widths, ('หมวด / รายการ', 'มาตราเริ่มต้น', 'มาตราสุดท้าย'),
-                                 (Pt(16), Pt(14), Pt(14))):
+def cell_text(cell, w, text, style, bold=False, white=False):
     cell.width = w
+    cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
+    p = cell.paragraphs[0]
+    p.style = style
+    run = bold_run(p, text) if bold else p.add_run(text)
+    if white:
+        run.font.color.rgb = RGBColor(255, 255, 255)
+
+
+head = table.rows[0]
+trPr = head._tr.get_or_add_trPr()
+trPr.append(_el('w:tblHeader'))                          # header row repeats on each page
+for cell, w, label in zip(head.cells, widths, ('หมวด', 'มาตราแรก', 'มาตราท้าย')):
     shade(cell, '2C3E50')
-    cp = cell.paragraphs[0]
-    cp.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    add_thai_run(cp, label, bold=True, size=size).font.color.rgb = RGBColor(255, 255, 255)
+    cell_text(cell, w, label, 'ตาราง-กลาง', bold=True, white=True)
 toc_rows = []
 for i, ch in enumerate(chapters):
     first, last = chapter_range(ch)
     toc_rows.append((chapter_label(ch), first, last))
     row = table.add_row()
-    for cell, w, value, align in zip(row.cells, widths, (chapter_label(ch), thai(first), thai(last)),
-                                     (None, WD_ALIGN_PARAGRAPH.CENTER, WD_ALIGN_PARAGRAPH.CENTER)):
-        cell.width = w
+    row._tr.get_or_add_trPr().append(_el('w:cantSplit'))
+    for cell, w, value, style in zip(row.cells, widths, (chapter_label(ch), thai(first), thai(last)),
+                                     ('ตาราง', 'ตาราง-กลาง', 'ตาราง-กลาง')):
         shade(cell, 'EBF5FB' if i % 2 == 0 else 'FFFFFF')
-        cp = cell.paragraphs[0]
-        if align is not None:
-            cp.alignment = align
-        add_thai_run(cp, value, size=Pt(14))
-p = new_paragraph(toc, before=18)
-add_thai_run(p, 'รวมทั้งสิ้น %s หมวด  %s มาตรา' % (thai(len(chapters)), thai(len(arts))), bold=True)
-finalize_document(toc)
+        cell_text(cell, w, value, style)
+toc.add_paragraph('รวมทั้งสิ้น %s หมวด  %s มาตรา' % (thai(len(chapters)), thai(len(arts))), style='สรุป')
 toc.save(TOC_OUT)
 print('สารบัญ: %s' % os.path.relpath(TOC_OUT, ROOT))
 
@@ -426,7 +466,8 @@ page = '''<!DOCTYPE html>
     @top-left { content: none; } @top-center { content: none; } @top-right { content: none; }
   }
   body { font-family: 'Sarabun', sans-serif; font-size: 15pt; line-height: 1.6; color: #000; margin: 0; padding: 0; }
-  p { text-align: justify; text-justify: inter-word; margin: 0.3em 0; }
+  /* Chromium justifies Thai only by stretching the spaces between words, which leaves wide gaps, so align left */
+  p { text-align: left; margin: 0.3em 0; }
   /* Chromium paints the stacked Thai marks of a line pushed to the next page at the foot of this one;
      clipping each paragraph fragment to its own box removes those stray marks */
   p, .chapter-title, .part-title, .signature-container { overflow: hidden; }
@@ -436,7 +477,7 @@ page = '''<!DOCTYPE html>
   p.list-item { text-indent: 0; margin: 0.2em 0 0.2em 1.2cm; padding-left: 1cm; }   /* number sits in the padding, inside the clip */
   span.list-num { display: inline-block; width: 1cm; margin-left: -1cm; }
   .bold { font-weight: bold; }
-  .chapter-title { font-size: 16pt; font-weight: bold; text-align: center; margin: 1.5em 0 0.8em; page-break-after: avoid; line-height: 1.4; }
+  .chapter-title { font-size: 16pt; font-weight: bold; text-align: center; margin: 0 0 0.8em; break-before: page; break-after: avoid; line-height: 1.4; }
   .part-title { font-size: 15pt; font-weight: bold; text-align: center; margin: 1.2em 0 0.6em; page-break-after: avoid; line-height: 1.4; }
   .first-page-header { text-align: center; margin-bottom: 1.5em; }
   .gazette-meta { width: 100%; border-collapse: collapse; margin-bottom: 5px; font-size: 11pt; }

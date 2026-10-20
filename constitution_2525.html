@@ -18,7 +18,8 @@
     @top-left { content: none; } @top-center { content: none; } @top-right { content: none; }
   }
   body { font-family: 'Sarabun', sans-serif; font-size: 15pt; line-height: 1.6; color: #000; margin: 0; padding: 0; }
-  p { text-align: justify; text-justify: inter-word; margin: 0.3em 0; }
+  /* Chromium justifies Thai only by stretching the spaces between words, which leaves wide gaps, so align left */
+  p { text-align: left; margin: 0.3em 0; }
   /* Chromium paints the stacked Thai marks of a line pushed to the next page at the foot of this one;
      clipping each paragraph fragment to its own box removes those stray marks */
   p, .chapter-title, .part-title, .signature-container { overflow: hidden; }
@@ -28,7 +29,7 @@
   p.list-item { text-indent: 0; margin: 0.2em 0 0.2em 1.2cm; padding-left: 1cm; }   /* number sits in the padding, inside the clip */
   span.list-num { display: inline-block; width: 1cm; margin-left: -1cm; }
   .bold { font-weight: bold; }
-  .chapter-title { font-size: 16pt; font-weight: bold; text-align: center; margin: 1.5em 0 0.8em; page-break-after: avoid; line-height: 1.4; }
+  .chapter-title { font-size: 16pt; font-weight: bold; text-align: center; margin: 0 0 0.8em; break-before: page; break-after: avoid; line-height: 1.4; }
   .part-title { font-size: 15pt; font-weight: bold; text-align: center; margin: 1.2em 0 0.6em; page-break-after: avoid; line-height: 1.4; }
   .first-page-header { text-align: center; margin-bottom: 1.5em; }
   .gazette-meta { width: 100%; border-collapse: collapse; margin-bottom: 5px; font-size: 11pt; }

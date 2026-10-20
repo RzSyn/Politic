@@ -571,6 +571,14 @@ The user asked for the whole site to be rebuilt with the same content: formal, d
   old pipeline (2540 text + patches → `processed_constitution.txt`) and are out of date; do not use them.
   Chromium prints stray Thai marks ("ตั้", "นี้") at the foot of a page when a line moves to the next one;
   `overflow: hidden` on each text block clips them, so list numbers must sit in padding, not a negative margin.
+  Chromium also cannot justify Thai except by stretching spaces (wide gaps the user rejected), so the PDF is
+  left-aligned; every chapter starts a new page in both files.
+  The Word file uses named paragraph styles (หมวด/ส่วน outline levels, มาตรา, วรรค, อนุมาตรา) with Thai
+  distributed alignment and single spacing; runs carry only bold. The user called the first version "เละมาก":
+  it set font/size on every run and appended w:szCs/w:bCs/w:lang out of schema order, at 1.15 spacing.
+  To check Word layout here, install TH Sarabun New (npm `font-th-sarabun-new`) into ~/.fonts and convert
+  with `soffice --headless --convert-to pdf`; LibreOffice shows Thai distributed as ragged and page numbers
+  in Arabic digits, Word does not.
   `*.py` is git-ignored, so add new scripts with `git add -f`.
 
 ## Re-laying out the new site's tabs (tools/relayout.py)
