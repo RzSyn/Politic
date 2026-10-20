@@ -524,6 +524,36 @@ Word, which has no Thai word breaking, lines broke only at spaces and were stret
 → Body text in the Word file is left-aligned. A LibreOffice render is not proof of how Word lays out
 Thai; when a choice depends on Word's own behaviour, pick the safe one or ask for a screenshot.
 
+**Called canon a typo while reviewing the charter.** Asked for an opinion on the
+2525 text, I listed "replaces รธน. ๒๔๔๕" in the preamble as a find-and-replace
+error, because 2445 is before 2475 in real history. In this site's canon รธน. ๒๔๔๕
+is the previous constitution (this file says so twice above). → Before calling
+anything in the charter an error, grep the site for it; a date that looks wrong
+by real-world history is usually canon.
+
+**Pointed a new article at the wrong body twice.** Writing หมวด ๓๐ and ๓๕, I
+cited "คณะกรรมการตามมาตรา ๘๘๙" (which is กรมศิลปากร) and "มาตรา ๑๐๘๖" (a
+powers clause, not the commission). Both were caught by reading the generated
+article back before applying. → After writing articles that cite each other,
+list every "มาตรา N" with the first words of article N and read the list.
+
+## Chapters 17-36 (ม.๓๖๑-๑,๑๕๐) — rewritten 2026-10-20
+
+These chapters used to be 792 sentences built from 16 templates ("เพื่อประโยชน์ของ
+ประชาชนและผู้ใช้บริการ", tax deductions for the coup ban, yearly funding for the
+death penalty). The user asked for them to be rewritten, with the important
+articles left alone ("อย่าไปแก้ ... เช่นมาตราสุดท้าย"). Rules kept:
+
+- Every article keeps its **number and topic**. Topic t of a chapter sits at
+  start+t, +8, +16, +24, +32; dashboard tabs cite these (ม.๔๐๑/๔๐๙, ๕๖๕-๕๙๗,
+  ๗๖๑-๘๐๐ by topic, ๘๐๑-๘๐๘, ๘๔๑-๘๔๕), so a reshuffle would break them.
+- ม.๑,๑๕๑-๑,๑๕๒ and หมวดพิเศษ (๑,๑๕๓-๑,๑๖๐) are never touched. ม.๑๑๑๕ defers to
+  ม.๑๑๖๐ for the penalty on coup leaders instead of restating it.
+- Text lives in `tools/charter/chNN.txt` (`t.k|text`) and is applied by
+  `tools/charter/apply_ch17_36.py`; edit the txt and re-run rather than editing
+  the HTML. Then `build_site.py` and `build_charter_files.py` (needs `pip install
+  pymupdf` for its read-back check).
+
 ## Known-good baseline
 
 ```
