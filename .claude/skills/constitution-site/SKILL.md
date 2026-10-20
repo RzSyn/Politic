@@ -517,6 +517,13 @@ badge from proximity to the number.
 
 ---
 
+**Thai distributed alignment letter-spaced the Word file.** I set the body styles of the 2525 Word file
+to Thai distributed and checked only a LibreOffice render, where it looks ragged and fine. In the user's
+Word, which has no Thai word breaking, lines broke only at spaces and were stretched letter by letter:
+"ก า ร ติ ช ม", and "ม า ต ร า ๑ ๑" spread across a whole line. The user sent screenshots ("T-T").
+→ Body text in the Word file is left-aligned. A LibreOffice render is not proof of how Word lays out
+Thai; when a choice depends on Word's own behaviour, pick the safe one or ask for a screenshot.
+
 ## Known-good baseline
 
 ```
@@ -573,12 +580,13 @@ The user asked for the whole site to be rebuilt with the same content: formal, d
   `overflow: hidden` on each text block clips them, so list numbers must sit in padding, not a negative margin.
   Chromium also cannot justify Thai except by stretching spaces (wide gaps the user rejected), so the PDF is
   left-aligned; every chapter starts a new page in both files.
-  The Word file uses named paragraph styles (หมวด/ส่วน outline levels, มาตรา, วรรค, อนุมาตรา) with Thai
-  distributed alignment and single spacing; runs carry only bold. The user called the first version "เละมาก":
+  The Word file uses named paragraph styles (หมวด/ส่วน outline levels, มาตรา, วรรค, อนุมาตรา), left
+  alignment and single spacing; runs carry only bold. The user called the first version "เละมาก":
   it set font/size on every run and appended w:szCs/w:bCs/w:lang out of schema order, at 1.15 spacing.
+  **Never use justify or Thai distributed in the Word file** (see the mistake log).
   To check Word layout here, install TH Sarabun New (npm `font-th-sarabun-new`) into ~/.fonts and convert
-  with `soffice --headless --convert-to pdf`; LibreOffice shows Thai distributed as ragged and page numbers
-  in Arabic digits, Word does not.
+  with `soffice --headless --convert-to pdf`. LibreOffice is not Word: it shows page numbers in Arabic
+  digits and does not reproduce Word's Thai line breaking, so it cannot prove a Word layout is right.
   `*.py` is git-ignored, so add new scripts with `git add -f`.
 
 ## Re-laying out the new site's tabs (tools/relayout.py)

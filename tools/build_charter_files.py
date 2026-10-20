@@ -300,7 +300,9 @@ def new_document(gazette_header=True):
 
 GAZETTE_ISSUE = 'เล่ม ๙๙ ตอนที่ ๑๔๕ ก'
 GAZETTE_DATE = '๑๑ ตุลาคม ๒๕๒๕'
-DIST = WD_ALIGN_PARAGRAPH.THAI_JUSTIFY      # Thai distributed: spreads letters, not just the spaces
+# Left-aligned on purpose: Thai distributed (and justify) letter-spaced whole lines in the user's Word,
+# which has no Thai word breaking and can only break at spaces ("ก า ร ติ ช ม", "ม า ต ร า ๑ ๑").
+DIST = WD_ALIGN_PARAGRAPH.LEFT
 
 doc = new_document()
 add_style(doc, 'ตราครุฑ', align=WD_ALIGN_PARAGRAPH.CENTER, before=6, after=6, keep_next=True)
