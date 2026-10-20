@@ -537,6 +537,17 @@ powers clause, not the commission). Both were caught by reading the generated
 article back before applying. → After writing articles that cite each other,
 list every "มาตรา N" with the first words of article N and read the list.
 
+**Cross-references in ม.๑-๓๖๐ carried 2540 numbering (fixed 2026-10-20).** 327
+"มาตรา N" references pointed at the wrong article (e.g. "วุฒิสภามีมติตามมาตรา ๓๐๘ ให้
+ถอดถอน" where ม.๓๐๘ is the prosecutor commission). `tools/charter/fix_xrefs.py`
+matches each article to its source in `constitution_2540.html` and re-points
+references by **position** in that source; a first version that went by number
+alone skipped ม.๑๘๓ (๑๒) because the stale "๒๑๑" happened to equal the new number
+of another cited article. Dashboard tabs copied some of the stale numbers
+(e.g. "แบ่งเขต ๔๐๐ — มาตรา ๑๐๒") — see `tools/charter/story_conflicts.md`.
+Article text is extracted from `article-text`, `list-item` **and `sub-para`**
+paragraphs; missing `sub-para` hid half the references in the first audit.
+
 ## Chapters 17-36 (ม.๓๖๑-๑,๑๕๐) — rewritten 2026-10-20
 
 These chapters used to be 792 sentences built from 16 templates ("เพื่อประโยชน์ของ
