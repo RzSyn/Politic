@@ -337,6 +337,7 @@ for ch in chapters:
         if b[0] == 'part':
             add_lines(para('ส่วน'), b[1])
         elif b[0] == 'art':
+            art_start = len(doc.paragraphs)
             for k, item in enumerate(b[2]):
                 if item[0] == 'list':
                     para('อนุมาตรา', '%s\t%s' % (item[1], item[2]))
@@ -347,6 +348,9 @@ for ch in chapters:
                 else:
                     para('วรรค', item[1])
         else:
+            # keep the last article on the same page as the countersignature (it used to land alone)
+            for p in doc.paragraphs[art_start:]:
+                p.paragraph_format.keep_with_next = True
             first = para('ผู้รับสนอง', b[1][0])
             first.paragraph_format.space_before = Pt(36)
             for line in b[1][1:]:
@@ -446,7 +450,9 @@ for ch in chapters:
         elif b[0] == 'art':
             body.append(items_html(b[2], b[1]))
         else:
-            body.append('<div class="signature-container">%s</div>' % '<br>'.join(map(esc, b[1])))
+            # wrap the last article with the countersignature so the signature never sits alone on a page
+            sig = '<div class="signature-container">%s</div>' % '<br>'.join(map(esc, b[1]))
+            body[-1] = '<div class="end-block">%s\n%s</div>' % (body[-1], sig)
 
 page = '''<!DOCTYPE html>
 <html lang="th">
@@ -491,6 +497,7 @@ page = '''<!DOCTYPE html>
   .king-title { font-size: 16pt; font-weight: bold; line-height: 1.7; margin-bottom: 1em; }
   .preamble-container { margin-bottom: 2em; }
   .signature-container { margin-top: 2.5em; margin-left: 55%; text-align: left; line-height: 1.7; page-break-inside: avoid; font-weight: bold; }
+  .end-block { break-inside: avoid; page-break-inside: avoid; }
 </style>
 </head>
 <body>
@@ -520,7 +527,9 @@ const { chromium } = require('playwright');
 })().catch(e => { console.error(e); process.exit(1); });
 '''
 env = dict(os.environ)
-env.setdefault('NODE_PATH', subprocess.run(['npm', 'root', '-g'], capture_output=True, text=True).stdout.strip())
+if not env.get('NODE_PATH'):
+    # 'npm' is npm.cmd on Windows, which CreateProcess cannot start without a shell
+    env['NODE_PATH'] = subprocess.run('npm root -g', shell=True, capture_output=True, text=True).stdout.strip()
 res = subprocess.run(['node', '-e', node, 'file://' + HTML_OUT, PDF_OUT], env=env, capture_output=True, text=True)
 if res.returncode:
     sys.exit('PDF failed: ' + (res.stderr or res.stdout)[-800:])

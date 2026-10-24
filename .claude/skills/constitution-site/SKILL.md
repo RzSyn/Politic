@@ -965,3 +965,11 @@ countersignature. Done by `tools/charter/move_special_last.py` (reuses `move_tra
 Check any renumbering with `tools/charter/audit_numbers.py` (ids/labels/cross-refs/order) and
 `tools/charter/audit_refs.py N` (lists the dashboard citations whose wording least resembles the
 cited article — read them; school grades "ม.๖" and the public-finance number grid are known noise).
+
+**build_charter_files.py on this Windows machine (2026-10-24).** Run it as
+`NODE_PATH="C:\Users\ASUA\node_modules" CHROME="C:/Program Files/Google/Chrome/Application/chrome.exe" python tools/build_charter_files.py`
+(Playwright lives in the user's `C:\Users\ASUA\node_modules`, no Chromium download needed).
+It used to crash calling `npm` directly — on Windows that is `npm.cmd`, which `subprocess` cannot
+start without a shell; now it only asks npm when NODE_PATH is unset, via `shell=True`. The last
+article and the countersignature are kept on one page (`.end-block` in the PDF, `keep_with_next`
+in Word) — before, ผู้รับสนองฯ landed alone on page 258.
