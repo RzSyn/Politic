@@ -956,3 +956,12 @@ governments are "รัฐบาลชุดที่ ๑–๓"). My new text s
 built page shrank by 26 KB for reasons unrelated to my edit. → At the start of a session
 and before writing story text, run `git log --oneline -8` and read any commits that are not
 mine; grep the canon wording they introduced before reusing old phrasing.
+
+## Charter order since 2026-10-24: หมวด ๑–๓๖ → บทเฉพาะกาล → หมวดพิเศษ → ผู้รับสนองฯ
+
+User ruling: หมวดพิเศษ goes last, บทเฉพาะกาล before it. บทเฉพาะกาล = ม.๑๑๓๐–๑๑๕๒ (`ch_36`),
+หมวดพิเศษ = ม.๑๑๕๓–๑๑๖๐ (`ch_37`, UBI is ม.๑๑๕๖, recall ม.๑๑๕๕, coup ban ม.๑๑๖๐), then the
+countersignature. Done by `tools/charter/move_special_last.py` (reuses `move_transitional.py`).
+Check any renumbering with `tools/charter/audit_numbers.py` (ids/labels/cross-refs/order) and
+`tools/charter/audit_refs.py N` (lists the dashboard citations whose wording least resembles the
+cited article — read them; school grades "ม.๖" and the public-finance number grid are known noise).
