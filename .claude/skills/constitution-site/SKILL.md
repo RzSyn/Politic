@@ -976,7 +976,7 @@ in Word) — before, ผู้รับสนองฯ landed alone on page 258.
 
 **PDF font = TH Sarabun New, embedded from `fonts/` (2026-10-24).** The machine has no TH Sarabun New
 installed — Word only *looked* right because Office keeps its own cloud copy of **TH SarabunPSK**
-(`%LOCALAPPDATA%\Microsoft\FontCache\CloudFonts`), invisible to Chrome. The four TTFs the user
+(`%LOCALAPPDATA%\Microsoft\FontCache\4\CloudFonts`), invisible to Chrome. The four TTFs the user
 supplied live in `fonts/THSarabunNew*.ttf` and the print page loads them with `@font-face`, sizes matched
 to the Word styles (body 16 pt, หมวด 18, title 22, header 12). The build stops if the face fails to load.
 With the smaller face the PDF went from 258 to 189 pages.
