@@ -940,7 +940,7 @@ because the bad result was written to scratchpad, never over the file.
 
 ## Canon order of ๒๗๓๖–๒๗๓๗ (user, 2026-10-16) — later corrections changed it twice
 
-๒๗๓๖ election on schedule, same result (รัฐบาลโรม ๒) → **มี.ค. ๒๗๓๗** ศนท. peaceful rally
+๒๗๓๖ **early** election (ก่อนครบวาระ, requested by ทักษิประชา — corrected by a later session, commit 13eb682; the house term is 8 years, ม.๑๑๕), same result (รัฐบาลโรม ๒) → **มี.ค. ๒๗๓๗** ศนท. peaceful rally
 (ธรรมศาสตร์ ท่าพระจันทร์ · อนุสาวรีย์ประชาธิปไตย · สนามหลวง) → Rome dissolves on TV →
 **พ.ค. ๒๗๓๗** 3rd election, same result (รัฐบาลโรม ๓) → **then** ทักษิประชา tears up the MOU
 (280) → **ก.ย. ๒๗๓๗** Atom to ก้าวไกล, ดร. ภาคิน founds อุดมการณ์ใหม่, joins (317) →
@@ -949,3 +949,10 @@ The user's poll rounds stay dated ม.ค./ธ.ค. ๒๗๓๖ even though the
 don't "fix" poll dates, fix the narrative around them. `tools/stories/timeline_2737.py`
 lists every place the order is written down (protest, ศนท., atom, cabinet, NIP, parties,
 red, orange card, roster row 35, index timeline).
+
+**Another session works on this repo too.** On 2026-10-24 `main` held commits from a
+parallel session (merged PR #1) that changed canon (๒๗๓๖ election was early, Rome's
+governments are "รัฐบาลชุดที่ ๑–๓"). My new text still said "เลือกตั้งตามวาระ" and the
+built page shrank by 26 KB for reasons unrelated to my edit. → At the start of a session
+and before writing story text, run `git log --oneline -8` and read any commits that are not
+mine; grep the canon wording they introduced before reusing old phrasing.
