@@ -461,19 +461,23 @@ page = '''<!DOCTYPE html>
 <title>''' + FULL_TITLE + '''</title>
 <!-- สร้างโดย tools/build_charter_files.py จาก website_new.html — อย่าแก้ไฟล์นี้ด้วยมือ -->
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
+  /* TH Sarabun New, the same face as the Word file, embedded from fonts/ so the PDF does not depend on what is installed */
+  @font-face { font-family: 'TH Sarabun New'; src: url('fonts/THSarabunNew.ttf') format('truetype'); font-weight: 400; font-style: normal; }
+  @font-face { font-family: 'TH Sarabun New'; src: url('fonts/THSarabunNew-Bold.ttf') format('truetype'); font-weight: 700; font-style: normal; }
+  @font-face { font-family: 'TH Sarabun New'; src: url('fonts/THSarabunNew-Italic.ttf') format('truetype'); font-weight: 400; font-style: italic; }
+  @font-face { font-family: 'TH Sarabun New'; src: url('fonts/THSarabunNew-BoldItalic.ttf') format('truetype'); font-weight: 700; font-style: italic; }
   @page {
     size: A4;
     margin: 3cm 2.5cm 2.5cm 2.5cm;
-    @top-left { content: "เล่ม ๙๙ ตอนที่ ๑๔๕ ก"; font-family: 'Sarabun', sans-serif; font-size: 10pt; border-bottom: 0.5px solid #000; padding-bottom: 5px; }
-    @top-center { content: "ราชกิจจานุเบกษา"; font-family: 'Sarabun', sans-serif; font-size: 10pt; border-bottom: 0.5px solid #000; padding-bottom: 5px; }
-    @top-right { content: "หน้า " counter(page, thai); font-family: 'Sarabun', sans-serif; font-size: 10pt; border-bottom: 0.5px solid #000; padding-bottom: 5px; }
+    @top-left { content: "เล่ม ๙๙ ตอนที่ ๑๔๕ ก"; font-family: 'TH Sarabun New', sans-serif; font-size: 12pt; border-bottom: 0.5px solid #000; padding-bottom: 5px; }
+    @top-center { content: "ราชกิจจานุเบกษา"; font-family: 'TH Sarabun New', sans-serif; font-size: 12pt; border-bottom: 0.5px solid #000; padding-bottom: 5px; }
+    @top-right { content: "หน้า " counter(page, thai); font-family: 'TH Sarabun New', sans-serif; font-size: 12pt; border-bottom: 0.5px solid #000; padding-bottom: 5px; }
   }
   @page :first {
     margin-top: 1.5cm;
     @top-left { content: none; } @top-center { content: none; } @top-right { content: none; }
   }
-  body { font-family: 'Sarabun', sans-serif; font-size: 15pt; line-height: 1.6; color: #000; margin: 0; padding: 0; }
+  body { font-family: 'TH Sarabun New', sans-serif; font-size: 16pt; line-height: 1.35; color: #000; margin: 0; padding: 0; }
   /* Chromium justifies Thai only by stretching the spaces between words, which leaves wide gaps, so align left */
   p { text-align: left; margin: 0.3em 0; }
   /* Chromium paints the stacked Thai marks of a line pushed to the next page at the foot of this one;
@@ -485,18 +489,18 @@ page = '''<!DOCTYPE html>
   p.list-item { text-indent: 0; margin: 0.2em 0 0.2em 1.2cm; padding-left: 1cm; }   /* number sits in the padding, inside the clip */
   span.list-num { display: inline-block; width: 1cm; margin-left: -1cm; }
   .bold { font-weight: bold; }
-  .chapter-title { font-size: 16pt; font-weight: bold; text-align: center; margin: 0 0 0.8em; break-before: page; break-after: avoid; line-height: 1.4; }
-  .part-title { font-size: 15pt; font-weight: bold; text-align: center; margin: 1.2em 0 0.6em; page-break-after: avoid; line-height: 1.4; }
+  .chapter-title { font-size: 18pt; font-weight: bold; text-align: center; margin: 0 0 0.8em; break-before: page; break-after: avoid; line-height: 1.4; }
+  .part-title { font-size: 16pt; font-weight: bold; text-align: center; margin: 1.2em 0 0.6em; page-break-after: avoid; line-height: 1.4; }
   .first-page-header { text-align: center; margin-bottom: 1.5em; }
-  .gazette-meta { width: 100%; border-collapse: collapse; margin-bottom: 5px; font-size: 11pt; }
+  .gazette-meta { width: 100%; border-collapse: collapse; margin-bottom: 5px; font-size: 12pt; }
   .gazette-meta td { padding: 0; }
   .double-line { border: none; border-top: 1px solid #000; border-bottom: 3px double #000; height: 4px; margin: 0 0 1.5em; }
   .garuda-container { margin: 1em auto; text-align: center; }
   .garuda-img { width: 100px; height: auto; }
-  .main-title { font-size: 20pt; font-weight: bold; margin: 0.5em 0; line-height: 1.3; }
-  .king-title { font-size: 16pt; font-weight: bold; line-height: 1.7; margin-bottom: 1em; }
+  .main-title { font-size: 22pt; font-weight: bold; margin: 0.5em 0; line-height: 1.3; }
+  .king-title { font-size: 18pt; font-weight: bold; line-height: 1.5; margin-bottom: 1em; }
   .preamble-container { margin-bottom: 2em; }
-  .signature-container { margin-top: 2.5em; margin-left: 55%; text-align: left; line-height: 1.7; page-break-inside: avoid; font-weight: bold; }
+  .signature-container { margin-top: 2.5em; margin-left: 55%; text-align: left; line-height: 1.5; page-break-inside: avoid; font-weight: bold; }
   .end-block { break-inside: avoid; page-break-inside: avoid; }
 </style>
 </head>
@@ -520,8 +524,11 @@ const { chromium } = require('playwright');
   const page = await browser.newPage();
   await page.goto(process.argv[1], { waitUntil: 'networkidle', timeout: 120000 });
   await page.evaluate(() => document.fonts.ready);
-  const ok = await page.evaluate(() => document.fonts.check('15pt Sarabun', 'ก'));
-  if (!ok) { console.error('Sarabun did not load'); process.exit(2); }
+  const ok = await page.evaluate(async () => {
+    await document.fonts.load('16pt "TH Sarabun New"', 'ก'); await document.fonts.load('bold 16pt "TH Sarabun New"', 'ก');
+    return document.fonts.check('16pt "TH Sarabun New"', 'ก') && document.fonts.check('bold 16pt "TH Sarabun New"', 'ก');
+  });
+  if (!ok) { console.error('TH Sarabun New did not load from fonts/'); process.exit(2); }
   await page.pdf({ path: process.argv[2], format: 'A4', preferCSSPageSize: true, printBackground: true });
   await browser.close();
 })().catch(e => { console.error(e); process.exit(1); });
