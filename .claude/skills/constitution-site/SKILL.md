@@ -980,3 +980,13 @@ installed — Word only *looked* right because Office keeps its own cloud copy o
 supplied live in `fonts/THSarabunNew*.ttf` and the print page loads them with `@font-face`, sizes matched
 to the Word styles (body 16 pt, หมวด 18, title 22, header 12). The build stops if the face fails to load.
 With the smaller face the PDF went from 258 to 189 pages.
+
+## Screenshotting one card deep in a tab (2026-10-29)
+
+On both sites a CDP `scrollIntoView` on a party card came back as the page top: the new site's
+`#hash` router and the old site's intro both reset the scroll after the shot's JS ran (twice in a
+row). What worked: clone the card into a fixed full-screen overlay
+(`position:fixed; inset:0; z-index:99999; background:#0b0b0d`) and capture that. The site's CSS still
+applies to the clone, so it shows the real look. Also: the old site writes inline styles without
+spaces (`font-size:13px;color:var(--text-muted)`), the new one with spaces. Regexes that rewrite a
+card copied between the two must allow both (` ?` after every `:` and `;`).
