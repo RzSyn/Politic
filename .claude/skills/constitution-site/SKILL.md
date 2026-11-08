@@ -990,3 +990,25 @@ row). What worked: clone the card into a fixed full-screen overlay
 applies to the clone, so it shows the real look. Also: the old site writes inline styles without
 spaces (`font-size:13px;color:var(--text-muted)`), the new one with spaces. Regexes that rewrite a
 card copied between the two must allow both (` ?` after every `:` and `;`).
+
+## Present year is ๒๗๔๒ (set 2026-11-08) — supersedes the ๒๗๓๘ section above
+
+Numbers: ราชวงศ์จักรี ๕๑๐ ปี · ร.๙ ๓๗๑ พรรษา (๓๗๒ on 5 Dec ๒๗๔๒) · ครองราชย์ ๓๔๑ ปี · สัปปายะ ๓๖๒ ปี ·
+มหาราช reigns ๔๕๓ / ๕๑๐ ปี = ๘๙%. Done by `tools/stories/year_2742.py` (same six tabs + index.html).
+**The ๒๗๓๘ sweep missed one stat:** maharaj-tab still said "๔๓๔ / ๔๙๑ ปี ... ๘๘%", a figure from an even
+older year, because the sweep only replaced tokens it already knew. Before the next year change, grep the
+year tabs for *every* number that depends on the year (dynasty age, reign, พรรษา, ratios of them), not only
+the tokens of the last sweep. ๒๗๓๙ = ครม. รังสิมันต์ ๓ ชุดที่ ๒ (สหายไทยแลนด์ joins, ๓๑๘ เสียง).
+
+## Slash articles (ม.๙๙/๑–๙๙/๘, the ๒๗๔๒ mid-term election amendment)
+
+An amendment that adds articles inserts them with slash numbers; nothing is renumbered. Cards are
+`id="art_99_1"` … with `data-origin="later"` and a badge naming the amendment; the total stays ๑,๑๖๐
+(+ the slash articles). `build_site.py` reads `art_(\d+(?:_\d+)?)` and shows "๙๙/๑"; `build_charter_files.py`
+keeps such ids as the string '99/1' and checks only the integer ones against 1..1160. The audits regex
+`id="art_(\d+)"` (closing quote right after the digits), so they ignore slash cards by design. The full act
+(proposer, committee, its own transitional sections) lives in a `div.amend-record` at the end of หมวด ๑๒;
+build_site passes that block through as-is and the Word/PDF leave it out (it is not charter text).
+Script: `tools/charter/amend_2742.py`. Note from the user: "ฉบับที่ ๒" in their draft meant *draft no. 2*
+(draft 1 failed in parliament), not "amendment no. 2" — the act is called
+"รัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม พุทธศักราช ๒๗๔๒".
