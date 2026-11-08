@@ -108,7 +108,7 @@ for k, (pos, cid) in enumerate(starts):
     tm = re.match(r'^(หมวด\s*[๐-๙]+|หมวดพิเศษ|บทเฉพาะกาล)\s*:?\s*(.*)$', title)
     ch_no, ch_name = (tm.group(1), tm.group(2)) if tm else ('', title)
     items = []
-    for m in re.finditer(r'<div class="(part-title|article-card|normal-text|signature)"', secx):
+    for m in re.finditer(r'<div class="(part-title|article-card|normal-text|signature|amend-record)"', secx):
         if any(a <= m.start() < b for a, b, _ in items):
             continue
         items.append((m.start(), span_at(secx, m.start()), m.group(1)))
@@ -116,7 +116,7 @@ for k, (pos, cid) in enumerate(starts):
     for a, b, kind in items:
         block = secx[a:b]
         if kind == 'article-card':
-            aid = re.search(r'id="art_(\d+)"', block).group(1)
+            aid = re.search(r'id="art_(\d+(?:_\d+)?)"', block).group(1)   # 99_1 = ม.๙๙/๑
             origin = re.search(r'data-origin="([^"]+)"', block).group(1)
             tag = html.unescape(re.search(r'<span class="badge [^"]+">([^<]+)</span>', block).group(1)).strip()
             bi = block.index('<div class="article-body">')
@@ -124,14 +124,16 @@ for k, (pos, cid) in enumerate(starts):
             ci = block.find('<div class="compare-container"')
             cmp_html = inner(block[ci:span_at(block, ci)]) if ci >= 0 else ''
             blocks.append(('art', aid, origin, tag, body, cmp_html))
-            total += 1
+            total += '_' not in aid
         elif kind == 'part-title':
             blocks.append(('part', inner(block)))
+        elif kind == 'amend-record':
+            blocks.append(('raw', block))
         elif kind == 'normal-text':
             blocks.append(('clause', inner(block)))
         else:
             blocks.append(('sign', inner(block)))
-    nums = [int(b[1]) for b in blocks if b[0] == 'art']
+    nums = [int(b[1].split('_')[0]) for b in blocks if b[0] == 'art']
     chapters.append({'id': cid, 'no': ch_no, 'name': ch_name, 'blocks': blocks,
                      'range': (min(nums), max(nums)) if nums else None, 'count': len(nums)})
 assert total == 1160, total
@@ -146,7 +148,7 @@ def art_html(aid, origin, tag, body, cmp_html):
             '<div class="nw-art-no"><span>มาตรา</span><b>%s</b></div>'
             '<div class="nw-art-main"><div class="nw-art-meta"><span class="nw-tag">%s</span>%s</div>'
             '<div class="nw-art-body">%s</div>%s</div></article>'
-            ) % (ORIGIN[origin][0], aid, origin, thai(aid), html.escape(tag), cmp_btn, body, cmp_panel)
+            ) % (ORIGIN[origin][0], aid, origin, thai(aid.replace('_', '/')), html.escape(tag), cmp_btn, body, cmp_panel)
 
 
 toc, doc = ['<a class="nw-toc-link" href="#preamble"><span class="nw-toc-no">คำปรารภ</span></a>'], []
@@ -165,6 +167,8 @@ for ch in chapters:
             parts.append(art_html(*b[1:]))
         elif b[0] == 'part':
             parts.append('<h3 class="nw-part">%s</h3>' % b[1])
+        elif b[0] == 'raw':
+            parts.append(b[1])
         elif b[0] == 'clause':
             parts.append('<div class="nw-clause">%s</div>' % b[1])
         else:

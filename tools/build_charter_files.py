@@ -83,7 +83,7 @@ for sec in re.finditer(r'<section class="nw-chapter" id="ch_\d+">(.*?)</section>
     ch = {'no': text_of(head.group(1)), 'name': text_of(head.group(2)), 'blocks': []}
     body = body[body.index('</header>') + 9:]
     for m in re.finditer(r'<h3 class="nw-part">(.*?)</h3>'
-                         r'|<article class="nw-art[^"]*" id="art_(\d+)"[^>]*>(.*?)</article>'
+                         r'|<article class="nw-art[^"]*" id="art_(\d+(?:_\d+)?)"[^>]*>(.*?)</article>'
                          r'|<div class="nw-clause">(.*?)</div>'
                          r'|<div class="nw-signature">(.*?)</div>', body, re.S):
         if m.group(1) is not None:
@@ -100,7 +100,8 @@ for sec in re.finditer(r'<section class="nw-chapter" id="ch_\d+">(.*?)</section>
                 else:
                     items.append(('para', text_of(p.group(2))))
             assert items and items[0][0] == 'para', 'article %s does not open with its text' % m.group(2)
-            ch['blocks'].append(('art', int(m.group(2)), items))
+            aid = m.group(2)   # '99_1' is ม.๙๙/๑, added by the ๒๗๔๒ amendment; kept as the string '99/1'
+            ch['blocks'].append(('art', int(aid) if aid.isdigit() else aid.replace('_', '/'), items))
         elif m.group(4) is not None:
             # a clause the site shows after an article belongs to that article (e.g. ม.๒๙๕)
             assert ch['blocks'] and ch['blocks'][-1][0] == 'art', 'clause with no article before it'
@@ -110,7 +111,7 @@ for sec in re.finditer(r'<section class="nw-chapter" id="ch_\d+">(.*?)</section>
     chapters.append(ch)
 
 arts = [b for ch in chapters for b in ch['blocks'] if b[0] == 'art']
-nums = [b[1] for b in arts]
+nums = [b[1] for b in arts if isinstance(b[1], int)]
 assert nums == list(range(1, 1161)), 'articles are not ๑–๑๑๖๐ in order'
 assert len(chapters) == 38, len(chapters)
 print('อ่านจาก website_new.html: %d หมวด, %d มาตรา' % (len(chapters), len(arts)))
@@ -125,7 +126,7 @@ def chapter_label(ch):
 
 
 def chapter_range(ch):
-    n = [b[1] for b in ch['blocks'] if b[0] == 'art']
+    n = [b[1] for b in ch['blocks'] if b[0] == 'art' and isinstance(b[1], int)]
     return (min(n), max(n)) if n else None
 
 
@@ -408,7 +409,9 @@ for i, ch in enumerate(chapters):
                                      ('ตาราง', 'ตาราง-กลาง', 'ตาราง-กลาง')):
         shade(cell, 'EBF5FB' if i % 2 == 0 else 'FFFFFF')
         cell_text(cell, w, value, style)
-toc.add_paragraph('รวมทั้งสิ้น %s หมวด  %s มาตรา' % (thai(len(chapters)), thai(len(arts))), style='สรุป')
+extra = [b[1] for b in arts if not isinstance(b[1], int)]
+toc.add_paragraph('รวมทั้งสิ้น %s หมวด  %s มาตรา' % (thai(len(chapters)), thai(format(len(nums), ',')))
+                  + ('  (และมาตรา %s–%s ที่เพิ่มภายหลัง)' % (thai(extra[0]), thai(extra[-1])) if extra else ''), style='สรุป')
 toc.save(TOC_OUT)
 print('สารบัญ: %s' % os.path.relpath(TOC_OUT, ROOT))
 
