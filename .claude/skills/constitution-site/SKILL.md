@@ -1027,7 +1027,7 @@ Statesmen (รัฐบุรุษ) in canon, in order: พิธา (first), �
 (fourth, after the coup of ธ.ค. ๒๗๕๐). All four hold นพรัตนราชวราภรณ์. พิธา and นิวตรอน's ฯพณฯ needed a
 cabinet resolution (๓๐ ธ.ค. ๒๗๕๐); นิวตรอน uses it only if he becomes PM. Undecided by the user: the outcome
 of the treason case under ม.๑๑๖๐ and the fate of จอมพลอัคนี ศรีวัฒนาวุธ (villains-tab; photo `images/akkani.jpg`, the user sent it without a caption and it was taken as อัคนี from the uniform and the monument).
-The user sent นิวตรอน in a suit as well, but only the N.R. photo arrived as a file (`images/neutron_nr*.jpg`).
+นิวตรอน's card portrait is the suit photo `images/neutron.jpg`; the N.R. photo `images/neutron_nr_full.jpg` stays inside his card.
 
 `tools/shot.mjs <tab> "<text>"|"css:<selector>" out.png` screenshots part of website_new.html (`#tab` deep links).
 
