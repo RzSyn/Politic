@@ -1,5 +1,6 @@
 // shot.mjs — screenshot an element of website_new.html (or another page) by tab and text.
 //   node tools/shot.mjs <tab-id> "<text inside the element>" <out.png> [page=website_new.html] [width=1280]
+//   or "css:<selector>" instead of the text to pick the element by selector
 // Opens page#tab-id, finds the smallest element whose text contains the string and is at least
 // 300 px wide, scrolls to it and saves a screenshot of it. Uses the globally installed Playwright.
 import { createRequire } from 'node:module';
@@ -14,6 +15,11 @@ await p.goto('file://' + resolve(page) + '?nc=' + Date.now() + '#' + tab);
 await p.waitForTimeout(2500);
 const ok = await p.evaluate(({ tab, text }) => {
   const root = document.getElementById(tab) || document;
+  if (text.startsWith('css:')) {              // "css:<selector>" picks the element directly
+    const el = root.querySelector(text.slice(4));
+    if (!el) return false;
+    el.setAttribute('data-shot', '1'); el.scrollIntoView({ block: 'start' }); return true;
+  }
   let best = null;
   for (const el of root.querySelectorAll('div, tr, section, article, table')) {
     const r = el.getBoundingClientRect();
