@@ -1020,7 +1020,8 @@ Numbers: ราชวงศ์จักรี ๕๒๑ ปี · ร.๙ ๓๘
 mid-term amendment and must stay. PM 36 is **ธีรภัทร วัฒนากร (ภัทร)**, ก้าวไกล, ๑๒ พ.ค. ๒๗๔๔–ปัจจุบัน
 (`pm36_phat.py`, `cabinet_phat.py`, `story_2742_2753.py`). Seats only for ๒๗๔๔ (ก้าวไกล ๒๖๕, รัฐบาล ๓๕๑) and
 the ๒๗๔๘ mid-term (ก้าวไกล ๒๘๗, รัฐบาล ๓๘๕): the user chose not to invent vote totals or the district/list
-split. รัฐบาลภัทร's กลาโหม, แรงงานฯ, เกษตรฯ and อุตสาหกรรม are grey "ยังไม่ระบุ" boxes until the user names them.
+split. รัฐบาลภัทร (`cabinet_phat2.py`, user's MOP line-up): ภัทร is PM + กลาโหม + แรงงานฯ, ศักดินัย นุ่มหนู
+เกษตรฯ (photo pending), ธนาธร อุตสาหกรรม + นวัตกรรมฯ + ทรัพย์สินทางปัญญาฯ, the rest as in ๒๗๔๓; ๑๖ people, all ก้าวไกล.
 
 Statesmen (รัฐบุรุษ) in canon, in order: พิธา (first), ทักษิณ, อะตอม, **นิวตรอน ดร.วิทยาการ ประสิทธิ์ผล**
 (fourth, after the coup of ธ.ค. ๒๗๕๐). All four hold นพรัตนราชวราภรณ์. พิธา and นิวตรอน's ฯพณฯ needed a
