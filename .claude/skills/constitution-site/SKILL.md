@@ -576,6 +576,14 @@ articles left alone ("อย่าไปแก้ ... เช่นมาตร�
   the HTML. Then `build_site.py` and `build_charter_files.py` (needs `pip install
   pymupdf` for its read-back check).
 
+**Put real-world history on a canon page as an explanation.** On the new criminal-code tab I wrote a stat tile
+"ก่อน ๖ ต.ค. ๒๕๑๙ — ไม่มีการเพิ่มโทษตามคำสั่งคณะปฏิรูปฯ ฉบับที่ ๔๑", a sentence in the note and a green
+"โทษเดิมก่อน ๖ ต.ค. ๒๕๑๙" badge on 11 sections. The user asked why it was there: in this universe there
+was no ๖ ตุลา coup and no reform council (the PM roster says every PM was elected, "ไม่มีรัฐประหาร"). The user's
+instruction ("use the penalties from before Order 41") told me how to choose the text, not what to print.
+→ When the user describes a canon change by pointing at real history, apply it silently; the page states only
+what is true inside the universe. Before publishing, grep the new tab for real-world events and bodies.
+
 ## Known-good baseline
 
 ```
@@ -1042,7 +1050,8 @@ promulgated in ๒๔๙๙, saved from Wikisource's rendered page (the MediaWik
 HTML and `index.php?action=raw` work). The user's canon rules: **no real ม.๑๑๒** (lèse-majesté); the real
 ๑๑๓ (กบฏ) is ม.๑๑๒ and every later section moves down one (๓๙๗ sections), cross-references too; penalties
 are those **before ๖ ต.ค. ๒๕๑๙** — no increases from คำสั่งคณะปฏิรูปการปกครองแผ่นดิน ฉบับที่ ๔๑ (real ๑๑๘
-๑๓๓–๑๓๖ ๑๓๘ ๑๙๘ ๒๐๖ ๓๒๖ ๓๒๘ ๓๙๓, canon one lower; green badge on each). Wording is otherwise the real
+๑๓๓–๑๓๖ ๑๓๘ ๑๙๘ ๒๐๖ ๓๒๖ ๓๒๘ ๓๙๓, canon one lower). That is a rule for *building* the text only: the page
+must not mention ๖ ตุลา, the reform council or its order (see the mistake log). Wording is otherwise the real
 ๒๔๙๙ text; later real amendments are not applied. The promulgating act (จอมพล ป. countersigned) is left out.
 So the story's "ม.๑๑๒(๔)" (ประชาธิปัตย์'s bill, coup-era tabs) is a proposed fourth clause of the กบฏ section.
 In the source, section headings sit flush against the number ("มาตรา๒๒๔") while references have a space

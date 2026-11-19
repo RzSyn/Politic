@@ -106,7 +106,7 @@ def esc(t): return html.escape(t, quote=False)
 
 def sec_html(n):
     _, no, paras, real = n
-    tag = ' <span class="cc-mark">โทษเดิมก่อน ๖ ต.ค. ๒๕๑๙</span>' if no in order41 else ''
+    tag = ''          # no marks: ๖ ต.ค. ๒๕๑๙ and the reform council's order do not exist in this universe (user)
     first = '<p><b>มาตรา %s</b>%s%s</p>' % (th(no), esc(paras[0]), tag)
     rest = ''.join('<p class="cc-li">%s</p>' % esc(p) if re.match(r'^\([๐-๙ก-ฮ]+\)', p) else '<p>%s</p>' % esc(p)
                    for p in paras[1:])
@@ -177,22 +177,35 @@ real_list = ' '.join('%s&rarr;%s' % (th(n), th(canon(n))) for n in ORDER41_REAL)
 BLOCKS = [
     ('stats', [('๓๙๗ มาตรา', 'ไม่มีมาตรา ๑๑๒ แบบในโลกจริง &mdash; มาตราที่ตามมาเลื่อนลงหนึ่ง'),
                ('๓ ภาค', 'บทบัญญัติทั่วไป &middot; ความผิด &middot; ลหุโทษ'),
-               ('ก่อน ๖ ต.ค. ๒๕๑๙', 'อัตราโทษเดิม ไม่มีการเพิ่มโทษตามคำสั่งคณะปฏิรูปฯ ฉบับที่ ๔๑'),
-               ('%s มาตรา' % th(len(order41)), 'ที่โทษยังเบากว่าโลกจริง (ป้ายสีเขียว)')]),
+               ('มาตรา ๑๑๒', 'ความผิดฐานกบฏ (มาตรา ๑๑๓ ในโลกจริง)')]),
     ('note', '📌 <strong>ต่างจากโลกจริงอย่างไร</strong> &mdash; ประมวลกฎหมายอาญาของจักรวาลนี้ไม่มีความผิดฐานหมิ่นประมาท ดูหมิ่น '
              'หรือแสดงความอาฆาตมาดร้ายพระมหากษัตริย์ (มาตรา ๑๑๒ ในโลกจริง) &mdash; มาตรา ๑๑๓ ในโลกจริง (ความผิดฐานกบฏ) '
              'จึงเป็น<strong>มาตรา ๑๑๒</strong> และทุกมาตราหลังจากนั้นเลื่อนลงหนึ่งจนถึงมาตรา ๓๙๗ รวมทั้งการอ้างถึงมาตราในตัวบท '
-             '&mdash; อัตราโทษเป็นแบบก่อนเหตุการณ์ ๖ ตุลาคม ๒๕๑๙ ไม่มีการเพิ่มโทษตามคำสั่งคณะปฏิรูปการปกครองแผ่นดิน ฉบับที่ ๔๑ '
-             '(มาตราในโลกจริง &rarr; มาตราในจักรวาลนี้: %s)' % real_list),
+             ''),
     ('p', 'ถ้อยคำในตัวบทเหมือนประมวลกฎหมายอาญาของโลกจริงฉบับประกาศใช้ พ.ศ. ๒๔๙๙ ทุกตัวอักษร เปลี่ยนเฉพาะเลขมาตรา '
           '&mdash; กดที่ชื่อลักษณะเพื่อเปิดอ่าน'),
     ('raw', CODE, CODE),
 ]
 
-if __name__ == '__main__':
+def replace_tab():
+    tid, icon, title = 'criminal-code-tab', '⚖️', 'ประมวลกฎหมายอาญา'
+    lead = 'ประมวลกฎหมายอาญาที่ใช้บังคับในราชอาณาจักร ๓ ภาค ๓๙๗ มาตรา &mdash; ไม่มีความผิดฐานหมิ่นพระมหากษัตริย์'
+    wr('src/tabs/%s.html' % tid, '<div id="%s" class="db-tab-content">\n%s\n</div>\n' % (tid, tb.new_render(icon, title, lead, BLOCKS)))
+    s = rd(OLD)
+    p0 = s.index('<div id="%s"' % tid)
+    p1 = tb.div_span(s, p0)
+    new = '<div id="%s" class="db-tab-content">\n%s\n</div>' % (tid, tb.old_render(icon, title, lead, BLOCKS, accent=('#fcd34d', '252,211,77')))
+    assert tb.balanced(new)
+    wr(OLD, s[:p0] + new + s[p1:])
+
+
+if __name__ == '__main__' and '--replace' in sys.argv:
+    replace_tab()
+    print('criminal code tab rebuilt')
+elif __name__ == '__main__':
     add_tab('criminal-code-tab', '⚖️', 'ประมวลกฎหมายอาญา', 'ประมวลกฎหมายอาญา',
-            'ประมวลกฎหมายอาญาที่ใช้บังคับในราชอาณาจักร ๓ ภาค ๓๙๗ มาตรา &mdash; ไม่มีความผิดฐานหมิ่นพระมหากษัตริย์ '
-            'และใช้อัตราโทษก่อน ๖ ตุลาคม ๒๕๑๙', BLOCKS, 'hierarchy-laws-tab', ('#fcd34d', '252,211,77'))
+            'ประมวลกฎหมายอาญาที่ใช้บังคับในราชอาณาจักร ๓ ภาค ๓๙๗ มาตรา &mdash; ไม่มีความผิดฐานหมิ่นพระมหากษัตริย์'
+            '', BLOCKS, 'hierarchy-laws-tab', ('#fcd34d', '252,211,77'))
     for f in ['index.html', 'README.md', 'tools/site_template.html', OLD]:
         t = rd(f)
         wr(f, t.replace('๘๐ หัวข้อ', '๘๑ หัวข้อ').replace('๘๐ แถบ', '๘๑ แถบ'))
