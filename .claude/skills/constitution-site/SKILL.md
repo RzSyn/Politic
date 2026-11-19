@@ -1012,3 +1012,24 @@ build_site passes that block through as-is and the Word/PDF leave it out (it is 
 Script: `tools/charter/amend_2742.py`. Note from the user: "ฉบับที่ ๒" in their draft meant *draft no. 2*
 (draft 1 failed in parliament), not "amendment no. 2" — the act is called
 "รัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม พุทธศักราช ๒๗๔๒".
+
+## Present year is ๒๗๕๓ (set 2026-11-19) and the ๒๗๔๒–๒๗๕๓ story
+
+Numbers: ราชวงศ์จักรี ๕๒๑ ปี · ร.๙ ๓๘๒ พรรษา (๓๘๓ on 5 Dec ๒๗๕๓) · ครองราชย์ ๓๕๒ ปี · สัปปายะ ๓๗๓ ปี ·
+มหาราช ๔๖๔ / ๕๒๑ ปี (๘๙%). `tools/stories/year_2753.py` did the sweep; '๒๗๔๒' elsewhere is now the
+mid-term amendment and must stay. PM 36 is **ธีรภัทร วัฒนากร (ภัทร)**, ก้าวไกล, ๑๒ พ.ค. ๒๗๔๔–ปัจจุบัน
+(`pm36_phat.py`, `cabinet_phat.py`, `story_2742_2753.py`). Seats only for ๒๗๔๔ (ก้าวไกล ๒๖๕, รัฐบาล ๓๕๑) and
+the ๒๗๔๘ mid-term (ก้าวไกล ๒๘๗, รัฐบาล ๓๘๕): the user chose not to invent vote totals or the district/list
+split. รัฐบาลภัทร's กลาโหม, แรงงานฯ, เกษตรฯ and อุตสาหกรรม are grey "ยังไม่ระบุ" boxes until the user names them.
+
+Statesmen (รัฐบุรุษ) in canon, in order: พิธา (first), ทักษิณ, อะตอม, **นิวตรอน ดร.วิทยาการ ประสิทธิ์ผล**
+(fourth, after the coup of ธ.ค. ๒๗๕๐). All four hold นพรัตนราชวราภรณ์. พิธา and นิวตรอน's ฯพณฯ needed a
+cabinet resolution (๓๐ ธ.ค. ๒๗๕๐); นิวตรอน uses it only if he becomes PM. Undecided by the user: the outcome
+of the treason case under ม.๑๑๖๐ and the fate of จอมพลอัคนี ศรีวัฒนาวุธ (villains-tab, photo pending).
+The user sent นิวตรอน in a suit as well, but only the N.R. photo arrived as a file (`images/neutron_nr*.jpg`).
+
+`tools/shot.mjs <tab> "<text>"|"css:<selector>" out.png` screenshots part of website_new.html (`#tab` deep links).
+
+**Ran a story script to read its usage.** `python3 tools/stories/year_2738.py --help` *runs* the sweep — these
+scripts have no argument parsing. It died on an assert before writing, so nothing changed (`git status` clean).
+→ Read a script with `sed -n 1,40p`, never by running it.
