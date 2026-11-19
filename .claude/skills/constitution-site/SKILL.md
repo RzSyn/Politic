@@ -1034,3 +1034,16 @@ of the treason case under ม.๑๑๖๐ and the fate of จอมพลอั
 **Ran a story script to read its usage.** `python3 tools/stories/year_2738.py --help` *runs* the sweep — these
 scripts have no argument parsing. It died on an assert before writing, so nothing changed (`git status` clean).
 → Read a script with `sed -n 1,40p`, never by running it.
+
+## ประมวลกฎหมายอาญา tab (criminal-code-tab, 2026-11-19)
+
+Built by `tools/stories/criminal_code.py` from `tools/data/criminal_code_2499.txt` — the real code as
+promulgated in ๒๔๙๙, saved from Wikisource's rendered page (the MediaWiki API returns 429; the article
+HTML and `index.php?action=raw` work). The user's canon rules: **no real ม.๑๑๒** (lèse-majesté); the real
+๑๑๓ (กบฏ) is ม.๑๑๒ and every later section moves down one (๓๙๗ sections), cross-references too; penalties
+are those **before ๖ ต.ค. ๒๕๑๙** — no increases from คำสั่งคณะปฏิรูปการปกครองแผ่นดิน ฉบับที่ ๔๑ (real ๑๑๘
+๑๓๓–๑๓๖ ๑๓๘ ๑๙๘ ๒๐๖ ๓๒๖ ๓๒๘ ๓๙๓, canon one lower; green badge on each). Wording is otherwise the real
+๒๔๙๙ text; later real amendments are not applied. The promulgating act (จอมพล ป. countersigned) is left out.
+So the story's "ม.๑๑๒(๔)" (ประชาธิปัตย์'s bill, coup-era tabs) is a proposed fourth clause of the กบฏ section.
+In the source, section headings sit flush against the number ("มาตรา๒๒๔") while references have a space
+("มาตรา ๒๑๗"); two sections can share a line, and a heading title can run over two lines.
